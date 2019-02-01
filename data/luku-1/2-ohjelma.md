@@ -25,6 +25,7 @@ title: 'Ohjelma'
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
 
 -- note: lauseke 
+
 <text-box variant="example" name="Algoritmi lausekkeen laskemiseksi laskimella">
 
 1. Nollaa laskimen muisti.
@@ -34,6 +35,7 @@ Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ra
 </text-box>
 
 -- note: pyöräilyreitti  
+
 <text-box variant="example" name="Algoritmi nopeimman pyöräilyreitin valitsemiseksi">
 
 1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
@@ -51,6 +53,7 @@ Ohjelmille on tyypillistä, että niissä on joukko peräkkäin suoritettavia en
 Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https://fi.wikipedia.org/wiki/Aliohjelma) (funktio, metodi). Aliohjelmassa annettua joukkoa toimintoja voidaan suorittaa useammasta paikkaa ohjelmaa _kutsumalla_ kyseistä aliohjelmaa, mahdollisesti joidenkin [parametrien](https://fi.wikipedia.org/wiki/Parametri_(tietotekniikka)) kanssa. Aliohjelman kutsuminen on täsmällisesti määritelty toiminto muiden toimintojen joukossa. Parametrien avulla aliohjelman toimintaa voidaan säätää joka kutsukerralla siihen tilanteeseen sopivaksi. Aliohjelmat voivat myös palauttaa jonkin arvon kutsukohtaan, jolloin niitä sanotaan _funktioiksi_. Joissakin ohjelmointikielissä aliohjelmia tai funktioita sanotaan [metodeiksi](https://fi.wikipedia.org/wiki/Olio-ohjelmointi). Aliohjelmille on tyypillistä, että niillä on oma _laskentaympäristö_, jossa voi esimerkiksi olla aliohjelman omia tietorakenteita. Niitä voi käyttää vain tämän aliohjelman suorituksen aikana. Aliohjelmille on ominaista, että sen toimintojen loppuun suorittamisen jälkeen palataa takaisin aliohjelman kutsukohtaan. Aliohjelmaa kutsuttaessa kontrolli siirtyy sen alkuun ja aliohjelmasta palatessa kontrolli palaa aina aliohjelman kutsukohdan jälkeiseen toimintaan.
 
 -- note: Funktio sum(table, n) 
+
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
 Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
@@ -64,6 +67,7 @@ Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahan
 Erilaisten käyttöjärjestelmien palvelupyyntöjä kutsutaan joskus _järjestelmäkutsuiksi_, koska halutaan tehdä selkeä eri ohjelman omien aliohjelmien kutsuilla ja käyttöjärjestelmän palvelujen kutsuilla. Järjestelmäkutsuilla ohjelma siirtyy suorittamaan käyttöjärjestelmän palveluita ja sen vuoksi näiden (järjestelmä)palveluiden toteutuksen kanssa pitää olla erityisen varovainen. Kukin järjestelmäpalvelu tarkistaa kutsun yhteydessä, onko sitä kutsuneella ohjelmalla oikeus käyttää tuota palvelua. Esimerkiksi, mikä tahansa ohjelma voi kirjoittaa omia tietojaan kovalevylle, mutta mikä tahansa ohjelma ei saa fyysisesti tutkia kovalevyn sisältöä. Sen lisäksi käyttöjärjestelmä valvoo, että ohjelma saa lukea ja kirjoittaa vain sellaisia tietoja, mihin sillä on oikeus.
 
 -- note: Ohjelman oikeudet
+
 <text-box variant="example" name="Suoritettavan ohjelman oikeudet järjestelmässä">
 
 Miten määräytyy, että mitä tietoja jokin ohjelma saa kovalevyltä lukea? Kun käyttäjä Tiina kirjautuu tietokonejärjestelmään, järjestelmä tunnistaa Tiinan esimerkiksi käyttäjätunnuksen ja salalauseen (pitkä salasana) avulla. Aina kun Tiina käynnistää jonkin ohjelman (esim. Peli) vaikkapa klikkaamalla sen kuvaketta, järjestelmä käynnistää kyseisen ohjelman käyttäjän Tiina oikeuksin.
