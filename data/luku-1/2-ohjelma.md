@@ -25,17 +25,17 @@ title: 'Ohjelma'
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
 
 -- note: lauseke 
-<text-box variant="example" name="Algoritmi lausekkeen laskemiseksi">
- 
-1. nollaa laskimen muisti.
-2. laske 87 * 555.
-3. lisää tuloon 32.
+<text-box variant="example" name="Algoritmi lausekkeen laskemiseksi laskimella">
+
+1. Nollaa laskimen muisti.
+2. Laske 87 * 555.
+3. Lisää tuloon 32.
 
 </text-box>
 
 -- note: pyöräilyreitti  
 <text-box variant="example" name="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valitsemiseksi">
- 
+
 1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
       (Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
 2. Jaa kukin reitti pätkiin kadun/tien/polun/risteyksen tyypistä riippuen.
@@ -82,7 +82,7 @@ Toinen hyvä konstin tietoturvan lisäämiseksi on käyttää tietokonetta yleen
 Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla
 
 <text-box variant="example" name=Lauseke 87*555+32 symbolisella konekielellä">
-                                                                             
+
 LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
 MUL   R1, =555   ; kerro R1:n arvo luvulla 555
 ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
@@ -92,7 +92,7 @@ ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1
 Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin monimutkaisempi. On vaikea pitää kirjaa, mikä merkitys kullakin rekisterillä eri hetkillä on ja kaikki laskenta tapahtuu kuitenkin rekistereitä käyttäen. Konekielen numeerinen muoto on vielä vaikeampi, koska siinä on pelkkiä numeroita:
 
 <text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
-    
+
 35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
 320864811   ; kerro R1:n arvo luvulla 555
 287309856   ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
@@ -108,13 +108,13 @@ Ohjelmat toteutetaan ([ohjelmoidaan](https://fi.wikipedia.org/wiki/Ohjelmointi))
 
 Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortran'illa, ALGOL'illa ja Schemellä vähän erilainen:
 <text-box variant="example" name="Lauseke 87*555+32 Javalla tai C'llä">
- 
+
 X = 87\*555+32;    -- vastaus on nyt muuttujan X arvona
  
 </text-box>
 
 <text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa">
- 
+
 X := 87\*555+32;   -- vastaus on nyt muuttujan X arvona
 
 </text-box>
