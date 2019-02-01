@@ -122,19 +122,7 @@ var content2 = [
   { separator: true },
 ]
 
-var futurePages = [
-  { title: "Osa 5", tba: "1.2.2019" },
-  { title: "Osa 6", tba: "8.2.2019" },
-  { title: "Osa 7", tba: "15.2.2019" },
-  { separator: true },
-  { title: "Osa 8", tba: "1.3.2019" },
-  { title: "Osa 9", tba: "8.3.2019" },
-  { title: "Osa 10", tba: "15.3.2019" },
-  { title: "Osa 11", tba: "22.3.2019" },
-  { title: "Osa 12", tba: "29.3.2019" },
-  { title: "Osa 13", tba: "12.4.2019" },
-  { title: "Osa 14", tba: "19.4.2019" },
-]
+var futurePages = []
 
 const MobileWrapper = styled.div`
   @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {

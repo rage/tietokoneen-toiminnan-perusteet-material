@@ -101,7 +101,7 @@ class Footer extends React.Component {
             <StyledCardContent>
               <GithubContainer>
                 <OutboundLink
-                  href="https://github.com/rage/ohjelmointi-19"
+                  href="https://github.com/rage/tietokoneen-toiminnan-perusteet-material"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -114,15 +114,7 @@ class Footer extends React.Component {
                 </OutboundLink>
               </GithubContainer>
               <ContentContainer>
-                Kurssin on tehnyt Helsingin yliopiston{" "}
-                <OutboundLink
-                  href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Agile Education Research -tutkimusryhmä
-                </OutboundLink>
-                .
+                Kurssin on tehnyt Teemu Kerola .
               </ContentContainer>
 
               <ContentContainer>

@@ -85,7 +85,7 @@ const PagesInThisSection = ({ style }) => (
 
       return (
         <StyledPaper style={style}>
-          <Title>Tässä osassa:</Title>
+          <Title>Tässä luvussa:</Title>
           <PagesList>
             {sectionPages.map((page, i) => (
               <Fragment>
