@@ -66,6 +66,7 @@ Tietokoneen muistille on tyypillistä, että se on toteutusmekanisminsa vuoksi h
 Muistin kokoa mitataan yleisesti tavuina ([B](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka))). Tavun koko on kahdeksan [bittiä](https://fi.wikipedia.org/wiki/Bitti) ja yhteen tavuun voi tallettaa vaikkapa yhden merkin (esim. 't') tai pienen kokonaisluvun (esim. 57). Muistin koko vaihtelee huomattavasti tietokoneen mukaan. Jonkun pienen laitteen muistin määrä mitataan kilotavuina ([KB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1024 tai 1000 tavua), kun läppärin tai pöytäkoneen muistin koko voi olla useita gigatavuja ([GB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), miljoona KB) tai jopa teratavuja ([TB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1000 GB). Apollo-ohjelmassa lennettiin kuuhun vuonna 1969 [AGC](https://fi.wikipedia.org/wiki/Apollo_Guidance_Computer)-tietokoneen avulla, jossa oli muistia alle 20 KB.
 
 -- onko tyhjä rivi näkyvissä?
+
 <text-box variant="example" name="Onko yksi KB (kilotavu) 1000 tavua vai 1024 tavua?">
   
 On vähän häiritsevää, että perustavaa laatua olevassa numerotiedossa on kahta erilaista käytäntöä. Merkintäongelma aiheutuu numerojärjestelmistä. Tietokoneen toteutus pohjautuu bitteihin ja usean bitin muodostamat luvut ovat 2-järjestelmän lukuja. Samoja etuliitteitä käytetään niin binäärijärjestelmässä kuin kymmenjärjestelmässäkin. Täten etuliitteet K, M ja G voivat tarkoittaa tilanteesta riippuen joko lukuja
@@ -108,25 +109,25 @@ Ihmisten kanssa suoritusaikana tapahtuva kommunikointi tehdään siis siihen sop
 
 <text-box variant="example" name="Tärkeitä termejä">
 
-## Tietokone
+### Tietokone
 Laitteisto, joka osaa suorittaa sen muistiin talletettua ohjelmaa.
 
-## Suoritin
+### Suoritin
 Tietokoneen osa, joka osaa suorittaa sen tietokoneen omia yksinkertaisia konekielisiä käskyjä.
 
-## Muisti, keskusmuisti
+### Muisti, keskusmuisti
 Nopea muisti tiedon tallettamiseen suoritusaikana. Sisältää ohjelman koodin ja datan. Yleensä haipuvaa, jolloin tieto häviää virran katkettua.
 
-## Väylä
+### Väylä
 Tietokoneen sisällä eri osia yhdistävä kimppu sähköjohtoja, joita pitkin tieto liikkuu suorituksen aikana. Jokaisella väylään liitetyllä laitteella on tälle väylätyypille sopiva laiteohjain.
 
-## Välimuisti
+### Välimuisti
 Lähellä suoritinta sijaitseva keskusmuistia pienempi muistialue, jossa on kopioita viime aikoina käytetyistä keskusmuistin alueista. Vähän hitaampi kuin suorittimen rekisterit, mutta paljon nopeampi kuin keskusmuisti. Välimuisteja on usein monessa eri tasossa (esim. 2-4 tasoa) ja lähempänä suoritinta olevat tasot ovat kooltaan pienempiä mutta nopeampia. Jos tieto löytyy välimuistista, sitä ei tarvitse hakea väylän kautta paljon hitaammasta keskusmuistista.
 
-## Massamuisti, pysyväismuisti
+### Massamuisti, pysyväismuisti
 Laite, jossa tieto säilyy ilman sähkövirtaa. Käyttöjärjestelmä on talletettu tänne ja se ladataan muistiin tietokoneen käynnistämisen yhteydessä. Kaikki tietokoneessa mahdollisesti suoritettavat ohjelmat ovat myös täällä ja ne ladataan muistiin ohjelman käynnistyksen yhteydessä. Siellä on myös kaikki käyttäjien omat tiedostot, esimerkiksi kuvat ja dokumentit.
 
-## Oheislaite
+### Oheislaite
 Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita.
 
 </text-box>
