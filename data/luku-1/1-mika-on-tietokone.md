@@ -16,7 +16,7 @@ Lähtötietoina kurssin osallistujilta oletetaan, että heillä olisi karkeasti 
 
 Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ovat [pöytäkoneet](https://fi.wikipedia.org/wiki/P%C3%B6yt%C3%A4tietokone), [läppärit](https://fi.wikipedia.org/wiki/Kannettava_tietokone) ja [tabletit](https://fi.wikipedia.org/wiki/Taulutietokone). Mutta myös [älypuhelimet](https://fi.wikipedia.org/wiki/%C3%84lypuhelin), [navigaattorit](https://fi.wikipedia.org/wiki/GPS-navigointilaite) ja erilaiset urheilukellot ovat tietokoneita. Kodin pöydällä oleva sisä- ja ulkolämpötilan näyttävä lämpömittari voi olla tietokone, kun taas sen ulkona oleva anturi ei sellainen ole. Toisaalta taas, lämpömittari voi paremminkin olla ns. [sulautettu järjestelmä](https://fi.wikipedia.org/wiki/Sulautettu_j%C3%A4rjestelm%C3%A4), jossa  tietokone on vain tapa toteuttaa toimintalogiikka mikropiirien asemesta. Tässä  mielessä älypuhelinkin on sulautettu järjestelmä. Sen voi mieltää olevan myös ihan täysverinen tietokone, koska siihen voi käyttäjä ladata suoritettavaksi uusia ohjelmia. Suuria  sulautettuja järjestelmiä ovat esimerkiksi pankkiautomaatit, matkustajalentokoneiden ohjausjärjestelmät ja voimalaitosten kontrollijärjestelmät. Tällaisten järjestelmien päätarkoitus ei ole tiedon prosessointi, vaan tietokone on ainoastaan pienehkö mutta tärkeä osa kokonaisjärjestelmää.
 
--- Kuva:  ch-1-1-erilaiset-tietokoneet
+<!-- Kuva:  ch-1-1-erilaiset-tietokoneet -->
 
 ![Kahdeksan erilaista tietokonekuvaa: läppäri, älypuhelin, urheilutietokone, playstation,  tablettipelikone, auton navigaattori, digikamera. Lopuksi Applen älypuhelin, tabletti, pöytäkone ja läppäri.](./ch-1-1-erilaiset-tietokoneet.svg)
 <div>
@@ -25,7 +25,7 @@ Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ova
 
 Mikä tekee jostain laitteesta tietokoneen? Yleisesti ottaen tietokone on mikä tahansa laite, joka käsittelee tietoa oman ohjelmansa mukaisesti. Siinä pitää olla jonkinlainen [suoritin](https://fi.wikipedia.org/wiki/Suoritin), jolle voidaan antaa haluttu ohjelma suoritettavaksi. Suotavaa olisi, että suoritettavaa ohjelmaa pitäisi pystyä vaihtamaan. Suoritettavan ohjelman vaihto voi tapahtua helposti ohjelman kuvaketta klikkaamalla läppärillä, tai se voi olla huollossa tehtävä toimenpide, kuten esimerkiksi urheilukellojen ohjelmiston päivitys. Kuvaketta klikkaamalla pyydetyn suoritettavan ohjelman vaihdon tekee tietokoneen [käyttöjärjestelmä](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4), joka huolehtii myös kaikesta muusta järjestelmän ylläpidosta. Käyttöjärjestelmään sisältyy monia apuohjelmia, jotka tekevät tietokoneen käyttämisestä helpompaa. Käyttöjärjestelmä myös piilottaa varsinaisen laitteiston ohjelmilta ja käyttäjiltä. Tämä tekee ohjelmien tekemisestä helpompaa, kun ei tarvitse murehtia eri laitteistojen yksityiskohdista.
 
--- Quiz 1.1.1-8 Onko tämä tietokone
+<!-- Quiz 1.1.1-8 Onko tämä tietokone -->
 <div> <quiznator id="5c4afa3e14524713f959fafa"> </quiznator> </div>
 <div> <quiznator id="5c4b0002fd9fd71425c61416"> </quiznator> </div>
 <div> <quiznator id="5c4efcac017ffc13eddc9399"> </quiznator> </div>
@@ -39,6 +39,7 @@ Mikä tekee jostain laitteesta tietokoneen? Yleisesti ottaen tietokone on mikä 
 Minkälaisia laitteita tietokoneessa on? Tietokoneen osat voi karkeasti ottaen jakaa kolmeen luokkaan: laitteiston sisäiset osat tai laitteet, muiden tietokoneiden kommunikoivat laitteet ja ihmisen kanssa kommunikoivat laitteet. Ainoastaan _suoritin_ ja _muisti_ ovat välttämättömiä, ja kaikkia muita laitteita kutsutaan sen vuoksi yleisnimellä _oheislaite_. Eri tietokoneissa on vain niiden omiin käyttötarkoituksiin sopivat osat ja osien välinen tiedonsiirto on toteutettu erilaisten väylien kautta. Väylät taas ovat pohjimmiltaan joukko sähköjohtoja, joiden kautta tieto kulkee ykkösinä ja nollina.
 
 -- Kuva: ch-1-1-tietokonejarjestelma
+![Tietokonelaitteisto harmaalla taustalla. Sen yläosassa oheislaitteet käyttäjälle: näppäimistö, kosketusnäyttö, kuulokkeet, peliohjain. Näistä kaikista on nuolet ylhäällä olevalle käyttäjälle. Tietokonelaitteistossa oikealla on emolevy, jossa on suoritin, muisti ja väylät. Siihen on kytketty massamuistit, joista esimerkkkinä kovalevy. Siihen on kytketty myös langaton verkkosovitin, josta on yhteys Internetiin.](./ch-1-1-tietokonejarjestelma.svg)
 <div>
 <illustrations motive="ch-1-1-tietokonejarjestelma" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -49,7 +50,9 @@ Suorittimen sisällä on pienehkö hyvin nopea muistialue, jonka alkioita kutsut
 
 Laitteistossa on aina jonkinlainen muisti (ns. [keskusmuisti](https://fi.wikipedia.org/wiki/Keskusmuisti)), jossa on suoritettava ohjelma ja kaikki ohjelman käyttämä tieto (data). Nykyisissä koneissa sekä ohjelma että sen käyttämä data ovat nopeusvaatimusten takia samassa muistissa. Ensimmäinen suomalainen tietokone [ESKO (Elektroninen SarjaKOmputaattori)](https://fi.wikipedia.org/wiki/Suomen_ensimm%C3%A4iset_tietokoneet#ESKO) oli erityisen hidas, koska sen ohjelmat luettiin hitailta reikänauhoilta vaikka ohjelman käyttämä data oli nopeammassa rumpumuistissa.
 
--- Kuva: ch-1-1-muisti-koodi-data
+<!-- Kuva: ch-1-1-muisti-koodi-data -->
+
+![Kaksi laatikkoa ja alla joukko samansuuntaisia viivoja, jotka muodostavat väylän. Oikea laatikko on iso muisti, jossa on ohjelman koodi ja data. Vasen laatikko on suoritin, jossa on pieni muistialue rekisterit. Suoritin ja muisti on yhdistetty väylällä, jossa on kimppu sähköjohtoja. Kukin johdin on kuvassa viivana.](./ch-1-1-muisti-koodi-data.svg)
 <div>
 <illustrations motive="ch-1-1-muisti-koodi-data" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -78,7 +81,8 @@ Väylälle on tyypillistä, että vain yksi laite voi laittaa sinne tietoa kerra
 
 Väylälle on ominaista, että sen nopeus määräytyy siihen liitetyn hitaimman laitteen mukaiseksi. Ryhmäkeskustelussakin on tärkeätä, että kaikki puhuvat tarpeeksi hitaasti, jotta jokainen pysyy keskustelussa mukana. Tietokoneessa nopeimmat väylät ovat suorittimen ja muistin välissä. Muut väylät on liitetty näihin hierarkisesti käyttäen sovittimia, joiden avulla hitaammat väylät voidaan liittää nopeampiin suorituskyvyn siitä kärsimättä. Sovitin toimii kummallekin väylälle sen omalla nopeudella.
 
--- Kuva: ch-1-1-vaylahierarkia
+<!-- Kuva: ch-1-1-vaylahierarkia -->
+![Nopein väylä on sisäinen väylä suorittimen ja välimuistin välillä. Seuraavaksi nopein muistiväylä yhdistää välimuistin muistiin. Muistiväylässä on myös sovitin vähän hitaammalle PCI-väylälle, jossa on kiinni kovalevy. PCI-väylässä on myös sovitin vielä hitaammalle USB-väylälle, jossa on kiinni USB-muistitikku ja näppäimistö.](./ch-1-1-vaylahierarkia.svg)
 <div>
 <illustrations motive="ch-1-1-vaylahierarkia" frombottom="0" totalheight="40%"></illustrations>
 </div>
@@ -112,7 +116,7 @@ Ihmisten kanssa suoritusaikana tapahtuva kommunikointi tehdään siis siihen sop
 </key-terminology>
 </div>
 
--- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite?
+<!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
 <div><quiznator id="5c4f004cc41ed4148d96a786"></quiznator></div>
 <div><quiznator id="5c4f00be017ffc13eddc93af"></quiznator></div>
 <div><quiznator id="5c4f01433972a914741021f3"></quiznator></div>
