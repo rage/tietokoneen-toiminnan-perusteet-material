@@ -114,13 +114,13 @@ X = 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
 
 </text-box>
 
-<text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa">
+<text-box variant="example" name="Lauseke 87*555+32 Fortran'illa tai ALGOL'illa">
 
 X := 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
 
 </text-box>
 
-<text-box variant="example" name="Lauseke 87\*555+32 Schemellä">
+<text-box variant="example" name="Lauseke 87*555+32 Schemellä">
 
 (+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona
 
