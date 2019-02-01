@@ -20,12 +20,11 @@ const Credits = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Creative Commons BY-NC-SA 4.0
+          Creative Commons BY-NC-ND-SA 4.0
         </OutboundLink>{" "}
         -lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan
-        alkuperäisten tekijöiden nimiä ei poisteta. Jos teet muutoksia
-        materiaaliin ja haluat levittää muunneltua versiota, se täytyy
-        lisensoida samalla lisenssillä. Materiaalien käyttö kaupalliseen
+        alkuperäisten tekijöiden nimiä ei poisteta. Et saa tehdä muutoksia
+        materiaaleihin. Materiaalien käyttö kaupalliseen
         tarkoitukseen on ilman erillistä lupaa kielletty.
       </p>
 
