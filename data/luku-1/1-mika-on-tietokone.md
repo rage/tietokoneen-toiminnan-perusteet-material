@@ -105,19 +105,31 @@ Tietokoneissa voi myös olla erilaisia sensoreita, jotka keräävät tietoa ymp�
 Ihmisten kanssa suoritusaikana tapahtuva kommunikointi tehdään siis siihen sopivien oheislaitteiden avulla. Kaikki ihmisen syöttämä tieto siirretään oheislaitteelta (esim. näppäimisto tai hiiri) tietokoneen muistiin, josta ohjelma sen sitten saa käyttöönsä. Vastaavasti kaikki käyttäjälle annettava tieto talletetaan ensin muistiin, josta se sitten kopioidaan käyttäjän haluamalle oheislaitteelle (esim. näytölle tai kovaäänisiin). Kommunikointi muiden tietokoneiden kanssa tapahtuu samalla tavalla käyttäen niille sopivia oheislaitteita (esim. wifi'ä tai bluetooth'ia).
 
 -- key-terminology
-<div>
-<key-terminology
-  terminologies='[
-       {"title":"Tietokone", "content":"Laitteisto, joka osaa suorittaa sen muistiin talletettua ohjelmaa."},
-       {"title":"Suoritin", "content":"Tietokoneen osa, joka osaa suorittaa sen tietokoneen omia yksinkertaisia konekielisiä käskyjä."},
-       {"title":"Muisti, keskusmuisti", "content":"Nopea muisti tiedon tallettamiseen suoritusaikana. Sisältää ohjelman koodin ja datan. Yleensä haipuvaa, jolloin tieto häviää virran katkettua."},
-       {"title":"Väylä", "content":"Tietokoneen sisällä eri osia yhdistävä kimppu sähköjohtoja, joita pitkin tieto liikkuu suorituksen aikana. Jokaisella väylään liitetyllä laitteella on tälle väylätyypille sopiva laiteohjain."},
-       {"title":"Välimuisti", "content":"Lähellä suoritinta sijaitseva keskusmuistia pienempi muistialue, jossa on kopioita viime aikoina käytetyistä keskusmuistin alueista. Vähän hitaampi kuin suorittimen rekisterit, mutta paljon nopeampi kuin keskusmuisti. Välimuisteja on usein monessa eri tasossa (esim. 2-4 tasoa) ja lähempänä suoritinta olevat tasot ovat kooltaan pienempiä mutta nopeampia. Jos tieto löytyy välimuistista, sitä ei tarvitse hakea väylän kautta paljon hitaammasta keskusmuistista."},
-       {"title":"Massamuisti, pysyväismuisti", "content":"Laite, jossa tieto säilyy ilman sähkövirtaa. Käyttöjärjestelmä on talletettu tänne ja se ladataan muistiin tietokoneen käynnistämisen yhteydessä. Kaikki tietokoneessa mahdollisesti suoritettavat ohjelmat ovat myös täällä ja ne ladataan muistiin ohjelman käynnistyksen yhteydessä. Siellä on myös kaikki käyttäjien omat tiedostot, esimerkiksi kuvat ja dokumentit."},
-       {"title":"Oheislaite", "content":"Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita."}
-  ]'>
-</key-terminology>
-</div>
+
+<text-box variant="example" name="Tärkeitä termejä">
+
+## Tietokone
+Laitteisto, joka osaa suorittaa sen muistiin talletettua ohjelmaa.
+
+## Suoritin
+Tietokoneen osa, joka osaa suorittaa sen tietokoneen omia yksinkertaisia konekielisiä käskyjä.
+
+## Muisti, keskusmuisti
+Nopea muisti tiedon tallettamiseen suoritusaikana. Sisältää ohjelman koodin ja datan. Yleensä haipuvaa, jolloin tieto häviää virran katkettua.
+
+## Väylä
+Tietokoneen sisällä eri osia yhdistävä kimppu sähköjohtoja, joita pitkin tieto liikkuu suorituksen aikana. Jokaisella väylään liitetyllä laitteella on tälle väylätyypille sopiva laiteohjain.
+
+## Välimuisti
+Lähellä suoritinta sijaitseva keskusmuistia pienempi muistialue, jossa on kopioita viime aikoina käytetyistä keskusmuistin alueista. Vähän hitaampi kuin suorittimen rekisterit, mutta paljon nopeampi kuin keskusmuisti. Välimuisteja on usein monessa eri tasossa (esim. 2-4 tasoa) ja lähempänä suoritinta olevat tasot ovat kooltaan pienempiä mutta nopeampia. Jos tieto löytyy välimuistista, sitä ei tarvitse hakea väylän kautta paljon hitaammasta keskusmuistista.
+
+## Massamuisti, pysyväismuisti
+Laite, jossa tieto säilyy ilman sähkövirtaa. Käyttöjärjestelmä on talletettu tänne ja se ladataan muistiin tietokoneen käynnistämisen yhteydessä. Kaikki tietokoneessa mahdollisesti suoritettavat ohjelmat ovat myös täällä ja ne ladataan muistiin ohjelman käynnistyksen yhteydessä. Siellä on myös kaikki käyttäjien omat tiedostot, esimerkiksi kuvat ja dokumentit.
+
+## Oheislaite
+Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita.
+
+</text-box>
 
 <!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
 <div><quiznator id="5c4f004cc41ed4148d96a786"></quiznator></div>
