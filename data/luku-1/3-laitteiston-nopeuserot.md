@@ -85,7 +85,15 @@ Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nop
 <div><quiznator id="5c500eabddb6b814af32160d"></quiznator></div>
 <div><quiznator id="5c500efe3972a91474102610"></quiznator></div>
 
--- Luvun 1 yhteenveto, mitä tuli opittua
+-- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary
+
+Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
+
+Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen osan tehtävien kanssa.
+<div><quiznator id="5c544eec3972a91474103008"></quiznator></div>
+
+-- allaolevan voinee poistaa?
+
 <div>
   <part-summary chapter="1" heading="Käytyäsi nyt läpi luvun 1 sinun pitäisi osata karkealla tasolla selittää,"
 listitems='[
