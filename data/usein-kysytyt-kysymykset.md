@@ -51,9 +51,9 @@ Kurssin aloittamiseen ei tarvitse ilmoittautumista. Älä ilmoittaudu minnekkä�
 
 Aikatauluton kurssi julkaistaan ensimmäisen deadlinen jälkeen. Huomaathan kuitenkin, että aikatauluttomassa kurssissa täytyy tehdä enemmän tehtäviä kuin aikataulullisessa kurssissa ja aikatauluttomasta kurssista ei voi saada opinto-oikeutta. Voit kuitenkin aloittaa aikataulullisen kurssin jo nyt ja siirtyä kurssimateriaalista aikatauluttomaan jos et ehdi johonkin deadlineen.
 
-### Kurssimateriaalin uuden osan pitäisi olla julki tänään, mutta en näe sitä
+### Kurssimateriaalin uuden lukun pitäisi olla julki tänään, mutta en näe sitä
 
-Emme takaa mihin kellonaikaan kurssimateriaalin uusi osa ilmestyy. Vaikka materiaali on yleensä julkaistu noin puolen päivän maissa, julkaisu saattaa venyä myöhempään. Kiitos kärsivällisyydestäsi!
+Emme takaa mihin kellonaikaan kurssimateriaalin uusi luku ilmestyy. Vaikka materiaali on yleensä julkaistu noin puolen päivän maissa, julkaisu saattaa venyä myöhempään. Kiitos kärsivällisyydestäsi!
 
 ### Työ- ja elinkeinotoimisto haluaa minulta selvityksen kurssista
 
@@ -65,11 +65,11 @@ Tietokoneen toiminnan perusteet on Helsingin yliopiston kurssien Ohjelmoinnin pe
 
 ### Saan tukea Työ- ja elinkeinotoimistolta. Voinko silti tehdä kurssin?
 
-Sovi asiasta etukäteen TE-toimistosi kanssa. TE-toimistot eivät valitettavasti käsittele kurssiimme liittyviä asioita yhdenmukaisesti. Jotkut ovat evänneet tukia jo kurssillemme osallistumisesta, vaikkei tavoitteena olisi opintopisteet tai opinnot. Toisaalta toiset TE-toimistot ovat suositelleet kurssia ja jopa ohjanneet ihmisiä kurssille ilman tukien epäämistä.
+Sovi asiasta etukäteen TE-toimistosi kanssa. TE-toimistot eivät valitettavasti käsittele kurssiimme liittyviä asioita yhdenmukaisesti. Jotkut ovat evänneet tukia jo kurssillemme lukullistumisesta, vaikkei tavoitteena olisi opintopisteet tai opinnot. Toisaalta toiset TE-toimistot ovat suositelleet kurssia ja jopa ohjanneet ihmisiä kurssille ilman tukien epäämistä.
 
 ### Saako kursseista jonkinlaisen virallisen opintosuoritusotteen? Ja miten hyväksiluen sen oppilaitoksessani?
 
-Kurssin päätteeksi voi osallistua Helsingin yliopiston Avoimen yliopiston tarjoamiin verkkotentteihin kursseista Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Jos nämä verkkotentit läpäisee hyväksytysti, Avoimelta yliopistolta saa viralliset kurssisuoritteet. Ne kelpaavat todennäköisesti hyväksilukemista varten, mutta kannattaa varmistaa asia vielä oman oppilaitoksen opintovastaavalta.
+Kurssin päätteeksi voi lukullistua Helsingin yliopiston Avoimen yliopiston tarjoamiin verkkotentteihin kursseista Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Jos nämä verkkotentit läpäisee hyväksytysti, Avoimelta yliopistolta saa viralliset kurssisuoritteet. Ne kelpaavat todennäköisesti hyväksilukemista varten, mutta kannattaa varmistaa asia vielä oman oppilaitoksen opintovastaavalta.
 
 ### Miten vaihdan aikataululliselta kurssilta aikatauluttomaan?
 
@@ -77,12 +77,12 @@ Lue tämä ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaa
 
 ### Testien ajamis- ja lähettämispainikkeet ovat Netbeanssissa harmaita
 
-Jos olet aikataulutetussa kurssissa niin ota huomioon että ensimmäsen osan deadline oli 21.1.2019. Katso myös ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaan).
+Jos olet aikataulutetussa kurssissa niin ota huomioon että ensimmäsen lukun deadline oli 21.1.2019. Katso myös ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaan).
 
 ### Tarvitsenko Helsingin yliopiston tunnukset?
 
-Kaikki jotka haluavat osallistua Avoimen yliopiston tentteihin tai pystyä lukemaan Moodlea tarvii Helsingin yliopiston tunnukset. Jos tekee täysin omaksi ilokseen kurssia niin silloin ei ole pakollista, tosin vaikka tekisi vain omaksi ilokseen niin suosittelisimme tenttien tekemistä ja noiden toisten tunnusten hankkimista. Tunnukset voi hankkia täältä: https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin
+Kaikki jotka haluavat lukullistua Avoimen yliopiston tentteihin tai pystyä lukemaan Moodlea tarvii Helsingin yliopiston tunnukset. Jos tekee täysin omaksi ilokseen kurssia niin silloin ei ole pakollista, tosin vaikka tekisi vain omaksi ilokseen niin suosittelisimme tenttien tekemistä ja noiden toisten tunnusten hankkimista. Tunnukset voi hankkia täältä: https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin
 
-### Aion hakea opiskelupaikkaa MOOCin kautta. Pitääkö minun osallistua Avoimen yliopiston tentteihin?
+### Aion hakea opiskelupaikkaa MOOCin kautta. Pitääkö minun lukullistua Avoimen yliopiston tentteihin?
 
-Näyttökokeeseen saa kutsun, jos saa vähintään 90% kaikkien kurssin osien ohjelmointitehtävistä. Tentteihin osallistuminen ei ole pakollista tähän. Suosittelemme kuitenkin kaikille Avoimen yliopiston tentteihin osallistumista, koska vain niin voi varmistaa saavansa kurssisuoritukset. Pelkkään näyttökokeeseen osallistuminen ei takaa kurssisuorituksia. Käymällä Avoimen tentit suoritukset saa myös silloin, jos päätyy yliopistolle normaalin pääsykokeen tai Avoimen väylän kautta, tai jos aloittaa opiskelemaan muuta alaa.
+Näyttökokeeseen saa kutsun, jos saa vähintään 90% kaikkien kurssin osien ohjelmointitehtävistä. Tentteihin lukullistuminen ei ole pakollista tähän. Suosittelemme kuitenkin kaikille Avoimen yliopiston tentteihin lukullistumista, koska vain niin voi varmistaa saavansa kurssisuoritukset. Pelkkään näyttökokeeseen lukullistuminen ei takaa kurssisuorituksia. Käymällä Avoimen tentit suoritukset saa myös silloin, jos päätyy yliopistolle normaalin pääsykokeen tai Avoimen väylän kautta, tai jos aloittaa opiskelemaan muuta alaa.

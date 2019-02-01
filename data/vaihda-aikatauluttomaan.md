@@ -11,21 +11,21 @@ Tämä ohje on suunnattu ensisijaisesti heille, jotka ole ehtineet tehdä aikata
 
 ## Kannattaa pysyä aikataulullisessa versiossa
 
-Aikataulullisella kurssilla on monia etuja verrattuna aikatauluttomaan kurssiin. Ohjelmointitehtävien lataaminen vaatii vain 25% edellisen osan ohjelmointitehtävien pisteistä, kun taas aikatauluttomalla kurssilla raja on 90%. Sama raja koskee myös verkkotentteihin osallistumista, joiden kautta saat opintosuoritukset kursseista Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Joudut siis tekemään huomattavasti enemmän työtä aikatauluttomalla kurssilla. Tämä työnmäärä tosin jakaantuu sitten pidemmälle aikavälille.
+Aikataulullisella kurssilla on monia etuja verrattuna aikatauluttomaan kurssiin. Ohjelmointitehtävien lataaminen vaatii vain 25% edellisen lukun ohjelmointitehtävien pisteistä, kun taas aikatauluttomalla kurssilla raja on 90%. Sama raja koskee myös verkkotentteihin lukullistumista, joiden kautta saat opintosuoritukset kursseista Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Joudut siis tekemään huomattavasti enemmän työtä aikatauluttomalla kurssilla. Tämä työnmäärä tosin jakaantuu sitten pidemmälle aikavälille.
 
-Lisäksi kurssiarvostelu perustuu aikatauluttomalla kurssilla pelkästään verkkotenttiin, kun taas aikataulullisella kurssilla arvostelussa otetaan huomioon myös tehtäväpisteet. Sinun täytyy siis pärjätä huomattavasti paremmin aikatauluttoman kurssin kokeessa saadaksesi saman arvosanan, kun koepisteitä ei voi kompensoida tehtävillä. Lisätietoa tästä löytyy sivupalkin osiosta Arvostelu ja kokeet.
+Lisäksi kurssiarvostelu perustuu aikatauluttomalla kurssilla pelkästään verkkotenttiin, kun taas aikataulullisella kurssilla arvostelussa otetaan huomioon myös tehtäväpisteet. Sinun täytyy siis pärjätä huomattavasti paremmin aikatauluttoman kurssin kokeessa saadaksesi saman arvlukunan, kun koepisteitä ei voi kompensoida tehtävillä. Lisätietoa tästä löytyy sivupalkin osiosta Arvostelu ja kokeet.
 
 Aikatauluttomassa kurssissa on riskinä, että kurssi jää kesken, kun ei ole aikarajoja motivoimassa tehtävien tekoa. Lisähyötynä on myös se, että kurssin tukikanava on aktiivisempi aikataulutetun kurssin aikana, kun kurssilla on enemmän kanssaopiskelijoita.
 
-Luultavasti tärkein etu aikataulullisessa kurssissa on, että vain aikataulutetulta kurssilta voi hakea opinto-oikeutta Helsingin yliopiston tietojenkäsittelytieteen osastolle. Lisätietoja tästä löytyy sivupalkin osiosta "Mahdollisuus opinto-oikeuteen".
+Luultavasti tärkein etu aikataulullisessa kurssissa on, että vain aikataulutetulta kurssilta voi hakea opinto-oikeutta Helsingin yliopiston tietojenkäsittelytieteen lukustolle. Lisätietoja tästä löytyy sivupalkin osiosta "Mahdollisuus opinto-oikeuteen".
 
 On siis järkevää jatkaa aikataulullisella kurssilla niin kauan, kun ehdit tehdä tehtävät aikarajojen puitteissa.
 
 ## Miksi tehtäväpalautukseni pitää siirtää?
 
-Jotta voit jatkaa ohjelmointitehtäviä aikatauluttomalla kurssilla siitä mihin jäit aikataulullisella, tehtäväpalautuksesi pitää siirtää aikatauluttomalle kurssille. Ohjelmointitehtäviä voi ladata NetBeansissa vasta, kun on saanut tietyn osuuden edellisen osan ohjelmointitehtävien pisteistä. Tehtäväpalautusten siirto antaa sinulle aikatauluttomalle kurssille ne tehtäväpisteet, jotka sait aikataululliselta kurssilta.
+Jotta voit jatkaa ohjelmointitehtäviä aikatauluttomalla kurssilla siitä mihin jäit aikataulullisella, tehtäväpalautuksesi pitää siirtää aikatauluttomalle kurssille. Ohjelmointitehtäviä voi ladata NetBeansissa vasta, kun on saanut tietyn osuuden edellisen lukun ohjelmointitehtävien pisteistä. Tehtäväpalautusten siirto antaa sinulle aikatauluttomalle kurssille ne tehtäväpisteet, jotka sait aikataululliselta kurssilta.
 
-HUOM! Aikatauluttomalla kurssilla on eri pisterajavaatimus sille, että voi ladata seuraavan osan tehtäviä. Aikataulullisella kurssilla voi ladata seuraavan osan tehtävät, kun on saanut vähintään 25% edellisen osan ohjelmointitehtävien pisteistä. Aikatauluttomalla kurssilla tämä pisteraja on 90% edellisen osan pisteistä. Saatat siis joutua tekemään lisää ohjelmointitehtäviä edellisistä osista, ennen kuin saat ladattua sen osan tehtävät, jonka parissa työskentelit aikataulullisellla kurssilla.
+HUOM! Aikatauluttomalla kurssilla on eri pisterajavaatimus sille, että voi ladata seuraavan lukun tehtäviä. Aikataulullisella kurssilla voi ladata seuraavan lukun tehtävät, kun on saanut vähintään 25% edellisen lukun ohjelmointitehtävien pisteistä. Aikatauluttomalla kurssilla tämä pisteraja on 90% edellisen lukun pisteistä. Saatat siis joutua tekemään lisää ohjelmointitehtäviä edellisistä osista, ennen kuin saat ladattua sen lukun tehtävät, jonka parissa työskentelit aikataulullisellla kurssilla.
 
 ## Miten siirrän tehtäväpalautukseni?
 

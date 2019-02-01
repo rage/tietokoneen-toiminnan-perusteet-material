@@ -1,11 +1,11 @@
 ---
-path: "/osaamistavoitteet"
+path: "/lukuamistavoitteet"
 title: "Osaamistavoitteet"
 hidden: false
 information_page: true
 ---
 
-Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielellä. Tietokoneen toiminnan perusteet sisältää kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Osakohtaiset osaamistavoitteet ovat seuraavat.
+Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielellä. Tietokoneen toiminnan perusteet sisältää kurssit Ohjelmoinnin perusteet (materiaalin lukut 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin lukut 8-14). Osakohtaiset lukuamistavoitteet ovat seuraavat.
 
 ## Ohjelmoinnin perusteet
 
@@ -22,16 +22,16 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>
         Osaat kirjoittaa ohjelmia, jotka lukevat käyttäjältä syötettä ja
         tekevät laskentaa syötteen perusteella. Tunnet käsitteet
-        muuttuja, ehtolause ja toistolause, ja osaat käyttää näitä
+        muuttuja, ehtolause ja toistolause, ja lukuat käyttää näitä
         ohjelmissasi.
         </td>
     </tr>
     <tr>
         <td>2</td>
         <td>
-        Tunnet muutamia osaongelmia sekä niihin liittyviä
+        Tunnet muutamia lukuongelmia sekä niihin liittyviä
         ratkaisumalleja. Tunnet loogiset operaatiot ja, tai ja ei ja
-        osaat käyttää niitä ehto- ja toistolauseissa. Tunnet käsitteet
+        lukuat käyttää niitä ehto- ja toistolauseissa. Tunnet käsitteet
         metodi, metodin parametri, metodin palautusarvo ja ohjelman
         kutsupino. Osaat luoda metodeja ja ymmärrät miten ohjelman
         suoritus etenee kun metodia kutsutaan ja toisaalta kun
@@ -43,11 +43,11 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>
         Tiedät lähdekoodin kommentointitapoja ja ymmärrät miten
         muuttujien ja metodien nimentä vaikuttaa ohjelman
-        ymmärrettävyyteen. Tunnet lista- ja taulukkorakenteen ja osaat
-        käyttää niitä osana ohjelmia. Osaat käydä listan ja taulukon
+        ymmärrettävyyteen. Tunnet lista- ja taulukkorakenteen ja lukuat
+        käyttää niitä lukuna ohjelmia. Osaat käydä listan ja taulukon
         läpi while-toistolausetta ja indeksimuuttujaa käyttäen sekä
         for-each -toistolausetta käyttäen. Tunnet merkkijonoon liittyviä
-        metodeja ja osaat pilkkoa merkkijonon pienempiin osiin.
+        metodeja ja lukuat pilkkoa merkkijonon pienempiin osiin.
         Harjoittelet ohjelmien testaamista syötteitä ja tulosteita
         vertailemalla.
         </td>
@@ -55,11 +55,11 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
     <tr>
         <td>4</td>
         <td>
-        Tunnet käsitteet tiedosto ja tiedostojärjestelmä ja osaat lukea
+        Tunnet käsitteet tiedosto ja tiedostojärjestelmä ja lukuat lukea
         merkkijonomuotoista tietoa tiedostosta. Tiedät mitä
         olio-ohjelmointi tarkoittaa. Tunnet olio-ohjelmointiin liittyvät
         keskeiset käsitteet kuten luokka ja olio. Osaat luoda luokkia ja
-        olioita sekä käyttää niitä osana toteuttamiasi ohjelmia.
+        olioita sekä käyttää niitä lukuna toteuttamiasi ohjelmia.
         </td>
     </tr>
     <tr>
@@ -80,10 +80,10 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>6</td>
         <td>
         Ymmärrät staattisten ja ei-staattisten metodien erot. Tunnet
-        hajautustaulun ja osaat käsitellä hajautustaulussa olevaa
+        hajautustaulun ja lukuat käsitellä hajautustaulussa olevaa
         tietoa. Osaat käyttää olioita hajautustaulun arvona ja tiedät
         miten oliot toimivat hajautustaulun avaimena. Osaat ryhmitellä
-        tietoa hajautustaulun avulla ja osaat käyttää listaa
+        tietoa hajautustaulun avulla ja lukuat käyttää listaa
         hajautustaulun arvona. Osaat käyttää olioita sekä tiedon
         esittämiseen että ohjelman jakamiseen useampaan vastuualueeseen
         (tekstikäyttöliittymä, sovelluslogiikka).
@@ -94,7 +94,7 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>
         Osaat kertoa proseduraalisen ohjelmoinnin ja olio-ohjelmoinnin
         eroista ja toteuttaa ohjelmia kumpaakin ohjelmointiparadigmaa
-        noudattaen. Tiedät mitä käsite algoritmi tarkoittaa ja osaat
+        noudattaen. Tiedät mitä käsite algoritmi tarkoittaa ja lukuat
         kuvailla muutamien järjestämis- ja hakualgoritmien toimintaa.
         Osaat kirjoittaa yksikkötestejä ja tiedät testivetoisen
         ohjelmistokehityksen perusaskeleet.
@@ -117,7 +117,7 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>8</td>
         <td>
         Tunnet käsitteet perintä ja rajapinta. Osaat luoda luokkia,
-        jotka periytyvät toisesta luokasta ja osaat luoda luokkia, jotka
+        jotka periytyvät toisesta luokasta ja lukuat luoda luokkia, jotka
         toteuttavat yhden tai useamman rajapinnan. Tiedät miten
         abstraktit luokat toimivat. Ymmärrät että olio voidaan esittää
         kaikkien sen todellisten tyyppien avulla.
@@ -131,29 +131,29 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         (map). Tunnet käsitteen lambda-lauseke. Osaat järjestää olioita
         Javan valmista Comparable-rajapintaa hyödyntäen. Tunnet
         käsitteet säännöllinen lauseke, lueteltu tyyppi, ja iteraattori,
-        ja osaat hyödyntää näitä ohjelmissasi.
+        ja lukuat hyödyntää näitä ohjelmissasi.
         </td>
     </tr>
     <tr>
         <td>10</td>
         <td>
-        Tunnet luokkakaaviot ja osaat tulkita ja rakentaa ohjelmia
+        Tunnet luokkakaaviot ja lukuat tulkita ja rakentaa ohjelmia
         luokkakaavioiden perusteella. Osaat käyttää Javan pakkauksia ja
-        tiedät mistä import-lauseen osat muodostuvat. Tunnet Javan
-        erilaisia poikkeuksia ja osaat käsitellä sekä heittää niitä
+        tiedät mistä import-lauseen lukut muodostuvat. Tunnet Javan
+        erilaisia poikkeuksia ja lukuat käsitellä sekä heittää niitä
         eteenpäin. Osaat kirjoittaa tietoa tiedostoon ohjelmallisesti.
         </td>
     </tr>
     <tr>
         <td>11</td>
         <td>
-        Tiedät mitä geneeriset tyyppiparametrit ovat ja osaat luoda
+        Tiedät mitä geneeriset tyyppiparametrit ovat ja lukuat luoda
         luokkia jotka käyttävät niitä. Tiedät pääpiirteittäin
-        ArrayListin ja HashMapin sisäisen toteutuksen ja osaat luoda
+        ArrayListin ja HashMapin sisäisen toteutuksen ja lukuat luoda
         niistä yksinkertaistetut omat versiot. Tiedät miten
-        satunnaislukuja luodaan ja osaat käyttää Javan valmiita
+        satunnaislukuja luodaan ja lukuat käyttää Javan valmiita
         välineitä satunnaislukujen luomiseen. Tunnet menetelmiä
-        moniulotteisen tiedon esittämiseen ja osaat luoda sekä käsitellä
+        moniulotteisen tiedon esittämiseen ja lukuat luoda sekä käsitellä
         moniulotteisia taulukoita.
         </td>
     </tr>
@@ -162,7 +162,7 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>
         Tutustut graafisten käyttöliittymien ohjelmointiin. Tunnet
         muutamia käyttöliittymäkomponentteja,
-        käyttöliittymäkomponenttien asettelun mekanismeja, sekä osaat
+        käyttöliittymäkomponenttien asettelun mekanismeja, sekä lukuat
         käsitellä käyttöliittymän tapahtumia. Osaat tehdä
         käyttöliittymiä, jotka sisältävät useamman näkymän.
         </td>
@@ -170,7 +170,7 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
     <tr>
         <td>13</td>
         <td>
-        Tunnet menetelmiä tiedon visualisointiin ja osaat käyttää Javan
+        Tunnet menetelmiä tiedon visualisointiin ja lukuat käyttää Javan
         valmiiksi tarjoamia kaavioita (viivakaavio, pylväskaavio). Osaat
         käyttää Javan tarjoamia välineitä yksinkertaisten piirrosten
         luomiseen. Osaat näyttää kuvia sekä soittaa äänitiedostoja. Luot
@@ -182,7 +182,7 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
         <td>
         Tunnet menetelmiä simulaatioiden luomiseen ja kertaat
         kaksiulotteisten taulukkojen käyttöä. Tiedät, että muiden
-        kirjoittamia kirjastoja voi käyttää osana omia ohjemia. Kertaat
+        kirjoittamia kirjastoja voi käyttää lukuna omia ohjemia. Kertaat
         käsitettä yksikkötesti ja tunnet pääpiirteittäin käsitteen
         testikattavuus.
         </td>

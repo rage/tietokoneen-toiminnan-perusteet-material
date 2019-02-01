@@ -5,13 +5,13 @@ hidden: false
 information_page: true
 ---
 
-Kevään 2019 aikataulutettu Tietokoneen toiminnan perusteet antaa mahdollisuuden päästä opiskelemaan Helsingin yliopiston matemaattis-luonnontieteellisen tiedekunnan tietojenkäsittelytieteen kandiohjelmaan. Tietokoneen toiminnan perusteet -kurssin perusteella haetaan opinto-oikeutta korkeakoulujen yhteishaun osana olevassa päähaussa.
+Kevään 2019 aikataulutettu Tietokoneen toiminnan perusteet antaa mahdollisuuden päästä opiskelemaan Helsingin yliopiston matemaattis-luonnontieteellisen tiedekunnan tietojenkäsittelytieteen kandiohjelmaan. Tietokoneen toiminnan perusteet -kurssin perusteella haetaan opinto-oikeutta korkeakoulujen yhteishaun lukuna olevassa päähaussa.
 
 Yhteishaun hakuaika on 20.3.-3.4.2019. Hakuaika päättyy klo 15.00. Tietokoneen toiminnan perusteetin kautta hakiessasi Sinun tulee täyttää päähaun hakulomake, jossa asetat Helsingin yliopiston tietojenkäsittelytieteen ohjelman haluamallesi prioriteetille. Löydät lisätietoja sähköisestä yhteishausta korkeakouluihin [Opintopolku.fi](https://opintopolku.fi/) -portaalista.
 
-Opinto-oikeuden hakeminen Tietokoneen toiminnan perusteetin kautta edellyttää osallistumista kevään 2019 aikataulutettuun versioon, tehtävien tekemistä annetussa aikataulussa, sekä osallistumista toukokuussa järjestettävään näyttökokeeseen.
+Opinto-oikeuden hakeminen Tietokoneen toiminnan perusteetin kautta edellyttää lukullistumista kevään 2019 aikataulutettuun versioon, tehtävien tekemistä annetussa aikataulussa, sekä lukullistumista toukokuussa järjestettävään näyttökokeeseen.
 
-Saat kutsun näyttökokeeseen tekemällä aikataulutetun kurssin jokaisesta osasta vähintään 90% saatavissa olevista pisteistä. Pisteiden laskemisessa otetaan huomioon vain ohjelmointitehtävät. Kyselyt tai muu sisältö eivät vaikuta näihin pisteisiin.
+Saat kutsun näyttökokeeseen tekemällä aikataulutetun kurssin jokaisesta lukusta vähintään 90% saatavissa olevista pisteistä. Pisteiden laskemisessa otetaan huomioon vain ohjelmointitehtävät. Kyselyt tai muu sisältö eivät vaikuta näihin pisteisiin.
 
 Tietokoneen toiminnan perusteetin kautta valitaan 50 opiskelijaa. Voit hakea yhteishaussa korkeakoulupaikkaa myös normaalin valintakokeen kautta sekä ylioppilaskirjoitusten tulosten perusteella. Tietokoneen toiminnan perusteet -kurssi toimii myös ilmaisena valmennuskurssina yhteishaun valintakokeeseen, jos et MOOC-väylän kautta paikkaa saa.
 
