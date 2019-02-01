@@ -19,7 +19,7 @@ Tietokoneelle asia on ihan erilainen. Millisekunti on miljoona nanosekuntia ja o
 
 Sekunti = 1 000 ms = 1 000 000 µs = 1 000 000 000 ns = 1 000 000 000 000 ps.
 <br>
-Millisekunti = 1 ms = 0.001 sekuntia = 1 000 µs = 1 000 000 ns = 1 000 000 000 ps.
+Millisekunti = 1 ms = 0.001 sekuntia = 1 000 µs = 1 000 000 000 ps.
 <br>
 Mikrosekunti = 1 µs = 0.000 001 sekuntia = 1 000 ns = 1 000 000 ps.
 <br>
