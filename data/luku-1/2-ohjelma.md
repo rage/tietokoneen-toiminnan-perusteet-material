@@ -34,7 +34,7 @@ Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ra
 </text-box>
 
 -- note: pyöräilyreitti  
-<text-box variant="example" name="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valintaan">
+<text-box variant="example" name="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valitsemiseksi">
  
 1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
       (Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
