@@ -9,6 +9,7 @@ hidden: false
 Tässä ensimmäisessä luvussa selvitämme, mikä tietokone on ja minkälaisia osia siihen voi kuulua. Kerromme myös, mikä on tietokoneen suorittama ohjelma ja missä muodossa se on tietokoneessa. Lopuksi tarkastelemme tietokonelaitteiston käsittelemiä valtavia nopeuseroja ja niiden vaikutusta tietokoneiden toimintaan.
 <br><br>
 Lähtötietoina kurssin osallistujilta oletetaan, että heillä olisi karkeasti ottaen ainakin peruskoulu suoritettuna loppuun. Olisi myös suotavaa, mutta ei pakollista, että opiskelijoilla olisi jotain ohjelmointikokemusta. Konekieliseen ohjelmointiin liittyvät esimerkit on tällöin helpompi ymmärtää. Oppimateriaalissa on runsaasti linkkejä, joita seuraamalla löytyy tausta- tai lisätietoja kulloinkin käsittelyssä olevaan aihepiiriin. Linkkien seuraamista ei mitenkään edellytetä, vaan kaikki kurssin sisältöön liittyvä materiaali on tässä aineistossa.
+<br><br>
 </lead>
 </div>
 
@@ -64,15 +65,16 @@ Tietokoneen muistille on tyypillistä, että se on toteutusmekanisminsa vuoksi h
 
 Muistin kokoa mitataan yleisesti tavuina ([B](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka))). Tavun koko on kahdeksan [bittiä](https://fi.wikipedia.org/wiki/Bitti) ja yhteen tavuun voi tallettaa vaikkapa yhden merkin (esim. 't') tai pienen kokonaisluvun (esim. 57). Muistin koko vaihtelee huomattavasti tietokoneen mukaan. Jonkun pienen laitteen muistin määrä mitataan kilotavuina ([KB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1024 tai 1000 tavua), kun läppärin tai pöytäkoneen muistin koko voi olla useita gigatavuja ([GB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), miljoona KB) tai jopa teratavuja ([TB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1000 GB). Apollo-ohjelmassa lennettiin kuuhun vuonna 1969 [AGC](https://fi.wikipedia.org/wiki/Apollo_Guidance_Computer)-tietokoneen avulla, jossa oli muistia alle 20 KB.
 
-<div>
-  <note heading="Onko yksi KB (kilotavu) 1000 tavua vai 1024 tavua?" description="
+-- onko tyhjä rivi näkyvissä?
+<text-box variant="example" name="Onko yksi KB (kilotavu) 1000 tavua vai 1024 tavua?">
+  
 On vähän häiritsevää, että perustavaa laatua olevassa numerotiedossa on kahta erilaista käytäntöä. Merkintäongelma aiheutuu numerojärjestelmistä. Tietokoneen toteutus pohjautuu bitteihin ja usean bitin muodostamat luvut ovat 2-järjestelmän lukuja. Samoja etuliitteitä käytetään niin binäärijärjestelmässä kuin kymmenjärjestelmässäkin. Täten etuliitteet K, M ja G voivat tarkoittaa tilanteesta riippuen joko lukuja
 2<sup>10</sup>=1024,  2<sup>20</sup>=1 048 576, 2<sup>30</sup>=1 073 741 824 tai lukuja
 10<sup>3</sup>=1000,  10<sup>6</sup>=1 000 000, 10<sup>9</sup>=1 000 000 000.
-<br><br>
+
 Ongelmaa selventämään on tuotu uuden IEC-standardin mukaiset termit (kibitavu KiB, mebitavu MiB, gibitavu GiB, jne) kuvaamaan muistien kokoa tavuina binäärijärjestelmässä. Uudet termit eivät vielä oikein lyöneet läpi, joten merkintätapojen sekavuus jatkuu. Se ei kuitenkaan haittaa paljoa, koska mitään suuria virheitä ei tämän vuoksi tule.
-"></note>
-</div>
+
+</text-box>
 
 ### Väylä on kimppu sähköjohtoja
 Suorittimen ja muistin välillä on [väylä](https://fi.wikipedia.org/wiki/V%C3%A4yl%C3%A4), jossa tieto siirtyy usean vierekkäisen sähköjohtimen kautta. Jokaisella laitteella on oma väyläsovittimensa, joka toteuttaa etukäteen sovittua käytäntöä (protokollaa) väylän käytössä. Esimerkkikoneessamme on vain yksi väylä, mutta oikeassa koneessa niitä on useampia ja eri nopeuksisia. Lähellä suoritinta olevat ovat nopeampia.
@@ -102,6 +104,7 @@ Tietokoneissa voi myös olla erilaisia sensoreita, jotka keräävät tietoa ymp�
 
 Ihmisten kanssa suoritusaikana tapahtuva kommunikointi tehdään siis siihen sopivien oheislaitteiden avulla. Kaikki ihmisen syöttämä tieto siirretään oheislaitteelta (esim. näppäimisto tai hiiri) tietokoneen muistiin, josta ohjelma sen sitten saa käyttöönsä. Vastaavasti kaikki käyttäjälle annettava tieto talletetaan ensin muistiin, josta se sitten kopioidaan käyttäjän haluamalle oheislaitteelle (esim. näytölle tai kovaäänisiin). Kommunikointi muiden tietokoneiden kanssa tapahtuu samalla tavalla käyttäen niille sopivia oheislaitteita (esim. wifi'ä tai bluetooth'ia).
 
+-- key-terminology
 <div>
 <key-terminology
   terminologies='[
