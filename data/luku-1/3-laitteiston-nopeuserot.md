@@ -34,7 +34,7 @@ Vaikka tietokonelaitteistoja kehitetään nopeammiksi koko ajan ja nykyisetkin l
 ### Juustokakkuesimerkki
 Laitteiston ja koko tietokonejärjestelmän nopeuseroja voi illustroida Teemun juustokakkuesimerkillä. Esimerkki on vähän lapsellinen, mutta koeta kestää.
 
--- juustokakku kuva
+<!-- juustokakku kuva ch-1-3-juustokakku -->
 ![Kokki, jonka kädessä on kulho ja juustoa. Aika 0.5 sekuntia (rekisteri). Pöytä, jossa on valmiina juustoa. Aika 1-2 sekuntia (välimuisti). Suljettu jääkaappi, jonka sisällä on juustoa. Aika 25 sekuntia (muisti). Saturnus-raketti nousemassa ylös ja viemässä Apollo-alusta kohti kuuta, jossa on juustoa. Aika 10 päivää (levy). SpaceX:n BRF-raketti lähtee matkalle Orion-alus nokassaan kohti Jupiterin Europa-kuuta, jossa on juustoa. Aika 4 vuotta (pilvi, ihminen).](./ch-1-3-juustokakku.svg)
 <div>
 <illustrations motive="ch-1-3-juustokakku" totalheight="100%"></illustrations>
