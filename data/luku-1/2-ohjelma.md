@@ -22,19 +22,6 @@ title: 'Ohjelma'
 
 </text-box>
 
-<div>
- <example
-    heading="Algoritmi juustokakun tekemiseksi"
-    description="Jauha keksit yleiskoneessa keksimuruiksi.<br>
-    Lisää voisula ja sokeri, sekoita tasaiseksi.<br>
-    Kaada seos voidellun vuoan pohjalle ja taputtele tasaiseksi.<br>
-    Sekoita täytteeksi kulhossa rahka, juusto, kananmunat, sokeri ja maissisuuruste.<br>
-    Kaada täyte vuokaan ja paista kunnes täyte on hyytynyt.<br>
-    Nosta kakku pöydälle jäähtymään ja irroita se heti vuoan reunoista terävällä veitsellä.<br>
-    Anna jäähtyä ennen tarjoilua.">
-  </example>
-</div>
-
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
 <div>
  <example
@@ -62,9 +49,12 @@ Ohjelmille on tyypillistä, että niissä on joukko peräkkäin suoritettavia en
 
 Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https://fi.wikipedia.org/wiki/Aliohjelma) (funktio, metodi). Aliohjelmassa annettua joukkoa toimintoja voidaan suorittaa useammasta paikkaa ohjelmaa _kutsumalla_ kyseistä aliohjelmaa, mahdollisesti joidenkin [parametrien](https://fi.wikipedia.org/wiki/Parametri_(tietotekniikka)) kanssa. Aliohjelman kutsuminen on täsmällisesti määritelty toiminto muiden toimintojen joukossa. Parametrien avulla aliohjelman toimintaa voidaan säätää joka kutsukerralla siihen tilanteeseen sopivaksi. Aliohjelmat voivat myös palauttaa jonkin arvon kutsukohtaan, jolloin niitä sanotaan _funktioiksi_. Joissakin ohjelmointikielissä aliohjelmia tai funktioita sanotaan [metodeiksi](https://fi.wikipedia.org/wiki/Olio-ohjelmointi). Aliohjelmille on tyypillistä, että niillä on oma _laskentaympäristö_, jossa voi esimerkiksi olla aliohjelman omia tietorakenteita. Niitä voi käyttää vain tämän aliohjelman suorituksen aikana. Aliohjelmille on ominaista, että sen toimintojen loppuun suorittamisen jälkeen palataa takaisin aliohjelman kutsukohtaan. Aliohjelmaa kutsuttaessa kontrolli siirtyy sen alkuun ja aliohjelmasta palatessa kontrolli palaa aina aliohjelman kutsukohdan jälkeiseen toimintaan.
 
--- note: Funktio sum(table, n)
-<div> <note heading="Esimerkki: Funktio Sum(Table, n)" description="
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla. "></note>
+<!-- note: Funktio sum(table, n)  -->
+<text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
+
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla. "
+
+</textbox>
 </div>
 
 ### Käyttöjärjestelmän palvelut aliohjelmina
@@ -73,43 +63,40 @@ Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahan
 Erilaisten käyttöjärjestelmien palvelupyyntöjä kutsutaan joskus _järjestelmäkutsuiksi_, koska halutaan tehdä selkeä eri ohjelman omien aliohjelmien kutsuilla ja käyttöjärjestelmän palvelujen kutsuilla. Järjestelmäkutsuilla ohjelma siirtyy suorittamaan käyttöjärjestelmän palveluita ja sen vuoksi näiden (järjestelmä)palveluiden toteutuksen kanssa pitää olla erityisen varovainen. Kukin järjestelmäpalvelu tarkistaa kutsun yhteydessä, onko sitä kutsuneella ohjelmalla oikeus käyttää tuota palvelua. Esimerkiksi, mikä tahansa ohjelma voi kirjoittaa omia tietojaan kovalevylle, mutta mikä tahansa ohjelma ei saa fyysisesti tutkia kovalevyn sisältöä. Sen lisäksi käyttöjärjestelmä valvoo, että ohjelma saa lukea ja kirjoittaa vain sellaisia tietoja, mihin sillä on oikeus.
 
 -- note: Ohjelman oikeudet
-<div>
-  <note heading="Suoritettavan ohjelman oikeudet järjestelmässä" description="
+<text-box variant="example" name="uoritettavan ohjelman oikeudet järjestelmässä">
+
 Miten määräytyy, että mitä tietoja jokin ohjelma saa kovalevyltä lukea? Kun käyttäjä Tiina kirjautuu tietokonejärjestelmään, järjestelmä tunnistaa Tiinan esimerkiksi käyttäjätunnuksen ja salalauseen (pitkä salasana) avulla. Aina kun Tiina käynnistää jonkin ohjelman (esim. Peli) vaikkapa klikkaamalla sen kuvaketta, järjestelmä käynnistää kyseisen ohjelman käyttäjän Tiina oikeuksin.
-<br>
-<br>
+
 Oletetaan, että tällä suorituskerralla ohjelma Peli haluaa lukea jonkin tiedoston (esim. Tiinan-pelitilanne). Käyttöjärjestelmä tarkistaa tiedostoa Tiinan-pelitilanne avattaessa, onko ohjelmalla Peli tällä suorituskerralla oikeus lukea kyseistä tiedostoa. Tiina oli itse luonut tiedoston pelatessaaan samaa peliä aikaisemmin, joten tiedoston omistajaksi oli merkitty Tiina. Täten kaikki Tiinan myöhemminkin käynnistämät ohjelmat saavat lukea tuota tiedostoa. Kaikki on siis hyvin ja Peli saa nyt lukea tiedostoa Tiinan-pelitilanne.
-<br><br>
+
 Koko järjestelmän luotettavuus perustuu sille, että Tiina on tunnistettu oikein. Tyypillinen tietoturvaan liittyvä hyökkäys järjestelmään tapahtuu, kun Tiina vahingossa klikkaa jotain kivaa kissakuvaa verkkoselaimella. Pelkän kuvan näyttämisen lisäksi voi nyt käynnistyä jokin haittaohjelma, joka on suorituksessa käyttäjän Tiina kaikilla oikeuksilla. Haittaohjelmalla on pääsy kaikkiin Tiinan tietoihin ja se voi esimerkiksi käyttää Tiinan osoitekirjaa lähettääkseen tietojenkalastelupyynnön kaikille Tiinan kavereille. Ja kaverithan vastaavat, kun kerran kysely tuli heidän kaveriltaan Tiinalta! Kyselyn mukana voi tutuille kulkeutua se haittaohjelmakin.
-<br>
-<br>
+
 Omaa tietoturvaasi voi saada paremmaksi helpoillakin konsteilla. Käytä pitkiä salalauseita, äläkä käytä samaa salalausetta useassa paikassa. Oma salalause kannattaa pitää tarpeeksi pitkänä (ainakin 16 merkkiä) ja muutenkin monimutkaisena yhdistelmänä erikoismerkkejä, numeroita ja eri kokoisia kirjaimia. Älä kirjaudu eri palveluihin jonkin muun palvelun tunnuksilla. Käytä salalauseiden hallintaan salalauseholvia (sanasanaholvia), jossa itsessään on hyvin pitkä salalause. Muista kuitenkin, että mikään tietoturva ei ole täydellinen. Varaudu siis henkisesti siihen, että kaikki verkkoon laittamasi tieto voi joskus vuotaa julkiseksi.
-<br>
-<br>
+
 Toinen hyvä konstin tietoturvan lisäämiseksi on käyttää tietokonetta yleensä tavallisena käyttäjänä eikä ylläpitäjänä. Jos kissakuvaa klikkaamalla vahingossa käynnistyy jokin haittaohjelma, on paljon mukavampaa kun se temmeltää koneellasi ainoastaan tavallisen käyttäjän oikeuksin! Ylläpitäjän oikeuksin toimiva haittaohjelma voi kirjaimellisesti tehdä tietokoneellasi ihan mitä haluaa ja siitä voi olla hyvin vaikea päästä eroon.
-"></note>
-</div>
+
+</text-box>
 
 ### Symbolinen konekieli, numeerinen konekieli
 Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla
-<div>
- <example
-    heading="Lauseke 87*555+32 symbolisella konekielellä"
-    description="LOAD  R1, =87 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-    MUL   R1, =555  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
-    ADD   R1, =32   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.">
-  </example>
-</div>
+
+<text-box variant="example" name=Lauseke 87*555+32 symbolisella konekielellä">
+                                                                             
+LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+MUL   R1, =555   ; kerro R1:n arvo luvulla 555<br>
+ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+
+</text-box>
 
 Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin monimutkaisempi. On vaikea pitää kirjaa, mikä merkitys kullakin rekisterillä eri hetkillä on ja kaikki laskenta tapahtuu kuitenkin rekistereitä käyttäen. Konekielen numeerinen muoto on vielä vaikeampi, koska siinä on pelkkiä numeroita:
-<div>
- <example
-heading="Lauseke 87*555+32 numeerisella konekielellä"
-    description="35651571   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-    320864811     &nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
-    287309856     &nbsp;&nbsp;&nbsp;&nbsp; ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.">
-  </example>
-</div>
+
+<text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
+    
+35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+320864811     &nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
+287309856     &nbsp;&nbsp;&nbsp;&nbsp; ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.">
+
+</text-box>
 
 Symbolinen konekieli on huomattavasti mukavampaa lukea, eikö olekin! Yleensä konekieliset ratkaisut toteutetaan käyttäen symbolista konekieltä, joka [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) (muunnetaan) numeeriseen muotoon ennen suoritusta. Symbolisen konekielen kääntäminen konekieleksi on hyvin suoraviivaista, vaikka se ei ihan triviaalia olekaan.
 
@@ -119,26 +106,24 @@ Olisi mukavaa, jos tietokoneelle voisi antaa algoritmin missä tahansa muodossa,
 Ohjelmat toteutetaan ([ohjelmoidaan](https://fi.wikipedia.org/wiki/Ohjelmointi)) yleensä tätä varten suunnitelluilla korkean tason [ohjelmointikielillä](https://fi.wikipedia.org/wiki/Ohjelmointikieli). Ne ovat riittävän säännönmukaisia, jotta niillä kirjoitetut ohjelmat on helppo tai ainakin mahdollista muuttaa automaattisesti tietokoneella suoritettavaan muotoon. Tällaisia kieliä ovat esimerkiksi [Java](https://fi.wikipedia.org/wiki/Java), [C](https://fi.wikipedia.org/wiki/C_(ohjelmointikieli)), [C++](https://fi.wikipedia.org/wiki/C%2B%2B), [Scheme](https://fi.wikipedia.org/wiki/Scheme), [Prolog](https://fi.wikipedia.org/wiki/Prolog), [Python](https://fi.wikipedia.org/wiki/Python_(ohjelmointikieli)) ja [SQL](https://fi.wikipedia.org/wiki/SQL). Vanhimpia käyttökelpoisia korkean tason ohjelmointikieliä olivat 1950-luvulla julkaistut [Fortran](https://fi.wikipedia.org/wiki/Fortran) ja [ALGOL](https://fi.wikipedia.org/wiki/ALGOL). Fortran on edelleenkin käytössä, vaikka sitä on vuosien saatossa kehitetty huomattavasti.
 
 Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortran'illa, ALGOL'illa ja Schemellä vähän erilainen:
-<div>
- <example
-    heading="Lauseke 87*555+32 Javalla tai C'llä"
-    description="X = 87*555+32; &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona">
-  </example>
-</div>
+<text-box variant="example" name="Lauseke 87*555+32 Javalla tai C'llä">
+ 
+X = 87\*555+32;    -- vastaus on nyt muuttujan X arvona
+ 
+</text-box>
 
-<div>
- <example
-    heading="Lauseke 87*555+32 Fortran'illa tai ALGOL'illa"
-    description="X := 87*555+32;  &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona">
-  </example>
-</div>
 
-<div>
- <example
-    heading="Lauseke 87*555+32 Schemellä"
-    description="(+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona">
-  </example>
-</div>
+<text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa"
+ 
+X := 87\*555+32;   -- vastaus on nyt muuttujan X arvona">
+
+</text-box>
+
+<text-box variant="example" name="Lauseke 87\*555+32 Schemellä">
+
+(+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona"
+
+</text-box>
 
 Ratkaisujen ohjelmointi korkean tason kielellä on paljon lähempänä ihmisen omaa ajattelumallia ja sen vuoksi ainakin aluksi helpompia toteuttaa kuin (symbolisella) konekielellä kirjoitetut ohjelmat. Ohjelmia voi kirjoittaa myös symbolisella konekielellä, mutta se vaatii niin konekielen kuin sitä suorittavien suorittimien täsmällistä tuntemista. Yleensä käyttöjärjestelmän alimmat suoritinsidonnaiset osat tehdään (symbolisella) konekielellä, kun muu käyttöjärjestelmä ja tavallinen ohjelmointi toteutetaan korkean tason kielillä.
 
@@ -149,7 +134,8 @@ Ohjelmointi tehdään yleensä **korkean tason kielellä**. Tuloksena syntynyt o
 
 Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos tehdään vaiheittain. Ensin ohjelma [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) konekieliseen muotoon. Sitten siihen [linkitetään](https://en.wikipedia.org/wiki/Linker_(computing)) (yhdistetään) muita itse tehtyjä ohjelman osia tai valmiina eri kirjastoissa olevia ohjelmien osia eli kirjastomoduuleita.
 
--- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys-draft
+<!-- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys -->
+![Kolme isoa laatikkoa, jotka kuvaavat kaikki massamuistin sisältöä. Vasemman puolimmainen laatikko esittää korkean tason kielistä esitystä ja siinä on kolme moduulia, Compute, Print ja Math. Kun ne käännetään, niistä saadaan keskimmäisen laatikon konekieliset esitykset moduuleille Compute, Print ja Math. Kirjastomoduuli Math voi olla siellä jo valmiinakin konekielisessä muodossa. Kun nämä kolme moduulia linkitetään yhteen, saadaan oikeanpuoliseen laatikkoon ohjelma P konekielisessä muodossa yhtenä latausmoduulina.](./ch-1-2-kaannos-linkitys.svg)
 <div>
 <illustrations motive="ch-1-2-kaannos-linkitys" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -157,6 +143,8 @@ Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos 
 Lopuksi ohjelma [ladataan](https://en.wikipedia.org/wiki/Loader_(computing)) konekielisessä muodossa tietokoneen muistiin ja sen suoritus voi alkaa. Näin tapahtuu esimerkiksi, kun klikkaat tietokoneen näytöllä jotain [kuvaketta](https://fi.wikipedia.org/wiki/Kuvake) (ikonia). Tällöin kyseisen ohjelman valmiiksi linkitetty konekielinen esitysmuoto ladataan massamuistista keskusmuistiin suoritusta varten. Joissakin tapauksissa kuvake voi esittää tiedostoa (esim. _cute-cat.jpg_, jolloin kuvaketta klikkaamalla aukeaa kyseistä tiedostoa käsittelevä ohjelma (esim. _Paint_) ja kyseinen tiedosto on ohjelmassa valmiiksi avattuna.
 
 -- kuva: lataus, ch-1-2-lataus-draft
+
+![Yksinkertainen esimerkkijärjestelmä, jossa Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa olevasta ohjelma P:stä menee nuoli muistissa olevaan prosessiin P1, joka sisältää P1:n koodin, datan ja muut tiedot.](./ch-1-2-lataus.svg)
 <div>
 <illustrations motive="ch-1-2-lataus" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -166,7 +154,8 @@ Kääntäjät, linkittäjät ja lataajat ovat ihan tavallisia ohjelmia ja ne sis
 ### Tulkittavat ohjelmointikielet
 Jotkut ohjelmointikielistä ovat ns. tulkittavia kieliä. Se tarkoittaa, että niillä kirjoitettuja ohjelmia ei käännetäkään suorituksen tekevän tietokoneen omalle konekielelle vaan ne annetaan jollekin toiselle ohjelmalle (tulkille) suoraan tai vähän muokattuna syötteenä. Esimerkkinä tällaisesta tulkittavasta korkean tason ohjelmointikielestä on [Python](https://fi.wikipedia.org/wiki/Ohjelmointikielen_tulkki). Python-tulkki on tässä tilanteessa se varsinainen tietokoneella suoritettava ohjelma ja sinun Pythonilla kirjoittama ohjelmasi vain tekstimuotoista dataa (syötettä) Python-tulkille. Python-tulkki taas on ihan tavallinen (esim.) C'llä kirjoitettu ohjelma. Tosin on olemassa myös Python-tulkki [PyPy](https://www.wikiwand.com/fi/PyPy), joka on kirjoitettu Pythonilla itsellään! Sehän on vähän sama kuin että ranskan kielen oppikirja olisi kirjoitettu vain ranskan kielellä ilman mitään sanastoa. Ei ihan helppoa!
 
--- kuva Python ohjelma, tulkki, tietokone, ch-1-2-python-tulkki-draft  (laita esimerkkiin Python-koodia...)
+-- kuva Python ohjelma, tulkki, tietokone, ch-1-2-python-tulkki
+![Yksinkertainen esimerkkijärjestelmä. Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa on suoritettava Python-ohjelma P sen tekstuaalisessa esitysmuodossa. Siellä on myös Python-tulkki konekielisessä esitysmuodossa. Lataamalla ohjelma Python-tulkki muistiin saadaan suorituksessa oleva prosessi PythonTulkki, jolle on annettu myös muistiin kopioitu ohjelma P datana.](./ch-1-2-python-tulkki.svg)
 <div>
 <illustrations motive="ch-1-2-python-tulkki" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -177,7 +166,8 @@ On olemassa tavukoodikääntäjiä myös muille ohjelmointikielille (esimerkiksi
 
 Java-virtuaalikoneen (JVM) voi toteuttaa myös muilla tavoin kuin tulkitsemalla. Yksi tapa on tavukoodin kääntäminen suoraan järjestelmän omalle konekielelle. Toinen tapa on sellaisen suorittimen toteuttaminen, joka tavallisten konekäskyjen lisäksi osaa suorittaa myös tavukoodin käskyjä konekäkyinä. Emme käsittele näitä tapoja tällä kurssilla sen enempää.
 
--- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM-draft  (laita Java ohjelma Javalla, ja tavukoodi Byte-koodina...)
+-- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM-draft
+![Yksinkertainen esimerkkijärjestelmä. Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa on tekstuaalisessa muodossa Java-ohjelma P, josta kääntämällä saadaan massamuistiin Java-ohjelma P tavukoodina. Massamuistissa on myös konekielinen JVM. JVM ladataan muistiin, jolloin siitä tulee prosessi JVM. Muistiin kopioidaan myös tavukoodinen Java-ohjelma P, joka syötetään datana JVM:lle.](./ch-1-2-JVM.svg)
 <div>
 <illustrations motive="ch-1-2-JVM" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -186,7 +176,7 @@ Tulkittavia ohjelmointikieliä moititaan usein hitaiksi, koska niillä kirjoitet
 
 Vaikka järjestelmässä suoritettaisiin missä tahansa muodossa olevaa ohjelmaa, niin todellisuudessa ollaan aina suorittamassa jotain tietokoneen omaa konekielistä koodia. Keskitymme jatkossa tällaisen konekielisen ohjelman suoritukseen, oli ohjelma sitten vaikkapa käyttäjän itse tekemä sovellus, Python-tulkki tai Javan tavukoodia tulkitseva JVM. Huomiomme kohteena on jatkossa vain sellaiset ohjelmat, joiden esitysmuoto suoritusaikana on tietokoneen oma konekieli.
 
--- quiz 1.2.1-6 Onko tämä ohjelma
+<!-- quiz 1.2.1-6 Onko tämä ohjelma -->
 <div><quiznator id="5c4f06fdfd9fd71425c61f43"></quiznator></div>
 <div><quiznator id="5c4f076714524713f95a05ec"></quiznator></div>
 <div><quiznator id="5c4f07c7017ffc13eddc93e1"></quiznator></div>
