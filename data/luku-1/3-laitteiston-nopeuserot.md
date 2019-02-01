@@ -14,8 +14,9 @@ Tietokoneelle asia on ihan erilainen. Millisekunti on miljoona nanosekuntia ja o
 
 
 -- Note: millisekunti, jne
-<div>
-  <note heading="Milli-, mikro-, nano- ja pikosekunti" description="
+
+<text-box variant="example" name="Milli-, mikro-, nano- ja pikosekunti">
+
 Sekunti = 1 000 ms = 1 000 000 µs = 1 000 000 000 ns = 1 000 000 000 000 ps.
 <br>
 Millisekunti = 1 ms = 0.001 sekuntia = 1 000 µs = 1 000 000 ns = 1 000 000 000 ps.
@@ -24,7 +25,9 @@ Mikrosekunti = 1 µs = 0.000 001 sekuntia = 1 000 ns = 1 000 000 ps.
 <br>
 Nanosekunti = 1 ns = 0.000 000 001 sekuntia = 1 000 ps.
 <br>
-Pikosekunti = 1 ps = 0.000 000 000 001 sekuntia."></note></div>
+Pikosekunti = 1 ps = 0.000 000 000 001 sekuntia."
+
+</text-box>
 
 Vaikka tietokonelaitteistoja kehitetään nopeammiksi koko ajan ja nykyisetkin laitteistot ovat kovin erilaisia keskenään, niin jonkinlaisia suuntaa antavia nopeuksia voidaan silti antaa. Ajatellaan esimerkiksi tilannetta, jossa haluamme lukea muuttujan X arvon. Jos arvo on suorittimen rekisterissä, siihen voisi kulua vaikkapa 1 ns. Vastaavasti sen saantiaika välimuistista voisi olla 4 ns, keskusmuistista 50 ns, [SSD](https://fi.wikipedia.org/wiki/SSD)-muistista 100 µs, kovalevyltä 10 ms ja internetpalvelimelta [Rio de Janeirosta](https://fi.wikipedia.org/wiki/Rio_de_Janeiro) 10 sekuntia.
 
@@ -32,8 +35,9 @@ Vaikka tietokonelaitteistoja kehitetään nopeammiksi koko ajan ja nykyisetkin l
 Laitteiston ja koko tietokonejärjestelmän nopeuseroja voi illustroida Teemun juustokakkuesimerkillä. Esimerkki on vähän lapsellinen, mutta koeta kestää.
 
 -- juustokakku kuva
+![Kokki, jonka kädessä on kulho ja juustoa. Aika 0.5 sekuntia (rekisteri). Pöytä, jossa on valmiina juustoa. Aika 1-2 sekuntia (välimuisti). Suljettu jääkaappi, jonka sisällä on juustoa. Aika 25 sekuntia (muisti). Saturnus-raketti nousemassa ylös ja viemässä Apollo-alusta kohti kuuta, jossa on juustoa. Aika 10 päivää (levy). SpaceX:n BRF-raketti lähtee matkalle Orion-alus nokassaan kohti Jupiterin Europa-kuuta, jossa on juustoa. Aika 4 vuotta (pilvi, ihminen).](./ch-1-3-juustokakku.svg)
 <div>
-<illustrations motive="ch-1-3-juustokakku-draft" frombottom="0" totalheight="70%"></illustrations>
+<illustrations motive="ch-1-3-juustokakku" totalheight="100%"></illustrations>
 </div>
 
 Teemu on tekemässä juustokakkua ja resepti vaatii nyt juuston lisäämisen kulhoon. Jos juusto on valmiiksi kädessä, sehän tipahtaa kulhoon yhdessä sekunnissa. Jos juusto pitää noukkia pöydältä, niin siihen menee muutama sekunti. Jääkaapista juuston hakuun menee vähän enemmän aikaa, kun Teemun pitää kävellä jääkaapille, avata sen ovi, ottaa juusto, sulkea jääkaapin ovi, kävellä takaisin pöydän ääreen, avata paketti ja laittaa juusto kulhoon. Tähän voisi kulua esim. 25 sekuntia.
@@ -62,7 +66,8 @@ Vielä suurempi nopeusero keskusmuistin ja erilaisten massamuistien välillä on
 
 Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nopeuseroa kurotaan umpeen [välityspalvelimilla](https://fi.wikipedia.org/wiki/V%C3%A4lityspalvelin) (proxy). Esimerkiksi, [Los Angeles'issa](https://fi.wikipedia.org/wiki/Los_Angeles) olevan paljon käytetyn kissankuvasivuston tiedostoja voi olla valmiiksi kopioituna verkkopalvelujen tarjoajan omalle välityspalvelimelle Suomessa. Näin paljon käytettyihin kissakuviin pääsee käsiksi nopeasti ja tiedonsiirron määrä Los Angeles'ista Suomeen vähenee huomattavasti.
 
--- kuva: muistihierarkia
+-- kuva: muistihierarkia ch-1-3-muistihierarkia-draft
+![olme sisäkkäistä aluetta. Sisimpänä on laitteisto, jossa on rekisterit, muisti ja niiden välissä välimuistit. Nuoli menee muistista välimuistien läpi rekistereihin. Keskellä on järjestelmätaso, jolla on laitteisto, massamuisti ja niiden välissä käyttöjärjestelmän ylläpitämä virtuaalimuisti ja levyvälimuisti. Nuoli menee massamuistista virtuaalimuistin ja levyvälimuistin läpi muistiin. Uloin alue on internet, jossa on tämä järjestelmän, pilvipalvelu/www ja niiden välissä välityspalvelin eli proxy. Nuoli pilvipalvelusta proxyn kautta massamuistiin. Laitteiston nopeus on ns-luokkaa, järjestelmän massamuistin nopeus ms-luokkaa. Pilvipalveluiden ja muun internetin nopeus on sekuntien luokkaa.](./ch-1-3-muistihierarkia-draft.jpg)
 <div>
 <illustrations motive="ch-1-3-muistihierarkia-draft" frombottom="0" totalheight="70%"></illustrations>
 </div>
