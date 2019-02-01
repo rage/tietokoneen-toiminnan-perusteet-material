@@ -34,14 +34,14 @@ Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ra
 </text-box>
 
 -- note: pyöräilyreitti  
-<text-box variant="example" name="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valitsemiseksi">
+<text-box variant="example" name="Algoritmi nopeimman pyöräilyreitin valitsemiseksi">
 
 1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
-      (Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;(Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
 2. Jaa kukin reitti pätkiin kadun/tien/polun/risteyksen tyypistä riippuen.
 3. Laske kullekin reittipätkälle sen vaatima aika pyöräilyyn.
 4. Laske kunkin reitin kokonaisaika.
-5. Näytä lyhimmän reitin kokonaisaika ja reitti kartalla.
+5. Näytä nopeimman reitin kokonaisaika ja reitti kartalla.
 
 </text-box>
 
@@ -53,7 +53,7 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 -- note: Funktio sum(table, n) 
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla. "
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
 
 </textbox>
 </div>
@@ -64,27 +64,27 @@ Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahan
 Erilaisten käyttöjärjestelmien palvelupyyntöjä kutsutaan joskus _järjestelmäkutsuiksi_, koska halutaan tehdä selkeä eri ohjelman omien aliohjelmien kutsuilla ja käyttöjärjestelmän palvelujen kutsuilla. Järjestelmäkutsuilla ohjelma siirtyy suorittamaan käyttöjärjestelmän palveluita ja sen vuoksi näiden (järjestelmä)palveluiden toteutuksen kanssa pitää olla erityisen varovainen. Kukin järjestelmäpalvelu tarkistaa kutsun yhteydessä, onko sitä kutsuneella ohjelmalla oikeus käyttää tuota palvelua. Esimerkiksi, mikä tahansa ohjelma voi kirjoittaa omia tietojaan kovalevylle, mutta mikä tahansa ohjelma ei saa fyysisesti tutkia kovalevyn sisältöä. Sen lisäksi käyttöjärjestelmä valvoo, että ohjelma saa lukea ja kirjoittaa vain sellaisia tietoja, mihin sillä on oikeus.
 
 -- note: Ohjelman oikeudet
-<text-box variant="example" name="uoritettavan ohjelman oikeudet järjestelmässä">
+<text-box variant="example" name="Suoritettavan ohjelman oikeudet järjestelmässä">
 
 Miten määräytyy, että mitä tietoja jokin ohjelma saa kovalevyltä lukea? Kun käyttäjä Tiina kirjautuu tietokonejärjestelmään, järjestelmä tunnistaa Tiinan esimerkiksi käyttäjätunnuksen ja salalauseen (pitkä salasana) avulla. Aina kun Tiina käynnistää jonkin ohjelman (esim. Peli) vaikkapa klikkaamalla sen kuvaketta, järjestelmä käynnistää kyseisen ohjelman käyttäjän Tiina oikeuksin.
-
+<br><br>
 Oletetaan, että tällä suorituskerralla ohjelma Peli haluaa lukea jonkin tiedoston (esim. Tiinan-pelitilanne). Käyttöjärjestelmä tarkistaa tiedostoa Tiinan-pelitilanne avattaessa, onko ohjelmalla Peli tällä suorituskerralla oikeus lukea kyseistä tiedostoa. Tiina oli itse luonut tiedoston pelatessaaan samaa peliä aikaisemmin, joten tiedoston omistajaksi oli merkitty Tiina. Täten kaikki Tiinan myöhemminkin käynnistämät ohjelmat saavat lukea tuota tiedostoa. Kaikki on siis hyvin ja Peli saa nyt lukea tiedostoa Tiinan-pelitilanne.
-
+<br><br>
 Koko järjestelmän luotettavuus perustuu sille, että Tiina on tunnistettu oikein. Tyypillinen tietoturvaan liittyvä hyökkäys järjestelmään tapahtuu, kun Tiina vahingossa klikkaa jotain kivaa kissakuvaa verkkoselaimella. Pelkän kuvan näyttämisen lisäksi voi nyt käynnistyä jokin haittaohjelma, joka on suorituksessa käyttäjän Tiina kaikilla oikeuksilla. Haittaohjelmalla on pääsy kaikkiin Tiinan tietoihin ja se voi esimerkiksi käyttää Tiinan osoitekirjaa lähettääkseen tietojenkalastelupyynnön kaikille Tiinan kavereille. Ja kaverithan vastaavat, kun kerran kysely tuli heidän kaveriltaan Tiinalta! Kyselyn mukana voi tutuille kulkeutua se haittaohjelmakin.
-
+<br><br>
 Omaa tietoturvaasi voi saada paremmaksi helpoillakin konsteilla. Käytä pitkiä salalauseita, äläkä käytä samaa salalausetta useassa paikassa. Oma salalause kannattaa pitää tarpeeksi pitkänä (ainakin 16 merkkiä) ja muutenkin monimutkaisena yhdistelmänä erikoismerkkejä, numeroita ja eri kokoisia kirjaimia. Älä kirjaudu eri palveluihin jonkin muun palvelun tunnuksilla. Käytä salalauseiden hallintaan salalauseholvia (sanasanaholvia), jossa itsessään on hyvin pitkä salalause. Muista kuitenkin, että mikään tietoturva ei ole täydellinen. Varaudu siis henkisesti siihen, että kaikki verkkoon laittamasi tieto voi joskus vuotaa julkiseksi.
-
+<br><br>
 Toinen hyvä konstin tietoturvan lisäämiseksi on käyttää tietokonetta yleensä tavallisena käyttäjänä eikä ylläpitäjänä. Jos kissakuvaa klikkaamalla vahingossa käynnistyy jokin haittaohjelma, on paljon mukavampaa kun se temmeltää koneellasi ainoastaan tavallisen käyttäjän oikeuksin! Ylläpitäjän oikeuksin toimiva haittaohjelma voi kirjaimellisesti tehdä tietokoneellasi ihan mitä haluaa ja siitä voi olla hyvin vaikea päästä eroon.
 
 </text-box>
 
 ### Symbolinen konekieli, numeerinen konekieli
-Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla
+Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla vaikkapa:
 
-<text-box variant="example" name=Lauseke 87*555+32 symbolisella konekielellä">
+<text-box variant="example" name="Lauseke 87*555+32 symbolisella konekielellä">
 
-LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
-MUL   R1, =555   ; kerro R1:n arvo luvulla 555
+LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+MUL   R1, =555   ; kerro R1:n arvo luvulla 555<br>
 ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
@@ -93,8 +93,8 @@ Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin mon
 
 <text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
 
-35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
-320864811   ; kerro R1:n arvo luvulla 555
+35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+320864811   ; kerro R1:n arvo luvulla 555<br>
 287309856   ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
@@ -107,15 +107,16 @@ Olisi mukavaa, jos tietokoneelle voisi antaa algoritmin missä tahansa muodossa,
 Ohjelmat toteutetaan ([ohjelmoidaan](https://fi.wikipedia.org/wiki/Ohjelmointi)) yleensä tätä varten suunnitelluilla korkean tason [ohjelmointikielillä](https://fi.wikipedia.org/wiki/Ohjelmointikieli). Ne ovat riittävän säännönmukaisia, jotta niillä kirjoitetut ohjelmat on helppo tai ainakin mahdollista muuttaa automaattisesti tietokoneella suoritettavaan muotoon. Tällaisia kieliä ovat esimerkiksi [Java](https://fi.wikipedia.org/wiki/Java), [C](https://fi.wikipedia.org/wiki/C_(ohjelmointikieli)), [C++](https://fi.wikipedia.org/wiki/C%2B%2B), [Scheme](https://fi.wikipedia.org/wiki/Scheme), [Prolog](https://fi.wikipedia.org/wiki/Prolog), [Python](https://fi.wikipedia.org/wiki/Python_(ohjelmointikieli)) ja [SQL](https://fi.wikipedia.org/wiki/SQL). Vanhimpia käyttökelpoisia korkean tason ohjelmointikieliä olivat 1950-luvulla julkaistut [Fortran](https://fi.wikipedia.org/wiki/Fortran) ja [ALGOL](https://fi.wikipedia.org/wiki/ALGOL). Fortran on edelleenkin käytössä, vaikka sitä on vuosien saatossa kehitetty huomattavasti.
 
 Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortran'illa, ALGOL'illa ja Schemellä vähän erilainen:
+
 <text-box variant="example" name="Lauseke 87*555+32 Javalla tai C'llä">
 
-X = 87\*555+32;    -- vastaus on nyt muuttujan X arvona
- 
+X = 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
+
 </text-box>
 
 <text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa">
 
-X := 87\*555+32;   -- vastaus on nyt muuttujan X arvona
+X := 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
 
 </text-box>
 
