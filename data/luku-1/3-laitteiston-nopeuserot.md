@@ -92,19 +92,3 @@ Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen 
 Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen osan tehtävien kanssa.
 <div><quiznator id="5c544eec3972a91474103008"></quiznator></div>
 
--- allaolevan voinee poistaa?
-
-<div>
-  <part-summary chapter="1" heading="Käytyäsi nyt läpi luvun 1 sinun pitäisi osata karkealla tasolla selittää,"
-listitems='[
-  {"content":"Mikä tietokone oikeastaan on ja minkälaisia osia siihen kuuluu?"},
-  {"content":"Mikä on algoritmi?"},
-  {"content":"Mikä on tietokoneohjelma ja minkälaista ohjelmaa tietokone osaa suorittaa?"},
-  {"content":"Minkälaisia esitysmuotoja sillä on?"},
-  {"content":"Minkä ongelman välimuisti ratkaisee?"},
-  {"content":"Minkä ongelman virtuaalimuisti ratkaisee?"},
-  {"content":"Mitkä ovat suorittimen rekisterin, keskusmuistin ja levymuistin nopeudet suhteensa toisiinsa?"},
-  {"content":"Mikä merkitys laitteiston nopeuseroilla on tietokonejärjestelmän toteutuksessa?"}
-    ]'
-  </part-summary>
-</div>
