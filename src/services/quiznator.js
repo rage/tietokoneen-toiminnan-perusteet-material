@@ -18,51 +18,51 @@ export async function fetchQuiznatorProgress() {
   const partToTag = [
     {
       part: "osa01",
-      tag: "ohjelmoinnin-mooc-2019-1",
+      tag: "tietokonen-toiminnan-perusteet-1",
     },
     {
       part: "osa02",
-      tag: "ohjelmoinnin-mooc-2019-2",
+      tag: "tietokonen-toiminnan-perusteet-2",
     },
     {
       part: "osa03",
-      tag: "ohjelmoinnin-mooc-2019-3",
+      tag: "tietokonen-toiminnan-perusteet-3",
     },
     {
       part: "osa04",
-      tag: "ohjelmoinnin-mooc-2019-4",
+      tag: "tietokonen-toiminnan-perusteet-4",
     },
     {
       part: "osa05",
-      tag: "ohjelmoinnin-mooc-2019-5",
+      tag: "tietokonen-toiminnan-perusteet-5",
     },
     {
       part: "osa06",
-      tag: "ohjelmoinnin-mooc-2019-6",
+      tag: "tietokonen-toiminnan-perusteet-6",
     },
     {
       part: "osa07",
-      tag: "ohjelmoinnin-mooc-2019-7",
+      tag: "tietokonen-toiminnan-perusteet-7",
     },
     {
       part: "osa08",
-      tag: "ohjelmoinnin-mooc-2019-8",
+      tag: "tietokonen-toiminnan-perusteet-8",
     },
     {
       part: "osa09",
-      tag: "ohjelmoinnin-mooc-2019-9",
+      tag: "tietokonen-toiminnan-perusteet-9",
     },
     {
       part: "osa010",
-      tag: "ohjelmoinnin-mooc-2019-10",
+      tag: "tietokonen-toiminnan-perusteet-10",
     },
     {
       part: "osa11",
-      tag: "ohjelmoinnin-mooc-2019-11",
+      tag: "tietokonen-toiminnan-perusteet-11",
     },
     {
       part: "osa12",
-      tag: "ohjelmoinnin-mooc-2019-12",
+      tag: "tietokonen-toiminnan-perusteet-12",
     },
   ]
   const quizIdInformation = await fetchQuizIds()
@@ -94,7 +94,7 @@ export async function fetchQuiznatorProgress() {
 export async function fetchQuizIds() {
   const res = await axios.post(
     `${BASE_URL}/api/v1/tags/quizids`,
-    { tags: ["ohjelmoinnin-mooc-2019"] },
+    { tags: ["tietokonen-toiminnan-perusteet"] },
     { headers: { Authorization: `Bearer ${accessToken()}` } },
   )
   return res.data
