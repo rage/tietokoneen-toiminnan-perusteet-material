@@ -23,33 +23,34 @@ title: 'Ohjelma'
 </text-box>
 
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
-<div>
- <example
-    heading="Algoritmi lausekkeen laskemiseksi"
-    description="nollaa laskimen muisti.<br>
-    laske 87 * 555.<br>
-    lisää tuloon 32.">
-  </example>
-</div>
 
-<div>
- <example
-    heading="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valintaan"
-    description="Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)<br>
-    Jaa kukin reitti pätkiin kadun/tien/polun/risteyksen tyypistä riippuen.<br>
-    Laske kullekin reittipätkälle sen vaatima aika pyöräilyyn.<br>
-    Laske kunkin reitin kokonaisaika.<br>
-    Näytä lyhimmän reitin kokonaisaika ja reitti kartalla.">
-  </example>
-</div>
+-- note: lauseke 
+<text-box variant="example" name="Algoritmi lausekkeen laskemiseksi">
+ 
+1. nollaa laskimen muisti.
+2. laske 87 * 555.
+3. lisää tuloon 32.
+
+</text-box>
+
+-- note: pyöräilyreitti  
+<text-box variant="example" name="Karkea algoritmi ajan mukaan lyhyimmän pyöräilyreitin valintaan">
+ 
+1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
+      (Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
+2. Jaa kukin reitti pätkiin kadun/tien/polun/risteyksen tyypistä riippuen.
+3. Laske kullekin reittipätkälle sen vaatima aika pyöräilyyn.
+4. Laske kunkin reitin kokonaisaika.
+5. Näytä lyhimmän reitin kokonaisaika ja reitti kartalla.
+
+</text-box>
 
 ### Kontrollin siirto
 Ohjelmille on tyypillistä, että niissä on joukko peräkkäin suoritettavia enemmän tai vähemmän monimutkaisia toimintoja. Yleensä ohjelmassa suoritetaan toimintoja siinä järjestyksessä kuin ne ohjelmassa esitetään. Joissakin tapauksissa on kuitenkin tärkeää, että tästä oletusarvoisesta toimintojen järjestyksestä poiketaan. Tällaista tapahtumaa kutsutaan _kontrollin siirroksi_. Tyypillinen tapaus on _haarautuminen_, jossa tietyn ehdon vallitessa valitaan kahdesta tai useammasta vaihtoehdosta se oikea toimintojen joukko tällä suorituskerralla. Toinen tyypillinen tapaus on [toistorakenteiden](https://fi.wikipedia.org/wiki/Toistorakenne) (silmukoiden) käyttö, missä annettu joukko toimintoja suoritetaan monta kertaan kunnes jokin ehto tulee todeksi.
 
 Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https://fi.wikipedia.org/wiki/Aliohjelma) (funktio, metodi). Aliohjelmassa annettua joukkoa toimintoja voidaan suorittaa useammasta paikkaa ohjelmaa _kutsumalla_ kyseistä aliohjelmaa, mahdollisesti joidenkin [parametrien](https://fi.wikipedia.org/wiki/Parametri_(tietotekniikka)) kanssa. Aliohjelman kutsuminen on täsmällisesti määritelty toiminto muiden toimintojen joukossa. Parametrien avulla aliohjelman toimintaa voidaan säätää joka kutsukerralla siihen tilanteeseen sopivaksi. Aliohjelmat voivat myös palauttaa jonkin arvon kutsukohtaan, jolloin niitä sanotaan _funktioiksi_. Joissakin ohjelmointikielissä aliohjelmia tai funktioita sanotaan [metodeiksi](https://fi.wikipedia.org/wiki/Olio-ohjelmointi). Aliohjelmille on tyypillistä, että niillä on oma _laskentaympäristö_, jossa voi esimerkiksi olla aliohjelman omia tietorakenteita. Niitä voi käyttää vain tämän aliohjelman suorituksen aikana. Aliohjelmille on ominaista, että sen toimintojen loppuun suorittamisen jälkeen palataa takaisin aliohjelman kutsukohtaan. Aliohjelmaa kutsuttaessa kontrolli siirtyy sen alkuun ja aliohjelmasta palatessa kontrolli palaa aina aliohjelman kutsukohdan jälkeiseen toimintaan.
 
-<!-- note: Funktio sum(table, n)  -->
+-- note: Funktio sum(table, n) 
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
 Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla. "
@@ -82,8 +83,8 @@ Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wik
 
 <text-box variant="example" name=Lauseke 87*555+32 symbolisella konekielellä">
                                                                              
-LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-MUL   R1, =555   ; kerro R1:n arvo luvulla 555<br>
+LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
+MUL   R1, =555   ; kerro R1:n arvo luvulla 555
 ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
@@ -92,9 +93,9 @@ Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin mon
 
 <text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
     
-35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-320864811     &nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
-287309856     &nbsp;&nbsp;&nbsp;&nbsp; ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.">
+35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
+320864811   ; kerro R1:n arvo luvulla 555
+287309856   ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
 
@@ -112,16 +113,15 @@ X = 87\*555+32;    -- vastaus on nyt muuttujan X arvona
  
 </text-box>
 
-
-<text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa"
+<text-box variant="example" name="Lauseke 87\*555+32 Fortran'illa tai ALGOL'illa">
  
-X := 87\*555+32;   -- vastaus on nyt muuttujan X arvona">
+X := 87\*555+32;   -- vastaus on nyt muuttujan X arvona
 
 </text-box>
 
 <text-box variant="example" name="Lauseke 87\*555+32 Schemellä">
 
-(+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona"
+(+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona
 
 </text-box>
 
@@ -134,7 +134,7 @@ Ohjelmointi tehdään yleensä **korkean tason kielellä**. Tuloksena syntynyt o
 
 Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos tehdään vaiheittain. Ensin ohjelma [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) konekieliseen muotoon. Sitten siihen [linkitetään](https://en.wikipedia.org/wiki/Linker_(computing)) (yhdistetään) muita itse tehtyjä ohjelman osia tai valmiina eri kirjastoissa olevia ohjelmien osia eli kirjastomoduuleita.
 
-<!-- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys -->
+-- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys 
 ![Kolme isoa laatikkoa, jotka kuvaavat kaikki massamuistin sisältöä. Vasemman puolimmainen laatikko esittää korkean tason kielistä esitystä ja siinä on kolme moduulia, Compute, Print ja Math. Kun ne käännetään, niistä saadaan keskimmäisen laatikon konekieliset esitykset moduuleille Compute, Print ja Math. Kirjastomoduuli Math voi olla siellä jo valmiinakin konekielisessä muodossa. Kun nämä kolme moduulia linkitetään yhteen, saadaan oikeanpuoliseen laatikkoon ohjelma P konekielisessä muodossa yhtenä latausmoduulina.](./ch-1-2-kaannos-linkitys.svg)
 <div>
 <illustrations motive="ch-1-2-kaannos-linkitys" frombottom="0" totalheight="100%"></illustrations>
@@ -142,8 +142,7 @@ Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos 
 
 Lopuksi ohjelma [ladataan](https://en.wikipedia.org/wiki/Loader_(computing)) konekielisessä muodossa tietokoneen muistiin ja sen suoritus voi alkaa. Näin tapahtuu esimerkiksi, kun klikkaat tietokoneen näytöllä jotain [kuvaketta](https://fi.wikipedia.org/wiki/Kuvake) (ikonia). Tällöin kyseisen ohjelman valmiiksi linkitetty konekielinen esitysmuoto ladataan massamuistista keskusmuistiin suoritusta varten. Joissakin tapauksissa kuvake voi esittää tiedostoa (esim. _cute-cat.jpg_, jolloin kuvaketta klikkaamalla aukeaa kyseistä tiedostoa käsittelevä ohjelma (esim. _Paint_) ja kyseinen tiedosto on ohjelmassa valmiiksi avattuna.
 
--- kuva: lataus, ch-1-2-lataus-draft
-
+-- kuva: lataus, ch-1-2-lataus
 ![Yksinkertainen esimerkkijärjestelmä, jossa Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa olevasta ohjelma P:stä menee nuoli muistissa olevaan prosessiin P1, joka sisältää P1:n koodin, datan ja muut tiedot.](./ch-1-2-lataus.svg)
 <div>
 <illustrations motive="ch-1-2-lataus" frombottom="0" totalheight="100%"></illustrations>
@@ -166,7 +165,7 @@ On olemassa tavukoodikääntäjiä myös muille ohjelmointikielille (esimerkiksi
 
 Java-virtuaalikoneen (JVM) voi toteuttaa myös muilla tavoin kuin tulkitsemalla. Yksi tapa on tavukoodin kääntäminen suoraan järjestelmän omalle konekielelle. Toinen tapa on sellaisen suorittimen toteuttaminen, joka tavallisten konekäskyjen lisäksi osaa suorittaa myös tavukoodin käskyjä konekäkyinä. Emme käsittele näitä tapoja tällä kurssilla sen enempää.
 
--- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM-draft
+-- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM
 ![Yksinkertainen esimerkkijärjestelmä. Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa on tekstuaalisessa muodossa Java-ohjelma P, josta kääntämällä saadaan massamuistiin Java-ohjelma P tavukoodina. Massamuistissa on myös konekielinen JVM. JVM ladataan muistiin, jolloin siitä tulee prosessi JVM. Muistiin kopioidaan myös tavukoodinen Java-ohjelma P, joka syötetään datana JVM:lle.](./ch-1-2-JVM.svg)
 <div>
 <illustrations motive="ch-1-2-JVM" frombottom="0" totalheight="100%"></illustrations>
