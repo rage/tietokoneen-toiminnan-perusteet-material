@@ -59,9 +59,9 @@ Emme takaa mihin kellonaikaan kurssimateriaalin uusi osa ilmestyy. Vaikka materi
 
 Ohjaa TE-toimisto tälle sivulle:
 
-Ohjelmoinnin MOOC on kaikille avoin ja ilmainen verkkokurssi. Kurssin käymistä voi verrata kirjan lainaamiseen kirjastosta. Kirjastosta lainattava kirja saattaa liittyä johonkin yliopisto-opintoihin liittyvään kurssiin. Aivan samalla tavalla kuin kirjastosta lainattava kirja, verkkokurssimme on luettavissa huvin ja itsensä sivistämisen vuoksi tai yliopisto-opintojen edistämiseksi.
+Tietokoneen toiminnan perusteet on kaikille avoin ja ilmainen verkkokurssi. Kurssin käymistä voi verrata kirjan lainaamiseen kirjastosta. Kirjastosta lainattava kirja saattaa liittyä johonkin yliopisto-opintoihin liittyvään kurssiin. Aivan samalla tavalla kuin kirjastosta lainattava kirja, verkkokurssimme on luettavissa huvin ja itsensä sivistämisen vuoksi tai yliopisto-opintojen edistämiseksi.
 
-Ohjelmoinnin MOOC on Helsingin yliopiston kurssien Ohjelmoinnin perusteet (5 opintopistettä) ja Ohjelmoinnin jatkokurssi (5 opintopistettä) kurssimateriaali. Kurssin suorittajat eivät kuitenkaan automaattisesti ole Helsingin yliopiston opiskelijoita, emmekä pakota ketään suorittamaan kurssia opintopisteisiin johtavassa muodossa. Kurssista voi kuitenkin halutessaan -- ja kurssin menestyksekkäästi suorittamalla -- saada opintopisteitä.
+Tietokoneen toiminnan perusteet on Helsingin yliopiston kurssien Ohjelmoinnin perusteet (5 opintopistettä) ja Ohjelmoinnin jatkokurssi (5 opintopistettä) kurssimateriaali. Kurssin suorittajat eivät kuitenkaan automaattisesti ole Helsingin yliopiston opiskelijoita, emmekä pakota ketään suorittamaan kurssia opintopisteisiin johtavassa muodossa. Kurssista voi kuitenkin halutessaan -- ja kurssin menestyksekkäästi suorittamalla -- saada opintopisteitä.
 
 ### Saan tukea Työ- ja elinkeinotoimistolta. Voinko silti tehdä kurssin?
 

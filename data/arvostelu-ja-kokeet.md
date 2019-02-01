@@ -5,7 +5,7 @@ hidden: false
 information_page: true
 ---
 
-Ohjelmoinnin MOOC sisältää Helsingin yliopiston kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Kummastakin osasta järjestetään verkossa tehtävä koe, ja kummastakin osasta saa erillisen arvosanan. Ohjelmoinnin MOOCista on kaksi versiota: aikataulutettu kurssi ja aikatauluttamaton kurssi. Näiden arvostelu poikkeaa hieman toisistaan.
+Tietokoneen toiminnan perusteet sisältää Helsingin yliopiston kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Kummastakin osasta järjestetään verkossa tehtävä koe, ja kummastakin osasta saa erillisen arvosanan. Tietokoneen toiminnan perusteetista on kaksi versiota: aikataulutettu kurssi ja aikatauluttamaton kurssi. Näiden arvostelu poikkeaa hieman toisistaan.
 
 ## Aikataulutettu kurssi
 
@@ -23,7 +23,7 @@ Ohjelmoinnin jatkokurssia vastaava koe suoritetaan materiaalin osien 8-14 jälke
 - 8.6.
 - 29.6.
 
-Täydet tehtäväpisteet kustakin osasta saa tekemällä osan kaikkien tehtävien pisteistä vähintään 90%, puolet tekemällä noin 45% jne. Huomaathan, että mikäli haet opiskelupaikkaa Ohjelmoinnin MOOCin kautta, tulee sinun saada vähintään 90% jokaisen osan ohjelmoinitehtäväpisteistä. Omat ohjelmointitehtäväpisteet näkee helpoiten materiaalin pistevisualisaatiosta, jonka saa auki klikkaamalla sinistä palloa sivun oikeassa alareunassa.
+Täydet tehtäväpisteet kustakin osasta saa tekemällä osan kaikkien tehtävien pisteistä vähintään 90%, puolet tekemällä noin 45% jne. Huomaathan, että mikäli haet opiskelupaikkaa Tietokoneen toiminnan perusteetin kautta, tulee sinun saada vähintään 90% jokaisen osan ohjelmoinitehtäväpisteistä. Omat ohjelmointitehtäväpisteet näkee helpoiten materiaalin pistevisualisaatiosta, jonka saa auki klikkaamalla sinistä palloa sivun oikeassa alareunassa.
 
 Kokeeseen saa osallistua kun on tehnyt vähintään 25% jokaisen osan tehtävien pisteistä. Aikatauluttamattomassa kurssissa kokeesta tulee saada vähintään puolet kurssin pisteistä kurssin läpäiseksi.
 
@@ -37,7 +37,7 @@ Kurssin aikatauluttamaton versio julkaistaan aikataulutetun version ensimmäisen
 
 ## Arvosanan muodostuminen
 
-Ohjelmoinnin MOOCista annetaan kaksi arvosanaa, jotka vastaavat kursseja Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Kumpikin arvostellaan seuraavalla asteikolla:
+Tietokoneen toiminnan perusteetista annetaan kaksi arvosanaa, jotka vastaavat kursseja Ohjelmoinnin perusteet ja Ohjelmoinnin jatkokurssi. Kumpikin arvostellaan seuraavalla asteikolla:
 
 <table>
     <thead>

@@ -5,7 +5,7 @@ hidden: false
 information_page: true
 ---
 
-Ohjelmoinnin MOOCissa opit perustaidot ohjelmoinnista Java-kielellä. Ohjelmoinnin MOOC sisältää kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Osakohtaiset osaamistavoitteet ovat seuraavat.
+Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielellä. Tietokoneen toiminnan perusteet sisältää kurssit Ohjelmoinnin perusteet (materiaalin osat 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin osat 8-14). Osakohtaiset osaamistavoitteet ovat seuraavat.
 
 ## Ohjelmoinnin perusteet
 

@@ -22,26 +22,26 @@ const IndexPage = () => (
       <section id="yleistä">
         <h1>Tietoa kurssista</h1>
         <p>
-          Ohjelmoinnin MOOC on kaikille avoin ja ilmainen ohjelmoinnin perusteet
-          opettava verkkokurssi. Kurssilla perehdytään nykyaikaisen ohjelmoinnin
-          perusideoihin sekä ohjelmoinnissa käytettävien työvälineiden lisäksi
-          algoritmien laatimiseen. Kurssille osallistuminen ei vaadi
-          ennakkotietoja ohjelmoinnista.
+          Tietokoneen toiminnan perusteet on kaikille avoin ja ilmainen
+          ohjelmoinnin perusteet opettava verkkokurssi. Kurssilla perehdytään
+          nykyaikaisen ohjelmoinnin perusideoihin sekä ohjelmoinnissa
+          käytettävien työvälineiden lisäksi algoritmien laatimiseen. Kurssille
+          osallistuminen ei vaadi ennakkotietoja ohjelmoinnista.
         </p>
         <p>
-          Ohjelmoinnin MOOC vastaa sisällöltään Helsingin yliopiston
-          tietojenkäsittelytieteen laitoksen kursseja Ohjelmoinnin perusteet ja
-          Ohjelmoinnin jatkokurssi. Kurssit vastaavat yhteensä kymmentä
-          opintopistettä (5+5).
+          Tietokoneen toiminnan perusteet vastaa sisällöltään Helsingin
+          yliopiston tietojenkäsittelytieteen laitoksen kursseja Ohjelmoinnin
+          perusteet ja Ohjelmoinnin jatkokurssi. Kurssit vastaavat yhteensä
+          kymmentä opintopistettä (5+5).
         </p>
         <p>
-          Ohjelmoinnin MOOC tarjoaa mahdollisuuden opinto-oikeuteen
-          tietojenkäsittelytieteen opintoihin Helsingin yliopistolla. Mikäli
-          haet kurssin kautta opinto-oikeutta, lue kaikki opinto-oikeuden
-          hakemiseen liittyvät tiedot huolellisesti. Esimerkiksi tehtävien
-          aikarajoista EI voida joustaa lainkaan. Ehdot opinto-oikeuden
-          saamiseksi päivittyvät lähempänä yhteishakua. Lisätietoa
-          opinto-oikeudesta saat{" "}
+          Tietokoneen toiminnan perusteet tarjoaa mahdollisuuden
+          opinto-oikeuteen tietojenkäsittelytieteen opintoihin Helsingin
+          yliopistolla. Mikäli haet kurssin kautta opinto-oikeutta, lue kaikki
+          opinto-oikeuden hakemiseen liittyvät tiedot huolellisesti. Esimerkiksi
+          tehtävien aikarajoista EI voida joustaa lainkaan. Ehdot
+          opinto-oikeuden saamiseksi päivittyvät lähempänä yhteishakua.
+          Lisätietoa opinto-oikeudesta saat{" "}
           <GatsbyLink to="/opinto-oikeus">täältä</GatsbyLink>.
         </p>
         <p>

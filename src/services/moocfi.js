@@ -42,7 +42,7 @@ export function createAccount(data) {
   data.username = uuidv4()
   const body = {
     user: data,
-    origin: "Ohjelmoinnin MOOC 2019",
+    origin: "Tietokoneen toiminnan perusteet 2019",
     language: "fi",
   }
   return new Promise((resolve, reject) => {

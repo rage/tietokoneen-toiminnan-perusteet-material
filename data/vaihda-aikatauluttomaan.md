@@ -55,7 +55,7 @@ Mikäli haluat siirtyä aikatauluttomalle kurssille, lue seuraavat ohjeet huolel
 
 11) Suosittelemme että suljet aikataulullisen kurssin tehtävät NetBeansista. Tämä onnistuu valitsemalla tehtäväpohjat vasemman reunan sivupalkista, klikkaamalla sitä hiiren toissijaisella painikkeella ja valitsemalla "close". Tämä ei poista tehtäviä lopullisesti, vaan voit tarvittaessa vielä tarkastella niitä uudelleen. Sulkemista suositellaan, koska aikatauluttoman ja -taulullisen kurssin tehtävillä on tismalleen samat nimet. Tämän vuoksi on helppoa vahingossa tehdä väärän kurssin tehtäviä.
 
-12) Vaihda Netbeansin TMC-asetuksista kurssiksi "Ohjelmoinnin MOOC 2019 (aikatauluton)". TMC-asetuksiin pääsee käsiksi painamalla NetBeansin ylävalikosta "TMC", ja avautuvasta listasta "Settings".
+12) Vaihda Netbeansin TMC-asetuksista kurssiksi "Tietokoneen toiminnan perusteet 2019 (aikatauluton)". TMC-asetuksiin pääsee käsiksi painamalla NetBeansin ylävalikosta "TMC", ja avautuvasta listasta "Settings".
 
 13) Lataa NetBeansin tarjoamat uudet tehtäväpohjat. Netbeans saattaa tässä yhteydessä ladata tyhjiä tehtäväpohjia myös jo aiemmin tekemillesi aikatauluttoman kurssin tehtäville. Tarkista TMC-profiilistasi (http://tmc.mooc.fi/participants/me), mitkä tehtävät voit jättää huomiotta. Jos NetBeans ei tarjoa uusia tehtäväpohjia, paina NetBeansin yläpalkin TMC-valikosta "Download/update exercises".
 
