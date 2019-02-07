@@ -72,8 +72,8 @@ Muistin kokoa mitataan yleisesti tavuina ([B](https://fi.wikipedia.org/wiki/Tavu
 On vähän häiritsevää, että perustavaa laatua olevassa numerotiedossa on kahta erilaista käytäntöä. Merkintäongelma aiheutuu numerojärjestelmistä. Tietokoneen toteutus pohjautuu bitteihin ja usean bitin muodostamat luvut ovat 2-järjestelmän lukuja. Samoja etuliitteitä käytetään niin binäärijärjestelmässä kuin kymmenjärjestelmässäkin. Täten etuliitteet K, M ja G voivat tarkoittaa tilanteesta riippuen joko lukuja
 2<sup>10</sup>=1024,  2<sup>20</sup>=1 048 576, 2<sup>30</sup>=1 073 741 824 tai lukuja
 10<sup>3</sup>=1000,  10<sup>6</sup>=1 000 000, 10<sup>9</sup>=1 000 000 000.
-
-Ongelmaa selventämään on tuotu uuden IEC-standardin mukaiset termit (kibitavu KiB, mebitavu MiB, gibitavu GiB, jne) kuvaamaan muistien kokoa tavuina binäärijärjestelmässä. Uudet termit eivät vielä oikein lyöneet läpi, joten merkintätapojen sekavuus jatkuu. Se ei kuitenkaan haittaa paljoa, koska mitään suuria virheitä ei tämän vuoksi tule.
+<br><br>
+Ongelmaa selventämään on tuotu uuden IEC-standardin mukaiset termit (kibitavu KiB, mebitavu MiB, gibitavu GiB, jne) kuvaamaan muistien kokoa tavuina binäärijärjestelmässä. Uudet termit eivät vielä ole oikein lyöneet läpi, joten merkintätapojen sekavuus jatkuu. Se ei kuitenkaan haittaa paljoa, koska mitään suuria virheitä ei tämän vuoksi tule.
 
 </text-box>
 
