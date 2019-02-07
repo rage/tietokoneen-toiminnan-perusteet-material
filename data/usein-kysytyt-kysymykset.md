@@ -7,7 +7,8 @@ information_page: true
 
 Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi vastausta täältä, voit esitttää sen [tukiväylillämme](/tukivaylat).
 
-## Vanhaa tietoa, ohjelmintikurssilta (DRAFT - kesken)
+## Vanhaa tietoa, ohjelmointikurssilta (DRAFT - kesken)
+Älä käytä tällä sivulla olevaa tietoa!!
 
 <table-of-contents></table-of-contents>
 
