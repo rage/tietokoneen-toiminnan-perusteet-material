@@ -56,7 +56,7 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan (taulukossa Palkka) 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
 
 </textbox>
 </div>
