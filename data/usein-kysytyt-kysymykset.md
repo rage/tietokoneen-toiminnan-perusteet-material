@@ -7,41 +7,21 @@ information_page: true
 
 Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi vastausta täältä, voit esitttää sen [tukiväylillämme](/tukivaylat).
 
+## Vanhaa tietoa, ohjelmintikurssilta (DRAFT - kesken)
+
 <table-of-contents></table-of-contents>
 
-### Minulla on ongelma ohjelmointiympäristön TMC pluginin kanssa
+### A
 
-Varmista että sinulla on uusin versio TMC liitännäisestä valitsemalla Netbeanssin ylävalikosta `Help` -> `Check for Updates`.
+aaaaa  aaa aaaa
 
-### Netbeans jäätyy tehtävän palauteikkunan avautuessa
+### B
 
-Ongelma pitäisi olla korjattu TMC liitännäisen uusimmassa versiossa. Saat sen ladattua valitsemalla Netbeanssin yläpalkista <code>Help</code> -> <code>Check for updates</code> ja seuraamalla näytölle tulevia ohjeita.
-
-### Ohjelmointitehtävässä on mielestäni virhe
-
-Varmista, että ongelma ei ole omassa koodissasi. Kysy tarvittaessa apua kurssin tukikanavilla. Kokeile myös onko tehtävään saatavilla päivitystä valitsemalla Netbeanssin yläpalkista `TMC` -> `Download or update exercises`. Jos näidenkin toimenpiteiden jälkeen vaikuttaa siltä, että virhe on tehtävässä, avaa uusi issue kurssin Github-repossa: https://github.com/rage/ohjelmointi-19.
+bbbbb bbbb
 
 ### Löysin materiaalista virheen
 
-Avaa joko issue tai muutosehdoitus kurssin Github-repossa: https://github.com/rage/ohjelmointi-19.
-
-### Tehtävien lataaminen ja palauttaminen on hidasta macOS -käyttöjärjestelmällä
-
-Seuraa tätä ohjetta ongelman ratkaisemiseksi: https://materiaalit.github.io/tmc-asennus/macos-verkkoongelma/.
-
-Jos tämä ei auta, kokeile vaihtaa Netbeanssin asetuksista proxy setting vaihtoehtoon "no proxy".
-
-### Netbeanssin asennusohjelma ei avaudu macOS:lla
-
-Kokele painaa asennusohjelmaa hiiren oikealla näppäimellä ja valitse Avaa/Open.
-
-### Saan testejä ajattaessa virheviestin, joka valittaa JAVA_HOME:sta
-
-Seuraa tätä ohjetta ongelman ratkaisemiseksi: [https://materiaalit.github.io/tmc-asennus/java_home_not_found/](https://materiaalit.github.io/tmc-asennus/java_home_not_found/).
-
-### Netbeans tai netbeanssin asennusohjelma ei avaannu tai näyttää avauduttuaan oudolta.
-
-Varmista, että sinulla on Javan kehitystyökalujen versio 8 asennettuna. Kurssilla käytetty ohjelmointiympäristö ei toimi kunnolla uudemmilla Javan versioilla. Jos törmäät ongelmaan, kokeile poistaa koneeltasi Javan JDK:n uudemmat versiot ja sitten asenna Netbeans with TMC uudestaan.
+Avaa joko issue tai muutosehdoitus kurssin Github-repossa: https://github.com/rage/ohjelmointi-19_aaaa.
 
 ### En voi aloittaa kurssia, koska en tiedä minne ilmoittautua
 
@@ -75,14 +55,6 @@ Kurssin päätteeksi voi lukullistua Helsingin yliopiston Avoimen yliopiston tar
 
 Lue tämä ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaan).
 
-### Testien ajamis- ja lähettämispainikkeet ovat Netbeanssissa harmaita
-
-Jos olet aikataulutetussa kurssissa niin ota huomioon että ensimmäsen lukun deadline oli 21.1.2019. Katso myös ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaan).
-
 ### Tarvitsenko Helsingin yliopiston tunnukset?
 
 Kaikki jotka haluavat lukullistua Avoimen yliopiston tentteihin tai pystyä lukemaan Moodlea tarvii Helsingin yliopiston tunnukset. Jos tekee täysin omaksi ilokseen kurssia niin silloin ei ole pakollista, tosin vaikka tekisi vain omaksi ilokseen niin suosittelisimme tenttien tekemistä ja noiden toisten tunnusten hankkimista. Tunnukset voi hankkia täältä: https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin
-
-### Aion hakea opiskelupaikkaa MOOCin kautta. Pitääkö minun lukullistua Avoimen yliopiston tentteihin?
-
-Näyttökokeeseen saa kutsun, jos saa vähintään 90% kaikkien kurssin osien ohjelmointitehtävistä. Tentteihin lukullistuminen ei ole pakollista tähän. Suosittelemme kuitenkin kaikille Avoimen yliopiston tentteihin lukullistumista, koska vain niin voi varmistaa saavansa kurssisuoritukset. Pelkkään näyttökokeeseen lukullistuminen ei takaa kurssisuorituksia. Käymällä Avoimen tentit suoritukset saa myös silloin, jos päätyy yliopistolle normaalin pääsykokeen tai Avoimen väylän kautta, tai jos aloittaa opiskelemaan muuta alaa.
