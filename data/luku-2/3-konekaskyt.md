@@ -22,17 +22,18 @@ On myös määritely konekäskykantoja, joissa aritmetiikkaoperaatioissa ei ole 
 Esimerkkikoneessa ttk-91 voi yhdessä konekäskyssä nimetä kaksi operandia, joista ensimmäinen on aina rekisteri. Toinen operandi voi olla joku rekisteri, se voi olla vakio, tai se voidaan määritellä näiden yhdistelmänä. Se voi olla myös muistissa, kuten seuraavassa on tehty.
 
 -- esimerkki Yhteenlasku eri tyyppisillä suorittimilla"
-<pre>
-    Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri tyyppisillä suorittimilla.
-    Operandien lukumäärä ADD-käskyssä on 0, 1, 2 tai 3.
 
-    Pinokone    Akkurek.    Ttk-91         Load-store
-
-    push A      load  A     load  r4,A     load  r10,A
-    push B      add   B     add   r4,B     load  r11,B
-    add         store C     store r4,C     add   r12,r10,r11
-    pop C                                  store r12,C
-</pre>
+<text-box variant="example" name="Yhteenlasku eri tyyppisillä suorittimilla">
+Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri tyyppisillä suorittimilla. <br>
+Operandien lukumäärä ADD-käskyssä on 0, 1, 2 tai 3.<br>
+<br><br>
+Pinokone &nbsp;&nbsp;&nbsp;&nbsp; Akkurek.&nbsp;&nbsp;&nbsp;&nbsp;    Ttk-91 &nbsp;&nbsp;&nbsp;&nbsp;  Load-store<br>
+<br><br>
+push A&nbsp;&nbsp;&nbsp;&nbsp;load  A&nbsp;&nbsp;&nbsp;&nbsp;load  r4,A&nbsp;&nbsp;&nbsp;&nbsp;     load  r10,A<br>
+push B&nbsp;&nbsp;&nbsp;&nbsp;add   B&nbsp;&nbsp;&nbsp;&nbsp;add   r4,B&nbsp;&nbsp;&nbsp;&nbsp;     load  r11,B<br>
+add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store C&nbsp;&nbsp;&nbsp;&nbsp;store r4,C&nbsp;&nbsp;&nbsp;&nbsp; add r12,r10,r11<br>
+pop C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store r12,C
+</text-box>
 
 Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Itse laskenta on erikseen muistioperaatioista ja siinä on myös riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi lukuta noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
 
