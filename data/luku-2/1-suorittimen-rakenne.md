@@ -33,7 +33,7 @@ Väylä on kimppu sähköjohtoja, jotka voidaan luokitella käyttötavan mukaan 
 <text-box variant="example" name="Bitti, tavu, sana">
 Tietokone toimii binäärijärjestelmän avulla. Binäärijärjestelmän numeron (0 tai 1) talletettu esitysmuoto on bitti. Nykyään on vakiintunut ryhmitellä bitit tavuiksi ja sanoiksi. Yksi tavu on 8 bittiä ja sana yleensä 4 tavua eli 32 bittiä. Kaksoissana on 8 tavua eli 64 bittiä. Sanojen pituus voi vaihdella tietokoneesta riippuen, mutta edellämainitut pituudet ovat yleisiä.
 <br><br>
-Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esimerkiksi, tavussa 00001000 bitin numero 3 arvo on yksi, kun muut bitit ovat nollia. Numerointi alkaa nollasta sen vuoksi, että tavuun talletetussa positiivisessa kokonaisluvussa kunkin bitin numeroarvo vastaa bitin numeron kakkosen potenssia. Esimerkiksi, tavun 00000101 numeroarvo on 4+1 eli 5.
+Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esimerkiksi, tavussa 00001000 bitin numero 3 arvo on yksi, kun muut bitit ovat nollia. Numerointi alkaa nollasta sen vuoksi, että tavuun talletetussa positiivisessa kokonaisluvussa kunkin bitin lukuarvo vastaa bitin numeron kakkosen potenssia. Esimerkiksi, tavun 00000101 lukuarvo on 4+1 eli 5.
 </text-box>
 
 -- kuva: ch-2-1-suorittimen-rakenne-draft   # kalvo 5.4, ei välimuistia
