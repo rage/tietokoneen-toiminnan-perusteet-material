@@ -31,9 +31,11 @@ Väylä on kimppu sähköjohtoja, jotka voidaan luokitella käyttötavan mukaan 
 -- note: bitti, tavu, sana
 
 <text-box variant="example" name="Bitti, tavu, sana">
+  
 Tietokone toimii binäärijärjestelmän avulla. Binäärijärjestelmän numeron (0 tai 1) talletettu esitysmuoto on bitti. Nykyään on vakiintunut ryhmitellä bitit tavuiksi ja sanoiksi. Yksi tavu on 8 bittiä ja sana yleensä 4 tavua eli 32 bittiä. Kaksoissana on 8 tavua eli 64 bittiä. Sanojen pituus voi vaihdella tietokoneesta riippuen, mutta edellämainitut pituudet ovat yleisiä.
 <br><br>
 Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esimerkiksi, tavussa 00001000 bitin numero 3 arvo on yksi, kun muut bitit ovat nollia. Numerointi alkaa nollasta sen vuoksi, että tavuun talletetussa positiivisessa kokonaisluvussa kunkin bitin lukuarvo vastaa bitin numeron kakkosen potenssia. Esimerkiksi, tavun 00000101 lukuarvo on 4+1 eli 5.
+
 </text-box>
 
 -- kuva: ch-2-1-suorittimen-rakenne-draft   # kalvo 5.4, ei välimuistia
@@ -51,7 +53,9 @@ Normaali suorituksessa oleva ohjelma (prosessi) ei saa viitata muiden prosessien
 -- note: ttk-91
 
 <text-box variant="example" name="Esimerkkitietokone ttk-91">
+  
 Kurssilla käytetään esimerkkinä hyvin yksinkertaista tietokonetta, joka on antaa oikein hyvän kuvan todellisesta tietokoneesta. Todellinen tietokone on tietenkin jonkin verran monimutkaisempi ja kattavampi. Sellaisiin voitte sitten perehtyä myöhemmin, kun teillä on paremmat taustatiedot aihepiiristä. Tietokoneen ttk-91 määritelmän on tehnyt Auvo Häkkinen vuonna 1991 Helsingin yliopistolla pidettyä Tietokoneen toiminta -kurssia varten. Ttk-91 on edelleen käytössä ja sille on tehty mm. simulaattori Titokone symbolisella konekielellä tehtyjen ohjelmien kehittämiseksi ja ajamiseksi.
+
 </text-box>
 
 Rajarekistereiden BASE ja LIMIT käyttö aiheuttaa monimutkaisuutta muistin käytössä. Ohjelman käyttämät muistiosoitteet ovat suhteellisia BASE rekisterin arvoon ja arvovälillä \[0, LIMIT-1\]. Joka muistiviitteen yhteydessä MMU tekee _osoitteenmuunnoksen_ ohjelman käyttämästä osoiteavaruudesta (esim. \[0, 511\]) keskusmuistin omaan paljon suurempaan osoiteavaruuteen (esim. \[0, 4&nbsp;194&nbsp;303\]).  MMU tarkistaa ensin, että onko ohjelman käyttämä muistiosoite (esim. 96) välillä \[0, 511\]. Jos se ei ole, niin tästä aiheutuu virhetilannekeskeytys. Jos osoite on sallittu, niin siihen lisätään BASE-rekisterin arvo (esim. 20&nbsp;000) ja näin saatu todellinen eli fyysinen muistiosoite (esim. 20&nbsp;096) annetaan väylän kautta muistipiirille.
