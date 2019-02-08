@@ -23,17 +23,18 @@ Esimerkkikoneessa ttk-91 voi yhdessä konekäskyssä nimetä kaksi operandia, jo
 
 -- esimerkki Yhteenlasku eri tyyppisillä suorittimilla"
 
-<text-box variant="example" name="Yhteenlasku eri tyyppisillä suorittimilla">
-Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri tyyppisillä suorittimilla. <br>
-Operandien lukumäärä ADD-käskyssä on 0, 1, 2 tai 3.<br>
-<br><br>
-Pinokone &nbsp;&nbsp;&nbsp;&nbsp; Akkurek.&nbsp;&nbsp;&nbsp;&nbsp;    Ttk-91 &nbsp;&nbsp;&nbsp;&nbsp;  Load-store<br>
-<br><br>
-push A&nbsp;&nbsp;&nbsp;&nbsp;load  A&nbsp;&nbsp;&nbsp;&nbsp;load  r4,A&nbsp;&nbsp;&nbsp;&nbsp;     load  r10,A<br>
-push B&nbsp;&nbsp;&nbsp;&nbsp;add   B&nbsp;&nbsp;&nbsp;&nbsp;add   r4,B&nbsp;&nbsp;&nbsp;&nbsp;     load  r11,B<br>
-add &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store C&nbsp;&nbsp;&nbsp;&nbsp;store r4,C&nbsp;&nbsp;&nbsp;&nbsp; add r12,r10,r11<br>
-pop C&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;store r12,C
-</text-box>
+<pre>
+Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri tyyppisillä suorittimilla. 
+Operandien lukumäärä ADD-käskyssä on 0, 1, 2 tai 3.
+
+Pinokone   Akkurek.    Ttk-91        Load-store
+(0 oper.)  (1 oper.)   (2 oper.)     (3 oper.)
+
+push A     load  A     load  r4,A    load  r10,A
+push B     add   B     add   r4,B    load  r11,B
+add        store C     store r4,C    add r12,r10,r11
+pop C                                store r12,C
+</pre>
 
 Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Itse laskenta on erikseen muistioperaatioista ja siinä on myös riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi lukuta noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
 
@@ -45,13 +46,12 @@ Esimerkkikoneessa ttk-91 on 8 rekisteriä, joten niiden nimeämiseen konekäskys
 Konekäskyssä tarvitaan jonkinlaisia tapoja viitata muistiin. Korkean tason kielissä usein käytetyt erilaiset tietotyypit vaativat erilaisia viittaustapoja. Yleisiä tietotyyppejä korkean tason kielissä ovat muuttujat, vakiot ja 1-, 2- tai 3-ulotteiset taulukot. Sellaisia ovat myös _tietueet_ tai _oliot_, joissa on erilaisia kenttiä. Usein tieto on myös esitetty epäsuorasti, jolloin tietorakenteessa ei olekaan itse tietoa, vaan ainoastaan osoite tietoon.
 
 -- Note: tietue ja olio
-<div>
-  <note heading="Tietueet ja oliot" description="
+
+<text-box variant="example" name="Tietueet ja oliot">
 Tietue on esimerkki rakenteisesta tiedosta. Esimerkiksi harrasteseuran jäsenrekisteri voisi koostua tietueista, joista kukin kertoo yhden jäsenen tiedot. Kullakin tietueella on sama rakenne ja se sisältää samat (tieto)kentät. Tällaisia kenttiä olisivat esimerkiksi jäsenen nimi, osoite ja puhelinnumero.
 <br><br>
 Olio on kehittyneempi muoto tietueesta. Siellä on tiedon lisäksi myös kokoelma metodeja (aliohjelmia, funktioita), joiden avulla olion tietoja voidaan lukea ja muokata. Tyypillisesti olion tietoja voi lukea tai kirjottaa vain sen omien metodien kautta. Tämä tekee helpommaksi ja luotettavammaksi olion tietojen käytön, kun kaikki samaa tietoa käsittelevä koodi on keskitetty yhteen paikkaan. Koodausvirheiden havaitseminen on helpompaa verrattuna tilanteeseen, jossa samaa tietoa käsiteltäisiin siellä täällä esimerkiksi 40000 koodirivin ohjelmistossa. Jos harrasteseuran jäsenrekisteri toteutettaisiin oliona (esim. JäsR), niin jäsenten tiedot olisivat olion sisäisiä tietorakenteita ja niitä pääsisi käyttämään ainoastaan olion metodeja kutsumalla. Tällaisia metodeja olisivat esimerkiksi JäsR.UusiJäsen(), JäsR.LueOsoite() ja JäsR.MuutaOsoite() avulla.
-"></note>
-</div>
+</text-box>
 
 Olisi mukavaa, jos tietoon useimmiten pystyisi viittaamaan yksinkertaisesti yhden käskyn sisältä jotain muistinviittaustapaa käyttäen. Aina tämä ei ole mahdollista. Tällöin viitattu muistiosoite lasketaan ensin johonkin rekisteriin suorittamalla usea konekäsky ja sitten vihdoin itse muistiviite voidaan toteuttaa yhdellä konekäskyllä tuon rekisterin kautta. Tyypillisesti näin tehdään vaikkapa viitatessa 3-ulotteisen taulukon alkiohin, koska juuri missään suorittimessa ei ole valmista muistinviittaustapaa 3-ulotteisille taulukoille.
 
@@ -66,17 +66,15 @@ Esimerkkikoneessa ttk-91 on kolme tiedonosoitustapa ja ne perustuvat kaikki inde
 Ttk-91:n suorittimella on kolme vaihtoehtoista tapaa saada jälkimmäinen operandi edellä lasketun "muistiosoitteen" avulla ja ne valitaan 2-bittisen _tiedonosoitusmoodin_ avulla. Moodin arvo 0 (välitön tiedonosoitus) tarkoittaa, että tuo äsken laskettu "muistiosoite" on sellaisenaan toinen operandi, eikä mitään muistiviitettä tarvita. Moodin arvo 1 (suora muistiviite) tarkoittaa, että muistisoitetta käytetään yhden kerran operandin hakemiseksi muistista. Moodin arvo 2 (epäsuora muistiviite) tarkoittaa, että ensin haetaan muistista edellä laskettua muistiosoitetta käyttäen toisen operandin osoite ja vasta sitten haetaan muistista sitä käyttämällä itse toinen operandi.
 
 <pre>
-Ttk-91 symbolisen konekielen tiedonosoitusmoodit. Oletetaan, että kaikissa käskyissä
-alkuaan rekisterin r1 arvo on 3, rekisterin r2 arvo on 10,
-muistipaikan mem(17) arvo on 45, ja muistipaikan mem(45) arvo on 88.
+Ttk-91 symbolisen konekielen tiedonosoitusmoodit. Oletetaan, että kaikissa käskyissä alkuaan rekisterin r1 arvo on 3, rekisterin r2 arvo on 10, muistipaikan mem(17) arvo on 45, ja muistipaikan mem(45) arvo on 88.
 
-                     op.koodi oper/tul.rek. moodi ind.rek. vakiokenttä  tulos
-load r1, r2        -- 2 (load)     1         0     2        0           r1 <- 10
-load r1, =7        -- 2 (load)     1         0     0        7           r1 <- 7
-load r1, =7(r2)    -- 2 (load)     1         0     0        7           r1 <- 17
-load r1, 7(r2)     -- 2 (load)     1         1     0        7           r1 <- 45
-load r1, @7(r2)    -- 2 (load)     1         2     0        7           r1 <- 88
-store r1, 7(r2)    -- 1 (store)    1         0     0        7           mem(17) <- 3
+               op.koodi tul.rek. moodi ind.rek. vakio  tulos
+load r1, r2      -- 2      1        0     2        0    r1 <- 10
+load r1, =7      -- 2      1        0     0        7    r1 <- 7
+load r1, =7(r2)  -- 2      1        0     0        7    r1 <- 17
+load r1, 7(r2)   -- 2      1        1     0        7    r1 <- 45
+load r1, @7(r2)  -- 2      1        2     0        7    r1 <- 88
+store r1, 7(r2)  -- 1      1        0     0        7  mem(17) <- 3
 </pre>
 
 Moodi kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Käskyä muistista noudettaessahan tuli jo yksi muistiviite. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana tulee lopuksi aina yksi muistiin _kirjoitus_.
@@ -91,13 +89,13 @@ Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikil
 <pre>
 Ttk-91 symbolisen konekielen koodiesimerkkejä
 
-                     op.koodi oper/tul.rek. moodi ind.rek. vakiokenttä
-load r1, X        -- 2 (load)     1         1     0        X:n osoite (symbolin X arvo)
-add  r2, =6       -- 17 (add)     2         0     0        6
-mul  r4, Tbl(r1)  -- 19 (mul)     4         1     1        Tbl:n osoite
-div  r3, @ptrX    -- 20 (div)     3         2     0        ptrX:n osoite
-jpos  r2, loop    -- 35 (jpos)    2         0     0        loop:n osoite
-store r2, Y       -- 1 (store)    2         0     0        Y:n osoite (huom: moodi on 0)
+                  op.koodi tul.rek. moodi ind.rek. vakiokenttä
+load r1, X         2 (load)     1      1     0     X:n osoite 
+add  r2, =6        17 (add)     2      0     0     6
+mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
+div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
+jpos  r2, loop     35 (jpos)    2      0     0     loop:n osoite
+store r2, Y        1 (store)    2      0     0     Y:n osoite 
 </pre>
 
 ### Tiedon tyypit
@@ -124,35 +122,39 @@ Käskykannassa on kullekin suorittimen ymmärtämälle tietotyypille sen ominais
 Aritmetiikkakäskyissä on mukana aina yhteenlasku, vähennyslasku ja kertolasku. Usein siellä on myös jakolasku, mutta ei aina. Joskus jakolasku toteutetaan kertomalla jaettava jakajan käänteisluvulla, koska se voi olla nopeampaa. Kokonaislukujen jakolaskusta voi tulla talteen myös jakojäännös, mutta usein se pitää kaivaa esiin omalla modulo-konekäskyllä (esim., MOD-käsky).
 
 Liukuluvuille on omat vastaavat konekäskynsä. Niiden toteutus on jonkin verran monimutkaisempaa kuin kokonaislukujen käsittely ja ne käyttävät yleensä niille varattuja liukulukurekistereitä.
-<pre>Koodiesimerkki (ei ttk-91). Laske C=A+B, kun A, B ja C ovat muuttujia muistissa samalla
-suorittimella. Kustakin muuttujasta on kolme versiota. Muuttuja iA on kokonaisluku,
-fA on 32-bittinen liukuluku ja dA on 64-bittinen liukuluku, jne.
 
-kokonaislukuja   liukulukuja      64-bittisiä liukulukuja
+-- Koodiesimerkki (ei ttk-91)
+
+<pre>
+Koodiesimerkki (ei ttk-91). Laske C=A+B, kun A, B ja C ovat muuttujia muistissa samalla suorittimella. Kustakin muuttujasta on kolme versiota. Muuttuja iA on kokonaisluku, fA on 32-bittinen liukuluku ja dA on 64-bittinen liukuluku, jne.
+
+kokonaisluvuilla liukuluvuilla    64-bittisillä liukulukuja
 
 load  r1,iA      load f1,fA       dload f2,dA
 load  r2,iB      load f2,fB       dload f4,dB
 add   r3,r1,r2   fadd f3,f1,f2    dfadd f6,f2,f4
 store r3,iC      store f3,fC      dstore f6,dC
 </pre>
+
 64-bittiset rekisterit muodostetaan usein yhdistämäällä kaksi peräkkäistä 32-bittistä rekisteriä. Esimerkin 64-bittiset liukuluvut on talletettu kahteen peräkkäiseen 32-bittiseen liukulukurekisteriin. Muuttujan dA 64-bittinen arvo ladataan rekisteriin f2-f3, jne.
 
 Ttk-91:ssä on vain kokonaislukujen konekäskyt ADD, SUB, MUL, DIV ja MOD. Siinä ei ole käskyjä liukulukujen käsittelyyn ja sen käskyssä voi nimetä vain kaksi rekisteriä.
 
 -- Note: matem historia, kertolasku, Fibonacci, helmitaulun algoritmi
-<div>
-  <note heading="Kertolaskun historiaa" description="
+
+<text-box variant="example" name="Kertolaskun historiaa"
 Kertolasku on monimutkaisin operaatio, minkä suoritin pystyy tekemään. Sen monimutkaisuutta ei kannata väheksyä, vaikka olet itse oppinut sen tekemään jo koulussa. Kokonaislukujen kertolasku oli vielä 800 vuotta sitten niin haastavaa, että sen tekemiseen palkattiin ulkopuolinen konsultti. Hänellä oli käytössään useimmiten helmitaulu (abacus) ja siihen sopiva algoritmi. Ongelmana oli, että lukujen esityksessä käytetty menetelmä (esim. roomalaiset numerot) sopi hyvin lukujen tallentamiseen mutta ei niillä laskemiseen. Konsultti muutti luvut ensin helmitaululle sopivaan muotoon, ratkaisi ongelman ja antoi lopulta asiakkaalle tuloksen hänen ymmärtämässään muodossa.
 <br><br>
 Tilanne muuttui radikaalisti 10-järjestelmän keksimisen jälkeen. Fibonacci toi sen vuonna 1202 Eurooppaan kirjassaan Liber abbaci. Nyt kuka tahansa saattoi oppia uuden merkintätavan numeroille ja erilaiset kätevät algoritmit peruslaskutoimituksien tekemiseen noita samoja numeroita käyttäen. Kertakaikkiaan nerokasta!
 <br><br>
 Tilanne on nyt vähän samanlainen kuin 800 vuotta sitten, mutta helmitaulun asemesta käytetään tietokonetta. Asiakkaat antavat konsulttiyritykselle ratkaistavan tehtävän tekstinä ja 10-järjestelmän lukuina, ohjelmoijat suunnittelevat ongelman ratkaisun tietokoneohjelmaksi, tietokone suorittaa binäärimuotoisen algoritmin ja ratkaisu annetaan asiakkaalle tekstinä ja 10-järjestelmän lukuina. Ohjelmoijien ratkaisevat ongelmat ovat nykyään tietenkin aika lailla monimutkaisempia kuin kertolasku. Asiakkaan ei edelleenkään tarvitse ymmärtää, kuinka ohjelmoija tai tietokone ongelman oikeastaan ratkaisee.
-"></note>
-</div>
+</text-box>
 
 ### Bittioperaatiot
 Bittien käsittelyä varten mukana on yleensä ainakin loogiset operaatiot AND, OR, XOR ja NOT. NOT-käskyllä on vain yksi operandi ja se komplementoi jokaisen bitin. Muilla käskyillä on kaksi operandia ja ne tekevät valitun loogisen-operaation pareittain jokaiselle operandien bitille. AND-operaation tulos on 1 (tosi), jos molemmat vastaavat bitit ovat 1, ja muutoin tulos on 0. OR-operaation tulos on 1, jos jompi kumpi tai molemmat operandibiteistä on 1, ja muutoin tulos on 0. XOR-operaatio on mielenkiintoisempi. Lyhenne XOR tulee sanasta "exclusive or". XOR-operaation tulos on 1, jos jompi kumpi mutta ei molemmat operandibiteistä on 1, ja muutoin tulos on 0. Toisin sanoen, XOR on 1, jos operandit ovat erilaisia.
-<pre>op:    A and B    A or B   A xor B   not A
+
+<pre>
+op:    A and B    A or B   A xor B   not A
 A =       1100      1100     1100     1100
 B =       0101      0101     0101
 tulos     0100      1101     1001     0011
@@ -161,13 +163,12 @@ tulos     0100      1101     1001     0011
 Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille. Ne sopivat kuitenkin myös käsittelemään _loogisia muuttujia_, joissa on vain yksi bitti käytössä. Tällöin esimerkiksi 32-bittisen muuttujan Flag arvo on talletettu vain yhteen bittiin ja loput bitit ovat aina nollia.
 
 -- Note: xor-operaatio salakirjoituksen apuna
-<div>
-  <note heading="Xor-operaatio salakirjoituksen apuna" description="
+
+<text-box variant="example" name="Xor-operaatio salakirjoituksen apuna">
 Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010110_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp. Arto lähettää Beritille salakirjoitetun merkkijonon rhdp, josta kukaan ulkopuolinen ei saa selvää. Berit purkaa salakirjoituksen tekemällä uuden xor-operaation, rhdp xor 5821, jonka tuloksena on bittijono 01000001_01010000_01010110_01000001 eli alkuperäinen viesti APUA. Berit rientää apuun ja Arto on pelastettu!
 <br><br>
 Tämä ns. symmetrinen salakirjoitus perustuu xor-operaation ominaisuuteen, jossa kaksi xor-operaatiota samalla operandilla (avaimella 5821) kumoavat toisensa. Tällaista symmetristä salakirjoitusavainta (sama avain Artolla ja Beritillä) käytetään sinunkin pankkiyhteyksien turvaamisessa, mutta vain lukuna laajempaa järjestelmää.
-"></note>
-</div>
+</text-box>
 
 Bittejä käsitellään myös erilaisilla bittien siirtokäskyillä. Niissä yleensä siirretään rekisterissä olevia bittejä vasemmalle (SHL, shift left) tai oikealle (SHR, shift right) haluttu määrä. Siirron yhteydessä bittejä täytetään oikealta tai vasemmalta nollilla. Oikealle tapahtuvan normaalisiirron lisäksi usein on myös SHRA-käsky (shift right arithmetic), jossa nollan asemesta täytetäänkin vasemmalta alkuaan vasemmanpuolimmaista bittiä. Kokonaislukujen esitystavoissa etumerkki on tiedon vasemmanpuolimmainen bitti, joten SHRA-käsky säilyttää kokonaisluvun etumerkin.
 
@@ -178,18 +179,23 @@ Kontrollinsiirtokäskyillä voidaan (ehdollisesti) muuttaa oletusarvoista käsky
 
 Kaikki [silmukat](https://fi.wikipedia.org/wiki/Toistorakenne) toteutetaan myös edellämainituilla ehdottomilla hyppykäskyillä ja ehdollisilla haarautumiskäskyillä. Vaikka korkean tason kielissä on monenlaisia silmukoita (for, while, do-until), niin konekielessä niitä on vain kahta lajia. Silmukan loppumistestaus pitää tehdä joko ennen silmukan runkoa tai sen jälkeen. Silmukka toteutetaan korkean tason kielen semantiikan (merkityksen) mukaiseksi, joten esimerkiksi C-kielessä testi on ennen silmukan runkoa ja Fortranissa rungon jälkeen. Fortran-ohjelmissa silmukan runko suoritetaan aina vähintään yhden kerran.
 
-<pre>for (i=0; in; i=i+1) {            load   r1, =0     ; r1 on i
-    tbl[i] = 0;               loop comp   r1, n      ; kaikki tehty?
-    }                              jnles  done       ; poistu, jos valmista
-                                   load   r2, =0     ; alusta Tbl[i]
-                                   store  r2, tbl(r)
-                                   add    r1, =1     ; seuraava i
-                                   jump   loop
-                              done ...
-</pre>
+-- for loop  esimerkki (4 blankoa rivin alussa)
+
+    for (i=0; in; i=i+1) {             load   r1, =0     ; r1 on i
+        tbl[i] = 0;               loop comp   r1, n      ; kaikki tehty?  (testi loopin alussa)
+        }                              jnles  done       ; poistu, jos valmista
+                                       load   r2, =0     ; alusta Tbl[i]
+                                       store  r2, tbl(r)
+                                       add    r1, =1     ; seuraava i
+                                      jump   loop
+                                  done ...
+
 
 [Aliohjelmat](https://fi.wikipedia.org/wiki/Aliohjelma), funktiot ja metodit ovat ohjelmoijan perustyökaluja ohjelmoinnissa. Niitä kutsutaan tässä kaikki yleisnimellä "aliohjelma". CALL-käskyllä kontrolli siirretään aliohjelmaan, eli se toimii ehdottoman hyppykäskyn tavoin ja aiheuttaa haarautumisen annettuun aliohjelmaan. Haarautumisen lisäksi se muuttaa laskentaympäristön aliohjelman omaan ympäristöön ja tallettaa paluuosoitteen johonkin. Esimerkiksi, aliohjelmassa voi olla omia muuttujia, jotka ovat käytettävissä vain aliohjelman suorituksen aikana. EXIT-käsky suorittaa paluun takaisin kutsun tehneeseen rutiiniin, kutsua seuraavaan konekäskyyn. Se myös palauttaa laskentaympäristön ennalleen.
-<pre>x = sum(y, z);            push  sp, y    ; laita parametrin y arvo pinoon
+
+-- funktion kutsu esimerkki  
+<pre>
+x = sum(y, z);            push  sp, y    ; laita parametrin y arvo pinoon
                           push  sp, z    ; laita parametrin z arvo pinoon
                           call  sp, sum  ; kutsu fuktiota Sum
                           pop   sp, r1   ; ota funktion paluuarvo pinosta
@@ -210,7 +216,10 @@ Ttk-91:ssä on aliohjelmia ja käyttöjärjestelmän palvelupyyntöjä varten CA
 I/O-laitteiden käyttö on vaikeata, koska siinä pitää synkronoida toiminta suorittimen ulkopuolisen laitteen kanssa. Yleensä sen tekevät vain käyttöjärjestelmän laiteajurit etuoikeutetussa tilassa. Yksinkertaisille laitteille voi olla omat (etuoikeutetut) konekäskynsä I/O:n tekemiseen. Monimutkaisempien I/O-laitteiden kontrollointia I/O-laitteen oma muisti näkyy keskusmuistin tavoin ohjelman käyttämässä muistiavaruudessa. Laiteajuri voi sitten kirjoittaa sinne dataa ja komentoja sekä lukea laitteen tilatietoa tavallisilla load/store-käskyillä. Emme käsittele I/O:n toteutusta tämän tarkemmin tällä kurssilla.
 
 Ttk-91:ssä on IN-käsky tiedon lukemiseen näppäimistöltä ja OUT-käsky tiedon kirjoittamiseen näytölle. Näitä voi käyttää tavallisessa suoritustilassa, koska ttk-91:ssä ei muita suoritustiloja ole edes määritelty.
-<pre>Print(x);            load  r1, x    ; laita tulostettava arvo rekisteriin r1
+
+-- IO käsky esimerkki
+<pre>
+Print(x);            load  r1, x    ; laita tulostettava arvo rekisteriin r1
                      out   r1, =crt ; tulosta r1 arvo näytölle konekäskyllä out
 </pre>
 
@@ -220,6 +229,8 @@ Suorittimella on lisäksi sekalainen joukko suorittimen ja järjestelmän hallin
 Suorittimissa voi olla rekisterissä olevien 1-bittien lukumäärän laskemiskäsky, jota tarvitaan joidenkin salakirjoitusjärjestelmien yhteydessä tai niiden murtamiseen. Suorittimissa voi olla (etuoikeutettuja) käskyjä eri välimuistien tyhjentämiseen. Omia käskyjä on myös kanta- ja rajarekistereiden lukemiseen ja asettamiseen, samoin kuin muidenkin sisäisten muistinhallintarekistereiden käsittelyyn.
 
 Ttk-91:ssä on NOP-käsky. Siinä ei ole muita erityiskäskyjä, koska määrittely ei ole täydellinen.
+
+-- erityiskäskyesimerkki
 <pre>
 if (x y)                 load r1, x    -- onko x y?
   y = x;                 comp r1, y
@@ -233,6 +244,7 @@ Ohjelmien symbolisen konekielisessä esitystavassa on suorittimen konekäskyjen 
 
 Ttk-91:ssä on muuttujan tai vakion tilanvarauskäsky DC (data constant), joka varaa tilaa muuttujalle ja antaa sille alkuarvon. Toinen tilanvarauskäsky DS (data segment) on taulukoiden ja tietueiden tilanvarausta varten. Sen avulla varataan tilaa yhdellä kertaa useampi sana, mutta varattu tila pitää itse alustaa koodissa. Jollekin vakioarvolle (esim. luku 20) voi antaa nimen (esim. LKM) valekäskyllä EQU. Symbolisessa konekielessä on ihan sama, käyttääkö koodissa jotain symbolia tai sen arvoa.
 
+-- ttk91 ohjelmaesimerkki
 <pre>
 Ttk-91 ohjelmaesimerkki.
 
@@ -269,15 +281,14 @@ done   store r1, sum      -- tallenna summa muuttujaan sum              (suora m
 </pre>
 
 -- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville?
-<div>
-  <note heading="Titokone" description="
+
+<text-box variant="example" name="Titokone">
 Titokone on kevällä 2004 Helsingin yliopistossa opiskelijoiden harjoitustyönä toteuttama ohjelmisto, jonka avulla voidaan kääntää ja suorittaa symbolisella konekielellä kirjoitettuja ohjelmia Auvo Häkkisen vuonna 1991 opetuskäyttöä varten määrittelemälle ttk-91 -tietokoneelle. Ohjelmistoon sisältyy ohjelmistonkehitysympäristö sekä suorituksen simulaattori ja animaattori.
 <br><br>
 Titokone löytyy verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Helpoin tapa ajaa Titokonetta on tallettaa verkkosivulta löytyvä jar-tiedosto (titokone-1.203.jar) omalle koneellesi ja avata se. Verkkosivulta löytyy myös Titokoneen käyttöohjeet. Valmiita esimerkkejä ttk-91 symbolisen konekielen ohjelmista löytyy verkkosivulta http://www.cs.helsinki.fi/group/nodes/kurssit/tito/esimerkit.
 <br><br>
 Tällä kurssilla ei mitenkään edellytetä konekielisen ohjelmoinnin harjoittelua Titokoneella. Se voi kuitenkin olla hauskaa, kuten kaikki muukin ohjelmointi. Malta kuitenkin jatkaa kurssin läpikäyntiä, äläkä jää huvittelemaan Titokoneen kanssa.
-"></note>
-</div>
+</text-box>
 
 -- quiz 2.3.1-13 Väitteet konekäskyistä
 <div><quiznator id="5c5035183972a91474102696"></quiznator></div>
