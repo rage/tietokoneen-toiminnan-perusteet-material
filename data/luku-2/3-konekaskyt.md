@@ -48,9 +48,11 @@ Konekäskyssä tarvitaan jonkinlaisia tapoja viitata muistiin. Korkean tason kie
 -- Note: tietue ja olio
 
 <text-box variant="example" name="Tietueet ja oliot">
+  
 Tietue on esimerkki rakenteisesta tiedosta. Esimerkiksi harrasteseuran jäsenrekisteri voisi koostua tietueista, joista kukin kertoo yhden jäsenen tiedot. Kullakin tietueella on sama rakenne ja se sisältää samat (tieto)kentät. Tällaisia kenttiä olisivat esimerkiksi jäsenen nimi, osoite ja puhelinnumero.
 <br><br>
 Olio on kehittyneempi muoto tietueesta. Siellä on tiedon lisäksi myös kokoelma metodeja (aliohjelmia, funktioita), joiden avulla olion tietoja voidaan lukea ja muokata. Tyypillisesti olion tietoja voi lukea tai kirjottaa vain sen omien metodien kautta. Tämä tekee helpommaksi ja luotettavammaksi olion tietojen käytön, kun kaikki samaa tietoa käsittelevä koodi on keskitetty yhteen paikkaan. Koodausvirheiden havaitseminen on helpompaa verrattuna tilanteeseen, jossa samaa tietoa käsiteltäisiin siellä täällä esimerkiksi 40000 koodirivin ohjelmistossa. Jos harrasteseuran jäsenrekisteri toteutettaisiin oliona (esim. JäsR), niin jäsenten tiedot olisivat olion sisäisiä tietorakenteita ja niitä pääsisi käyttämään ainoastaan olion metodeja kutsumalla. Tällaisia metodeja olisivat esimerkiksi JäsR.UusiJäsen(), JäsR.LueOsoite() ja JäsR.MuutaOsoite() avulla.
+
 </text-box>
 
 Olisi mukavaa, jos tietoon useimmiten pystyisi viittaamaan yksinkertaisesti yhden käskyn sisältä jotain muistinviittaustapaa käyttäen. Aina tämä ei ole mahdollista. Tällöin viitattu muistiosoite lasketaan ensin johonkin rekisteriin suorittamalla usea konekäsky ja sitten vihdoin itse muistiviite voidaan toteuttaa yhdellä konekäskyllä tuon rekisterin kautta. Tyypillisesti näin tehdään vaikkapa viitatessa 3-ulotteisen taulukon alkiohin, koska juuri missään suorittimessa ei ole valmista muistinviittaustapaa 3-ulotteisille taulukoille.
@@ -143,11 +145,13 @@ Ttk-91:ssä on vain kokonaislukujen konekäskyt ADD, SUB, MUL, DIV ja MOD. Siin�
 -- Note: matem historia, kertolasku, Fibonacci, helmitaulun algoritmi
 
 <text-box variant="example" name="Kertolaskun historiaa"
+
 Kertolasku on monimutkaisin operaatio, minkä suoritin pystyy tekemään. Sen monimutkaisuutta ei kannata väheksyä, vaikka olet itse oppinut sen tekemään jo koulussa. Kokonaislukujen kertolasku oli vielä 800 vuotta sitten niin haastavaa, että sen tekemiseen palkattiin ulkopuolinen konsultti. Hänellä oli käytössään useimmiten helmitaulu (abacus) ja siihen sopiva algoritmi. Ongelmana oli, että lukujen esityksessä käytetty menetelmä (esim. roomalaiset numerot) sopi hyvin lukujen tallentamiseen mutta ei niillä laskemiseen. Konsultti muutti luvut ensin helmitaululle sopivaan muotoon, ratkaisi ongelman ja antoi lopulta asiakkaalle tuloksen hänen ymmärtämässään muodossa.
 <br><br>
 Tilanne muuttui radikaalisti 10-järjestelmän keksimisen jälkeen. Fibonacci toi sen vuonna 1202 Eurooppaan kirjassaan Liber abbaci. Nyt kuka tahansa saattoi oppia uuden merkintätavan numeroille ja erilaiset kätevät algoritmit peruslaskutoimituksien tekemiseen noita samoja numeroita käyttäen. Kertakaikkiaan nerokasta!
 <br><br>
 Tilanne on nyt vähän samanlainen kuin 800 vuotta sitten, mutta helmitaulun asemesta käytetään tietokonetta. Asiakkaat antavat konsulttiyritykselle ratkaistavan tehtävän tekstinä ja 10-järjestelmän lukuina, ohjelmoijat suunnittelevat ongelman ratkaisun tietokoneohjelmaksi, tietokone suorittaa binäärimuotoisen algoritmin ja ratkaisu annetaan asiakkaalle tekstinä ja 10-järjestelmän lukuina. Ohjelmoijien ratkaisevat ongelmat ovat nykyään tietenkin aika lailla monimutkaisempia kuin kertolasku. Asiakkaan ei edelleenkään tarvitse ymmärtää, kuinka ohjelmoija tai tietokone ongelman oikeastaan ratkaisee.
+
 </text-box>
 
 ### Bittioperaatiot
@@ -165,9 +169,11 @@ Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille. N
 -- Note: xor-operaatio salakirjoituksen apuna
 
 <text-box variant="example" name="Xor-operaatio salakirjoituksen apuna">
+  
 Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010110_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp. Arto lähettää Beritille salakirjoitetun merkkijonon rhdp, josta kukaan ulkopuolinen ei saa selvää. Berit purkaa salakirjoituksen tekemällä uuden xor-operaation, rhdp xor 5821, jonka tuloksena on bittijono 01000001_01010000_01010110_01000001 eli alkuperäinen viesti APUA. Berit rientää apuun ja Arto on pelastettu!
 <br><br>
 Tämä ns. symmetrinen salakirjoitus perustuu xor-operaation ominaisuuteen, jossa kaksi xor-operaatiota samalla operandilla (avaimella 5821) kumoavat toisensa. Tällaista symmetristä salakirjoitusavainta (sama avain Artolla ja Beritillä) käytetään sinunkin pankkiyhteyksien turvaamisessa, mutta vain lukuna laajempaa järjestelmää.
+
 </text-box>
 
 Bittejä käsitellään myös erilaisilla bittien siirtokäskyillä. Niissä yleensä siirretään rekisterissä olevia bittejä vasemmalle (SHL, shift left) tai oikealle (SHR, shift right) haluttu määrä. Siirron yhteydessä bittejä täytetään oikealta tai vasemmalta nollilla. Oikealle tapahtuvan normaalisiirron lisäksi usein on myös SHRA-käsky (shift right arithmetic), jossa nollan asemesta täytetäänkin vasemmalta alkuaan vasemmanpuolimmaista bittiä. Kokonaislukujen esitystavoissa etumerkki on tiedon vasemmanpuolimmainen bitti, joten SHRA-käsky säilyttää kokonaisluvun etumerkin.
@@ -204,7 +210,10 @@ x = sum(y, z);            push  sp, y    ; laita parametrin y arvo pinoon
 
 Käyttöjärjestelmän palvelupyynnöt (SVC, supervisor call) ovat hyvin samankaltaisia aliohjelmakutsujen kanssa, mutta kuitenkin vähän erilaisia. Suorittimen suoritustila muuttuu etuoikeutetuksi ja kutsun yhteydessä täytyy tarkistaa, onko ohjelmalla oikeus kutsua tätä palvelua vai ei. Palvelusta palataan lopulta omalla paluukäskyllä (esim. IRET, interrupt return).
 
-<pre>print(x);            load  r1, x      ; laita tulostettava arvo rekisteriin r1
+-- svc kutsu
+
+<pre>
+print(x);            load  r1, x      ; laita tulostettava arvo rekisteriin r1
                      svc   sp, =print ; kutsu käyttöjärjestelmäpalvelua Print
 </pre>
 
@@ -283,11 +292,13 @@ done   store r1, sum      -- tallenna summa muuttujaan sum              (suora m
 -- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville?
 
 <text-box variant="example" name="Titokone">
+  
 Titokone on kevällä 2004 Helsingin yliopistossa opiskelijoiden harjoitustyönä toteuttama ohjelmisto, jonka avulla voidaan kääntää ja suorittaa symbolisella konekielellä kirjoitettuja ohjelmia Auvo Häkkisen vuonna 1991 opetuskäyttöä varten määrittelemälle ttk-91 -tietokoneelle. Ohjelmistoon sisältyy ohjelmistonkehitysympäristö sekä suorituksen simulaattori ja animaattori.
 <br><br>
 Titokone löytyy verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Helpoin tapa ajaa Titokonetta on tallettaa verkkosivulta löytyvä jar-tiedosto (titokone-1.203.jar) omalle koneellesi ja avata se. Verkkosivulta löytyy myös Titokoneen käyttöohjeet. Valmiita esimerkkejä ttk-91 symbolisen konekielen ohjelmista löytyy verkkosivulta http://www.cs.helsinki.fi/group/nodes/kurssit/tito/esimerkit.
 <br><br>
 Tällä kurssilla ei mitenkään edellytetä konekielisen ohjelmoinnin harjoittelua Titokoneella. Se voi kuitenkin olla hauskaa, kuten kaikki muukin ohjelmointi. Malta kuitenkin jatkaa kurssin läpikäyntiä, äläkä jää huvittelemaan Titokoneen kanssa.
+
 </text-box>
 
 -- quiz 2.3.1-13 Väitteet konekäskyistä
