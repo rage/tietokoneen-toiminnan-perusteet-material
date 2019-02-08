@@ -22,7 +22,6 @@ Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Nä
 ADD  R3, R5   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; kentät: 17 3 0 5 0   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een
 </text-box>
 
-
 Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerkiksi kertolasku, niin käskyssä annettujen operandien (esim R3 ja R5) arvot kopioidaan ALU:un, ALU:lle annetaan kertolaskumääräys ja tulos talletetaan käskyssä annettuun rekisteriin (esim. R3). Jos se on hyppykäsky tai ehdollinen haarautuskäsky, niin mahdollisesti käskyn suorituksessa muutetaankin PC:n arvoa. Jos käskyn suorituksen aikana tapahtuu jokin virhetilanne, niin virhe indikoidaan tilarekisteriin ja käskyn suoritus keskeytetään. Tämä voi tapahtua esimerkiksi jakolaskun yhteydessä, jos suoritusaikana havaitaan jakajan arvon olevan nolla.
 
 Sitten palataan syklissä seuraavan konekäskyn noutoon muistista ja sykli toistuu. Tämä on hämmästyttävän suoraviivaista ja opiskelijoiden on usein vaikea sisäistää, että tässäkö se kaikki on. Tietokone on tosiaankin vain tyhmä kone, joka suorittaa hyvin yksinkertaisia konekäskyjä yksi kerrallaan.
