@@ -8,18 +8,20 @@ On kertakaikkiaan nerokasta, kuinka yksinkertaista tietokoneen toiminta on konek
 Sen jälkeen kasvatamme PC:n arvoa yhdellä, koska oletusarvoisesti seuraavaksi suoritettava konekäsky on aina välittömästi seuraavana muistissa oleva käsky. Tätä seuraavan konekäskyn osoitetta voi vielä (esim.) hyppykäskyn suoritus muuttaa, mutta oletusarvoisesti seuraavaksi suoritetaan nykykäskyn jälkeen muistissa seuraavana oleva käsky.
 
 -- kuva: ch-2-2-nouto-suor-sykli-draft   # kalvo 5.3
+
+![Kolme nuolta, jotka kiertävät kehässä toisiaan seuraten. Ylhäällä nuolten välissä on käskyn noutovaihe, jossa käskyrekisteriin IR haetaan muistista paikanlaskurin eli PC:n osoittama käsky. PC:n alkuarvona on nolla, mikä on alustettu syklin ulkopuolella etukäteen. Noutovaihetta seuraa lyhyt nuolen kaari, jonka jälken on ohjelmalaskurin kasvatus eli PC saa arvon PC+1. Sitten on taas lyhyt nuolen kaari, jonka jälkeen IR:ssä olevan käskyn suoritusvaihe. Se voi sisältää muistiviitteitä ja se voi muuttaa PC:n arvoa. Lopulta on pitkä nuolen kaari takaisin käskyn noutovaiheeseen.](./ch-2-2-nouto-suor-sykli-draft.jpg)
 <div>
 <illustrations motive="ch-2-2-nouto-suor-sykli-draft"></illustrations>
 </div>
 
 Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Näissä kentissä on mm. operaatiokoodi ja niiden rekistereiden numerot, joita käsky käsittelee. Operaatiokoodi voisi olla yhteenlaskukäskyn koodi (17) ja operandeina numerot 3 ja 5 (viitaten rekistereihin R3 ja R5). Kenttien avulla määritellään myös, mihin muistiosoitteeseen käsky mahdollisesti kohdistuu. Yleensä konekäskyissä on korkeintaan yksi muistiviite.
 
-<div>
- <example
-    heading="Yksinkertainen konekäsky"
-description="ADD  R3, R5   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; kentät: 17 3 0 5 0   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een">
-  </example>
-</div>
+-- esimerkki: yksinkertainen konekäsky
+
+<text-box variant="example" name="Yksinkertainen konekäsky">
+ADD  R3, R5   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; kentät: 17 3 0 5 0   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een
+</text-box>
+
 
 Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerkiksi kertolasku, niin käskyssä annettujen operandien (esim R3 ja R5) arvot kopioidaan ALU:un, ALU:lle annetaan kertolaskumääräys ja tulos talletetaan käskyssä annettuun rekisteriin (esim. R3). Jos se on hyppykäsky tai ehdollinen haarautuskäsky, niin mahdollisesti käskyn suorituksessa muutetaankin PC:n arvoa. Jos käskyn suorituksen aikana tapahtuu jokin virhetilanne, niin virhe indikoidaan tilarekisteriin ja käskyn suoritus keskeytetään. Tämä voi tapahtua esimerkiksi jakolaskun yhteydessä, jos suoritusaikana havaitaan jakajan arvon olevan nolla.
 
@@ -27,11 +29,10 @@ Sitten palataan syklissä seuraavan konekäskyn noutoon muistista ja sykli toist
 
 
 -- note: konekäskyjen samanaikainen suoritus
-<div>
-  <note heading="Konekäskyjen suorituksen optimointi" description="
+
+<text-box variant="example" name="Konekäskyjen suorituksen optimointi">
 Todellisissa tehokkaissa suorittimissa peräkkäisten konekäskyjen suoritusnopeutta on optimoitu useallakin eri menetelmällä, mutta lopputulos on silti samanlainen kuin käskyjen suorittaminen yksi kerrallaan. Tällainen menetelmä on mm. liukuhihnoitus, jossa peräkkäiseten konekäskyjen eri vaiheita suoritetaan samanaikaisesti. Esimerkiksi, seuraavaa konekäskyä voidaan olla hakemassa muistista samaan aikaan kuin edellistä vasta suoritetaan. Usein ennakointi kannattaa, mutta joskus tulee huteja. Toinen tapa on tehdä konekäskyistä supertehokkaita, jolloin ne voisivat vaikkapa samalla kertaa useaa laskutoimitusta. Kolmas tapa on toteuttaa suorittimen sisällä monta pienempää suoritinta eli ydintä, joista kukin voi olla suorittamassa omaa ohjelmaansa samanaikaisesti. Neljäs tapa hypersäikeistys mainittiinkin jo aikaisemmin. Siinä suorittimella on esim. kaksi joukkoa rekistereitä, joiden avulla voidaan suorittaa toista ohjelmaa sillä aikaa kun ensimmäinen odottaa muistiviitteen tekemistä. Näitä kaikki menetelmiä voidaan käyttää yhtä aikaa, mutta ne eivät sisälly tämän kurssin oppimistavoitteisiin.
-"></note>
-</div>
+</text-box>
 
 ## Etuoikeutettu suoritustila
 
@@ -46,11 +47,10 @@ Etuoikeutetussa tilassa prosessi voi muuttaa kanta- ja rajarekistereiden arvoja,
 Nyt ymmärrät, miksi käyttöjärjestelmässä olevat virheet ovat niin vaarallisia. Jos tavallinen ohjelma toimii väärin, se voi sotkea vain oman muistialueensa. Käyttöjärjestelmän palikat voivat sotkea ihan mitä vain, minkä vuoksi niiden ohjelmointi pitää (pitäisi?) tehdä erityisen huolella.
 
 -- note: tavallinen käyttäjä vs. ylläpitäjä
-<div>
-  <note heading="Tavallinen käyttäjä vai ylläpitäjä" description="
+
+<text-box variant="example" name="Tavallinen käyttäjä vai ylläpitäjä">
 Olisi hyvä, että suorittaisit kotitietokonettasi yleensä tavallisena käyttäjänä, etkä ylläpitäjän oikeuksilla. Jos vahingossa päästät haittaohjelman koneellesi, niin ero on merkittävä. Ylläpitäjän oikeuksilla toimiva haittaohjelma on koko ajan etuoikeutetussa tilassa ja saa tehdä ihan mitä haluaa koneellasi. Prosessien oikeudet määräytyvät sen käynnistävän käyttäjän oikeuksien mukaan. Tavallinen käyttäjän käynnistämät ohjelmat ovat turvallisesti tavallisessa suoritustilassa, kun ylläpitäjän käynnistämät ohjelmat ovat jo heti valmiiksi etuoikeutetussa tilassa suoritettavia.
-"></note>
-</div>
+</text-box>
 
 ### Siirtymät etuoikeutetun ja tavallisen suoritustilan välillä
 Jotkut (ei kaikki!) käyttöjärjestelmän palvelut suoritetaan aina etuoikeutetussa tilassa. Kun prosessi (suorituksessa oleva ohjelma) kutsuu jotain etuoikeutettua palvelua, käyttöjärjestelmä tarkistaa kutsun yhteydessä onko kyseisellä prosessilla oikeus tehdä näin. Jos kaikki on hyvin, niin suoritus jatkuu etuoikeutetussa tilassa. Jos prosessi yrittää kutsua palvelua, johon sillä ei ole oikeuksia, niin prosessin suoritus päättyy virhetilanteeseen.
@@ -75,6 +75,8 @@ Keskeytyksiä on kolmenlaisia. Meneillään olevan konekäskyn aiheuttamat virhe
 Kaikkiin keskeytyksiin reagoidaan laitteistossa samalla tavalla. Keskeytystä vastaava bitti laitetaan päälle tilarekisterissä ja käskyn aiheuttaman virhetilanteen sattuessa käskyn suoritus lopetetaan. Käskyjen nouto- ja suoritussykliin on laitettu sen loppuun yksi vaihe lisää ja siinä tarkistetaan, että onko tapahtunut jokin keskeytys. Jos keskeytys havaitaan, niin siihen reagoidaan seuraavasti. Ensin talletetaan riittävä määrä tietoa (vähintään PC ja SR) nyt suorituksessa olevasta prosessista, jotta sen suoritus voi mahdollisesti jatkua normaalisti vähän ajan päästä. Seuraavaksi asetetaan PC:n arvoksi keskeytyskäsittelijän alkuosoite. Samalla laitetaan suorittimen etuoikeutettu suoritustila SR:ssä päälle. Keskeytyskäsittelijät ovat tärkeitä osa käyttöjärjestelmää ja ne saavat tehdä ihan mitä vaan. Kaikki tämä tehdään yhdessä humauksessa laitteistotasolla CPU:n kontrolliyksikön ohjaamana.
 
 -- kuva: ch-2-2-nouto-suor-kesk-sykli-draft   # kalvo 5.3
+
+![Aikaisempaa käskyjen nouto- ja suoritussyklikuvaa on päivitetty yhdellä uudella tilalla. Pitkä kaari käskyn suorituksesta seuraavan käskyn noutoon on katkaistu uudella vaiheella, joska tarkastetaan keskeytykset. Siinä yhteydessä PC:n arvo voi muuttua.](./ch-2-2-nouto-suor-kesk-sykli-draft.jpg)
 <div>
 <illustrations motive="ch-2-2-nouto-suor-kesk-sykli-draft"></illustrations>
 </div>
