@@ -58,8 +58,7 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 
 Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
 
-</textbox>
-</div>
+</text-box>
 
 ### Käyttöjärjestelmän palvelut aliohjelmina
 Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahansa suorituksessa oleva ohjelma voi käyttää (kutsua). Ne eroavat ohjelman omista aliohjelmista siinä, että ne on suunniteltu yleiskäyttöisiksi ja helpottamaan ohjelmien toteutusta. Tällaisia palveluja ovat esimerkiksi tekstin lukeminen näppäimistöltä tai tiedoston kirjoittaminen muistitikulle. On tosi käytännöllistä, että jokaisen ohjelmoijan ei tarvitse erikseen pohtia tällaisten toimintojen yksityiskohtia. Ohjelmien (ja ohjelmoijien!) ei edes tarvitse tietää minkälainen näppäimistö tai muistitikku laitteistossa on. Ohjelma toimii myös sellaisenaan, vaikka muistitikku vaihdettaisiin kovalevyyn.
