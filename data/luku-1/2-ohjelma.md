@@ -87,9 +87,9 @@ Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wik
 
 <text-box variant="example" name="Lauseke 87*555+32 symbolisella konekielellä">
 
-LOAD  R1, =87    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-MUL   R1, =555   ; kerro R1:n arvo luvulla 555<br>
-ADD   R1, =32    ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+LOAD  R1, =87    &nbsp;&nbsp;&nbsp;&nbsp; -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+MUL   R1, =555   &nbsp;&nbsp;&nbsp;&nbsp; -- kerro R1:n arvo luvulla 555<br>
+ADD   R1, =32    &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
 
@@ -97,9 +97,9 @@ Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin mon
 
 <text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
 
-35651571   &nbsp;&nbsp;&nbsp;&nbsp; ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-320864811  &nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
-287309856  &nbsp;&nbsp;&nbsp;&nbsp; ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+35651571   &nbsp;&nbsp;&nbsp;&nbsp; -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+320864811  &nbsp;&nbsp;&nbsp;&nbsp; -- kerro R1:n arvo luvulla 555<br>
+287309856  &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
 
