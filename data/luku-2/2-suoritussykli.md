@@ -19,7 +19,7 @@ Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Nä
 -- esimerkki: yksinkertainen konekäsky
 
 <text-box variant="example" name="Yksinkertainen konekäsky">
-ADD  R3, R5   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ; kentät: 17 3 0 5 0   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een
+ADD  R3, R5   &nbsp;&nbsp; -- kentät: 17 3 0 5 0  &nbsp;&nbsp;&nbsp; -- laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een
 </text-box>
 
 Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerkiksi kertolasku, niin käskyssä annettujen operandien (esim R3 ja R5) arvot kopioidaan ALU:un, ALU:lle annetaan kertolaskumääräys ja tulos talletetaan käskyssä annettuun rekisteriin (esim. R3). Jos se on hyppykäsky tai ehdollinen haarautuskäsky, niin mahdollisesti käskyn suorituksessa muutetaankin PC:n arvoa. Jos käskyn suorituksen aikana tapahtuu jokin virhetilanne, niin virhe indikoidaan tilarekisteriin ja käskyn suoritus keskeytetään. Tämä voi tapahtua esimerkiksi jakolaskun yhteydessä, jos suoritusaikana havaitaan jakajan arvon olevan nolla.
@@ -48,7 +48,9 @@ Nyt ymmärrät, miksi käyttöjärjestelmässä olevat virheet ovat niin vaarall
 -- note: tavallinen käyttäjä vs. ylläpitäjä
 
 <text-box variant="example" name="Tavallinen käyttäjä vai ylläpitäjä">
-Olisi hyvä, että suorittaisit kotitietokonettasi yleensä tavallisena käyttäjänä, etkä ylläpitäjän oikeuksilla. Jos vahingossa päästät haittaohjelman koneellesi, niin ero on merkittävä. Ylläpitäjän oikeuksilla toimiva haittaohjelma on koko ajan etuoikeutetussa tilassa ja saa tehdä ihan mitä haluaa koneellasi. Prosessien oikeudet määräytyvät sen käynnistävän käyttäjän oikeuksien mukaan. Tavallinen käyttäjän käynnistämät ohjelmat ovat turvallisesti tavallisessa suoritustilassa, kun ylläpitäjän käynnistämät ohjelmat ovat jo heti valmiiksi etuoikeutetussa tilassa suoritettavia.
+Olisi hyvä, että suorittaisit kotitietokonettasi yleensä tavallisena käyttäjänä etkä ylläpitäjän oikeuksilla. Jos vahingossa päästät haittaohjelman koneellesi, niin ero on merkittävä. Ylläpitäjän oikeuksilla toimiva haittaohjelma on koko ajan etuoikeutetussa tilassa ja saa tehdä ihan mitä haluaa koneellasi. 
+<br><br>
+Prosessien oikeudet määräytyvät sen käynnistävän käyttäjän oikeuksien mukaan. Tavallinen käyttäjän käynnistämät ohjelmat ovat turvallisesti tavallisessa suoritustilassa, kun ylläpitäjän käynnistämät ohjelmat ovat jo heti valmiiksi etuoikeutetussa tilassa suoritettavia.
 </text-box>
 
 ### Siirtymät etuoikeutetun ja tavallisen suoritustilan välillä
