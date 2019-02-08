@@ -21,6 +21,8 @@ On myös määritely konekäskykantoja, joissa aritmetiikkaoperaatioissa ei ole 
 
 Esimerkkikoneessa ttk-91 voi yhdessä konekäskyssä nimetä kaksi operandia, joista ensimmäinen on aina rekisteri. Toinen operandi voi olla joku rekisteri, se voi olla vakio, tai se voidaan määritellä näiden yhdistelmänä. Se voi olla myös muistissa, kuten seuraavassa on tehty.
 
+Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Itse laskenta on erikseen muistioperaatioista ja siinä on myös riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi lukuta noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
+
 -- esimerkki Yhteenlasku eri tyyppisillä suorittimilla
 
 <pre>
@@ -38,8 +40,6 @@ push B     add   B     add   r4,B    load  r11,B
 add        store C     store r4,C    add   r12,r10,r11
 pop C                                store r12,C
 </pre>
-
-Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Itse laskenta on erikseen muistioperaatioista ja siinä on myös riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi lukuta noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
 
 Olisi mukava, jos nopeita rekistereitä olisi paljon, koska tiedot löytyisivät tällöin usein mahdollisiman nopeasti. Suuri määrä rekistereitä kuitenkin tarkoittaa, että tarvitsemme enemmän bittejä niiden osoittamiseen konekäskyissä. Jos rekistereitä on 16, niin neljä bittiä riittää rekisterin osoitteeksi. Toisaalta, 128 rekisterille tarvitaan jo 7 bittiä niiden osoittamiseen. Tuolloin kolmen rekisterin nimeämiseen kuluu jo 21 bittiä, mikä tekee konekäskyistä ehkä turhan pitkiä. Usein rekistereitä on 16-32 kappaletta kutakin eri tyyppiä, jolloin yhden rekisterin nimeämiseen riittää 4-5 bittiä konekäskyissä.
 
@@ -84,7 +84,7 @@ load r1, @7(r2)  -- 2      1        2     0        7    r1 <- 88
 store r1, 7(r2)  -- 1      1        0     0        7  mem(17) <- 3
 </pre>
 
-Moodi kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Käskyä muistista noudettaessahan tuli jo yksi muistiviite. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana tulee lopuksi aina yksi muistiin _kirjoitus_.
+Moodi kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Käskyä muistista noudettaessahan tuli jo yksi muistiviite. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi kuin vastaavassa muistin lukukäskyssä (LOAD) ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana STORE-käskyssä tulee lopuksi aina yksi muistiin _kirjoitus_.
 
 ### Konekäskyjen pituus ja muoto
 Vaihtelevasta konekäskyjen pituudesta on se hyöty, että eri käskyillä voi olla erilaisia kenttiä. Esimerkiksi pelkästään rekistereiden välillä operoiva konekäsky ei tarvitse vakio-kenttää, mutta muistinviittauksen yhteydessä vakiokentästä taas olisi hyötyä. Joissakin tapauksissa vakiokenttä voisi olla kovinkin lyhyt (esim. 8 bittiä), kun taas muistisoitteiden tapauksissa se voisi olla jopa 32-bittinen tai pidempikin. Vaihtelevasta konekäskyjen pituudesta on kuitenkin myös haittaa. Käskyjen nouto muistista on vaikeata, kun ei heti tiedetä mitenkä monta tavua tarvitsee noutaa. Tavujen määrä selviää vasta kun operaatiokoodi on ensin haettu muistista. Tämän vuoksi nykyään yleensä käytetään usein vain vakiomittaisia konekäskyjä.
@@ -97,11 +97,24 @@ Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikil
 Ttk-91 symbolisen konekielen koodiesimerkkejä
 
                   op.koodi tul.rek. moodi ind.rek. vakiokenttä
+-- hae X:n arvo muistista rekisteriin r1
 load r1, X         2 (load)     1      1     0     X:n osoite 
+
+-- lisää r2:n arvoon 6
 add  r2, =6        17 (add)     2      0     0     6
+
+-- kerro r4:n arvo muistissa olevan taulukon Tbl alkion i arvolla,
+-- kun i on r1:n arvo
 mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
+
+-- jaa r3:n arvo luvulla, jonka osoite on muistissa 
+-- osoitinmuuttujan ptrX arvona
 div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
+
+-- hyppää osoitteeseen loop, jos r2:n arvo on &gt; 0
 jpos  r2, loop     35 (jpos)    2      0     0     loop:n osoite
+
+-- talleta r2:n arvo muistissa olevan muuttujan Y arvoksi
 store r2, Y        1 (store)    2      0     0     Y:n osoite 
 </pre>
 
@@ -138,12 +151,12 @@ muuttujia muistissa samalla suorittimella. Kustakin
 muuttujasta on kolme versiota. Muuttuja iA on kokonaisluku, 
 fA on 32-bittinen liukuluku ja dA on 64-bittinen liukuluku, jne.
 
-kokonaisluvuilla liukuluvuilla    64-bittisillä liukulukuja
+kokonaisluvuilla  liukuluvuilla    64-bittisillä liukuluvuilla
 
-load  r1,iA      load f1,fA       dload f2,dA
-load  r2,iB      load f2,fB       dload f4,dB
-add   r3,r1,r2   fadd f3,f1,f2    dfadd f6,f2,f4
-store r3,iC      store f3,fC      dstore f6,dC
+load  r1,iA       load f1,fA       dload f2,dA
+load  r2,iB       load f2,fB       dload f4,dB
+add   r3,r1,r2    fadd f3,f1,f2    dfadd f6,f2,f4
+store r3,iC       store f3,fC      dstore f6,dC
 </pre>
 
 64-bittiset rekisterit muodostetaan usein yhdistämäällä kaksi peräkkäistä 32-bittistä rekisteriä. Esimerkin 64-bittiset liukuluvut on talletettu kahteen peräkkäiseen 32-bittiseen liukulukurekisteriin. Muuttujan dA 64-bittinen arvo ladataan rekisteriin f2-f3, jne.
@@ -169,13 +182,13 @@ Bittien käsittelyä varten mukana on yleensä ainakin loogiset operaatiot AND, 
 <!-- esimerkki bittioperaatioista -->
 
 <pre>
-op:    A and B    A or B   A xor B   not A
-A =       1100      1100     1100     1100
-B =       0101      0101     0101
-tulos     0100      1101     1001     0011
+operaatio:  A and B    A or B   A xor B   not A
+A =          1100       1100     1100     1100
+B =          0101       0101     0101
+tulos        0100       1101     1001     0011
 </pre>
 
-Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille. Ne sopivat kuitenkin myös käsittelemään _loogisia muuttujia_, joissa on vain yksi bitti käytössä. Tällöin esimerkiksi 32-bittisen muuttujan Flag arvo on talletettu vain yhteen bittiin ja loput bitit ovat aina nollia.
+Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille pareittaijn. Ne sopivat kuitenkin myös käsittelemään _loogisia muuttujia_, joissa on vain yksi bitti käytössä. Tällöin esimerkiksi 32-bittisen muuttujan Flag arvo on talletettu vain yhteen bittiin ja loput bitit ovat aina nollia.
 
 -- Note: xor-operaatio salakirjoituksen apuna
 
@@ -201,9 +214,9 @@ Kaikki [silmukat](https://fi.wikipedia.org/wiki/Toistorakenne) toteutetaan myös
 -- for loop  esimerkki 
 
 <pre>
-For-loop C-kielen semantiikalla
+For-loop C-kielen semantiikalla (testi silmukan alussa)
 
-for (i=0; i &lt; n; i=i+1) {      load   r1, =0     ; r1 on i
+for (i=0; i &lt; n; i=i+1) {     load   r1, =0     ; r1 on i
     tbl[i] = 0;          loop comp   r1, n      ; kaikki tehty? 
     }                         jnles  done       ; poistu, jos valmista
                               load   r2, =0     ; alusta Tbl[i]
@@ -217,11 +230,13 @@ for (i=0; i &lt; n; i=i+1) {      load   r1, =0     ; r1 on i
 
 -- funktion kutsu esimerkki  
 <pre>
-x = sum(y, z);            push  sp, y    ; laita parametrin y arvo pinoon
-                          push  sp, z    ; laita parametrin z arvo pinoon
-                          call  sp, sum  ; kutsu fuktiota Sum
-                          pop   sp, r1   ; ota funktion paluuarvo pinosta
-                          store r1, x    ; talleta paluuarvo muuttujan x arvoksi
+C-kieli               konekieli
+
+x = sum(y, z);        push  sp, y    ; laita parametrin y arvo pinoon
+                      push  sp, z    ; laita parametrin z arvo pinoon
+                      call  sp, sum  ; kutsu fuktiota Sum
+                      pop   sp, r1   ; ota funktion paluuarvo pinosta
+                      store r1, x    ; talleta paluuarvo muuttujan x arvoksi
 </pre>
 
 Käyttöjärjestelmän palvelupyynnöt (SVC, supervisor call) ovat hyvin samankaltaisia aliohjelmakutsujen kanssa, mutta kuitenkin vähän erilaisia. Suorittimen suoritustila muuttuu etuoikeutetuksi ja kutsun yhteydessä täytyy tarkistaa, onko ohjelmalla oikeus kutsua tätä palvelua vai ei. Palvelusta palataan lopulta omalla paluukäskyllä (esim. IRET, interrupt return).
@@ -229,8 +244,10 @@ Käyttöjärjestelmän palvelupyynnöt (SVC, supervisor call) ovat hyvin samanka
 -- svc kutsu
 
 <pre>
-print(x);            load  r1, x      ; laita tulostettava arvo rekisteriin r1
-                     svc   sp, =print ; kutsu käyttöjärjestelmäpalvelua Print
+C-kieli         konekieli
+
+print(x);       load  r1, x      ; laita tulostettava arvo rekisteriin r1
+                svc   sp, =print ; kutsu käyttöjärjestelmäpalvelua Print
 </pre>
 
 Ttk-91:ssä on ehdoton hyppykäsky JUMP. Siellä on myös rekisterin nolla-arvoon vertailuun perustuvat haarautumiskäskyt JNEG, JZER, JPOS, JNNEG, JNZER ja JNPOS. Siellä on kahden operandin vertailukäsky COMP tilanteisiin, jossa vertailun kohde on nollasta poikkeava.  Vertailun tulokseen perustuva haarautumiskäskyt ovat JLES, JEQU, JGRE, JNLES, JNEQU ja JNGRE. Nämä haarautumiset vaativat siis aina kahden konekäskyn suorittamisen.
@@ -242,10 +259,21 @@ I/O-laitteiden käyttö on vaikeata, koska siinä pitää synkronoida toiminta s
 
 Ttk-91:ssä on IN-käsky tiedon lukemiseen näppäimistöltä ja OUT-käsky tiedon kirjoittamiseen näytölle. Näitä voi käyttää tavallisessa suoritustilassa, koska ttk-91:ssä ei muita suoritustiloja ole edes määritelty.
 
+-- testaa erilaisia kommentteja
+<!-- huutomerkki kommentti -->
+
+'''
+
+    hipsu kommentti
+    
+''' 
+
 -- IO käsky esimerkki
 <pre>
-Print(x);            load  r1, x    ; laita tulostettava arvo rekisteriin r1
-                     out   r1, =crt ; tulosta r1 arvo näytölle konekäskyllä out
+C-kieli       konekieli
+
+Print(x);     load  r1, x    ; laita tulostettava arvo rekisteriin r1
+              out   r1, =crt ; tulosta r1 arvo näytölle konekäskyllä out
 </pre>
 
 ### Erityiskäskyt
@@ -257,7 +285,9 @@ Ttk-91:ssä on NOP-käsky. Siinä ei ole muita erityiskäskyjä, koska määritt
 
 -- erityiskäskyesimerkki
 <pre>
-if (x &lt; y)                 load r1, x    -- onko x y?
+C-kieli           konekieli
+
+if (x &lt; y)               load r1, x    -- onko x &lt; y?
   y = x;                 comp r1, y
                          jnles  jatka  -- ei ole, ota else-haara
                          store r1, y
@@ -305,7 +335,7 @@ done   store r1, sum      -- tallenna summa muuttujaan sum      (suora muistiv.)
        svc   sp, =halt    -- kutsu käyttöjärjestelmäpalv. 11 (välitön tiedonos.)
 </pre>
 
--- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville?
+-- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville? Entä TitoTrainer?
 
 <text-box variant="example" name="Titokone">
   
