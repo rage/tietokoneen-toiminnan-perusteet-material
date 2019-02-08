@@ -97,9 +97,9 @@ Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin mon
 
 <text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
 
-35651571    ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-320864811   ; kerro R1:n arvo luvulla 555<br>
-287309856   ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+35651571   &nbsp;&nbsp;&nbsp;&nbsp; ; laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
+320864811  &nbsp;&nbsp;&nbsp;&nbsp; ; kerro R1:n arvo luvulla 555<br>
+287309856  &nbsp;&nbsp;&nbsp;&nbsp; ; lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
 
