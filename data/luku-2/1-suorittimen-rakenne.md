@@ -14,6 +14,8 @@ Suorituksen aikana prosessin (järjestelmässä olevan ohjelman esitysmuoto) ohj
 Välimuisti sijaitsee suorittimen välittömässä yhteydessä. Välimuistin idea on, että tieto löytyy jostain ihan suorittimen läheltä eikä sitä tarvitse hakea väylän kautta kaukaa muistista. Välimuisti toimii automaattisesti suoraan laitteiston avulla. Täten konekäskyn viitatessa muistiin ei mitenkään tiedetä, löytyykö tieto välimuistista vai ei. Joskus se löytyy ja joskus taas ei. Useimmissa tapauksissa tieto löytyy välimuistista.
 
 -- kuva: ch-2-1-suoritin-ja-muisti-draft   # kalvo 5.2
+
+![Yksinkertainen esimerkkijärjestelmä. Suoritin ja muisti ovat yhdistettynä väylään. Muistin sisällä kolme laatikkoa. Ne ovat suorituksessa oleva prosessi ja sen data, kirjastorutiinit ja käyttöjärjestelmä. Muistissa on neljä laatikkoa. Ne ovat väylän liittymän kohdalla oleva välimuisti, rekisterit, suoritettava konekäsky ja konekäskyjen suorituspiirit.](./ch-2-1-suoritin-ja-muisti-draft.jpg)
 <div>
 <illustrations motive="ch-2-1-suoritin-ja-muisti-draft"></illustrations>
 </div>
@@ -27,16 +29,16 @@ Suorittimella on tiedon tallettamiseen myös muita sisäisiä rekistereitä, joi
 Väylä on kimppu sähköjohtoja, jotka voidaan luokitella käyttötavan mukaan kolmeen eri ryhmään. _Dataväylän_ johtimien kautta siirretään itse data. Dataväylän _leveys_ voi esimerkiksi olla 32 bittiä (32 johdinta), jolloin 32-bittinen sana siirtyy kerralla läpi, mutta 64-bittinen tieto pitää lähettää kahdessa ryhmässä. _Osoiteväylän_ avulla lähetetään muistiosoitteet. Sen leveys on tyypillisesti sama kuin dataväylän, jolloin esimerkiksi 32-bittinen muistiosoite voidaan lähettää nopeasti yhdellä kertaa. _Kontrolliväylän_ avulla suoritin esimerkiksi kertoo muistipiirille, onko kyseessä luku- tai kirjoituspyyyntö. Muistipiiri taas voi kertoa kontrolliväylän kautta suorittimelle, että haluttu sana on talletettu muistiin ja suoritus voi jatkua. Kontrolliväylässä on myös oma johtimensa sitä varten, että jokin I/O-laite on saanut tehtävänsä tehtyä. Tämän johtimen avulla ulkoinen laite voi aiheuttaa _I/O-laitekeskeytyksen_, johon suoritin sitten voi kohta esiteltävällä tavalla reagoida.
 
 -- note: bitti, tavu, sana
-<div>
-  <note heading="Bitti, tavu, sana" description="
+
+<text-box variant="example" name="Bitti, tavu, sana">
 Tietokone toimii binäärijärjestelmän avulla. Binäärijärjestelmän numeron (0 tai 1) talletettu esitysmuoto on bitti. Nykyään on vakiintunut ryhmitellä bitit tavuiksi ja sanoiksi. Yksi tavu on 8 bittiä ja sana yleensä 4 tavua eli 32 bittiä. Kaksoissana on 8 tavua eli 64 bittiä. Sanojen pituus voi vaihdella tietokoneesta riippuen, mutta edellämainitut pituudet ovat yleisiä.
-<br>
-<br>
+<br><br>
 Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esimerkiksi, tavussa 00001000 bitin numero 3 arvo on yksi, kun muut bitit ovat nollia. Numerointi alkaa nollasta sen vuoksi, että tavuun talletetussa positiivisessa kokonaisluvussa kunkin bitin numeroarvo vastaa bitin numeron kakkosen potenssia. Esimerkiksi, tavun 00000101 numeroarvo on 4+1 eli 5.
-"></note>
-</div>
+</text-box>
 
 -- kuva: ch-2-1-suorittimen-rakenne-draft   # kalvo 5.4, ei välimuistia
+
+![Suoritin ja väylä tarkemmin. Väylä on jaettu kolmeen eri osaan, jotka ovat dataväylä, osoiteväylä ja kontrolliväylä. Suorittimen sisällä on neljä komponenttia, jotka ovat muistinhallintayksikkö MMU, rekisterit, aritmeettislooginen yksikkö ALU ja kontrolliyksikkö CU. Välimuisti puuttuu kuvasta kokonaan. Suorittimen komponentteja yhdistää niiden välinen omna sisäinen dataväylä ja niiden välisen kommunikoinnin toteuttavat kontrollisignaalit. Väylän lähellä on muistinhallintayksikkö MMU, jossa on sisäiset rajarekisterit Base ja Limit, muistin osoitusrekisteri MAR, muistin puskurirekisteri MBR ja väylän kontrollirekisteri BusCtl. Rekistereitä on kahdeksan kappaletta R0-R7. Kontrolliyksikkössä on neljä sisäistä rekisteriä. Ne ovat paikanlaskuri PC, käskyrekisteri IR, tilarekisteri SR ja tilapäisrekisteri TR.](./ch-2-1-suorittimen-rakenne-draft.jpg)
 <div>
 <illustrations motive="ch-2-1-suorittimen-rakenne-draft"></illustrations>
 </div>
@@ -47,11 +49,10 @@ MMU (Memory Management Unit) toimii suorittimen käyttöliittymänä väylälle.
 Normaali suorituksessa oleva ohjelma (prosessi) ei saa viitata muiden prosessien tai käyttöjärjestelmän muistialueisiin. Tämä on toteutettu (kurssin esimerkkikoneessa) sisäisillä rajarekistereillä BASE ja LIMIT. Suorituksessa olevan ohjelman muistialue alkaa rekisterin BASE osoittamasta paikasta ja on rekisterin LIMIT pituinen. Pituus voida ilmoittaa esimerkiksi tavuina tai sanoina.
 
 -- note: ttk-91
-<div>
-  <note heading="Esimerkkitietokone ttk-91" description="
+
+<text-box variant="example" name="Esimerkkitietokone ttk-91">
 Kurssilla käytetään esimerkkinä hyvin yksinkertaista tietokonetta, joka on antaa oikein hyvän kuvan todellisesta tietokoneesta. Todellinen tietokone on tietenkin jonkin verran monimutkaisempi ja kattavampi. Sellaisiin voitte sitten perehtyä myöhemmin, kun teillä on paremmat taustatiedot aihepiiristä. Tietokoneen ttk-91 määritelmän on tehnyt Auvo Häkkinen vuonna 1991 Helsingin yliopistolla pidettyä Tietokoneen toiminta -kurssia varten. Ttk-91 on edelleen käytössä ja sille on tehty mm. simulaattori Titokone symbolisella konekielellä tehtyjen ohjelmien kehittämiseksi ja ajamiseksi.
-"></note>
-</div>
+</text-box>
 
 Rajarekistereiden BASE ja LIMIT käyttö aiheuttaa monimutkaisuutta muistin käytössä. Ohjelman käyttämät muistiosoitteet ovat suhteellisia BASE rekisterin arvoon ja arvovälillä \[0, LIMIT-1\]. Joka muistiviitteen yhteydessä MMU tekee _osoitteenmuunnoksen_ ohjelman käyttämästä osoiteavaruudesta (esim. \[0, 511\]) keskusmuistin omaan paljon suurempaan osoiteavaruuteen (esim. \[0, 4&nbsp;194&nbsp;303\]).  MMU tarkistaa ensin, että onko ohjelman käyttämä muistiosoite (esim. 96) välillä \[0, 511\]. Jos se ei ole, niin tästä aiheutuu virhetilannekeskeytys. Jos osoite on sallittu, niin siihen lisätään BASE-rekisterin arvo (esim. 20&nbsp;000) ja näin saatu todellinen eli fyysinen muistiosoite (esim. 20&nbsp;096) annetaan väylän kautta muistipiirille.
 
