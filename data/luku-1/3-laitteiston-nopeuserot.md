@@ -13,7 +13,7 @@ Meille ihmisille ei ole juurikaan väliä, tapahtuuko jokin asia millisekunnissa
 Tietokoneelle asia on ihan erilainen. Millisekunti on miljoona nanosekuntia ja on hyvinkin merkittävää, kestääkö jonkin asian tekeminen esimerkiksi 5 ms tai 5 ns. Yksi nanosekunti on niin lyhyt aika, että valo ehtii tyhjiössä kulkea vain 30 cm sinä aikana. Sähkösignaalit tietokoneen laitteistossa kulkevat vielä hitaammin. Sen vuoksi tietokoneiden pitää olla pieniä, jos niistä halutaan nopeita!
 
 
--- Note: millisekunti, jne
+<!-- Note: millisekunti, jne -->
 
 <text-box variant="example" name="Milli-, mikro-, nano- ja pikosekunti">
 
@@ -35,6 +35,7 @@ Vaikka tietokonelaitteistoja kehitetään nopeammiksi koko ajan ja nykyisetkin l
 Laitteiston ja koko tietokonejärjestelmän nopeuseroja voi illustroida Teemun juustokakkuesimerkillä. Esimerkki on vähän lapsellinen, mutta koeta kestää.
 
 <!-- juustokakku kuva ch-1-3-juustokakku -->
+
 ![Kokki, jonka kädessä on kulho ja juustoa. Aika 0.5 sekuntia (rekisteri). Pöytä, jossa on valmiina juustoa. Aika 1-2 sekuntia (välimuisti). Suljettu jääkaappi, jonka sisällä on juustoa. Aika 25 sekuntia (muisti). Saturnus-raketti nousemassa ylös ja viemässä Apollo-alusta kohti kuuta, jossa on juustoa. Aika 10 päivää (levy). SpaceX:n BRF-raketti lähtee matkalle Orion-alus nokassaan kohti Jupiterin Europa-kuuta, jossa on juustoa. Aika 4 vuotta (pilvi, ihminen).](./ch-1-3-juustokakku.svg)
 <div>
 <illustrations motive="ch-1-3-juustokakku" totalheight="100%"></illustrations>
@@ -66,13 +67,15 @@ Vielä suurempi nopeusero keskusmuistin ja erilaisten massamuistien välillä on
 
 Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nopeuseroa kurotaan umpeen [välityspalvelimilla](https://fi.wikipedia.org/wiki/V%C3%A4lityspalvelin) (proxy). Esimerkiksi, [Los Angeles'issa](https://fi.wikipedia.org/wiki/Los_Angeles) olevan paljon käytetyn kissankuvasivuston tiedostoja voi olla valmiiksi kopioituna verkkopalvelujen tarjoajan omalle välityspalvelimelle Suomessa. Näin paljon käytettyihin kissakuviin pääsee käsiksi nopeasti ja tiedonsiirron määrä Los Angeles'ista Suomeen vähenee huomattavasti.
 
--- kuva: muistihierarkia ch-1-3-muistihierarkia-draft
-![olme sisäkkäistä aluetta. Sisimpänä on laitteisto, jossa on rekisterit, muisti ja niiden välissä välimuistit. Nuoli menee muistista välimuistien läpi rekistereihin. Keskellä on järjestelmätaso, jolla on laitteisto, massamuisti ja niiden välissä käyttöjärjestelmän ylläpitämä virtuaalimuisti ja levyvälimuisti. Nuoli menee massamuistista virtuaalimuistin ja levyvälimuistin läpi muistiin. Uloin alue on internet, jossa on tämä järjestelmän, pilvipalvelu/www ja niiden välissä välityspalvelin eli proxy. Nuoli pilvipalvelusta proxyn kautta massamuistiin. Laitteiston nopeus on ns-luokkaa, järjestelmän massamuistin nopeus ms-luokkaa. Pilvipalveluiden ja muun internetin nopeus on sekuntien luokkaa.](./ch-1-3-muistihierarkia-draft.jpg)
+<!-- kuva: muistihierarkia ch-1-3-muistihierarkia-draft -->
+
+![Kolme sisäkkäistä aluetta. Sisimpänä on laitteisto, jossa on rekisterit, muisti ja niiden välissä välimuistit. Nuoli menee muistista välimuistien läpi rekistereihin. Keskellä on järjestelmätaso, jolla on laitteisto, massamuisti ja niiden välissä käyttöjärjestelmän ylläpitämä virtuaalimuisti ja levyvälimuisti. Nuoli menee massamuistista virtuaalimuistin ja levyvälimuistin läpi muistiin. Uloin alue on internet, jossa on tämä järjestelmän, pilvipalvelu/www ja niiden välissä välityspalvelin eli proxy. Nuoli pilvipalvelusta proxyn kautta massamuistiin. Laitteiston nopeus on ns-luokkaa, järjestelmän massamuistin nopeus ms-luokkaa. Pilvipalveluiden ja muun internetin nopeus on sekuntien luokkaa.](./ch-1-3-muistihierarkia-draft.jpg)
 <div>
 <illustrations motive="ch-1-3-muistihierarkia-draft" frombottom="0" totalheight="70%"></illustrations>
 </div>
 
--- quiz 1.3.1-11 Väitteet tietokoneen nopeudesta, etc
+<!-- quiz 1.3.1-11 Väitteet tietokoneen nopeudesta, etc -->
+
 <div><quiznator id="5c50086b3972a914741025fc"></quiznator></div>
 <div><quiznator id="5c500940fd9fd71425c622c7"></quiznator></div>
 <div><quiznator id="5c500a1999236814c5bb830d"></quiznator></div>
@@ -85,8 +88,9 @@ Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nop
 <div><quiznator id="5c500eabddb6b814af32160d"></quiznator></div>
 <div><quiznator id="5c500efe3972a91474102610"></quiznator></div>
 
--- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary
+<!-- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary -->
 
+### Yhteenveto
 Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen osan tehtävien kanssa.
