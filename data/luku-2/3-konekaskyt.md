@@ -27,7 +27,6 @@ Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus v
 
 ```
 Yhteenlasku eri tyyppisillä suorittimilla
-=========================================
 
 Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
 tyyppisillä suorittimilla. Operandien lukumäärä 
@@ -73,7 +72,6 @@ Ttk-91:n suorittimella on kolme vaihtoehtoista tapaa saada jälkimmäinen operan
 
 ```
 Ttk-91 symbolisen konekielen tiedonosoitusmoodit
-================================================
 
 Oletetaan, että kaikissa käskyissä alkuaan rekisterin r1 arvo 
 on 3, rekisterin r2 arvo on 10, muistipaikan mem(17) arvo on 45, 
@@ -99,7 +97,6 @@ Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikil
 
 ```
 Ttk-91 symbolisen konekielen koodiesimerkkejä
-=============================================
 
                   op.koodi tul.rek. moodi ind.rek. vakiokenttä
 -- hae X:n arvo muistista rekisteriin r1
@@ -152,7 +149,6 @@ Liukuluvuille on omat vastaavat konekäskynsä. Niiden toteutus on jonkin verran
 
 ```
 Koodiesimerkki (ei ttk-91)
-==========================
 
 Laske C=A+B, kun A, B ja C ovat muuttujia muistissa
 samalla suorittimella. Kustakin muuttujasta on kolme
@@ -190,7 +186,6 @@ Bittien käsittelyä varten mukana on yleensä ainakin loogiset operaatiot AND, 
 
 ```
 Esimerkki: bittioperaatiot
-==========================
 
 operaatio: A and B   A or B   A xor B  not A
 A:          1100      1100     1100    1100
@@ -224,8 +219,7 @@ Kaikki [silmukat](https://fi.wikipedia.org/wiki/Toistorakenne) toteutetaan myös
 <!-- for loop  esimerkki -->
 
 ```
-Esimerkki: for-loop
-===================
+Esimerkki: for-silmukka
 
 For-loop C-kielen semantiikalla (testi silmukan alussa)
 
@@ -242,9 +236,9 @@ for (i=0; i<n; i=i+1) {         load   r1, =0     ; r1 on i
 [Aliohjelmat](https://fi.wikipedia.org/wiki/Aliohjelma), funktiot ja metodit ovat ohjelmoijan perustyökaluja ohjelmoinnissa. Niitä kutsutaan tässä kaikki yleisnimellä "aliohjelma". CALL-käskyllä kontrolli siirretään aliohjelmaan, eli se toimii ehdottoman hyppykäskyn tavoin ja aiheuttaa haarautumisen annettuun aliohjelmaan. Haarautumisen lisäksi se muuttaa laskentaympäristön aliohjelman omaan ympäristöön ja tallettaa paluuosoitteen johonkin. Esimerkiksi, aliohjelmassa voi olla omia muuttujia, jotka ovat käytettävissä vain aliohjelman suorituksen aikana. EXIT-käsky suorittaa paluun takaisin kutsun tehneeseen rutiiniin, kutsua seuraavaan konekäskyyn. Se myös palauttaa laskentaympäristön ennalleen.
 
 <!-- funktion kutsu esimerkki  -->
+
 ```
 Esimerkki: funktion kutsu
-=========================
 
 C-kieli               konekieli
 
@@ -261,7 +255,6 @@ Käyttöjärjestelmän palvelupyynnöt (SVC, supervisor call) ovat hyvin samanka
 
 ```
 Esimerkki: svc kutsu
-====================
 
 C-kieli         konekieli
 
@@ -282,7 +275,6 @@ Ttk-91:ssä on IN-käsky tiedon lukemiseen näppäimistöltä ja OUT-käsky tied
 
 ```
 Esimerkki: I/O-käsky
-====================
 
 C-kieli       konekieli
 
@@ -301,7 +293,6 @@ Ttk-91:ssä on NOP-käsky. Siinä ei ole muita erityiskäskyjä, koska määritt
 
 ```
 Esimerkki: NOP-käsky
-====================
 
 C-kieli           konekieli
 
@@ -321,7 +312,6 @@ Ttk-91:ssä on muuttujan tai vakion tilanvarauskäsky DC (data constant), joka v
 
 ```
 Ttk-91 ohjelmaesimerkki
-=======================
 
 Laske taulukon tbl alkioiden arvojen summa muuttujan sum arvoksi. Tulosta 
 muuttujan sum arvo.
@@ -329,8 +319,10 @@ muuttujan sum arvo.
                    -- tilanvaraukset
 sum    dc    0        -- määr. ja varaa tilaa muuttujalle sum, alkuarvo 0
                       -- symbolin sum arvo on muuttujan sum osoite
-tbl    ds   20        -- määr. ja varaa tilaa 20-alkioiselle taulukolle tbl
-                      -- symb. tbl arvo on taulukon ens. alkion tbl[0] osoite
+tbl    ds   20        -- määrittele ja varaa tilaa 20-alkioiselle 
+                      -- taulukolle tbl.
+                      -- symbolin tbl arvo on taulukon ensimmäisen 
+                      -- alkion tbl[0] osoite
 lkm    equ  20        -- määrittele symboli lkm, jolla arvo 20
 
 start  ...            -- aloita ohjelman suoritus
