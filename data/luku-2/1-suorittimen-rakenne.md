@@ -13,7 +13,7 @@ Suorituksen aikana prosessin (järjestelmässä olevan ohjelman esitysmuoto) ohj
 
 Välimuisti sijaitsee suorittimen välittömässä yhteydessä. Välimuistin idea on, että tieto löytyy jostain ihan suorittimen läheltä eikä sitä tarvitse hakea väylän kautta kaukaa muistista. Välimuisti toimii automaattisesti suoraan laitteiston avulla. Täten konekäskyn viitatessa muistiin ei mitenkään tiedetä, löytyykö tieto välimuistista vai ei. Joskus se löytyy ja joskus taas ei. Useimmissa tapauksissa tieto löytyy välimuistista.
 
--- kuva: ch-2-1-suoritin-ja-muisti-draft   # kalvo 5.2
+<!-- kuva: ch-2-1-suoritin-ja-muisti-draft   # kalvo 5.2   -->
 
 ![Yksinkertainen esimerkkijärjestelmä. Suoritin ja muisti ovat yhdistettynä väylään. Muistin sisällä kolme laatikkoa. Ne ovat suorituksessa oleva prosessi ja sen data, kirjastorutiinit ja käyttöjärjestelmä. Muistissa on neljä laatikkoa. Ne ovat väylän liittymän kohdalla oleva välimuisti, rekisterit, suoritettava konekäsky ja konekäskyjen suorituspiirit.](./ch-2-1-suoritin-ja-muisti-draft.jpg)
 <div>
@@ -28,7 +28,7 @@ Suorittimella on tiedon tallettamiseen myös muita sisäisiä rekistereitä, joi
 
 Väylä on kimppu sähköjohtoja, jotka voidaan luokitella käyttötavan mukaan kolmeen eri ryhmään. _Dataväylän_ johtimien kautta siirretään itse data. Dataväylän _leveys_ voi esimerkiksi olla 32 bittiä (32 johdinta), jolloin 32-bittinen sana siirtyy kerralla läpi, mutta 64-bittinen tieto pitää lähettää kahdessa ryhmässä. _Osoiteväylän_ avulla lähetetään muistiosoitteet. Sen leveys on tyypillisesti sama kuin dataväylän, jolloin esimerkiksi 32-bittinen muistiosoite voidaan lähettää nopeasti yhdellä kertaa. _Kontrolliväylän_ avulla suoritin esimerkiksi kertoo muistipiirille, onko kyseessä luku- tai kirjoituspyyyntö. Muistipiiri taas voi kertoa kontrolliväylän kautta suorittimelle, että haluttu sana on talletettu muistiin ja suoritus voi jatkua. Kontrolliväylässä on myös oma johtimensa sitä varten, että jokin I/O-laite on saanut tehtävänsä tehtyä. Tämän johtimen avulla ulkoinen laite voi aiheuttaa _I/O-laitekeskeytyksen_, johon suoritin sitten voi kohta esiteltävällä tavalla reagoida.
 
--- note: bitti, tavu, sana
+<!-- note: bitti, tavu, sana  -->
 
 <text-box variant="example" name="Bitti, tavu, sana">
   
@@ -38,7 +38,7 @@ Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esime
 
 </text-box>
 
--- kuva: ch-2-1-suorittimen-rakenne-draft   # kalvo 5.4, ei välimuistia
+<!-- kuva: ch-2-1-suorittimen-rakenne-draft   # kalvo 5.4, ei välimuistia  -->
 
 ![Suoritin ja väylä tarkemmin. Väylä on jaettu kolmeen eri osaan, jotka ovat dataväylä, osoiteväylä ja kontrolliväylä. Suorittimen sisällä on neljä komponenttia, jotka ovat muistinhallintayksikkö MMU, rekisterit, aritmeettislooginen yksikkö ALU ja kontrolliyksikkö CU. Välimuisti puuttuu kuvasta kokonaan. Suorittimen komponentteja yhdistää niiden välinen omna sisäinen dataväylä ja niiden välisen kommunikoinnin toteuttavat kontrollisignaalit. Väylän lähellä on muistinhallintayksikkö MMU, jossa on sisäiset rajarekisterit Base ja Limit, muistin osoitusrekisteri MAR, muistin puskurirekisteri MBR ja väylän kontrollirekisteri BusCtl. Rekistereitä on kahdeksan kappaletta R0-R7. Kontrolliyksikkössä on neljä sisäistä rekisteriä. Ne ovat paikanlaskuri PC, käskyrekisteri IR, tilarekisteri SR ja tilapäisrekisteri TR.](./ch-2-1-suorittimen-rakenne-draft.jpg)
 <div>
@@ -50,7 +50,7 @@ MMU (Memory Management Unit) toimii suorittimen käyttöliittymänä väylälle.
 
 Normaali suorituksessa oleva ohjelma (prosessi) ei saa viitata muiden prosessien tai käyttöjärjestelmän muistialueisiin. Tämä on toteutettu (kurssin esimerkkikoneessa) sisäisillä rajarekistereillä BASE ja LIMIT. Suorituksessa olevan ohjelman muistialue alkaa rekisterin BASE osoittamasta paikasta ja on rekisterin LIMIT pituinen. Pituus voida ilmoittaa esimerkiksi tavuina tai sanoina.
 
--- note: ttk-91
+<!-- note: ttk-91 -->
 
 <text-box variant="example" name="Esimerkkitietokone ttk-91">
   
@@ -87,7 +87,8 @@ Kontrolliyksikön tärkein tehtävä on jokaisella hetkellä määrätä, mitä 
 ### Sisäinen väylä
 Suorittimen sisällä on oma sisäinen väylä (tai usea) tiedonsiirtoon sen eri osien välillä. Jos katsot suorittimen [mikropiirikuvaa](https://commons.wikimedia.org/wiki/Category:Microprocessor_dies), väylät erottuvat selkeästi vierekkäisten sähköjohtimien viivoina. Kontrolliyksikkö ohjaa näiden väylien toimintaa samalla tavalla kuin kaikkea muutakin. Se voi esimerkiksi määrätä, että rekisterin MBR:n arvo kirjoitetaan sisäiselle väylälle ja seuraavaksi sisäisellä väylällä oleva arvo luetaan IR:ään. Sisäisten väylien lukumäärä ja rakenne vaihtelee huomattavasti suorittimesta toiseen.
 
--- quiz 2.1.1-7: Väitteet suorittimesta, muistista ja väylästä
+<!-- quiz 2.1.1-7: Väitteet suorittimesta, muistista ja väylästä -->
+
 <div><quiznator id="5c5023543972a9147410265b"></quiznator></div>
 <div><quiznator id="5c50244fddb6b814af321646"></quiznator></div>
 <div><quiznator id="5c5024e299236814c5bb8373"></quiznator></div>
