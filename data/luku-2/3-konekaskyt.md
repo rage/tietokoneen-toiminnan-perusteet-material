@@ -189,8 +189,8 @@ Bittien käsittelyä varten mukana on yleensä ainakin loogiset operaatiot AND, 
 <!-- esimerkki bittioperaatioista -->
 
 ```
-Esimerkki: bittioperaatioit
-===========================
+Esimerkki: bittioperaatiot
+==========================
 
 operaatio: A and B   A or B   A xor B  not A
 A:          1100      1100     1100    1100
@@ -305,7 +305,7 @@ Esimerkki: NOP-käsky
 
 C-kieli           konekieli
 
-if (x&lt;y)                 load r1, x    -- onko x&lt;y?
+if (x<y)                 load r1, x    -- onko x<y?
   y = x;                 comp r1, y
                          jnles  jatka  -- ei ole, ohita store
                          store r1, y
@@ -337,22 +337,22 @@ start  ...            -- aloita ohjelman suoritus
        ...            -- alusta taulukko tbl jollain tavalla
 
                       -- alusta summan laskeminen
-      load r3, =lkm      -- r3=raja-arvo, aseta arvo    (välitön tiedonosoitus)
-      load r2, =0        -- r2=indeksi i, aseta alkuarvo 0  (välitön tiedonos.)
-      load r1, =0        -- r1=summa, aseta alkuarvo 0      (välitön tiedonos.)
+      load r3, =lkm      -- r3=raja-arvo, aseta arvo  (välitön tied.os.)
+      load r2, =0        -- r2=indeksi i, alkuarvo 0  (välitön tied.os.)
+      load r1, =0        -- r1=summa, alkuarvo 0      (välitön tied.os.)
                       -- vertaa ja laske summaa
-loop  comp r2, r3        -- vertailun tulos tilarekisteriin    (väl. tiedonos.)
-      jeq done           -- poistu silmukasta lopuksi          (väl. tiedonos.)
-      add r1, tbl(r2)    -- lisää tbl[i] summaan            (suora muistiviite)
+loop  comp r2, r3        -- vertailun tulos tilarekisteriin (väl. tied.os.)
+      jeq done           -- poistu silmukasta lopuksi       (väl. tied.os.)
+      add r1, tbl(r2)    -- lisää tbl[i] summaan           (suora muistiv.)
                       -- seuraava alkio
-      add r2, =1         -- lisää indeksiin r2 luku 1   (välitön tiedonosoitus)
-      jump loop          -- palaa testaamaan            (välitön tiedonosoitus)
+      add r2, =1         -- lisää indeksiin r2 luku 1   (välitön tiedonos.)
+      jump loop          -- palaa testaamaan            (välitön tiedonos.)
                       -- tallenna ja tulosta summa
-done  store r1, sum      -- tallenna summa muuttujaan sum      (suora muistiv.)
-      load  r4, sum      -- lue r4:ään muuttujan sum arvo      (suora muistiv.)
-      out   r4, =crt     -- tulosta r4:n arvo näytölle      (välitön tiedonos.)
+done  store r1, sum      -- tallenna summa muuttujaan sum  (suora muistiv.)
+      load  r4, sum      -- lue r4:ään muuttujan sum arvo  (suora muistiv.)
+      out   r4, =crt     -- tulosta r4:n arvo näytölle   (välitön tied.os.)
                       -- lopeta ohjelman suoritus
-      svc   sp, =halt    -- kutsu käyttöjärjestelmäpalv. 11 (välitön tiedonos.)
+      svc   sp, =halt    -- kutsu käyttöjärj.palv. 11    (välitön tied.os.)
 ```
 
 <!-- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville? Entä TitoTrainer?  -->
