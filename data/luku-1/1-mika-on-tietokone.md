@@ -17,13 +17,7 @@ Lähtötietoina kurssin osallistujilta oletetaan, että heillä olisi karkeasti 
 
 Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ovat [pöytäkoneet](https://fi.wikipedia.org/wiki/P%C3%B6yt%C3%A4tietokone), [läppärit](https://fi.wikipedia.org/wiki/Kannettava_tietokone) ja [tabletit](https://fi.wikipedia.org/wiki/Taulutietokone). Mutta myös [älypuhelimet](https://fi.wikipedia.org/wiki/%C3%84lypuhelin), [navigaattorit](https://fi.wikipedia.org/wiki/GPS-navigointilaite) ja erilaiset urheilukellot ovat tietokoneita. Kodin pöydällä oleva sisä- ja ulkolämpötilan näyttävä lämpömittari voi olla tietokone, kun taas sen ulkona oleva anturi ei sellainen ole. Toisaalta taas, lämpömittari voi paremminkin olla ns. [sulautettu järjestelmä](https://fi.wikipedia.org/wiki/Sulautettu_j%C3%A4rjestelm%C3%A4), jossa  tietokone on vain tapa toteuttaa toimintalogiikka mikropiirien asemesta. Tässä  mielessä älypuhelinkin on sulautettu järjestelmä. Sen voi mieltää olevan myös ihan täysverinen tietokone, koska siihen voi käyttäjä ladata suoritettavaksi uusia ohjelmia. Suuria  sulautettuja järjestelmiä ovat esimerkiksi pankkiautomaatit, matkustajalentokoneiden ohjausjärjestelmät ja voimalaitosten kontrollijärjestelmät. Tällaisten järjestelmien päätarkoitus ei ole tiedon prosessointi, vaan tietokone on ainoastaan pienehkö mutta tärkeä osa kokonaisjärjestelmää.
 
-´´´
-- hipsukommentti-
-´´´
-
-<!-- huutomerkki-kommentti --> 
-
--- Kuva:  ch-1-1-erilaiset-tietokoneet -- 
+<!-- Kuva:  ch-1-1-erilaiset-tietokoneet -->
 
 ![Kahdeksan erilaista tietokonekuvaa: läppäri, älypuhelin, urheilutietokone, playstation,  tablettipelikone, auton navigaattori, digikamera. Lopuksi Applen älypuhelin, tabletti, pöytäkone ja läppäri.](./ch-1-1-erilaiset-tietokoneet.svg)
 <div>
@@ -45,7 +39,8 @@ Mikä tekee jostain laitteesta tietokoneen? Yleisesti ottaen tietokone on mikä 
 ## Tietokoneen osat
 Minkälaisia laitteita tietokoneessa on? Tietokoneen osat voi karkeasti ottaen jakaa kolmeen luokkaan: laitteiston sisäiset osat tai laitteet, muiden tietokoneiden kommunikoivat laitteet ja ihmisen kanssa kommunikoivat laitteet. Ainoastaan _suoritin_ ja _muisti_ ovat välttämättömiä, ja kaikkia muita laitteita kutsutaan sen vuoksi yleisnimellä _oheislaite_. Eri tietokoneissa on vain niiden omiin käyttötarkoituksiin sopivat osat ja osien välinen tiedonsiirto on toteutettu erilaisten väylien kautta. Väylät taas ovat pohjimmiltaan joukko sähköjohtoja, joiden kautta tieto kulkee ykkösinä ja nollina.
 
--- Kuva: ch-1-1-tietokonejarjestelma
+<!-- Kuva: ch-1-1-tietokonejarjestelma -->
+
 ![Tietokonelaitteisto harmaalla taustalla. Sen yläosassa oheislaitteet käyttäjälle: näppäimistö, kosketusnäyttö, kuulokkeet, peliohjain. Näistä kaikista on nuolet ylhäällä olevalle käyttäjälle. Tietokonelaitteistossa oikealla on emolevy, jossa on suoritin, muisti ja väylät. Siihen on kytketty massamuistit, joista esimerkkkinä kovalevy. Siihen on kytketty myös langaton verkkosovitin, josta on yhteys Internetiin.](./ch-1-1-tietokonejarjestelma.svg)
 <div>
 <illustrations motive="ch-1-1-tietokonejarjestelma" frombottom="0" totalheight="100%"></illustrations>
@@ -71,8 +66,6 @@ Tietokoneen muistille on tyypillistä, että se on toteutusmekanisminsa vuoksi h
 
 Muistin kokoa mitataan yleisesti tavuina ([B](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka))). Tavun koko on kahdeksan [bittiä](https://fi.wikipedia.org/wiki/Bitti) ja yhteen tavuun voi tallettaa vaikkapa yhden merkin (esim. 't') tai pienen kokonaisluvun (esim. 57). Muistin koko vaihtelee huomattavasti tietokoneen mukaan. Jonkun pienen laitteen muistin määrä mitataan kilotavuina ([KB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1024 tai 1000 tavua), kun läppärin tai pöytäkoneen muistin koko voi olla useita gigatavuja ([GB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), miljoona KB) tai jopa teratavuja ([TB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1000 GB). Apollo-ohjelmassa lennettiin kuuhun vuonna 1969 [AGC](https://fi.wikipedia.org/wiki/Apollo_Guidance_Computer)-tietokoneen avulla, jossa oli muistia alle 20 KB.
 
--- onko tyhjä rivi näkyvissä?
-
 <text-box variant="example" name="Onko yksi KB (kilotavu) 1000 tavua vai 1024 tavua?">
   
 On vähän häiritsevää, että perustavaa laatua olevassa numerotiedossa on kahta erilaista käytäntöä. Merkintäongelma aiheutuu numerojärjestelmistä. Tietokoneen toteutus pohjautuu bitteihin ja usean bitin muodostamat luvut ovat 2-järjestelmän lukuja. Samoja etuliitteitä käytetään niin binäärijärjestelmässä kuin kymmenjärjestelmässäkin. Täten etuliitteet K, M ja G voivat tarkoittaa tilanteesta riippuen joko lukuja
@@ -91,6 +84,7 @@ Väylälle on tyypillistä, että vain yksi laite voi laittaa sinne tietoa kerra
 Väylälle on ominaista, että sen nopeus määräytyy siihen liitetyn hitaimman laitteen mukaiseksi. Ryhmäkeskustelussakin on tärkeätä, että kaikki puhuvat tarpeeksi hitaasti, jotta jokainen pysyy keskustelussa mukana. Tietokoneessa nopeimmat väylät ovat suorittimen ja muistin välissä. Muut väylät on liitetty näihin hierarkisesti käyttäen sovittimia, joiden avulla hitaammat väylät voidaan liittää nopeampiin suorituskyvyn siitä kärsimättä. Sovitin toimii kummallekin väylälle sen omalla nopeudella.
 
 <!-- Kuva: ch-1-1-vaylahierarkia -->
+
 ![Nopein väylä on sisäinen väylä suorittimen ja välimuistin välillä. Seuraavaksi nopein muistiväylä yhdistää välimuistin muistiin. Muistiväylässä on myös sovitin vähän hitaammalle PCI-väylälle, jossa on kiinni kovalevy. PCI-väylässä on myös sovitin vielä hitaammalle USB-väylälle, jossa on kiinni USB-muistitikku ja näppäimistö.](./ch-1-1-vaylahierarkia.svg)
 <div>
 <illustrations motive="ch-1-1-vaylahierarkia" frombottom="0" totalheight="40%"></illustrations>
@@ -139,6 +133,7 @@ Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikoi
 </text-box>
 
 <!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
+
 <div><quiznator id="5c4f004cc41ed4148d96a786"></quiznator></div>
 <div><quiznator id="5c4f00be017ffc13eddc93af"></quiznator></div>
 <div><quiznator id="5c4f01433972a914741021f3"></quiznator></div>
