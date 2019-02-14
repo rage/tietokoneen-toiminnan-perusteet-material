@@ -42,6 +42,44 @@ add        store C     store r4,C    add   r12,r10,r11
 pop C                                store r12,C
 </pre>
 
+-- VAI  2:
+
+```
+Yhteenlasku eri tyyppisillä suorittimilla
+=========================================
+
+Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
+tyyppisillä suorittimilla. Operandien lukumäärä 
+ADD-käskyssä on 0, 1, 2 tai 3.
+
+Pinokone   Akkurek.    Ttk-91        Load-store
+(0 oper.)  (1 oper.)   (2 oper.)     (3 oper.)
+
+push A     load  A     load  r4,A    load  r10,A
+push B     add   B     add   r4,B    load  r11,B
+add        store C     store r4,C    add   r12,r10,r11
+pop C                                store r12,C
+```
+
+-- VAI  3:
+
+'''
+Yhteenlasku eri tyyppisillä suorittimilla
+=========================================
+
+Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
+tyyppisillä suorittimilla. Operandien lukumäärä 
+ADD-käskyssä on 0, 1, 2 tai 3.
+
+Pinokone   Akkurek.    Ttk-91        Load-store
+(0 oper.)  (1 oper.)   (2 oper.)     (3 oper.)
+
+push A     load  A     load  r4,A    load  r10,A
+push B     add   B     add   r4,B    load  r11,B
+add        store C     store r4,C    add   r12,r10,r11
+pop C                                store r12,C
+'''
+
 Olisi mukava, jos nopeita rekistereitä olisi paljon, koska tiedot löytyisivät tällöin usein mahdollisimman nopeasti. Suuri määrä rekistereitä kuitenkin tarkoittaa, että tarvitsemme enemmän bittejä niiden osoittamiseen konekäskyissä. Jos rekistereitä on 16, niin neljä bittiä riittää rekisterin osoitteeksi. Toisaalta, 128 rekisterille tarvitaan jo 7 bittiä niiden osoittamiseen. Tuolloin kolmen rekisterin nimeämiseen kuluu jo 21 bittiä, mikä tekee konekäskyistä ehkä turhan pitkiä. Usein rekistereitä on 16-32 kappaletta kutakin eri tyyppiä, jolloin yhden rekisterin nimeämiseen riittää 4-5 bittiä konekäskyissä.
 
 Esimerkkikoneessa ttk-91 on 8 rekisteriä, joten niiden nimeämiseen konekäskyssä tarvitaan 3 bittiä. Konekäskyssä voi viitata kahteen rekisteriin.
