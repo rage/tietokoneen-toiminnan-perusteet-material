@@ -24,7 +24,7 @@ title: 'Ohjelma'
 
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
 
--- note: lauseke 
+<!-- note: lauseke -->
 
 <text-box variant="example" name="Algoritmi lausekkeen laskemiseksi laskimella">
 
@@ -34,7 +34,7 @@ Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ra
 
 </text-box>
 
--- note: pyöräilyreitti  
+<!-- note: pyöräilyreitti -->
 
 <text-box variant="example" name="Algoritmi nopeimman pyöräilyreitin valitsemiseksi">
 
@@ -52,7 +52,7 @@ Ohjelmille on tyypillistä, että niissä on joukko peräkkäin suoritettavia en
 
 Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https://fi.wikipedia.org/wiki/Aliohjelma) (funktio, metodi). Aliohjelmassa annettua joukkoa toimintoja voidaan suorittaa useammasta paikkaa ohjelmaa _kutsumalla_ kyseistä aliohjelmaa, mahdollisesti joidenkin [parametrien](https://fi.wikipedia.org/wiki/Parametri_(tietotekniikka)) kanssa. Aliohjelman kutsuminen on täsmällisesti määritelty toiminto muiden toimintojen joukossa. Parametrien avulla aliohjelman toimintaa voidaan säätää joka kutsukerralla siihen tilanteeseen sopivaksi. Aliohjelmat voivat myös palauttaa jonkin arvon kutsukohtaan, jolloin niitä sanotaan _funktioiksi_. Joissakin ohjelmointikielissä aliohjelmia tai funktioita sanotaan [metodeiksi](https://fi.wikipedia.org/wiki/Olio-ohjelmointi). Aliohjelmille on tyypillistä, että niillä on oma _laskentaympäristö_, jossa voi esimerkiksi olla aliohjelman omia tietorakenteita. Niitä voi käyttää vain tämän aliohjelman suorituksen aikana. Aliohjelmille on ominaista, että sen toimintojen loppuun suorittamisen jälkeen palataa takaisin aliohjelman kutsukohtaan. Aliohjelmaa kutsuttaessa kontrolli siirtyy sen alkuun ja aliohjelmasta palatessa kontrolli palaa aina aliohjelman kutsukohdan jälkeiseen toimintaan.
 
--- note: Funktio sum(table, n) 
+<!-- note: Funktio sum(table, n) -->
 
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
@@ -65,7 +65,7 @@ Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahan
 
 Erilaisten käyttöjärjestelmien palvelupyyntöjä kutsutaan joskus _järjestelmäkutsuiksi_, koska halutaan tehdä selkeä eri ohjelman omien aliohjelmien kutsuilla ja käyttöjärjestelmän palvelujen kutsuilla. Järjestelmäkutsuilla ohjelma siirtyy suorittamaan käyttöjärjestelmän palveluita ja sen vuoksi näiden (järjestelmä)palveluiden toteutuksen kanssa pitää olla erityisen varovainen. Kukin järjestelmäpalvelu tarkistaa kutsun yhteydessä, onko sitä kutsuneella ohjelmalla oikeus käyttää tuota palvelua. Esimerkiksi, mikä tahansa ohjelma voi kirjoittaa omia tietojaan kovalevylle, mutta mikä tahansa ohjelma ei saa fyysisesti tutkia kovalevyn sisältöä. Sen lisäksi käyttöjärjestelmä valvoo, että ohjelma saa lukea ja kirjoittaa vain sellaisia tietoja, mihin sillä on oikeus.
 
--- note: Ohjelman oikeudet
+<!-- note: Ohjelman oikeudet -->
 
 <text-box variant="example" name="Suoritettavan ohjelman oikeudet järjestelmässä">
 
@@ -138,7 +138,8 @@ Ohjelmointi tehdään yleensä **korkean tason kielellä**. Tuloksena syntynyt o
 
 Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos tehdään vaiheittain. Ensin ohjelma [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) konekieliseen muotoon. Sitten siihen [linkitetään](https://en.wikipedia.org/wiki/Linker_(computing)) (yhdistetään) muita itse tehtyjä ohjelman osia tai valmiina eri kirjastoissa olevia ohjelmien osia eli kirjastomoduuleita.
 
--- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys 
+<!-- kuva: käännös, linkitys, ch-1-2-kaannos-linkitys -->
+
 ![Kolme isoa laatikkoa, jotka kuvaavat kaikki massamuistin sisältöä. Vasemman puolimmainen laatikko esittää korkean tason kielistä esitystä ja siinä on kolme moduulia, Compute, Print ja Math. Kun ne käännetään, niistä saadaan keskimmäisen laatikon konekieliset esitykset moduuleille Compute, Print ja Math. Kirjastomoduuli Math voi olla siellä jo valmiinakin konekielisessä muodossa. Kun nämä kolme moduulia linkitetään yhteen, saadaan oikeanpuoliseen laatikkoon ohjelma P konekielisessä muodossa yhtenä latausmoduulina.](./ch-1-2-kaannos-linkitys.svg)
 <div>
 <illustrations motive="ch-1-2-kaannos-linkitys" frombottom="0" totalheight="100%"></illustrations>
@@ -146,7 +147,8 @@ Tarvitsemme esitystavan muunnoksen korkean tason kielestä konekieleen. Muunnos 
 
 Lopuksi ohjelma [ladataan](https://en.wikipedia.org/wiki/Loader_(computing)) konekielisessä muodossa tietokoneen muistiin ja sen suoritus voi alkaa. Näin tapahtuu esimerkiksi, kun klikkaat tietokoneen näytöllä jotain [kuvaketta](https://fi.wikipedia.org/wiki/Kuvake) (ikonia). Tällöin kyseisen ohjelman valmiiksi linkitetty konekielinen esitysmuoto ladataan massamuistista keskusmuistiin suoritusta varten. Joissakin tapauksissa kuvake voi esittää tiedostoa (esim. _cute-cat.jpg_, jolloin kuvaketta klikkaamalla aukeaa kyseistä tiedostoa käsittelevä ohjelma (esim. _Paint_) ja kyseinen tiedosto on ohjelmassa valmiiksi avattuna.
 
--- kuva: lataus, ch-1-2-lataus
+<!-- kuva: lataus, ch-1-2-lataus -->
+
 ![Yksinkertainen esimerkkijärjestelmä, jossa Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa olevasta ohjelma P:stä menee nuoli muistissa olevaan prosessiin P1, joka sisältää P1:n koodin, datan ja muut tiedot.](./ch-1-2-lataus.svg)
 <div>
 <illustrations motive="ch-1-2-lataus" frombottom="0" totalheight="100%"></illustrations>
@@ -157,7 +159,8 @@ Kääntäjät, linkittäjät ja lataajat ovat ihan tavallisia ohjelmia ja ne sis
 ### Tulkittavat ohjelmointikielet
 Jotkut ohjelmointikielistä ovat ns. tulkittavia kieliä. Se tarkoittaa, että niillä kirjoitettuja ohjelmia ei käännetäkään suorituksen tekevän tietokoneen omalle konekielelle vaan ne annetaan jollekin toiselle ohjelmalle (tulkille) suoraan tai vähän muokattuna syötteenä. Esimerkkinä tällaisesta tulkittavasta korkean tason ohjelmointikielestä on [Python](https://fi.wikipedia.org/wiki/Ohjelmointikielen_tulkki). Python-tulkki on tässä tilanteessa se varsinainen tietokoneella suoritettava ohjelma ja sinun Pythonilla kirjoittama ohjelmasi vain tekstimuotoista dataa (syötettä) Python-tulkille. Python-tulkki taas on ihan tavallinen (esim.) C'llä kirjoitettu ohjelma. Tosin on olemassa myös Python-tulkki [PyPy](https://www.wikiwand.com/fi/PyPy), joka on kirjoitettu Pythonilla itsellään! Sehän on vähän sama kuin että ranskan kielen oppikirja olisi kirjoitettu vain ranskan kielellä ilman mitään sanastoa. Ei ihan helppoa!
 
--- kuva Python ohjelma, tulkki, tietokone, ch-1-2-python-tulkki
+<!-- kuva Python ohjelma, tulkki, tietokone, ch-1-2-python-tulkki -->
+
 ![Yksinkertainen esimerkkijärjestelmä. Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa on suoritettava Python-ohjelma P sen tekstuaalisessa esitysmuodossa. Siellä on myös Python-tulkki konekielisessä esitysmuodossa. Lataamalla ohjelma Python-tulkki muistiin saadaan suorituksessa oleva prosessi PythonTulkki, jolle on annettu myös muistiin kopioitu ohjelma P datana.](./ch-1-2-python-tulkki.svg)
 <div>
 <illustrations motive="ch-1-2-python-tulkki" frombottom="0" totalheight="100%"></illustrations>
@@ -169,7 +172,8 @@ On olemassa tavukoodikääntäjiä myös muille ohjelmointikielille (esimerkiksi
 
 Java-virtuaalikoneen (JVM) voi toteuttaa myös muilla tavoin kuin tulkitsemalla. Yksi tapa on tavukoodin kääntäminen suoraan järjestelmän omalle konekielelle. Toinen tapa on sellaisen suorittimen toteuttaminen, joka tavallisten konekäskyjen lisäksi osaa suorittaa myös tavukoodin käskyjä konekäkyinä. Emme käsittele näitä tapoja tällä kurssilla sen enempää.
 
--- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM
+<!-- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM -->
+
 ![Yksinkertainen esimerkkijärjestelmä. Suoritin, muisti ja massamuisti ovat yhdistettynä väylään. Massamuisti on yhdistetty väylään laiteohjaimen kautta. Massamuistissa on tekstuaalisessa muodossa Java-ohjelma P, josta kääntämällä saadaan massamuistiin Java-ohjelma P tavukoodina. Massamuistissa on myös konekielinen JVM. JVM ladataan muistiin, jolloin siitä tulee prosessi JVM. Muistiin kopioidaan myös tavukoodinen Java-ohjelma P, joka syötetään datana JVM:lle.](./ch-1-2-JVM.svg)
 <div>
 <illustrations motive="ch-1-2-JVM" frombottom="0" totalheight="100%"></illustrations>
@@ -180,6 +184,7 @@ Tulkittavia ohjelmointikieliä moititaan usein hitaiksi, koska niillä kirjoitet
 Vaikka järjestelmässä suoritettaisiin missä tahansa muodossa olevaa ohjelmaa, niin todellisuudessa ollaan aina suorittamassa jotain tietokoneen omaa konekielistä koodia. Keskitymme jatkossa tällaisen konekielisen ohjelman suoritukseen, oli ohjelma sitten vaikkapa käyttäjän itse tekemä sovellus, Python-tulkki tai Javan tavukoodia tulkitseva JVM. Huomiomme kohteena on jatkossa vain sellaiset ohjelmat, joiden esitysmuoto suoritusaikana on tietokoneen oma konekieli.
 
 <!-- quiz 1.2.1-6 Onko tämä ohjelma -->
+
 <div><quiznator id="5c4f06fdfd9fd71425c61f43"></quiznator></div>
 <div><quiznator id="5c4f076714524713f95a05ec"></quiznator></div>
 <div><quiznator id="5c4f07c7017ffc13eddc93e1"></quiznator></div>
