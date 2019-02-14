@@ -7,7 +7,7 @@ On kertakaikkiaan nerokasta, kuinka yksinkertaista tietokoneen toiminta on konek
 
 Sen jälkeen kasvatamme PC:n arvoa yhdellä, koska oletusarvoisesti seuraavaksi suoritettava konekäsky on aina välittömästi seuraavana muistissa oleva käsky. Tätä seuraavan konekäskyn osoitetta voi vielä (esim.) hyppykäskyn suoritus muuttaa, mutta oletusarvoisesti seuraavaksi suoritetaan nykykäskyn jälkeen muistissa seuraavana oleva käsky.
 
--- kuva: ch-2-2-nouto-suor-sykli-draft   # kalvo 5.3
+<!-- kuva: ch-2-2-nouto-suor-sykli-draft   # kalvo 5.3  -->
 
 ![Kolme nuolta, jotka kiertävät kehässä toisiaan seuraten. Ylhäällä nuolten välissä on käskyn noutovaihe, jossa käskyrekisteriin IR haetaan muistista paikanlaskurin eli PC:n osoittama käsky. PC:n alkuarvona on nolla, mikä on alustettu syklin ulkopuolella etukäteen. Noutovaihetta seuraa lyhyt nuolen kaari, jonka jälken on ohjelmalaskurin kasvatus eli PC saa arvon PC+1. Sitten on taas lyhyt nuolen kaari, jonka jälkeen IR:ssä olevan käskyn suoritusvaihe. Se voi sisältää muistiviitteitä ja se voi muuttaa PC:n arvoa. Lopulta on pitkä nuolen kaari takaisin käskyn noutovaiheeseen.](./ch-2-2-nouto-suor-sykli-draft.jpg)
 <div>
@@ -16,11 +16,11 @@ Sen jälkeen kasvatamme PC:n arvoa yhdellä, koska oletusarvoisesti seuraavaksi 
 
 Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Näissä kentissä on mm. operaatiokoodi ja niiden rekistereiden numerot, joita käsky käsittelee. Operaatiokoodi voisi olla yhteenlaskukäskyn koodi (17) ja operandeina numerot 3 ja 5 (viitaten rekistereihin R3 ja R5). Kenttien avulla määritellään myös, mihin muistiosoitteeseen käsky mahdollisesti kohdistuu. Yleensä konekäskyissä on korkeintaan yksi muistiviite.
 
--- esimerkki: yksinkertainen konekäsky
+<!-- esimerkki: yksinkertainen konekäsky -->
 
 <text-box variant="example" name="Yksinkertainen konekäsky">
   
-ADD  R3, R5   &nbsp;&nbsp; -- kentät: 17 3 0 5 0  &nbsp;&nbsp;&nbsp; -- laske R3:n ja R5:n arvot yhteen ja talleta tulos R3:een
+ADD  R3, R5   &nbsp;&nbsp; -- kentät: 17 3 0 5 0, &nbsp;&nbsp; laske R3:n ja R5:n arvot yhteen, talleta tulos R3:een
 
 </text-box>
 
@@ -29,7 +29,7 @@ Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerk
 Sitten palataan syklissä seuraavan konekäskyn noutoon muistista ja sykli toistuu. Tämä on hämmästyttävän suoraviivaista ja opiskelijoiden on usein vaikea sisäistää, että tässäkö se kaikki on. Tietokone on tosiaankin vain tyhmä kone, joka suorittaa hyvin yksinkertaisia konekäskyjä yksi kerrallaan.
 
 
--- note: konekäskyjen samanaikainen suoritus
+<!-- note: konekäskyjen samanaikainen suoritus -->
 
 <text-box variant="example" name="Konekäskyjen suorituksen optimointi">
   
@@ -49,7 +49,7 @@ Etuoikeutetussa tilassa prosessi voi muuttaa kanta- ja rajarekistereiden arvoja,
 
 Nyt ymmärrät, miksi käyttöjärjestelmässä olevat virheet ovat niin vaarallisia. Jos tavallinen ohjelma toimii väärin, se voi sotkea vain oman muistialueensa. Käyttöjärjestelmän palikat voivat sotkea ihan mitä vain, minkä vuoksi niiden ohjelmointi pitää (pitäisi?) tehdä erityisen huolella.
 
--- note: tavallinen käyttäjä vs. ylläpitäjä
+<!-- note: tavallinen käyttäjä vs. ylläpitäjä -->
 
 <text-box variant="example" name="Tavallinen käyttäjä vai ylläpitäjä">
   
@@ -81,7 +81,7 @@ Keskeytyksiä on kolmenlaisia. Meneillään olevan konekäskyn aiheuttamat virhe
 ### Keskeytysten käsittely laitteistossa ja käyttöjärjestelmässä
 Kaikkiin keskeytyksiin reagoidaan laitteistossa samalla tavalla. Keskeytystä vastaava bitti laitetaan päälle tilarekisterissä ja käskyn aiheuttaman virhetilanteen sattuessa käskyn suoritus lopetetaan. Käskyjen nouto- ja suoritussykliin on laitettu sen loppuun yksi vaihe lisää ja siinä tarkistetaan, että onko tapahtunut jokin keskeytys. Jos keskeytys havaitaan, niin siihen reagoidaan seuraavasti. Ensin talletetaan riittävä määrä tietoa (vähintään PC ja SR) nyt suorituksessa olevasta prosessista, jotta sen suoritus voi mahdollisesti jatkua normaalisti vähän ajan päästä. Seuraavaksi asetetaan PC:n arvoksi keskeytyskäsittelijän alkuosoite. Samalla laitetaan suorittimen etuoikeutettu suoritustila SR:ssä päälle. Keskeytyskäsittelijät ovat tärkeitä osa käyttöjärjestelmää ja ne saavat tehdä ihan mitä vaan. Kaikki tämä tehdään yhdessä humauksessa laitteistotasolla CPU:n kontrolliyksikön ohjaamana.
 
--- kuva: ch-2-2-nouto-suor-kesk-sykli-draft   # kalvo 5.3
+<!-- kuva: ch-2-2-nouto-suor-kesk-sykli-draft   # kalvo 5.3  -->
 
 ![Aikaisempaa käskyjen nouto- ja suoritussyklikuvaa on päivitetty yhdellä uudella tilalla. Pitkä kaari käskyn suorituksesta seuraavan käskyn noutoon on katkaistu uudella vaiheella, joska tarkastetaan keskeytykset. Siinä yhteydessä PC:n arvo voi muuttua.](./ch-2-2-nouto-suor-kesk-sykli-draft.jpg)
 <div>
@@ -92,7 +92,8 @@ Käskyn nouto- ja suoritussykli jatkuu sitten normaalisti, mutta nyt ollaankin j
 
 On myös mahdollista, että käyttöjärjestelmän saatua kontrollin (suoritusvuoron suorittimella) keskeytyskäsittelijän kautta se päättääkin antaa suoritusvuoron jollekin toiselle prosessille. Näin voi tapahtua esimerkiksi ns. aikaviipalekeskeytyksen käsittelyssä, kun käyttöjärjestelmä yrittää antaa kaikille järjestelmässä oleville prosesseille reilusti suoritinaikaa, pieninä aikaviipaleina kerrallaan. Suorituksessa oleva ohjelma voi vaihtua minkä tahansa konekäskyn jälkeen, koska keskeytyksiä voi tulla ihan milloin vain. Tämä on erityisen harmillista, koska ohjelman suorituksessa voi olla ajanjaksoja, jolloin tietyn koodinpätkän suoritus pitäisi pystyä tekemään alusta loppuun yhteen menoon. Tilanne on vähän sama kuin että sinä et halua kenenkään keskeyttävän itseäsi juuri kun olet tekemässä maksutapahtumaa verkkopankissa. Se pitää tehdä alusta loppuun oikein. Tämä samanaikaisuudenhallintaongelma on tunnettu ja sitä voi ratkoa erilaisilla menetelmillä käyttöjärjestelmässä. Ihan aina ongelmaa ei ole hoksattu ja järjestelmä voi mennä tuolloin sekaisin ja "hyytyä".
 
--- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä
+<!-- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä  -->
+
 <div><quiznator id="5c502951c41ed4148d96abd9"></quiznator></div>
 <div><quiznator id="5c502a16fd9fd71425c62335"></quiznator></div>
 <div><quiznator id="5c502aa899236814c5bb838d"></quiznator></div>
