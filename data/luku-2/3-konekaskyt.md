@@ -25,8 +25,7 @@ Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus v
 
 <!-- esimerkki Yhteenlasku eri tyyppisillä suorittimilla -->
 
-```
-Yhteenlasku eri tyyppisillä suorittimilla
+```Yhteenlasku eri tyyppisillä suorittimilla
 =========================================
 
 Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
