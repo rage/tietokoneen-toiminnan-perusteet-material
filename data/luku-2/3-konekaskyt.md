@@ -25,7 +25,8 @@ Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus v
 
 <!-- esimerkki Yhteenlasku eri tyyppisillä suorittimilla -->
 
-```Yhteenlasku eri tyyppisillä suorittimilla
+```
+Yhteenlasku eri tyyppisillä suorittimilla
 =========================================
 
 Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
@@ -147,7 +148,7 @@ Aritmetiikkakäskyissä on mukana aina yhteenlasku, vähennyslasku ja kertolasku
 
 Liukuluvuille on omat vastaavat konekäskynsä. Niiden toteutus on jonkin verran monimutkaisempaa kuin kokonaislukujen käsittely ja ne käyttävät yleensä niille varattuja liukulukurekistereitä.
 
--- Koodiesimerkki (ei ttk-91)
+<!-- Koodiesimerkki (ei ttk-91) -->
 
 ```
 Koodiesimerkki (ei ttk-91)
@@ -228,14 +229,14 @@ Esimerkki: for-loop
 
 For-loop C-kielen semantiikalla (testi silmukan alussa)
 
-for (i=0; i&lt;n; i=i+1) {       load   r1, =0     ; r1 on i
-    tbl[i] = 0;          loop comp   r1, n      ; kaikki tehty? 
-    }                         jnles  done       ; poistu, jos valmista
-                              load   r2, =0     ; alusta Tbl[i]
-                              store  r2, tbl(r)
-                              add    r1, =1     ; seuraava i
-                              jump   loop
-                         done ...
+for (i=0; i<n; i=i+1) {         load   r1, =0     ; r1 on i
+    tbl[i] = 0;            loop comp   r1, n      ; kaikki tehty? 
+    }                           jnles  done       ; poistu, jos valmista
+                                load   r2, =0     ; alusta Tbl[i]
+                                store  r2, tbl(r)
+                                add    r1, =1     ; seuraava i
+                                jump   loop
+                           done ...
 ```
 
 [Aliohjelmat](https://fi.wikipedia.org/wiki/Aliohjelma), funktiot ja metodit ovat ohjelmoijan perustyökaluja ohjelmoinnissa. Niitä kutsutaan tässä kaikki yleisnimellä "aliohjelma". CALL-käskyllä kontrolli siirretään aliohjelmaan, eli se toimii ehdottoman hyppykäskyn tavoin ja aiheuttaa haarautumisen annettuun aliohjelmaan. Haarautumisen lisäksi se muuttaa laskentaympäristön aliohjelman omaan ympäristöön ja tallettaa paluuosoitteen johonkin. Esimerkiksi, aliohjelmassa voi olla omia muuttujia, jotka ovat käytettävissä vain aliohjelman suorituksen aikana. EXIT-käsky suorittaa paluun takaisin kutsun tehneeseen rutiiniin, kutsua seuraavaan konekäskyyn. Se myös palauttaa laskentaympäristön ennalleen.
