@@ -22,6 +22,20 @@ title: 'Ohjelma'
 
 </text-box>
 
+-- vai
+
+```
+Algoritmi juustokakun tekemiseksi
+
+1. Jauha keksit yleiskoneessa keksimuruiksi.
+2. Lisää voisula ja sokeri, sekoita tasaiseksi.
+3. Kaada seos voidellun vuoan pohjalle ja taputtele tasaiseksi.
+4. Sekoita täytteeksi kulhossa rahka, juusto, kananmunat, sokeri ja maissisuuruste.
+5. Kaada täyte vuokaan ja paista kunnes täyte on hyytynyt.
+6. Nosta kakku pöydälle jäähtymään ja irroita se heti vuoan reunoista terävällä veitsellä.
+7. Anna jäähtyä ennen tarjoilua.
+```
+
 Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ratkaisevat ohjelmat. Ongelma voi vaikkapa olla, että paljonko on 87\*555+32 tai mikä on nopein reitti ajaa polkupyörällä paikasta A paikkaan B? Ensimmäisen esimerkin ratkaisu on hyvin yksinkertainen, mutta jälkimmäinen vaatii huomattavan monimutkaisen algoritmin ja paljon dataa.
 
 <!-- note: lauseke -->
