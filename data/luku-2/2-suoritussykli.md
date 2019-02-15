@@ -18,11 +18,11 @@ Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Nä
 
 <!-- esimerkki: yksinkertainen konekäsky -->
 
-<text-box variant="example" name="Yksinkertainen konekäsky">
+```
+Yksinkertainen konekäsky
   
 ADD  R3, R5   &nbsp;&nbsp; -- kentät: 17 3 0 5 0, &nbsp;&nbsp; laske R3:n ja R5:n arvot yhteen, talleta tulos R3:een
-
-</text-box>
+```
 
 Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerkiksi kertolasku, niin käskyssä annettujen operandien (esim R3 ja R5) arvot kopioidaan ALU:un, ALU:lle annetaan kertolaskumääräys ja tulos talletetaan käskyssä annettuun rekisteriin (esim. R3). Jos se on hyppykäsky tai ehdollinen haarautuskäsky, niin mahdollisesti käskyn suorituksessa muutetaankin PC:n arvoa. Jos käskyn suorituksen aikana tapahtuu jokin virhetilanne, niin virhe indikoidaan tilarekisteriin ja käskyn suoritus keskeytetään. Tämä voi tapahtua esimerkiksi jakolaskun yhteydessä, jos suoritusaikana havaitaan jakajan arvon olevan nolla.
 
