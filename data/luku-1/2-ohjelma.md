@@ -10,29 +10,15 @@ title: 'Ohjelma'
 ## Ohjelma
 [Ohjelma](https://www.wikiwand.com/fi/Tietokoneohjelma) on jonkin ongelman [algoritmin](https://fi.wikipedia.org/wiki/Algoritmi) avulla kuvattu ratkaisu. Siinä on joukko askelia, jotka järjestyksessä suoritettuina antavat ongelman ratkaisun. Ruokareseptit ovat hyviä esimerkkejä algoritmeista, vaikka tietokoneet niitä yleensä eivät voi suoraan suorittaa. Robotit kyllä osaavat, mutta robotteja ohjaavat algoritmit ne vasta monimutkaisia ovatkin.
 
-<text-box variant="example" name="Algoritmi juustokakun tekemiseksi">
-
-1. Jauha keksit yleiskoneessa keksimuruiksi.
-2. Lisää voisula ja sokeri, sekoita tasaiseksi.
-3. Kaada seos voidellun vuoan pohjalle ja taputtele tasaiseksi.
-4. Sekoita täytteeksi kulhossa rahka, juusto, kananmunat, sokeri ja maissisuuruste.
-5. Kaada täyte vuokaan ja paista kunnes täyte on hyytynyt.
-6. Nosta kakku pöydälle jäähtymään ja irroita se heti vuoan reunoista terävällä veitsellä.
-7. Anna jäähtyä ennen tarjoilua.
-
-</text-box>
-
--- vai
-
 ```
 Algoritmi juustokakun tekemiseksi
 
 1. Jauha keksit yleiskoneessa keksimuruiksi.
 2. Lisää voisula ja sokeri, sekoita tasaiseksi.
 3. Kaada seos voidellun vuoan pohjalle ja taputtele tasaiseksi.
-4. Sekoita täytteeksi kulhossa rahka, juusto, kananmunat, sokeri ja maissisuuruste.
+4. Sekoita täytteeksi kulhossa rahka, juusto, munat, sokeri ja suuruste.
 5. Kaada täyte vuokaan ja paista kunnes täyte on hyytynyt.
-6. Nosta kakku pöydälle jäähtymään ja irroita se heti vuoan reunoista terävällä veitsellä.
+6. Nosta kakku pöydälle jäähtymään  ja irroita se heti vuoasta veitsellä.
 7. Anna jäähtyä ennen tarjoilua.
 ```
 
@@ -40,26 +26,28 @@ Meitä kiinnostaa vain tietokoneella ratkaistavissa olevat ongelmat ja niitä ra
 
 <!-- note: lauseke -->
 
-<text-box variant="example" name="Algoritmi lausekkeen laskemiseksi laskimella">
+```
+Algoritmi lausekkeen laskemiseksi laskimella
 
 1. Nollaa laskimen muisti.
 2. Laske 87 * 555.
 3. Lisää tuloon 32.
+```
 
-</text-box>
 
 <!-- note: pyöräilyreitti -->
 
-<text-box variant="example" name="Algoritmi nopeimman pyöräilyreitin valitsemiseksi">
+```
+Algoritmi nopeimman pyöräilyreitin valitsemiseksi
 
-1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen tunnettuja katuja/teitä/pyöräteitä.
-<br>&nbsp;&nbsp;&nbsp;&nbsp;(Ota mukaan vain reitit, joissa mennään koko ajan lähemmäs B:tä.)
-2. Jaa kukin reitti pätkiin kadun/tien/polun/risteyksen tyypistä riippuen.
+1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen 
+   tunnettuja katuja/teitä/pyöräteitä. Ota mukaan vain reitit, 
+   joissa mennään koko ajan lähemmäs B:tä.
+2. Jaa kukin reitti pätkiin kadun/tien/risteyksen tyypistä riippuen.
 3. Laske kullekin reittipätkälle sen vaatima aika pyöräilyyn.
 4. Laske kunkin reitin kokonaisaika.
 5. Näytä nopeimman reitin kokonaisaika ja reitti kartalla.
-
-</text-box>
+```
 
 ### Kontrollin siirto
 Ohjelmille on tyypillistä, että niissä on joukko peräkkäin suoritettavia enemmän tai vähemmän monimutkaisia toimintoja. Yleensä ohjelmassa suoritetaan toimintoja siinä järjestyksessä kuin ne ohjelmassa esitetään. Joissakin tapauksissa on kuitenkin tärkeää, että tästä oletusarvoisesta toimintojen järjestyksestä poiketaan. Tällaista tapahtumaa kutsutaan _kontrollin siirroksi_. Tyypillinen tapaus on _haarautuminen_, jossa tietyn ehdon vallitessa valitaan kahdesta tai useammasta vaihtoehdosta se oikea toimintojen joukko tällä suorituskerralla. Toinen tyypillinen tapaus on [toistorakenteiden](https://fi.wikipedia.org/wiki/Toistorakenne) (silmukoiden) käyttö, missä annettu joukko toimintoja suoritetaan monta kertaan kunnes jokin ehto tulee todeksi.
@@ -68,11 +56,19 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 
 <!-- note: Funktio sum(table, n) -->
 
-<text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
+```
+Esimerkki: Funktio Sum(Table, n)
 
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla.
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon 
+Table kaikkien n:n alkion summan. 
 
-</text-box>
+Kutsu Sum(Noppa, 6) palauttaa taulukon Noppa kaikkien kuuden 
+alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaa 
+taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 
+2345678 henkilön palkkojen summan 10 135 676 310,23. 
+Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen 
+sopivilla parametrien valinnoilla.
+```
 
 ### Käyttöjärjestelmän palvelut aliohjelmina
 Käyttöjärjestelmissä on useita aliohjelmia tai funktioita, joita mikä tahansa suorituksessa oleva ohjelma voi käyttää (kutsua). Ne eroavat ohjelman omista aliohjelmista siinä, että ne on suunniteltu yleiskäyttöisiksi ja helpottamaan ohjelmien toteutusta. Tällaisia palveluja ovat esimerkiksi tekstin lukeminen näppäimistöltä tai tiedoston kirjoittaminen muistitikulle. On tosi käytännöllistä, että jokaisen ohjelmoijan ei tarvitse erikseen pohtia tällaisten toimintojen yksityiskohtia. Ohjelmien (ja ohjelmoijien!) ei edes tarvitse tietää minkälainen näppäimistö tai muistitikku laitteistossa on. Ohjelma toimii myös sellaisenaan, vaikka muistitikku vaihdettaisiin kovalevyyn.
@@ -98,43 +94,22 @@ Toinen hyvä konstin tietoturvan lisäämiseksi on käyttää tietokonetta yleen
 ### Symbolinen konekieli, numeerinen konekieli
 Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla vaikkapa:
 
-
-<text-box variant="example" name="Lauseke 87*555+32 symbolisella konekielellä">
-
-LOAD  R1, =87    &nbsp;&nbsp;&nbsp;&nbsp; -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-MUL   R1, =555   &nbsp;&nbsp;&nbsp;&nbsp; -- kerro R1:n arvo luvulla 555<br>
-ADD   R1, =32    &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
-
-</text-box>
-
--- vai?
-
 ```
 Esimerkki: Lauseke 87*555+32 symbolisella konekielellä
 
-LOAD  R1, =87    -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
-MUL   R1, =555   -- kerro R1:n arvo luvulla 555
-ADD   R1, =32    -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+LOAD R1, =87   -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
+MUL  R1, =555  -- kerro R1:n arvo luvulla 555
+ADD  R1, =32   -- lisää R1:n arvoon luku 32. Vastaus on nyt rekisterissä R1.
 ```
 
 Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin monimutkaisempi. On vaikea pitää kirjaa, mikä merkitys kullakin rekisterillä eri hetkillä on ja kaikki laskenta tapahtuu kuitenkin rekistereitä käyttäen. Konekielen numeerinen muoto on vielä vaikeampi, koska siinä on pelkkiä numeroita:
-
-<text-box variant="example" name="Lauseke 87*555+32 numeerisella konekielellä">
-
-35651571   &nbsp;&nbsp;&nbsp;&nbsp; -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
-320864811  &nbsp;&nbsp;&nbsp;&nbsp; -- kerro R1:n arvo luvulla 555<br>
-287309856  &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
-
-</text-box>
-
--- vai??
 
 ```
 Esimerkki: Lauseke 87*555+32 numeerisella konekielellä
 
 35651571   -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
 320864811  -- kerro R1:n arvo luvulla 555
-287309856  -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+287309856  -- lisää R1:n arvoon luku 32. Vastaus on nyt rekisterissä R1.
 ```
 
 Symbolinen konekieli on huomattavasti mukavampaa lukea, eikö olekin! Yleensä konekieliset ratkaisut toteutetaan käyttäen symbolista konekieltä, joka [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) (muunnetaan) numeeriseen muotoon ennen suoritusta. Symbolisen konekielen kääntäminen konekieleksi on hyvin suoraviivaista, vaikka se ei ihan triviaalia olekaan.
@@ -146,23 +121,23 @@ Ohjelmat toteutetaan ([ohjelmoidaan](https://fi.wikipedia.org/wiki/Ohjelmointi))
 
 Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortran'illa, ALGOL'illa ja Schemellä vähän erilainen:
 
-<text-box variant="example" name="Lauseke 87*555+32 Javalla tai C'llä">
+```
+Esimerkki: Lauseke 87*555+32 Javalla tai C'llä
 
-X = 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
+X = 87*555+32;   -- vastaus on nyt muuttujan X arvona
+```
 
-</text-box>
+```
+Esimerkki: Lauseke 87*555+32 Fortran'illa tai ALGOL'illa
 
-<text-box variant="example" name="Lauseke 87*555+32 Fortran'illa tai ALGOL'illa">
+X := 87*555+32;  -- vastaus on nyt muuttujan X arvona
+```
 
-X := 87\*555+32;   &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt muuttujan X arvona
+```
+Esimerkki: Lauseke 87*555+32 Schemellä
 
-</text-box>
-
-<text-box variant="example" name="Lauseke 87*555+32 Schemellä">
-
-(+ (* 87 555) 32) &nbsp;&nbsp;&nbsp;&nbsp; -- vastaus on nyt ulomman lausekkeen arvona
-
-</text-box>
+(+ (* 87 555) 32)-- vastaus on nyt ulomman lausekkeen arvona
+```
 
 Ratkaisujen ohjelmointi korkean tason kielellä on paljon lähempänä ihmisen omaa ajattelumallia ja sen vuoksi ainakin aluksi helpompia toteuttaa kuin (symbolisella) konekielellä kirjoitetut ohjelmat. Ohjelmia voi kirjoittaa myös symbolisella konekielellä, mutta se vaatii niin konekielen kuin sitä suorittavien suorittimien täsmällistä tuntemista. Yleensä käyttöjärjestelmän alimmat suoritinsidonnaiset osat tehdään (symbolisella) konekielellä, kun muu käyttöjärjestelmä ja tavallinen ohjelmointi toteutetaan korkean tason kielillä.
 
