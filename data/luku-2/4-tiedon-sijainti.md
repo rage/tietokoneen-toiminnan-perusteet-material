@@ -25,6 +25,8 @@ Välimuistissa olevaan tietoon ei voi suoraan viitata, koska suoritusaikana ei v
 Muistissa olevaan tietoon viitataan käyttäen suorittimen ymmärtämiä muistinosoitusmuotoja, joista suora (indeksoitu) muistiviite on yleisimmin käytetty. Epäsuoria muistiviitteitä ei nykyään useinkaan enää käytetä, koska ne kestävät niin kauan aikaa. Sen sijaan epäsuorat muistiviitteet toteutetaan yleensä kahdella suoraa muistinosoitusta käyttävällä konekäskyllä, joista ensimmäinen hakee tiedon osoitteen muistista ja toinen sitten käyttää tätä osoitetta tiedon lukemiseen tai kirjoittamiseen.
 
 ```
+Tiedon sijainti ja siihen osoittaminen
+
 ptrX dc 453828           -- symbolin ptrX arvo on (osoitin)muuttujan ptrX
                             osoite. (Osoitin)muuttujan ptrX arvo on 
                             muistissa olevan tiedon osoite
@@ -51,9 +53,9 @@ Yleisesti ottaen kaikki tieto sijaitsee muistissa ja juuri nyt käsiteltävänä
 
 Korkean tason kieliä käytettäessä kääntäjä päättää, milloin jokin tieto pidetään missäkin rekisterissä. Se on itse asiassa hyvin vaikea ns. [rekistereiden allokointiongelma](https://en.wikipedia.org/wiki/Register_allocation), koska rekistereitä on hyvin vähän ja kuitenkin kaikki laskenta tapahtuu rekistereissä olevan tiedon varassa.
 
-Esimerkiksi, kaikkialla näkyvän laskuri Count olisi hyvä pitää rekisterissä silmukan koko suoritusajan, jos Count'iin viitataan vähän väliä. Jos ohjelman suorituksessa on sitten pitkä tauko, jolloin Count'iin ei tule lainkaan viittauksia, niin silloin sen arvoa ei kannata pitää rekisterissä. Ohjelmakoodissa tiedon sijainti näkyy siinä, että viitataaanko suoraan rekisteriin vai haetaanko tieto ensin johonkin rekisteriin muistista.
+Esimerkiksi, kaikkialla näkyvän laskuri Count ja sen yläraja Limit olisi hyvä pitää rekistereissä silmukan koko suoritusajan, jos niihin viitataan vähän väliä. Jos ohjelman suorituksessa on sitten pitkä tauko, jolloin Count'iin tai Limit'iin ei tule lainkaan viittauksia, niin silloin niiden arvoja ei kannata pitää rekisterissä. Ohjelmakoodissa tiedon sijainti näkyy siinä, että viitataaanko suoraan rekisteriin vai haetaanko tieto ensin johonkin rekisteriin muistista.
 ```
-Count rekisterissä r1, Limit rekisterissä r2:
+Esimerkki: Count ja Limit rekistereissä r1 ja r2
 
 add  r1, =1           -- lisää muuntelumuuttujaa
     comp r1, r2       -- testaa loopin loppuminen
@@ -61,7 +63,7 @@ add  r1, =1           -- lisää muuntelumuuttujaa
 ```
 
 ```
-Count ja Limit molemmat muistissa:
+Esimerkki: Count ja Limit molemmat muistissa
 
     load r4, Count    -- lisää muuntelumuuttujaa
     add r4, =1
@@ -73,7 +75,7 @@ Count ja Limit molemmat muistissa:
 
 Toinen esimerkki. For-silmukan muuntelumuuttuja kannattaa ehkä pitää rekisterissä silmukan suoritusajan ja sitten lopulta tallettaa muistiin. Toisaalta taas, joissakin korkean tason kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä, joten sitä ei tarvitse tallettaa muistiin missään vaiheessa. Kyseinen muuntelumuuttujalla on tuolloin olemassa arvo vain silmukan suoritusaikana ja tällöinkin vain jossain rekisterissä.
 ```
-For-silmukan muuntelumuuttuja rekisterissä
+Esimerkki: For-silmukan muuntelumuuttuja rekisterissä
 
       load  r1, =0    -- alusta muuntelumuuttuja i (r1:ssä)
 
