@@ -106,9 +106,10 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 Toinen luku käsitteli suorittimen ja muistin toimintaa. Aluksi katsoimme vähän tarkemmin suorittimen rakennetta ja erityisesti sen toimintaa käskyjen nouto- ja suoritussyklin toteuttajana. Sen jälkeen tarkastelimme konekäskyjen eri tyyppejä ja rakennetta. Lopuksi katsoimme, kuinka tiedon sijainti suoritusaikana voi vaihdella ja kuinka se vaikuttaa ohjelmien suoritusnopeuteen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
-<div><quiznator id="5c544eec3972a9????????"></quiznator></div>
+<div><quiznator id="5c66b17199236814c5bbb972"></quiznator></div>
 
 
+<!--
 <div>
   <part-summary chapter="2" heading="Käytyäsi nyt läpi luvun 2 sinun pitäisi osata karkealla tasolla selittää,"
 listitems='[
@@ -138,3 +139,4 @@ listitems='[
     ]'>
   </part-summary>
 </div>
+-->
