@@ -103,9 +103,9 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 
 
 ### Yhteenveto
-Toinen luku käsitteli suorittimen ja muistin toimintaa. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
+Toinen luku käsitteli suorittimen ja muistin toimintaa. Aluksi katsoimme vähän tarkemmin suorittimen rakennetta ja erityisesti sen toimintaa käskyjen nouto- ja suoritussyklin toteuttajana. Sen jälkeen tarkastelimme konekäskyjen eri tyyppejä ja rakennetta. Lopuksi katsoimme, kuinka tiedon sijainti suoritusaikana voi vaihdella ja kuinka se vaikuttaa ohjelmien suoritusnopeuteen.
 
-Vastaa alla olevaan kyselyyn kun olet valmis toisen luvun tehtävien kanssa.
+Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 <div><quiznator id="5c544eec3972a9????????"></quiznator></div>
 
 
