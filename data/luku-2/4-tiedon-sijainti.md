@@ -47,14 +47,17 @@ Yleisesti ottaen kaikki tieto sijaitsee muistissa ja juuri nyt käsiteltävänä
 Korkean tason kieliä käytettäessä kääntäjä päättää, milloin jokin tieto pidetään missäkin rekisterissä. Se on itse asiassa hyvin vaikea ns. [rekistereiden allokointiongelma](https://en.wikipedia.org/wiki/Register_allocation), koska rekistereitä on hyvin vähän ja kuitenkin kaikki laskenta tapahtuu rekistereissä olevan tiedon varassa.
 
 Esimerkiksi, kaikkialla näkyvän laskuri Count olisi hyvä pitää rekisterissä silmukan koko suoritusajan, jos Count'iin viitataan vähän väliä. Jos ohjelman suorituksessa on sitten pitkä tauko, jolloin Count'iin ei tule lainkaan viittauksia, niin silloin sen arvoa ei kannata pitää rekisterissä. Ohjelmakoodissa tiedon sijainti näkyy siinä, että viitataaanko suoraan rekisteriin vai haetaanko tieto ensin johonkin rekisteriin muistista.
-```-- Count rekisterissä r1, Limit rekisterissä r2
-    add  r1, =1       -- lisää muuntelumuuttujaa
+```
+Count rekisterissä r1, Limit rekisterissä r2:
+
+add  r1, =1           -- lisää muuntelumuuttujaa
     comp r1, r2       -- testaa loopin loppuminen
     jless loop
+```
 
-vai
+```
+Count ja Limit molemmat muistissa:
 
--- Count ja Limit molemmat muistissa
     load r4, Count    -- lisää muuntelumuuttujaa
     add r4, =1
     store r4, Count
@@ -65,6 +68,8 @@ vai
 
 Toinen esimerkki. For-silmukan muuntelumuuttuja kannattaa ehkä pitää rekisterissä silmukan suoritusajan ja sitten lopulta tallettaa muistiin. Toisaalta taas, joissakin korkean tason kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä, joten sitä ei tarvitse tallettaa muistiin missään vaiheessa. Kyseinen muuntelumuuttujalla on tuolloin olemassa arvo vain silmukan suoritusaikana ja tällöinkin vain jossain rekisterissä.
 ```
+For-silmukan muuntelumuuttuja rekisterissä
+
       load  r1, =0    -- alusta muuntelumuuttuja i (r1:ssä)
 
 loop  comp  r1, =50   -- testaa loopin loppuminen
@@ -95,6 +100,13 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 <div><quiznator id="5c504b1499236814c5bb842e"></quiznator></div>
 <div><quiznator id="5c504b79c41ed4148d96ac81"></quiznator></div>
 <div><quiznator id="5c504bdcddb6b814af321701"></quiznator></div>
+
+
+### Yhteenveto
+Toinen luku käsitteli suorittimen ja muistin toimintaa. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
+
+Vastaa alla olevaan kyselyyn kun olet valmis toisen luvun tehtävien kanssa.
+<div><quiznator id="5c544eec3972a9????????"></quiznator></div>
 
 
 <div>
