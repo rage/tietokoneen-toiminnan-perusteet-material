@@ -25,21 +25,26 @@ Välimuistissa olevaan tietoon ei voi suoraan viitata, koska suoritusaikana ei v
 Muistissa olevaan tietoon viitataan käyttäen suorittimen ymmärtämiä muistinosoitusmuotoja, joista suora (indeksoitu) muistiviite on yleisimmin käytetty. Epäsuoria muistiviitteitä ei nykyään useinkaan enää käytetä, koska ne kestävät niin kauan aikaa. Sen sijaan epäsuorat muistiviitteet toteutetaan yleensä kahdella suoraa muistinosoitusta käyttävällä konekäskyllä, joista ensimmäinen hakee tiedon osoitteen muistista ja toinen sitten käyttää tätä osoitetta tiedon lukemiseen tai kirjoittamiseen.
 
 ```
-ptrX dc 453828            -- symbolin ptrX arvo on (osoitin)muuttujan ptrX osoite
-                             (osoitin)muuttujan ptrX arvo on muistissa olevan tiedon osoite
-Tbl  ds 200               -- symbolin Tbl arvo on 200-alkioisen taulukon ensimmäisen alkion osoite
+ptrX dc 453828           -- symbolin ptrX arvo on (osoitin)muuttujan ptrX
+                            osoite. (Osoitin)muuttujan ptrX arvo on 
+                            muistissa olevan tiedon osoite
+Tbl  ds 200              -- symbolin Tbl arvo on 200-alkioisen taulukon 
+                            ensimmäisen alkion osoite
 
-    load  r1, =80         -- r1 on rekisterissä, nro 80 on IR:n vakio-osassa
-    load  r2, Tbl(r5)     -- Tbl(r5) on suora muistinosoitusviite keskusmuistiin, osoite 280,
-                             Luku 200 löytyy IR:n vakio-osasta, luku 80 rekisteristä r1
-    add   r5, =1          -- nro 1 löytyy IR:n vakio-osasta
-    load  r3, Tbl(r5)     -- alkio Tbl(r5) osoitteesta 281 löytyisi luultavasti välimuistista,
-                             koska sen viereiseen alkioon osoitteessa 280 viitattiin juuri äsken
-    load r2, @ptrX        -- epäsuora muistiviite, ptrX arvo löytyy IR:n vakio-osasta,
-                             tiedon osoite 453828 löytyy muistista (osoitteesta ptrX),
-                             tieto löytyy muistista ptrX:n osoittamasta osoitteesta 453828
+    load  r1, =80        -- r1 on rekisterissä, nro 80 on IR:n vakio-osassa
+    load  r2, Tbl(r5)    -- Tbl(r5) on suora muistinosoitusviite 
+                            keskusmuistiin, osoitteeseen 280. Arvo 280 on
+                            lukujen 200 (IR:n vakio-osasta) ja 80 (rek r1)
+                            summa.
+    add   r5, =1         -- nro 1 löytyy IR:n vakio-osasta
+    load  r3, Tbl(r5)    -- alkio Tbl(r5) osoitteesta 281 löytyisi 
+                            luultavasti välimuistista, koska sen viereiseen
+                            alkioon osoitteessa 280 viitattiin juuri äsken.
+    load r2, @ptrX       -- epäsuora muistiviite, ptrX arvo löytyy IR:n 
+                            vakio-osasta, tiedon osoite 453828 löytyy 
+                            muistista (osoitteesta ptrX), tieto löytyy 
+                            muistista ptrX:n osoittamasta osoitteesta 453828
 ```
-
 
 ## Tiedon sijainnin vaikutus suoritusnopeuteen
 Yleisesti ottaen kaikki tieto sijaitsee muistissa ja juuri nyt käsiteltävänä oleva tieto sijaitsee suorittimen rekistereissä. Tästä on se seuraus, että jokin tietty tieto (esim. muuttujan X arvo) voi sijaita sekä muistissa että rekisterissä. On ohjelmoijan vastuulla, että X:n arvon muuttuessa se tarvittaessa talletetaan myös muistiin. Muistissa sijaitseva tieto voi olla myös välimuistissa, mutta laitteisto huolehtii automaattisesti sen kirjoittamisesta muistiin tarvittaessa.
