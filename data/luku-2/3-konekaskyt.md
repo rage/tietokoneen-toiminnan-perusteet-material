@@ -96,9 +96,10 @@ Konekäskyjä voi olla useata eri muotoa. Absoluuttinen hyppykäsky ei tarvitse 
 Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikilla sama muoto: operaatiokoodi 8 bittiä, operandi/tulosrekisteri 3 bittiä, tiedonosoitusmoodi 2 bittiä, indeksirekisteri 3 bittiä ja vakiokenttä 16 bittiä. Tiedonosoitusmoodin käyttö voi tuntua aluksi sekavalta, mutta käytännön ohjelmoinnissa eri tiedonosoitusmoodeja tarvitaan kokoa ajan. Tällä kurssilla emme perehdy varsinaiseen konekieliseen ohjelmointiin muutamaa triviaalia esimerkkiä enempää.
 
 ```
-Ttk-91 symbolisen konekielen koodiesimerkkejä
+Esimerkki: Ttk-91 symbolisen konekielen käskyjen koodaus
 
                   op.koodi tul.rek. moodi ind.rek. vakiokenttä
+                  
 -- hae X:n arvo muistista rekisteriin r1
 load r1, X         2 (load)     1      1     0     X:n osoite 
 
@@ -148,7 +149,7 @@ Liukuluvuille on omat vastaavat konekäskynsä. Niiden toteutus on jonkin verran
 <!-- Koodiesimerkki (ei ttk-91) -->
 
 ```
-Koodiesimerkki (ei ttk-91)
+Esimerkki: yhteenlasku eri tyyppisillä tiedoilla (ei ttk-91)
 
 Laske C=A+B, kun A, B ja C ovat muuttujia muistissa
 samalla suorittimella. Kustakin muuttujasta on kolme
