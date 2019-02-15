@@ -70,7 +70,7 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 
 <text-box variant="example" name="Esimerkki: Funktio Sum(Table, n)">
 
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla."
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table kaikkien n:n alkion summan. Esimerkiksi kutsu Sum(Noppa, 6)  palauttaisi taulukon Noppa kaikkien kuuden alkion arvojen summan 21 ja kutsu Sum(Palkka, 2345678) palauttaisi taulukossa Palkka olevien pienen valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen summan 10&nbsp;135&nbsp;676&nbsp;310,23. Samaa funktiota voi täten käyttää hyvin moneen tarkoitukseen sopivilla parametrien valinnoilla.
 
 </text-box>
 
@@ -98,6 +98,7 @@ Toinen hyvä konstin tietoturvan lisäämiseksi on käyttää tietokonetta yleen
 ### Symbolinen konekieli, numeerinen konekieli
 Tietokone osaa suorittaa ainoastaan [konekielisiä](https://fi.wikipedia.org/wiki/Konekieli) ohjelmia, jotka on suoritusaikana talletettu sen muistiin. Puhdas konekieli on pelkkiä numeroita, mikä sopii hyvin koneille mutta huonosti ihmiselle. Kustakin konekielestä on ihmisiä varten oma [symbolinen konekieli](https://fi.wikipedia.org/wiki/Assembly_(ohjelmointikieli)), joka on muistuttaa hyvin paljon kyseistä konekieltä mutta on paljon helpompi ihmisen lukea ja kirjoittaa. Lausekkeen 87\*555+32 arvon laskeva ratkaisu symbolisella konekielellä voisi olla vaikkapa:
 
+
 <text-box variant="example" name="Lauseke 87*555+32 symbolisella konekielellä">
 
 LOAD  R1, =87    &nbsp;&nbsp;&nbsp;&nbsp; -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.<br>
@@ -105,6 +106,16 @@ MUL   R1, =555   &nbsp;&nbsp;&nbsp;&nbsp; -- kerro R1:n arvo luvulla 555<br>
 ADD   R1, =32    &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
+
+-- vai?
+
+```
+Esimerkki: Lauseke 87*555+32 symbolisella konekielellä
+
+LOAD  R1, =87    -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
+MUL   R1, =555   -- kerro R1:n arvo luvulla 555
+ADD   R1, =32    -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+```
 
 Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin monimutkaisempi. On vaikea pitää kirjaa, mikä merkitys kullakin rekisterillä eri hetkillä on ja kaikki laskenta tapahtuu kuitenkin rekistereitä käyttäen. Konekielen numeerinen muoto on vielä vaikeampi, koska siinä on pelkkiä numeroita:
 
@@ -115,6 +126,16 @@ Tämän on silti aika vaikeaselkoista, varsinkin jos algoritmi on vähänkin mon
 287309856  &nbsp;&nbsp;&nbsp;&nbsp; -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
 
 </text-box>
+
+-- vai??
+
+```
+Esimerkki: Lauseke 87*555+32 numeerisella konekielellä
+
+35651571   -- laita rekisterin R1 arvoksi 87. R1:n vanha arvo tuhoutuu.
+320864811  -- kerro R1:n arvo luvulla 555
+287309856  -- lisää R1:n arvoon luku 32.  Vastaus on nyt rekisterissä R1.
+```
 
 Symbolinen konekieli on huomattavasti mukavampaa lukea, eikö olekin! Yleensä konekieliset ratkaisut toteutetaan käyttäen symbolista konekieltä, joka [käännetään](https://fi.wikipedia.org/wiki/K%C3%A4%C3%A4nt%C3%A4minen) (muunnetaan) numeeriseen muotoon ennen suoritusta. Symbolisen konekielen kääntäminen konekieleksi on hyvin suoraviivaista, vaikka se ei ihan triviaalia olekaan.
 
