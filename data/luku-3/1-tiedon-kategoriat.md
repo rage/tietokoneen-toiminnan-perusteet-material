@@ -18,34 +18,47 @@ Kolmas kategoria on järjestelmän sisäiset tietotyypit. Ne määrittelevät, m
 
 Kaikki tieto esitetään tietokoneessa loppujen lopuksi binäärijärjestelmän numeroina eli bitteinä. Miksi bitteinä eikä esimerkiksi desimaalijärjestelmän numeroina? Bitit on helppo toteuttaa digitaalipiireillä ja digitaalipiirejä on helppo käsitellä matemaattisesti [Boolen algebran](https://fi.wikipedia.org/wiki/Boolen_algebra) avulla.
 
-<div>
-  <note
-    heading="George Boole, Claude Shannon ja bitit"
-    description="Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvojen käsittelemiseen. Totuusarvot ovat 2-arvoisia ja ne voi helposti esittää bitteinä. Yleensä arvo 1 vastaa totuusarvoa tosi ja arvo 0 totuusarvoa epätosi. Vuonna 1937 amerikkalainen matemaatikko Claude Shannon esitti gradussaan, kuinka Boolen algebraa voidaan soveltaa piirien suunnitteluun, mikä osoittautui loistavaksi ideaksi tietokoneiden kannalta. Shannonia kutsutaan usein informaatioteorian isäksi.">
-  </note>
-</div>
+-- note Boole ja Shannon
+
+<text-box variant="example" name="George Boole, Claude Shannon ja bitit">
+
+Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvojen käsittelemiseen. Totuusarvot ovat 2-arvoisia ja ne voi helposti esittää bitteinä. Yleensä arvo 1 vastaa totuusarvoa tosi ja arvo 0 totuusarvoa epätosi. Vuonna 1937 amerikkalainen matemaatikko Claude Shannon esitti gradussaan, kuinka Boolen algebraa voidaan soveltaa piirien suunnitteluun, mikä osoittautui loistavaksi ideaksi tietokoneiden kannalta. Shannonia kutsutaan usein informaatioteorian isäksi.">
+
+</text-box>
 
 Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-järjestelmän luvuissa numeroiden painoarvot oikealta vasemmalle ovat kymmenen potensseja (10<sup>0</sup>=1, 10<sup>1</sup>=10, 10<sup>2</sup>=100, 10<sup>3</sup>=1000, jne.), niin 2-järjestelmässä ne ovat kakkosen potensseja (2<sup>0</sup>=1, 2<sup>1</sup>=2, 2<sup>2</sup>=4, 2<sup>3</sup>=8, jne.). Täten esimerkiksi binääriluvun 11011101<sub>2</sub> ja desimaalivun arvot (desimaalilukuina) saadaan laskemalla
-<pre>11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
+
+-- binaariluku esim
+
+```
+11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
 219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
-</pre>
+
+```
 Tämä näyttää helpommalta binäärilukujen osalta, koska eri suuruusluokilla ei ole mitään kertoimia edessä (kuten esim. desimaaliluvun 219 kerroin 2 sadoille eli suuruusluokalle 10<sup>2</sup>). Binääriluvuilla ainoa nollasta poikkeava kerroin on yksi (1), jota ei tarvitse edes kirjoittaa näkyville. Kantaluku ilmaistaan tarvittaessa alaindeksinä (esim. 219<sub>10</sub>), mutta usein se jätetään pois ja kantaluku ilmenee asiayhteydestä.
 
 Vastavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaaliosa, myös binääriluvuilla voi olla  _binääripisteellä_ erotettu _binääriosa_. Binääripisteen jälkeen tulevilla numeroilla on (desimaalijärjestelmän lukuina) painoarvot
 2<sup>-1</sup>=0.5, <nobr>2<sup>-2</sup>=0.25</nobr>, <nobr>2<sup>-3</sup>=0.125</nobr>, <nobr>2<sup>-4</sup>=0.0625</nobr>, jne.  Täten esimerkiksi lukujen 11011101.10101<sub>2</sub> ja 2019.65625<sub>10</sub> arvot ovat (desimaalilukuina)
-<pre>11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
+
+-- binaaripiste esim
+
+```
+11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
                        = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
 
 219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>+3</sup> + 2*10<sup>-4</sup> +  5*10<sup>-5</sup>
            = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
-</pre>
+```
+
 ### Esitysmuodon muunnos desimaalijärjestelmästä binäärijärjestelmään
 Esitysmuotojen muunnokset binäärijärjestelmän ja desimaalijärjestelmän välillä ovat triviaaleja. Edellä esitettiinkin jo, kuinka binäärijärjestelmän luku muutetaan desimaalijärjestelmän luvuksi. Muunnos toiseen suuntaan on vain vähän monimutkaisempi.
 
 Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä binäärijärjestelmään, muunnos tehdään erikseen kokonaisosalle ja desimaaliosalle. Kokonaisosan muunnos tehdään siten, että se jaetaan toistuvasti kahdella (2), kunnes jäljelle jää nolla (0). Jakolaskujen jakojäännökset otetaan binäärijärjestelmän kokonaisosaksi _käännetyssä järjestyksessä_.
 
 -- kuva: kevät 2003, luento 6 kalvo 13
-<pre>57<sub>10</sub> = ??<sub>2</sub>
+
+```
+57<sub>10</sub> = ??<sub>2</sub>
 
 57/2 = 28 jakojäännos 1
 28/2 = 14 jakojäännös 0
@@ -53,23 +66,28 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
  7/2 =  3 jakojäännös 1
  3/2 =  1 jakojäännös 1
  1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
-</pre>
+```
 
 Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla tuloksen kokonaisosa (0 tai 1) talteen _seuraavana_ binääriosan numerona, ja toistamalla tätä (pelkän desimaaliosan kertomista kahdella) tarpeeksi monta kertaa. Algoritmi päättyy, jos desimaaliosaksi tulee nolla (0.0), koska sen jälkeen tilanne ei muutu mihinkään. Usein algoritmi ei pääty koskaan, koska kaikilla desimaaliluvuilla ei ole täsmällistä vastinetta binäärijärjestelmässä. Tällöin tyydytään etukäteen määriteltyyn tarkkuuteen binääriosan numeroiden lukumäärän suhteen. Esimerkiksi voidaan jo alkuaan sopia, että otetaan korkeintaan 30 numeroa mukaan binääriosaan, jolloin binääriluvun tarkkuus vastaa noin 9 desimaalinumeron tarkkuutta.
 
--- kuva kevät 2003, luento 6 kalvo 15
-<pre>0.1875<sub>10</sub> = ??<sub>2</sub>
+-- esim. desimaaliosasta binaariosa
+
+```
+0.1875<sub>10</sub> = ??<sub>2</sub>
 
 0.1875 * 2 = 0.375 = 0 + 0.375
 0.375  * 2 = 0.75  = 0 + 0.75
 0.75   * 2 = 1.5   = 1 + 0.5
 0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
+```
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
    = 111101.00110000<sub>2</sub>  = 111101.001100000000000000000<sub>2</sub>
-</pre>
 
-<pre>0.1<sub>10</sub> = ??<sub>2</sub>
+---  esim. päättymätön binaariosa
+
+```
+0.1<sub>10</sub> = ??<sub>2</sub>
 
 0.1 * 2 = 0.2 = 0 + 0.2
 0.2 * 2 = 0.4 = 0 + 0.4
@@ -83,35 +101,22 @@ Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111
 0.2 * 2 = 0.4 = 0 + 0.4, jne
 
 joten  0.1<sub>10</sub> = 0.0001100110.. <sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
+```
 
 Alleviivausmerkintä luvussa 0.0<u>0011</u><sub>2</sub> tarkoittaa jaksollisuutta,
 jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
 jos luvusta 0.1<sub>10</sub> halutaan 30 bitin binääriosainen binääriesitys, niin se olisi
 0.00&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110<sub>2</sub>
-</pre>
+
 Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.00&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub>. Tämä on tyypillistä tietokoneille, jossa esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Laskennan lopputulos on aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. Eihän se lopputulos voi mitenkään olla tarkempi kuin lähtötiedot!
 
--- pitääkö monivalintatehtävässä valita kaikki oikeat vastaukset, vai vain yksi??
-
--- Quiz 3.1.1. Mikä on binääriluvun 00111001 desimaaliarvo?
+-- Quiz 3.1.1-7
 <div><quiznator id="5bd9688383601b299c26828c"></quiznator></div>
-
--- Quiz 3.1.2. Mikä on binääriluvun 00000000011 desimaaliarvo?
 <div><quiznator id="5bd969b7b5cefd2a43d9affe"></quiznator></div>
-
--- Quiz 3.1.3. Mikä on binääriluvun 0.11 desimaaliarvo?
 <div><quiznator id="5bd96ad88138f12a7e536f9d"></quiznator></div>
-
--- Quiz 3.1.4. Mikä on binääriluvun 10.01 desimaaliarvo?
 <div><quiznator id="5bd96bbcc6014229d5b532a5"></quiznator></div>
-
--- Quiz 3.1.5. Mikä on desimaaliluvun 15 binääriarvo?
 <div><quiznator id="5bd96c5b83601b299c268292"></quiznator></div>
-
--- Quiz 3.1.6. Mikä on desimaaliluvun 1.5 binääriarvo?
 <div><quiznator id="5bd96d09defd072a63bec7f4"></quiznator></div>
-
--- Quiz 3.1.7. Mikä on desimaaliluvun 4.125 binääriarvo?
 <div><quiznator id="5bd96da1c6014229d5b532aa"></quiznator></div>
 
 ## Heksadesimaalijärjestelmä
