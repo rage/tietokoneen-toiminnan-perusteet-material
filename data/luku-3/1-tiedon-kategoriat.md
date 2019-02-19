@@ -28,7 +28,7 @@ Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvoje
 
 Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-järjestelmän luvuissa numeroiden painoarvot oikealta vasemmalle ovat kymmenen potensseja (10<sup>0</sup>=1, 10<sup>1</sup>=10, 10<sup>2</sup>=100, 10<sup>3</sup>=1000, jne.), niin 2-järjestelmässä ne ovat kakkosen potensseja (2<sup>0</sup>=1, 2<sup>1</sup>=2, 2<sup>2</sup>=4, 2<sup>3</sup>=8, jne.). Täten esimerkiksi binääriluvun 11011101<sub>2</sub> ja desimaalivun arvot (desimaalilukuina) saadaan laskemalla
 
--- binaariluku esim
+<!-- binaariluku esim -->
 
 <pre>
 11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
@@ -44,10 +44,10 @@ Vastavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaal
 
 <pre>
 11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
-                       = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
-<br><br>
+             = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
+<br>
 219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>+3</sup> + 2*10<sup>-4</sup> +  5*10<sup>-5</sup>
-           = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
+         = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
 </pre>
 
 ### Esitysmuodon muunnos desimaalijärjestelmästä binäärijärjestelmään
@@ -59,7 +59,7 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 
 <pre>
 Esimerkki: Mikä on 57<sub>10</sub> binaarilukuna?
-<br><br>
+
 57/2 = 28 jakojäännos 1
 28/2 = 14 jakojäännös 0
 14/2 =  7 jakojäännös 1
@@ -73,8 +73,7 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 -- esim. desimaaliosasta binaariosa
 
 <pre>
-Esimerkki: mitä on 0.1875<sub>10</sub> binaarilukuna?
-<br><br>
+Esimerkki: Mikä on 0.1875<sub>10</sub> binaarilukuna?<br>
 0.1875 * 2 = 0.375 = 0 + 0.375
 0.375  * 2 = 0.75  = 0 + 0.75
 0.75   * 2 = 1.5   = 1 + 0.5
@@ -96,8 +95,7 @@ Esimerkki: kokonaisosan etunollat ja binaariosan loppunollat
 --  esim. päättymätön binaariosa
 
 <pre>
-Mikä on 0.1<sub>10</sub> binaarilukuna?
-<br><br>
+Mikä on 0.1<sub>10</sub> binaarilukuna?<br>
 0.1 * 2 = 0.2 = 0 + 0.2
 0.2 * 2 = 0.4 = 0 + 0.4
 0.4 * 2 = 0.8 = 0 + 0.8
@@ -150,24 +148,31 @@ Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esity
 ## Heksadesimaalijärjestelmä
 Bittien informaatioarvo on pieni, joten niitä tarvitaan paljon. Niiden kirjoittaminen ja lukeminen on ihmiselle jonkin verran virhealtista, joten yleensä ne esitetään 16-järjestelmän ([heksadesimaalijärjestelmän](https://fi.wikipedia.org/wiki/Heksadesimaalij%C3%A4rjestelm%C3%A4)) avulla.
 
-Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A, B, C, D,  E ja F. Numeroiden A-F lukuarvot ovat 10-15. Luvun A4B arvaa aika helposti esittävän 16-järjestelmän lukua, mutta esimerkiksi luvun 345 kohdalla voi helposti tulla sekaannus käytössä olevasta lukujärjestelmästä. Tämän vuoksi tapana on kirjoittaa 16-järjestelmien luvuille etuliite 0x. Esimerkiksi, desimaaliluvulla 837 on sama arvo kuin heksadesimaaliluvulla 0x345 (3&nbsp;\*&nbsp;16<sup>2</sup>&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5&nbsp;=&nbsp;3&nbsp;\*&nbsp;256&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5 = 768+64+5 = 837).
+Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A, B, C, D,  E ja F. Numeroiden A-F lukuarvot ovat 10-15. Luvun A4B arvaa aika helposti esittävän 16-järjestelmän lukua, mutta esimerkiksi luvun 345 kohdalla voi helposti tulla sekaannus käytössä olevasta lukujärjestelmästä. Tämän vuoksi tapana on kirjoittaa 16-järjestelmien luvuille etuliite 0x. Esimerkiksi, desimaaliluvulla 837 on sama arvo kuin heksadesimaaliluvulla 0x345. 
 
--- VAI
-
-```
-3&nbsp;\*&nbsp;16<sup>2</sup>&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5&nbsp;=&nbsp;3&nbsp;\*&nbsp;256&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5 = 768+64+5 = 837
-```
-
--- VAI
+-- esim: hexadesimaaliluku
 
 <pre>
-3&nbsp;\*&nbsp;16<sup>2</sup>&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5&nbsp;=&nbsp;3&nbsp;\*&nbsp;256&nbsp;+&nbsp;4&nbsp;\*&nbsp;16&nbsp;+&nbsp;5 = 768+64+5 = 837
+30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768+64+5 = 837
 </pre>
 
 
 Kukin 16-järjestelmän numero vastaa neljää bittiä ja ne ryhmitellään aina oikealta vasemmalle ennen binääripistettä ja vasemmalta oikealle sen jälkeen. Ryhmittelyssä binäärilukuihin laitetaan sopivasti etunollia kokonaisosan eteen ja binääriosan loppuun, jotta bittien lukumäärä molemmissa olisi neljällä jaollinen.
 
-Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kirjoittaa muodossa 0x057A. Esitysmuodon muutokset binääri- ja heksadesimaalijärjestelmien välillä ovat triviaaleja. Kukin neljän bitin ryhmä vastaa heksadesimaaliarvoa välillä 0-F (eli 0-15), ja kukin heksadesimaalijärjestelmän numero on helppo vastaavasti purkaa biteiksi. Bittiesityksestä voi poistaa kokonaisosan etunollat ja binääriosan loppunollat halutessaan, tai laittaa niitä lisää.
+Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kirjoittaa muodossa 0x057A. Esitysmuodon muutokset binääri- ja heksadesimaalijärjestelmien välillä ovat triviaaleja. Kukin neljän bitin ryhmä vastaa heksadesimaaliarvoa välillä 0-F (eli 0-15), ja kukin heksadesimaalijärjestelmän numero on helppo vastaavasti purkaa biteiksi. Bittiesityksestä voi poistaa kokonaisosan etunollia ja binääriosan loppunollia halutessaan, tai laittaa niitä lisää.
+
+-- esim: binaari hexa
+
+<pre>
+binääri:  0100 0111 1001 1010 1111.0100
+heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
+
+heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
+binääri:                0001 0010 0000 1010 1110 1111.1011 1000
+                         = 1 0010 0000 1010 1111 1111.1011 1
+</pre>
+
+-- VAI
 
 ```
 binääri:  0100 0111 1001 1010 1111.0100
@@ -175,8 +180,8 @@ heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
 
 heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
 binääri:                0001 0010 0000 1010 1110 1111.1011 1000
-                      = 1 0010 0000 1010 1111 1111.1011 1
-```
+                         = 1 0010 0000 1010 1111 1111.1011 1
+``` 
 
 Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi, jos tavu on 0x62, se tarkoittaa että tavun bitit ovat vasemmalta oikealle <nobr>0110 0010</nobr>. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
 
@@ -202,6 +207,7 @@ Little-Endian:   'o'    't'    'u'    'a'        '\0'   'e'   'i'    't'
 ```
 
 -- esim. Big-Endian Little-Endian 0x11223344
+
 ```
 Esimerkki:  Talleta luku 0x11223344 muistiin osoitteeseen 0x1200
 Tavuihin 0x1200, 0x1201, 0x1202, 0x1203.
