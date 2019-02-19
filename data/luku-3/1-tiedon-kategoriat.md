@@ -247,6 +247,7 @@ Ihmiselle tutumpi monitavuisen tiedon (yleensä sanan) tavujärjestys. Eniten me
 
 ### Little-Endian
 Monitavuisen tiedon vaihtoehtoinen tavujärjestys. Vähiten merkitsevä tavu ensin.
+
 </text-box>
 
 
