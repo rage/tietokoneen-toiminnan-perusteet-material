@@ -192,7 +192,9 @@ Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu realilukulas
 1.000 0000 0000 0000 0000 0000 0001 0101<sub>2</sub> &rarr; 1.000 0000 0000 0000 0000 0000<sub>2</sub> (24 bittiä)
 </pre>
 Toinen ongelma liukulukulaskennassa on lukujen vertailu. Realiluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause _if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._ ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
-<pre>
+```
+Esimerkki: Liukulukulaskennan epätarkkuus
+
 X = 20.3;  -- tallentuu lukuna 20.299999
 Y = 1.33;  -- tallentuu lukuna  1.33000004
 Z = X+Y;   -- tulos on luku 21.629999
@@ -211,14 +213,13 @@ then  ....
 
 if ( Y < 0.99999 * Z)  -- koodi toimii varmemmin oikein
 then ....
-</pre>
+```
 
-Pitkäkestoisessa (tunteja, päiviä, viikkoja?) liukulukulaskennassa ongelmana voi olla, että käytössä olevien liukulukujen esitystarkkuus pikkuhiljaa heikkenee. Tämä pätee erityisesti vähennyslaskuun, jos molemmat operandit ovat suunnilleen samankokoisia. Merkitsevät tunnetut bitit kumovat toisensa ja tuloksen normalisoinnin yhteydessä oikealta täytetään nolla-biteillä ilman mitään parempaa tietoa. Kerran menetettyä todellista esitystarkkuutta ei koskaan voi saada takaisin. Joissakin järjestelmissä tällaista tiedon rappeutumista vastaan taistellaan alustamalla (boottamalla) järjestelmä aika ajoin, jolloin liikkeelle lähdetään taas mahdollisimman tarkan datan pohjalta.
+Pitkäkestoisessa (tunteja, päiviä, viikkoja?) liukulukulaskennassa ongelmana voi olla, että käytössä olevien liukulukujen esitystarkkuus pikkuhiljaa heikkenee. Tämä pätee erityisesti vähennyslaskuun, jos molemmat operandit ovat suunnilleen samankokoisia. Lukujen vsemmanpuoleiset merkitsevät bitit kumovat toisensa ja tuloksen normalisoinnin yhteydessä oikealta täytetään nolla-biteillä ilman mitään parempaa tietoa. Kerran menetettyä todellista esitystarkkuutta ei koskaan voi saada takaisin. Joissakin järjestelmissä tällaista tiedon rappeutumista vastaan taistellaan alustamalla (boottamalla) järjestelmä aika ajoin, jolloin liikkeelle lähdetään taas "puhtaalta pöydältä" ja mahdollisimman tarkan datan pohjalta.
 
-<div>
-<key-terminology
-  terminologies='[
-      {"title":"IEEE-754 liukulukustandardi", "content":"Tietokonevalmistajien yhteisesti sopima standardi liukulukujen esitysmuotoon ja liukulukulaskentaan. Standardia käyttämällä sama ohjelma antaa periaatteessa samat laskentatulokset kaikilla standardia käyttävillä tietokoneilla, olettaen että kaikki laskennassa käytetyt standardin parametrit ovat samoja. Tällaisia parametreja ovat esim. liukuluvun koko bitteinä ja laskennan lopputuloksen pyöristystapa."}
-  ]'>
-</key-terminology>
-</div>
+<text-box variant="example" name="Tärkeitä termejä">
+
+### IEEE-754 liukulukustandardi
+Tietokonevalmistajien yhteisesti sopima standardi liukulukujen esitysmuotoon ja liukulukulaskentaan. Standardia käyttämällä sama ohjelma antaa periaatteessa samat laskentatulokset kaikilla standardia käyttävillä tietokoneilla, olettaen että kaikki laskennassa käytetyt standardin parametrit ovat samoja. Tällaisia parametreja ovat esim. liukuluvun koko bitteinä ja laskennan lopputuloksen pyöristystapa.
+
+</text-box>
