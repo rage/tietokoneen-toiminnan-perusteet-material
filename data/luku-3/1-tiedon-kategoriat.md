@@ -46,7 +46,7 @@ Vastavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaal
 11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
              = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
 
-219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>+3</sup> + 2*10<sup>-4</sup> +  5*10<sup>-5</sup>
+219.65625<sub>10</sub> = 2\*10<sup>2</sup>+1\*10<sup>1</sup>+9\*10<sup>0</sup>+6\*10<sup>-1</sup>+5\*10<sup>-2</sup>+6\*10<sup>+3</sup> + 2\*10<sup>-4</sup> +  5\*10<sup>-5</sup>
         = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
 </pre>
 
@@ -82,19 +82,20 @@ Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna? <br>
 
 Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla tuloksen kokonaisosa (0 tai 1) talteen _seuraavana_ binääriosan numerona, ja toistamalla tätä (pelkän desimaaliosan kertomista kahdella) tarpeeksi monta kertaa. Algoritmi päättyy, jos desimaaliosaksi tulee nolla (0.0), koska sen jälkeen tilanne ei muutu mihinkään. Usein algoritmi ei pääty koskaan, koska kaikilla desimaaliluvuilla ei ole täsmällistä vastinetta binäärijärjestelmässä. Tällöin tyydytään etukäteen määriteltyyn tarkkuuteen binääriosan numeroiden lukumäärän suhteen. Esimerkiksi voidaan jo alkuaan sopia, että otetaan korkeintaan 30 numeroa mukaan binääriosaan, jolloin binääriluvun tarkkuus vastaa noin 9 desimaalinumeron tarkkuutta.
 
--- esim. desimaaliosasta binääriosa
+-- esim. desimaaliosasta binääriosa --
 
 <pre>
-Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna?<br>
-0.1875 * 2 = 0.375 = 0 + 0.375
-0.375  * 2 = 0.75  = 0 + 0.75
-0.75   * 2 = 1.5   = 1 + 0.5
-0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
+Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna?
+
+0.1875 \* 2 = 0.375 = 0 + 0.375
+0.375  \* 2 = 0.75  = 0 + 0.75
+0.75   \* 2 = 1.5   = 1 + 0.5
+0.5    \* 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
 </pre>
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
    
--- esim etu ja loppunollat.
+<!-- esim etu ja loppunollat -->
 
 <pre>
 Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat
@@ -104,20 +105,22 @@ Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat
    = 111101.001100000000000000000<sub>2</sub>
 </pre> 
 
+Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon laskeminen pitää lopettaa sitten kun numeroita on tarpeeksi haluttuun laskentatarkkuuteen.
+
 --  esim. päättymätön binääriosa
 
 <pre>
-Mikä on 0.1<sub>10</sub> binäärilukuna?<br>
-0.1 * 2 = 0.2 = 0 + 0.2
-0.2 * 2 = 0.4 = 0 + 0.4
-0.4 * 2 = 0.8 = 0 + 0.8
-0.8 * 2 = 1.6 = 1 + 0.6
-0.6 * 2 = 1.2 = 1 + 0.2
-0.2 * 2 = 0.4 = 0 + 0.4
-0.4 * 2 = 0.8 = 0 + 0.8
-0.8 * 2 = 1.6 = 1 + 0.6
-0.6 * 2 = 1.2 = 1 + 0.2
-0.2 * 2 = 0.4 = 0 + 0.4, jne
+Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?<br>
+0.1 \* 2 = 0.2 = 0 + 0.2
+0.2 \* 2 = 0.4 = 0 + 0.4
+0.4 \* 2 = 0.8 = 0 + 0.8
+0.8 \* 2 = 1.6 = 1 + 0.6
+0.6 \* 2 = 1.2 = 1 + 0.2
+0.2 \* 2 = 0.4 = 0 + 0.4
+0.4 \* 2 = 0.8 = 0 + 0.8
+0.8 \* 2 = 1.6 = 1 + 0.6
+0.6 \* 2 = 1.2 = 1 + 0.2
+0.2 \* 2 = 0.4 = 0 + 0.4, jne
 
 joten  0.1<sub>10</sub> = 0.0001100110011..<sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
 </pre>
@@ -127,9 +130,10 @@ jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
 jos luvusta 0.1<sub>10</sub> halutaan 30 bitin binääriosainen binääriesitys, niin se olisi
 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub>.
 
-Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub>. 
 
-Tietokoneille ontyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. 
+Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama (noin 20 binäärinumeroa) kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub> tarkkuus (noin 3 binäärinumeroa). 
+
+Tietokoneille on tyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. 
 
 -- Quiz 3.1.1-7
 <div><quiznator id="5bd9688383601b299c26828c"></quiznator></div>
@@ -159,6 +163,8 @@ Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kir
 -- esim: binääri hexa
 
 <pre>
+Esimerkki: Muunnokset binääri- ja heksadesimaaliesitysten välillä
+
 binääri:  0100 0111 1001 1010 1111.0100
 heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
 
@@ -170,7 +176,7 @@ binääri:                0001 0010 0000 1010 1110 1111.1011 1000
 Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi, jos tavu on 0x62, se tarkoittaa että tavun bitit ovat vasemmalta oikealle <nobr>0110 0010</nobr>. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
 
 
-On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään. Konekielessä on konekäskyt raakadatan (bitit ilman merkitystä) käsittelyyn ja toiset konekäskyt tiettyjen tietotyyppien käsittelyyn. Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä.
+On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään. Konekielessä on konekäskyt raakadatan (bitit ilman merkitystä) käsittelyyn ja toiset konekäskyt tiettyjen tietotyyppien käsittelyyn. Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä siihen tarkoitukseen sopivilla konekäskyillä.
 
 -- Quizes 3.1.8-9. 
 <div><quiznator id="5bd98c3be921f629a8dfd496"></quiznator></div>
@@ -221,11 +227,17 @@ Little-Endian'issa luvun 35 sanan osoite on 0x1200,
 puolikassanan 0x1200 ja tavun 0x1200.
 ```
 
-Joissakin suorittimissa ovat molemmat monitavuisen tiedon esitystavat käytössä. ALU-piirit tietenkin tekevät toimensa vain yhdellä esitystavalla. Operandien ja tuloksen tavut käännetään eri järjestykseen tarvittaessa. Suorituksessa oleva ohjelma ilmoittaa, kumpaa järjestystä käytetään. Voi myös olla, että etuoikeutetussa tilassa laskettaessa käytetään aina jotain tiettyä tavujen järjestystä.
+Joissakin suorittimissa ovat molemmat monitavuisen tiedon esitystavat käytössä. ALU-piirit tietenkin tekevät toimensa vain yhdellä esitystavalla, jolloin operandien ja tuloksen tavut käännetään eri järjestykseen tarvittaessa. Suorituksessa oleva ohjelma ilmoittaa, kumpaa järjestystä käytetään. Voi myös olla, että etuoikeutetussa tilassa laskettaessa käytetään aina jotain tiettyä tavujen järjestystä.
 
-Myös siirrettäessä tietoa verkon ylitse tämä on tyypillinen ongelma. Verkkoprotokollat (sovitut käytännöt tietoliikenteen toteuttamiseen) tietävät lähettäjän ja vastaanottajan käyttämät monitavuisen tiedon esitystavat, ja kääntävät tavut oikeaan järjestykseen tarvittaessa.
+Tämä on tyypillinen ongelma myös siirrettäessä tietoa verkon ylitse. Verkkoprotokollat (sovitut käytännöt tietoliikenteen toteuttamiseen) tietävät lähettäjän ja vastaanottajan käyttämät monitavuisen tiedon esitystavat, ja kääntävät tavut oikeaan järjestykseen tarvittaessa.
 
 <text-box variant="example" name="Tärkeitä termejä">
+
+### Binääräijärjestelmä
+Lukujärjestelmä, jonka kantaluku on 2. Sen numerot ovat 0 ja 1.
+
+### Heksadesimaalijärjestelmä
+Lukujärjestelmä, jonka kantaluku on 16. Sen numerot ovat 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E ja F. Numeron 'A' lukuarvo on desimaaliluku 10 ja numeron 'F' lukuarvo on desimaaliluku 16.
 
 ### Big-Endian
 Ihmiselle tutumpi monitavuisen tiedon (yleensä sanan) tavujärjestys. Eniten merkitsevä tavu ensin.
