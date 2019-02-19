@@ -229,8 +229,11 @@ Big-Endian:      0x00   0x00   0x00   0x35
    tavuosoite   0x1200 0x1201 0x1202 0x1203
 Little-Endian:   0x35   0x00   0x00   0x00
 
-Big-Endian'issa luvun 35 sanan osoite on 0x1200, puolikassanan (2 tavua) 0x1202 ja tavun 0x1203.
-Little-Endian'issa luvun 35 sanan osoite on 0x1200, puolikassanan 0x1200 ja tavun 0x1200.
+Big-Endian'issa luvun 35 sanan osoite on 0x1200, 
+puolikassanan (2 tavua) 0x1202 ja tavun 0x1203.
+
+Little-Endian'issa luvun 35 sanan osoite on 0x1200, 
+puolikassanan 0x1200 ja tavun 0x1200.
 ```
 
 Joissakin suorittimissa ovat molemmat monitavuisen tiedon esitystavat käytössä. ALU-piirit tietenkin tekevät toimensa vain yhdellä esitystavalla. Operandien ja tuloksen tavut käännetään eri järjestykseen tarvittaessa. Suorituksessa oleva ohjelma ilmoittaa, kumpaa järjestystä käytetään. Voi myös olla, että etuoikeutetussa tilassa laskettaessa käytetään aina jotain tiettyä tavujen järjestystä.
