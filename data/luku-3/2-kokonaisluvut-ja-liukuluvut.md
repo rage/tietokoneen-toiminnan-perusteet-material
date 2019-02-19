@@ -157,6 +157,7 @@ Toinen esimerkki. Luku +346.875 on binäärinä +101011010.111 ja normalisoituna
 Vastaavasti, jos muistissa olevan liukuluvun X esitysmuoto on 0x40780000 (<nobr>=&nbsp;0&nbsp;100&nbsp;0000&nbsp;0&nbsp;111&nbsp;1000&nbsp;0000&nbsp;0000&nbsp;0000</nobr>), niin mikä on X:n arvo? Etumerkkibitti on 0, joten luku on positiivinen. Eksponentin esitysmuoto on 1000&nbsp;0000=128, joten eksponentin arvo on 128-127=1. Mantissan binääriosan esitysmuoto on 0x780000=111&nbsp;1000&nbsp;0000&nbsp;0000&nbsp;0000&nbsp;0000, joten piilobitin kanssa mantissa on 1.1111. Muuttujan X arvo on nyt siis 1.1111\*2<sup>1</sup> = 11.111 = 3.875<sub>10</sub>.
 
 <pre>
+
 0x40780000 = 0 100 0000 0 111 1000 0000 0000 0000 
     &rarr; +1.1111 * 2<sup>1</sup> = +11.111<sub>2</sub> =  3.875<sub>10</sub>
 </pre>
