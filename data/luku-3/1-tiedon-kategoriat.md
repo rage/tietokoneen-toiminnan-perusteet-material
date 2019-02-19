@@ -58,19 +58,6 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 <!-- kuva: 57 binäärilukuna -->
 
 <pre>
-  Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna?
-
-  57/2 = 28 jakojäännos 1
-  28/2 = 14 jakojäännös 0
-  14/2 =  7 jakojäännös 1
-   7/2 =  3 jakojäännös 1
-   3/2 =  1 jakojäännös 1
-   1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
-</pre>
-
--- VAI ????
-
-<pre>
   Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna? <br>
   57/2 = 28 jakojäännos 1
   28/2 = 14 jakojäännös 0
@@ -85,8 +72,7 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 -- esim. desimaaliosasta binääriosa --
 
 <pre>
-  Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna?
-
+  Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna? <br>
   0.1875 \* 2 = 0.375 = 0 + 0.375
   0.375  \* 2 = 0.75  = 0 + 0.75
   0.75   \* 2 = 1.5   = 1 + 0.5
@@ -98,8 +84,7 @@ Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111
 <!-- esim etu ja loppunollat -->
 
 <pre>
-  Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat
-
+  Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat <br>
   57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
      = 00111101.00110000<sub>2</sub>  
      = 111101.001100000000000000000<sub>2</sub>
@@ -110,7 +95,7 @@ Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon la
 --  esim. päättymätön binääriosa
 
 <pre>
-  Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?<br>
+  Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna? <br>
   0.1 \* 2 = 0.2 = 0 + 0.2
   0.2 \* 2 = 0.4 = 0 + 0.4
   0.4 \* 2 = 0.8 = 0 + 0.8
@@ -170,13 +155,12 @@ Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kir
 
   heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
   binääri:                0001 0010 0000 1010 1110 1111.1011 1000
-                         = 1 0010 0000 1010 1111 1111.1011 1
+                           = 1 0010 0000 1010 1111 1111.1011 1
 </pre>
 
-Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi, jos tavu on 0x62, se tarkoittaa että tavun bitit ovat vasemmalta oikealle <nobr>0110 0010</nobr>. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
+Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi tavun sisältö 0x62 tarkoittaa, että tavun bitit ovat vasemmalta oikealle 0110&nbsp;0010. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
 
-
-On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään. Konekielessä on konekäskyt raakadatan (bitit ilman merkitystä) käsittelyyn ja toiset konekäskyt tiettyjen tietotyyppien käsittelyyn. Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä siihen tarkoitukseen sopivilla konekäskyillä.
+On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään tai halutaan tulkita. Konekielessä on omia konekäskyjä raakadatan (bitit ilman merkitystä) käsittelyyn (esim. SHL eli siirrä bittejä vasemmalle) ja omia konekäskyjä tiettyjen tietotyyppien käsittelyyn (esim. ADD eli kokonaislukujen yhteenlasku). Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä siihen tarkoitukseen sopivilla konekäskyillä.
 
 -- Quizes 3.1.8-9. 
 <div><quiznator id="5bd98c3be921f629a8dfd496"></quiznator></div>
@@ -233,11 +217,11 @@ Tämä on tyypillinen ongelma myös siirrettäessä tietoa verkon ylitse. Verkko
 
 <text-box variant="example" name="Tärkeitä termejä">
 
-### Binääräijärjestelmä
+### Binäärijärjestelmä
 Lukujärjestelmä, jonka kantaluku on 2. Sen numerot ovat 0 ja 1.
 
 ### Heksadesimaalijärjestelmä
-Lukujärjestelmä, jonka kantaluku on 16. Sen numerot ovat 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E ja F. Numeron 'A' lukuarvo on desimaaliluku 10 ja numeron 'F' lukuarvo on desimaaliluku 16.
+Lukujärjestelmä, jonka kantaluku on 16. Sen numerot ovat 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E ja F. Numeron 'A' lukuarvo on desimaaliluku 10 ja numeron 'F' lukuarvo on desimaaliluku 15.
 
 ### Big-Endian
 Ihmiselle tutumpi monitavuisen tiedon (yleensä sanan) tavujärjestys. Eniten merkitsevä tavu ensin.
