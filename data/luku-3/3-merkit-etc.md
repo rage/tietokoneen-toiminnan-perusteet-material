@@ -27,26 +27,35 @@ Ei ole niinkään tärkeää, mitä merkistöä käytetään, kunhan tiedon tuot
 
 ## Merkkijonot
 [Merkkijonot](https://fi.wikipedia.org/wiki/Merkkijono) koodataan peräkkäisinä merkkeinä. Yleensä merkit on _pakattu_ sanoihin siten, että yhdessä sanassa on monta merkkiä. Esimerkiksi yhdessä 32-bittisessä sanassa voi olla neljä 8-bittistä merkkiä kukin omassa tavussaan. Itse merkkien lisäksi merkkijono pituus täytyy ilmaista jollain tavoin. Joissakin järjestelmissä merkkijonot kuvataan [tietueina](https://fi.wikipedia.org/wiki/Tietue), joissa on kaksi kenttää: merkkijonon pituus ja itse merkkijono. Merkkijonojen koodaustapa vaihtelee eri ohjelmointikielillä. Usein käytetty koodaustapa on [C](https://www.wikiwand.com/fi/C_(ohjelmointikieli)):n merkintätapa, jossa merkkijonon päättymisen ilmaisee erikoismerkki '\0' (0x00). Tuota erikoismerkkiä ei sitten tietenkään voi käyttää itse merkkijonossa.
-<pre>
+
+-- esimerkki: merkkijono
+
+```
 Merkkijono "Merkkijono" talletetaan C-kielessä tavuosoitteeseen 0x1200
 peräkkäisiin tavuihin seuraavasti:
 
 0x1200: 'M' 'e' 'r' 'k'  'k' 'i' 'j' 'o'   'n' 'o' '\0' '?'  (Big-Endian)
 0x1200: 'k' 'r' 'e' 'M'  'o' 'j' 'i' 'k'   '?' '\0' 'o' 'n'  (Little-Endian)
 
-Vimeisen sanan viimeinen merkki '?' tarkoittaa tässä ihan mitä vain. Jotain bittejä siellä kuitenkin on.
-</pre>
+Vimeisen sanan viimeinen merkki '?' tarkoittaa tässä ihan mitä vain. 
+Jotain bittejä siellä kuitenkin on.
+```
+
 Yleensä suorittimissa ei enää ole omia konekäskyjä merkkijonojen käsittelyyn. Käskyjen toteutus on vaikeata, kun eri merkistöjä on niin paljon ja merkkien kokokin vaihtelee. Joissain vanhemmissa suorittimissa on kuitenkin esim. konekäskyt _strcmp_ merkkijonojen vertailuun ja _strcpy_ merkkijonojen kopioimiseen. Tuolloin oletetaan yleensä 8-bittiset merkistöt ja nollamerkin ('\0') käyttö merkkijonon päättymisen indikaattorina.
 
 Merkkijonoja käsitellään nykyisin kokonaislukuina, kun kukin merkki on koodattu omana kokonaislukunaan. Esimerkiksi voidaan testata, onko Latin-9 merkistöä käyttävä merkki '€' vertaamalla kyseisen merkin merkkikoodia lukuun 0xA4=164. Merkkijonojen käsittely on yleensä hidasta, koska merkit on pakattu sanoihin ja ne pitää eristää sieltä irti bittimanipulaatiokäskyillä.
-<pre>
-Sana osoitteessa  0x2300:    'a' 'u' 't' 'o' eli 0x61  0x75  0x74  0x6F  (Big-Endian)
+
+-- esim. Merkkien vertailu
+
+```
+Sana osoitteessa 0x2300: 'a' 'u' 't' 'o' eli 0x61 0x75 0x74 0x6F (Big-Endian)
 
 Load R1, 0x2300    -- lataa merkit rekisteriin            R1: 61 75 74 6F
 shr  R1, 24        -- siirrä bittejä 24 bittiä oikealle   R1: 00 00 00 61
 comp R1, =61       -- onko ens. merkki 'a'?
 jequ ....          -- hyppää, jos oli 'a' .....
-</pre>
+```
+
 Vastaavasti usean merkkin pakkaaminen sanoihin on vähän työlästä ja vaatii useamman konekäskyn.
 
 ## Kuvat, äänet, videot, dokumentit
@@ -96,19 +105,19 @@ Ruokakaupassa myytävien tuotteet voisi olla hyvä koodata kokonaisluvuilla, jot
 
 Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska ainakin joskus on tarve esittää arvo plus (tai miinus) ääretön. Samoin rakkauden määrä voi kasvaa tai vähetä ihan pikkasenkin kerrallaan. Mahdollisia operaatioita olisivat esimerkiksi _AsetaRakkaudenMäärä()_, _LisääRakkaudenMäärää()_ ja _VähennäRakkaudenMäärää()_.
 
--- Quiz 3.3.1  Mikä on 8-bittisessä ISO Latin-9 merkistössä merkin 'R' merkkikoodi?
+-- Quizes 3.3.1-4  
 <div><quiznator id="5bed3c6b2a799f3e5ac259a5"></quiznator></div>
-
--- Quiz 3.3.2  Mikä on merkkiä 8-bittinen ISO Latin-9 merkkikoodi 0x73 esittää?
 <div><quiznator id="5bed406ccd84693e7889a351"></quiznator></div>
-
--- Quiz 3.3.3 Mikä on ISO Latin-9 merkistössä merkkijonon "Hauva" Big-Endian esitystapa muistissa?
 <div><quiznator id="5bed418c5695f73da1f7544d"></quiznator></div>
-
--- Quiz 3.3.4 Muistin sisältö tavuosoitteessa 0x0000A432 on: 0x 73 75 6B 65 6C 6C 75 00 76 65 6E 65 00.
 <div><quiznator id="5bed47c75695f73da1f75459"></quiznator></div>
 
+### Yhteenveto
+Kolmas luku käsitteli tiedon erilaisia esitysmuotoja. Käsittelimme tarkemmin neljä erilaista kokonaislukujen esitysmuotoa ja IEEE:n standardin mukaista liukulukujen 32-bittistä esitysmuotoa. Sen jälkeen tutustuimme merkkien ja merkkijonojen esitysmuotoihin. Lopuksi esittelimme pääperiaatteet kuvien, äänten ja kaiken muun tyyppisen tiedon esitystapoihin.
 
+Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
+<div><quiznator id="5c6c09bfc41ed4148d96ec98"></quiznator></div>
+
+<!--
 <div>
   <part-summary chapter="3" heading="Saatuasi nyt loppuun luvun 3 sinun pitäisi pystyä selittämään seuraavat asiat:" listitems='[
   {"content":"Kuinka merkit pääpiirteissään esitetään tietokoneessa?"},
@@ -121,3 +130,4 @@ Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska 
     ]'>>
   </part-summary>
 </div>
+-->
