@@ -45,7 +45,7 @@ Vastavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaal
 <pre>
 11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
                        = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
-
+<br><br>
 219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>+3</sup> + 2*10<sup>-4</sup> +  5*10<sup>-5</sup>
            = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
 </pre>
@@ -58,8 +58,8 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 -- kuva: kevät 2003, luento 6 kalvo 13
 
 <pre>
-57<sub>10</sub> = ??<sub>2</sub>
-
+Esimerkki: Mikä on 57<sub>10</sub> binaarilukuna?
+<br><br>
 57/2 = 28 jakojäännos 1
 28/2 = 14 jakojäännös 0
 14/2 =  7 jakojäännös 1
@@ -73,8 +73,8 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 -- esim. desimaaliosasta binaariosa
 
 <pre>
-0.1875<sub>10</sub> = ??<sub>2</sub>
-
+Esimerkki: mitä on 0.1875<sub>10</sub> binaarilukuna?
+<br><br>
 0.1875 * 2 = 0.375 = 0 + 0.375
 0.375  * 2 = 0.75  = 0 + 0.75
 0.75   * 2 = 1.5   = 1 + 0.5
@@ -84,18 +84,20 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binaariosan lopussa oleviin nolliin.
    
 -- esim etu ja loppunollat.
+
 ``` 
 Esimerkki: kokonaisosan etunollat ja binaariosan loppunollat
+
 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
    = 00111101.00110000<sub>2</sub>  
    = 111101.001100000000000000000<sub>2</sub>
 ``` 
 
----  esim. päättymätön binaariosa
+--  esim. päättymätön binaariosa
 
 <pre>
-0.1<sub>10</sub> = ??<sub>2</sub>
-
+Mikä on 0.1<sub>10</sub> binaarilukuna?
+<br><br>
 0.1 * 2 = 0.2 = 0 + 0.2
 0.2 * 2 = 0.4 = 0 + 0.4
 0.4 * 2 = 0.8 = 0 + 0.8
@@ -113,7 +115,7 @@ joten  0.1<sub>10</sub> = 0.0001100110.. <sub>2</sub> = 0.0<u>0011</u><sub>2</su
 --  VAI
 
 ``` 
-0.1<sub>10</sub> = ??<sub>2</sub>
+Mikä on 0.1<sub>10</sub> binaarilukuna?
 
 0.1 * 2 = 0.2 = 0 + 0.2
 0.2 * 2 = 0.4 = 0 + 0.4
@@ -132,9 +134,9 @@ joten  0.1<sub>10</sub> = 0.0001100110.. <sub>2</sub> = 0.0<u>0011</u><sub>2</su
 Alleviivausmerkintä luvussa 0.0<u>0011</u><sub>2</sub> tarkoittaa jaksollisuutta,
 jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
 jos luvusta 0.1<sub>10</sub> halutaan 30 bitin binääriosainen binääriesitys, niin se olisi
-0.00&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110<sub>2</sub>.
+0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub>.
 
-Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.00&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110&nbsp;0110<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub>. Tämä on tyypillistä tietokoneille, jossa esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Laskennan lopputulos on aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. Eihän se lopputulos voi mitenkään olla tarkempi kuin lähtötiedot!
+Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub>. Tämä on tyypillistä tietokoneille, jossa esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. Eihän se lopputulos voi mitenkään olla tarkempi kuin lähtötiedot.
 
 -- Quiz 3.1.1-7
 <div><quiznator id="5bd9688383601b299c26828c"></quiznator></div>
