@@ -16,6 +16,8 @@ Toinen usein käytetty merkistö on [UTF-8](https://en.wikipedia.org/wiki/UTF-8)
 
 Merkkien koodaustapoja (merkistöjä) on siis useita erilaisia ja niitä kaikkia käytetään rinnakkain. Tästä voi aiheutua ongelmia, kun esimerkiksi jokin maili on kirjoitettu yhtä merkistöä käyttäen ja sen vastaanottajan maili-asiakas olettaa ihan liikaa käytössä olevasta merkistöstä. Vastaava ongelma esiintyy usein verkkosivujen kanssa. Verkkosivuilla on mahdollista kertoa käytössä oleva merkistö sen alussa, jotta selaimet osaisivat näyttää sivun oikein. Olisi suotavaa, että jokaisella verkkosivulla olisi tuo merkistönkuvaus paikallaan, mutta harmillisesti näin ei suinkaan ole.
 
+    Esimerkki:  Merkistön määrittely (html-koodatun) verkkosivun alussa
+    
     <html><head>
     <meta charset="utf-8">
     <title>Esimerkki merkistön määrittelystä</title>
@@ -28,7 +30,7 @@ Ei ole niinkään tärkeää, mitä merkistöä käytetään, kunhan tiedon tuot
 ## Merkkijonot
 [Merkkijonot](https://fi.wikipedia.org/wiki/Merkkijono) koodataan peräkkäisinä merkkeinä. Yleensä merkit on _pakattu_ sanoihin siten, että yhdessä sanassa on monta merkkiä. Esimerkiksi yhdessä 32-bittisessä sanassa voi olla neljä 8-bittistä merkkiä kukin omassa tavussaan. Itse merkkien lisäksi merkkijono pituus täytyy ilmaista jollain tavoin. Joissakin järjestelmissä merkkijonot kuvataan [tietueina](https://fi.wikipedia.org/wiki/Tietue), joissa on kaksi kenttää: merkkijonon pituus ja itse merkkijono. Merkkijonojen koodaustapa vaihtelee eri ohjelmointikielillä. Usein käytetty koodaustapa on [C](https://www.wikiwand.com/fi/C_(ohjelmointikieli)):n merkintätapa, jossa merkkijonon päättymisen ilmaisee erikoismerkki '\0' (0x00). Tuota erikoismerkkiä ei sitten tietenkään voi käyttää itse merkkijonossa.
 
--- esimerkki: merkkijono
+<!-- esimerkki: merkkijono  -->
 
 ```
 Merkkijono "Merkkijono" talletetaan C-kielessä tavuosoitteeseen 0x1200
@@ -45,10 +47,12 @@ Yleensä suorittimissa ei enää ole omia konekäskyjä merkkijonojen käsittely
 
 Merkkijonoja käsitellään nykyisin kokonaislukuina, kun kukin merkki on koodattu omana kokonaislukunaan. Esimerkiksi voidaan testata, onko Latin-9 merkistöä käyttävä merkki '€' vertaamalla kyseisen merkin merkkikoodia lukuun 0xA4=164. Merkkijonojen käsittely on yleensä hidasta, koska merkit on pakattu sanoihin ja ne pitää eristää sieltä irti bittimanipulaatiokäskyillä.
 
--- esim. Merkkien vertailu
+<!-- esim. Merkkien vertailu -->
 
 ```
-Sana osoitteessa 0x2300: 'a' 'u' 't' 'o' eli 0x61 0x75 0x74 0x6F (Big-Endian)
+Esimerkki: Merkkien vertailu
+
+Muistissa 0x2300: 'a' 'u' 't' 'o' eli 0x61 0x75 0x74 0x6F (Big-Endian)
 
 Load R1, 0x2300    -- lataa merkit rekisteriin            R1: 61 75 74 6F
 shr  R1, 24        -- siirrä bittejä 24 bittiä oikealle   R1: 00 00 00 61
@@ -56,7 +60,7 @@ comp R1, =61       -- onko ens. merkki 'a'?
 jequ ....          -- hyppää, jos oli 'a' .....
 ```
 
-Vastaavasti usean merkkin pakkaaminen sanoihin on vähän työlästä ja vaatii useamman konekäskyn.
+Usean merkin pakkaaminen sanoihin (ja kaivaminen esiin sanoista) on työlästä ja vaatii useamman konekäskyn, mutta säästää muistitilaa huomattavasti.
 
 ## Kuvat, äänet, videot, dokumentit
 Kuvien, äänten, videoiden ja erilaisten dokumenttien tietomäärä on niin suuri, että niitä ei käsitellä vain muistissa olevina tietoina. Ne yleensä talletetaan omiin tiedostoihinsa ja niitä käsitellään kutakin tiedostotyyppiä varten tehdyillä sovelluksilla.
