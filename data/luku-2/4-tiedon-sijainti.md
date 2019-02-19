@@ -26,6 +26,8 @@ Muistissa olevaan tietoon viitataan käyttäen suorittimen ymmärtämiä muistin
 
 ```
 Tiedon sijainti ja siihen osoittaminen
+Huom: nämä ovat irrallisia käskyjä - ne eivät muodosta ohjelmaa.
+Kaikkien käskyjen tulos talletetaan rekisteriin r2.
 
 ptrX dc 453828           -- symbolin ptrX arvo on (osoitin)muuttujan ptrX
                             osoite. (Osoitin)muuttujan ptrX arvo on 
@@ -33,16 +35,17 @@ ptrX dc 453828           -- symbolin ptrX arvo on (osoitin)muuttujan ptrX
 Tbl  ds 200              -- symbolin Tbl arvo on 200-alkioisen taulukon 
                             ensimmäisen alkion osoite
 
-    load  r1, =80        -- r1 on rekisterissä, nro 80 on IR:n vakio-osassa
-    load  r2, Tbl(r5)    -- Tbl(r5) on suora muistinosoitusviite 
+    load  r2, =80        -- luku 80 on IR:n vakio-osassa
+    load  r2, Tbl(r1)    -- Tbl(r1) on suora muistinosoitusviite 
                             keskusmuistiin, osoitteeseen 280. Arvo 280 on
-                            lukujen 200 (IR:n vakio-osasta) ja 80 (rek r1)
-                            summa.
-    add   r5, =1         -- nro 1 löytyy IR:n vakio-osasta
-    load  r3, Tbl(r5)    -- alkio Tbl(r5) osoitteesta 281 löytyisi 
+                            lukujen 200 (IR:n vakio-osa) ja 80 (rek r1)
+                            summa. Tulos talletetaan r2:een.
+    add   r2, =1         -- ensimmäinen operandi on r2:ssä
+                            toinen operandi (luku 1) on IR:n vakio-osassa.
+    load  r2, Tbl(r5)    -- alkio Tbl(r5) osoitteesta 281 löytyisi 
                             luultavasti välimuistista, koska sen viereiseen
                             alkioon osoitteessa 280 viitattiin juuri äsken.
-    load r2, @ptrX       -- epäsuora muistiviite, ptrX arvo löytyy IR:n 
+    load  r2, @ptrX      -- epäsuora muistiviite, ptrX arvo löytyy IR:n 
                             vakio-osasta, tiedon osoite 453828 löytyy 
                             muistista (osoitteesta ptrX), tieto löytyy 
                             muistista ptrX:n osoittamasta osoitteesta 453828
@@ -57,25 +60,27 @@ Esimerkiksi, kaikkialla näkyvän laskuri Count ja sen yläraja Limit olisi hyv�
 ```
 Esimerkki: Count ja Limit rekistereissä r1 ja r2
 
-add  r1, =1           -- lisää muuntelumuuttujaa
-    comp r1, r2       -- testaa loopin loppuminen
+    add   r1, =1           -- lisää muuntelumuuttujaa
+    comp  r1, r2       -- testaa loopin loppuminen
     jless loop
 ```
+
+Toisaalta, ei ole itsestään selvää, että muuttujien Count ja Limit arvot kannattaisi pitää rekistereissä juuri tämän silmukan suorituksen aikana. Rekistereitä on vähän ja niille voisi olla vielä tärkeämpääkin käyttöä. Niiden arvot voisi yhtä hyvin pitää muistissa. Koodista tulee (tältä osin) hitaampaa, koska suoritettavia käskyjä on enemmän ja ne viittaavat muistiin useammin.
 
 ```
 Esimerkki: Count ja Limit molemmat muistissa
 
-    load r4, Count    -- lisää muuntelumuuttujaa
-    add r4, =1
+    load  r4, Count    -- lisää muuntelumuuttujaa
+    add   r4, =1
     store r4, Count
-    load r3, Count    -- testaa loopin loppuminen
-    comp r3, Limit
+    load  r3, Count    -- testaa loopin loppuminen
+    comp  r3, Limit
     jless loop
 ```
 
-Toinen esimerkki. For-silmukan muuntelumuuttuja kannattaa ehkä pitää rekisterissä silmukan suoritusajan ja sitten lopulta tallettaa muistiin. Toisaalta taas, joissakin korkean tason kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä, joten sitä ei tarvitse tallettaa muistiin missään vaiheessa. Kyseinen muuntelumuuttujalla on tuolloin olemassa arvo vain silmukan suoritusaikana ja tällöinkin vain jossain rekisterissä.
+Kolmaskin vaihtoehto on olemassa. Silmukan muuntelumuuttujaa arvon voi pitää rekisterissä silmukan suoritusajan ja sitten lopuksi tallettaa muistiin. Esimerkiksi C-kielessä muuntelumuuttujat ovat tavallisia muuttujia ja niiden loppuarvon täytyy olla käytettävissä myös silmukan jälkeen. Joissakin toisissa kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä tai muuntelumuuttujaa ei ole edes määritelty silmukan ulkopuolella. Korkean tason ohjelmointikieliä on hyvin erilaisia ja niillä on merkittäviä mielenkiintoisia eroavaisuuksia! 
 ```
-Esimerkki: For-silmukan muuntelumuuttuja rekisterissä
+Esimerkki: muuntelumuuttuja rekisterissä ja muistissa
 
       load  r1, =0    -- alusta muuntelumuuttuja i (r1:ssä)
 
@@ -87,16 +92,18 @@ loop  comp  r1, =50   -- testaa loopin loppuminen
       add   r1, =1    -- i:n lisäys ja paluu silmukkaan
       jump  loop
 
-done  store  r1, i    -- talleta i:n loppuarvo (jos ohjelmointikielen semantiikka vaatii)
+done  store  r1, i    -- talleta i:n loppuarvo (koska ohjelmointikielen 
+                         semantiikka sitä vaatii)
 ```
 
-On siis tapauksia, joissa ohjelmassa nimetty tieto ei sijaitse missään tällä hetkellä. Äsken mainittu silmukan muuntelumuuttujan lisäksi tällaisia tietoja ovat aliohjelmien paikalliset muuttujat ja muut tietorakenteet, jotka varataan muistista vasta aliohjelmaa kutsuttaessa ja vapautetaan aliohjelmista poistuttaessa.
+On siis tapauksia, joissa ohjelmassa nimetty tieto ei sijaitse missään tällä hetkellä. Edellä mainitun silmukan muuntelumuuttujan lisäksi tällaisia tietoja ovat aliohjelmien paikalliset muuttujat ja muut tietorakenteet, jotka varataan muistista vasta aliohjelmaa kutsuttaessa ja vapautetaan muistista aliohjelmasta poistuttaessa.
 
-Käskyrekisterin (IR) vakio-osan suhteen kääntäjällä on kaksi mahdollisuutta. Sinne laitettava tieto (esim. vakio N=1000) voidaan replikoida jokaiseen konekäskyyn, joka käyttää kyseistä vakiota. Toinen vaihtoehto on tallettaa vakio muistiin ja laittaa jokaiseen siihen viittaaviin konekäskyyn vakion osoite muistissa. Molemmilla lähestymistavoilla on etunsa ja haittansa. Konekäskyssä oleva vakiolla voi olla koko- tai tyyppirajoitus, mutta sen käyttö on nopeata. Muistissa olevaan vakioon on hitaampi viitata, mutta sitä voi tarvittaessa muokata.
+Käskyrekisterin (IR) kautta jotain vakioarvoa käytettäessä kääntäjällä (koodin kirjoittajalla) on kaksi mahdollisuutta. Käskyrekisteriin voidaan laittaa itse vakio (esim. arvo 1000), joka sitten replikoidaan jokaiseen tuota tietoa käyttävään konekäskyyn. Toinen vaihtoehto on tallettaa vakio muistiin ja laittaa jokaiseen siihen viittaaviin konekäskyyn vakion osoite muistissa. Molemmilla lähestymistavoilla on etunsa ja haittansa. Konekäskyssä oleva vakiolla voi olla koko- tai tyyppirajoitus, mutta sen käyttö on nopeata. Muistissa olevaan vakioon on hitaampi viitata, mutta sitä voi tarvittaessa kuitenkin muokata.
 
-Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokkaampaa käydä läpi mitä tahansa suurempaa tietomassaa samassa järjestyksessä kuin se on talletettu muistiin. Ohjelmakoodin tasolla tämä tarkoittaa hyppyjen ja haarautumisten välttämistä, mikä ei käytännössä ole lainkaan helppoa. Datan osalta se tarkoittaa, että esimerkiksi 2-ulotteisia taulukoita voi olla parempi käydä läpi riveittäin kuin sarakettain. Usein ohjelmalogiikka valitettavasti vaatii tiedon läpikäyntiä välimuistin kannalta "tehottomassa" järjestyksessä.
+Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokkaampaa käydä läpi mitä tahansa suurempaa tietomassaa samassa järjestyksessä kuin se on talletettu muistiin. Ohjelmakoodin tasolla tämä tarkoittaa hyppyjen ja haarautumisten välttämistä, mikä ei käytännössä ole lainkaan helppoa. Koodissa viitatun datan osalta se tarkoittaa, että esimerkiksi 2-ulotteisia taulukoita voi olla parempi käydä läpi riveittäin kuin sarakettain. Usein ohjelmalogiikka valitettavasti vaatii tiedon läpikäyntiä välimuistin kannalta "tehottomassa" järjestyksessä. Aina ei voi voittaa!
 
--- Quiz 2.4.1-10 Väitteet tiedon sijainnin vaikutuksesta suoritusnopeuteen
+<!-- Quiz 2.4.1-10 Väitteet tiedon sijainnin vaikutuksesta suoritusnopeuteen -->
+
 <div><quiznator id="5c503c5fc41ed4148d96ac32"></quiznator></div>
 <div><quiznator id="5c503cb3ddb6b814af3216b0"></quiznator></div>
 <div><quiznator id="5c503d25ddb6b814af3216b1"></quiznator></div>
