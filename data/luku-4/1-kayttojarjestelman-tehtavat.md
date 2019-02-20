@@ -55,7 +55,7 @@ Laiteajurit ohjaavat verkkolaitteita, joiden avulla tietokoneet kytketään verk
 ja
 [Bluetooth](https://fi.wikipedia.org/wiki/Bluetooth) ([Bluetooth lyhyt](https://simple.wikipedia.org/wiki/Bluetooth)).
 
--- note Eetteri. radiosignaali kulkee eetterissä
+<!-- note Eetteri. radiosignaali kulkee eetterissä -->
 
 <text-box variant="example" name="Avaruuden eetteri">
     
@@ -67,7 +67,7 @@ Tietoliikenneverkoissa on tärkeätä, että järjestelmässä suorittavat ohjel
 
 Ylimmän tason _sovelluskerros_ antaa helposti käytettävän geneerisen käyttöliittymän tietokoneiden (eri tietokoneilla suorittavien prosessien) väliseen yhteydenpitoon. Se myös selvittää, missä verkko-osoitteessa (esim. 128.214.189.90) toisen osapuolen tietokone (esim. "www.helsinki.fi)" sijaitsee. On jälleen hyvin käyttäjäystävällistä, että ympäri maailmaa olevista tietokoneista voidaan käyttää niiden _nimiä_ ja käyttöjärjestelmä sitten selvittää niiden _osoitteen_ nimen perusteella. Sovelluskerros pyytää _kuljetuskerrosta_ siirtämään halutun tiedon (tietosegmentin) vastaanottajalle. Sen alapuolella oleva _verkkokerros_ pilkkoo tiedon saman kokoisiksi paketeiksi ja selvittää parhaimman reitin vastaanottajalle. _Linkkikerros_ siirtää paketit (esim. Eetteriverkko-protokollaa käyttäen) verkon välittäjien kautta vastaanottajalle ja varmistaa, että ne menevät perille. Varsinaisen bittien siirron tekee alimman tason _fyysinen kerros_, joka on toteutettu puhtaasti laitteistolla.
 
--- Quizes 4.1.1-3 
+<!-- Quizes 4.1.1-3 -->
 <div><quiznator id="5c371b7514524713f959c80d"></quiznator></div>
 <div><quiznator id="5c372a6214524713f959c84b"></quiznator></div>
 <div><quiznator id="5c372d30017ffc13eddc56d4"></quiznator></div>
