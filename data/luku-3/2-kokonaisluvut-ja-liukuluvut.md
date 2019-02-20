@@ -6,7 +6,7 @@ hidden: false
 
 
 <div>
-<lead>Käymme tässä aliluvussa läpi kokonaislukujen neljä esitysmuotoa ja IEEE-standardin mukaisen 32-bittisten liukulukujen esitysmuodon.</lead>
+<lead>Käymme tässä osiossa läpi kokonaislukujen neljä esitysmuotoa ja IEEE-standardin mukaisen 32-bittisten liukulukujen esitysmuodon.</lead>
 </div>
 
 ## Kokonaisluvut
