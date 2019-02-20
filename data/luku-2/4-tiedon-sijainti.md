@@ -4,7 +4,7 @@ title: 'Tiedon sijainti suoritusaikana'
 ---
 
 <div><lead>
-Tässä aliluvussa tarkastelemme tiedon eri sijaintipaikkoja suoritusaikana. Tiedon sijainnilla on huomattava merkitys ohjelman suoritusnopeuteen.
+Tässä osiossa tarkastelemme tiedon eri sijaintipaikkoja suoritusaikana. Tiedon sijainnilla on huomattava merkitys ohjelman suoritusnopeuteen.
 </lead></div>
 
 ## Tiedon sijaintipaikat
