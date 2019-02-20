@@ -12,8 +12,9 @@ hidden: false
 Kun jotain ohjelmaa halutaan suorittaa järjestelmässä, se pitää _ladata_ massamuistista. Latauksessa käyttöjärjestelmä luo uuden [prosessin](https://fi.wikipedia.org/wiki/Prosessi_(tietotekniikka)), joka on kyseisen ohjelman yksi suorituskerta järjestelmässä. Yhdestä ohjelmasta voi järjestelmässä olla samanaikaisesti usea prosessi järjestelmässä, vaikkakin vain yksi niistä voi kerrallaan olla suorituksessa (yhden suorittimen järjestelmässä). Esimerkiksi, sinulla voi olla monta selainikkunaa samanaikaisesti käytössä ja niissä kaikissa suorituksessa sama selainohjelma. Toisaalta, järjestelmässä voi samanaikaisesti olla prosesseja eri ohjelmista, joista niistäkin tietenkin vain yksi kerrallaan on suorituksessa suorittimella.
 
 -- kuva  luento 8, kalvo 3    ch-4-2-prosessit-jarjestelmassa-draft.jpg
+![Perusjärjestelmän kokoonpano, jossa ylhäällä suoritin ja muisti, keskellä väylä, ja alhaalla laiteohjain ja kovalevy. Kovalevyllä on ohjelmat P ja Q latausmoduuleina. Muistissa on näistä ohjelmista luodut prosessit P1, P2, P3 ja Q1, sekä näiden prosessien ja KJ:n koodi-ja data-alueet. Suorittimien rekistereillä on prosessin P2 tietoja, vaikka pääosa P2:n tiedoista on muistissa. Osa P2:n juuri nyt ei-käytössä olevista tiedoista voi olla levyllä.](./ch-4-2-prosessit-jarjestelmassa-draft.jpg)
 <div>
-<illustrations motive="ch-4-2-prosessit-jarjestelmassa-draft" frombottom="0"></illustrations>
+<illustrations motive="ch-4-2-prosessit-jarjestelmassa-draft" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 Ladattava ohjelma sijaitsee massamuistissa kääntämisen ja linkittämisen (ks. Luku 1) lopputuloksena syntyneessä _latausmoduulissa_, jossa on mm. ohjelmakoodi konekielisessä muodossa. Latauksessa käyttöjärjestelmä varaa tarvittavan määrän muistitilaa tälle prosessille ja kopio sen ohjelmakoodin muistiin annetulle alueelle. Se myös tallettaa kaikki tähän prosessiin liittyvät hallintotiedot erityiseen tietueeseen, prosessin _kuvaajaan_ (PCB, Process Control Block) tai siihen linkitettyihin muihin tietorakenteisiin. Kuvaajan tarkempi esittely on alla.
@@ -81,8 +82,9 @@ Prosessin "elämää" järjestelmässä sen luonnista sen päättymiseen kuvataa
 Prosessin luonnin ollessa vielä kesken sen ajatellaan olevan tilassa "luonti" ("uusi", "new"). Prosessi on tilassa "valmis suoritukseen" ("ready", "ready to run"), kun se odottaa suoritusvuoroa suorittimelle. Tuolloin sen kaikki tarvittavat muistialueet (koodi ja data) ovat valmiina keskusmuistissa ja se vain odottaa vuoroaan päästä suoritukseen. Kun prosessi vihdoin on suorittamassa suorittimella, sen tilana on "suorituksessa" ("running"). Sillä on tuolloin tietenkin kaikki sen tarvitsemat koodi- ja data-alueet muistissa. Jos prosessi on odottamassa mistä tahansa syystä, se on tilassa "odottaa" ("waiting", "suspended"). Kun prosessi joko itse pääsee koodin loppuun tai käyttöjärjestelmä on tappanut sen, prosessin tilana on "päättynyt tai poistettu" ("tapettu", "terminated", "killed"), kunnes kaikki sen rakenteet on vapautettu uusiokäyttöön. Joskus prosessia ei voi poistaa kokonaan ennen kuin kaikki sen itse käynnistämät prosessit ("lapsiprosessit") on ensin poistettu järjestelmästä. Tuollaisia vähän pidempään tapettu-tilassa olevia prosesseja kutsutaan joskus kuvaavasti [zombie](https://en.wikipedia.org/wiki/Zombie_process)-prosesseiksi, koska ne eivät enää oikeastaan tee mitään paitsi odottavat "lapsiensa" "kuolemaa" eli lapsiprosessiensa päättymistä. Tarkemmassa elinkaarimallissa niillä voi tuolloin olla oma tilansa.
 
 -- fig. luento 8 kalvo 5     ch-4-2-prosessin-elinkaarimalli-draft.jpg
+![Viisi tila-pallukkaa: (1) Luonti, (2) valmis suoritukseen eli ready-to-run eli ready, (3) suorituksessa, (4) odottaa, ja (5) poistettu tai tapettu. Luonti-tilasta nuli ready-tilaan ja katkoviiva nuoli odottaa-tilaan. Ready-tilasta nuoli suorituksessa-tilaan. Suorituksesta tilasta nuolet ready-tilaan, odottaa-tilaan ja poistettu-tilaan. Odottaa-tilasta nuoli ready-tilaan.](./ch-4-2-prosessin-elinkaarimalli-draft.jpg)
 <div>
-<illustrations motive="ch-4-2-prosessin-elinkaarimalli-draft" frombottom="0"></illustrations>
+<illustrations motive="ch-4-2-prosessin-elinkaarimalli-draft" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 ###  Prosessien elinkaarimallin tilasiirtymät
@@ -94,17 +96,19 @@ Ready-jono ei ole koskaan tyhjä. Siellä on vähintään joku (alhaisimman prio
 
 Jos käyttöjärjestelmä havaitsee, että prosessi on käyttänyt aikaviipaleensa loppuun, niin kyseinen prosessi siirretään takaisin ready-jonoon ja vuoro annetaan jollekin toiselle prosessille. Tämä suoritusvuoron vuorottelu tapahtuu käyttäjän (ihmisen) näkökulmasta hyvin tiuhaan tahtiin, esim. 10 ms välein. Näyttää, että kaikki järjestelmässä olevat prosessit olisivat suorituksessa samanaikaisesti, vaikka oikeasti vain yksi prosessi on suorituksessa kerrallaan. Käyttäjä on tyytyväinen, koska ainakin hänen ohjelmansa suoritus näyttää etenevän koko ajan. Vuorottamalla saadaan usean prosessin _keskimääräinen_ vasteaika (aika työn saapumisesta sen valmistumiseen) pienemmäksi verrattuina tilanteeseen, jossa samat prosessit olisi suoritettu loppuun yksi kerrallaan. Palvelu siis paranee ihan oikeastikin.
 
-<pre>
-Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja vaativat 100, 40 ja 10 ms laskenta-aikaa.
-Aikaviipaleen koko on 10 ms.
+```
+Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja vaativat 
+100, 40 ja 10 ms laskenta-aikaa. Aikaviipaleen koko on 10 ms.
 
-Jos A, B ja C suoritetaan loppuun tässä järjestyksessä, niin niiden vasteajat ovat 100, 140 ja 150 ms.
+Jos A, B ja C suoritetaan loppuun tässä järjestyksessä, niin niiden vasteajat 
+ovat 100, 140 ja 150 ms.
 Keskimääräinen vasteaika on (100+140+150)/3 = 290/3 = 130 ms.
 
-Jos A, B ja C suoritetaan järjestelmässä aikaviipale kerrallaan, niin suoritusjärjestys on
-A B C  A B  A B  A B  A A A A A A. A:n vasteaika on nyt 150 ms, B:n 90 ms ja C:n 30 ms.
+Jos A, B ja C suoritetaan järjestelmässä aikaviipale kerrallaan, 
+niin suoritusjärjestys on A B C  A B  A B  A B  A A A A A A. 
+A:n vasteaika on nyt 150 ms, B:n 90 ms ja C:n 30 ms.
 Keskimääräinen vasteaika on (150+90+30)/3 = 270/3 = 90 ms.
-</pre>
+``` 
 
 Kun suorituksessa oleva prosessi tarvitsee mitä tahansa resurssia, joka ei juuri nyt ole saatavilla, se siirtyy odotus-tilaan tuon resurssin mukaiseen jonoon. Tällaisia jonoja voi olla esimerkiksi muistitilaa odottavat prosessit, levy I/O:n päättymistä odottavat prosessit ja prosessilta 532 viestiä odottavat prosessit. Sitten kun kyseinen resurssi tulee saataville, se annetaan odottavalle prosessille, joka sitten siirretään ready-jonoon.
 
@@ -114,37 +118,19 @@ Käyttöjärjestelmä voi (saatuaan jollain tavoin suoritusvuoron) tappaa missä
 Prosessin tila voi olla merkittynä sen kuvaajaan. Ennen kaikkea tila selviää siitä, missä jonossa prosessi kulloinkin on. Käyttöjärjestelmä käsittelee prosesseja niiden kuvaajina ja siirtelee kuvaajia jonosta toiseen tarpeen mukaan. Esimerkiksi, prosessi on tilassa ready, jos se on jonkun prioriteettiluokan ready-jonossa. Samoin prosessi on odotustilassa, jos se on johonkin resurssiin liittyvässä sitä resurssia odottavien prosessien jonossa.
 
 -- fig. luento 8 slide 7     ch-4-2-prosessit-jonoissa-draft.jpg
+![Kolme eri luokkaa jonoja: ready-jono, suorituksessa-jono ja erilaiset odottaa-jonot. Jonoissa on prosessien kuvaajat, joista on mainittu vain prosessin tunniste eli pid. Ready tilassa on prosessit 1056 ja 1766, eli niiden kuvaajat.  Suorituksessa prosessi 0188. Disk 1:n odottaa jonossa on prosessit 0036, 7654 ja 9878. Timer-jonossa on prosessi 0555. Msg-from-1345 jonossa on prosessi 2222. Alla laatikko vuoronanto: Valitse seuraava prosessi ready-jonosta ja siirrä se suoritukseen cpu:lle eli kopioi tämän prosessin suoritinympäristö suorittimelle.](./ch-4-2-prosessit-jonoissa-draft.jpg)
 <div>
-<illustrations motive="ch-4-2-prosessit-jonoissa-draft" frombottom="0"></illustrations>
+<illustrations motive="ch-4-2-prosessit-jonoissa-draft" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
--- Quiz 4.2.1. Sisältykö PC-rekisteri suoritinympäristöön?
+-- Quizes 4.2.1-10 
 <div><quiznator id="5bfd2b5bfd6c3b3e161a21f6"></quiznator></div>
-
--- Quiz 4.2.2. Sisältykö BASE-rekisteri suoritinympäristöön?
 <div><quiznator id="5bfd2c5d6484ed3e386c0d61"></quiznator></div>
-
--- Quiz 4.2.3. Sisältykö MAR-rekisteri suoritinympäristöön?
 <div><quiznator id="5bfd2d6f2a799f3e5ac26fb0"></quiznator></div>
-
--- Quiz 4.2.4. Kun prosessin P suorituksen aikana tapahtuu kokonaisluvun ylivuoto, mitä prosessienhallinnassa tapahtuu?
 <div><quiznator id="5bfd2e4acd84693e7889b9cc"></quiznator></div>
-
--- Quiz 4.2.5. Kun prosessin P suorituksen aikana tapahtuu I/O-laitekeskeytys, mitä prosessienhallinnassa tapahtuu?
 <div><quiznator id="5bfd2f5ccd84693e7889b9d1"></quiznator></div>
-
--- Quiz 4.2.6. Kun prosessin P suorituksen aikana tapahtuu aikaviipalekeskeytys, mitä prosessienhallinnassa tapahtuu?
 <div><quiznator id="5bfd40212a799f3e5ac26fdb"></quiznator></div>
-
--- Quiz 4.2.7. Kun prosessin P tarvitsee lisää muistitilaa, mutta sitä ei ole saatavilla, miten tilanne käsitellään?
 <div><quiznator id="5bfd41da2a799f3e5ac26fe3"></quiznator></div>
-
--- Quiz 4.2.8. Mistä kaikista tiloista prosessi voi joutua poistettu/tapettu-tilaan?
-Miten tehdä quiz, jossa monivalinnassa pitää valita kaikki oikeat vastaukset?
 <div><quiznator id="5bfe9956bc25243d95b3c882"></quiznator></div>
-
--- Quiz 4.2.9. Mihin kaikkiin tiloihin suorituksessa oleva prosessi voi seuraavaksi joutua?
 <div><quiznator id="5bfe9998bc25243d95b3c883"></quiznator></div>
-
--- Quiz 4.2.10. Miten suorituksessa oleva prosessi voi kysyä käyttöjärjestelmältä omaa tilaansa?
 <div><quiznator id="5bfe99c90f49d53dce30c1a7"></quiznator></div>
