@@ -99,17 +99,19 @@ Ready-jono ei ole koskaan tyhjä. Siellä on vähintään joku (alhaisimman prio
 Jos käyttöjärjestelmä havaitsee, että prosessi on käyttänyt aikaviipaleensa loppuun, niin kyseinen prosessi siirretään takaisin ready-jonoon ja vuoro annetaan jollekin toiselle prosessille. Tämä suoritusvuoron vuorottelu tapahtuu käyttäjän (ihmisen) näkökulmasta hyvin tiuhaan tahtiin, esim. 10 ms välein. Näyttää, että kaikki järjestelmässä olevat prosessit olisivat suorituksessa samanaikaisesti, vaikka oikeasti vain yksi prosessi on suorituksessa kerrallaan. Käyttäjä on tyytyväinen, koska ainakin hänen ohjelmansa suoritus näyttää etenevän koko ajan. Vuorottamalla saadaan usean prosessin _keskimääräinen_ vasteaika (aika työn saapumisesta sen valmistumiseen) pienemmäksi verrattuina tilanteeseen, jossa samat prosessit olisi suoritettu loppuun yksi kerrallaan. Palvelu siis paranee ihan oikeastikin.
 
 ```
-Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja vaativat 
-100, 40 ja 10 ms laskenta-aikaa. Aikaviipaleen koko on 10 ms.
+Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja 
+vaativat 100, 40 ja 10 ms laskenta-aikaa. Aikaviipaleen koko on 10 ms.
 
-Jos A, B ja C suoritetaan loppuun tässä järjestyksessä, niin niiden vasteajat 
-ovat 100, 140 ja 150 ms.
-Keskimääräinen vasteaika on (100+140+150)/3 = 290/3 = 130 ms.
+Jos A, B ja C suoritetaan loppuun tässä järjestyksessä, niin niiden
+vasteajat ovat 100, 140 ja 150 ms.
+Keskimääräinen vasteaika on (100+140+150)/3 = 390/3 = 130 ms.
 
 Jos A, B ja C suoritetaan järjestelmässä aikaviipale kerrallaan, 
 niin suoritusjärjestys on A B C  A B  A B  A B  A A A A A A. 
 A:n vasteaika on nyt 150 ms, B:n 90 ms ja C:n 30 ms.
 Keskimääräinen vasteaika on (150+90+30)/3 = 270/3 = 90 ms.
+Huomaa, että erityisesti lyhyiden prosessien B ja C vasteajat
+ovat nyt selkeästi paremmat kuin ensimäisessä tapauksessa.
 ``` 
 
 Kun suorituksessa oleva prosessi tarvitsee mitä tahansa resurssia, joka ei juuri nyt ole saatavilla, se siirtyy odotus-tilaan tuon resurssin mukaiseen jonoon. Tällaisia jonoja voi olla esimerkiksi muistitilaa odottavat prosessit, levy I/O:n päättymistä odottavat prosessit ja prosessilta 532 viestiä odottavat prosessit. Sitten kun kyseinen resurssi tulee saataville, se annetaan odottavalle prosessille, joka sitten siirretään ready-jonoon.
