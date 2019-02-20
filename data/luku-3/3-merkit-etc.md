@@ -5,7 +5,7 @@ hidden: false
 ---
 
 <div>
-<lead>Tässä aliluvussa käymme läpi pääpiirteissään merkkien, merkkijonojen, kuvien, videoiden ja äänten esitystavat. Lopuksi näytämme, kuinka mikä tahansa tieto, tunteenpalo mukaanlukien, voidaan esittää tietokoneessa. </lead>
+<lead>Tässä osiossa käymme läpi pääpiirteissään merkkien, merkkijonojen, kuvien, videoiden ja äänten esitystavat. Lopuksi näytämme, kuinka mikä tahansa tieto, tunteenpalo mukaanlukien, voidaan esittää tietokoneessa. </lead>
 </div>
 Esittelemme ensin merkkien ja merkkijonojen esitysmuodot karkealla tasolla. Sitten käsittelemme kuvien, videoiden ja äänten esitystapoja hyvin kursoorisesti. Lopuksi kerromme, kuinka mitkä tahansa tieto voidaan koodata tietokoneen käsittelemään muotoon ja kuinka sitä sitten käsitellään.
 
