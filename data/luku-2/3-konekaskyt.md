@@ -4,7 +4,7 @@ title: 'Konekäskyt'
 ---
 
 <div>
-<lead>Tässä aliluvussa tutustumme tarkemmin konekäskyihin. Selvitämme mm., mitä ominaisuuksia konekäskyissä on ja minkälaisia konekäskyjä suorittimissa voi olla. Esittelemme samalla myös (lukun) esimerkkitietokoneen ttk-91 käskyistä ja annamme esimerkkejä (symbolisesta) konekielisestä koodista.</lead>
+<lead>Tässä osiossa tutustumme tarkemmin konekäskyihin. Selvitämme mm., mitä ominaisuuksia konekäskyissä on ja minkälaisia konekäskyjä suorittimissa voi olla. Esittelemme samalla myös (lukun) esimerkkitietokoneen ttk-91 käskyistä ja annamme esimerkkejä (symbolisesta) konekielisestä koodista.</lead>
 </div>
 
 ## Konekäskykanta
