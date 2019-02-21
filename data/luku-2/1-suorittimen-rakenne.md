@@ -9,7 +9,7 @@ title: 'Suorittimen rakenne'
 
 ## Suorittimen, välimuistin ja muistin sisältö
 
-Suorituksen aikana prosessin (järjestelmässä olevan ohjelman esitysmuoto) ohjelmakoodi ja kaikki sen käyttämä data sijaitsevat keskusmuistissa. Siellä on myös prosessin käyttämät kirjastorutiinit (kirjastoaliohjelmat). Niitä ei linkitetä vain yhden ohjelman yhteyteen, vaan ne voivat olla yhteiskäyttöisiä kaikille prosesseille. Muistissa on myös käyttöjärjestelmän koodi ja data. Näiden lisäksi siellä on myös kaikkien muiden järjestelmässä olevien prosessien tiedot. Emme kuitenkaan käsittele niitä tämän kurssin yhteydessä sen enempää, koska keskitymme yhden konekielisen ohjelman suoritukseen.
+Suorituksen aikana prosessin (järjestelmässä olevan ohjelman esitysmuoto, ks. Luku 4.2) ohjelmakoodi ja kaikki sen käyttämä data sijaitsevat keskusmuistissa. Siellä on myös prosessin käyttämät kirjastorutiinit (kirjastoaliohjelmat). Niitä ei linkitetä vain yhden ohjelman yhteyteen, vaan ne voivat olla yhteiskäyttöisiä kaikille prosesseille. Muistissa on myös käyttöjärjestelmän koodi ja data. Näiden lisäksi siellä on myös kaikkien muiden järjestelmässä olevien prosessien tiedot. Emme kuitenkaan käsittele niitä tämän kurssin yhteydessä sen enempää, koska keskitymme yhden konekielisen ohjelman suoritukseen.
 
 Välimuisti sijaitsee suorittimen välittömässä yhteydessä. Välimuistin idea on, että tieto löytyy jostain ihan suorittimen läheltä eikä sitä tarvitse hakea väylän kautta kaukaa muistista. Välimuisti toimii automaattisesti suoraan laitteiston avulla. Täten konekäskyn viitatessa muistiin ei mitenkään tiedetä, löytyykö tieto välimuistista vai ei. Joskus se löytyy ja joskus taas ei. Useimmissa tapauksissa tieto löytyy välimuistista.
 
