@@ -15,9 +15,9 @@ Välimuisti sijaitsee suorittimen välittömässä yhteydessä. Välimuistin ide
 
 <!-- kuva: ch-2-1-suoritin-ja-muisti-draft   # kalvo 5.2   -->
 
-![Yksinkertainen esimerkkijärjestelmä. Suoritin ja muisti ovat yhdistettynä väylään. Muistin sisällä kolme laatikkoa. Ne ovat suorituksessa oleva prosessi ja sen data, kirjastorutiinit ja käyttöjärjestelmä. Muistissa on neljä laatikkoa. Ne ovat väylän liittymän kohdalla oleva välimuisti, rekisterit, suoritettava konekäsky ja konekäskyjen suorituspiirit.](./ch-2-1-suoritin-ja-muisti-draft.jpg)
+![Yksinkertainen esimerkkijärjestelmä. Suoritin ja muisti ovat yhdistettynä väylään. Muistin sisällä kolme laatikkoa. Ne ovat suorituksessa oleva prosessi ja sen data, kirjastorutiinit ja käyttöjärjestelmä. Suorittimessa on neljä laatikkoa. Ne ovat väylän liittymän kohdalla oleva välimuisti, rekisterit, suoritettava konekäsky ja konekäskyjen suorituspiirit.](./ch-2-1-suoritin-ja-muisti.svg)
 <div>
-<illustrations motive="ch-2-1-suoritin-ja-muisti-draft"></illustrations>
+<illustrations motive="ch-2-1-suoritin-ja-muisti"></illustrations>
 </div>
 
 Suorittimella on jo aikaisemmin mainitut ohjelmalle näkyvät rekisterit, joiden välillä kaikki aritmetiikka ja muu laskenta tapahtuu. Ohjelman konekäskyissä nimetään, mitä rekistereitä tämä konekäsky käyttää. Konekäsky voi suorittaa tiedon siirtoa muistin ja rekistereiden välillä, tai tehdä pelkkää laskentaa rekistereiden välillä. Jotkut konekäskyt voivat tehdä sekä muistiviittauksia että laskentaa, vaikkakin nykyisissä koneissa näin ei yleensä tehdä.
