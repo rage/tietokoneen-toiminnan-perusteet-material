@@ -60,9 +60,9 @@ Esimerkiksi, kaikkialla näkyvän laskuri Count ja sen yläraja Limit olisi hyv�
 ```
 Esimerkki: Count ja Limit rekistereissä r1 ja r2
 
-    add   r1, =1           -- lisää muuntelumuuttujaa
-    comp  r1, r2       -- testaa loopin loppuminen
-    jless loop
+    add   r1, =1       -- kasvata muuntelumuuttujaa Count
+    comp  r1, r2       -- testaa loopin loppuminen, Count vs. Limit?
+    jless loop         -- hyppää, jos Count < Limit
 ```
 
 Toisaalta, ei ole itsestään selvää, että muuttujien Count ja Limit arvot kannattaisi pitää rekistereissä juuri tämän silmukan suorituksen aikana. Rekistereitä on vähän ja niille voisi olla vielä tärkeämpääkin käyttöä. Niiden arvot voisi yhtä hyvin pitää muistissa. Koodista tulee (tältä osin) hitaampaa, koska suoritettavia käskyjä on enemmän ja ne viittaavat muistiin useammin.
@@ -87,7 +87,8 @@ Esimerkki: muuntelumuuttuja rekisterissä ja muistissa
 loop  comp  r1, =50   -- testaa loopin loppuminen
       jnles done
 
-      ...             -- itse for-silmukan runko
+      ...             -- for-silmukan runko (itse asia) tässä
+      ...
 
       add   r1, =1    -- i:n lisäys ja paluu silmukkaan
       jump  loop
