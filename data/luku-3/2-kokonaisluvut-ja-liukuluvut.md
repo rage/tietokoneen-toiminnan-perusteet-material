@@ -71,7 +71,7 @@ Tästä seuraa, että esimerkiksi aritmetiikkaoperaatio negaatio (esim. lauseess
 <br><br>
 On myös huomionarvoista, että normaali 32-bittisten lukujen lukualue \[-2&nbsp;147&nbsp;483&nbsp;648,&nbsp;+2&nbsp;147&nbsp;483&nbsp;647\] ei ole ihan valtavan iso. Jos sovelluksessa tarvitaan todella suuria kokonaislukuja, niin täytyy käyttää kaksinkertaisen tarkkuuden 64-bittisiä kokonaislukuja.
 
-### Kokonaislukujen vakiolisäys-esitysmuoto
+### Kokonaislukujen vakiolisäykseen perustuva esitysmuoto
 Joissakin tapauksissa (esim. seuraavaksi esitettävien liukulukujen yhteydessä) kokonaisluvut esitetään positiivisina binäärilukuina. Tämä tarkoittaa, että kaikki binääriluvut tulkitaan ensin etumerkittöminä kokonaislukuina ja sitten esitysmuodosta vähennetään sovittu vakio sen lukuarvon saamiseksi. Yleensä tuo vakio on n-bittiselle tiedolle 2<sup>n-1</sup>-1.
 
 Tavussa on 8 bittiä, joten vakio on yleensä 127 (2<sup>7</sup>-1 = 01111111<sub>2</sub>). Tällöin arvoalue \[-127,+128\] on suunnilleen yhtä suuri positiivisille ja negatiivisille luvuille. Suurin positiivinen luku on 128, koska suurin 8-bittinen etumerkitön kokonaisluku on 0xFF&nbsp;=&nbsp255 ja 255-127=128. Jos vakio olisi vaikkapa 50, niin arvoalue olisi sitten \[-50,+205\]. Joskus tuostakin voisi olla hyötyä!
@@ -99,15 +99,14 @@ Kun vakiolisäyksenä käytetään 2<sup>n-1</sup>-1 (missä n on bittien lukum�
 
 <text-box variant="example" name="Tärkeitä termejä">
 
-### Yhden komplementti
+### Yhden komplementin esitysmuoto
 Kokonaislukujen yksi esitysmuoto. Negatiivisen luvun esitysmuoto saadaan komplementoimalla positiivisen luvun binääriesitysmuoto. Esitysmuodon vasemmanpuolimmainen bitti toimii etumerkkibittinä (arvo 1 negatiivisille luvuille).
 
-### Kahden komplementti
+### Kahden komplementin esitysmuoto
 Kokonaislukujen yleisin esitysmuoto. Negatiivisen luvun esitysmuoto saadaan komplementoimalla positiivisen luvun binääriesitysmuoto ja lisäämällä 1. Esitysmuodon vasemmanpuolimmainen bitti toimii etumerkkibittinä (arvo 1 negatiivisille luvuille).
 
-### Vakiolisäys-esitysmuoto
-Kokonaisluvun esitysmuoto on positiivinen kokonaisluku, joka saadaan lisäämällä lukuarvoon jokin sovittu vakio. Esimerkiksi, 8-bittiselle tiedolle vakio on yleensä 127. Tällöin esitysmuodon vasemmanpuolimmainen bitti toimii etumerkkibittinä (arvo 0 negatiivisille luvuille).
-
+### Vakiolisäykseen perustuva esitysmuoto
+Kokonaisluvun vakiolisäysesitysmuoto on positiivinen kokonaisluku, joka saadaan lisäämällä lukuarvoon jokin sovittu vakio. Esimerkiksi, 8-bittiselle tiedolle vakio on yleensä 127. Tällöin esitysmuodon vasemmanpuolimmainen bitti toimii etumerkkibittinä (arvo 0 negatiivisille luvuille).
 
 </text-box>
 
@@ -132,6 +131,7 @@ Tietokoneessa käytämme tietenkin binäärijärjestelmää. Nytkin mantissa ska
 +2.5<sub>10</sub>   =  +10.1        =  +  1.01000000    * 2<sup>1</sup>
 -96.75<sub>10</sub> =  -1100000.11  =  -  1.10000011    * 2<sup>6</sup>
 +96.875<sub>10</sub> = +1100000.111 =  +  1.10000100    * 2<sup>6</sup> (pyöristetty)
+
 </pre>
 
 Tietokoneiden alkuaikoina jokaisella valmistajalla oli oma tapansa esittää liukulukuja, mutta tästä aiheutui liikaa harmia. On jo tarpeeksi ärsyttävää laskea koko ajan likiarvoilla, saati sitten niin että sama ohjelma antaa erilaisia (likiarvo) tuloksia eri koneilla. Jo vuodesta 1985 käytössä on ollut [IEEE 754](https://fi.wikipedia.org/wiki/Liukuluku) standardi liukulukujen esitysmuodolle ja aritmetiikalle. Standardin uusin päivitys on vuodelta 2008. Nyt lähes kaikki suorittimet noudattavat tuota standardia ja laskevat likiarvonsa samalla tavalla. Esittelemme tässä nyt standardin pääperiaatteet 32-bittisille liukuluvuille.
@@ -160,6 +160,7 @@ Vastaavasti, jos muistissa olevan liukuluvun X esitysmuoto on 0x40780000 (<nobr>
 
 0x40780000 = 0 100 0000 0 111 1000 0000 0000 0000 
     &rarr; +1.1111 * 2<sup>1</sup> = +11.111<sub>2</sub> =  3.875<sub>10</sub>
+    
 </pre>
 
 ### Liukulukujen erikoistapaukset
@@ -182,7 +183,7 @@ Normalisointi asettaa omat rajoituksensa sille, kuinka pieniä liukulukuja voi e
 
 Huonona puolena tällaisissa (itseisarvoltaan) hyvin pienissä luvuissa on esitystarkkuuden heikentyminen. Edellisessä esimerkissä merkitseviä bittejä on vain 17, kun normaalisti liukulukujen tarkkuus on 24 bittiä. Jokainen nollabitti ei-normalisoidun mantissan alussa puolittaa lukutarkkuuden.
 
--- Quizes 3.2.8-10 
+<!-- Quizes 3.2.8-10 -->
 <div><quiznator id="5be1890ae8e5d029fd781d84"></quiznator></div>
 <div><quiznator id="5be18b670f60f62a209d9293"></quiznator></div>
 <div><quiznator id="5be18d190f60f62a209d9296"></quiznator></div>
@@ -194,9 +195,10 @@ Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu realilukulas
 1.000000<sub>10</sub> + 0.00000001<sub>10</sub> = 1.00000001<sub>10</sub>
 1.000 0000 0000 0000 0000 0000 0001 0101<sub>2</sub> 
     &rarr; 1.000 0000 0000 0000 0000 0000<sub>2</sub> (24 bittiä)
+    
 </pre>
 
-Toinen ongelma liukulukulaskennassa on lukujen vertailu. Realiluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause _if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._ ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
+Toinen ongelma liukulukulaskennassa on lukujen vertailu. Realiluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
 
 ```
 Esimerkki: Liukulukulaskennan epätarkkuus
