@@ -82,11 +82,11 @@ Keskeytyksiä on kolmenlaisia. Meneillään olevan konekäskyn aiheuttamat virhe
 ### Keskeytysten käsittely laitteistossa ja käyttöjärjestelmässä
 Kaikkiin keskeytyksiin reagoidaan laitteistossa samalla tavalla. Keskeytystä vastaava bitti laitetaan päälle tilarekisterissä ja käskyn aiheuttaman virhetilanteen sattuessa käskyn suoritus lopetetaan. Käskyjen nouto- ja suoritussykliin on laitettu sen loppuun yksi vaihe lisää ja siinä tarkistetaan, että onko tapahtunut jokin keskeytys. Jos keskeytys havaitaan, niin siihen reagoidaan seuraavasti. Ensin talletetaan riittävä määrä tietoa (vähintään PC ja SR) nyt suorituksessa olevasta prosessista, jotta sen suoritus voi mahdollisesti jatkua normaalisti vähän ajan päästä. Seuraavaksi asetetaan PC:n arvoksi keskeytyskäsittelijän alkuosoite. Samalla laitetaan suorittimen etuoikeutettu suoritustila SR:ssä päälle. Keskeytyskäsittelijät ovat tärkeitä osa käyttöjärjestelmää ja ne saavat tehdä ihan mitä vaan. Kaikki tämä tehdään yhdessä humauksessa laitteistotasolla CPU:n kontrolliyksikön ohjaamana.
 
-<!-- kuva: ch-2-2-nouto-suor-kesk-sykli-draft   # kalvo 5.3  -->
+<!-- kuva: ch-2-2-nouto-suor-kesk-sykli   # kalvo 5.3  -->
 
-![Aikaisempaa käskyjen nouto- ja suoritussyklikuvaa on päivitetty yhdellä uudella tilalla. Pitkä kaari käskyn suorituksesta seuraavan käskyn noutoon on katkaistu uudella vaiheella, joska tarkastetaan keskeytykset. Siinä yhteydessä PC:n arvo voi muuttua.](./ch-2-2-nouto-suor-kesk-sykli-draft.jpg)
+![Aikaisempaa käskyjen nouto- ja suoritussyklikuvaa on päivitetty yhdellä uudella tilalla. Pitkä kaari käskyn suorituksesta seuraavan käskyn noutoon on katkaistu uudella vaiheella, joska tarkastetaan keskeytykset. Siinä yhteydessä PC:n arvo voi muuttua.](./ch-2-2-nouto-suor-kesk-sykli.svg)
 <div>
-<illustrations motive="ch-2-2-nouto-suor-kesk-sykli-draft"></illustrations>
+<illustrations motive="ch-2-2-nouto-suor-kesk-sykli"></illustrations>
 </div>
 
 Käskyn nouto- ja suoritussykli jatkuu sitten normaalisti, mutta nyt ollaankin jo suorittamassa keskeytyskäsittelijää etuoikeutetussa tilassa. Se tekee tarvittavat toimet ja voi tarvittaessa lopettaa keskeytyneen ohjelman suorituksen. Kun kaikki hallintotoimet on tehty, keskeytyskäsittelijä suorittaa etuoikeutetun keskeytyksestä paluu konekäskyn (esim, IRET eli Interrupt Return). Se palauttaa PC:n ja SR:n arvot ennalleen ja nyt keskeytynyt ohjelma voi jatkaa suoritustaan aivan niin kuin keskeytystä ei olisi koskaan tapahtunutkaan. Jos keskeytetty ohjelma esim. virhetilanteen vuoksi oli lopetettu, niin suoritusvuoro annetaan jollekin toiselle prosessille.
