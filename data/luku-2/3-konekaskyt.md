@@ -118,7 +118,7 @@ mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
 div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
 
     -- Hyppää osoitteeseen loop, jos r2:n arvo on <0.
-    -- silmukan loop'in osoite on sama kuin symbolin loop arvo
+    -- silmukan loop osoite on sama kuin symbolin loop arvo
 jpos  r2, loop     35 (jpos)    2      0     0     loop'in osoite
 
     -- Talleta r2:n arvo muistissa olevan muuttujan Y arvoksi.
