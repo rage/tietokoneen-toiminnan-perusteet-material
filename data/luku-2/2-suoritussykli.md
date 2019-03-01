@@ -9,9 +9,9 @@ Sen jälkeen kasvatamme PC:n arvoa yhdellä, koska oletusarvoisesti seuraavaksi 
 
 <!-- kuva: ch-2-2-nouto-suor-sykli-draft   # kalvo 5.3  -->
 
-![Kolme nuolta, jotka kiertävät kehässä toisiaan seuraten. Ylhäällä nuolten välissä on käskyn noutovaihe, jossa käskyrekisteriin IR haetaan muistista paikanlaskurin eli PC:n osoittama käsky. PC:n alkuarvona on nolla, mikä on alustettu syklin ulkopuolella etukäteen. Noutovaihetta seuraa lyhyt nuolen kaari, jonka jälken on ohjelmalaskurin kasvatus eli PC saa arvon PC+1. Sitten on taas lyhyt nuolen kaari, jonka jälkeen IR:ssä olevan käskyn suoritusvaihe. Se voi sisältää muistiviitteitä ja se voi muuttaa PC:n arvoa. Lopulta on pitkä nuolen kaari takaisin käskyn noutovaiheeseen.](./ch-2-2-nouto-suor-sykli-draft.jpg)
+![Kolme nuolta, jotka kiertävät kehässä toisiaan seuraten. Ylhäällä nuolten välissä on käskyn noutovaihe, jossa käskyrekisteriin IR haetaan muistista paikanlaskurin eli PC:n osoittama käsky. PC:n alkuarvona on nolla, mikä on alustettu syklin ulkopuolella etukäteen. Noutovaihetta seuraa lyhyt nuolen kaari, jonka jälken on ohjelmalaskurin kasvatus eli PC saa arvon PC+1. Sitten on taas lyhyt nuolen kaari, jonka jälkeen IR:ssä olevan käskyn suoritusvaihe. Se voi sisältää muistiviitteitä ja se voi muuttaa PC:n arvoa. Lopulta on pitkä nuolen kaari takaisin käskyn noutovaiheeseen.](./ch-2-2-nouto-suor-sykli.svg)
 <div>
-<illustrations motive="ch-2-2-nouto-suor-sykli-draft"></illustrations>
+<illustrations motive="ch-2-2-nouto-suor-sykli"></illustrations>
 </div>
 
 Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Näissä kentissä on mm. operaatiokoodi ja niiden rekistereiden numerot, joita käsky käsittelee. Operaatiokoodi voisi olla yhteenlaskukäskyn koodi (17) ja operandeina numerot 3 ja 5 (viitaten rekistereihin R3 ja R5). Kenttien avulla määritellään myös, mihin muistiosoitteeseen käsky mahdollisesti kohdistuu. Yleensä konekäskyissä on korkeintaan yksi muistiviite.
@@ -21,7 +21,8 @@ Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Nä
 ```
 Yksinkertainen konekäsky
   
-ADD  R3, R5   &nbsp;&nbsp; -- kentät: 17 3 0 5 0, &nbsp;&nbsp; laske R3:n ja R5:n arvot yhteen, talleta tulos R3:een
+ADD  R3, R5  -- kentät: 17 3 0 5 0, 
+             -- laske R3:n ja R5:n arvot yhteen, talleta tulos R3:een
 ```
 
 Seuraavaksi käsky suoritetaan sen operaatiokoodin mukaisesti. Jos se on esimerkiksi kertolasku, niin käskyssä annettujen operandien (esim R3 ja R5) arvot kopioidaan ALU:un, ALU:lle annetaan kertolaskumääräys ja tulos talletetaan käskyssä annettuun rekisteriin (esim. R3). Jos se on hyppykäsky tai ehdollinen haarautuskäsky, niin mahdollisesti käskyn suorituksessa muutetaankin PC:n arvoa. Jos käskyn suorituksen aikana tapahtuu jokin virhetilanne, niin virhe indikoidaan tilarekisteriin ja käskyn suoritus keskeytetään. Tämä voi tapahtua esimerkiksi jakolaskun yhteydessä, jos suoritusaikana havaitaan jakajan arvon olevan nolla.
