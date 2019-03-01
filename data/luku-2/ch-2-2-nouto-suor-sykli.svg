@@ -139,18 +139,26 @@
        id="text1042"
        y="73.698471"
        x="55.486984"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan951">Käskyn nouto</tspan><tspan
-         id="tspan953">IR ← mem(PC)</tspan></text>
+         y="73.698471"
+         x="55.486984"
+         id="tspan957">Käskyn nouto</tspan><tspan
+         y="78.990135"
+         x="55.486984"
+         id="tspan959">IR &lt;-- mem(PC)</tspan></text>
     <text
        id="text1054"
        y="111.91569"
        x="127.54068"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan947">Ohjelmalaskurin kasvatus</tspan><tspan
-         id="tspan949">PC ← PC+1</tspan></text>
+         y="111.91569"
+         x="127.54068"
+         id="tspan1161">Paikanlaskurin kasvatus</tspan><tspan
+         id="tspan1165"
+         y="117.20735"
+         x="127.54068">P &lt;-- PC+1 </tspan></text>
     <text
        id="text1090"
        y="154.55141"
@@ -256,89 +264,6 @@
              y="33.195507"
              x="36.565506">Alkuarvo (ttk-91)</tspan></tspan></text>
     </g>
-    <g
-       transform="translate(-12.170835,5.8208336)"
-       id="g16128">
-      <rect
-         style="opacity:1;fill:#a9f8f9;fill-opacity:1;stroke:none;stroke-width:0.25172025;stroke-opacity:1"
-         id="rect1142"
-         width="71.059532"
-         height="39.6875"
-         x="122.46429"
-         y="13.517858" />
-      <text
-         id="text972"
-         y="21.478243"
-         x="126.52384"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
-           id="tspan958"
-           y="21.478243"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan954"
-             y="21.478243"
-             x="126.52384">PC = Program Counter</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan956"
-             y="21.478243"
-             x="174.8351"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan964"
-           y="26.769911"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan960"
-             y="26.769911"
-             x="126.52384">Paikanlaskuri, käskynosoitin</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan962"
-             y="26.769911"
-             x="186.50984"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan970"
-           y="32.061577"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan966"
-             y="32.061577"
-             x="126.52384">Instruction Pointer (IP)</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan968"
-             y="32.061577"
-             x="175.69499"
-             dx="0" /></tspan></text>
-      <text
-         id="text984"
-         y="43.400864"
-         x="126.97741"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
-           id="tspan978"
-           y="43.400864"
-           x="126.97741"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan974"
-             y="43.400864"
-             x="126.97741">IR = Instruction register</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan976"
-             y="43.400864"
-             x="179.1086"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan982"
-           y="48.692528"
-           x="126.97741"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan980"
-             y="48.692528"
-             x="126.97741">käskyrekisteri</tspan></tspan></text>
-    </g>
     <text
        id="text1066"
        y="128.98578"
@@ -368,8 +293,8 @@
            x="30.449223">(Instruction fetch-execute cycle)</tspan></tspan></text>
     <path
        id="path1434"
-       d="m 104.48951,76.595446 c 19.29675,-0.146068 38.01886,6.131222 38.79276,17.921531"
-       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:8.04300022;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS);marker-end:url(#TriangleOutS)" />
+       d="m 97.339272,76.595446 c 22.853508,-0.146068 45.026458,6.131222 45.942998,17.921531"
+       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:8.75290871;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS);marker-end:url(#TriangleOutS)" />
     <path
        id="path1434-1"
        d="m 145.06871,123.69252 c 0.14823,18.04966 -6.22214,35.56181 -18.18728,36.28571"
@@ -378,5 +303,59 @@
        id="path1434-1-1"
        d="M 41.91452,162.11389 C 23.199399,163.3043 -0.56581296,117.17309 42.929171,81.042582"
        style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:6.71999979;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78468903;marker-mid:url(#DotS-5-1);marker-end:url(#TriangleOutS-1-2)" />
-  </g>
+    <g
+       id="g1029"
+       transform="translate(14.612064,4.8378595)">
+      <rect
+         y="15.656013"
+         x="122.46429"
+         height="45.834698"
+         width="67.852295"
+         id="rect1142-9"
+         style="opacity:1;fill:#a9f8f9;fill-opacity:1;stroke:none;stroke-width:0.26813668;stroke-opacity:1" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="126.52384"
+         y="21.478243"
+         id="text1040"><tspan
+           id="tspan1083"
+           x="126.52384"
+           y="21.478243">PC = Program Counter</tspan><tspan
+           id="tspan1085"
+           x="126.52384"
+           y="26.769909">Paikanlaskuri, käskynosoitin</tspan><tspan
+           id="tspan1087"
+           x="126.52384"
+           y="32.061577">Instruction Pointer (IP)</tspan><tspan
+           id="tspan1089"
+           x="126.52384"
+           y="37.353241">Seuraavan käskyn osoite </tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="126.44824"
+         y="47.105034"
+         id="text1052"><tspan
+           id="tspan1091"
+           x="126.44824"
+           y="47.105034">IR = Instruction register</tspan><tspan
+           id="tspan1093"
+           x="126.44824"
+           y="52.396702">Käskyrekisteri</tspan><tspan
+           id="tspan1095"
+           x="126.44824"
+           y="57.688366">Suorituksessa oleva käsky</tspan></text>
+    </g>
+    <flowRoot
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
+       id="flowRoot987"
+       xml:space="preserve"><flowRegion
+         id="flowRegion989"><rect
+           y="-16.794632"
+           x="401.03055"
+           height="195.96959"
+           width="306.07623"
+           id="rect991" /></flowRegion><flowPara
+         id="flowPara993"></flowPara></flowRoot>  </g>
 </svg>

@@ -271,18 +271,26 @@
        id="text1070"
        y="73.698471"
        x="72.420319"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan1047">Käskyn nouto</tspan><tspan
-         id="tspan1049">IR ← mem(PC)</tspan></text>
+         y="73.698471"
+         x="72.420319"
+         id="tspan1057">Käskyn nouto</tspan><tspan
+         y="78.990135"
+         x="72.420319"
+         id="tspan1059">IR &lt;-- mem(PC)</tspan></text>
     <text
        id="text1106"
        y="111.91569"
        x="142.88652"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan1040">Ohjelmalaskurin kasvatus</tspan><tspan
-         id="tspan1045">PC ← PC+1</tspan></text>
+         y="111.91569"
+         x="142.88652"
+         id="tspan1067">Paikanlaskurin kasvatus</tspan><tspan
+         id="tspan1075"
+         y="117.20735"
+         x="142.88652">PC &lt;-- PC+1 </tspan></text>
     <text
        id="text1130"
        y="154.55141"
@@ -391,85 +399,50 @@
     <g
        transform="translate(3.1750004,5.8208336)"
        id="g16128">
-      <rect
-         style="opacity:1;fill:#a9f8f9;fill-opacity:1;stroke:none;stroke-width:0.25172025;stroke-opacity:1"
-         id="rect1142"
-         width="71.059532"
-         height="39.6875"
-         x="122.46429"
-         y="13.517858" />
-      <text
-         id="text1040"
-         y="21.478243"
-         x="126.52384"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
-           id="tspan1026"
+      <g
+         transform="translate(6.3500003,-1.5875)"
+         id="g1029">
+        <rect
+           y="15.656013"
+           x="122.46429"
+           height="45.834698"
+           width="67.852295"
+           id="rect1142"
+           style="opacity:1;fill:#a9f8f9;fill-opacity:1;stroke:none;stroke-width:0.26813668;stroke-opacity:1" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="126.52384"
            y="21.478243"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1022"
-             y="21.478243"
-             x="126.52384">PC = Program Counter</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1024"
-             y="21.478243"
-             x="174.8351"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan1032"
-           y="26.769911"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1028"
-             y="26.769911"
-             x="126.52384">Paikanlaskuri, käskynosoitin</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1030"
-             y="26.769911"
-             x="186.50984"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan1038"
-           y="32.061577"
-           x="126.52384"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1034"
-             y="32.061577"
-             x="126.52384">Instruction Pointer (IP)</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1036"
-             y="32.061577"
-             x="175.69499"
-             dx="0" /></tspan></text>
-      <text
-         id="text1052"
-         y="43.400864"
-         x="126.97741"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         xml:space="preserve"><tspan
-           style="stroke-width:0.26458332"
-           id="tspan1046"
-           y="43.400864"
-           x="126.97741"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1042"
-             y="43.400864"
-             x="126.97741">IR = Instruction register</tspan><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1044"
-             y="43.400864"
-             x="179.1086"
-             dx="0" /></tspan><tspan
-           style="stroke-width:0.26458332"
-           id="tspan1050"
-           y="48.692528"
-           x="126.97741"><tspan
-             style="stroke-width:0.26458332"
-             id="tspan1048"
-             y="48.692528"
-             x="126.97741">käskyrekisteri</tspan></tspan></text>
+           id="text1040"><tspan
+             id="tspan1083"
+             x="126.52384"
+             y="21.478243">PC = Program Counter</tspan><tspan
+             id="tspan1085"
+             x="126.52384"
+             y="26.769909">Paikanlaskuri, käskynosoitin</tspan><tspan
+             id="tspan1087"
+             x="126.52384"
+             y="32.061577">Instruction Pointer (IP)</tspan><tspan
+             id="tspan1089"
+             x="126.52384"
+             y="37.353241">Seuraavan käskyn osoite </tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+           x="126.44824"
+           y="47.105034"
+           id="text1052"><tspan
+             id="tspan1091"
+             x="126.44824"
+             y="47.105034">IR = Instruction register</tspan><tspan
+             id="tspan1093"
+             x="126.44824"
+             y="52.396702">Käskyrekisteri</tspan><tspan
+             id="tspan1095"
+             x="126.44824"
+             y="57.688366">Suorituksessa oleva käsky</tspan></text>
+      </g>
     </g>
     <text
        id="text1094"
@@ -510,10 +483,14 @@
        id="text1082"
        y="112.32027"
        x="3.2792735"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan1051">Keskeytysten tarkistaminen</tspan><tspan
-         id="tspan1053">Ehkä PC ← kesk.käsittelijän osoite</tspan></text>
+         y="112.32027"
+         x="3.2792735"
+         id="tspan1063">Keskeytysten tarkistaminen </tspan><tspan
+         id="tspan1071"
+         y="117.61193"
+         x="3.2792735">Ehkä PC &lt;-- kesk.käsittelijän osoite</tspan></text>
     <path
        id="path1434-3"
        d="M 56.173503,162.81466 C 45.434389,163.07129 35.015078,152.04313 34.584384,131.32949"
