@@ -100,24 +100,29 @@ Esimerkki: Ttk-91 symbolisen konekielen käskyjen koodaus
 
                   op.koodi tul.rek. moodi ind.rek. vakiokenttä
                   
--- hae X:n arvo muistista rekisteriin r1
+    -- Hae X:n arvo muistista rekisteriin r1.
+    -- Muuttujan X osoite on sama kuin symbolin X arvo.
 load r1, X         2 (load)     1      1     0     X:n osoite 
 
--- lisää r2:n arvoon 6
+    -- Lisää r2:n arvoon 6
 add  r2, =6        17 (add)     2      0     0     6
 
--- kerro r4:n arvo muistissa olevan taulukon Tbl alkion i arvolla,
--- kun i on r1:n arvo
+    -- Kerro r4:n arvo muistissa olevan taulukon Tbl alkion i arvolla,
+    -- kun i on r1:n arvo.
+    -- Taulukon Tbl osoite on sama kuin symbolin Tbl arvo.
 mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
 
--- jaa r3:n arvo luvulla, jonka osoite on muistissa 
--- osoitinmuuttujan ptrX arvona
+    -- Jaa r3:n arvo luvulla, jonka osoite on muistissa 
+    -- osoitinmuuttujan ptrX arvona.
+    -- Osoitinmuuttujan ptrX osoite on sama kuin symbolin ptrX arvo.
 div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
 
--- hyppää osoitteeseen loop, jos r2:n arvo on &gt; 0
-jpos  r2, loop     35 (jpos)    2      0     0     loop:n osoite
+    -- Hyppää osoitteeseen loop, jos r2:n arvo on <0.
+    -- silmukan loop'in osoite on sama kuin symbolin loop arvo
+jpos  r2, loop     35 (jpos)    2      0     0     loop'in osoite
 
--- talleta r2:n arvo muistissa olevan muuttujan Y arvoksi
+    -- Talleta r2:n arvo muistissa olevan muuttujan Y arvoksi.
+    -- Muuttujan Y osoite on sama kuin symbolin Y arvo.
 store r2, Y        1 (store)    2      0     0     Y:n osoite 
 ```
 
@@ -228,7 +233,7 @@ for (i=0; i<n; i=i+1) {         load   r1, =0     ; r1 on i
     tbl[i] = 0;            loop comp   r1, n      ; kaikki tehty? 
     }                           jnles  done       ; poistu, jos valmista
                                 load   r2, =0     ; alusta Tbl[i]
-                                store  r2, tbl(r)
+                                store  r2, tbl(r1)
                                 add    r1, =1     ; seuraava i
                                 jump   loop
                            done ...
