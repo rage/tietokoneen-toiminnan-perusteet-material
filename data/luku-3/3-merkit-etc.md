@@ -23,7 +23,7 @@ Merkkien koodaustapoja (merkistöjä) on siis useita erilaisia ja niitä kaikkia
     <title>Esimerkki merkistön määrittelystä</title>
     ...
 
-Mmaailmanlaajuisesti standardoitu [Universal Coded Character Set](https://en.wikipedia.org/wiki/Universal_Coded_Character_Set) (UCS) merkistö kattaa lähes kaikki maailmalla käytetyt merkit. Siinä on mm. määritelty 16-bittiset (2 tavua) koodiarvot 65&nbsp;535 erilaiselle merkille, jotka aika hyvin kattavat maailmassa käytössä olevat noin 200&nbsp;000 symbolia. Siinä on standardoitu myös 32-bittinen (4-tavuinen) koodausmuoto lähes mielivaltaisille symboleille. Meidän käyttämämme merkistö (Latin-9) on myös mukana UCS:ssä, sen yhtenä 8-bittisenä osajoukkona. Samoin siellä on mukana japanilaisen Kanji-kielen 20992 merkkiä omana 16-bittisenä osajoukkonaan.
+Maailmanlaajuisesti standardoitu [Universal Coded Character Set](https://en.wikipedia.org/wiki/Universal_Coded_Character_Set) (UCS) merkistö kattaa lähes kaikki maailmalla käytetyt merkit. Siinä on mm. määritelty 16-bittiset (2 tavua) koodiarvot 65&nbsp;535 erilaiselle merkille, jotka aika hyvin kattavat maailmassa käytössä olevat noin 200&nbsp;000 symbolia. Siinä on standardoitu myös 32-bittinen (4-tavuinen) koodausmuoto lähes mielivaltaisille symboleille. Meidän käyttämämme merkistö (Latin-9) on myös mukana UCS:ssä, sen yhtenä 8-bittisenä osajoukkona. Samoin siellä on mukana japanilaisen Kanji-kielen 20992 merkkiä omana 16-bittisenä osajoukkonaan.
 
 Ei ole niinkään tärkeää, mitä merkistöä käytetään, kunhan tiedon tuottaja ja käyttäjä käyttävät samaa merkistöä. Ohjelmistoissa eri merkistöt täytyy ottaa huomioon hyvin huolella. Esimerkiksi, merkkien vertailuoperaatioissa on olennaista tietää, onko käytetty merkistö 8-, 16- vai 32-bittinen!
 
@@ -109,7 +109,7 @@ Ruokakaupassa myytävien tuotteet voisi olla hyvä koodata kokonaisluvuilla, jot
 
 Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska ainakin joskus on tarve esittää arvo plus (tai miinus) ääretön. Samoin rakkauden määrä voi kasvaa tai vähetä ihan pikkasenkin kerrallaan. Mahdollisia operaatioita olisivat esimerkiksi _AsetaRakkaudenMäärä()_, _LisääRakkaudenMäärää()_ ja _VähennäRakkaudenMäärää()_.
 
--- Quizes 3.3.1-4  
+<!-- Quizes 3.3.1-4  -->
 <div><quiznator id="5bed3c6b2a799f3e5ac259a5"></quiznator></div>
 <div><quiznator id="5bed406ccd84693e7889a351"></quiznator></div>
 <div><quiznator id="5bed418c5695f73da1f7544d"></quiznator></div>
