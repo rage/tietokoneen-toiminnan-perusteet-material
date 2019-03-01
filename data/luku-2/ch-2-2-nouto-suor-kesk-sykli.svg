@@ -192,6 +192,54 @@
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1294-4" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-7"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1213-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutS-9"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="scale(0.2)"
+         style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1294-46" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="DotS-5-18"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(0.2,0,0,0.2,1.48,0.2)"
+         style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
+         d="m -2.5,-1 c 0,2.76 -2.24,5 -5,5 -2.76,0 -5,-2.24 -5,-5 0,-2.76 2.24,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         id="path1213-3-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="TriangleOutS-1-3"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="scale(0.2)"
+         style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1294-2-6" />
+    </marker>
   </defs>
   <metadata
      id="metadata64">
@@ -216,10 +264,10 @@
        style="opacity:1;fill:#f9d79d;fill-opacity:0.78431374;stroke:#000000;stroke-width:0.10044748;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path1434-4"
-       d="M 32.893524,44.211824 C 38.559528,54.96972 48.166567,63.794151 48.166567,63.794151"
+       d="M 48.239367,44.211824 C 53.905371,54.96972 63.51241,63.794151 63.51241,63.794151"
        style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:5.61626148;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS-4);marker-end:url(#TriangleOutS-6)" />
     <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-8.769043,16.252976)"
+       transform="matrix(0.26458333,0,0,0.26458333,8.1642912,16.252976)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot77"
        xml:space="preserve"><flowRegion
@@ -233,7 +281,7 @@
            id="rect81" /></flowRegion><flowPara
          id="flowPara85">Käskyn nouto</flowPara><flowPara
          id="flowPara87">IR &lt;-- mem(PC)</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,63.284655,54.470199)"
+       transform="matrix(0.26458333,0,0,0.26458333,78.630498,54.470199)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot77-0"
        xml:space="preserve"><flowRegion
@@ -247,7 +295,7 @@
            id="rect81-9" /></flowRegion><flowPara
          id="flowPara116">Ohjelmalaskurin kasvatus</flowPara><flowPara
          id="flowPara118">PC &lt;-- PC+1</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-14.049273,97.105914)"
+       transform="matrix(0.26458333,0,0,0.26458333,1.2965632,97.105914)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot77-4"
        xml:space="preserve"><flowRegion
@@ -263,7 +311,7 @@
          id="flowPara149">- voi muuttaa PC:n arvoa</flowPara><flowPara
          id="flowPara151">- voi lukea/kirjoittaa muistia</flowPara><flowPara
          id="flowPara153">- voi muuttaa rekisterin arvoa</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-18.887372,-5.0232526)"
+       transform="matrix(0.26458333,0,0,0.26458333,-3.5415329,-5.0232526)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot77-8"
        xml:space="preserve"><flowRegion
@@ -276,7 +324,7 @@
            width="235.71428"
            id="rect81-7" /></flowRegion><flowPara
          id="flowPara182">Start</flowPara></flowRoot>    <g
-       transform="translate(-18.898809,6.4255952)"
+       transform="translate(-3.5529699,6.4255952)"
        id="g1140">
       <rect
          style="opacity:1;fill:#2debef;fill-opacity:1;stroke:none;stroke-width:0.23000878;stroke-opacity:1"
@@ -301,7 +349,7 @@
            id="flowPara208">PC &lt;-- 0</flowPara><flowPara
            id="flowPara210">Alkuarvo (ttk-91)</flowPara></flowRoot>    </g>
     <g
-       transform="translate(-12.170835,5.8208336)"
+       transform="translate(3.1750004,5.8208336)"
        id="g16128">
       <rect
          style="opacity:1;fill:#a9f8f9;fill-opacity:1;stroke:none;stroke-width:0.25172025;stroke-opacity:1"
@@ -342,7 +390,7 @@
            id="flowPara248">IR = Instruction register</flowPara><flowPara
            id="flowPara250">käskyrekisteri</flowPara></flowRoot>    </g>
     <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-33.806802,69.609183)"
+       transform="matrix(0.26458333,0,0,0.26458333,11.114633,54.471517)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot77-0-1"
        xml:space="preserve"><flowRegion
@@ -351,21 +399,39 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
            y="202.51968"
            x="242.85715"
-           height="132.00798"
-           width="402.05511"
+           height="101.70339"
+           width="340.43579"
            id="rect81-9-9" /></flowRegion><flowPara
-         id="flowPara1120">Käskyjen nouto- ja suoritussykli</flowPara><flowPara
-         id="flowPara1122">(Instruction fetch-execute cycle)</flowPara></flowRoot>    <path
+         id="flowPara1471">Käskyjen nouto- </flowPara><flowPara
+         id="flowPara1473">ja suoritussykli</flowPara></flowRoot>    <path
        id="path1434"
-       d="m 104.48951,76.595446 c 19.29675,-0.146068 38.01886,6.131222 38.79276,17.921531"
-       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:8.043;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431374;marker-mid:url(#DotS);marker-end:url(#TriangleOutS)" />
+       d="m 119.83544,76.595446 c 19.29675,-0.146068 38.01886,6.131222 38.79276,17.921531"
+       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:8.04300022;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS);marker-end:url(#TriangleOutS)" />
     <path
        id="path1434-1"
-       d="m 145.06871,123.69252 c 0.14823,18.04966 -6.22214,35.56181 -18.18728,36.28571"
-       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:7.83628941;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431374;marker-mid:url(#DotS-5);marker-end:url(#TriangleOutS-1)" />
+       d="m 160.41464,123.69252 c 0.14823,18.04966 -6.22214,35.56181 -18.18728,36.28571"
+       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:7.83628941;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS-5);marker-end:url(#TriangleOutS-1)" />
+    <flowRoot
+       transform="matrix(0.26458333,0,0,0.26458333,-60.976752,54.87478)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       id="flowRoot77-0-4"
+       xml:space="preserve"><flowRegion
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+         id="flowRegion79-8-3"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="202.51968"
+           x="242.85715"
+           height="91.428574"
+           width="235.71428"
+           id="rect81-9-7" /></flowRegion><flowPara
+         id="flowPara1467">Keskeytysten tarkistaminen</flowPara><flowPara
+         id="flowPara1469">Ehkä PC &lt;-- ??</flowPara></flowRoot>    <path
+       id="path1434-3"
+       d="M 56.173503,162.81466 C 45.434389,163.07129 35.015078,152.04313 34.584384,131.32949"
+       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:7.95290804;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS-7);marker-end:url(#TriangleOutS-9)" />
     <path
-       id="path1434-1-1"
-       d="M 41.91452,162.11389 C 23.199399,163.3043 -0.56581296,117.17309 42.929171,81.042582"
-       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:6.72;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78468901;marker-mid:url(#DotS-5-1);marker-end:url(#TriangleOutS-1-2)" />
+       id="path1434-1-2"
+       d="M 33.231632,104.4514 C 33.033875,90.969657 41.532726,77.889399 57.495659,77.3487"
+       style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:7.82251358;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS-5-18);marker-end:url(#TriangleOutS-1-3)" />
   </g>
 </svg>
