@@ -22,7 +22,7 @@ Kaikki tieto esitetään tietokoneessa loppujen lopuksi binäärijärjestelmän 
 
 <text-box variant="example" name="George Boole, Claude Shannon ja bitit">
 
-Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvojen käsittelemiseen. Totuusarvot ovat 2-arvoisia ja ne voi helposti esittää bitteinä. Yleensä arvo 1 vastaa totuusarvoa tosi ja arvo 0 totuusarvoa epätosi. Vuonna 1937 amerikkalainen matemaatikko Claude Shannon esitti maisterin tutkinnon lopputyössään, kuinka Boolen algebraa voidaan soveltaa piirien suunnitteluun. Tämä osoittautui loistavaksi ideaksi tietokoneiden kannalta. Shannonia kutsutaan usein informaatioteorian isäksi."
+Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvojen käsittelemiseen. Totuusarvot ovat 2-arvoisia ja ne voi helposti esittää bitteinä. Yleensä arvo 1 vastaa totuusarvoa tosi ja arvo 0 totuusarvoa epätosi. Vuonna 1937 amerikkalainen matemaatikko Claude Shannon esitti maisterin tutkinnon lopputyössään, kuinka Boolen algebraa voidaan soveltaa piirien suunnitteluun. Tämä osoittautui loistavaksi ideaksi tietokoneiden kannalta. Shannonia kutsutaan usein informaatioteorian isäksi.
 
 </text-box>
 
@@ -69,6 +69,7 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
    7/2 =  3 jakojäännös 1
    3/2 =  1 jakojäännös 1
    1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
+   
 </pre>
 
 Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla tuloksen kokonaisosa (0 tai 1) talteen _seuraavana_ binääriosan numerona, ja toistamalla tätä (pelkän desimaaliosan kertomista kahdella) tarpeeksi monta kertaa. Algoritmi päättyy, jos desimaaliosaksi tulee nolla (0.0), koska sen jälkeen tilanne ei muutu mihinkään. Usein algoritmi ei pääty koskaan, koska kaikilla desimaaliluvuilla ei ole täsmällistä vastinetta binäärijärjestelmässä. Tällöin tyydytään etukäteen määriteltyyn tarkkuuteen binääriosan numeroiden lukumäärän suhteen. Esimerkiksi voidaan jo alkuaan sopia, että otetaan korkeintaan 30 numeroa mukaan binääriosaan, jolloin binääriluvun tarkkuus vastaa noin 9 desimaalinumeron tarkkuutta.
@@ -82,6 +83,7 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
   0.375  \* 2 = 0.75  = 0 + 0.75
   0.75   \* 2 = 1.5   = 1 + 0.5
   0.5    \* 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
+  
 </pre>
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
@@ -94,6 +96,7 @@ Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111
   57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
      = 00111101.00110000<sub>2</sub>  
      = 111101.001100000000000000000<sub>2</sub>
+     
 </pre> 
 
 Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon laskeminen pitää lopettaa sitten kun numeroita on tarpeeksi haluttuun laskentatarkkuuteen.
@@ -116,6 +119,7 @@ Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon la
   0.2 \* 2 = 0.4 = 0 + 0.4, jne
 
   Nyt,  0.1<sub>10</sub> = 0.0001100110011..<sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
+  
 </pre>
 
 Alleviivausmerkintä luvussa 0.0<u>0011</u><sub>2</sub> tarkoittaa jaksollisuutta,
