@@ -14,42 +14,6 @@
      id="defs61">
     <marker
        style="overflow:visible"
-       id="Arrow1Sstart"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(0.2,0,0,0.2,1.2,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path1158" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker13306"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path13304" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker12122"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="scale(0.2)"
-         style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path12120" />
-    </marker>
-    <marker
-       style="overflow:visible"
        id="DotS"
        refX="0"
        refY="0"
@@ -71,54 +35,6 @@
          style="fill:#0056ff;fill-opacity:0.78431373;fill-rule:evenodd;stroke:#0056ff;stroke-width:1.00000003pt;stroke-opacity:0.78431373"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1294" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker1578"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#0f8afd;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path1576" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow2Send"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(-0.3,0,0,-0.3,0.69,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path1179" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="marker1438"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path1436" />
-    </marker>
-    <marker
-       style="overflow:visible"
-       id="Arrow2Lend"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
-         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
-         style="fill:#a9b2f9;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
-         id="path1167" />
     </marker>
     <marker
        style="overflow:visible"
@@ -219,64 +135,128 @@
        id="path1434-4"
        d="M 32.893524,44.211824 C 38.559528,54.96972 48.166567,63.794151 48.166567,63.794151"
        style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:5.61626148;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS-4);marker-end:url(#TriangleOutS-6)" />
-    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-8.769043,16.252976)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot77"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion79"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="202.51968"
-           x="242.85715"
-           height="91.428574"
-           width="235.71428"
-           id="rect81" /></flowRegion><flowPara
-         id="flowPara85">Käskyn nouto</flowPara><flowPara
-         id="flowPara87">IR &lt;-- mem(PC)</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,63.284655,54.470199)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot77-0"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion79-8"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="202.51968"
-           x="242.85715"
-           height="91.428574"
-           width="235.71428"
-           id="rect81-9" /></flowRegion><flowPara
-         id="flowPara116">Ohjelmalaskurin kasvatus</flowPara><flowPara
-         id="flowPara118">PC &lt;-- PC+1</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-14.049273,97.105914)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot77-4"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion79-0"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="202.51968"
-           x="242.85715"
-           height="106.58085"
-           width="288.24219"
-           id="rect81-1" /></flowRegion><flowPara
-         id="flowPara147">IR:n käskyn suoritus</flowPara><flowPara
-         id="flowPara149">- voi muuttaa PC:n arvoa</flowPara><flowPara
-         id="flowPara151">- voi lukea/kirjoittaa muistia</flowPara><flowPara
-         id="flowPara153">- voi muuttaa rekisterin arvoa</flowPara></flowRoot>    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-18.887372,-5.0232526)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot77-8"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion79-87"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="202.51968"
-           x="242.85715"
-           height="91.428574"
-           width="235.71428"
-           id="rect81-7" /></flowRegion><flowPara
-         id="flowPara182">Start</flowPara></flowRoot>    <g
+    <text
+       id="text1042"
+       y="73.698471"
+       x="55.486984"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1036"
+         y="73.698471"
+         x="55.486984"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1032"
+           y="73.698471"
+           x="55.486984">Käskyn nouto</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1034"
+           y="73.698471"
+           x="84.525002"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1040"
+         y="78.990135"
+         x="55.486984"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1038"
+           y="78.990135"
+           x="55.486984">IR &lt;-- mem(PC)</tspan></tspan></text>
+    <text
+       id="text1054"
+       y="111.91569"
+       x="127.54068"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1048"
+         y="111.91569"
+         x="127.54068"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1044"
+           y="111.91569"
+           x="127.54068">Ohjelmalaskurin kasvatus</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1046"
+           y="111.91569"
+           x="182.39211"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1052"
+         y="117.20736"
+         x="127.54068"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1050"
+           y="117.20736"
+           x="127.54068">PC &lt;-- PC+1</tspan></tspan></text>
+    <text
+       id="text1090"
+       y="154.55141"
+       x="50.206753"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1072"
+         y="154.55141"
+         x="50.206753"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1068"
+           y="154.55141"
+           x="50.206753">IR:n käskyn suoritus</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1070"
+           y="154.55141"
+           x="94.458313"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1078"
+         y="159.84308"
+         x="50.206753"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1074"
+           y="159.84308"
+           x="50.206753">- voi muuttaa PC:n arvoa</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1076"
+           y="159.84308"
+           x="104.27271"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1084"
+         y="165.13474"
+         x="50.206753"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1080"
+           y="165.13474"
+           x="50.206753">- voi lukea/kirjoittaa muistia</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1082"
+           y="165.13474"
+           x="110.77153"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1088"
+         y="170.42641"
+         x="50.206753"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1086"
+           y="170.42641"
+           x="50.206753">- voi muuttaa rekisterin arvoa</tspan></tspan></text>
+    <text
+       id="text952"
+       y="52.422237"
+       x="45.368652"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         id="tspan950"
+         y="52.422237"
+         x="45.368652"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan948"
+           y="52.422237"
+           x="45.368652">Start</tspan></tspan></text>
+    <g
        transform="translate(-18.898809,6.4255952)"
        id="g1140">
       <rect
@@ -286,21 +266,34 @@
          height="16.630953"
          x="32.505951"
          y="20.699404" />
-      <flowRoot
-         xml:space="preserve"
-         id="flowRoot77-8-7"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,-27.69052,-29.541653)"><flowRegion
-           id="flowRegion79-87-4"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-             id="rect81-7-7"
-             width="235.71428"
-             height="91.428574"
-             x="242.85715"
-             y="202.51968"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-           id="flowPara208">PC &lt;-- 0</flowPara><flowPara
-           id="flowPara210">Alkuarvo (ttk-91)</flowPara></flowRoot>    </g>
+      <text
+         id="text946"
+         y="27.903839"
+         x="36.565506"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan940"
+           y="27.903839"
+           x="36.565506"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan936"
+             y="27.903839"
+             x="36.565506">PC &lt;-- 0</tspan><tspan
+             style="stroke-width:0.26458332"
+             id="tspan938"
+             y="27.903839"
+             x="55.069801"
+             dx="0" /></tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan944"
+           y="33.195507"
+           x="36.565506"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan942"
+             y="33.195507"
+             x="36.565506">Alkuarvo (ttk-91)</tspan></tspan></text>
+    </g>
     <g
        transform="translate(-12.170835,5.8208336)"
        id="g16128">
@@ -311,52 +304,107 @@
          height="39.6875"
          x="122.46429"
          y="13.517858" />
-      <flowRoot
-         xml:space="preserve"
-         id="flowRoot77-8-8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,62.267813,-35.967248)"><flowRegion
-           id="flowRegion79-87-5"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-             id="rect81-7-2"
-             width="235.71428"
-             height="91.428574"
-             x="242.85715"
-             y="202.51968"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-           id="flowPara252">PC = Program Counter</flowPara><flowPara
-           id="flowPara254">Paikanlaskuri, käskynosoitin</flowPara><flowPara
-           id="flowPara256">Instruction Pointer (IP)</flowPara><flowPara
-           id="flowPara258" /></flowRoot>      <flowRoot
-         xml:space="preserve"
-         id="flowRoot77-8-9"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-         transform="matrix(0.26458333,0,0,0.26458333,62.721386,-14.044629)"><flowRegion
-           id="flowRegion79-87-3"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-             id="rect81-7-0"
-             width="235.71428"
-             height="91.428574"
-             x="242.85715"
-             y="202.51968"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-           id="flowPara248">IR = Instruction register</flowPara><flowPara
-           id="flowPara250">käskyrekisteri</flowPara></flowRoot>    </g>
-    <flowRoot
-       transform="matrix(0.26458333,0,0,0.26458333,-33.806802,69.609183)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       id="flowRoot77-0-1"
-       xml:space="preserve"><flowRegion
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-         id="flowRegion79-8-5"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:24px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="202.51968"
-           x="242.85715"
-           height="132.00798"
-           width="402.05511"
-           id="rect81-9-9" /></flowRegion><flowPara
-         id="flowPara1120">Käskyjen nouto- ja suoritussykli</flowPara><flowPara
-         id="flowPara1122">(Instruction fetch-execute cycle)</flowPara></flowRoot>    <path
+      <text
+         id="text972"
+         y="21.478243"
+         x="126.52384"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan958"
+           y="21.478243"
+           x="126.52384"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan954"
+             y="21.478243"
+             x="126.52384">PC = Program Counter</tspan><tspan
+             style="stroke-width:0.26458332"
+             id="tspan956"
+             y="21.478243"
+             x="174.8351"
+             dx="0" /></tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan964"
+           y="26.769911"
+           x="126.52384"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan960"
+             y="26.769911"
+             x="126.52384">Paikanlaskuri, käskynosoitin</tspan><tspan
+             style="stroke-width:0.26458332"
+             id="tspan962"
+             y="26.769911"
+             x="186.50984"
+             dx="0" /></tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan970"
+           y="32.061577"
+           x="126.52384"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan966"
+             y="32.061577"
+             x="126.52384">Instruction Pointer (IP)</tspan><tspan
+             style="stroke-width:0.26458332"
+             id="tspan968"
+             y="32.061577"
+             x="175.69499"
+             dx="0" /></tspan></text>
+      <text
+         id="text984"
+         y="43.400864"
+         x="126.97741"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         xml:space="preserve"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan978"
+           y="43.400864"
+           x="126.97741"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan974"
+             y="43.400864"
+             x="126.97741">IR = Instruction register</tspan><tspan
+             style="stroke-width:0.26458332"
+             id="tspan976"
+             y="43.400864"
+             x="179.1086"
+             dx="0" /></tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan982"
+           y="48.692528"
+           x="126.97741"><tspan
+             style="stroke-width:0.26458332"
+             id="tspan980"
+             y="48.692528"
+             x="126.97741">käskyrekisteri</tspan></tspan></text>
+    </g>
+    <text
+       id="text1066"
+       y="128.98578"
+       x="30.449223"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1060"
+         y="128.98578"
+         x="30.449223"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1056"
+           y="128.98578"
+           x="30.449223">Käskyjen nouto- ja suoritussykli</tspan><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1058"
+           y="128.98578"
+           x="133.14062"
+           dx="0" /></tspan><tspan
+         style="stroke-width:0.26458332"
+         id="tspan1064"
+         y="136.92328"
+         x="30.449223"><tspan
+           style="stroke-width:0.26458332"
+           id="tspan1062"
+           y="136.92328"
+           x="30.449223">(Instruction fetch-execute cycle)</tspan></tspan></text>
+    <path
        id="path1434"
        d="m 104.48951,76.595446 c 19.29675,-0.146068 38.01886,6.131222 38.79276,17.921531"
        style="fill:none;fill-opacity:1;stroke:#0056ff;stroke-width:8.04300022;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.78431373;marker-mid:url(#DotS);marker-end:url(#TriangleOutS)" />
