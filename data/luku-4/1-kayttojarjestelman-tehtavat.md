@@ -21,7 +21,7 @@ käytetään lähettämällä niille palvelupyyntöviestejä ja vastaavasti palv
 ### Käyttöjärjestelmän kaksi tasoa
 Usein käyttöjärjestelmässä on kaksi tasoa. Ylempi (laiteriippumaton) taso antaa palveluja tavallisille sovellusohjelmilla ja se voi suorittaa koodia tavallisessa käyttäjätilassa. Alempi (laitesidonnainen) taso sisältää kaikki palvelut, jotka käyttävät fyysisiä laitteita. Alemman tason moduulit suoritetaan etuoikeutetussa suoritustilassa ja niitä voi yleensä käyttää (kutsua) vain käyttöjärjestelmän laiteriippumattomalta tasolta. On turvallisempaa, kun käyttöjärjestelmästäkin etuoikeutetussa tilassa suorittavat ainoastaan tuon pienemmän laitesidonnaisen tason ([käyttöjärjestelmän ytimen](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4n_ydin)) moduulit. On aina helpompaa tehdä turvalliseksi pieni määrä koodia kuin suuri määrä.
 
--- kuva lu08, kalvo 10: ch-4-1-kj-kaksi-tasoa.jpg
+<!-- kuva lu08, kalvo 10: ch-4-1-kj-kaksi-tasoa -->
 
 ![Iso KJ-laatikko jaettu kahteen osaan. Yläosassa on KJ:n laiteriippumaton taso ja alaosassa sen laitesidonnainen taso. Ylhäältä päin KJ-laatikkoa käyttävät sovellukset. Alaosan laitesidonaisen tason alla on HW-laitteisto.](./ch-4-1-kj-kaksi-tasoa.svg)
 <div>
