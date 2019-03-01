@@ -11,11 +11,11 @@ hidden: false
 ## Prosessi
 Kun jotain ohjelmaa halutaan suorittaa järjestelmässä, se pitää _ladata_ massamuistista. Latauksessa käyttöjärjestelmä luo uuden [prosessin](https://fi.wikipedia.org/wiki/Prosessi_(tietotekniikka)), joka on kyseisen ohjelman yksi suorituskerta järjestelmässä. Yhdestä ohjelmasta voi järjestelmässä olla samanaikaisesti usea prosessi järjestelmässä, vaikkakin vain yksi niistä voi kerrallaan olla suorituksessa (yhden suorittimen järjestelmässä). Esimerkiksi, sinulla voi olla monta selainikkunaa samanaikaisesti käytössä ja niissä kaikissa suorituksessa sama selainohjelma. Toisaalta, järjestelmässä voi samanaikaisesti olla prosesseja eri ohjelmista, joista niistäkin tietenkin vain yksi kerrallaan on suorituksessa suorittimella.
 
--- kuva  luento 8, kalvo 3    ch-4-2-prosessit-jarjestelmassa-draft.jpg
+-- kuva  luento 8, kalvo 3    ch-4-2-prosessit-jarjestelmassa.jpg
 
-![Perusjärjestelmän kokoonpano, jossa ylhäällä suoritin ja muisti, keskellä väylä, ja alhaalla laiteohjain ja kovalevy. Kovalevyllä on ohjelmat P ja Q latausmoduuleina. Muistissa on näistä ohjelmista luodut prosessit P1, P2, P3 ja Q1, sekä näiden prosessien ja KJ:n koodi-ja data-alueet. Suorittimien rekistereillä on prosessin P2 tietoja, vaikka pääosa P2:n tiedoista on muistissa. Osa P2:n juuri nyt ei-käytössä olevista tiedoista voi olla levyllä.](./ch-4-2-prosessit-jarjestelmassa-draft.jpg)
+![Perusjärjestelmän kokoonpano, jossa ylhäällä suoritin ja muisti, keskellä väylä, ja alhaalla laiteohjain ja kovalevy. Kovalevyllä on ohjelmat P ja Q latausmoduuleina. Muistissa on näistä ohjelmista luodut prosessit P1, P2, P3 ja Q1, sekä näiden prosessien ja KJ:n koodi-ja data-alueet. Suorittimien rekistereissä on prosessin P2 tietoja, vaikka pääosa P2:n tiedoista on muistissa. Osa P2:n juuri nyt ei-käytössä olevista tiedoista voi olla levyllä.](./ch-4-2-prosessit-jarjestelmassa.svg)
 <div>
-<illustrations motive="ch-4-2-prosessit-jarjestelmassa-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-2-prosessit-jarjestelmassa" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 Ladattava ohjelma sijaitsee massamuistissa kääntämisen ja linkittämisen (ks. Luku 1) lopputuloksena syntyneessä _latausmoduulissa_, jossa on mm. ohjelmakoodi konekielisessä muodossa. Latauksessa käyttöjärjestelmä varaa tarvittavan määrän muistitilaa tälle prosessille ja kopio sen ohjelmakoodin muistiin annetulle alueelle. Se myös tallettaa kaikki tähän prosessiin liittyvät hallintotiedot erityiseen tietueeseen, prosessin _kuvaajaan_ (PCB, Process Control Block) tai siihen linkitettyihin muihin tietorakenteisiin. Kuvaajan tarkempi esittely on alla.
