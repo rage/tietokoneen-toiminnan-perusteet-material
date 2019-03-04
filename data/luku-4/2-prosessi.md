@@ -84,7 +84,7 @@ Prosessin luonnin ollessa vielä kesken sen ajatellaan olevan tilassa "luonti" (
 
 -- fig. luento 8 kalvo 5     ch-4-2-prosessin-elinkaarimalli
 
-![Viisi tila-pallukkaa: (1) Luonti, (2) valmis suoritukseen eli ready-to-run eli ready, (3) suorituksessa, (4) odottaa, ja (5) poistettu tai tapettu. Luonti-tilasta nuli ready-tilaan ja katkoviiva nuoli odottaa-tilaan. Ready-tilasta nuoli suorituksessa-tilaan. Suorituksesta tilasta nuolet ready-tilaan, odottaa-tilaan ja poistettu-tilaan. Odottaa-tilasta nuoli ready-tilaan.](./ch-4-2-prosessin-elinkaarimalli.svg)
+![Viisi tila-pallukkaa: (1) Luonti eli new, (2) valmis suoritukseen eli ready-to-run eli ready, (3) suorituksessa eli running, (4) odottaa eli waiting tai suspended ja (5) poistettu tai tapettu eli killed. Luonti-tilasta nuoli ready-tilaan ja katkoviivanuoli odottaa-tilaan. Ready-tilasta on nuoli suorituksessa-tilaan ja katkoviivanuoli poistettu-tilaan. Suorituksesta tilasta on nuolet ready-tilaan, odottaa-tilaan ja poistettu-tilaan. Odottaa-tilasta on nuoli ready-tilaan ja katkoviivanuoli poistettu-tilaan.](./ch-4-2-prosessin-elinkaarimalli.svg)
 <div>
 <illustrations motive="ch-4-2-prosessin-elinkaarimalli" frombottom="0" totalheight="100%"></illustrations>
 </div>
