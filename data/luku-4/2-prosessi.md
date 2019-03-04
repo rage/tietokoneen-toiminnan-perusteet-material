@@ -82,11 +82,11 @@ Prosessin "elämää" järjestelmässä sen luonnista sen päättymiseen kuvataa
 
 Prosessin luonnin ollessa vielä kesken sen ajatellaan olevan tilassa "luonti" ("uusi", "new"). Prosessi on tilassa "valmis suoritukseen" ("ready", "ready to run"), kun se odottaa suoritusvuoroa suorittimelle. Tuolloin sen kaikki tarvittavat muistialueet (koodi ja data) ovat valmiina keskusmuistissa ja se vain odottaa vuoroaan päästä suoritukseen. Kun prosessi vihdoin on suorittamassa suorittimella, sen tilana on "suorituksessa" ("running"). Sillä on tuolloin tietenkin kaikki sen tarvitsemat koodi- ja data-alueet muistissa. Jos prosessi on odottamassa mistä tahansa syystä, se on tilassa "odottaa" ("waiting", "suspended"). Kun prosessi joko itse pääsee koodin loppuun tai käyttöjärjestelmä on tappanut sen, prosessin tilana on "päättynyt tai poistettu" ("tapettu", "terminated", "killed"), kunnes kaikki sen rakenteet on vapautettu uusiokäyttöön. Joskus prosessia ei voi poistaa kokonaan ennen kuin kaikki sen itse käynnistämät prosessit ("lapsiprosessit") on ensin poistettu järjestelmästä. Tuollaisia vähän pidempään tapettu-tilassa olevia prosesseja kutsutaan joskus kuvaavasti [zombie](https://en.wikipedia.org/wiki/Zombie_process)-prosesseiksi, koska ne eivät enää oikeastaan tee mitään paitsi odottavat "lapsiensa" "kuolemaa" eli lapsiprosessiensa päättymistä. Tarkemmassa elinkaarimallissa niillä voi tuolloin olla oma tilansa.
 
--- fig. luento 8 kalvo 5     ch-4-2-prosessin-elinkaarimalli-draft.jpg
+-- fig. luento 8 kalvo 5     ch-4-2-prosessin-elinkaarimalli
 
-![Viisi tila-pallukkaa: (1) Luonti, (2) valmis suoritukseen eli ready-to-run eli ready, (3) suorituksessa, (4) odottaa, ja (5) poistettu tai tapettu. Luonti-tilasta nuli ready-tilaan ja katkoviiva nuoli odottaa-tilaan. Ready-tilasta nuoli suorituksessa-tilaan. Suorituksesta tilasta nuolet ready-tilaan, odottaa-tilaan ja poistettu-tilaan. Odottaa-tilasta nuoli ready-tilaan.](./ch-4-2-prosessin-elinkaarimalli-draft.jpg)
+![Viisi tila-pallukkaa: (1) Luonti, (2) valmis suoritukseen eli ready-to-run eli ready, (3) suorituksessa, (4) odottaa, ja (5) poistettu tai tapettu. Luonti-tilasta nuli ready-tilaan ja katkoviiva nuoli odottaa-tilaan. Ready-tilasta nuoli suorituksessa-tilaan. Suorituksesta tilasta nuolet ready-tilaan, odottaa-tilaan ja poistettu-tilaan. Odottaa-tilasta nuoli ready-tilaan.](./ch-4-2-prosessin-elinkaarimalli.svg)
 <div>
-<illustrations motive="ch-4-2-prosessin-elinkaarimalli-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-2-prosessin-elinkaarimalli" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 ###  Prosessien elinkaarimallin tilasiirtymät
