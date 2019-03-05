@@ -14,14 +14,14 @@ Tietokonejärjestelmämme perusmuodossaan on hyvin yksinkertainen. Siellä on su
 
 -- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta-draft.jpg
 
-![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarvitseman datan.](./ch-4-4-lask-teoria-perusta.svg)
+![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella on näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarvitseman datan.](./ch-4-4-lask-teoria-perusta.svg)
 <div>
 <illustrations motive="ch-4-4-lask-teoria-perusta" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 Tarkastelkaamme nyt tuota muistin sisältöä hieman tarkemmin. Esimerkiksi 500 miljoonan kokonaisluvun kirjoittaminen ei ole kovinkaan käytännöllistä, joten käytämme matematiikasta tuttuja merkintöjä. Merkitään muistin sisältöä ennen ohjelman P suoritusta luvulla X. Luku X on hyvin suuri luku, jossa voisi olla miljardeja numeroita. Sillä ei kuitenkaan ole mitään väliä, koska symbolin 'X' kirjoittaminen on helppoa.
 
-Oletetaan nyt, että ohjelma P suoritetaan ja suoritus päättyy normaalisti. Ohjelmakoodi muistissa on edelleen sama, mutta toivottavasti ohjelma P on tehnyt jotain ja muuttanut jotain dataa. Koko muistin sisältöä merkitään nyt Y:llä. Myös Y:ssä voi olla miljardeja numeroita, mutta ei se mitään. Sillä, että P saattaisi tulostaa jotain tulostimella tai kirjoittaa jotain kovalevylle, ei tässä yhteydessä ole mitään merkitystä. Jos halutaan, niin voimme ottaa Y:n mukaan kaikki tulostimen kirjoittamat merkit ja kaikki kovalevyllä oleva tieto. Se ei tässä yhteydessä ole vaikuta mihinkään.
+Oletetaan nyt, että ohjelma P suoritetaan ja suoritus päättyy normaalisti. Ohjelmakoodi muistissa on edelleen sama, mutta toivottavasti ohjelma P on tehnyt jotain ja muuttanut jotain dataa. Koko muistin sisältöä merkitään nyt Y:llä. Myös Y:ssä voi olla miljardeja numeroita, mutta ei se mitään. Sillä, että P saattaisi tulostaa jotain tulostimella tai kirjoittaa jotain kovalevylle, ei tässä yhteydessä ole mitään merkitystä. Jos halutaan, niin voimme ottaa Y:n mukaan kaikki tulostimen kirjoittamat merkit ja kaikki kovalevyllä oleva tieto. Se ei tässä yhteydessä vaikuta mihinkään.
 
 Sekä X että Y on muodostettu siis laittamalla kaikki keskusmuistin tavut peräkkäin ja muodostamalla näin hyvin suuria kokonaislukuja. Ainoana erona X:llä ja Y:llä on, että niiden välissä on suoritettu ohjelma P. Voimme ajatella, että P on funktio, joka on kuvannut kokonaisluvun X kokonaisluvuksi Y. Toisin sanoen, mielivaltaisesti valittu ohjelma P on itse asiassa kokonaislukujen välinen funktio. Tarkemmin ajatellen myös P on itse kokonaisluku. P:n arvo saadaan, kun otamme muistista P:n ohjelmakoodin (tai latausmoduulin?) kaikki tavut ja laitamme ne peräkkäin suureksi kokonaisluvuksi.
 
