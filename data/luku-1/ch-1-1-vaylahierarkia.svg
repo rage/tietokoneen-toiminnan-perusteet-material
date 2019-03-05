@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg1144"
    version="1.1"
-   viewBox="0 0 135.81063 129.17725"
-   height="129.17725mm"
-   width="135.81064mm">
+   viewBox="0 0 119.17265 129.37724"
+   height="129.37724mm"
+   width="119.17265mm">
   <defs
      id="defs1138" />
   <metadata
@@ -25,7 +25,7 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-34.182289,-58.166252)"
+     transform="translate(-41.833105,-58.066252)"
      id="layer1">
     <rect
        y="55.846889"
@@ -36,11 +36,11 @@
        style="opacity:1;fill:#000000;fill-opacity:0;stroke:none;stroke-width:0.95961964;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
        y="58.166252"
-       x="34.182289"
+       x="41.933105"
        height="129.17725"
-       width="135.81064"
+       width="118.97266"
        id="rect2142"
-       style="opacity:1;fill:#afe9dd;fill-opacity:1;stroke:none;stroke-width:4.93867207;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;fill:#afe9dd;fill-opacity:1;stroke:#755213;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <path
        id="path1751"
        d="m 123.9537,81.78109 c 0,0 -93.747666,-0.381201 0,0 z"
