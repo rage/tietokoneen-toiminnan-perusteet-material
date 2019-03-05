@@ -38,11 +38,11 @@ Laiteajuri voidaan toteuttaa etuoikeutettuna käyttöjärjestelmän palvelurutii
 
 Laiteajuria kutsutaan nyt käyttöjärjestelmän palvelupyyntökäskyn (SVC) avulla ja kontrolli palaa takaisin kutsuvaan sovellukseen IRET-käskyllä. Laiteajurin suorituksen aikana voi tapahtua keskeytyksiä, joten käyttöjärjestelmä voi antaa suoritusvuoron muille prosesseille. Myös ne voisivat olla samaan aikaan suorittamassa tätä laiteajuria ja tämä mahdollisuus täytyy ottaa huomioon laiteajurin ohjelmoinnissa.
 
--- kuva  luento 8, kalvo 15    ch-4-3-ajuri-etuoik-aliohj-draft.jpg
+-- kuva  luento 8, kalvo 15    ch-4-3-ajuri-etuoik-aliohj
 
-![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee SVC-käsky, jolloin kontrollinuoli siirtyy oikealla puolella olevalle laiteohjaimelle. Laiteohjain on toteutettu etuoikeutettuna aliohjelmana eli käyttöjärjestelmäpalveluna. Kun laiteohjain saa tehtävänsä tehtyä, kontrollinuoli palaa takaisin sovelluksen puolelle IRET-käskyllä.](./ch-4-3-ajuri-etuoik-aliohj-draft.jpg)
+![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee SVC-käsky, jolloin kontrollinuoli siirtyy oikealla puolella olevalle laiteohjaimelle. Laiteohjain on toteutettu etuoikeutettuna aliohjelmana eli käyttöjärjestelmäpalveluna. Kun laiteohjain saa tehtävänsä tehtyä, kontrollinuoli palaa takaisin sovelluksen puolelle IRET-käskyllä.](./ch-4-3-ajuri-etuoik-aliohj.svg)
 <div>
-<illustrations motive="ch-4-3-ajuri-etuoik-aliohj-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-3-ajuri-etuoik-aliohj" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 ### Esimerkki: laiteajuri osittain etuoikeutettuna aliohjelmana
@@ -50,11 +50,11 @@ Toinen mahdollisuus on jakaa laiteajurin koodi kahteen osaan, jolloin vain (toiv
 
 Lisäetuna laiteajurin tässä toteutusmallissa on, että kutsurajapinta voi olla sama lähes kaikille saman tyypin laitteiden ajureille. Ainoastaan pienempi etuoikeutetussa tilassa suorittava moduuli täytyy erikseen räätälöidä kullekin laitteelle sopivaksi.
 
--- kuva  luento 8, kalvo 16    ch-4-3-ajuri-user-etuoik-aliohj-draft.jpg
+-- kuva  luento 8, kalvo 16    ch-4-3-ajuri-user-etuoik-aliohj
 
-![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee CALL-käsky, jolla kontrollinuoli siirtyy kuvan keskelle suorittamaan laiteajurin tavallisessa suoritustilassa olevaa koodia. Jossain vaiheessa laiteajuri tarvitsee etuoikeutettua tilaa, jota se kutsuu SVC-käskyllä. Kontrollinuoli siirtyy oikeaan reunaan, jossa laiteajurin etuoikeutettu puoli sijaitsee. Lopulta etuoikeutettu palvelun osa päättyy, ja kontrolli palaa laiteajurin tavalliselle puolelle IRET-käskyllä. Lopulta laiteajurin suoritus päättyy ja kontrolli palaa sovellukselle RETURN-käskyllä.](./ch-4-3-ajuri-user-etuoik-aliohj-draft.jpg)
+![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee CALL-käsky, jolla kontrollinuoli siirtyy kuvan keskelle suorittamaan laiteajurin tavallisessa suoritustilassa olevaa koodia. Jossain vaiheessa laiteajuri tarvitsee etuoikeutettua tilaa, jota se kutsuu SVC-käskyllä. Kontrollinuoli siirtyy oikeaan reunaan, jossa laiteajurin etuoikeutettu puoli sijaitsee. Lopulta etuoikeutettu palvelun osa päättyy, ja kontrolli palaa laiteajurin tavalliselle puolelle IRET-käskyllä. Lopulta laiteajurin suoritus päättyy ja kontrolli palaa sovellukselle RETURN-käskyllä.](./ch-4-3-ajuri-user-etuoik-aliohj.svg)
 <div>
-<illustrations motive="ch-4-3-ajuri-user-etuoik-aliohj-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-3-ajuri-user-etuoik-aliohj" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 ### Esimerkki: laiteajuri prosessina
@@ -62,11 +62,11 @@ Kolmas vaihtoehto on toteuttaa ajuri omana prosessinaan. Prosesseja ei kutsuta, 
 
 Sovellusten ei tarvitse tietää, onko laiteajuri toteutettu omana prosessinaan tai ei. Sovellukset kutsuvat rajapinta-aliohjelmia ja laiteajurin tynkiä ihan samalla tavalla. Kontrolli palaa niistä lopulta takaisin sovelluksille normaalisti. Sama pätee myös muihin käyttöjärjestelmäpalveluihin ja sovellukset käyttävät niitä palveluiden omien rajapintojen kautta.
 
--- kuva  luento 8, kalvo 17    ch-4-3-ajuri-stub-etuoik-prosessi-draft.jpg
+-- kuva  luento 8, kalvo 17    ch-4-3-ajuri-stub-etuoik-prosessi
 
-![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee CALL-käsky, jolla kontrollinuoli siirtyy kuvan keskelle suorittamaan laiteajurin tynkää eli stub'ia, jonka ainoa tehtävä on toteuttaa viestinvälitys. Tynkä-aliohjelma lähettää viestin laiteajuriprosessille kuvan oikeassa reunassa, jossa laiteajuri ottaa sen vastaan jossain vaiheessa. Laiteajuri käsittelee palvelupyynnön ja lähettää sovellusprosessille, joka on odottamassa sitä tynkä-aliohjelmassa. Tynkä-aliohjelma saa vastausviestin laiteajurilta ja palauttaa kontrollin sovellukselle RETURN-käskyllä.](./ch-4-3-ajuri-stub-etuoik-prosessi-draft.jpg)
+![Vasemmalla sovelluksen prosessi, jossa nuoli alaspäin kuvaamassa suorituksen etenemistä. Jossain kohtaa suoritusta tulee CALL-käsky, jolla kontrollinuoli siirtyy kuvan keskelle suorittamaan laiteajurin tynkää eli stub'ia, jonka ainoa tehtävä on toteuttaa viestinvälitys. Tynkä-aliohjelma lähettää viestin laiteajuriprosessille kuvan oikeassa reunassa, jossa laiteajuri ottaa sen vastaan jossain vaiheessa. Laiteajuri käsittelee palvelupyynnön ja lähettää sovellusprosessille, joka on odottamassa sitä tynkä-aliohjelmassa. Tynkä-aliohjelma saa vastausviestin laiteajurilta ja palauttaa kontrollin sovellukselle RETURN-käskyllä.](./ch-4-3-ajuri-stub-etuoik-prosessi.svg)
 <div>
-<illustrations motive="ch-4-3-ajuri-stub-etuoik-prosessi-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-3-ajuri-stub-etuoik-prosessi" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 -- Quizes 4.3.1-5. 
