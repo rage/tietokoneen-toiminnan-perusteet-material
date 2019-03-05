@@ -123,9 +123,9 @@ Prosessin tila voi olla merkittynä sen kuvaajaan. Ennen kaikkea tila selviää 
 
 -- fig. luento 8 slide 7     ch-4-2-prosessit-jonoissa-draft.jpg
 
-![Kolme eri luokkaa jonoja: ready-jono, suorituksessa-jono ja erilaiset odottaa-jonot. Jonoissa on prosessien kuvaajat, joista on mainittu vain prosessin tunniste eli pid. Ready tilassa on prosessit 1056 ja 1766, eli niiden kuvaajat.  Suorituksessa prosessi 0188. Disk 1:n odottaa jonossa on prosessit 0036, 7654 ja 9878. Timer-jonossa on prosessi 0555. Msg-from-1345 jonossa on prosessi 2222. Alla laatikko vuoronanto: Valitse seuraava prosessi ready-jonosta ja siirrä se suoritukseen cpu:lle eli kopioi tämän prosessin suoritinympäristö suorittimelle.](./ch-4-2-prosessit-jonoissa-draft.jpg)
+![Kolme eri luokkaa jonoja: ready-jono, suorituksessa-jono ja erilaiset odottaa-jonot. Jonoissa on prosessien kuvaajat, joista on mainittu vain prosessin tunniste eli pid. Ready tilassa on prosessit 1056 ja 1766, eli niiden kuvaajat.  Suorituksessa prosessi 0188. Disk 1:n odottaa jonossa on prosessit 0036, 7654 ja 9878. Timer-jonossa on prosessi 0555. Msg-from-1345 jonossa on prosessi 2222. Alla laatikko vuoronanto: Valitse seuraava prosessi ready-jonosta ja siirrä se suoritukseen cpu:lle eli kopioi tämän prosessin suoritinympäristö suorittimelle.](./ch-4-2-prosessit-jonoissa.svg)
 <div>
-<illustrations motive="ch-4-2-prosessit-jonoissa-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-2-prosessit-jonoissa" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 -- Quizes 4.2.1-10 
