@@ -14,7 +14,7 @@ Tietokonejärjestelmämme perusmuodossaan on hyvin yksinkertainen. Siellä on su
 
 -- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta-draft.jpg
 
-![alt text puuttuu: ch-4-4-lask-teoria-perusta-draft.jpg--------------- ](./ch-4-4-lask-teoria-perusta.svg)
+![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarviseman datan.](./ch-4-4-lask-teoria-perusta.svg)
 <div>
 <illustrations motive="ch-4-4-lask-teoria-perusta" frombottom="0" totalheight="100%"></illustrations>
 </div>
@@ -27,7 +27,7 @@ Sekä X että Y on muodostettu siis laittamalla kaikki keskusmuistin tavut perä
 
 -- kuva luento 12, slide 33   ch-4-4-lask-teoria-kokon-luvut
 
-![alt text puuttuu: ch-4-4-lask-teoria-kokon-luvut-draft.jpg--------------- ](./ch-4-4-lask-teoria-kokon-luvut.svg)
+![Kuvassa ylhäällä on peruskuva järjestelmästä, jossa on suoritin, muisti ja väylä. Suoritin suorittaa käskyjen nouto- ja suoritussykliä. Muistissa on ohjelma P ja sen tarvisema data. Muistin sisältö ennen P suoritusta on X, mikä on hyvin suuri kokonaisluku, esimerkiksi 500 miljoonaa numeroa. Muistin sisältö P:n suorituksen jälkeen on Y, joka on myös hyvin suuri luku. P on siis kokonaislukuarvoinen funktio, eli matemaattisesti P on kuvaus kokonaislukujen joukosta N:stä N:ään. P:n esitysmuoto muistissa on iso kokonaisluku, eli matemaattisesti P kuuluu N:ään.](./ch-4-4-lask-teoria-kokon-luvut.svg)
 <div>
 <illustrations motive="ch-4-4-lask-teoria-kokon-luvut" frombottom="0" totalheight="100%"></illustrations>
 </div>
