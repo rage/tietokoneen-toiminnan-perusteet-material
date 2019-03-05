@@ -150,15 +150,6 @@
          x="17.388613"
          id="tspan1648">sovellusprosessi</tspan></text>
     <text
-       id="text1444-7-34-9-6"
-       y="52.513653"
-       x="151.79291"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         y="52.513653"
-         x="151.79291"
-         id="tspan936">laiteajurialiohjelma</tspan></text>
-    <text
        transform="rotate(-2.3652591)"
        id="text1444-7-34-9-4"
        y="65.692772"
@@ -169,13 +160,13 @@
     <text
        transform="rotate(2.8245222)"
        id="text1444-7-34-9-44"
-       y="69.091736"
-       x="112.04155"
+       y="68.830963"
+       x="117.32684"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         y="69.091736"
-         x="112.04155"
-         id="tspan1540">iret (keskeytyksestä paluu)</tspan></text>
+         y="68.830963"
+         x="117.32684"
+         id="tspan892">iret (KJ-palvelusta paluu)</tspan></text>
     <path
        id="path1430"
        d="M 39.066626,46.055449 39.104152,65.3777"
@@ -196,5 +187,20 @@
        id="path1430-5-0-6"
        d="M 39.423643,65.360946 180.20231,61.512281"
        style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.395, 1.395;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow1Mend)" />
+    <text
+       id="text1444-7-34-9-6-5"
+       y="42.680267"
+       x="160.91844"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="42.680267"
+         x="160.91844"
+         id="tspan910">laiteajuri</tspan><tspan
+         y="48.853882"
+         x="160.91844"
+         id="tspan912">KJ-palveluna</tspan><tspan
+         y="55.027496"
+         x="160.91844"
+         id="tspan914">aliohjelmana</tspan></text>
   </g>
 </svg>
