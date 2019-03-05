@@ -14,9 +14,9 @@ Tietokonejärjestelmämme perusmuodossaan on hyvin yksinkertainen. Siellä on su
 
 -- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta-draft.jpg
 
-![alt text puuttuu: ch-4-4-lask-teoria-perusta-draft.jpg--------------- ](./ch-4-4-lask-teoria-perusta-draft.jpg)
+![alt text puuttuu: ch-4-4-lask-teoria-perusta-draft.jpg--------------- ](./ch-4-4-lask-teoria-perusta.svg)
 <div>
-<illustrations motive="ch-4-4-lask-teoria-perusta-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-4-lask-teoria-perusta" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 Tarkastelkaamme nyt tuota muistin sisältöä hieman tarkemmin. Esimerkiksi 500 miljoonan kokonaisluvun kirjoittaminen ei ole kovinkaan käytännöllistä, joten käytämme matematiikasta tuttuja merkintöjä. Merkitään muistin sisältöä ennen ohjelman P suoritusta luvulla X. Luku X on hyvin suuri luku, jossa voisi olla miljardeja numeroita. Sillä ei kuitenkaan ole mitään väliä, koska symbolin 'X' kirjoittaminen on helppoa.
@@ -25,11 +25,11 @@ Oletetaan nyt, että ohjelma P suoritetaan ja suoritus päättyy normaalisti. Oh
 
 Sekä X että Y on muodostettu siis laittamalla kaikki keskusmuistin tavut peräkkäin ja muodostamalla näin hyvin suuria kokonaislukuja. Ainoana erona X:llä ja Y:llä on, että niiden välissä on suoritettu ohjelma P. Voimme ajatella, että P on funktio, joka on kuvannut kokonaisluvun X kokonaisluvuksi Y. Toisin sanoen, mielivaltaisesti valittu ohjelma P on itse asiassa kokonaislukujen välinen funktio. Tarkemmin ajatellen myös P on itse kokonaisluku. P:n arvo saadaan, kun otamme muistista P:n ohjelmakoodin (tai latausmoduulin?) kaikki tavut ja laitamme ne peräkkäin suureksi kokonaisluvuksi.
 
--- kuva luento 12, slide 33   ch-4-4-lask-teoria-kokon-luvut-draft.jpg
+-- kuva luento 12, slide 33   ch-4-4-lask-teoria-kokon-luvut
 
-![alt text puuttuu: ch-4-4-lask-teoria-kokon-luvut-draft.jpg--------------- ](./ch-4-4-lask-teoria-kokon-luvut-draft.jpg)
+![alt text puuttuu: ch-4-4-lask-teoria-kokon-luvut-draft.jpg--------------- ](./ch-4-4-lask-teoria-kokon-luvut.svg)
 <div>
-<illustrations motive="ch-4-4-lask-teoria-kokon-luvut-draft" frombottom="0" totalheight="100%"></illustrations>
+<illustrations motive="ch-4-4-lask-teoria-kokon-luvut" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
 [Laskettavuusteoria](https://fi.wikipedia.org/wiki/Laskettavuus) perustuu oivallukseen, että mielivaltaisten ohjelmien ominaisuuksia voidaan päätellä kokonaislukujen ja niiden välisten funktioiden ominaisuuksista. Tämä ei kuulosta mitenkään kovin mullistavalta, mutta sen avulla on pystytty todistamaan merkittäviä ohjelmien ominaisuuksia, jotka pätevät kaikille tietokoneille nyt ja tulevaisuudessa. Se on paljon sanottu!
