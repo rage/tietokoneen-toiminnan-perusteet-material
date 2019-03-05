@@ -14,7 +14,7 @@ Tietokonejärjestelmämme perusmuodossaan on hyvin yksinkertainen. Siellä on su
 
 -- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta-draft.jpg
 
-![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarviseman datan.](./ch-4-4-lask-teoria-perusta.svg)
+![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarvitseman datan.](./ch-4-4-lask-teoria-perusta.svg)
 <div>
 <illustrations motive="ch-4-4-lask-teoria-perusta" frombottom="0" totalheight="100%"></illustrations>
 </div>
