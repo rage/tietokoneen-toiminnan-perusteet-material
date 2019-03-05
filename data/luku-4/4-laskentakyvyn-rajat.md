@@ -12,7 +12,7 @@ hidden: false
 ## Laskennan rajat
 Tietokonejärjestelmämme perusmuodossaan on hyvin yksinkertainen. Siellä on suoritin, joka suorittaa muistissa olevan ohjelman P konekäskyjä yksi kerrallaan. Muistissa on suoritettavien käskyjen lisäksi myös ohjelman käyttämä data. Muistin koko voisi olla vaikkapa 200 MB tai 2 GB, jolloin siinä voi olla esimerkiksi 50 miljoonaa tai 500 miljoonaa 32-bittistä kokonaislukua. Muisti ja suoritin on liitetty toisinsa väylällä, vaikka sillä yksityiskohdalla ei tässä yhteydessä olekaan merkitystä.
 
--- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta-draft.jpg
+<!-- kuva luento 12, slide 32   ch-4-4-lask-teoria-perusta -->
 
 ![Kaksi peruskuvaa järjestelmästä, jossa on suoritin, muisti ja väylä. Suorittimella on näkyvillä käskyjen nouto- ja suoritussykli, jossa koko ajan haetaan ja suooritetaan käskyjä. Ylemmässä kuvassa muistissa on 500 miljoonaa 10-numeroista lukua, jotka alemman kuvaan mukaan sisältävät ohjelman P ja sen tarvitseman datan.](./ch-4-4-lask-teoria-perusta.svg)
 <div>
@@ -25,7 +25,7 @@ Oletetaan nyt, että ohjelma P suoritetaan ja suoritus päättyy normaalisti. Oh
 
 Sekä X että Y on muodostettu siis laittamalla kaikki keskusmuistin tavut peräkkäin ja muodostamalla näin hyvin suuria kokonaislukuja. Ainoana erona X:llä ja Y:llä on, että niiden välissä on suoritettu ohjelma P. Voimme ajatella, että P on funktio, joka on kuvannut kokonaisluvun X kokonaisluvuksi Y. Toisin sanoen, mielivaltaisesti valittu ohjelma P on itse asiassa kokonaislukujen välinen funktio. Tarkemmin ajatellen myös P on itse kokonaisluku. P:n arvo saadaan, kun otamme muistista P:n ohjelmakoodin (tai latausmoduulin?) kaikki tavut ja laitamme ne peräkkäin suureksi kokonaisluvuksi.
 
--- kuva luento 12, slide 33   ch-4-4-lask-teoria-kokon-luvut
+<!-- kuva luento 12, slide 33   ch-4-4-lask-teoria-kokon-luvut -->
 
 ![Kuvassa ylhäällä on peruskuva järjestelmästä, jossa on suoritin, muisti ja väylä. Suoritin suorittaa käskyjen nouto- ja suoritussykliä. Muistissa on ohjelma P ja sen tarvisema data. Muistin sisältö ennen P suoritusta on X, mikä on hyvin suuri kokonaisluku, esimerkiksi 500 miljoonaa numeroa. Muistin sisältö P:n suorituksen jälkeen on Y, joka on myös hyvin suuri luku. P on siis kokonaislukuarvoinen funktio, eli matemaattisesti P on kuvaus kokonaislukujen joukosta N:stä N:ään. P:n esitysmuoto muistissa on iso kokonaisluku, eli matemaattisesti P kuuluu N:ään.](./ch-4-4-lask-teoria-kokon-luvut.svg)
 <div>
