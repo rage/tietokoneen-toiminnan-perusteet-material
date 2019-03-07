@@ -15,7 +15,7 @@ Kurssia voidaan käyttää ainakin seuraaviin eri tarkoituksiin:
 Avoimen yliopiston kurssina tai osana (DEFA-opintoja (Digital Education For All).  ?????
 
 ### Helsingin yliopiston kurssina 
-Tietokoneen toiminnan perusteet (2 op) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op) kurssia. Kurssin suoritukseen sisältyy kokeita.
+Tietokoneen toiminnan perusteet (2 op, verkkokurssi) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita.
 
-Tietokoneen toiminnan perusteet (2 op) yhdessä myöhemmin toteutettavan Tietokoneen toiminnan jatkokurssin (3 op) kanssa tulevat korvaamaan Helsingin yliopiston Tietokoneen toiminta (5 op) kurssin. Kurssien suoritukseen yliopistolla tulee sisältymään kokeita.
+Tietokoneen toiminnan perusteet (2 op, verkkokurssi) yhdessä myöhemmin toteutettavan Tietokoneen toiminnan jatkokurssin (3 op, verkkokurssi) kanssa tulevat korvaamaan Helsingin yliopiston Tietokoneen toiminta (5 op) kurssin. Molempien verkkokurssien suoritukseen yliopistolla tulee sisältymään kokeita.
 
