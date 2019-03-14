@@ -5,9 +5,10 @@ hidden: false
 information_page: true
 ---
 
-Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielellä. Tietokoneen toiminnan perusteet sisältää kurssit Ohjelmoinnin perusteet (materiaalin lukut 1-7) ja Ohjelmoinnin jatkokurssi (materiaalin lukut 8-14). Osakohtaiset lukuamistavoitteet ovat seuraavat.
+Tietokoneen toiminnan perusteiden MOOCissa opit perusasiat tietokoneen rakenteesta ja kuinka se suorittaa ohjelmia. Kurssilla esitellään myös käyttöjärjestelmän osa-alueet ja kuinka käyttöjärjestelmä hallinnoi koko järjestelmää ja avustaa ohjelmien suorittamisessa siinä. 
+Lukukohtaiset osaamistavoitteet ovat seuraavat.
 
-## Ohjelmoinnin perusteet
+## Tietokoneen toiminnan perusteet
 
 <table>
     <thead>
@@ -20,172 +21,41 @@ Tietokoneen toiminnan perusteetissa opit perustaidot ohjelmoinnista Java-kielell
     <tr>
         <td>1</td>
         <td>
-        Osaat kirjoittaa ohjelmia, jotka lukevat käyttäjältä syötettä ja
-        tekevät laskentaa syötteen perusteella. Tunnet käsitteet
-        muuttuja, ehtolause ja toistolause, ja lukuat käyttää näitä
-        ohjelmissasi.
+        Osaat selittää laitteistokomponenttien väliset suuret nopeuserot ja niiden vaikutukset järjestelmään.    
+        Osaat selittää väylä- ja muistihierarkian perusajatukset.  (???)
+            
+        
         </td>
     </tr>
     <tr>
         <td>2</td>
         <td>
-        Tunnet muutamia lukuongelmia sekä niihin liittyviä
-        ratkaisumalleja. Tunnet loogiset operaatiot ja, tai ja ei ja
-        lukuat käyttää niitä ehto- ja toistolauseissa. Tunnet käsitteet
-        metodi, metodin parametri, metodin palautusarvo ja ohjelman
-        kutsupino. Osaat luoda metodeja ja ymmärrät miten ohjelman
-        suoritus etenee kun metodia kutsutaan ja toisaalta kun
-        metodikutsusta palataan.
+        Osaat selittää prosessorin toiminnan (suoritussykli) konekäskyjen suorittajana.
+        Osaat selittää välimuistin toiminnan perusteet.
+        Osaat selittää prosessorin erilaiset suoritustilat ja erityisesti etuoikeutetun suoritustilan tarkoituksen.
+        Osaat selittää, milloin ja miten prosessorin suoritustila vaihtuu.
+        Osaat selittää keskeytysten merkityksen ja toteutuksen konekäskyjen suorituksen tasolla.
+        Osaat selittää keskeytysjärjestelmän toiminnan.
+        Osaat selittää valinta- ja toistorakenteiden toiminnan konekielen tasolla.
+        Osaat selittää kokonais- ja liukulukujen esitysmuodot sekä merkkien ja merkkijonojen tallennuksen periaatteet.
+        Osaat selittää karkealla tasolla, kuinka (liikkuvat) kuvat ja äänet esitetään laitteistossa.
+
+        
         </td>
     </tr>
     <tr>
         <td>3</td>
         <td>
-        Tiedät lähdekoodin kommentointitapoja ja ymmärrät miten
-        muuttujien ja metodien nimentä vaikuttaa ohjelman
-        ymmärrettävyyteen. Tunnet lista- ja taulukkorakenteen ja lukuat
-        käyttää niitä lukuna ohjelmia. Osaat käydä listan ja taulukon
-        läpi while-toistolausetta ja indeksimuuttujaa käyttäen sekä
-        for-each -toistolausetta käyttäen. Tunnet merkkijonoon liittyviä
-        metodeja ja lukuat pilkkoa merkkijonon pienempiin osiin.
-        Harjoittelet ohjelmien testaamista syötteitä ja tulosteita
-        vertailemalla.
+       
         </td>
     </tr>
     <tr>
         <td>4</td>
         <td>
-        Tunnet käsitteet tiedosto ja tiedostojärjestelmä ja lukuat lukea
-        merkkijonomuotoista tietoa tiedostosta. Tiedät mitä
-        olio-ohjelmointi tarkoittaa. Tunnet olio-ohjelmointiin liittyvät
-        keskeiset käsitteet kuten luokka ja olio. Osaat luoda luokkia ja
-        olioita sekä käyttää niitä lukuna toteuttamiasi ohjelmia.
+        
         </td>
     </tr>
-    <tr>
-        <td>5</td>
-        <td>
-        Tiedät mitä alkeis- ja viittaustyyppiset muuttujat ovat ja
-        ymmärrät miten niiden toiminta eroaa toisistaan (muuttujan arvon
-        asetus, metodin parametrina käyttö). Osaat luoda luokkaan useita
-        konstruktoreja sekä useita samannimisiä metodeja. Osaat
-        vertailla olioiden samankaltaisuutta sekä määritellä
-        samankaltaisuuden vertailuun käytettävän metodin. Osaat
-        määritellä luokkaan viittaustyyppisiä oliomuuttujia, käyttää
-        olioita metodin paluuarvona, sekä käyttää listoja
-        oliomuuttujina.
-        </td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>
-        Ymmärrät staattisten ja ei-staattisten metodien erot. Tunnet
-        hajautustaulun ja lukuat käsitellä hajautustaulussa olevaa
-        tietoa. Osaat käyttää olioita hajautustaulun arvona ja tiedät
-        miten oliot toimivat hajautustaulun avaimena. Osaat ryhmitellä
-        tietoa hajautustaulun avulla ja lukuat käyttää listaa
-        hajautustaulun arvona. Osaat käyttää olioita sekä tiedon
-        esittämiseen että ohjelman jakamiseen useampaan vastuualueeseen
-        (tekstikäyttöliittymä, sovelluslogiikka).
-        </td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>
-        Osaat kertoa proseduraalisen ohjelmoinnin ja olio-ohjelmoinnin
-        eroista ja toteuttaa ohjelmia kumpaakin ohjelmointiparadigmaa
-        noudattaen. Tiedät mitä käsite algoritmi tarkoittaa ja lukuat
-        kuvailla muutamien järjestämis- ja hakualgoritmien toimintaa.
-        Osaat kirjoittaa yksikkötestejä ja tiedät testivetoisen
-        ohjelmistokehityksen perusaskeleet.
-        </td>
-    </tr>
+   
     </tbody>
 </table>
 
-## Ohjelmoinnin jatkokurssi
-
-<table>
-    <thead>
-    <tr>
-        <td>Osa</td>
-        <td>Osaamistavoitteet</td>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>8</td>
-        <td>
-        Tunnet käsitteet perintä ja rajapinta. Osaat luoda luokkia,
-        jotka periytyvät toisesta luokasta ja lukuat luoda luokkia, jotka
-        toteuttavat yhden tai useamman rajapinnan. Tiedät miten
-        abstraktit luokat toimivat. Ymmärrät että olio voidaan esittää
-        kaikkien sen todellisten tyyppien avulla.
-        </td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>
-        Osaat käsitellä tietokokoelmia virran avulla. Osaat rajata
-        virran arvoja (filter) sekä muuntaa virran arvojen tyyppiä
-        (map). Tunnet käsitteen lambda-lauseke. Osaat järjestää olioita
-        Javan valmista Comparable-rajapintaa hyödyntäen. Tunnet
-        käsitteet säännöllinen lauseke, lueteltu tyyppi, ja iteraattori,
-        ja lukuat hyödyntää näitä ohjelmissasi.
-        </td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>
-        Tunnet luokkakaaviot ja lukuat tulkita ja rakentaa ohjelmia
-        luokkakaavioiden perusteella. Osaat käyttää Javan pakkauksia ja
-        tiedät mistä import-lauseen lukut muodostuvat. Tunnet Javan
-        erilaisia poikkeuksia ja lukuat käsitellä sekä heittää niitä
-        eteenpäin. Osaat kirjoittaa tietoa tiedostoon ohjelmallisesti.
-        </td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>
-        Tiedät mitä geneeriset tyyppiparametrit ovat ja lukuat luoda
-        luokkia jotka käyttävät niitä. Tiedät pääpiirteittäin
-        ArrayListin ja HashMapin sisäisen toteutuksen ja lukuat luoda
-        niistä yksinkertaistetut omat versiot. Tiedät miten
-        satunnaislukuja luodaan ja lukuat käyttää Javan valmiita
-        välineitä satunnaislukujen luomiseen. Tunnet menetelmiä
-        moniulotteisen tiedon esittämiseen ja lukuat luoda sekä käsitellä
-        moniulotteisia taulukoita.
-        </td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>
-        Tutustut graafisten käyttöliittymien ohjelmointiin. Tunnet
-        muutamia käyttöliittymäkomponentteja,
-        käyttöliittymäkomponenttien asettelun mekanismeja, sekä lukuat
-        käsitellä käyttöliittymän tapahtumia. Osaat tehdä
-        käyttöliittymiä, jotka sisältävät useamman näkymän.
-        </td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>
-        Tunnet menetelmiä tiedon visualisointiin ja lukuat käyttää Javan
-        valmiiksi tarjoamia kaavioita (viivakaavio, pylväskaavio). Osaat
-        käyttää Javan tarjoamia välineitä yksinkertaisten piirrosten
-        luomiseen. Osaat näyttää kuvia sekä soittaa äänitiedostoja. Luot
-        suuremman ohjelman esimerkkiä noudattaen.
-        </td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>
-        Tunnet menetelmiä simulaatioiden luomiseen ja kertaat
-        kaksiulotteisten taulukkojen käyttöä. Tiedät, että muiden
-        kirjoittamia kirjastoja voi käyttää lukuna omia ohjemia. Kertaat
-        käsitettä yksikkötesti ja tunnet pääpiirteittäin käsitteen
-        testikattavuus.
-        </td>
-    </tr>
-    </tbody>
-</table>
