@@ -9,7 +9,7 @@ Tietokoneen toiminnan perusteet. Kurssista on nyt vain itsenäiseen opiskeluun p
 
 Aikatauluttamattomassa kurssiversiossa arvostelu perustuu täysin kokeeseen. Kokeeseen voi osallistua, kun on tehnyt jokaisen luvun quiz-tehtävistä vähintään 90%.
 
-Kurssista voidaan myöhemmin julkaista aikataulutettu versio, jossa opiskelijat otaksutaan suorittavan kurssia samaa tahtia. Aikataulutetun kurssin koeaikataulu julkaistaan myöhemmin.
+Kurssista voidaan myöhemmin julkaista aikataulutettu versio, jossa opiskelijoiden otaksutaan suorittavan kurssia samaa tahtia. Aikataulutetun kurssin (koe)aikataulu julkaistaan myöhemmin.
 
 ## Arvosanan muodostuminen (DRAFT - kesken)
 
