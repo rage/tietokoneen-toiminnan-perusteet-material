@@ -12,7 +12,7 @@ const Credits = () => (
       <h1>Kiitokset ja materiaalista</h1>
       <h2>Kurssimateriaali</h2>
 
-      <p>Kurssimateriaalin ovat kirjoittanut Teemu Kerola.</p>
+      <p>Kurssimateriaalin on kirjoittanut Teemu Kerola.</p>
       <p>
         Kurssin materiaali on lisensoitu{" "}
         <OutboundLink
@@ -23,7 +23,7 @@ const Credits = () => (
           Creative Commons BY-NC-ND-SA 4.0
         </OutboundLink>{" "}
         -lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan
-        alkuperäisten tekijöiden nimiä ei poisteta. Et saa tehdä muutoksia
+        alkuperäisen tekijän nimeä ei poisteta. Et saa tehdä muutoksia
         materiaaleihin. Materiaalien käyttö kaupalliseen
         tarkoitukseen on ilman erillistä lupaa kielletty.
       </p>
@@ -53,18 +53,9 @@ const Credits = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Agile Education Research -tutkimusryhmä
+        Agile Education Research -tutkimusryhmä
         </OutboundLink>{" "}
-        on luonut ja ylläpitää kurssilla käytettyä ohjelmointitehtävien
-        palautusympäristöä{" "}
-        <OutboundLink
-          href="https://tmc.mooc.fi"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Test My Code
-        </OutboundLink>
-        :a, Test My Coden liitännäisiä ohjelmointiympäristöhin,
+        on luonut ja ylläpitää 
         kurssimateriaalissa olevaa kyselyjärjestelmää ja muita
         kurssimateriaalissa olevia vempaimia (widgettejä).
       </p>
