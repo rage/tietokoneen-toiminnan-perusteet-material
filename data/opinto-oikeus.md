@@ -1,15 +1,13 @@
 ---
 path: '/opinto-oikeus'
 title: 'Mahdollisuus opinto-oikeuteen'
-hidden: false
+hidden: true
 information_page: true
 ---
 
-Tästä ei ole vielä mitään tietoa!!! (DRAFT - kesken)
+Tämän kurssin suorituksen perusteella ei voi saada opinto-oikeutta Helsingin yliopistoon.
 
-...
-
-Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmaan on mahdollista hakea yhteisvalinnan ja MOOCin lisäksi Helsingin yliopiston avoimen yliopiston kautta sekä Digital Education for All -hankkeen kautta. Lisätietoa näistä seuraavista linkeistä:
+Helsingin yliopiston tietojenkäsittelytieteen kandiohjelmaan on mahdollista hakea yhteisvalinnan ja Ohjelmoinnin MOOCin lisäksi Helsingin yliopiston avoimen yliopiston kautta sekä Digital Education for All -hankkeen kautta. Lisätietoa näistä seuraavista linkeistä:
 
 [Helsingin yliopiston avoimen yliopiston väylä](https://www.helsinki.fi/fi/avoin-yliopisto/opiskelu/tule-opiskelemaan/tavoitteena-tutkinto)
 
