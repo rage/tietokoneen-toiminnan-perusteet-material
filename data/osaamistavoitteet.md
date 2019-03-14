@@ -39,10 +39,9 @@ Osaat tehdä kokonaislukujen esitysmuodon muutokset binääri-, heksadesimaali- 
     <tr>
         <td>4</td>
         <td>
-Osaat selittää prosessin käsitteen ja sen esitysmuodon käyttöjärjestelmässä sekä prosessin erilaiset tilat ja niiden väliset tilasiirtymät. Osaat selittää, milloin ja miten suorituksessa oleva prosessi vaihtuu. Osaat luetella käyttöjärjestelmän perustoiminnot (prosessien, muistin, tiedostojen, laitteiden ja verkon hallinta). Osaat selittää käännöksen, linkityksen ja latauksen tarkoituksen. Osaat selittää käyttöjärjestelmän tavoitteet ja perustoiminnot sekä käyttäjän näkökulmasta että käyttöjärjestelmän ylläpitäjän näkökulmasta. Osaat selittää käyttöjärjestelmäpalvelujen toteutusmekanismin erilaisten (etuoikeutettujen) aliohjelmien tai prosessien avulla. 
+Osaat selittää prosessin käsitteen ja sen esitysmuodon käyttöjärjestelmässä. Osaat selittää prosessin erilaiset tilat ja tilojen väliset tilasiirtymät. Osaat selittää, milloin ja miten suorituksessa oleva prosessi vaihtuu. Osaat luetella käyttöjärjestelmän perustoiminnot (prosessien, muistin, tiedostojen, laitteiden ja verkon hallinta). Osaat selittää käännöksen, linkityksen ja latauksen tarkoituksen. Osaat selittää käyttöjärjestelmän tavoitteet ja perustoiminnot sekä käyttäjän näkökulmasta että käyttöjärjestelmän ylläpitäjän näkökulmasta. Osaat selittää käyttöjärjestelmä toteutusmekanismin erilaisten (etuoikeutettujen) aliohjelmien tai prosessien avulla. Osaat selittää, kuinka tietokoneen laskentakyvyn rajoja voidaan tutkia kokonaislukuarvoisten funktioiden avulla.
         </td>
     </tr>
-   
     </tbody>
 </table>
 
