@@ -1,7 +1,7 @@
 ---
 path: '/opinto-oikeus'
 title: 'Mahdollisuus opinto-oikeuteen'
-hidden: true
+hidden: false
 information_page: true
 ---
 
