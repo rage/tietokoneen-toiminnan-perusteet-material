@@ -40,7 +40,7 @@ Tietokoneen toiminnan perusteista annetaan valvotun kokeen perusteella arvosana 
         <td>2 (tyydyttävä)</td>
     </tr>
     <tr>
-        <td>18/td>
+        <td>18</td>
         <td>1 (välttävä)</td>
     </tr>
     <tr>
