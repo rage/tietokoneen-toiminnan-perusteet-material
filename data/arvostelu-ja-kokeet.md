@@ -5,21 +5,11 @@ hidden: false
 information_page: true
 ---
 
-Tietokoneen toiminnan perusteet ....: aikataulutettu kurssi ja aikatauluttamaton kurssi. Näiden arvostelu poikkeaa hieman toisistaan.
+Tietokoneen toiminnan perusteet. Kurssista on nyt vain itsenäiseen opiskeluun perustuva aikatauluttamaton kurssi. 
 
-## Aikataulutettu kurssi  (DRAFT - kesken)
+Aikatauluttamattomassa kurssiversiossa arvostelu perustuu täysin kokeeseen. Kokeeseen voi osallistua, kun on tehnyt jokaisen luvun quiz-tehtävistä vähintään 90%.
 
-Aikataulutetussa kurssissa arvostelu perustuu sekä tehtyihin tehtäviin (50% kokonaispisteistä) että kokeeseen (50% kokonaispisteistä).
-
-....????
-
-Kurssilla saa osallistua halutessaan useampaan kokeeseen. Opintorekisteriin jää paras suoritus.
-
-## Aikatauluttamaton kurssi  (DRAFT - kesken)
-
-Aikatauluttamattomassa kurssiversiossa arvostelu perustuu täysin kokeeseen. Kokeeseen saa osallistua kun on tehnyt jokaisen luvun tehtävien pisteistä vähintään 90%.
-
-Kurssin aikatauluttamaton versio julkaistaan aikataulutetun version ensimmäisen määräajan jälkeen. Aikatauluttamattoman kurssin koeaikataulu julkaistaan myöhemmin.
+Kurssista voidaan myöhemmin julkaista aikataulutettu versio, jossa opiskelijat otaksutaan suorittavan kurssia samaa tahtia. Aikataulutetun kurssin koeaikataulu julkaistaan myöhemmin.
 
 ## Arvosanan muodostuminen (DRAFT - kesken)
 
@@ -60,6 +50,10 @@ Tietokoneen toiminnan perusteista annetaan valvotun kokeen perusteella arvosana 
     </tbody>
 </table>
 
-## Kokeeseen ilmoittautuminen (DRAFT - kesken)
+## Kokeeseen ilmoittautuminen Avoimessa yliopistossa (DRAFT - kesken)
 
-???
+Kurssin kokeeseen osallistuaksesi sinun täytyy tehdä muodollinen kokeeseen ilmoittautuminen, jotta pääset kirjautumaan sisään Avoimen yliopiston koeympäristöön. Ilmoittautuminen ei vaikuta muuhun kuin siihen että pääset koeympäristöön, eli sen väärin tekeminen ei pudota sinua pois kurssilta.
+
+Kokeeseen ilmoittautumiseen ei ole aikarajaa, mutta joudut tekemään sen vähintään kaksi päivää ennen sen kokeen päivää, johon haluat osallistua. Esimerkiksi jos haluat osallistua 5.3. järjestettävään kokeeseen, sinun täytyy tehdä tämä ilmoittautuminen viimeistään 3.3.
+
+Huomaathan, että Avoimen yliopiston sivuille on luotu epähuomiossa ylimääräisiä ilmoittautumissivuja, joista voi ymmärtää että olet tippunut pois kurssilta. Älä välitä näistä Avoimen yliopiston muista ilmoittautumissivuista, vaan seuraa vain tällä sivulla (....) olevia ohjeita. Tähän muodolliseen ilmoittautumiseen on vain yksi oikea ilmoittautumislinkki, jonka tulee löytymään tältä sivustolta (...). Tämä tämän sivun antama linkki on siis ainoa oikea kokeeseen ilmoittautumislinkki.
