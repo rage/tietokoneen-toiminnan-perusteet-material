@@ -8,16 +8,16 @@ Kurssi koostuu neljästä luvusta. Luvussa 1 esitellään tietokonejärjestelmä
 Kurssia voidaan käyttää useaan alla mainittuun eri tarkoitukseen. Erilaisten kurssisuoritusten arvostelumenetelmät Helsingin yliopiston kurssina selitetään tarkemmin osiossa "Arvostelu ja kokeet". 
 
 ### Omaehtoinen itsenäinen opiskelu   
-Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluuun. Käy läpi kurssimateriaali, surfaile lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
+Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluuun. Käy läpi kurssimateriaali, surfaile haluamiasi lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
 
 ### Lukion tai muun keskiasteen valinnaisena kurssina ("kurkistuskurssi")  
-Kukin oppilaitos voi itse määritellä, millä tavoin tämän MOOC kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
+Kukin oppilaitos voi itse määritellä, millä tavoin tämän [MOOC](https://mooc.fi/) kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
 
-### Avoimen yliopiston kurssi
-Avoimen yliopiston kurssina tai osana (DEFA-opintoja (Digital Education For All). Katso tarkemmat tiedot Avoimen yliopiston [verkkosivuilta](https://www.helsinki.fi/fi/avoin-yliopisto).
+### Avoimen yliopiston kurssina
+Avoimen yliopiston kurssina tai osana DEFA-opintoja ([Digital Education For All](https://www.helsinki.fi/fi/projektit/digital-education-for-all)). Katso tarkemmat tiedot Avoimen yliopiston [verkkosivuilta](https://www.helsinki.fi/fi/avoin-yliopisto).
 
 ### Helsingin yliopiston kurssina 
-Tietokoneen toiminnan perusteet (2 op, verkkokurssi) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita.
+Tietokoneen toiminnan perusteet (2 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita.
 
-Tietokoneen toiminnan perusteet (2 op, verkkokurssi) yhdessä myöhemmin toteutettavan Tietokoneen toiminnan jatkokurssin (3 op, verkkokurssi) kanssa tulevat korvaamaan Helsingin yliopiston Tietokoneen toiminta (5 op) kurssin. Molempien verkkokurssien suoritukseen yliopistolla tulee sisältymään kokeita.
+Tietokoneen toiminnan perusteet (2 op, MOOC) yhdessä myöhemmin toteutettavan Tietokoneen toiminnan jatkokurssin (3 op, MOOC) kanssa tulevat korvaamaan Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssin. Molempien verkkokurssien suoritukseen yliopistolla tulee sisältymään kokeita.
 
