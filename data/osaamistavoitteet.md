@@ -13,7 +13,7 @@ Lukukohtaiset osaamistavoitteet ovat seuraavat.
 <table>
     <thead>
     <tr>
-        <td>Osa</td>
+        <td>Luku</td>
         <td>Osaamistavoitteet</td>
     </tr>
     </thead>
