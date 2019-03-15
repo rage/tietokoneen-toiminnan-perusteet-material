@@ -1,11 +1,11 @@
 ---
-path: "/lukuamistavoitteet"
+path: "/osaamistavoitteet"
 title: "Osaamistavoitteet"
 hidden: false
 information_page: true
 ---
 
-Tietokoneen toiminnan perusteiden MOOCissa opit perusasiat tietokoneen rakenteesta ja kuinka se suorittaa ohjelmia. Kurssilla esitellään myös käyttöjärjestelmän osa-alueet ja kuinka käyttöjärjestelmä hallinnoi koko järjestelmää ja avustaa ohjelmien suorittamisessa siinä. 
+Tietokoneen toiminnan perusteiden MOOCissa opit perusasiat tietokoneen rakenteesta ja kuinka se suorittaa ohjelmia. Kurssilla esitellään myös käyttöjärjestelmän osa-alueet ja kuinka käyttöjärjestelmä hallinnoi koko järjestelmää ja avustaa ohjelmien suorittamisessa siinä.
 Lukukohtaiset osaamistavoitteet ovat seuraavat.
 
 ## Tietokoneen toiminnan perusteet
@@ -21,7 +21,7 @@ Lukukohtaiset osaamistavoitteet ovat seuraavat.
     <tr>
         <td>1</td>
         <td>
-Osaat selittää, mikä on sulautettu järjestelmä ja kuinka se eroaa tietokoneesta. Osaat selittää tietokonelaitteiston pääosat. Osaat selittää väylän toiminnan perusajatuksen. Osaat selittää, mikä on ohjelma ja minkälaisia esitysmuotoja sillä voi olla. Osaat selittää laitteistokomponenttien väliset suuret nopeuserot ja niiden vaikutukset järjestelmään. 
+Osaat selittää, mikä on sulautettu järjestelmä ja kuinka se eroaa tietokoneesta. Osaat selittää tietokonelaitteiston pääosat. Osaat selittää väylän toiminnan perusajatuksen. Osaat selittää, mikä on ohjelma ja minkälaisia esitysmuotoja sillä voi olla. Osaat selittää laitteistokomponenttien väliset suuret nopeuserot ja niiden vaikutukset järjestelmään.
         </td>
     </tr>
     <tr>
@@ -44,4 +44,3 @@ Osaat selittää prosessin käsitteen ja sen esitysmuodon käyttöjärjestelmäs
     </tr>
     </tbody>
 </table>
-
