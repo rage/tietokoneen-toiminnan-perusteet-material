@@ -16,16 +16,16 @@ const Credits = () => (
       <p>
         Kurssin materiaali on lisensoitu{" "}
         <OutboundLink
-          href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fi"
+          href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.fi"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Creative Commons BY-NC-ND-SA 4.0
+          Creative Commons BY-NC-ND 4.0
         </OutboundLink>{" "}
         -lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan
-        alkuperäisen tekijän nimeä ei poisteta. Et saa tehdä muutoksia
-        materiaaleihin. Materiaalien käyttö kaupalliseen
-        tarkoitukseen on ilman erillistä lupaa kielletty.
+        alkuperäisen tekijän nimeä ja lisenssiä ei poisteta. Muutosten tekeminen
+        materiaaleihin tai käyttö kaupallisiin
+        tarkoituksiin ilman erillistä lupaa on kielletty.
       </p>
 
       <h2>Kurssilla käytössä oleva teknologia</h2>
