@@ -24,8 +24,8 @@ const Credits = () => (
         </OutboundLink>{" "}
         -lisenssillä, joten voit käyttää ja levittää sitä vapaasti, kunhan
         alkuperäisen tekijän nimeä ja lisenssiä ei poisteta. Muutosten tekeminen
-        materiaaleihin tai käyttö kaupallisiin
-        tarkoituksiin ilman erillistä lupaa on kielletty.
+        materiaaleihin tai käyttö kaupallisiin tarkoituksiin ilman erillistä
+        lupaa on kielletty.
       </p>
 
       <h2>Kurssilla käytössä oleva teknologia</h2>
@@ -53,11 +53,10 @@ const Credits = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-        Agile Education Research -tutkimusryhmä
+          Agile Education Research -tutkimusryhmä
         </OutboundLink>{" "}
-        on luonut ja ylläpitää 
-        kurssimateriaalissa olevaa kyselyjärjestelmää ja muita
-        kurssimateriaalissa olevia vempaimia (widgettejä).
+        on luonut ja ylläpitää kurssimateriaalissa olevaa kyselyjärjestelmää ja
+        muita kurssimateriaalissa olevia vempaimia (widgettejä).
       </p>
     </Container>
   </Layout>
