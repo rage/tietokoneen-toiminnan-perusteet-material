@@ -55,5 +55,3 @@ Tietokoneen toiminnan perusteista annetaan valvotun kokeen perusteella arvosana 
 Kurssin kokeeseen osallistuaksesi sinun täytyy muodollisesti ilmoittautua Avoimeen yliopistoon, jotta pääset kirjautumaan sisään sen koeympäristöön. Ilmoittautuminen ei vaikuta muuhun kuin siihen että pääset koeympäristöön, eli sen väärin tekeminen ei pudota sinua pois kurssilta.
 
 Kokeeseen ilmoittautuminen pitää tehdä vähintään kaksi arkipäivää ennen koetta. 
-
-Huomaathan, että Avoimen yliopiston sivuille on luotu epähuomiossa ylimääräisiä ilmoittautumissivuja, joista voi ymmärtää että olet tippunut pois kurssilta. Älä välitä näistä Avoimen yliopiston muista ilmoittautumissivuista, vaan seuraa vain tällä sivulla (....) olevia ohjeita. Tähän muodolliseen ilmoittautumiseen on vain yksi oikea ilmoittautumislinkki, jonka tulee löytymään tältä sivustolta (...). Tämä tämän sivun antama linkki on siis ainoa oikea kokeeseen ilmoittautumislinkki.
