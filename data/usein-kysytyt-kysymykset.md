@@ -31,7 +31,7 @@ Kyllä. Sinulla pitää olla oma MOOC-tunnus, jossa järjestelmä pystyy pitäm�
 
 _Kesken - ei vielä toteutettu._
 
-Aikatauluton kurssi julkaistaan ensimmäisen deadlinen jälkeen. Huomaathan kuitenkin, että aikatauluttomassa kurssissa täytyy tehdä enemmän tehtäviä kuin aikataulullisessa kurssissa ja aikatauluttomasta kurssista ei voi saada opinto-oikeutta. Voit kuitenkin aloittaa aikataulullisen kurssin jo nyt ja siirtyä kurssimateriaalista aikatauluttomaan jos et ehdi johonkin deadlineen.
+Aikatauluton kurssi ...
 
 ### Työ- ja elinkeinotoimisto haluaa minulta selvityksen kurssista
 
@@ -49,16 +49,13 @@ Sovi asiasta etukäteen TE-toimistosi kanssa. TE-toimistot eivät valitettavasti
 
 _Kesken - ei vielä toteutettu._
 
-Kurssin päätteeksi voi osallistua Helsingin yliopiston Avoimen yliopiston tarjoamiin verkkotentteihin. Jos nämä verkkotentit läpäisee hyväksytysti, Avoimelta yliopistolta saa viralliset kurssisuoritteet. Ne kelpaavat todennäköisesti hyväksilukemista varten, mutta kannattaa varmistaa asia vielä oman oppilaitoksen opintovastaavalta.
+Kurssin päätteeksi voi osallistua Helsingin yliopiston Avoimen yliopiston tarjoamaan verkkotenttiin. Jos verkkotentin läpäisee hyväksytysti, Avoimelta yliopistolta saa virallisen kurssisuoritteen. Se kelpaavat todennäköisesti hyväksilukemista varten, mutta asia kannattaa varmistaa (mielellään etukäteen) oman oppilaitoksen opintovastaavalta.
 
 ### Miten vaihdan aikataululliselta kurssilta aikatauluttomaan?
 
 _Kesken - ei vielä toteutettu._
 
-Lue tämä ohje: [vaihtaminen aikatauluttomaan versioon](/vaihda-aikatauluttomaan).
-
 ### Tarvitsenko Helsingin yliopiston tunnukset?
 
 _Kesken - ei vielä toteutettu._
 
-Kaikki, jotka haluavat lukullistua Avoimen yliopiston tentteihin tai pystyä lukemaan Moodlea, tarvitsevat Helsingin yliopiston tunnuksen. Jos tekee täysin omaksi ilokseen kurssia, niin silloin tunnuksen hakeminen ei ole pakollista. Tosin, vaikka tekisi vain omaksi ilokseen, niin suosittelemme tenttien tekemistä ja tunnuksen hankkimista. Tunnuksen voi hankkia täältä: https://helpdesk.it.helsinki.fi/ohjeet/kirjautuminen-ja-yhteydet/kayttajatunnus/ohjeet-yliopiston-kayttajatunnuksen-aktivointiin
