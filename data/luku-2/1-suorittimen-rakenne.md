@@ -60,9 +60,24 @@ Tietokoneen ttk-91 määritelmän on tehnyt Auvo Häkkinen vuonna 1991 Helsingin
 
 </text-box>
 
-Rajarekistereiden BASE ja LIMIT käyttö aiheuttaa monimutkaisuutta muistin käytössä. Ohjelman käyttämät muistiosoitteet ovat suhteellisia BASE rekisterin arvoon ja arvovälillä \[0, LIMIT-1\]. Joka muistiviitteen yhteydessä MMU tekee _osoitteenmuunnoksen_ ohjelman käyttämästä osoiteavaruudesta (esim. \[0, 511\]) keskusmuistin omaan paljon suurempaan osoiteavaruuteen (esim. \[0, 4&nbsp;194&nbsp;303\]).  MMU tarkistaa ensin, että onko ohjelman käyttämä muistiosoite (esim. 96) välillä \[0, 511\]. Jos se ei ole, niin tästä aiheutuu virhetilannekeskeytys. Jos osoite on sallittu, niin siihen lisätään BASE-rekisterin arvo (esim. 20&nbsp;000) ja näin saatu todellinen eli fyysinen muistiosoite (esim. 20&nbsp;096) annetaan väylän kautta muistipiirille.
+Rajarekistereiden BASE ja LIMIT käyttö tekee keskusmuistin hallinnasta eri ohjelmien välillä helppoa. Kullekin suorituksessa olevalle ohjelmalle annetaan keskusmuistista sille riittävä yhtenäinen muistialue, joka alkuosoite on rekisterissä BASE ja jonka koko on rekisterissä LIMIT. Ohjelman käyttämät muistiosoitteet ovat suhteellisia BASE rekisterin arvoon ja arvovälillä \[0, LIMIT-1\]. Joka muistiviitteen yhteydessä MMU tekee _osoitteenmuunnoksen_ ohjelman käyttämästä osoiteavaruudesta (esim. \[0, 511\]) keskusmuistin omaan paljon suurempaan osoiteavaruuteen (esim. \[0, 4&nbsp;194&nbsp;303\]).  MMU tarkistaa ensin, että onko ohjelman käyttämä muistiosoite (esim. 96) välillä \[0, LIMIT-1\]. Jos se ei ole, niin tästä aiheutuu virhetilannekeskeytys. Jos osoite on sallittu, niin siihen lisätään BASE-rekisterin arvo (esim. 20&nbsp;000) ja näin saatu todellinen eli fyysinen muistiosoite (esim. 20&nbsp;096) annetaan väylän kautta muistipiirille.
 
-Muistinhallintayksikössä on myös välimuisti. Se tarkistaa ennen jokaisen muistinviittauksen tekemistä, että löytyykö viitattu tieto välimuistista vai ei. Jos tieto löytyy välimuistista, se otetaan sutjakkaan käyttöön sieltä. Jos tietoa ei löydy välimuistista, se haetaan muistista välimuistiin tässä yhteydessä.
+<!-- kuva: ch-2-1-muistitilan-kaytto-ohjelmalle   # kalvo 5.12  -->
+
+![Suoritin ..... Kuva kalvosta 5.12 puuttuu ???????](./ch-2-1-muistitilan-kaytto-ohjelmalle.svg)
+<div>
+<illustrations motive="ch-2-1-muistitilan-kaytto-ohjelmalle"></illustrations>
+</div>
+
+Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle datalle, _pinolle_ ja _keolle_. 
+
+Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon loppuun kullakin hetkellä. 
+
+Keko on erityinen muistialue, josta ohjelma pystyy suoritusaikana varaamaan uusia muistialueita ja vapauttamaan niitä. Esimerkkikoneessa ohjelmakoodi on heti muistialueen alussa ja sen jälkeen datasegmentti, johon on varattu tilaa kaikkialla ohjelmassa viitattavissa oleviin muuttujiin ja muihin tietorakenteisiin. Kekorekisteri (HP, Heap Pointer) osoittaa keon alkuun kullakin hetkellä. Todellisissa järjestelmissä on keko ohjelman oman muistilalueen lopussa, mutta esimerkkikoneessa sitä ei ole toteutettu.  
+
+Sekä pinon että keon koot vaihtelevat dynaamisesti ohjelman suoritusaikana. Joskus ohjelmointivirheen seurauksena näiden tarvitsema yhteinen muistitila voi loppua, mikä ilmenee siitä, että pinorekisterin arvo yrittää kasvaa kekorekisterin arvoa suuremmaksi. Käyttäjälle tämä ilmenee ohjelman "kaatumisena" mahdollisen _stack overflow_ virheilmoituksen kera.
+
+Muistinhallintayksikössä on myös välimuisti. Se tarkistaa ennen jokaisen muistinviittauksen tekemistä, että löytyykö viitattu tieto välimuistista vai ei. Jos tieto löytyy välimuistista, se otetaan sutjakkaan käyttöön sieltä. Jos tietoa ei löydy välimuistista, se haetaan muistista välimuistiin tässä yhteydessä. Esimerkkikoneessa ei  ole välimuistia.
 
 ### Rekisterit
 
