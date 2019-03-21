@@ -357,7 +357,7 @@ done  store r1, sum      -- tallenna summa muuttujaan sum  (suora muistiv.)
 
 <text-box variant="example" name="Titokone">
   
-Titokone on kevällä 2004 Helsingin yliopistossa opiskelijoiden harjoitustyönä toteuttama ohjelmisto, jonka avulla voidaan kääntää ja suorittaa symbolisella konekielellä kirjoitettuja ohjelmia Auvo Häkkisen vuonna 1991 opetuskäyttöä varten määrittelemälle ttk-91 -tietokoneelle. Ohjelmistoon sisältyy ohjelmistonkehitysympäristö sekä suorituksen simulaattori ja animaattori.
+Titokone on kevällä 2004 Helsingin yliopistossa opiskelijoiden harjoitustyönä toteuttama ohjelmisto, jonka avulla voidaan kääntää ja suorittaa symbolisella konekielellä kirjoitettuja ohjelmia Auvo Häkkisen vuonna 1991 opetuskäyttöä varten määrittelemälle ttk-91 tietokoneelle. Titokone-ohjelmistoon sisältyy symbolisen konekielisen ohjelmoinnin ohjelmistonkehitysympäristö sekä suorituksen simulaattori ja animaattori.
 <br><br>
 Titokone löytyy verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Helpoin tapa ajaa Titokonetta on tallettaa verkkosivulta löytyvä jar-tiedosto (titokone-1.203.jar) omalle koneellesi ja avata se. Verkkosivulta löytyy myös Titokoneen käyttöohjeet. Valmiita esimerkkejä ttk-91 symbolisen konekielen ohjelmista löytyy verkkosivulta http://www.cs.helsinki.fi/group/nodes/kurssit/tito/esimerkit.
 <br><br>
