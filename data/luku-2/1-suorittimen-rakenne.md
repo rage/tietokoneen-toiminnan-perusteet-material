@@ -69,7 +69,7 @@ Rajarekistereiden BASE ja LIMIT käyttö tekee keskusmuistin hallinnasta eri ohj
 <illustrations motive="ch-2-1-muistitilan-kaytto-ohjelmalle"></illustrations>
 </div>
 
-Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle datalle, _pinolle_ ja _keolle_. 
+Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle (_globaalille_) datalle, _pinolle_ ja _keolle_. 
 
 Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon loppuun kullakin hetkellä. 
 
