@@ -14,7 +14,7 @@ hidden: false
 
 ```
 load  r1, Tbl(r2)     ; hae rekisteriin r1 taulukon Tbl alkion Tbl[r2] arvo
-``` 
+```
 
 Tiedon suojauksen kannalta olisi tärkeää, että em. esimerkissä rekisterin r2 arvo tarkistetaan ennen taulukkoviittauksen tekemistä. Se ei saa olla negatiivinen eikä liian suuri. Usein näihin tarkistuksiin menee enemmän koodia kuin itse tietoon viittaamiseen, mutta tarkistukset ovat tärkeä osa tiedon suojaamisessa koodausvirheiden ja tietosuojahyökkäysten varalta.
 
