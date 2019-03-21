@@ -105,9 +105,6 @@ Keskeytysten tarkistus on myös helppoa. Katsotaan vain, onko jokin keskeytysbit
 
 Kaikkea tätä kontrolloi suorittimen kontrolliyksikkö CU. Jokaisella kellopulssilla se ohjaa kaikkia suorittimen piirejä tekemään halutut toimenpiteet sillä hetkellä. Yhdellä kellopulssilla tehtävät toimet ovat hyvin yksinkertaisia. Esimerkiksi voidaan avata piiri, jonka avulla rekisterin R1 sisältö kopioidaan suorittimen sisäistä väylää pitkin ALU:n sisäänmenoon numero 1. Seuraavalla kellopulssilla voidaan avata piiri, jonka avulla kopioidaan rekisterin R2 sisältö toiseen ALU:n sisäänmenoon. Sitten annetaan ALU:lle käskynoperaatiokoodi komennoksi ja odotellaan hieman. Sitten lopulta avataan piiri, jolla kopioidaan ALU:n tulos rekisteriin R1. 
 
-### Käskyn viittaaman datan muistiosoitteen laskenta
-????????? ?????????
-
 <!-- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä  -->
 
 <div><quiznator id="5c502951c41ed4148d96abd9"></quiznator></div>
