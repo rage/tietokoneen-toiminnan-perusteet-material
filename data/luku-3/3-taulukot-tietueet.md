@@ -100,4 +100,8 @@ Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskemi
 
 Samalla tavalla toimitaan kaikissa monimutkaisissa tietorakenteissa. Tällaisia ovat esimerkiksi 2-ulotteiset taulukot, joisen kukin alkio on 8-kenttäinen tietue, tai 8-ulotteinen taulukko. Niissä kaikissa tietoon viittaaminen tapahtuu kolmessa vaiheessa. Ensin tarkistetaan kaikki viittausparametrien kelvollisuus, sitten lasketaan viitattavan tiedon osoite ja lopulta tehdään itse viittaus tietoon.
 
--- Quizes 3.3.1-3  ???????? 
+<!-- Quizes 3.3.10-13  -->
+<div><quiznator id="5c936a37244fe21455cbf37d"></quiznator></div>
+<div><quiznator id="5c936c79244fe21455cbf384"></quiznator></div>
+<div><quiznator id="5c936d5514524713f95a9587"></quiznator></div>
+<div><quiznator id="5c9383f63972a9147410b276"></quiznator></div>
