@@ -79,6 +79,8 @@ Sekä pinon että keon koot vaihtelevat dynaamisesti ohjelman suoritusaikana. Jo
 
 Muistinhallintayksikössä on myös välimuisti. Se tarkistaa ennen jokaisen muistinviittauksen tekemistä, että löytyykö viitattu tieto välimuistista vai ei. Jos tieto löytyy välimuistista, se otetaan sutjakkaan käyttöön sieltä. Jos tietoa ei löydy välimuistista, se haetaan muistista välimuistiin tässä yhteydessä. Esimerkkikoneessa ei  ole välimuistia.
 
+Kanta- ja rajarekistereihin perustuva muistinhallinta on vain yksi tapa hallinnoida muistitilaa usean ohjelman välillä. Yhtenäisiä muistialueita voi olla useita yhdellä ohjelmalla ja kukin niistä on silloin rajattu omalla kanta- ja rajarekisteriparilla. Ohjelman käytössä oleva muistitila voi myös olla jaettu saman kokoisiin _sivuihin_, joita sitten voi sijoitella sinne tänne keskusmuistissa saman kokoisiin _sivukehyksiin_. Tällaisen _virtuaalimuistijärjestelmän_ käyttö muistinhallinnan toteutuksessa on yleinen tapa käyttöjärjestelmissä. 
+
 ### Rekisterit
 
 Ttk-91:ssä on 8 konekäskyissä viitattavaa rekisteriä, R0-R7. Nykymittapuussa tämä on aika vähän, mutta toisaalta pienissä [IoT](https://simple.wikipedia.org/wiki/Internet_of_things)-laitteissa 8 rekisteriä voi hyvin riittää. Olohuoneen valaisimen suoritin tuskin tarvitsee kovin suurta määrää rekistereitä.  Isommissa tietokoneissa on mahdollisesti myös eri tyyppisiä rekistereitä, kuten indeksirekistereitä, kokonaislukurekistereitä ja liukulukurekistereitä. Liukuluvut ovat tietokoneen esitysmuoto realiluvuille ja esittelemme ne paremmin myöhemmin. Ttk-91:n rekisterit ovat vain kokonaislukuarvoisia ja kaikki samanlaisia.
