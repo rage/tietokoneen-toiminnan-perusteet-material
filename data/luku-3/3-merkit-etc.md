@@ -1,5 +1,5 @@
 ---
-path: '/luku-3/3-merkit-etc'
+path: '/luku-3/4-merkit-etc'
 title: 'Merkit, kuvat ja tunteenpalo'
 hidden: false
 ---
