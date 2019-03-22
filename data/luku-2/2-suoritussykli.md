@@ -99,11 +99,32 @@ Käskyn nouto on suoraviivaista. PC:ssä oleva ohjelman oma muistisoite tarkiste
 
 PC:n arvon kasvattaminen yhdellä on niin ikään helppoa. Sitä varten suorittimella voi olla oma yhdellä lisäys -piirinsä, tai sitten arvon kasvatus tehdään ALU:ssa yhteenlaskupiirillä.
 
-Käskyn suoritusvaiheessa käsky puretaan ensin osiinsa, jolloin siitä saadaan ulos esimerkiksi tämän käskyn operaatiokoodi ja käskyn käyttämien rekistereiden numerot. Käskyrekisterissä on valmiit johtimet sen eri osien kohdalla, joten käskyn osien esiinsaaminen on hyvin helppoa. Tarvittaessa lasketaan operandin muistiosoite ja haetaan operandi muistista MMU:n avulla. Datankin muistisoite pitää tietenkin ensin tarkistaa ja muuttaa keskusmuistiosoitteeksi MMU:ssa. Sitten käskyn operandit ladataan ALU:un ja sinneannetaan operaatiokoodi komennoksi, ja lopulta ALU-operaation tulos talletetaan käskyssä määriteltyyn rekisteriin tai muistipaikkaan. Jos ALU-operaatiossa tapahtui virheitä, niin ne merkitään tilarekisteriin SR. Samoin vertailu-operaatioiden tulokset talletetaan SR:ään.
+Käskyn suoritusvaiheessa käsky puretaan ensin osiinsa, jolloin siitä saadaan ulos esimerkiksi tämän käskyn operaatiokoodi ja käskyn käyttämien rekistereiden numerot. Käskyrekisterissä on valmiit johtimet sen eri osien kohdalla, joten käskyn osien esiinsaaminen on hyvin helppoa. Tarvittaessa lasketaan operandin muistiosoite ja haetaan operandi muistista MMU:n avulla. Datankin muistisoite pitää tietenkin ensin tarkistaa ja muuttaa keskusmuistiosoitteeksi MMU:ssa. Sitten käskyn operandit ladataan ALU:un ja sinne annetaan käskyssä oleva operaatiokoodi komennoksi. Lopulta ALU-operaation tulos talletetaan käskyssä määriteltyyn rekisteriin tai muistipaikkaan. Jos ALU-operaatiossa tapahtui virheitä, niin ne merkitään tilarekisteriin SR. Samoin vertailu-operaatioiden tulokset talletetaan SR:ään.
 
 Keskeytysten tarkistus on myös helppoa. Katsotaan vain, onko jokin keskeytysbitti päällä tilarekisterissä SR. Jos on, niin talletetaan johonkin nykyinen paikanlaskuri PC ja tilarekisteri SR, asetetaan etuoikeutettu tila päälle SR:ssä ja asetetaan PC:n arvoksi kyseiseen keskeytykseen liittyvän keskeytyskäsittelijän alkuosoite.
 
-Kaikkea tätä kontrolloi suorittimen kontrolliyksikkö CU. Jokaisella kellopulssilla se ohjaa kaikkia suorittimen piirejä tekemään halutut toimenpiteet sillä hetkellä. Yhdellä kellopulssilla tehtävät toimet ovat hyvin yksinkertaisia. Esimerkiksi voidaan avata piiri, jonka avulla rekisterin R1 sisältö kopioidaan suorittimen sisäistä väylää pitkin ALU:n sisäänmenoon numero 1. Seuraavalla kellopulssilla voidaan avata piiri, jonka avulla kopioidaan rekisterin R2 sisältö toiseen ALU:n sisäänmenoon. Sitten annetaan ALU:lle käskynoperaatiokoodi komennoksi ja odotellaan hieman. Sitten lopulta avataan piiri, jolla kopioidaan ALU:n tulos rekisteriin R1. 
+Kaikkea tätä kontrolloi suorittimen kontrolliyksikkö CU. Jokaisella kellopulssilla se ohjaa kaikkia suorittimen piirejä tekemään halutut toimenpiteet sillä hetkellä. Yhdellä kellopulssilla tehtävät toimet ovat hyvin yksinkertaisia. Vaikka konekäskyt ovat nekin yksinkertaisia, niiden toteutus tapahtuu vielä niitäkin yksinkertaisemmilla komennoilla. Komennot välitetään suorittimen sisällä kontrollijohtimien kautta. 
+
+```
+Esimerkki: Käskyn "ADD R1, R2" nouto ja PC:n kasvatus
+
+Kopioi rekisterin PC arvo rekisteriin MAR.
+  (MMU tarkistaa ja muuntaa sen keskusmuistiosoitteeksi)
+Anna väylän kontrollirekisterille (Bus Ctl) komento "Read".
+Odota hieman.
+Kopioi rekisterin MBR arvo käskyrekisteriin (IR).
+Lisää rekisterin PC arvoa yhdellä.
+```
+
+```
+Esimerkki: Käskyn "ADD R1, R2" suoritusvaihe
+
+Kopioi käskyn ensimmäisen operandin (nyt R1) arvo ALU:n operandiksi 1
+Kopioi käskyn toisen operandin (nyt R2) arvo ALU:n operandiksi 2. 
+Annetaan ALU:lle käskyn operaatiokoodi (nyt "ADD") komennoksi.
+Kopioi ALU:n ulostulo ensimmäisen operandin (nyt R1) uudeksi arvoksi
+  ja kopioi ALU:n virhetilanteet tilarekisterin SR vastaaviin bitteihin.
+```
 
 <!-- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä  -->
 
