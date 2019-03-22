@@ -21,7 +21,7 @@ On myös määritely konekäskykantoja, joissa aritmetiikkaoperaatioissa ei ole 
 
 Esimerkkikoneessa ttk-91 voi yhdessä konekäskyssä nimetä kaksi operandia, joista ensimmäinen on aina rekisteri. Toinen operandi voi olla joku rekisteri, se voi olla vakio, tai se voidaan määritellä näiden yhdistelmänä. Se voi olla myös muistissa, kuten seuraavassa on tehty.
 
-Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Itse laskenta on erikseen muistioperaatioista ja siinä on myös riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi lukuta noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
+Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus voi olla hyvin nopeaa. Laskenta on erikseen muistioperaatioista ja suorittimella on riittävästi rekistereitä koodin suoritusnopeuden optimoimiseksi. Fiksu suoritin voisi osata noutaa A:n ja B:n arvot osittain samanaikaisesti muistista, koska käskyt ovat täysin riippumattomia toisistaan.
 
 <!-- esimerkki Yhteenlasku eri tyyppisillä suorittimilla -->
 
