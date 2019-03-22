@@ -71,7 +71,7 @@ Rajarekistereiden BASE ja LIMIT käyttö tekee keskusmuistin hallinnasta eri ohj
 
 Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle (_globaalille_) datalle, _pinolle_ ja _keolle_. 
 
-Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon loppuun kullakin hetkellä. 
+Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino on kuin pöydällä oleva korttipakka, johon uusia kortteja laitetaan vain sen päälle ja sieltä voi poistaa kortteja vain pakan päältä. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon "pinnalle" kullakin hetkellä. 
 
 Keko on erityinen muistialue, josta ohjelma pystyy suoritusaikana varaamaan uusia muistialueita ja vapauttamaan niitä. Esimerkkikoneessa ohjelmakoodi on heti muistialueen alussa ja sen jälkeen on datasegmentti, johon on varattu tilaa kaikkialla ohjelmassa viitattavissa oleviin muuttujiin ja muihin tietorakenteisiin. Kekorekisteri (HP, Heap Pointer) osoittaa keon alkuun kullakin hetkellä. Todellisissa järjestelmissä on keko voi olla esimerkiksi ohjelman oman muistialueen lopussa, mutta esimerkkikoneessa sitä ei ole toteutettu.  
 
@@ -79,7 +79,7 @@ Sekä pinon että keon koot vaihtelevat dynaamisesti ohjelman suoritusaikana. Jo
 
 Muistinhallintayksikössä on myös välimuisti. Se tarkistaa ennen jokaisen muistinviittauksen tekemistä, että löytyykö viitattu tieto välimuistista vai ei. Jos tieto löytyy välimuistista, se otetaan sutjakkaan käyttöön sieltä. Jos tietoa ei löydy välimuistista, se haetaan muistista välimuistiin tässä yhteydessä. Esimerkkikoneessa ei  ole välimuistia.
 
-Kanta- ja rajarekistereihin perustuva muistinhallinta on vain yksi tapa hallinnoida muistitilaa usean ohjelman välillä. Yhtenäisiä muistialueita voi olla useita yhdellä ohjelmalla ja kukin niistä on silloin rajattu omalla kanta- ja rajarekisteriparilla. Ohjelman käytössä oleva muistitila voi myös olla jaettu saman kokoisiin _sivuihin_, joita sitten voi sijoitella sinne tänne keskusmuistissa saman kokoisiin _sivukehyksiin_. Tällaisen _virtuaalimuistijärjestelmän_ käyttö muistinhallinnan toteutuksessa on yleinen tapa käyttöjärjestelmissä. 
+Kanta- ja rajarekistereihin perustuva muistinhallinta on vain yksi tapa hallinnoida muistitilaa usean ohjelman välillä. Yhtenäisiä muistialueita voi olla yhdellä ohjelmalla useita ja kukin niistä on silloin rajattu omalla kanta- ja rajarekisteriparillaan. Ohjelman käytössä oleva muistitila voi myös olla jaettu saman kokoisiin _sivuihin_, joita sitten voi sijoitella sinne tänne keskusmuistissa saman kokoisiin _sivukehyksiin_. Tällainen _sivuttava muistinhallinta_ on käytössä useissa käyttöjärjestelmissä. 
 
 ### Rekisterit
 
