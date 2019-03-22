@@ -65,7 +65,7 @@ Jotkut (ei kaikki!) käyttöjärjestelmän palvelut suoritetaan aina etuoikeutet
 
 Kun etuoikeutetussa tilassa suorittava palvelu päättyy, niin palvelusta paluun yhteydessä suoritustila palaa ennalleen. Tätä varten on yleensä ihan oma (etuoikeutettu) konekäskynsä.
 
-## Virhetilanteet ja normaalit keskeytykset
+## Virhetilanteet ja keskeytykset
 
 Tietokoneissa tuntuu aina jotain menevän vikaan. Mutta, aivan kuten älykkyydenkin kanssa, nuo käyttäjän havaitsemat virheet tai laitteiston hyytymiset ovat pelkästään ohjelmiston ominaisuuksia. Itse suoritin yksinkertaisine konekäskyineen toimii aina oikein. Sitä käyttävissä ohjelmissa on voi kuitenkin olla _vikoja_, jotka voivat suoritusaikana aiheuttaa _virheitä_, jotka taas joskus aiheuttavat _häiriöitä_ käyttäjille tai järjestelmille. Liukuestetarran puuttuminen kylpyammeesta voisi olla vika, joka joskus aiheuttaa liukastumisvirhetilanteen, joka joskus voi aiheuttaa ranteenmurtumishäiriön.
 
@@ -94,7 +94,7 @@ Käskyn nouto- ja suoritussykli jatkuu sitten normaalisti, mutta nyt ollaankin j
 On myös mahdollista, että käyttöjärjestelmän saatua kontrollin (suoritusvuoron suorittimella) keskeytyskäsittelijän kautta se päättääkin antaa suoritusvuoron jollekin toiselle ohjelmallelle. Näin voi tapahtua esimerkiksi ns. aikaviipalekeskeytyksen käsittelyssä, kun käyttöjärjestelmä yrittää antaa kaikille järjestelmässä oleville prosesseille reilusti suoritinaikaa, pieninä aikaviipaleina kerrallaan. Suorituksessa oleva ohjelma voi vaihtua minkä tahansa konekäskyn jälkeen, koska keskeytyksiä voi tulla ihan milloin vain. Tämä on erityisen harmillista, koska ohjelman suorituksessa voi olla ajanjaksoja, jolloin tietyn koodinpätkän suoritus pitäisi pystyä tekemään alusta loppuun yhteen menoon. Tilanne on vähän sama kuin että sinä et halua kenenkään keskeyttävän itseäsi juuri kun olet tekemässä maksutapahtumaa verkkopankissa. Se pitää tehdä alusta loppuun oikein. Tämä samanaikaisuudenhallintaongelma on tunnettu ja sitä voi ratkoa erilaisilla menetelmillä käyttöjärjestelmässä. Ihan aina ongelmaa ei ole hoksattu ja järjestelmä voi mennä tuolloin sekaisin ja "hyytyä".
 
 
-### Käskyjen nouto- ja suoritussyklin toteutus laitteistossa
+## Käskyjen nouto- ja suoritussyklin toteutus laitteistossa
 Käskyn nouto on suoraviivaista. PC:ssä oleva ohjelman oma muistisoite tarkistetaan ja muunnetaan keskusmuistiosoitteeksi MMU:ssa, jonka jälkeen MMU pyytää käskyä muistipiiriltä väylän kautta. Käsky talletetaan käskyrekisteriin IR.
 
 PC:n arvon kasvattaminen yhdellä on niin ikään helppoa. Sitä varten suorittimella voi olla oma yhdellä lisäys -piirinsä, tai sitten arvon kasvatus tehdään ALU:ssa yhteenlaskupiirillä.
@@ -114,16 +114,18 @@ Anna väylän kontrollirekisterille (Bus Ctl) komento "Read".
 Odota hieman.
 Kopioi rekisterin MBR arvo käskyrekisteriin (IR).
 Lisää rekisterin PC arvoa yhdellä.
+  (oletettu, että CU:ssa on oma "+1" piiri tätä varten)
 ```
 
 ```
 Esimerkki: Käskyn "ADD R1, R2" suoritusvaihe
 
-Kopioi käskyn ensimmäisen operandin (nyt R1) arvo ALU:n operandiksi 1
+Kopioi käskyn ensimmäisen operandin (nyt R1) arvo ALU:n operandiksi 1.
 Kopioi käskyn toisen operandin (nyt R2) arvo ALU:n operandiksi 2. 
-Annetaan ALU:lle käskyn operaatiokoodi (nyt "ADD") komennoksi.
+Anna käskyn operaatiokoodi (nyt "add" eli 17) ALU:n komennoksi.
+Odota hieman.
 Kopioi ALU:n ulostulo ensimmäisen operandin (nyt R1) uudeksi arvoksi
-  ja kopioi ALU:n virhetilanteet tilarekisterin SR vastaaviin bitteihin.
+  ja kopioi ALU:n virhetilanteet SR:n vastaaviin bitteihin.
 ```
 
 <!-- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä  -->
