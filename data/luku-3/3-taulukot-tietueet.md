@@ -30,7 +30,7 @@ jnles HandleBadIndex      ; hyppää, jos arvo ei ole pienempi kuin TblSize.
 load  r1, Tbl(r2)     ; hae rekisteriin r1 taulukon Tbl alkion Tbl[r2] arvo
 ``` 
 
-Tietueet on talletettu ihan samalla tavalla yhtenäiselle muistialueelle, jossa tietueen eri _kentät_ ovat peräkkäisissä muistipaikoissa. Indeksoitu tiedonosoitusmoodi tukee tehokkaasti myös tietueisiin viittaamista käyttöä. Yleensä tietueen alkuosoite annetaan jossain rekisterissä (_osoitinrekisteri_) ja tietueen kentän sijainti tietueensisällä annetaan vakiona konekäskyssä. On erittäin kätevää, että yhtä ja samaa tiedonosoitusmoodia voidaan käyttää yleisimpiin rakenteisiin tietotyyppeihin viitattaessa.
+Tietueet on talletettu samalla tavalla yhtenäiselle muistialueelle, jossa tietueen eri _kentät_ ovat peräkkäisissä muistipaikoissa. Myös tietueen osoite on sen ensimmäisen kentän osoite. Indeksoitu tiedonosoitusmoodi tukee tehokkaasti myös tietueisiin viittaamista, vaikkakin nyt vähän eri tavalla. Taulukkojen osoite annetaan käskyn vakiokentässä, kun tietueen osoite annetaan indeksirekisterissä.  Tietueen kentän sijainti tietueen sisällä annetaan nyt konekäskyn vakiokentässä. On erittäin kätevää, että yhtä ja samaa tiedonosoitusmoodia voidaan käyttää yleisimpiin rakenteisiin tietotyyppeihin viitattaessa.
 
 ```
 Id      equ 0
@@ -59,7 +59,7 @@ talletetaan muistiin riveittäin osoitteeseen 876, niin muistissa on muistipaika
  876: 1  2  3  4  5  6  7  8  9 10 11 12
 ``` 
 
-Koska yhden rivin pituus on 4 alkiota, niin alkion M\[i,j\] osoite on 876 + 4 \* i + j. Ennen haluttua alkiota M\[i, j\] pitää sivuuttaa i kokonaista riviä ja j alkiota halutulla rivillä. Useimmissa suorittimissa ei ole valmista tiedonosoitusmoodia tämän laskemiseksi. Tällöin viitatun alkion osoitteen laskeminen pitää ensin toteuttaa usealla konekäskyllä ja sitten vasta tehdä varsinainen muistiviite tuohon alkioon. Esimerkiksi, alkion M\[i,j\] lukeminen rekisteriin r2 tapahtuu konekäskyillä
+Koska yhden rivin pituus on 4 alkiota, niin alkion M\[i,j\] osoite on 876+4\*i+j. Ennen haluttua alkiota M\[i,j\] pitää sivuuttaa i kokonaista riviä ja j alkiota halutulla rivillä. Useimmissa suorittimissa ei ole valmista tiedonosoitusmoodia tämän laskemiseksi. Tällöin viitatun alkion osoitteen laskeminen pitää ensin toteuttaa usealla konekäskyllä ja sitten vasta tehdä varsinainen muistiviite tuohon alkioon. Esimerkiksi, alkion M\[i,j\] lukeminen rekisteriin r2 tapahtuu konekäskyillä
 
 ```
   load r1, i        ; laske alkion M[i,j] suhteellinen osoite matriisissa M
@@ -83,15 +83,15 @@ Sarakkeen pituus on 3 riviä, joten alkion M\[i,j\] lukeminen rekisteriin r2 tap
   load  r2, M(r1)  ; hae alkion M[i,j] arvo rekisteriin r2
 ```
 
-Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskeminen täytyy tehdä usemman konekäskyn avulla. Lisäksi em. esimerkeistä puuttuu täysin indeksitarkitukset, jotka lisääväät koodin määrää vielä pikkasen.
+Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskeminen täytyy tehdä usemman konekäskyn avulla. Lisäksi em. esimerkeistä puuttuu täysin indeksitarkistukset, jotka lisääväät koodin määrää vielä pikkasen.
 
 ## 3-ulotteiset taulukot ja muu rakenteinen tieto
 
-3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niiden viittaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3,4,5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i,j,k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
+3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niihin viittaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3,4,5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i,j,k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
 
 ```
   load r1, i     ; laske alkion T[i,j,k] suhteellinen osoite taulukossa T
-  mul  r1, =20         ; ohita i tasoa (20*i sanaa) 
+  mul  r1, =20         ; ohita i tasoa (4*5*i sanaa) 
   load r2, j
   mul r2, =5           ; ohita j riviä (5*j sanaa) tällä tasolla
   add r1, r2
