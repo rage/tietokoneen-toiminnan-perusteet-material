@@ -116,7 +116,7 @@ Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska 
 <div><quiznator id="5bed47c75695f73da1f75459"></quiznator></div>
 
 ### Yhteenveto
-Kolmas luku käsitteli tiedon erilaisia esitysmuotoja. Käsittelimme tarkemmin neljä erilaista kokonaislukujen esitysmuotoa ja IEEE:n standardin mukaista liukulukujen 32-bittistä esitysmuotoa. Sen jälkeen tutustuimme merkkien ja merkkijonojen esitysmuotoihin. Lopuksi esittelimme pääperiaatteet kuvien, äänten ja kaiken muun tyyppisen tiedon esitystapoihin.
+Kolmas luku käsitteli tiedon erilaisia esitysmuotoja. Käsittelimme tarkemmin neljä erilaista kokonaislukujen esitysmuotoa ja IEEE:n standardin mukaista liukulukujen 32-bittistä esitysmuotoa. Sen jälkeen tutustuimme merkkien ja merkkijonojen esitysmuotoihin. Kävimme sitten lyhyesti läpi (moniulotteisten) taulukoiden ja tietueiden toteutuksen. Lopuksi esittelimme pääperiaatteet kuvien, äänten ja kaiken muun tyyppisen tiedon esitystapoihin.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 <div><quiznator id="5c6c09bfc41ed4148d96ec98"></quiznator></div>
@@ -124,12 +124,24 @@ Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 <!--
 <div>
   <part-summary chapter="3" heading="Saatuasi nyt loppuun luvun 3 sinun pitäisi pystyä selittämään seuraavat asiat:" listitems='[
+  {"content":"Mitkä ovat kokonaislukujen neljä esitysmuotoa?"},
+  {"content":"Miksi kokonaislukujen kahden komplementin esitysmuoto on yleisin?"},
+  {"content":"Miten liukuluvut eroavat realiluvuista?"},
+  {"content":"Mikä on liukuluvun piilobitti?"},
+  {"content":"Mikä on liukulukujen IEEE-standardin mukainen 32-bittinen esitystapa?"},
+  {"content":"Milloin liukulukulaskennassa X+Y=X, vaikka Y on nollasta poikkeava?"},
+  {"content":"Miksi liukulukujen vertailu X≠Y voi antaa väärän tuloksen ohjelmassa?"},
   {"content":"Kuinka merkit pääpiirteissään esitetään tietokoneessa?"},
   {"content":"Miksi joskus tarvitaan 16-bittisiä merkistöjä?"},
   {"content":"Miksi Suomessa yleensä riittää käyttää 8-bittisiä merkistöjä?"},
   {"content":"Miten merkkijonot esitetään muistissa?"},
+  {"content":"Miksi 1-ulotteiseen taulukkoon viittaaminen on helpompaa kuin kuin moniulotteiseen taulukkoon viittaaminen?"},
+  {"content":"Mitä yhteistä on 1-ulotteiseen taulukkoon viittaamisella ja tietueeseen viittaamisella?"},
+  {"content":"Mitä väliä sillä on, jos matriisi talletetaan riveittäin tai sarakettain?"},
+  {"content":"Mitkä ovat moniulotteiseen taulukkoon viittaamisen kolme eri vaihetta?"},
   {"content":"Miten kuvat, äänet, dokumentit ja videot esitetään tietokoneessa?"},
-  {"content":"Milloinka jokin uusi tietotyypi olisi parempi tallettaa kokonaislukuina tai liukulukuina?"},
+  {"content":"Milloinka jokin uusi tietotyypi olisi hyvä tallettaa kokonaislukuina?"},  
+  {"content":"Milloinka jokin uusi tietotyypi olisi hyvä tallettaa liukulukuina?"},
   {"content":"Miten sovellus tietää, mikä kuvien esitystapa on kulloinkin käytössä?"}
     ]'>>
   </part-summary>
