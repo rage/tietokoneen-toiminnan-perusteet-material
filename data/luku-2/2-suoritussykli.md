@@ -103,7 +103,7 @@ Käskyn suoritusvaiheessa käsky puretaan ensin osiinsa, jolloin siitä saadaan 
 
 Keskeytysten tarkistus on myös helppoa. Katsotaan vain, onko jokin keskeytysbitti päällä tilarekisterissä SR. Jos on, niin talletetaan johonkin nykyinen paikanlaskuri PC ja tilarekisteri SR, asetetaan etuoikeutettu tila päälle SR:ssä ja asetetaan PC:n arvoksi kyseiseen keskeytykseen liittyvän keskeytyskäsittelijän alkuosoite.
 
-Kaikkea tätä kontrolloi suorittimen kontrolliyksikkö CU. Jokaisella kellopulssilla se ohjaa kaikkia suorittimen piirejä tekemään halutut toimenpiteet sillä hetkellä. Yhdellä kellopulssilla tehtävät toimet ovat hyvin yksinkertaisia. Vaikka konekäskyt ovat nekin yksinkertaisia, niiden toteutus tapahtuu vielä niitäkin yksinkertaisemmilla komennoilla. Komennot välitetään suorittimen sisällä kontrollijohtimien kautta. 
+Kaikkea tätä kontrolloi suorittimen kontrolliyksikkö CU. Jokaisella kellopulssilla se ohjaa kaikkia suorittimen piirejä tekemään halutut toimenpiteet sillä hetkellä. Yhdellä kellopulssilla tehtävät toimet ovat hyvin yksinkertaisia. Vaikka konekäskyt ovat nekin yksinkertaisia, niiden toteutus tapahtuu vielä niitäkin yksinkertaisemmilla komennoilla. Komennot välitetään suorittimen sisällä kontrollijohtimien kautta. Data liikkuu suorittimen sisällä suorittimen sisäistä väylää pitkin.
 
 ```
 Esimerkki: Käskyn "ADD R1, R2" nouto ja PC:n kasvatus
@@ -112,7 +112,7 @@ Kopioi rekisterin PC arvo rekisteriin MAR.
   (MMU tarkistaa ja muuntaa sen keskusmuistiosoitteeksi)
 Anna väylän kontrollirekisterille (Bus Ctl) komento "Read".
 Odota hieman.
-Kopioi rekisterin MBR arvo käskyrekisteriin (IR).
+Kopioi rekisterin MBR arvo käskyrekisteriin IR.
 Lisää rekisterin PC arvoa yhdellä.
   (oletettu, että CU:ssa on oma "+1" piiri tätä varten)
 ```
