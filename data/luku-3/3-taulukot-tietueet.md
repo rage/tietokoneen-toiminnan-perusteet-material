@@ -58,7 +58,7 @@ talletetaan muistiin riveittäin osoitteeseen 876, niin muistissa on muistipaika
  876: 1  2  3  4  5  6  7  8  9 10 11 12
 ``` 
 
-Koska yhden rivin pituus on 4 alkiota, niin alkion M\[i, j\] osoite on 876 + 4 \* i + j. Ennen haluttua alkiota M\[i, j\] pitää sivuuttaa i kokonaista riviä ja j alkiota halutulla rivillä. Useimmissa suorittimissa ei ole valmista tiedonosoitusmoodia tämän laskemiseksi. Tällöin viitatun alkion osoitteen laskeminen pitää ensin toteuttaa usealla konekäskyllä ja sitten vasta tehdä varsinainen muistiviite tuohon alkioon. Esimerkiksi, alkion M\[i, j\] lukeminen rekisteriin r2 tapahtuu konekäskyillä
+Koska yhden rivin pituus on 4 alkiota, niin alkion M\[i,j\] osoite on 876 + 4 \* i + j. Ennen haluttua alkiota M\[i, j\] pitää sivuuttaa i kokonaista riviä ja j alkiota halutulla rivillä. Useimmissa suorittimissa ei ole valmista tiedonosoitusmoodia tämän laskemiseksi. Tällöin viitatun alkion osoitteen laskeminen pitää ensin toteuttaa usealla konekäskyllä ja sitten vasta tehdä varsinainen muistiviite tuohon alkioon. Esimerkiksi, alkion M\[i,j\] lukeminen rekisteriin r2 tapahtuu konekäskyillä
 
 ```
   load r1, i        ; laske alkion M[i,j] suhteellinen osoite matriisissa M
@@ -73,7 +73,7 @@ Jos taas matriisi M olisi talletettu sarakettain osoitteeseen 654, niin muistiss
  654: 1  5  9  2  6 10  3  7 11  4  8 12
 ``` 
 
-Sarakkeen pituus on 3 riviä, joten alkion M\[i, j\] lukeminen rekisteriin r2 tapahtuu nyt konekäskyillä
+Sarakkeen pituus on 3 riviä, joten alkion M\[i,j\] lukeminen rekisteriin r2 tapahtuu nyt konekäskyillä
 
 ```
   load r1, j       ; laske alkion M[i,j] suhteellinen osoite matriisissa M
@@ -86,7 +86,7 @@ Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskemi
 
 ## 3-ulotteiset taulukot ja muu rakenteinen tieto
 
-3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niiden viittaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3, 4, 5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i, j, k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
+3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niiden viittaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3,4,5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i,j,k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
 
 ```
   load r1, i     ; laske alkion T[i,j,k] suhteellinen osoite taulukossa T
