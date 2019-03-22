@@ -300,47 +300,41 @@
            x="37.417732"
            id="tspan1521">fyysinen muisti</tspan></text>
     </g>
-    <g
-       transform="translate(-12.700002,-3.7417734)"
-       id="g1770">
-      <rect
-         style="opacity:1;fill:#f4e1a7;fill-opacity:1;stroke:#000000;stroke-width:0.16499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-         id="rect1492-80-0"
-         width="48.643055"
-         height="14.96708"
-         x="105.30419"
-         y="30.799557" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="107.97688"
-         y="36.952126"
-         id="text1511-0"><tspan
-           y="36.952126"
-           x="107.97688"
-           id="tspan1762">Ohjelman P näkemä </tspan><tspan
-           y="42.243793"
-           x="107.97688"
-           id="tspan1764">&quot;virtuaalinen&quot; muisti</tspan></text>
-    </g>
+    <rect
+       y="27.057783"
+       x="92.604187"
+       height="14.96708"
+       width="48.643055"
+       id="rect1492-80-0"
+       style="opacity:1;fill:#f4e1a7;fill-opacity:1;stroke:#000000;stroke-width:0.16499999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    <text
+       id="text1511-0"
+       y="33.210354"
+       x="95.276878"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       xml:space="preserve"><tspan
+         id="tspan1049">Ohjelman P näkemä </tspan><tspan
+         id="tspan1051">muistiavaruus</tspan></text>
     <text
        id="text1511-0-5"
-       y="83.718292"
-       x="14.654891"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       y="76.839119"
+       x="12.00906"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
        xml:space="preserve"><tspan
-         y="83.718292"
-         x="14.654891"
-         id="tspan1663">BASE</tspan></text>
+         id="tspan1063">20 000</tspan><tspan
+         id="tspan1065">BASE</tspan></text>
     <text
        id="text1511-0-3"
-       y="101.62536"
+       y="101.09618"
        x="23.742054"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         y="101.62536"
+         y="101.09618"
          x="23.742054"
-         id="tspan1665">LIMIT</tspan></text>
+         id="tspan1187">512</tspan><tspan
+         y="106.38785"
+         x="23.742054"
+         id="tspan1189">LIMIT</tspan></text>
     <text
        id="text1511-0-9"
        y="174.29576"
@@ -356,11 +350,11 @@
     <text
        id="text1511-0-97"
        y="59.664036"
-       x="125.70085"
+       x="127.28836"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="59.664036"
-         x="125.70085"
+         x="127.28836"
          id="tspan1772">Ohjelmakoodi</tspan></text>
     <text
        id="text1511-0-32"
@@ -424,7 +418,7 @@
          id="tspan1756">HP</tspan></text>
     <path
        id="path1816"
-       d="m 26.840773,83.143703 c 17.141181,7.246212 17.141181,7.246212 17.141181,7.246212"
+       d="M 27.919138,78.009693 C 43.995337,90.374035 43.995337,90.374035 43.995337,90.374035"
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend)" />
     <rect
        y="89.331581"
@@ -548,8 +542,8 @@
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow2Lend-9-2-6)" />
     <path
        id="path1816-4-7"
-       d="M 12.246563,168.54938 C 27.69404,104.843 27.69404,104.843 27.69404,104.843"
-       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.52916663, 1.05833327;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker6214)" />
+       d="M 12.254468,168.53778 C 26.906354,107.77596 26.906354,107.77596 26.906354,107.77596"
+       style="fill:none;stroke:#000000;stroke-width:0.26458332;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.52916663, 1.05833326;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker6214)" />
     <path
        id="path1816-4-7-2"
        d="M 12.236323,168.55364 C 79.606255,128.84152 79.606255,128.84152 79.606255,128.84152"
@@ -584,16 +578,13 @@
        style="fill:none;stroke:#151415;stroke-width:0.477;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text1511-0-97-3"
-       y="196.74086"
-       x="20.864542"
+       y="202.03246"
+       x="20.335375"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         y="196.74086"
-         x="20.864542"
-         id="tspan9953">iso, esim. </tspan><tspan
-         y="202.03253"
-         x="20.864542"
-         id="tspan9955">4 194 303:</tspan></text>
+         y="202.03246"
+         x="20.335375"
+         id="tspan1265">4 194 303:</tspan></text>
     <text
        id="text1511-0-97-3-4"
        y="53.316772"
@@ -606,20 +597,20 @@
     <text
        id="text1511-0-97-3-40"
        y="202.72043"
-       x="80.304466"
+       x="88.771141"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="202.72043"
-         x="80.304466"
-         id="tspan9987">LIMIT-1:</tspan></text>
+         x="88.771141"
+         id="tspan1191">511:</tspan></text>
     <text
        id="text1511-0-97-3-4-5"
        y="52.247692"
-       x="40.002369"
+       x="39.473202"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          id="tspan9933-3"
-         x="40.002369"
+         x="39.473202"
          y="52.247692"
          style="stroke-width:0.26458332">0:</tspan></text>
     <path
