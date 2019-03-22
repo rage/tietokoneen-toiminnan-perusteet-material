@@ -4,7 +4,7 @@ title: 'Konekäskyt'
 ---
 
 <div>
-<lead>Tässä osiossa tutustumme tarkemmin konekäskyihin. Selvitämme mm., mitä ominaisuuksia konekäskyissä on ja minkälaisia konekäskyjä suorittimissa voi olla. Esittelemme samalla myös (lukun) esimerkkitietokoneen ttk-91 käskyistä ja annamme esimerkkejä (symbolisesta) konekielisestä koodista.</lead>
+<lead>Tässä osiossa tutustumme tarkemmin konekäskyihin. Selvitämme mm., mitä ominaisuuksia konekäskyissä on ja minkälaisia konekäskyjä suorittimissa voi olla. Esittelemme samalla myös (osan) esimerkkitietokoneen ttk-91 käskyistä ja annamme esimerkkejä (symbolisesta) konekielisestä koodista.</lead>
 </div>
 
 ## Konekäskykanta
@@ -43,7 +43,7 @@ pop C                                store r12,C
 
 Olisi mukava, jos nopeita rekistereitä olisi paljon, koska tiedot löytyisivät tällöin usein mahdollisimman nopeasti. Suuri määrä rekistereitä kuitenkin tarkoittaa, että tarvitsemme enemmän bittejä niiden osoittamiseen konekäskyissä. Jos rekistereitä on 16, niin neljä bittiä riittää rekisterin osoitteeksi. Toisaalta, 128 rekisterille tarvitaan jo 7 bittiä niiden osoittamiseen. Tuolloin kolmen rekisterin nimeämiseen kuluu jo 21 bittiä, mikä tekee konekäskyistä ehkä turhan pitkiä. Usein rekistereitä on 16-32 kappaletta kutakin eri tyyppiä, jolloin yhden rekisterin nimeämiseen riittää 4-5 bittiä konekäskyissä.
 
-Esimerkkikoneessa ttk-91 on 8 rekisteriä, joten niiden nimeämiseen konekäskyssä tarvitaan 3 bittiä. Konekäskyssä voi viitata kahteen rekisteriin.
+Esimerkkikoneessa ttk-91 on 8 rekisteriä, joten niiden nimeämiseen konekäskyssä tarvitaan 3 bittiä. Konekäskyssä voi viitata kahteen rekisteriin. Jälkimmäistä rekisteriä sanotaan _indeksirekisteriksi_, koska sitä voidaan käyttää indeksinä taulukkoviitauksissa.
 
 ### Muistiinviittaustavat
 Konekäskyssä tarvitaan jonkinlaisia tapoja viitata muistiin. Korkean tason kielissä usein käytetyt tietotyypit vaativat erilaisia viittaustapoja. Yleisiä tietotyyppejä korkean tason kielissä ovat muuttujat, vakiot ja 1-, 2- tai 3-ulotteiset taulukot. Sellaisia ovat myös _tietueet_ tai _oliot_, joissa on erilaisia kenttiä. Usein tieto on myös esitetty epäsuorasti, jolloin tietorakenteessa ei olekaan itse tietoa, vaan ainoastaan osoite tietoon.
@@ -71,22 +71,53 @@ Esimerkkikoneessa ttk-91 on kolme tiedonosoitustapaa ja ne perustuvat kaikki ind
 Ttk-91:n suorittimella on kolme vaihtoehtoista tapaa saada jälkimmäinen operandi edellä lasketun "muistiosoitteen" avulla ja ne valitaan 2-bittisen _tiedonosoitusmoodin_ avulla. Moodin arvo 0 (_välitön tiedonosoitus_) tarkoittaa, että tuo äsken laskettu "muistiosoite" on sellaisenaan toinen operandi, eikä mitään muistiviitettä tarvita. Moodin arvo 1 (_suora muistiviite_) tarkoittaa, että muistisoitetta käytetään yhden kerran operandin hakemiseksi muistista. Moodin arvo 2 (_epäsuora muistiviite_) tarkoittaa, että ensin haetaan muistista edellä laskettua muistiosoitetta käyttäen toisen operandin osoite ja vasta sitten haetaan muistista tuta osoitetta käyttämällä jälkimmäinen operandi.
 
 ```
-Ttk-91 symbolisen konekielen tiedonosoitusmoodit
+Esimerkki: Ttk-91 käskyn toisen operandin arvon nouto TR:ään, toteutus
+
+Jos käskyn jälkimmäisen rekisterin numero on 0, 
+    Kopioi käskyn vakiokentän arvo rekisteriin TR. 
+muutoin
+    Kopioi käskyn jälkimmäisen rekisterin arvo ALU:n operandiksi 1,
+    Kopioi käskyn vakiokentän arvo ALU:n operandiksi 2,
+    Anna ALU:lle komento "add",
+    Odota vähän aikaa,
+    Kopio ALU:n ulostulo rekisteriin TR.
+
+Jos käskyn moodi-kentän arvo on vähintään 1,
+    Kopioi TR:n arvo rekisteriin MAR,
+    Anna väylän kontrollirekisterille (Bus Ctl) komento "Read",
+    Odota vähän aikaa,
+    Kopio rekisterin MBR arvo rekisteriin TR.
+
+Jos käskyn moodi-kentän arvo on vähintään 2,
+    Kopioi TR:n arvo rekisteriin MAR,
+    Anna väylän kontrollirekisterille (Bus Ctl) komento "Read",
+    Odota vähän aikaa,
+    Kopio rekisterin MBR arvo rekisteriin TR.
+
+Jos käskyn moodi-kentän arvo on vähintään 3,
+    Aiheuta virhetilanne ("Bad Mode") ja keskeytä käskyn suoritus.
+```
+
+Ttk-91 koneen symbolisessa konekielessä _välitön tiedonosoitus_ kuvataan ennen vakio-osaa olevalla '='-merkillä. _Epäsuora muistiviite_ kuvataan vastaavasti ennen vakio-osaa olevalla '@'-merkillä, kun _suorassa muistiviitteessä_ vakio-osa on sellaisenaan ilman mitään erikoismerkkejä. 
+
+```
+Esimerkki: Ttk-91 symbolisen konekielen tiedonosoitusmoodi
 
 Oletetaan, että kaikissa käskyissä alkuaan rekisterin r1 arvo 
 on 3, rekisterin r2 arvo on 10, muistipaikan mem(17) arvo on 45, 
 ja että muistipaikan mem(45) arvo on 88.
 
-               op.koodi tul.rek. moodi ind.rek. vakio  tulos
+               op.koodi rek-1   moodi ind.rek. vakio  tulos
 load r1, r2      -- 2      1        0     2        0    r1 <- 10
 load r1, =7      -- 2      1        0     0        7    r1 <- 7
 load r1, =7(r2)  -- 2      1        0     0        7    r1 <- 17
 load r1, 7(r2)   -- 2      1        1     0        7    r1 <- 45
 load r1, @7(r2)  -- 2      1        2     0        7    r1 <- 88
 store r1, 7(r2)  -- 1      1        0     0        7  mem(17) <- 3
+store r1, @7(r2) -- 1      1        1     0        7  mem(45) <- 3
 ```
 
-Moodi kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Käskyä muistista noudettaessahan tuli jo yksi muistiviite. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi kuin vastaavassa muistin lukukäskyssä (LOAD) ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana STORE-käskyssä tulee lopuksi aina yksi muistiin _kirjoitus_.
+Käskyn moodi-kentän arvon kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi kuin vastaavassa muistin lukukäskyssä (LOAD) ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana STORE-käskyssä tulee lopuksi aina yksi muistiin _kirjoitus_.
 
 ### Konekäskyjen pituus ja muoto
 Vaihtelevasta konekäskyjen pituudesta on se hyöty, että eri käskyillä voi olla erilaisia kenttiä. Esimerkiksi pelkästään rekistereiden välillä operoiva konekäsky ei tarvitse vakio-kenttää, mutta muistinviittauksen yhteydessä vakiokentästä taas olisi hyötyä. Joissakin tapauksissa vakiokenttä voisi olla kovinkin lyhyt (esim. 8 bittiä), kun taas muistisoitteiden tapauksissa se voisi olla jopa 32-bittinen tai pidempikin. Vaihtelevasta konekäskyjen pituudesta on kuitenkin myös haittaa. Käskyjen nouto muistista on vaikeata, kun ei heti tiedetä mitenkä monta tavua tarvitsee noutaa. Tavujen määrä selviää vasta kun operaatiokoodi on ensin haettu muistista. Tämän vuoksi nykyään yleensä käytetään usein vain vakiomittaisia konekäskyjä.
@@ -96,15 +127,16 @@ Konekäskyjä voi olla useata eri muotoa. Absoluuttinen hyppykäsky ei tarvitse 
 Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikilla sama muoto: operaatiokoodi 8 bittiä, operandi/tulosrekisteri 3 bittiä, tiedonosoitusmoodi 2 bittiä, indeksirekisteri 3 bittiä ja vakiokenttä 16 bittiä. Tiedonosoitusmoodin käyttö voi tuntua aluksi sekavalta, mutta käytännön ohjelmoinnissa eri tiedonosoitusmoodeja tarvitaan kokoa ajan. Tällä kurssilla emme perehdy varsinaiseen konekieliseen ohjelmointiin muutamaa triviaalia esimerkkiä enempää.
 
 ```
-Esimerkki: Ttk-91 symbolisen konekielen käskyjen koodaus
+Esimerkki: Ttk-91 symbolisen konekielen käskyjen talletusmuoto
 
-                  op.koodi tul.rek. moodi ind.rek. vakiokenttä
+     kentät:      op.koodi tul.rek. moodi ind.rek. vakiokenttä
+     bittejä:        8        3       2      3        16       
                   
     -- Hae X:n arvo muistista rekisteriin r1.
     -- Muuttujan X osoite on sama kuin symbolin X arvo.
 load r1, X         2 (load)     1      1     0     X:n osoite 
 
-    -- Lisää r2:n arvoon 6
+    -- Lisää r2:n arvoon luku 6
 add  r2, =6        17 (add)     2      0     0     6
 
     -- Kerro r4:n arvo muistissa olevan taulukon Tbl alkion i arvolla,
@@ -113,21 +145,22 @@ add  r2, =6        17 (add)     2      0     0     6
 mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
 
     -- Jaa r3:n arvo luvulla, jonka osoite on muistissa 
-    -- osoitinmuuttujan ptrX arvona.
+                              osoitinmuuttujan ptrX arvona.
     -- Osoitinmuuttujan ptrX osoite on sama kuin symbolin ptrX arvo.
 div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
 
     -- Hyppää osoitteeseen loop, jos r2:n arvo on <0.
-    -- silmukan loop osoite on sama kuin symbolin loop arvo
+    -- Silmukan loop osoite on sama kuin symbolin loop arvo
 jpos  r2, loop     35 (jpos)    2      0     0     loop'in osoite
 
     -- Talleta r2:n arvo muistissa olevan muuttujan Y arvoksi.
+    -- Rekisterin r2 arvo säilyy ennallaan.
     -- Muuttujan Y osoite on sama kuin symbolin Y arvo.
 store r2, Y        1 (store)    2      0     0     Y:n osoite 
 ```
 
 ### Tiedon tyypit
-Tietokone lukua (tietenkin) käsitellä kaiken tyyppistä tietoa. Suoritin ymmärtää kuitenkin vain muutamaa tietotyyppiä, joita varten on omat konekäskynsä. Kaikki muu tieto pitää kuvata näiden muutaman tietotyypin avulla. Sellaisen tiedon käsittely tapahtuu ohjelmallisesti, yleensä kutakin tietotyyppiä varten erikseen suunniteltujen aliohjelmien avulla.
+Tietokone osaa (tietenkin) käsitellä kaiken tyyppistä tietoa. Suoritin ymmärtää kuitenkin vain muutamaa tietotyyppiä, joita varten on omat konekäskynsä. Kaikki muu tieto pitää kuvata näiden muutaman tietotyypin avulla. Sellaisen tiedon käsittely tapahtuu ohjelmallisesti, yleensä kutakin tietotyyppiä varten erikseen suunniteltujen aliohjelmien avulla.
 
 _Kokonaisluvut_ ovat yleensä kaikissa suorittimissa. Useissa on kokonaislukuja muutamaa eri pituutta, esimerkiksi 8-, 16-, 32  ja 64-bittisiä. On ehkä yllättävää, että kaikki tietokoneella ratkaistavissa olevat ongelmat voidaan ratkaista pelkästään kokonaislukujen avulla. Se ei ole kuitenkaan yksinkertaisin tai tehokkain tapa.
 
@@ -144,7 +177,7 @@ Käsittelemme eri tyyppisten tietojen esitystapoja tarkemmin seuraavassa luvussa
 Esimerkkitietokoneessa ttk-91 on vain 32-bittisiä kokonaislukuja ja bittiesitysmuodon 32-bittisiä sanoja.
 
 ## Konekäskyt
-Käskykannassa on kullekin suorittimen ymmärtämälle tietotyypille sen ominaiset perusoperaatiot. Jos samasta tietotyypistä (esim. kokonaisluvut) on olemassa eri pituisia muotoja (esim. 8-, 16-, 32 ja 64-bittiä), niin tiedon pituus tulee koodata jollain tavoin. Pituus voi olla koodattu omalla operaatiokoodilla tai lisämääreellä. Lisäksi suorittimella on sekalainen joukko konekäskyjä suorittimen yleishallintoon ja käyttöjärjestelmän toimintojen tukemiseen.
+Käskykannassa on kullekin suorittimen ymmärtämälle tietotyypille sen ominaiset perusoperaatiot. Jos samasta tietotyypistä (esim. kokonaisluvut) on olemassa eri pituisia muotoja (esim. 8-, 16-, 32- ja 64-bittiset esitysmuodot), niin tiedon pituus tulee koodata jollain tavoin. Pituus voi olla koodattu omalla operaatiokoodilla tai lisämääreellä. Lisäksi suorittimella on sekalainen joukko konekäskyjä suorittimen yleishallintoon ja käyttöjärjestelmän toimintojen tukemiseen.
 
 ### Aritmetiikkakäskyt
 Aritmetiikkakäskyissä on mukana aina yhteenlasku, vähennyslasku ja kertolasku. Usein siellä on myös jakolasku, mutta ei aina. Joskus jakolasku toteutetaan kertomalla jaettava jakajan käänteisluvulla, koska se voi olla nopeampaa. Kokonaislukujen jakolaskusta voi tulla talteen myös jakojäännös, mutta usein se pitää kaivaa esiin omalla modulo-konekäskyllä (esim., MOD-käsky).
