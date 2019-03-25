@@ -105,7 +105,7 @@ Tietokoneissa voi myös olla erilaisia sensoreita, jotka keräävät tietoa ymp�
 
 Ihmisten kanssa suoritusaikana tapahtuva kommunikointi tehdään siis siihen sopivien oheislaitteiden avulla. Kaikki ihmisen syöttämä tieto siirretään oheislaitteelta (esim. näppäimisto tai hiiri) tietokoneen muistiin, josta ohjelma sen sitten saa käyttöönsä. Vastaavasti kaikki käyttäjälle annettava tieto talletetaan ensin muistiin, josta se sitten kopioidaan käyttäjän haluamalle oheislaitteelle (esim. näytölle tai kovaäänisiin). Kommunikointi muiden tietokoneiden kanssa tapahtuu samalla tavalla käyttäen niille sopivia oheislaitteita (esim. wifi'ä tai bluetooth'ia).
 
--- key-terminology
+<!-- key-terminology -->
 
 <text-box variant="example" name="Tärkeitä termejä">
 
