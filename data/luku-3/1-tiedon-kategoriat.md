@@ -131,7 +131,7 @@ Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esity
 <br><br>
 Tietokoneille on tyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. 
 
--- Quiz 3.1.1-7
+<!-- Quizes 3.1.1-7 -->
 <div><quiznator id="5bd9688383601b299c26828c"></quiznator></div>
 <div><quiznator id="5bd969b7b5cefd2a43d9affe"></quiznator></div>
 <div><quiznator id="5bd96ad88138f12a7e536f9d"></quiznator></div>
@@ -174,7 +174,7 @@ Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bit
 
 On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään tai halutaan tulkita. Konekielessä on omia konekäskyjä raakadatan (bitit ilman merkitystä) käsittelyyn (esim. SHL eli siirrä bittejä vasemmalle) ja omia konekäskyjä tiettyjen tietotyyppien käsittelyyn (esim. ADD eli kokonaislukujen yhteenlasku). Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä siihen tarkoitukseen sopivilla konekäskyillä.
 
--- Quizes 3.1.8-9. 
+<!-- Quizes 3.1.8-9 -->
 <div><quiznator id="5bd98c3be921f629a8dfd496"></quiznator></div>
 <div><quiznator id="5bd98d43b5cefd2a43d9b036"></quiznator></div>
 
@@ -244,5 +244,5 @@ Monitavuisen tiedon vaihtoehtoinen tavujärjestys. Vähiten merkitsevä tavu ens
 </text-box>
 
 
--- Quiz 3.1.10. 
+<!-- Quiz 3.1.10 -->
 <div><quiznator id="5bd9b2780f60f62a209d8bcf"></quiznator></div>
