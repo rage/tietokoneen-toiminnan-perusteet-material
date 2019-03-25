@@ -109,7 +109,7 @@ Ruokakaupassa myytävien tuotteet voisi olla hyvä koodata kokonaisluvuilla, jot
 
 Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska ainakin joskus on tarve esittää arvo plus (tai miinus) ääretön. Samoin rakkauden määrä voi kasvaa tai vähetä ihan pikkasenkin kerrallaan. Mahdollisia operaatioita olisivat esimerkiksi _AsetaRakkaudenMäärä()_, _LisääRakkaudenMäärää()_ ja _VähennäRakkaudenMäärää()_.
 
-<!-- Quizes 3.3.1-4  -->
+<!-- Quizes 3.4.1-4  -->
 <div><quiznator id="5bed3c6b2a799f3e5ac259a5"></quiznator></div>
 <div><quiznator id="5bed406ccd84693e7889a351"></quiznator></div>
 <div><quiznator id="5bed418c5695f73da1f7544d"></quiznator></div>
