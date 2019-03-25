@@ -1,6 +1,6 @@
 ---
 path: '/luku-1/1-mika-on-tietokone'
-title: 'Mikä on tietokone?'
+title: 'Tietokone'
 hidden: false
 ---
 
