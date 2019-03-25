@@ -69,7 +69,7 @@ Sovellusten ei tarvitse tietää, onko laiteajuri toteutettu omana prosessinaan 
 <illustrations motive="ch-4-3-ajuri-stub-etuoik-prosessi" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
--- Quizes 4.3.1-5. 
+<!-- Quizes 4.3.1-5 -->
 <div><quiznator id="5c35e4fdddb6b814af31d29d"></quiznator></div>
 <div><quiznator id="5c35e91e99236814c5bb3e64"></quiznator></div>
 <div><quiznator id="5c35eb1bfd9fd71425c5deff"></quiznator></div>
