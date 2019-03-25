@@ -128,7 +128,7 @@ Prosessin tila voi olla merkittynä sen kuvaajaan. Ennen kaikkea tila selviää 
 <illustrations motive="ch-4-2-prosessit-jonoissa" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
--- Quizes 4.2.1-10 
+<!-- Quizes 4.2.1-10 -->
 <div><quiznator id="5bfd2b5bfd6c3b3e161a21f6"></quiznator></div>
 <div><quiznator id="5bfd2c5d6484ed3e386c0d61"></quiznator></div>
 <div><quiznator id="5bfd2d6f2a799f3e5ac26fb0"></quiznator></div>
