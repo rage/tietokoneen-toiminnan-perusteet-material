@@ -313,16 +313,16 @@
        x="95.276878"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
        xml:space="preserve"><tspan
-         id="tspan1049">Ohjelman P näkemä</tspan><tspan
-         id="tspan1051">muistiavaruus</tspan></text>
+         id="tspan1093">Ohjelman P näkemä</tspan></text>
     <text
        id="text1511-0-5"
-       y="76.839119"
-       x="12.00906"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       y="78.955788"
+       x="13.067392"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
-         id="tspan1045">20 000</tspan><tspan
-         id="tspan1047">BASE</tspan></text>
+         y="78.955788"
+         x="13.067392"
+         id="tspan1068">BASE</tspan></text>
     <text
        id="text1511-0-3"
        y="101.09618"
@@ -621,5 +621,23 @@
        id="path1816-7-32-4"
        d="m 108.33337,128.33123 c -0.17681,13.84975 -0.17681,13.84975 -0.17681,13.84975"
        style="fill:none;stroke:#f1c5be;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.33,1.165;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3176)" />
+    <text
+       id="text1511-0-5-7"
+       y="73.805"
+       x="12.934537"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="73.805"
+         x="12.934537"
+         id="tspan1066">20 000</tspan></text>
+    <text
+       id="text1511-0-56"
+       y="38.425522"
+       x="95.273346"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="38.425522"
+         x="95.273346"
+         id="tspan1091">muistiavaruus</tspan></text>
   </g>
 </svg>
