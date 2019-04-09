@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    id="svg8"
    version="1.1"
-   viewBox="0 0 235.03189 143.56166"
+   viewBox="0 0 312.96576 143.56166"
    height="143.56166mm"
-   width="235.03189mm">
+   width="312.96576mm">
   <defs
      id="defs2" />
   <metadata
@@ -25,15 +25,15 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(11.682618,-3.3034592)"
+     transform="translate(48.724286,-3.3034592)"
      id="layer1">
     <rect
        y="3.4444592"
-       x="-11.541618"
+       x="-48.583286"
        height="143.27966"
-       width="234.74989"
+       width="312.68375"
        id="rect4778"
-       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.282;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:0.28200001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="rect3713"
        d="M 13.764718,22.714831 V 91.97913 h 84.27584 V 22.714831 Z"
