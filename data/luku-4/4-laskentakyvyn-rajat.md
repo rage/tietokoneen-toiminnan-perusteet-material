@@ -40,7 +40,7 @@ Voimme myös todistaa, että on olemassa ongelmia, joita ei voi ratkaista millä
 
 Ongelmia voidaan myös luokitella. Suuri joukko tunnettuja optimointiongelmia ovat sellaisia, että emme oikeastaan vielä tiedä kuinka vaikeita ne ovat. Jos johonkin niistä löytyy joskus hyvä ratkaisu, niin sitten löytyy niihin muihinkin. Mutta toistaiseksi ratkaisua ei ole löytynyt. Mutta toisaalta ei ole löytynyt todistustakaan siitä, että tuollaista hyvää ratkaisua ei voisi löytää. Jos työantajasi pyytää sinulta ratkaisua vähän vaiampaan ongelmaan, voi olla noloa sanoa kahden viikon työrupeaman jälkeen, että "en minä osaa". Jos kyseessä on joku variantti noista tunnetuista optimointiongelmista, on paljon mukavampi pystyä sanomaan, että "en minä osaa, mutta ei osaa kukaan muukaan koko maailmassa!".
 
-### Yhteenveto
+## Yhteenveto
 Neljäs luku esitteli käyttöjärjestelmien perusasiat. Esittelimme ensin käyttöjärjestelmän tehtäväalueet. Seuraavaksi tutustuimme prosessin käsitteeseen. Prosessi ovat suoritettavien ohjelmien esitysmuotoja järjestelmässä ja kaikki laskenta järjestelmässä tapahtuu prosessien kautta. Näytimme myös, kuinka käyttöjärjestelmä voidaan toteuttaa eri tavoin kutsuttavien aliohjelmien ja prosessien avulla. Lopuksi esittelimme pintapuolisesti, kuinka tietokonejärjestelmien laskentakyvyn rajoja voidaan päätellä tutkimalla kokonaislukuarvoisia funktioita ja niiden ominaisuuksia.
 
 Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
