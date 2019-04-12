@@ -31,7 +31,7 @@ Pikosekunti = 1 ps = 0.000 000 000 001 sekuntia."
 
 Vaikka tietokonelaitteistoja kehitetään nopeammiksi koko ajan ja nykyisetkin laitteistot ovat kovin erilaisia keskenään, niin jonkinlaisia suuntaa antavia nopeuksia voidaan silti antaa. Ajatellaan esimerkiksi tilannetta, jossa haluamme lukea muuttujan X arvon. Jos arvo on suorittimen rekisterissä, siihen voisi kulua vaikkapa 1 ns. Vastaavasti sen saantiaika välimuistista voisi olla 4 ns, keskusmuistista 50 ns, [SSD](https://fi.wikipedia.org/wiki/SSD)-muistista 100 µs, kovalevyltä 10 ms ja internetpalvelimelta [Rio de Janeirosta](https://fi.wikipedia.org/wiki/Rio_de_Janeiro) 10 sekuntia.
 
-### Juustokakkuesimerkki
+## Juustokakkuesimerkki
 Laitteiston ja koko tietokonejärjestelmän nopeuseroja voi illustroida Teemun juustokakkuesimerkillä. Esimerkki on vähän lapsellinen, mutta koeta kestää.
 
 <!-- juustokakku kuva ch-1-3-juustokakku -->
@@ -47,7 +47,7 @@ Jos taas Teemu oli kokonaan unohtanut juuston eikä sitä löydy kaupoistakaan, 
 
 Entä jos käy niin onnettomasti, että Tiina palaa kuusta tyhjin käsin kun sieltäkin oli juusto loppu? Nyt lähetetään Teemun toinen astronauttikaveri Arto etsimään juustoa Jupiterin [Europa](https://fi.wikipedia.org/wiki/Europa_(kuu))-kuusta. Arto on hyvää pataa [SpaceX](https://www.spacex.com/):n kanssa ja saa heiltä lainaksi [ITS](https://en.wikipedia.org/wiki/Interplanetary_Transport_System)-aluksen, joka lähetetään liikkeelle [BFR](https://en.wikipedia.org/wiki/BFR_(rocket))-raketilla. Matka kestää nelisen vuotta ja suurimpana riskinä on, että minkälaista juustoa Europa oikeastaan on. Se näyttää siniseltä, joten juusto voisi olla [Aura](https://fi.wikipedia.org/wiki/Aura_(juusto))-juustoa, mikä ei taas sovi Teemun reseptiin. Vaikeaksi menee.
 
-### Nopeuserojen vaikutus
+## Nopeuserojen vaikutus
 Juustokakkuesimerkin mukaiset valtaisat nopeuserot ovat normaaleja tietokoneissa. Konekäskyjä suoritetaan ns-aikaskaalassa ("juusto kädessä"), kun ihmisen kanssa kommunikoidaan sekunnin aikaskaalassa ("juusto Europa'ssa"). Sekunnissa on tuhat miljoonaa (1&nbsp;000&nbsp;000&nbsp;000) nanosekuntia. Yhden sekunnin aikana hyvä tietokone voi siis suorittaa miljardi konekäskyä. Jotkut tietokoneet ovat vielä nopeampia, koska ne suorittavat useaa konekäskyä samanaikaisesti. Jotkut tietokoneet ovat taas paljon hitaampia, koska se riittää niiden käyttötarkoitukseen.
 
 Kuhunkin käyttötarkoitukseen on hyvä hankkia siihen sopiva järjestelmä. Esimerkiksi himopelaaja tarvitsee vähän paremman tietokoneen, koska pelien virtuaalitodellisuuden luominen teräväpiirtonäyttöjä varten vaatii paljon laskentatehoa. Pelkkään tekstin käsittelyyn ja verkkosurfaukseen riittää huomattavasti pelkistetympi laitteisto. Huippunopean koneen ostaminen sähköpostin lukemista varten on rahan heittämistä hukkaan. Toisaalta, eihän ihmiset osta [Ferrareitakaan](https://fi.wikipedia.org/wiki/Ferrari) vain sen takia, että niillä voisi ajaa kovaa. Jotkut saavat hyvän mielen ihan hienon laitteiston omistamisesta. Yritysmaailmassa näin ei tietenkään toimita. Jos joku on sijoittanut 20 000€ huippunopeaan laitteistoon kun 1 000€ maksava tavallinen PC olisi riittänyt, niin se ei tiedä hyvää urakehitykselle.
@@ -60,7 +60,7 @@ Internetin pilvipalvelut ja ihminen ovat sitten taas noin tuhat kertaa kovalevy�
 
 Älä tuijota liikaa juustokakkuesimerkin numeroarvoihin. Numeroarvot muuttuvat koko ajan teknologian kehittyessä ja eri laitteistoissa on muutenkin valtavia nopeuseroja. Suuruusluokkaerot ovat tärkeitä. Nopeuskuilu rekistereiden ja muistin välillä on vain kasvanut viime vuosina. Vastaavasti nopeuskuilu muistin ja levymuistin välillä on pysynyt suunnilleen samana, mutta viime aikoina yleistynyt nopeampi SSD-muisti massamuistina muuttaa järjestelmää jonkin verran. Toisaalta taas pilvipalveluiden yleistyminen on johtanut siihen, että järjestelmän massamuisti voi olla pilvessä. Me ihmiset emme ole muuttuneet mihinkään, joten käyttäjältä vastauksen saaminen kestää edelleenkin sekunteja. Tosin graafisen käyttöliittymän kautta ihminenkin voi syöttää suuren määrän tietoa nopeasti.
 
-### Nopeuseroihin sopeutuminen
+## Nopeuseroihin sopeutuminen
 Erilaisten muistiteknologioiden suuret nopeuserot ovat vaikuttaneet ja vaikuttavat edelleenkin tietokoneiden ja käyttöjärjestelmien kehitykseen huomattavasti. Laitteistossa automaattisesti toimivat [välimuistit](https://fi.wikipedia.org/wiki/V%C3%A4limuisti) ovat ratkaisu suorittimen rekistereiden ja keskusmuistin välisen nopeuseron tuomiiin ongelmiin. Nopeusero on vain kasvanut ja nyt välimuisteja on tehokkaissa koneissa jo kolmessa tai jopa neljässä eri tasossa. Välimuisteilla ohjelma saa käyttöönsä näennäisen muistialueen, joka on yhtä suuri kuin keskusmuisti, mutta lähes yhtä nopea kuin suorittimen rekisterit.
 
 Vielä suurempi nopeusero keskusmuistin ja erilaisten massamuistien välillä on johtanut käyttöjärjestelmissä [virtuaalimuistin](https://fi.wikipedia.org/wiki/N%C3%A4enn%C3%A4ismuisti) kehittämiseen. Sen avulla saadaan ohjelman käyttöön näennäinen (virtuaalinen) muistialue, joka parhaimmillaan on yhtä suuri kuin massamuisti, mutta lähes yhtä nopea kuin keskusmuisti. Virtuaalimuisti nopeuttaa näin ohjelmakoodin ja ohjelman tekemien dataviittausten nopeutta huomattavasti. Tiedostojen osalta keskusmuistissa pidettävä [levyvälimuisti](https://fi.wikipedia.org/wiki/V%C3%A4limuisti) ratkoo tätä samaa ongelmaa pitämällä keskusmuistissa kopioita juuri nyt käytössä olevista massamuistin tiedostoista.
@@ -90,7 +90,7 @@ Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nop
 
 <!-- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary -->
 
-### Yhteenveto
+## Yhteenveto
 Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen luvun tehtävien kanssa.
