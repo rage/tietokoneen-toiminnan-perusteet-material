@@ -115,7 +115,7 @@ Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska 
 <div><quiznator id="5bed418c5695f73da1f7544d"></quiznator></div>
 <div><quiznator id="5bed47c75695f73da1f75459"></quiznator></div>
 
-### Yhteenveto
+## Yhteenveto
 Kolmas luku käsitteli tiedon erilaisia esitysmuotoja. Käsittelimme tarkemmin neljä erilaista kokonaislukujen esitysmuotoa ja IEEE:n standardin mukaista liukulukujen 32-bittistä esitysmuotoa. Sen jälkeen tutustuimme merkkien ja merkkijonojen esitysmuotoihin. Kävimme sitten lyhyesti läpi (moniulotteisten) taulukoiden ja tietueiden toteutuksen. Lopuksi esittelimme pääperiaatteet kuvien, äänten ja kaiken muun tyyppisen tiedon esitystapoihin.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
