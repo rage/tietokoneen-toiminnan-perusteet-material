@@ -117,41 +117,9 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 <div><quiznator id="5c504bdcddb6b814af321701"></quiznator></div>
 
 
-### Yhteenveto
+## Yhteenveto
 Toinen luku käsitteli suorittimen ja muistin toimintaa. Aluksi katsoimme vähän tarkemmin suorittimen rakennetta ja erityisesti sen toimintaa käskyjen nouto- ja suoritussyklin toteuttajana. Sen jälkeen tarkastelimme konekäskyjen eri tyyppejä ja rakennetta. Lopuksi katsoimme, kuinka tiedon sijainti suoritusaikana voi vaihdella ja kuinka se vaikuttaa ohjelmien suoritusnopeuteen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
 <div><quiznator id="5c66b17199236814c5bbb972"></quiznator></div>
 
-
-<!--
-<div>
-  <part-summary chapter="2" heading="Käytyäsi nyt läpi luvun 2 sinun pitäisi osata karkealla tasolla selittää,"
-listitems='[
-  {"content":"Miksi rekistereitä on niin vähän? "},
-  {"content":"Mitä konekäskyssä viitattavia rekistereitä ttk-91:ssä on? "},
-  {"content":"Mikä on ALU:n tehtävä suorittimella? "},
-  {"content":"Mikä on kontrolliyksikön tehtävä suorittimella? Mitä rekistereitä siinä on? "},
-  {"content":"Miksi välimuisti on olemassa ja mitä hyötyä siitä on? "},
-  {"content":"Minkä ongelman käskyjen nouto- ja suoritussykli ratkaisee? "},
-  {"content":"Mitä tapahtuu käskyn nouto- ja suoritussyklin eri vaiheissa? "},
-  {"content":"Missä kaikkialla tapahtuu muistiviitteitä käskyjen nouto- ja suoritussyklissä? "},
-  {"content":"Miten on toteutettu muistin suojaus siten, että suoritettava ohjelma ei pääse sotkemaan muiden ohjelmien tai käyttöjärjestelmän tietoja? "},
-  {"content":"Minkä tyyppisiä konekäskyjä on olemassa? "},
-  {"content":"Moneenko eri tietoon yhdessä konekäskyssä voi viitata? "},
-  {"content":"Miten aritmeettiset lausekkeet toteutetaan konekielellä? "},
-  {"content":"Miten for-silmukka toteutetaan konekielellä? "},
-  {"content":"Miten käyttöjärjestelmäpalvelun kutsu toteutetaan konekielellä? "},
-  {"content":"Mitä hyötyä on etuoikeutetusta suoritustilasta? "},
-  {"content":"Miten etuoikeutettuun suoritustilaan pääsee ja miten sieltä pääsee pois? "},
-  {"content":"Miksi keskeytyksiä tarvitaan ja minkälaisia keskeytyksiä on olemassa? "},
-  {"content":"Miten keskeytykset käsitellään käskyjen nouto- ja suoritussyklissä? "},
-  {"content":"Miten keskeytykset käsitellään käyttöjärjestelmän tasolla? "},
-  {"content":"Mitä tapahtuu, jos tulee jokin yllättävä keskeytys? "},
-  {"content":"Missä kaikkialla tieto voi sijaita yhden konekäskyn suorituksen aikana? "},
-  {"content":"Kuka päättää, missä konekäskyssä viitattava tieto sijaitsee? "},
-  {"content":"Miksi konekäskyssä viitattava tieto ei voi sijaita massamuistissa tai verkossa? "}
-    ]'>
-  </part-summary>
-</div>
--->
