@@ -262,7 +262,7 @@
        height="206.86662"
        width="210.60838"
        id="rect9776"
-       style="opacity:1;fill:#fffec3;fill-opacity:1;stroke:#ac2121;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.05833326, 1.05833326;stroke-dashoffset:0;stroke-opacity:1" />
+       style="opacity:1;fill:#fffec3;fill-opacity:1;stroke:#170a0a;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
     <rect
        y="48.706608"
        x="45.030205"
@@ -311,8 +311,10 @@
        id="text1511-0"
        y="33.210354"
        x="95.276878"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
+         y="33.210354"
+         x="95.276878"
          id="tspan1093">Ohjelman P näkemä</tspan></text>
     <text
        id="text1511-0-5"
@@ -393,7 +395,7 @@
        id="text1511-0-97-0"
        y="16.63364"
        x="45.658154"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="16.63364"
          x="45.658154"
@@ -616,11 +618,11 @@
     <path
        id="path1816-7-32"
        d="m 117.33842,162.09791 c -0.17681,-12.73449 -0.17681,-12.73449 -0.17681,-12.73449"
-       style="fill:none;stroke:#f4955c;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.33,1.165;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3420)" />
+       style="fill:none;stroke:#f4955c;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.33, 1.165;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3420)" />
     <path
        id="path1816-7-32-4"
        d="m 108.33337,128.33123 c -0.17681,13.84975 -0.17681,13.84975 -0.17681,13.84975"
-       style="fill:none;stroke:#f1c5be;stroke-width:1.165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.33,1.165;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3176)" />
+       style="fill:none;stroke:#f1c5be;stroke-width:1.16499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.33, 1.165;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker3176)" />
     <text
        id="text1511-0-5-7"
        y="73.805"
