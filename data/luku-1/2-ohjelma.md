@@ -172,7 +172,7 @@ Kääntäjät, linkittäjät ja lataajat ovat ihan tavallisia ohjelmia ja ne sis
 ### Tulkittavat ohjelmointikielet
 Jotkut ohjelmointikielistä ovat ns. tulkittavia kieliä. Se tarkoittaa, että niillä kirjoitettuja ohjelmia ei käännetäkään suorituksen tekevän tietokoneen omalle konekielelle vaan ne annetaan jollekin toiselle ohjelmalle (tulkille) suoraan tai vähän muokattuna syötteenä. Esimerkkinä tällaisesta tulkittavasta korkean tason ohjelmointikielestä on [Python](https://fi.wikipedia.org/wiki/Ohjelmointikielen_tulkki). Python-tulkki on tässä tilanteessa se varsinainen tietokoneella suoritettava ohjelma ja sinun Pythonilla kirjoittama ohjelmasi vain tekstimuotoista dataa (syötettä) Python-tulkille. Python-tulkki taas on ihan tavallinen (esim.) C-kielellä kirjoitettu ohjelma. Tosin on olemassa myös Python-tulkki [PyPy](https://www.wikiwand.com/fi/PyPy), joka on kirjoitettu Pythonilla itsellään! Sehän on vähän sama kuin että ranskan kielen oppikirja olisi kirjoitettu vain ranskan kielellä ilman mitään sanastoa. Ei ihan helppoa!
 
-Kun Python-tulkki (prosessi PT) suorittaa (ks. seuraava kuva) suorittaa Python ohjelmaa (P), niin käyttäjästä tuntuu ihan siltä, että tietokone osaisi suorittaa Python-ohjelmia. Näinhän se tavallaan onkin, mutta tälläkin kertaa varsinainen älykkyys ja osaaminen on ohjelmassa (Python-tulkissa). Todellisen konekielisen ohjelman tapauksessa (ks. edellinen kuva) tietokoneen suoritin itsessään osaa suorittaa konekielisen ohjelman konekäskyjä ja siinä on suuri ero!
+Kun Python-tulkki (prosessi PT) suorittaa (ks. seuraava kuva) suorittaa Python ohjelmaa (P), niin käyttäjästä tuntuu ihan siltä, että tietokone osaisi suorittaa Python-ohjelmia. Näinhän se tavallaan onkin, mutta tälläkin kertaa varsinainen älykkyys ja osaaminen on järjestelmässä suorituksessa olevassa Python-tulkissa (PT). Todellisen konekielisen ohjelman tapauksessa (ks. edellinen kuva) tietokoneen suoritin itsessään osaa suorittaa konekielisen ohjelman konekäskyjä ja siinä on suuri ero!
 
 <!-- kuva Python ohjelma, tulkki, tietokone, ch-1-2-python-tulkki -->
 
@@ -183,7 +183,7 @@ Kun Python-tulkki (prosessi PT) suorittaa (ks. seuraava kuva) suorittaa Python o
 
 Toinen esimerkki tulkin käytöstä on Java-ohjelmien kääntäminen ns. [tavukoodiksi](https://fi.wikipedia.org/wiki/Tavukoodi) (byte-code), jota voi sitten suorittaa tulkitsemalla Java-virtuaalikoneessa ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)). Javan tavukoodi on hypoteettisen (ei todellisen, suunnitellun?) tietokoneen (JVM) konekieltä, mikä on hyvin erilaista kuin järjestelmän oman suorittimen konekieli. JVM:lle ei voi antaa siinä suoritettavaa ohjelmaa suoraan Javalla kirjoitettuna, vaan suoritettava Java-ohjelma on aina ensin käännettävä tavukoodiksi.
 
-Myös tässä tapauksessa käyttäjällä on mielikuva ja tuntuma, että tietokone osaa suorittaa Java-ohjelmia (ks. seuraava kuva). Nyt tämän harhakuvan saa aikaa kaksi erillistä ohjelmaa. Ensin yksi ohjelma kääntää etukäteen Java-kielisen ohjelman (P) Javan tavukoodiksi ja sitten toinen ohjelma (JVM) suoritusaikana [emuloi](https://fi.wiktionary.org/wiki/emuloida) (jäljittelee) hypoteettistä Java-virtuaalikonetta. Käyttäjälle voi helposti jäädä mielikuva, että tietokone osaa suorittaa Java-ohjelmia, vaikka suorituksen tekee oikeasti tietokoneessa ajettava ohjelma (JVM). On tärkeää erotella se, mitä tietokonejärjestelmä eri ohjelmien avustuksella osaa tehdä, siitä, mitä suoritin itse osaa tehdä. Järjestelmän älykkyys on siinä suoritettavissa ohjelmissa ja ohjelmia voi suorittaa joko suoraan suorittimella tai tulkitsemalla (emuloimalla) niitä muiden ohjelmien avustuksella.
+Myös tässä tapauksessa käyttäjällä on mielikuva ja tuntuma, että tietokone osaa suorittaa Java-ohjelmia (ks. seuraava kuva). Nyt tämän harhakuvan saa aikaa kaksi erillistä ohjelmaa. Ensin yksi ohjelma kääntää etukäteen Java-kielisen ohjelman (P) Javan tavukoodiksi ja sitten toinen ohjelma (JVM) suoritusaikana [emuloi](https://fi.wiktionary.org/wiki/emuloida) (jäljittelee) hypoteettistä Java-virtuaalikonetta, joka suorittaa ohjelman P tavukoodisia käskyjä yksi kerrallaan. Käyttäjälle voi helposti jäädä mielikuva, että tietokone osaa suorittaa Java-ohjelmia, vaikka suorituksen tekee oikeasti järjestelmässä ajettava ohjelma (JVM). 
 
 <!-- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM -->
 
@@ -191,6 +191,8 @@ Myös tässä tapauksessa käyttäjällä on mielikuva ja tuntuma, että tietoko
 <div>
 <illustrations motive="ch-1-2-JVM" frombottom="0" totalheight="100%"></illustrations>
 </div>
+
+On tärkeää erotella se, mitä tietokonejärjestelmä eri ohjelmien avustuksella osaa tehdä, siitä, mitä suoritin itse osaa tehdä. Järjestelmän älykkyys on siinä suoritettavissa ohjelmissa ja ohjelmia voi suorittaa joko suoraan suorittimella tai tulkitsemalla (emuloimalla) niitä muiden ohjelmien avustuksella.
 
 On olemassa tavukoodikääntäjiä myös muille ohjelmointikielille (esimerkiksi Pythonille), jolloin niilläkin kirjoitetut ohjelmat voidaan suorittaa JVM:ssä. Yhden ohjelman eri osat voi täten olla helposti toteutettuna juuri niihin osiin parhaiten sopivilla ohjelmointikielillä. Tässäkin tilanteessa varsinainen suorituksessa oleva ohjelma on JVM, joka lukee tavukoodia syötteenään.
 
