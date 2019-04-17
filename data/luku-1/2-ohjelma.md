@@ -8,7 +8,7 @@ title: 'Ohjelma'
 </div>
 
 ## Ohjelma
-[Ohjelma](https://www.wikiwand.com/fi/Tietokoneohjelma) on jonkin ongelman [algoritmin](https://fi.wikipedia.org/wiki/Algoritmi) avulla kuvattu ratkaisu. Siinä on joukko askelia, jotka järjestyksessä suoritettuina antavat ongelman ratkaisun. Ruokareseptit ovat hyviä esimerkkejä algoritmeista, vaikka tietokoneet niitä yleensä eivät voi suoraan suorittaa. Robotit kyllä osaavat, mutta robotteja ohjaavat algoritmit ne vasta monimutkaisia ovatkin.
+[Ohjelma](https://fi.wikipedia.org/wiki/Ohjelma) on jonkin ongelman [algoritmin](https://fi.wikipedia.org/wiki/Algoritmi) avulla kuvattu ratkaisu. Siinä on joukko askelia, jotka järjestyksessä suoritettuina antavat ongelman ratkaisun. Ruokareseptit ovat hyviä esimerkkejä algoritmeista, vaikka tietokoneet niitä yleensä eivät voi suoraan suorittaa. Robotit kyllä osaavat, mutta robotteja ohjaavat algoritmit ne vasta monimutkaisia ovatkin.
 
 ```
 Algoritmi juustokakun tekemiseksi
