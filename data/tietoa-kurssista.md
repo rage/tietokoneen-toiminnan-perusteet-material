@@ -21,7 +21,7 @@ Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materi
 Kukin oppilaitos voi itse määritellä, millä tavoin tämän [MOOC](https://mooc.fi/) kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
 
 ### Avoimen yliopiston kurssina
-Avoimen yliopiston kurssina tai osana DEFA-opintoja ([Digital Education For All](https://www.helsinki.fi/fi/projektit/digital-education-for-all)). Katso tarkemmat tiedot Avoimen yliopiston [verkkosivuilta](https://www.helsinki.fi/fi/avoin-yliopisto).
+Avoimen yliopiston kurssina tai osana DEFA-opintoja ([Digital Education For All](https://www.helsinki.fi/fi/projektit/digital-education-for-all)). Katso tarkemmat tiedot Avoimen yliopiston [verkkosivuilta](https://www.helsinki.fi/fi/avoin-yliopisto). Kurssille täytyy ilmoittautua Avoimen yliopiston ohjeiden mukaisesti. Jos kurssi toteutetaan ilman koetta, sen suorituksesta ei saa arvosanaa ja hyväksytty suoritus vaatii noin puolet oikeita vastauksia Quiz-tehtävistä. Jos kurssiin sisältyy koe, niin kokeen perusteella hyväksytyt saavat kurssista arvosanan 1-5.
 
 ### Helsingin yliopiston kurssina
 Tietokoneen toiminnan perusteet (2 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita.
