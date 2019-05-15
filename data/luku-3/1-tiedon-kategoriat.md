@@ -31,7 +31,6 @@ Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-j
 <!-- binääriluku esim -->
 
 <pre>
-
   11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
   219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
 </pre>
@@ -44,11 +43,10 @@ Vastavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaal
 <!-- binääripiste esim -->
 
 <pre>
-
   11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
                = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
 
-  219.65625<sub>10</sub> = 2\*10<sup>2</sup>+1\*10<sup>1</sup>+9\*10<sup>0</sup>+6\*10<sup>-1</sup>+5\*10<sup>-2</sup>+6\*10<sup>+3</sup> + 2\*10<sup>-4</sup> +  5\*10<sup>-5</sup>
+  219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>-3</sup> + 2*10<sup>-4</sup> + 5*10<sup>-5</sup>
           = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
 </pre>
 
@@ -60,7 +58,6 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 <!-- kuva: 57 binäärilukuna -->
 
 <pre>
-
   Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna? 
   
   57/2 = 28 jakojäännos 1
@@ -69,7 +66,6 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
    7/2 =  3 jakojäännös 1
    3/2 =  1 jakojäännös 1
    1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
-   
 </pre>
 
 Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla tuloksen kokonaisosa (0 tai 1) talteen _seuraavana_ binääriosan numerona, ja toistamalla tätä (pelkän desimaaliosan kertomista kahdella) tarpeeksi monta kertaa. Algoritmi päättyy, jos desimaaliosaksi tulee nolla (0.0), koska sen jälkeen tilanne ei muutu mihinkään. Usein algoritmi ei pääty koskaan, koska kaikilla desimaaliluvuilla ei ole täsmällistä vastinetta binäärijärjestelmässä. Tällöin tyydytään etukäteen määriteltyyn tarkkuuteen binääriosan numeroiden lukumäärän suhteen. Esimerkiksi voidaan jo alkuaan sopia, että otetaan korkeintaan 30 numeroa mukaan binääriosaan, jolloin binääriluvun tarkkuus vastaa noin 9 desimaalinumeron tarkkuutta.
@@ -77,13 +73,11 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 <!-- esim. desimaaliosasta binääriosa -->
 
 <pre>
-
   Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna? <br>
-  0.1875 \* 2 = 0.375 = 0 + 0.375
-  0.375  \* 2 = 0.75  = 0 + 0.75
-  0.75   \* 2 = 1.5   = 1 + 0.5
-  0.5    \* 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
-  
+  0.1875 * 2 = 0.375 = 0 + 0.375
+  0.375  * 2 = 0.75  = 0 + 0.75
+  0.75   * 2 = 1.5   = 1 + 0.5
+  0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
 </pre>
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
@@ -104,22 +98,20 @@ Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon la
 <!--  esim. päättymätön binääriosa -->
 
 <pre>
-
   Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?
   
-  0.1 \* 2 = 0.2 = 0 + 0.2
-  0.2 \* 2 = 0.4 = 0 + 0.4
-  0.4 \* 2 = 0.8 = 0 + 0.8
-  0.8 \* 2 = 1.6 = 1 + 0.6
-  0.6 \* 2 = 1.2 = 1 + 0.2
-  0.2 \* 2 = 0.4 = 0 + 0.4
-  0.4 \* 2 = 0.8 = 0 + 0.8
-  0.8 \* 2 = 1.6 = 1 + 0.6
-  0.6 \* 2 = 1.2 = 1 + 0.2
-  0.2 \* 2 = 0.4 = 0 + 0.4, jne
+  0.1 * 2 = 0.2 = 0 + 0.2
+  0.2 * 2 = 0.4 = 0 + 0.4
+  0.4 * 2 = 0.8 = 0 + 0.8
+  0.8 * 2 = 1.6 = 1 + 0.6
+  0.6 * 2 = 1.2 = 1 + 0.2
+  0.2 * 2 = 0.4 = 0 + 0.4
+  0.4 * 2 = 0.8 = 0 + 0.8
+  0.8 * 2 = 1.6 = 1 + 0.6
+  0.6 * 2 = 1.2 = 1 + 0.2
+  0.2 * 2 = 0.4 = 0 + 0.4, jne
 
   Nyt,  0.1<sub>10</sub> = 0.0001100110011..<sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
-  
 </pre>
 
 Alleviivausmerkintä luvussa 0.0<u>0011</u><sub>2</sub> tarkoittaa jaksollisuutta,
