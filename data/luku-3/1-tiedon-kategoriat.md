@@ -119,7 +119,7 @@ jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
 jos luvusta 0.1<sub>10</sub> halutaan 30 bitin binääriosainen binääriesitys, niin se olisi
 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub>.
 <br><br>
-Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama (noin 20 binäärinumeroa) kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub> tarkkuus (noin 3 binäärinumeroa). 
+Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama (noin 20 binäärinumeroa) kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;10<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub> tarkkuus (noin 3 binäärinumeroa). 
 <br><br>
 Tietokoneille on tyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. 
 
@@ -140,7 +140,7 @@ Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A,
 <!-- esim: hexadesimaaliluku -->
 
 <pre>
-  30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768+64+5 = 837
+  30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768 + 64 + 5 = 837
 </pre>
 
 
