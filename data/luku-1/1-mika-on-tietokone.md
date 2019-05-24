@@ -14,7 +14,6 @@ Lähtötietoina kurssin osallistujilta oletetaan, että heillä olisi karkeasti 
 </div>
 
 ## Tietokone
-
 Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ovat [pöytäkoneet](https://fi.wikipedia.org/wiki/P%C3%B6yt%C3%A4tietokone), [läppärit](https://fi.wikipedia.org/wiki/Kannettava_tietokone) ja [tabletit](https://fi.wikipedia.org/wiki/Taulutietokone). Mutta myös [älypuhelimet](https://fi.wikipedia.org/wiki/%C3%84lypuhelin), [navigaattorit](https://fi.wikipedia.org/wiki/GPS-navigointilaite) ja erilaiset urheilukellot ovat tietokoneita. Kodin pöydällä oleva sisä- ja ulkolämpötilan näyttävä lämpömittari voi olla tietokone, kun taas sen ulkona oleva anturi ei sellainen ole. Toisaalta taas, lämpömittari voi paremminkin olla ns. [sulautettu järjestelmä](https://fi.wikipedia.org/wiki/Sulautettu_j%C3%A4rjestelm%C3%A4), jossa  tietokone on vain tapa toteuttaa toimintalogiikka [mikropiirien](https://fi.wikipedia.org/wiki/Mikropiiri) asemesta. Tässä  mielessä älypuhelinkin on sulautettu järjestelmä. Sen voi mieltää olevan myös ihan täysverinen tietokone, koska siihen voi käyttäjä ladata suoritettavaksi uusia ohjelmia. Suuria  sulautettuja järjestelmiä ovat esimerkiksi pankkiautomaatit, matkustajalentokoneiden ohjausjärjestelmät ja voimalaitosten kontrollijärjestelmät. Tällaisten järjestelmien päätarkoitus ei ole tiedon prosessointi, vaan tietokone on ainoastaan pienehkö mutta tärkeä osa kokonaisjärjestelmää.
 
 <!-- Kuva:  ch-1-1-erilaiset-tietokoneet -->
