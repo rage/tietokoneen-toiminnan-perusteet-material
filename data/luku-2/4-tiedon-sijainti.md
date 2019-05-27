@@ -126,7 +126,6 @@ ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suomessa rakenn
 <div>
 <illustrations motive="ch-2-4-esko"></illustrations>
 </div>
-ESKO Tekniikan museossa Helsingissä. Photo Teemu Kerola.
 
 </text-box>
 
