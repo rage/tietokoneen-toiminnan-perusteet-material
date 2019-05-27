@@ -131,20 +131,6 @@ Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikoi
 
 </text-box>
 
-<text-box variant="example" name="Historiaa:  Z1">
-  
-Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeastaan laskin, jolle ohjelma syötettiin reikänauhalta. Laitteisto toimi kampea kääntämällä ja siinä oli 64 sanan (á 24 bittiä) muisti. Kertolaskuun kului noin 5 sekuntia. 
-
-<!-- kuva: ch-1-3-z1    -->
-
-![Kolme valukuvaa Z1 replikasta Berliinin tiedemuseossa. Alkuperäinen tuhoutui Berliin pommituksissa 1943. Ylhäällä yleiskuva laitteistoissa monine hammasrattaineen. Alhaalla vasemmalla kuva ohjelman sisältävästä reikänauhasta ja oikealla kuva mekaanisista biteistä.](./ch-1-3-z1.svg)
-<div>
-<illustrations motive="ch-1-3-z1"></illustrations>
-</div>
-Photo Teemu Kerola
-
-</text-box>
-
 
 <!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
 
