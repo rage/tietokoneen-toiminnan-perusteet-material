@@ -96,7 +96,7 @@ Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeast
 
 <!-- kuva: ch-1-3-z1    -->
 
-![Kolme valukuvaa Z1 replikasta Berliinin tiedemuseossa. Alkuperäinen tuhoutui Berliin pommituksissa 1943. Ylhäällä yleiskuva laitteistoissa monine hammasrattaineen. Alhaalla vasemmalla kuva ohjelman sisältävästä reikänauhasta ja oikealla kuva mekaanisista biteistä.](./ch-1-3-z1.svg)
+![Kolme valokuvaa Z1 replikasta Berliinin tiedemuseossa. Alkuperäinen Z1 tuhoutui Berliin pommituksissa 1943. Ylhäällä yleiskuva laitteistoissa monine hammasrattaineen. Alhaalla vasemmalla kuva ohjelman sisältävästä reikänauhasta ja oikealla kuva mekaanisista biteistä.](./ch-1-3-z1.svg)
 <div>
 <illustrations motive="ch-1-3-z1"></illustrations>
 </div>
