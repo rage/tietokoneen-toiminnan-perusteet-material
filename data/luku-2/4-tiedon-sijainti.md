@@ -116,6 +116,19 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 <div><quiznator id="5c504b79c41ed4148d96ac81"></quiznator></div>
 <div><quiznator id="5c504bdcddb6b814af321701"></quiznator></div>
 
+<text-box variant="example" name="Historiaa:  ESKO">
+  
+ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suoemsa rakennettu tietokone. Se oli vanhentunut jo valmistuessaan ja suoritti noin 20 yhteenlaskua sekunnissa. Ohjelmakoodi luettiin reikänauhoilta. Aliohjelmaa kutsuttiin siirtämällä kontrolli sitä vastaavaan reikänauhan lukijaan, jossa aliohjelman koodi oli reikänauhalla ikuisessa silmukassa. Muistina oli 1840 sanan rumpumuisti. ESKOn varsinainen arvo oli tuoda tietotekniikan osaamista Suomeen.
+
+<!-- kuva: ch-2-4-esko    -->
+
+![Kaksi valokuvaa. Vasemmalla ESKO kokonaisuudessaan ja sen edessä muistina toimiva rumpumuisti ja reikänauhan lukijat. Oikealla on lähikuva reikänauhan lukijoista.](./ch-2-4-esko.svg)
+<div>
+<illustrations motive="ch-2-4-esko"></illustrations>
+</div>
+ESKO Tekniikan museossa Helsingissä. Photo Teemu Kerola.
+
+</text-box>
 
 ## Yhteenveto
 Toinen luku käsitteli suorittimen ja muistin toimintaa. Aluksi katsoimme vähän tarkemmin suorittimen rakennetta ja erityisesti sen toimintaa käskyjen nouto- ja suoritussyklin toteuttajana. Sen jälkeen tarkastelimme konekäskyjen eri tyyppejä ja rakennetta. Lopuksi katsoimme, kuinka tiedon sijainti suoritusaikana voi vaihdella ja kuinka se vaikuttaa ohjelmien suoritusnopeuteen.
