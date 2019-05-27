@@ -4,13 +4,17 @@ title: "Tukiväylät"
 hidden: false
 information_page: true
 ---
-## Tämä on vielä kesken.  (DRAFT - kesken)
+Tukiväylien muoto riippuu siitä, millä tavoin kurssia ollaan suorittamassa. 
 
-Kurssilla on vertaistukeen perustuva keskusteluryhmä, jonka lisäksi .... kurssilaisilla on mahdollisuus ohjaukseen Helsingin yliopiston Kumpulan kampuksella.
+Kurssin Telegram-ryhmä kattaa molemmat kurssit Tietokoneen toiminnan perusteet (2 op) ja Tietokoneen toiminnan jatkokurssin (3 op). Se on avoin kaikille. 
 
-## Keskustelukanava
+Helsingin yliopiston kurssiin sisältyy harjoitusryhmiä, joissa kurssin asioista voi keskustella muiden opiskelijoiden ja ohjaajien kanssa. On mahdollista, että Helsingin yliopiston kurssiin sisältyy myös kertausluentoja.
 
-Kurssilla on käytössä [Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
+Avoimen yliopiston kurssilla on Moodle-sivusto tiedotuskanavana.
+
+## Telegram-ryhmä tkt-tito
+
+[Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
 
 Ryhmän osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Ryhmän toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti. Älä kuitenkaan jaa tehtävien vastauksia tässä ryhmässä, jotta et vahingossa riistä oppimismahdollisuuksia muilta opiskelijoilta. Pienet vihjeet ovat opettavaisia ja sallivat silti itse oppimisen ilon. Kiitos.
 
