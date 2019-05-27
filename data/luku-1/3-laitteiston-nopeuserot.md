@@ -100,7 +100,6 @@ Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeast
 <div>
 <illustrations motive="ch-1-3-z1"></illustrations>
 </div>
-Photo Teemu Kerola
 
 </text-box>
 
