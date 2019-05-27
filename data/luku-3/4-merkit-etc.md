@@ -121,12 +121,10 @@ ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäi
 
 <!-- kuva: ch-3-4-eniac    -->
 
-![Valtava tietokonesali, jossa neljä operaattoria seisoo yli 2m korkuistenlaitteiden edessä.](./ch-3-4-eniac.svg)
+![Valtava tietokonesali, jossa neljä operaattoria seisoo yli 2m korkuisten laitteiden edessä.](./ch-3-4-eniac.svg)
 <div>
 <illustrations motive="ch-3-4-eniac"></illustrations>
 </div>
-Cpl. Irwin Goldstein (foreground) sets the switches on one of the ENIAC's function tables at the Moore School of Electrical Engineering.<br>
-U.S. Army photo. Image is in the public domain. <br>
 
 </text-box>
 
