@@ -118,7 +118,7 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 
 <text-box variant="example" name="Historiaa:  ESKO">
   
-ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suoemsa rakennettu tietokone. Se oli vanhentunut jo valmistuessaan ja suoritti noin 20 yhteenlaskua sekunnissa. Ohjelmakoodi luettiin reikänauhoilta. Aliohjelmaa kutsuttiin siirtämällä kontrolli sitä vastaavaan reikänauhan lukijaan, jossa aliohjelman koodi oli reikänauhalla ikuisessa silmukassa. Muistina oli 1840 sanan rumpumuisti. ESKOn varsinainen arvo oli tuoda tietotekniikan osaamista Suomeen.
+ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suomessa rakennettu tietokone. Se oli vanhentunut jo valmistuessaan ja suoritti noin 20 yhteenlaskua sekunnissa. Ohjelmakoodi luettiin reikänauhoilta. Aliohjelmaa kutsuttiin siirtämällä kontrolli sitä vastaavaan reikänauhan lukijaan, jossa aliohjelman koodi oli reikänauhalla ikuisessa silmukassa. Muistina oli 1840 sanan rumpumuisti. ESKOn varsinainen arvo oli tuoda tietotekniikan osaamista Suomeen.
 
 <!-- kuva: ch-2-4-esko    -->
 
