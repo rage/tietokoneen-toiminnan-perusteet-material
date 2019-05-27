@@ -90,6 +90,20 @@ Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nop
 
 <!-- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary -->
 
+<text-box variant="example" name="Historiaa:  Z1">
+  
+Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeastaan laskin, jolle ohjelma syötettiin reikänauhalta. Laitteisto toimi kampea kääntämällä ja siinä oli 64 sanan (á 24 bittiä) muisti. Kertolaskuun kului noin 5 sekuntia. 
+
+<!-- kuva: ch-1-3-z1    -->
+
+![Kolme valukuvaa Z1 replikasta Berliinin tiedemuseossa. Alkuperäinen tuhoutui Berliin pommituksissa 1943. Ylhäällä yleiskuva laitteistoissa monine hammasrattaineen. Alhaalla vasemmalla kuva ohjelman sisältävästä reikänauhasta ja oikealla kuva mekaanisista biteistä.](./ch-1-3-z1.svg)
+<div>
+<illustrations motive="ch-1-3-z1"></illustrations>
+</div>
+Photo Teemu Kerola
+
+</text-box>
+
 ## Yhteenveto
 Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
 
