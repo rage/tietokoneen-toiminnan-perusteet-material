@@ -40,6 +40,24 @@ Voimme myös todistaa, että on olemassa ongelmia, joita ei voi ratkaista millä
 
 Ongelmia voidaan myös luokitella. Suuri joukko tunnettuja optimointiongelmia ovat sellaisia, että emme oikeastaan vielä tiedä kuinka vaikeita ne ovat. Jos johonkin niistä löytyy joskus hyvä ratkaisu, niin sitten löytyy niihin muihinkin. Mutta toistaiseksi ratkaisua ei ole löytynyt. Mutta toisaalta ei ole löytynyt todistustakaan siitä, että tuollaista hyvää ratkaisua ei voisi löytää. Jos työantajasi pyytää sinulta ratkaisua vähän vaiampaan ongelmaan, voi olla noloa sanoa kahden viikon työrupeaman jälkeen, että "en minä osaa". Jos kyseessä on joku variantti noista tunnetuista optimointiongelmista, on paljon mukavampi pystyä sanomaan, että "en minä osaa, mutta ei osaa kukaan muukaan koko maailmassa!".
 
+<text-box variant="example" name="Historiaa:  EDSAC">
+  
+Vuonna 1949 rakennettu EDSAC oli ensimmäisiä tietokoneita, joka suoritti muistissa olevaa ohjelmaa. Siinä oli kuusi kappaletta tyhjiöputkilla toteutettua rekisteriä. Käsky- ja datamuisti oli toteutettu 32 elohopeaviiveputkella, joihin kuhinkin mahtui 32 kappaletta 18-bittistä sanaa. Myös (little-endian) kaksois-sana oli mahdollinen. Kertolasku kesti 5.4 ms. Aliohjelmakutsua ei ollut, koska aliohjelman ideaa ei oltu vielä keksitty. Koko toteutus vaati 3000 tyhjiöputkea, sähkön kulutus oli 12 kW ja  laitteisto vaati 5x4 metrin tilan. Tyhjiöputkien kestävyys oli ongelma, kunnes keksittiin, että niitä ei kannata koskaan sammuttaa. John von Neumann kirjoitti EDVAC'ista raportin, missä kuvattiin sen käänteentekevä rakenne. Raportin perusteella nykyisiäkin tietokoneita kutsutaan von Neumann -tietokoneiksi. 
+
+<!-- kuva: ch-4-4-edsac    -->
+
+![Iso tietokonesali, jossa kaksi tutkijaa seisoo yli 2m korkuisten ja 1m leveiden telineiden edessä. Yhdessä tällaisessa telineessä saattoi olla toteutettuna yksi rekisteri.](./ch-4-4-edsac.svg)
+<div>
+<illustrations motive="ch-4-4-edsac"></illustrations>
+</div>
+EDSAC I, W. Renwick, M.V. Wilkes.<br>
+Copyright Computer Laboratory, University of Cambridge. Reproduced by permission.<br>
+This photo is licensed under the Creative Commons Attribution 2.0 Generic license.
+
+</text-box>
+
+
+
 ## Yhteenveto
 Neljäs luku esitteli käyttöjärjestelmien perusasiat. Esittelimme ensin käyttöjärjestelmän tehtäväalueet. Seuraavaksi tutustuimme prosessin käsitteeseen. Prosessi ovat suoritettavien ohjelmien esitysmuotoja järjestelmässä ja kaikki laskenta järjestelmässä tapahtuu prosessien kautta. Näytimme myös, kuinka käyttöjärjestelmä voidaan toteuttaa eri tavoin kutsuttavien aliohjelmien ja prosessien avulla. Lopuksi esittelimme pintapuolisesti, kuinka tietokonejärjestelmien laskentakyvyn rajoja voidaan päätellä tutkimalla kokonaislukuarvoisia funktioita ja niiden ominaisuuksia.
 
