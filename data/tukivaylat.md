@@ -10,17 +10,13 @@ Kurssilla on vertaistukeen perustuva keskusteluryhmä, jonka lisäksi .... kurss
 
 ## Keskustelukanava
 
-Kurssilla on käytössä Telegram-ryhmä (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
+Kurssilla on käytössä [Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
 
-Pääset kanavalle tästä linkistä: [https://t.me/???](https://t.me/????). Pääset Telegrammin selaimessa toimivaan versioon täältä: [https://web.telegram.org](https://web.telegram.org/) .
+Ryhmän osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Ryhmän toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti. Älä kuitenkaan jaa tehtävien vastauksia tässä ryhmässä, jotta et vahingossa riistä oppimismahdollisuuksia muilta opiskelijoilta. Pienet vihjeet ovat opettavaisia ja sallivat silti itse oppimisen ilon. Kiitos.
 
-Ryhmän osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Ryhmän toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti. Älä kuitenkaan jaa tehtävien vastauksia tässä ryhmässä, jotta et vahingossa riistä oppimismahdollisuuksia muilta opiskelijoilta. Kiitos.
+## Moodle-foorumi (Avoin yliopisto)
 
-## Moodle-foorumi  (DRAFT - kesken)
-
-_Tätä ei ole vielä toteutettu_
-
-Kurssin osallistujilla on käytössä keskustelufoorumi, joka on Moodle-järjestelmässä. Pääset Moodleen tekemällä "koe ja moodle" -ilmoittautumisen. Ilmoittautuminen on pakollinen kaikille niille, jotka haluavat päästä kurssin Moodleen. Ilmoittautuminen koskee kaikkia kurssilaisia, eli myös Helsingin yliopiston opiskelijoita ja myös niitä, jotka ovat ilmoittautuneet kurssille jossakin muualla.
+Avoimessa yliopistossa on Moodle tiedotuskanavana. Pääset Moodleen tekemällä "koe ja moodle" -ilmoittautumisen. Ilmoittautuminen on pakollinen kaikille niille, jotka haluavat päästä kurssin Moodleen. Ilmoittautuminen koskee kaikkia Avoimen yliopiston kurssilaisia, eli myös Helsingin yliopiston opiskelijoita ja myös niitä, jotka ovat ilmoittautuneet kurssille jossakin muualla.
 
 1. Ensiksi ilmoittaudu Avoimen yliopiston järjestelmään, jotta saat käyttöoikeuden Moodleen: <registration-link></registration-link>. Huom! Avoimen yliopiston sivuille on tullut epähuomiossa muita ilmoittautumisivuja, joissa on tämän sivun kanssa ristiriitaista tietoa. Kuitenkin tämä meidän tarjoama ilmottautumislinkki on se minne sinun täytyy ilmoittautua -- ei väliä oletko aikataulullisella tai aikatauluttomalla kurssilla.
 
