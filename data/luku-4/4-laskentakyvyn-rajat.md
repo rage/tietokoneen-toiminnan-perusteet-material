@@ -50,13 +50,8 @@ Vuonna 1949 rakennettu EDSAC (Electronic Delay Storage Automatic Calculator) oli
 <div>
 <illustrations motive="ch-4-4-edsac"></illustrations>
 </div>
-EDSAC I, W. Renwick, M.V. Wilkes.<br>
-Copyright Computer Laboratory, University of Cambridge. Reproduced by permission.<br>
-This photo is licensed under the Creative Commons Attribution 2.0 Generic license.
 
 </text-box>
-
-
 
 ## Yhteenveto
 Neljäs luku esitteli käyttöjärjestelmien perusasiat. Esittelimme ensin käyttöjärjestelmän tehtäväalueet. Seuraavaksi tutustuimme prosessin käsitteeseen. Prosessi ovat suoritettavien ohjelmien esitysmuotoja järjestelmässä ja kaikki laskenta järjestelmässä tapahtuu prosessien kautta. Näytimme myös, kuinka käyttöjärjestelmä voidaan toteuttaa eri tavoin kutsuttavien aliohjelmien ja prosessien avulla. Lopuksi esittelimme pintapuolisesti, kuinka tietokonejärjestelmien laskentakyvyn rajoja voidaan päätellä tutkimalla kokonaislukuarvoisia funktioita ja niiden ominaisuuksia.
