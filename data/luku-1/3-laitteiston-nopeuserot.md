@@ -25,7 +25,7 @@ Mikrosekunti = 1 µs = 0.000 001 sekuntia = 1 000 ns = 1 000 000 ps.
 <br>
 Nanosekunti = 1 ns = 0.000 000 001 sekuntia = 1 000 ps.
 <br>
-Pikosekunti = 1 ps = 0.000 000 000 001 sekuntia."
+Pikosekunti = 1 ps = 0.000 000 000 001 sekuntia.
 
 </text-box>
 
