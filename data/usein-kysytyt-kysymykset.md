@@ -10,6 +10,8 @@ Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi va
 ## Vanhaa tietoa, ohjelmointikurssilta (DRAFT - kesken)
 Älä käytä tällä sivulla olevaa tietoa!!
 
+<!--    kaikki kommentoitu pois 
+
 <table-of-contents></table-of-contents>
 
 
@@ -59,3 +61,4 @@ _Kesken - ei vielä toteutettu._
 
 _Kesken - ei vielä toteutettu._
 
+kommentti loppuu  -->
