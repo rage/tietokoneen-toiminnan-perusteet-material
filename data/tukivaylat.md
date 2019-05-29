@@ -6,13 +6,13 @@ information_page: true
 ---
 Tukiväylien muoto riippuu siitä, millä tavoin kurssia ollaan suorittamassa. 
 
-Kurssin Telegram-ryhmä kattaa molemmat kurssit Tietokoneen toiminnan perusteet (2 op) ja Tietokoneen toiminnan jatkokurssin (3 op). Se on avoin kaikille. 
+Kurssin Telegram-ryhmä kattaa molemmat kurssit Tietokoneen toiminnan perusteet (2 op) ja Tietokoneen toiminnan jatkokurssin (3 op), sekä niiden yhdistelmän Tietokoneen toiminta (5 op). Se on avoin kaikille. 
 
 Helsingin yliopiston kurssiin sisältyy harjoitusryhmiä, joissa kurssin asioista voi keskustella muiden opiskelijoiden ja ohjaajien kanssa. On mahdollista, että Helsingin yliopiston kurssiin sisältyy myös kertausluentoja.
 
 Avoimen yliopiston kurssilla on Moodle-sivusto tiedotuskanavana.
 
-## Telegram-ryhmä tkt-tito
+## Telegram-ryhmä tkt-tito (Helsingin yliopisto ja Avoin yliopisto)
 
 [Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
 
