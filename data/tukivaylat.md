@@ -14,7 +14,7 @@ Avoimen yliopiston kurssilla on Moodle-sivusto tiedotuskanavana.
 
 ## Telegram-ryhmä tkt-tito (Helsingin yliopisto ja Avoin yliopisto)
 
-[Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
+[Telegram-ryhmä](https://t.me/tkt_tito) (keskusteluhuone) on opiskelijoiden vertaistukea varten. Suosittelemme, että käytät ryhmää joko Telegramin selaimessa toimivalla versiolla tai Telegrammin työpöytäohjelmalla.
 
 Ryhmän osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Ryhmän toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti. Älä kuitenkaan jaa tehtävien vastauksia tässä ryhmässä, jotta et vahingossa riistä oppimismahdollisuuksia muilta opiskelijoilta. Pienet vihjeet ovat opettavaisia ja sallivat silti itse oppimisen ilon. Kiitos.
 
