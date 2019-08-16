@@ -2,7 +2,7 @@
 path: '/luku-3'
 title: 'Luku 3: Tiedon esitysmuodot'
 overview: true
-hidden: false
+hidden: true
 ---
 
 Minkälaisia tietoja tietokone osaa käsitellä ja missä muodossa ne ovat? Esittelemme tarkemmin kokonaislukujen ja liukulukujen esitysmuodot. Käymme läpi merkkien ja merkkijonojen esitysmuodot karkealla tasolla. Kuvista, äänistä ja videoista esittelemme vain periaatteet. Lopuksi käymme läpi ohjelmoijan itse määrittelemien tietojen esitysmuodot.

@@ -2,6 +2,7 @@
 path: '/luku-1'
 title: 'Luku 1: Tietokonejärjestelmä ja ohjelma?'
 overview: true
+hidden: true
 ---
 
 Aluksi selvitämme, että mikä tietokone oikeastaan on. Tutkimme myös, minkä tyyppisiä ja mitä osia tietokoneessa on.
