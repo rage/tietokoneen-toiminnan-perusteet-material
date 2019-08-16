@@ -58,8 +58,8 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 <!-- kuva: 57 binäärilukuna -->
 
 <pre>
-  Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna? 
-  
+  Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna?
+
   57/2 = 28 jakojäännos 1
   28/2 = 14 jakojäännös 0
   14/2 =  7 jakojäännös 1
@@ -81,17 +81,17 @@ Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla 
 </pre>
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
-   
+
 <!-- esim etu ja loppunollat -->
 
 <pre>
 
   Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat <br>
   57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
-     = 00111101.00110000<sub>2</sub>  
+     = 00111101.00110000<sub>2</sub>
      = 111101.001100000000000000000<sub>2</sub>
-     
-</pre> 
+
+</pre>
 
 Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon laskeminen pitää lopettaa sitten kun numeroita on tarpeeksi haluttuun laskentatarkkuuteen.
 
@@ -99,7 +99,7 @@ Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon la
 
 <pre>
   Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?
-  
+
   0.1 * 2 = 0.2 = 0 + 0.2
   0.2 * 2 = 0.4 = 0 + 0.4
   0.4 * 2 = 0.8 = 0 + 0.8
@@ -119,23 +119,23 @@ jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
 jos luvusta 0.1<sub>10</sub> halutaan 30 bitin binääriosainen binääriesitys, niin se olisi
 0.0&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0011&nbsp;0<sub>2</sub>.
 <br><br>
-Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama (noin 20 binäärinumeroa) kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;10<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub> tarkkuus (noin 3 binäärinumeroa). 
+Edelläolevissa esimerkeissä on vähän erikoista esitystavasta aiheutuva esitystarkkuuden muutos. Alkuperäisessä luvussa 57.1875<sub>10</sub> oli 6 desimaaliluvun tarkkuus, mutta sitä vastaavassa binääriesityksessä 111101.001100000000000000000<sub>2</sub> näyttää olevan 27 binäärinumeron tarkkuus, vaikka oikeasti tarkkuus on sama (noin 20 binäärinumeroa) kuin desimaaliluvussakin. Lopussa olevat 0-bitit voivat oikeasti olla mitä vain. Toisessa esimerkissä desimaaliluvun 0.1<sub>10</sub> tarkkuus on vain yksi desimaalinumero, kun taas sen 30-numeroinen binääriesitys 0.0001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;1001&nbsp;10<sub>2</sub> näyttää kovin täsmälliseltä, vaikka senkään oikea tarkkuus ei oikeasti ole yhtään parempi kuin lähtötiedon 0.1<sub>10</sub> tarkkuus (noin 3 binäärinumeroa).
 <br><br>
-Tietokoneille on tyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin. 
+Tietokoneille on tyypillistä, että esitystavan vuoksi lukujen tarkkuus näyttää olevan parempi kuin todellisuudessa onkaan. Jos data talletetaan 32-bittisenä, siellä on aina 32-bittiä tietoa vaikka osa niistä olisikin puppua! Laskennan lopputulos on todellisuudessa aina korkeintaan yhtä tarkka kuin alkuperäiset operandit, ja yleensä epätarkempi. Ei siis pidä sokeasti luottaa tietokoneiden antamiin lopputuloksiin.
 
 <!-- Quizes 3.1.1-7 -->
-<div><quiznator id="5bd9688383601b299c26828c"></quiznator></div>
-<div><quiznator id="5bd969b7b5cefd2a43d9affe"></quiznator></div>
-<div><quiznator id="5bd96ad88138f12a7e536f9d"></quiznator></div>
-<div><quiznator id="5bd96bbcc6014229d5b532a5"></quiznator></div>
-<div><quiznator id="5bd96c5b83601b299c268292"></quiznator></div>
-<div><quiznator id="5bd96d09defd072a63bec7f4"></quiznator></div>
-<div><quiznator id="5bd96da1c6014229d5b532aa"></quiznator></div>
+<div><quiz id="245cabc3-e76f-4a2a-a58d-b9f1cf4f0441"></quiz></div>
+<div><quiz id="673b57d2-41b4-46b9-94ab-34ca2acf6d06"></quiz></div>
+<div><quiz id="4002a5ec-28bd-4bd5-acc9-20bba69256d1"></quiz></div>
+<div><quiz id="4432ae80-2b68-410b-8ef4-22dfdb6c8454"></quiz></div>
+<div><quiz id="2ff84dca-1e88-4246-9fde-f54dde433ebf"></quiz></div>
+<div><quiz id="586a4f04-3846-43cd-bc4f-2d3685548b57"></quiz></div>
+<div><quiz id="3ce2af9c-26c0-494d-80de-1f2292d212b8"></quiz></div>
 
 ## Heksadesimaalijärjestelmä
 Bittien informaatioarvo on pieni, joten niitä tarvitaan paljon. Niiden kirjoittaminen ja lukeminen on ihmiselle jonkin verran virhealtista, joten yleensä ne esitetään 16-järjestelmän ([heksadesimaalijärjestelmän](https://fi.wikipedia.org/wiki/Heksadesimaalij%C3%A4rjestelm%C3%A4)) avulla.
 
-Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A, B, C, D,  E ja F. Numeroiden A-F lukuarvot ovat 10-15. Luvun A4B arvaa aika helposti esittävän 16-järjestelmän lukua, mutta esimerkiksi luvun 345 kohdalla voi helposti tulla sekaannus käytössä olevasta lukujärjestelmästä. Tämän vuoksi tapana on kirjoittaa 16-järjestelmien luvuille etuliite 0x. Esimerkiksi, desimaaliluvulla 837 on sama arvo kuin heksadesimaaliluvulla 0x345. 
+Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A, B, C, D,  E ja F. Numeroiden A-F lukuarvot ovat 10-15. Luvun A4B arvaa aika helposti esittävän 16-järjestelmän lukua, mutta esimerkiksi luvun 345 kohdalla voi helposti tulla sekaannus käytössä olevasta lukujärjestelmästä. Tämän vuoksi tapana on kirjoittaa 16-järjestelmien luvuille etuliite 0x. Esimerkiksi, desimaaliluvulla 837 on sama arvo kuin heksadesimaaliluvulla 0x345.
 
 <!-- esim: hexadesimaaliluku -->
 
@@ -167,8 +167,8 @@ Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bit
 On tärkeätä muistaa, että samat bittiyhdistelmät voivat tarkoittaa ihan eri asioita riippuen siitä, miten niitä käsitellään tai halutaan tulkita. Konekielessä on omia konekäskyjä raakadatan (bitit ilman merkitystä) käsittelyyn (esim. SHL eli siirrä bittejä vasemmalle) ja omia konekäskyjä tiettyjen tietotyyppien käsittelyyn (esim. ADD eli kokonaislukujen yhteenlasku). Viimeksimainitut perustuvat tietotyyppien sovittuihin esitysmuotoihin, joihin tutustumme seuraavassa aliluvussa. Minkä tahansa tietotyypin esitysmuodossa olevaa tietoa voidaan käsitellä kuitenkin myös raakadatana pelkkinä bitteinä siihen tarkoitukseen sopivilla konekäskyillä.
 
 <!-- Quizes 3.1.8-9 -->
-<div><quiznator id="5bd98c3be921f629a8dfd496"></quiznator></div>
-<div><quiznator id="5bd98d43b5cefd2a43d9b036"></quiznator></div>
+<div><quiz id="4adc6501-2fa5-4b6c-8b4b-26481bcf12ab"></quiz></div>
+<div><quiz id="51c58332-340b-4b7f-8215-29d0c8999d82"></quiz></div>
 
 ## Monitavuinen tieto muistissa
 Tallennuksen yksikkö on yksi tavu, mutta muistissa tietoa talletetaan 32-bittisinä sanoina. Merkkijonot talletetaan muistiin peräkkäisiin tavuihin, jotka ovat peräkkäisissä sanoissa. Olisi luontevaa, että tavut talletettaisiin samassa järjestyksessä kuin me ihmiset olemme oppineet niitä käsittelemään. Siten esimerkiksi lukua 1350 tarkoittava merkkijono "1350" talletettaisiin muistiosoitteeseen 0x1A0 siten, että merkki '1' on tavussa 0x1A0, merkki '3' tavussa 0x1A1, merkki '5' tavussa 0x1A2 ja lopulta merkki '0' tavussa 0x1A3. Tällainen monitavuisen tiedon _sanan_ (tai kaksoissanan) sisäinen talletusmuoto on nimeltään _Big-Endian_ koska lukuarvoltaan eniten merkitsevä tavu on ensimmäisenä. Näin ei kuitenkaan tietokoneessa aina tehdä. Toisen talletusmuodon _Little-Endian_ mukaan sanassa vähiten merkitsevä tavu laitetaan ensimäiseksi, jolloin kyseiset tavut tulevat tavallaan käänteisessä järjestyksesä muistiin. Tiedon osoite on joka tapauksessa sen muistissa olevan ensimmäisen tavun osoite.
@@ -188,7 +188,7 @@ Little-Endian:   'o'    't'    'u'    'a'        '\0'   'e'   'i'    't'
 <!-- esim. Big-Endian Little-Endian 0x11223344 -->
 
 ```
-Esimerkki:  Talleta luku 0x11223344 (287454020) muistiin osoitteeseen 
+Esimerkki:  Talleta luku 0x11223344 (287454020) muistiin osoitteeseen
 0x1200 eli tavuihin 0x1200, 0x1201, 0x1202 ja 0x1203.
 
 Big-Endian:      0x11   0x22   0x33   0x44
@@ -208,10 +208,10 @@ Big-Endian:      0x00   0x00   0x00   0x35
    tavuosoite   0x1200 0x1201 0x1202 0x1203
 Little-Endian:   0x35   0x00   0x00   0x00
 
-Big-Endian'issa luvun 35 sanan osoite on 0x1200, 
+Big-Endian'issa luvun 35 sanan osoite on 0x1200,
 puolikassanan (2 tavua) 0x1202 ja tavun 0x1203.
 
-Little-Endian'issa luvun 35 sanan osoite on 0x1200, 
+Little-Endian'issa luvun 35 sanan osoite on 0x1200,
 puolikassanan 0x1200 ja tavun 0x1200.
 ```
 
@@ -237,4 +237,4 @@ Monitavuisen tiedon vaihtoehtoinen tavujärjestys. Vähiten merkitsevä tavu ens
 
 
 <!-- Quiz 3.1.10 -->
-<div><quiznator id="5bd9b2780f60f62a209d8bcf"></quiznator></div>
+<div><quiz id="40941c5d-291a-452d-8dfe-210609378b98"></quiz></div>

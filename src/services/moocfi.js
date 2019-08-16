@@ -19,15 +19,6 @@ export function authenticate(credentials) {
   return new Promise((resolve, reject) => {
     tmcClient.authenticate(credentials).then(
       res => {
-        if (
-          typeof window !== "undefined" &&
-          typeof window.Quiznator !== "undefined"
-        ) {
-          window.Quiznator.setUser({
-            id: res.username,
-            accessToken: res.accessToken,
-          })
-        }
         loginStateChanged()
         resolve(res)
       },
@@ -85,12 +76,6 @@ export function loggedIn() {
 }
 
 export function signOut() {
-  if (
-    typeof window !== "undefined" &&
-    typeof window.Quiznator !== "undefined"
-  ) {
-    window.Quiznator.removeUser()
-  }
   store.remove("tmc.user")
   store.remove("tmc.user.details")
   loginStateChanged()
@@ -102,7 +87,7 @@ export function onLoginStateChanged(callback) {
 
 export async function userDetails() {
   const res = await axios.get(
-    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=tietokonen-toiminnan-perusteet`,
+    `${BASE_URL}/users/current?show_user_fields=true&extra_fields=tietokoneen-toiminnan-perusteet`,
     {
       headers: {
         "Content-Type": "application/json",
@@ -143,7 +128,7 @@ export async function updateUserDetails({ extraFields, userField }) {
     {
       user: {
         extra_fields: {
-          namespace: "tietokonen-toiminnan-perusteet",
+          namespace: "tietokoneen-toiminnan-perusteet",
           data: extraFields,
         },
       },
@@ -171,13 +156,18 @@ export function updatePassword(currentPassword, password, confirmPassword) {
 }
 
 export async function fetchProgrammingExerciseDetails(exerciseName) {
+  const accessTokenValue = accessToken()
+  const headers = {
+    "Content-Type": "application/json",
+  }
+  if (accessTokenValue) {
+    headers["Authorization"] = `Bearer ${accessTokenValue}`
+  }
+  console.log(exerciseName, headers)
   const res = await axios.get(
     `${BASE_URL}/org/${ORGANIZATION}/courses/${await getCourse()}/exercises/${exerciseName}`,
     {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${accessToken()}`,
-      },
+      headers: headers,
     },
   )
   return res.data
@@ -233,12 +223,28 @@ export function accessToken() {
 
 export async function getCourseVariant() {
   const userDetails = await getCachedUserDetails()
-  return userDetails?.extra_fields?.course_variant || "regular"
+  return userDetails?.extra_fields?.course_variant || "dl"
 }
 
 async function getCourse() {
-  if ((await getCourseVariant()) === "nodl") {
+  if (!accessToken()) {
+    return "2019-ohjelmointi"
+  }
+  const variant = await getCourseVariant()
+  if (variant === "nodl") {
     return "2019-ohjelmointi-nodl"
+  }
+  if (variant === "ohja-dl") {
+    return "2019-mooc-vain-jatkokurssi"
+  }
+  if (variant === "ohja-nodl") {
+    return "2019-mooc-vain-jatkokurssi-nodl"
+  }
+  if (variant === "kesa-dl") {
+    return "2019-ohjelmointi-kesa"
+  }
+  if (variant === "kesa-ohja-dl") {
+    return "2019-mooc-vain-jatkokurssi-kesa"
   }
   return "2019-ohjelmointi"
 }

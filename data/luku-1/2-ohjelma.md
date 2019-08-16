@@ -40,8 +40,8 @@ Algoritmi lausekkeen laskemiseksi laskimella
 ```
 Algoritmi nopeimman pyöräilyreitin valitsemiseksi
 
-1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen 
-   tunnettuja katuja/teitä/pyöräteitä. Ota mukaan vain reitit, 
+1. Hae kaikki pyöräilyreitit paikasta A paikkaan B käyttäen
+   tunnettuja katuja/teitä/pyöräteitä. Ota mukaan vain reitit,
    joissa mennään koko ajan lähemmäs B:tä.
 2. Jaa kukin reitti pätkiin kadun/tien/risteyksen tyypistä riippuen.
 3. Laske kullekin reittipätkälle sen vaatima aika pyöräilyyn.
@@ -59,17 +59,17 @@ Kolmas hyödyllinen kontrollin siirtoon liittyvä käsite on [aliohjelma](https:
 ```
 Esimerkki: Funktio Sum(Table, n)
 
-Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table 
-kaikkien n:n alkion summan. 
+Funktio Sum(Table, n) palauttaa arvonaan n-alkioisen taulukon Table
+kaikkien n:n alkion summan.
 
-Kutsu Sum(Noppa, 6) palauttaa taulukon Noppa kaikkien kuuden alkion 
+Kutsu Sum(Noppa, 6) palauttaa taulukon Noppa kaikkien kuuden alkion
 arvojen summan 21.
 
 Kutsu Sum(Palkka, 2345678) palauttaa taulukossa Palkka olevien pienen
-valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen 
-summan 10 135 676 310,23. 
+valtion kaikkien työssäkäyvien 2345678 henkilön palkkojen
+summan 10 135 676 310,23.
 
-Samaa funktiota voi käyttää hyvin moneen tarkoitukseen 
+Samaa funktiota voi käyttää hyvin moneen tarkoitukseen
 sopivilla parametrien valinnoilla.
 ```
 
@@ -183,7 +183,7 @@ Kun Python-tulkki (prosessi PT) suorittaa (ks. seuraava kuva) suorittaa Python o
 
 Toinen esimerkki tulkin käytöstä on Java-ohjelmien kääntäminen ns. [tavukoodiksi](https://fi.wikipedia.org/wiki/Tavukoodi) (byte-code), jota voi sitten suorittaa tulkitsemalla Java-virtuaalikoneessa ([JVM](https://en.wikipedia.org/wiki/Java_virtual_machine)). Javan tavukoodi on hypoteettisen (ei todellisen, suunnitellun?) tietokoneen (JVM) konekieltä, mikä on hyvin erilaista kuin järjestelmän oman suorittimen konekieli. JVM:lle ei voi antaa siinä suoritettavaa ohjelmaa suoraan Javalla kirjoitettuna, vaan suoritettava Java-ohjelma on aina ensin käännettävä tavukoodiksi.
 
-Myös tässä tapauksessa käyttäjällä on mielikuva ja tuntuma, että tietokone osaa suorittaa Java-ohjelmia (ks. seuraava kuva). Nyt tämän harhakuvan saa aikaa kaksi erillistä ohjelmaa. Ensin yksi ohjelma kääntää etukäteen Java-kielisen ohjelman (P) Javan tavukoodiksi ja sitten toinen ohjelma (JVM) suoritusaikana [emuloi](https://fi.wiktionary.org/wiki/emuloida) (jäljittelee) hypoteettistä Java-virtuaalikonetta, joka suorittaa ohjelman P tavukoodisia käskyjä yksi kerrallaan. Käyttäjälle voi helposti jäädä mielikuva, että tietokone osaa suorittaa Java-ohjelmia, vaikka suorituksen tekee oikeasti järjestelmässä ajettava ohjelma (JVM). 
+Myös tässä tapauksessa käyttäjällä on mielikuva ja tuntuma, että tietokone osaa suorittaa Java-ohjelmia (ks. seuraava kuva). Nyt tämän harhakuvan saa aikaa kaksi erillistä ohjelmaa. Ensin yksi ohjelma kääntää etukäteen Java-kielisen ohjelman (P) Javan tavukoodiksi ja sitten toinen ohjelma (JVM) suoritusaikana [emuloi](https://fi.wiktionary.org/wiki/emuloida) (jäljittelee) hypoteettistä Java-virtuaalikonetta, joka suorittaa ohjelman P tavukoodisia käskyjä yksi kerrallaan. Käyttäjälle voi helposti jäädä mielikuva, että tietokone osaa suorittaa Java-ohjelmia, vaikka suorituksen tekee oikeasti järjestelmässä ajettava ohjelma (JVM).
 
 <!-- kuva Java ohjelma, tavukoodi, JVM, ch-1-2-JVM -->
 
@@ -204,9 +204,9 @@ Vaikka järjestelmässä suoritettaisiin missä tahansa muodossa olevaa ohjelmaa
 
 <!-- quiz 1.2.1-6 Onko tämä ohjelma -->
 
-<div><quiznator id="5c4f06fdfd9fd71425c61f43"></quiznator></div>
-<div><quiznator id="5c4f076714524713f95a05ec"></quiznator></div>
-<div><quiznator id="5c4f07c7017ffc13eddc93e1"></quiznator></div>
-<div><quiznator id="5c4f083ac41ed4148d96a7c4"></quiznator></div>
-<div><quiznator id="5c4f0891017ffc13eddc93e4"></quiznator></div>
-<div><quiznator id="5c4f08fd99236814c5bb7f4e"></quiznator></div>
+<div><quiz id="49874810-2ecc-49a6-89b9-2599ac672af7"></quiz></div>
+<div><quiz id="21dc5260-d783-4f43-8600-ad2740830b6a"></quiz></div>
+<div><quiz id="407ca7bb-290b-464f-b560-20fa0a9f4a36"></quiz></div>
+<div><quiz id="370a496a-2308-4280-8ac9-1c255be202cc"></quiz></div>
+<div><quiz id="35d33797-2242-42ad-aac5-1b864979f819"></quiz></div>
+<div><quiz id="37816e2a-2353-4fd1-b8c3-1c62490fc2a5"></quiz></div>

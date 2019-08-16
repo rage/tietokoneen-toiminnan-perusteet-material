@@ -76,23 +76,23 @@ Oman tietokoneen massamuistin ja Internetissä olevien palvelimien välistä nop
 
 <!-- quiz 1.3.1-11 Väitteet tietokoneen nopeudesta, etc -->
 
-<div><quiznator id="5c50086b3972a914741025fc"></quiznator></div>
-<div><quiznator id="5c500940fd9fd71425c622c7"></quiznator></div>
-<div><quiznator id="5c500a1999236814c5bb830d"></quiznator></div>
-<div><quiznator id="5c500ad3ddb6b814af321601"></quiznator></div>
-<div><quiznator id="5c500b1b017ffc13eddc9798"></quiznator></div>
-<div><quiznator id="5c500b8599236814c5bb8312"></quiznator></div>
-<div><quiznator id="5c500c3414524713f95a09c0"></quiznator></div>
-<div><quiznator id="5c500d0ec41ed4148d96ab79"></quiznator></div>
-<div><quiznator id="5c500e15017ffc13eddc97a4"></quiznator></div>
-<div><quiznator id="5c500eabddb6b814af32160d"></quiznator></div>
-<div><quiznator id="5c500efe3972a91474102610"></quiznator></div>
+<div><quiz id="1c283af8-b336-4cb6-b31f-8ffcc5f2578e"></quiz></div>
+<div><quiz id="2536aa49-ecdb-41eb-b8ed-be4c91669914"></quiz></div>
+<div><quiz id="1f311195-c687-432e-9400-9f814bd975d6"></quiz></div>
+<div><quiz id="35f03e65-2254-4a46-9046-1b95215e9cd0"></quiz></div>
+<div><quiz id="345b3fb0-2152-4df3-83cb-1ac6071fe742"></quiz></div>
+<div><quiz id="1d92033a-bc35-4756-a331-9736d246d97a"></quiz></div>
+<div><quiz id="1b8f41c4-af69-426f-b458-8cee830b8a59"></quiz></div>
+<div><quiz id="31c2f40a-1fac-40ff-abd6-fe7744292248"></quiz></div>
+<div><quiz id="2f8b2b85-1e42-4ae5-9e5f-f31fca02df5c"></quiz></div>
+<div><quiz id="456c7342-2c2f-4c5a-9316-23804f263962"></quiz></div>
+<div><quiz id="23e03c83-e457-4a2f-aa9e-12588c7d591b"></quiz></div>
 
 <!-- Luvun 1 yhteenveto, mitä tuli opittua quiz 1.summary -->
 
 <text-box variant="example" name="Historiaa:  Z1">
-  
-Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeastaan laskin, jolle ohjelma syötettiin reikänauhalta. Laitteisto toimi kampea kääntämällä ja siinä oli 64 sanan (á 24 bittiä) muisti. Kertolaskuun kului noin 5 sekuntia. 
+
+Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeastaan laskin, jolle ohjelma syötettiin reikänauhalta. Laitteisto toimi kampea kääntämällä ja siinä oli 64 sanan (á 24 bittiä) muisti. Kertolaskuun kului noin 5 sekuntia.
 
 <!-- kuva: ch-1-3-z1    -->
 
@@ -107,5 +107,4 @@ Konrad Zuse kehitti Saksassa 1935-1936 mekaanisen tietokoneen Z1. Se oli oikeast
 Ensimmäinen luku käsitteli tietokonejärjestelmää ja sen osia. Sen jälkeen tutustuimme ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin vain ihmisen luettavissa olevista algoritmeista numeeriseen konekieleen. Lopuksi kävimme läpi tietokonejärjestelmän valtavia nopeuseroja ja niiden vaikutuksia järjestelmän käyttöön ja toteutukseen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis ensimmäisen luvun tehtävien kanssa.
-<div><quiznator id="5c544eec3972a91474103008"></quiznator></div>
-
+<div><quiz id="2566f775-ee0e-48c6-b5ed-bf43914ff6ad"></quiz></div>

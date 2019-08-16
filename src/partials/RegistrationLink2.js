@@ -4,11 +4,11 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 const start = moment("01/01/2018", "DD/MM/YYYY")
-const summerStart = moment("18/03/2019", "DD/MM/YYYY")
-const autumnStart = moment("06/05/2019", "DD/MM/YYYY")
+const summerStart = moment("20/05/2019", "DD/MM/YYYY")
+const autumnStart = moment("05/07/2019", "DD/MM/YYYY")
 
 const springLink =
-  "https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=127404110"
+  "https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=127404483"
 const summerLink =
   "https://www.avoin.helsinki.fi/palvelut/esittely.aspx?o=127404483"
 const autumnLink =
@@ -25,8 +25,8 @@ function getLink() {
   return springLink
 }
 
-const RegistrationLink = () => {
+const RegistrationLink2 = () => {
   return <OutboundLink href={getLink()}>{getLink()}</OutboundLink>
 }
 
-export default withSimpleErrorBoundary(RegistrationLink)
+export default withSimpleErrorBoundary(RegistrationLink2)

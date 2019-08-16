@@ -21,6 +21,9 @@ export function splitGroupNameToWordAndNumber(string) {
 }
 
 export function improveGroupName(string) {
+  if (1 === 1) {
+    return string
+  }
   var stringParts = splitGroupNameToWordAndNumber(string)
   return (
     capitalizeFirstLetter(stringParts[0]) +

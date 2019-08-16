@@ -28,8 +28,8 @@ Load-store arkkitehtuurin koodissa on paljon konekäskyjä, mutta sen suoritus v
 ```
 Yhteenlasku eri tyyppisillä suorittimilla
 
-Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri 
-tyyppisillä suorittimilla. Operandien lukumäärä 
+Laske C=A+B, kun A, B ja C ovat muuttujia muistissa eri
+tyyppisillä suorittimilla. Operandien lukumäärä
 ADD-käskyssä on 0, 1, 2 tai 3.
 
 Pinokone   Akkurek.    Ttk-91        Load-store
@@ -51,7 +51,7 @@ Konekäskyssä tarvitaan jonkinlaisia tapoja viitata muistiin. Korkean tason kie
 <!-- Note: tietue ja olio -->
 
 <text-box variant="example" name="Tietueet ja oliot">
-  
+
 Tietue on esimerkki rakenteisesta tiedosta. Esimerkiksi harrasteseuran jäsenrekisteri voisi koostua tietueista, joista kukin kertoo yhden jäsenen tiedot. Kullakin tietueella on sama rakenne ja se sisältää samat (tieto)kentät. Tällaisia kenttiä olisivat esimerkiksi jäsenen nimi, osoite ja puhelinnumero.
 <br><br>
 Olio on kehittyneempi muoto tietueesta. Siellä on tiedon lisäksi myös kokoelma metodeja (aliohjelmia, funktioita), joiden avulla olion tietoja voidaan lukea ja muokata. Tyypillisesti olion tietoja voi lukea tai kirjottaa vain sen omien metodien kautta. Tämä tekee helpommaksi ja luotettavammaksi olion tietojen käytön, kun kaikki samaa tietoa käsittelevä koodi on keskitetty yhteen paikkaan. Koodausvirheiden havaitseminen on helpompaa verrattuna tilanteeseen, jossa samaa tietoa käsiteltäisiin siellä täällä esimerkiksi 40000 koodirivin ohjelmistossa. Jos harrasteseuran jäsenrekisteri toteutettaisiin oliona (esim. JäsR), niin jäsenten tiedot olisivat olion sisäisiä tietorakenteita ja niitä pääsisi käyttämään ainoastaan olion metodeja kutsumalla. Tällaisia metodeja olisivat esimerkiksi JäsR.UusiJäsen(), JäsR.LueOsoite() ja JäsR.MuutaOsoite() avulla.
@@ -68,13 +68,13 @@ Muistiosoitteen laskennassa voidaan myös käyttää useampaa rekisteriä ja nä
 
 Esimerkkikoneessa ttk-91 on kolme tiedonosoitustapaa ja ne perustuvat kaikki indeksoituun tiedonosoitukseen. Ensin lasketaan ohjelman käyttämä "muistiosoite" laskemalla yhteen käskyssä oleva vakio ja käskyssä olevan _indeksirekisterin_ arvo. Jos "osoite" löytyy suoraan indeksirekisteristä, niin vakioksi laitetaan nolla. Jos "osoitteeksi" haluttiin on pelkästään käskyssä oleva vakio, niin tämä on koodattu käskyyn laittamalla indeksirekisteriksi R0. Indeksirekisteriä R0 ei tämän vuoksi voi käyttää indeksointiin.
 
-Ttk-91:n suorittimella on kolme vaihtoehtoista tapaa saada jälkimmäinen operandi edellä lasketun "muistiosoitteen" avulla ja ne valitaan 2-bittisen _tiedonosoitusmoodin_ avulla. Moodin arvo 0 (_välitön tiedonosoitus_) tarkoittaa, että tuo äsken laskettu "muistiosoite" on sellaisenaan toinen operandi, eikä mitään muistiviitettä tarvita. Moodin arvo 1 (_suora muistiviite_) tarkoittaa, että muistiosoitetta käytetään yhden kerran operandin hakemiseksi muistista. Moodin arvo 2 (_epäsuora muistiviite_) tarkoittaa, että ensin haetaan muistista edellä laskettua muistiosoitetta käyttäen toisen operandin osoite ja vasta sitten haetaan muistista tuota osoitetta käyttämällä jälkimmäinen operandi.  
+Ttk-91:n suorittimella on kolme vaihtoehtoista tapaa saada jälkimmäinen operandi edellä lasketun "muistiosoitteen" avulla ja ne valitaan 2-bittisen _tiedonosoitusmoodin_ avulla. Moodin arvo 0 (_välitön tiedonosoitus_) tarkoittaa, että tuo äsken laskettu "muistiosoite" on sellaisenaan toinen operandi, eikä mitään muistiviitettä tarvita. Moodin arvo 1 (_suora muistiviite_) tarkoittaa, että muistiosoitetta käytetään yhden kerran operandin hakemiseksi muistista. Moodin arvo 2 (_epäsuora muistiviite_) tarkoittaa, että ensin haetaan muistista edellä laskettua muistiosoitetta käyttäen toisen operandin osoite ja vasta sitten haetaan muistista tuota osoitetta käyttämällä jälkimmäinen operandi.
 
 ```
 Esimerkki: Ttk-91 käskyn toisen operandin arvon nouto TR:ään, toteutus
 
-Jos käskyn jälkimmäisen rekisterin numero on 0, 
-    Kopioi käskyn vakiokentän arvo rekisteriin TR. 
+Jos käskyn jälkimmäisen rekisterin numero on 0,
+    Kopioi käskyn vakiokentän arvo rekisteriin TR.
 muutoin
     Kopioi käskyn jälkimmäisen rekisterin arvo ALU:n operandiksi 1,
     Kopioi käskyn vakiokentän arvo ALU:n operandiksi 2,
@@ -98,13 +98,13 @@ Jos käskyn moodi-kentän arvo on vähintään 3,
     Aiheuta virhetilanne ("Bad Mode") ja keskeytä käskyn suoritus.
 ```
 
-Ttk-91 koneen symbolisessa konekielessä _välitön tiedonosoitus_ kuvataan ennen vakio-osaa olevalla '='-merkillä. _Epäsuora muistiviite_ kuvataan vastaavasti ennen vakio-osaa olevalla '@'-merkillä, kun _suorassa muistiviitteessä_ vakio-osa on sellaisenaan ilman mitään erikoismerkkejä. 
+Ttk-91 koneen symbolisessa konekielessä _välitön tiedonosoitus_ kuvataan ennen vakio-osaa olevalla '='-merkillä. _Epäsuora muistiviite_ kuvataan vastaavasti ennen vakio-osaa olevalla '@'-merkillä, kun _suorassa muistiviitteessä_ vakio-osa on sellaisenaan ilman mitään erikoismerkkejä.
 
 ```
 Esimerkki: Ttk-91 symbolisen konekielen tiedonosoitusmoodi
 
-Oletetaan, että kaikissa käskyissä alkuaan rekisterin r1 arvo 
-on 3, rekisterin r2 arvo on 10, muistipaikan mem(17) arvo on 45, 
+Oletetaan, että kaikissa käskyissä alkuaan rekisterin r1 arvo
+on 3, rekisterin r2 arvo on 10, muistipaikan mem(17) arvo on 45,
 ja että muistipaikan mem(45) arvo on 88.
 
                op.koodi rek-1   moodi ind.rek. vakio  tulos
@@ -130,11 +130,11 @@ Esimerkkikoneen ttk-91 kaikki konekäskyt ovat 32-bittisiä ja niillä on kaikil
 Esimerkki: Ttk-91 symbolisen konekielen käskyjen talletusmuoto
 
      kentät:      op.koodi tul.rek. moodi ind.rek. vakiokenttä
-     bittejä:        8        3       2      3        16       
-                  
+     bittejä:        8        3       2      3        16
+
     -- Hae X:n arvo muistista rekisteriin r1.
     -- Muuttujan X osoite on sama kuin symbolin X arvo.
-load r1, X         2 (load)     1      1     0     X:n osoite 
+load r1, X         2 (load)     1      1     0     X:n osoite
 
     -- Lisää r2:n arvoon luku 6
 add  r2, =6        17 (add)     2      0     0     6
@@ -144,7 +144,7 @@ add  r2, =6        17 (add)     2      0     0     6
     -- Taulukon Tbl osoite on sama kuin symbolin Tbl arvo.
 mul  r4, Tbl(r1)   19 (mul)     4      1     1     Tbl:n osoite
 
-    -- Jaa r3:n arvo luvulla, jonka osoite on muistissa 
+    -- Jaa r3:n arvo luvulla, jonka osoite on muistissa
                               osoitinmuuttujan ptrX arvona.
     -- Osoitinmuuttujan ptrX osoite on sama kuin symbolin ptrX arvo.
 div  r3, @ptrX     20 (div)     3      2     0     ptrX:n osoite
@@ -156,7 +156,7 @@ jpos  r2, loop     35 (jpos)    2      0     0     loop'in osoite
     -- Talleta r2:n arvo muistissa olevan muuttujan Y arvoksi.
     -- Rekisterin r2 arvo säilyy ennallaan.
     -- Muuttujan Y osoite on sama kuin symbolin Y arvo.
-store r2, Y        1 (store)    2      0     0     Y:n osoite 
+store r2, Y        1 (store)    2      0     0     Y:n osoite
 ```
 
 ### Tiedon tyypit
@@ -237,8 +237,8 @@ Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille pa
 <!-- Note: xor-operaatio salakirjoituksen apuna -->
 
 <text-box variant="example" name="Xor-operaatio salakirjoituksen apuna">
-  
-Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010110_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp. 
+
+Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010110_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp.
 <br><br>
 Arto lähettää Beritille salakirjoitetun merkkijonon rhdp, josta kukaan ulkopuolinen ei saa selvää. Berit purkaa salakirjoituksen tekemällä uuden xor-operaation, rhdp xor 5821, jonka tuloksena on bittijono 01000001_01010000_01010110_01000001 eli alkuperäinen viesti APUA. Berit rientää apuun ja Arto on pelastettu!
 <br><br>
@@ -263,7 +263,7 @@ Esimerkki: for-silmukka
 For-loop C-kielen semantiikalla (testi silmukan alussa)
 
 for (i=0; i<n; i=i+1) {         load   r1, =0     ; r1 on i
-    tbl[i] = 0;            loop comp   r1, n      ; kaikki tehty? 
+    tbl[i] = 0;            loop comp   r1, n      ; kaikki tehty?
     }                           jnles  done       ; poistu, jos valmista
                                 load   r2, =0     ; alusta Tbl[i]
                                 store  r2, tbl(r1)
@@ -352,15 +352,15 @@ Ttk-91:ssä on muuttujan tai vakion tilanvarauskäsky DC (data constant), joka v
 ```
 Ttk-91 ohjelmaesimerkki
 
-Laske taulukon tbl alkioiden arvojen summa muuttujan sum arvoksi. Tulosta 
+Laske taulukon tbl alkioiden arvojen summa muuttujan sum arvoksi. Tulosta
 muuttujan sum arvo.
 
                    -- tilanvaraukset
 sum    dc    0        -- määr. ja varaa tilaa muuttujalle sum, alkuarvo 0
                       -- symbolin sum arvo on muuttujan sum osoite
-tbl    ds   20        -- määrittele ja varaa tilaa 20-alkioiselle 
+tbl    ds   20        -- määrittele ja varaa tilaa 20-alkioiselle
                       -- taulukolle tbl.
-                      -- symbolin tbl arvo on taulukon ensimmäisen 
+                      -- symbolin tbl arvo on taulukon ensimmäisen
                       -- alkion tbl[0] osoite
 lkm    equ  20        -- määrittele symboli lkm, jolla arvo 20
 
@@ -389,7 +389,7 @@ done  store r1, sum      -- tallenna summa muuttujaan sum  (suora muistiv.)
 <!-- Note: Ttk-91 simulaattori Titokone  -- onko OK laittaa näkyville? Entä TitoTrainer?  -->
 
 <text-box variant="example" name="Titokone">
-  
+
 Titokone on kevällä 2004 Helsingin yliopistossa opiskelijoiden harjoitustyönä toteuttama ohjelmisto, jonka avulla voidaan kääntää ja suorittaa symbolisella konekielellä kirjoitettuja ohjelmia Auvo Häkkisen vuonna 1991 opetuskäyttöä varten määrittelemälle ttk-91 tietokoneelle. Titokone-ohjelmistoon sisältyy symbolisen konekielisen ohjelmoinnin ohjelmistonkehitysympäristö sekä suorituksen simulaattori ja animaattori.
 <br><br>
 Titokone löytyy verkkosivulta https://www.cs.helsinki.fi/group/titokone/. Helpoin tapa ajaa Titokonetta on tallettaa verkkosivulta löytyvä jar-tiedosto (titokone-1.203.jar) omalle koneellesi ja avata se. Verkkosivulta löytyy myös Titokoneen käyttöohjeet. Valmiita esimerkkejä ttk-91 symbolisen konekielen ohjelmista löytyy verkkosivulta http://www.cs.helsinki.fi/group/nodes/kurssit/tito/esimerkit.
@@ -400,16 +400,16 @@ Tällä kurssilla ei mitenkään edellytetä konekielisen ohjelmoinnin harjoitte
 
 <!-- quiz 2.3.1-13 Väitteet konekäskyistä -->
 
-<div><quiznator id="5c5035183972a91474102696"></quiznator></div>
-<div><quiznator id="5c50359d99236814c5bb83b5"></quiznator></div>
-<div><quiznator id="5c50360bddb6b814af32168a"></quiznator></div>
-<div><quiznator id="5c503684017ffc13eddc9835"></quiznator></div>
-<div><quiznator id="5c5036e514524713f95a0a5d"></quiznator></div>
-<div><quiznator id="5c50372bfd9fd71425c62364"></quiznator></div>
-<div><quiznator id="5c50378a99236814c5bb83c0"></quiznator></div>
-<div><quiznator id="5c50381e99236814c5bb83c6"></quiznator></div>
-<div><quiznator id="5c50388f3972a914741026a9"></quiznator></div>
-<div><quiznator id="5c50392addb6b814af321696"></quiznator></div>
-<div><quiznator id="5c5039833972a914741026ae"></quiznator></div>
-<div><quiznator id="5c503a0f017ffc13eddc9851"></quiznator></div>
-<div><quiznator id="5c503a5e14524713f95a0a72"></quiznator></div>
+<div><quiz id="cf863754-8415-4a9d-88c6-6a1f2fd38ed2"></quiz></div>
+<div><quiz id="1fc631d4-ca3c-45a5-a8e3-a27be2006e71"></quiz></div>
+<div><quiz id="2f762b54-1e35-4508-804a-f2b465ce391c"></quiz></div>
+<div><quiz id="25bc3973-f02d-431f-b9ae-c0f78cfe5389"></quiz></div>
+<div><quiz id="1e37288d-c050-4933-9f37-9a835417c0d9"></quiz></div>
+<div><quiz id="298d5398-1a72-46c6-b9c7-d47c2a074cf9"></quiz></div>
+<div><quiz id="1f6f1410-c811-4e07-b2f6-a0be654c98ad"></quiz></div>
+<div><quiz id="1f547b27-c768-4974-a15d-a03662857a67"></quiz></div>
+<div><quiz id="1b5db040-ae2d-4a90-8419-8bf1089d1bbb"></quiz></div>
+<div><quiz id="2d834385-1cf7-4c5a-b7bb-e8bd2445cb70"></quiz></div>
+<div><quiz id="f3db217c-9b35-47d7-bb53-7cb366c384c9"></quiz></div>
+<div><quiz id="34b3ce87-218b-43cb-94a0-1af3505373f9"></quiz></div>
+<div><quiz id="217e6781-d52e-430a-8905-ab46fc585992"></quiz></div>

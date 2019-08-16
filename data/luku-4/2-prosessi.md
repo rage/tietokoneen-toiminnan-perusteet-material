@@ -99,20 +99,20 @@ Ready-jono ei ole koskaan tyhjä. Siellä on vähintään joku (alhaisimman prio
 Jos käyttöjärjestelmä havaitsee, että prosessi on käyttänyt aikaviipaleensa loppuun, niin kyseinen prosessi siirretään takaisin ready-jonoon ja vuoro annetaan jollekin toiselle prosessille. Tämä suoritusvuoron vuorottelu tapahtuu käyttäjän (ihmisen) näkökulmasta hyvin tiuhaan tahtiin, esim. 10 ms välein. Näyttää, että kaikki järjestelmässä olevat prosessit olisivat suorituksessa samanaikaisesti, vaikka oikeasti vain yksi prosessi on suorituksessa kerrallaan. Käyttäjä on tyytyväinen, koska ainakin hänen ohjelmansa suoritus näyttää etenevän koko ajan. Vuorottamalla saadaan usean prosessin _keskimääräinen_ vasteaika (aika työn saapumisesta sen valmistumiseen) pienemmäksi verrattuina tilanteeseen, jossa samat prosessit olisi suoritettu loppuun yksi kerrallaan. Palvelu siis paranee ihan oikeastikin.
 
 ```
-Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja 
+Esimerkki. Prosessit A, B ja C saapuvat järjestelmään yhtä aikaa ja
 vaativat 100, 40 ja 10 ms laskenta-aikaa. Aikaviipaleen koko on 10 ms.
 
 Jos A, B ja C suoritetaan loppuun tässä järjestyksessä, niin niiden
 vasteajat ovat 100, 140 ja 150 ms.
 Keskimääräinen vasteaika on (100+140+150)/3 = 390/3 = 130 ms.
 
-Jos A, B ja C suoritetaan järjestelmässä aikaviipale kerrallaan, 
-niin suoritusjärjestys on A B C  A B  A B  A B  A A A A A A. 
+Jos A, B ja C suoritetaan järjestelmässä aikaviipale kerrallaan,
+niin suoritusjärjestys on A B C  A B  A B  A B  A A A A A A.
 A:n vasteaika on nyt 150 ms, B:n 90 ms ja C:n 30 ms.
 Keskimääräinen vasteaika on (150+90+30)/3 = 270/3 = 90 ms.
 Huomaa, että erityisesti lyhyiden prosessien B ja C vasteajat
 ovat nyt selkeästi paremmat kuin ensimäisessä tapauksessa.
-``` 
+```
 
 Kun suorituksessa oleva prosessi tarvitsee mitä tahansa resurssia, joka ei juuri nyt ole saatavilla, se siirtyy odotus-tilaan tuon resurssin mukaiseen jonoon. Tällaisia jonoja voi olla esimerkiksi muistitilaa odottavat prosessit, levy I/O:n päättymistä odottavat prosessit ja prosessilta 532 viestiä odottavat prosessit. Sitten kun kyseinen resurssi tulee saataville, se annetaan odottavalle prosessille, joka sitten siirretään ready-jonoon.
 
@@ -129,13 +129,13 @@ Prosessin tila voi olla merkittynä sen kuvaajaan. Ennen kaikkea tila selviää 
 </div>
 
 <!-- Quizes 4.2.1-10 -->
-<div><quiznator id="5bfd2b5bfd6c3b3e161a21f6"></quiznator></div>
-<div><quiznator id="5bfd2c5d6484ed3e386c0d61"></quiznator></div>
-<div><quiznator id="5bfd2d6f2a799f3e5ac26fb0"></quiznator></div>
-<div><quiznator id="5bfd2e4acd84693e7889b9cc"></quiznator></div>
-<div><quiznator id="5bfd2f5ccd84693e7889b9d1"></quiznator></div>
-<div><quiznator id="5bfd40212a799f3e5ac26fdb"></quiznator></div>
-<div><quiznator id="5bfd41da2a799f3e5ac26fe3"></quiznator></div>
-<div><quiznator id="5bfe9956bc25243d95b3c882"></quiznator></div>
-<div><quiznator id="5bfe9998bc25243d95b3c883"></quiznator></div>
-<div><quiznator id="5bfe99c90f49d53dce30c1a7"></quiznator></div>
+<div><quiz id="6aa8a322-43e2-4cc7-b5d9-368aca27ea52"></quiz></div>
+<div><quiz id="51a05735-33f4-40f3-97a5-29bdc66494e2"></quiz></div>
+<div><quiz id="6417b850-3fb4-4ee9-aae6-332f37cbd625"></quiz></div>
+<div><quiz id="60df1e1d-3da8-4173-a2a5-31898a5fa47d"></quiz></div>
+<div><quiz id="5b71d34d-3a33-4d64-a2b9-2ec318e5f26d"></quiz></div>
+<div><quiz id="462c55c2-2ca9-4e70-8f59-23e26ef179d9"></quiz></div>
+<div><quiz id="6009426f-3d1f-4f98-b626-311c2e05ec33"></quiz></div>
+<div><quiz id="3f84d447-286d-4a8a-ae18-207b4f80023d"></quiz></div>
+<div><quiz id="413e0c14-2986-47bf-bb9e-215cefbcce05"></quiz></div>
+<div><quiz id="57c9f76c-37e0-42ef-a30f-2ce486c9d2a9"></quiz></div>

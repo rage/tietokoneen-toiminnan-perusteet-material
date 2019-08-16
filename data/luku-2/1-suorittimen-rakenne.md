@@ -31,7 +31,7 @@ Väylä on kimppu sähköjohtoja, jotka voidaan luokitella käyttötavan mukaan 
 <!-- note: bitti, tavu, sana  -->
 
 <text-box variant="example" name="Bitti, tavu, sana">
-  
+
 Tietokone toimii binäärijärjestelmän avulla. Binäärijärjestelmän numeron (0 tai 1) talletettu esitysmuoto on bitti. Nykyään on vakiintunut ryhmitellä bitit tavuiksi ja sanoiksi. Yksi tavu on 8 bittiä ja sana yleensä 4 tavua eli 32 bittiä. Kaksoissana on 8 tavua eli 64 bittiä. Sanojen pituus voi vaihdella tietokoneesta riippuen, mutta edellämainitut pituudet ovat yleisiä.
 <br><br>
 Bitit numeroidaan yleensä oikealta vasemmalle, alkaen bitistä nolla (0). Esimerkiksi, tavussa 00001000 bitin numero 3 arvo on yksi, kun muut bitit ovat nollia. Numerointi alkaa nollasta sen vuoksi, että tavuun talletetussa positiivisessa kokonaisluvussa kunkin bitin lukuarvo vastaa bitin numeron kakkosen potenssia. Esimerkiksi, tavun 00000101 lukuarvo on 4+1 eli 5.
@@ -53,8 +53,8 @@ Normaali suorituksessa oleva ohjelma (prosessi) ei saa viitata muiden prosessien
 <!-- note: ttk-91 -->
 
 <text-box variant="example" name="Esimerkkitietokone ttk-91">
-  
-Kurssilla käytetään esimerkkinä hyvin yksinkertaista tietokonetta, joka on antaa oikein hyvän kuvan todellisesta tietokoneesta. Todellinen tietokone on tietenkin jonkin verran monimutkaisempi ja kattavampi. Sellaisiin voitte sitten perehtyä myöhemmin, kun teillä on paremmat taustatiedot aihepiiristä. 
+
+Kurssilla käytetään esimerkkinä hyvin yksinkertaista tietokonetta, joka on antaa oikein hyvän kuvan todellisesta tietokoneesta. Todellinen tietokone on tietenkin jonkin verran monimutkaisempi ja kattavampi. Sellaisiin voitte sitten perehtyä myöhemmin, kun teillä on paremmat taustatiedot aihepiiristä.
 <br><br>
 Tietokoneen ttk-91 määritelmän on tehnyt Auvo Häkkinen vuonna 1991 Helsingin yliopistolla pidettyä Tietokoneen toiminta -kurssia varten. Ttk-91 on edelleen käytössä ja sille on tehty mm. simulaattori Titokone symbolisella konekielellä tehtyjen ohjelmien kehittämiseksi ja ajamiseksi.
 
@@ -69,17 +69,17 @@ Rajarekistereiden BASE ja LIMIT käyttö tekee keskusmuistin hallinnasta eri ohj
 <illustrations motive="ch-2-1-muistitilan-kaytto-ohjelmalle"></illustrations>
 </div>
 
-Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle (_globaalille_) datalle, _pinolle_ ja _keolle_. 
+Ohjelman käytössä oleva muistialue on jaettu erilaisiin osiin. Tyypillisesti siellä on omat yhtenäiset alueensa (muistisegmentit) ainakin koodille, kaikkialla viitattavissa olevalle (_globaalille_) datalle, _pinolle_ ja _keolle_.
 
-Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino on kuin pöydällä oleva korttipakka, johon uusia kortteja laitetaan vain sen päälle ja sieltä voi poistaa kortteja vain pakan päältä. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon "pinnalle" kullakin hetkellä. 
+Pino on erityinen aliohjelmien toteutukseen liittyvä muistialue, jonka avulla toteutetaan mm. aliohjelmien parametrien välitys ja aliohjelmien omien tietorakenteiden tilanvaraus. Pino on kuin pöydällä oleva korttipakka, johon uusia kortteja laitetaan vain sen päälle ja sieltä voi poistaa kortteja vain pakan päältä. Pino kasvaa aina aliohjelmakutsun yhteydessä ja pienenee sieltä palatessa. Pinorekisteri (SP, Stack Pointer) osoittaa pinon "pinnalle" kullakin hetkellä.
 
-Keko on erityinen muistialue, josta ohjelma pystyy suoritusaikana varaamaan uusia muistialueita ja vapauttamaan niitä. Esimerkkikoneessa ohjelmakoodi on heti muistialueen alussa ja sen jälkeen on datasegmentti, johon on varattu tilaa kaikkialla ohjelmassa viitattavissa oleviin muuttujiin ja muihin tietorakenteisiin. Kekorekisteri (HP, Heap Pointer) osoittaa keon alkuun kullakin hetkellä. Todellisissa järjestelmissä on keko voi olla esimerkiksi ohjelman oman muistialueen lopussa, mutta esimerkkikoneessa sitä ei ole toteutettu.  
+Keko on erityinen muistialue, josta ohjelma pystyy suoritusaikana varaamaan uusia muistialueita ja vapauttamaan niitä. Esimerkkikoneessa ohjelmakoodi on heti muistialueen alussa ja sen jälkeen on datasegmentti, johon on varattu tilaa kaikkialla ohjelmassa viitattavissa oleviin muuttujiin ja muihin tietorakenteisiin. Kekorekisteri (HP, Heap Pointer) osoittaa keon alkuun kullakin hetkellä. Todellisissa järjestelmissä on keko voi olla esimerkiksi ohjelman oman muistialueen lopussa, mutta esimerkkikoneessa sitä ei ole toteutettu.
 
 Sekä pinon että keon koot vaihtelevat dynaamisesti ohjelman suoritusaikana. Joskus ohjelmointivirheen seurauksena näiden tarvitsema yhteinen muistitila voi loppua, mikä ilmenee siitä, että pinorekisterin arvo yrittää kasvaa kekorekisterin arvoa suuremmaksi. Käyttäjälle tämä ilmenee ohjelman "kaatumisena" mahdollisen _stack overflow_-virheilmoituksen kera.
 
 Muistinhallintayksikössä on myös välimuisti. Se tarkistaa ennen jokaisen muistinviittauksen tekemistä, että löytyykö viitattu tieto välimuistista vai ei. Jos tieto löytyy välimuistista, se otetaan sutjakkaan käyttöön sieltä. Jos tietoa ei löydy välimuistista, se haetaan muistista välimuistiin tässä yhteydessä. Esimerkkikoneessa ei  ole välimuistia.
 
-Kanta- ja rajarekistereihin perustuva muistinhallinta on vain yksi tapa hallinnoida muistitilaa usean ohjelman välillä. Yhtenäisiä muistialueita voi olla yhdellä ohjelmalla useita ja kukin niistä on silloin rajattu omalla kanta- ja rajarekisteriparillaan. Ohjelman käytössä oleva muistitila voi myös olla jaettu saman kokoisiin _sivuihin_, joita sitten voi sijoitella sinne tänne keskusmuistissa saman kokoisiin _sivukehyksiin_. Tällainen _sivuttava muistinhallinta_ on käytössä useissa käyttöjärjestelmissä. 
+Kanta- ja rajarekistereihin perustuva muistinhallinta on vain yksi tapa hallinnoida muistitilaa usean ohjelman välillä. Yhtenäisiä muistialueita voi olla yhdellä ohjelmalla useita ja kukin niistä on silloin rajattu omalla kanta- ja rajarekisteriparillaan. Ohjelman käytössä oleva muistitila voi myös olla jaettu saman kokoisiin _sivuihin_, joita sitten voi sijoitella sinne tänne keskusmuistissa saman kokoisiin _sivukehyksiin_. Tällainen _sivuttava muistinhallinta_ on käytössä useissa käyttöjärjestelmissä.
 
 ### Rekisterit
 
@@ -106,10 +106,10 @@ Suorittimen sisällä on oma sisäinen väylä (tai usea) tiedonsiirtoon sen eri
 
 <!-- quiz 2.1.1-7: Väitteet suorittimesta, muistista ja väylästä -->
 
-<div><quiznator id="5c5023543972a9147410265b"></quiznator></div>
-<div><quiznator id="5c50244fddb6b814af321646"></quiznator></div>
-<div><quiznator id="5c5024e299236814c5bb8373"></quiznator></div>
-<div><quiznator id="5c50255799236814c5bb8377"></quiznator></div>
-<div><quiznator id="5c50267e99236814c5bb837e"></quiznator></div>
-<div><quiznator id="5c5026f6ddb6b814af321655"></quiznator></div>
-<div><quiznator id="5c502773c41ed4148d96abcd"></quiznator></div>
+<div><quiz id="d919dfbb-8a2e-416e-8e00-6f04e481e05f"></quiz></div>
+<div><quiz id="2cf1fbb4-1c9b-44de-b7fb-e5d638278f29"></quiz></div>
+<div><quiz id="1d1617a3-b920-4bbc-8702-94bd212d42cd"></quiz></div>
+<div><quiz id="f7cf706c-9db9-4cd5-b992-7eb910f02b29"></quiz></div>
+<div><quiz id="1fbc5db9-c9fd-4cbd-a8fe-a2499f5aabdf"></quiz></div>
+<div><quiz id="2e967021-1da6-4ea1-9788-ee3c4d3f8ccf"></quiz></div>
+<div><quiz id="287717fc-19c1-4559-97d5-ceed5ce9f3ef"></quiz></div>

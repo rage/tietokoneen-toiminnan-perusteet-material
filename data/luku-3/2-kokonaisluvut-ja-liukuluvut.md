@@ -15,15 +15,15 @@ Positiiviset kokonaisluvut ovat helppoja, koska niiden esitysmuoto on useimmiten
 ### Kokonaislukujen etumerkkiin perustuva esitysmuoto
 Meille ihmisille luontevin tapa esittää kokonaisluvut on käyttää etumerkkiä, jolloin vasemmanpuolimmainen bitti on positiivisille luvuille 0 ja negatiivisille 1. Esimerkiksi, +57 ja -57 ovat tavuina 0x39 ja 0x95, sekä 32-bittisinä sanoina 0x00000039 ja 0x80000039.
 
-``` 
+```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
 -57 = 1011 1001 = 0xB9 (tavuna)   -57 = 0x 80 00 00 39 (32-bittisenä sanana)
-``` 
+```
 Etumerkkibitin käyttö on vähän huono kokonaislukujen aritmetiikan toteutukseen, joten sitä ei useinkaan käytetä sen vuoksi. Esitystavan parhaimpana puolena on sen soveltuvuus ihmisille, jotka ovat tottuneet etumerkkien käyttöön.
 
 ### Kokonaislukujen yhden komplementin esitysmuoto
 Etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun kaikki bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
-``` 
+```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
 -55 = 1100 0110 = 0xC6 (tavuna)   -57 = 0x FF FF FF C6 (32-bittisenä sanana)
 ```
@@ -89,13 +89,13 @@ esitysmuoto     70 = 0100 0110 = 0x46
 Kun vakiolisäyksenä käytetään 2<sup>n-1</sup>-1 (missä n on bittien lukumäärä), niin esitystavalla on kaksikin etua. Ensinnäkin, positiivisilla ja negatiivisilla luvuilla on suunnilleen yhtä iso arvoalue. Toiseksi, vasemmanpuolimmainen bitti toimii myös etumerkkinä. Toisin kuin aikaisemmissa esitysmuodoissa, etumerkkibitin arvo 0 indikoi nyt negatiivista lukua ja arvo 1 posiivista lukua.
 
 <!-- Quizes 3.2.1-7  -->
-<div><quiznator id="5bdc44630f60f62a209d8e50"></quiznator></div>
-<div><quiznator id="5bdc45abb5cefd2a43d9b2e6"></quiznator></div>
-<div><quiznator id="5bdc4a7b8138f12a7e53728a"></quiznator></div>
-<div><quiznator id="5bdc4c7ce8e5d029fd781972"></quiznator></div>
-<div><quiznator id="5bdc4e5dc6014229d5b535a1"></quiznator></div>
-<div><quiznator id="5bdc506ee921f629a8dfd762"></quiznator></div>
-<div><quiznator id="5bdc5186c6014229d5b535a9"></quiznator></div>
+<div><quiz id="375990c8-233a-49d9-8a1a-1c4de6552102"></quiz></div>
+<div><quiz id="7edb61d9-50bd-4dd1-8dca-40def4ef82b6"></quiz></div>
+<div><quiz id="4794a28b-2d8f-439b-a43c-249aae239a8f"></quiz></div>
+<div><quiz id="5ce00140-3b1c-4e6f-8779-2f7e59c74114"></quiz></div>
+<div><quiz id="486877da-2e16-40d7-9c87-250701685130"></quiz></div>
+<div><quiz id="4b7eda3e-300d-41d6-8d6e-269b2f51a80f"></quiz></div>
+<div><quiz id="322209ef-1fe8-4951-b190-19a2f358d768"></quiz></div>
 
 <text-box variant="example" name="Tärkeitä termejä">
 
@@ -122,7 +122,7 @@ Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluok
 -0.00123      =    - 1.230000  *  10<sup>-3</sup>
 -0.000000123  =    - 1.230000  *  10<sup>-7</sup>
 +123.456789   =    + 1.234568  *  10<sup>2</sup>
-</pre> 
+</pre>
 
 Tietokoneessa käytämme tietenkin binäärijärjestelmää. Nytkin mantissa skaalataan siten, että kokonaisosaan jää vain yksi numero. Normaalissa 32-bitin esitysmuodossa mantissassa on 24 bittiä, mutta tässä esimerkissä mantissassa on vain 9 bittiä yhteensä, joista 8 on binääriosassa.
 
@@ -142,15 +142,15 @@ Eksponentin esitysmuoto on siis aina positiivinen kokonaisluku. Miksi tämä esi
 
 Esimerkiksi, luku -96.75 on binäärinä -1100000.11 ja normalisoidussa muodossa -1.10000011&nbsp;\*&nbsp;2<sup>6</sup>. Etumerkki ('-') talletetaan bittinä 1, eksponentti 6 muodossa 6+127=133=10000101, ja mantissasta vain sen binääriosa 23 bitillä 0x41800 (1000&nbsp;0101 = <nobr>100&nbsp;0001&nbsp;1000&nbsp;0000&nbsp;0000&nbsp;0000</nobr> = 0x41800).
 
-<pre> 
--96.75<sub>10</sub>   = -1.1000 0011    * 2<sup>6</sup> 
+<pre>
+-96.75<sub>10</sub>   = -1.1000 0011    * 2<sup>6</sup>
     &rarr; 1 100 0 010 1 100 0001 1000 0000 0000 0000 = 0xC2C18000
 </pre>
 
 Toinen esimerkki. Luku +346.875 on binäärinä +101011010.111 ja normalisoituna +1.010&nbsp;1101&nbsp;0111nbsp;\*&nbsp;2<sup>8</sup>. Etumerkki talletetaan bittinä 0, eksponentti muodossa 8+127=135=10000111, ja mantissa 23-bittisessä muodossa 0x2D7000 <nobr>(=&nbsp;010&nbsp;1101&nbsp;0111&nbsp;0000&nbsp;0000&nbsp;0000</nobr>).
 
-<pre> 
-+345.875<sub>10</sub> = +1.0101 1010 111 * 2<sup>8</sup> 
+<pre>
++345.875<sub>10</sub> = +1.0101 1010 111 * 2<sup>8</sup>
     &rarr; 0 100 0 011 1 010 1101 0111 0000 0000 0000 = 0x43AD7000
 </pre>
 
@@ -158,9 +158,9 @@ Vastaavasti, jos muistissa olevan liukuluvun X esitysmuoto on 0x40780000 (<nobr>
 
 <pre>
 
-0x40780000 = 0 100 0000 0 111 1000 0000 0000 0000 
+0x40780000 = 0 100 0000 0 111 1000 0000 0000 0000
     &rarr; +1.1111 * 2<sup>1</sup> = +11.111<sub>2</sub> =  3.875<sub>10</sub>
-    
+
 </pre>
 
 ### Liukulukujen erikoistapaukset
@@ -177,25 +177,25 @@ Signaling Nan: 0/1 1111 1111  0?..?1?..?  (nollasta poikkeava mantissakenttä)
 Normalisointi asettaa omat rajoituksensa sille, kuinka pieniä liukulukuja voi esittää, koska normalisoidun liukuluvun kokonaisosa on aina 1. Hyvin pienille _ei-normalisoiduille luvuille_ on oma esitystapansa, joka on koodattu eksponenttikenttänä 0 ja nollasta poikkeavana mantissakenttänä. Tuollaisilla luvuilla eksponentti on aina -126 ja piilobitin arvo on 0. Nimensä mukaisesti mantissaa ei ole normeerattu tavalliseen tapaan, vaan se on skaalattu eksponenttiin -126 sopivaksi.
 
 <pre>
-+1.14794 \* 10<sup>-40</sup> = 0.0000 0010 1 \* 2<sup>-126</sup> 
++1.14794 \* 10<sup>-40</sup> = 0.0000 0010 1 \* 2<sup>-126</sup>
     &rarr; 0 000 0000 0 000 0001 0100 0000 0000 0000 = 0x00014000
 </pre>
 
 Huonona puolena tällaisissa (itseisarvoltaan) hyvin pienissä luvuissa on esitystarkkuuden heikentyminen. Edellisessä esimerkissä merkitseviä bittejä on vain 17, kun normaalisti liukulukujen tarkkuus on 24 bittiä. Jokainen nollabitti ei-normalisoidun mantissan alussa puolittaa lukutarkkuuden.
 
 <!-- Quizes 3.2.8-10 -->
-<div><quiznator id="5be1890ae8e5d029fd781d84"></quiznator></div>
-<div><quiznator id="5be18b670f60f62a209d9293"></quiznator></div>
-<div><quiznator id="5be18d190f60f62a209d9296"></quiznator></div>
+<div><quiz id="3d9a0c24-2735-4497-a25b-1f8056d5a74b"></quiz></div>
+<div><quiz id="319f4fcc-1f95-4609-bb14-fdc1018664da"></quiz></div>
+<div><quiz id="318a93cf-1f88-42e3-97c3-fd56fa0d2ac2"></quiz></div>
 
 ### Liukulukulaskenta
 Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu realilukulaskennasta. Esimerkkinä tarkastellaan tilannetta, jossa muuttujan X arvo on 1.0 ja muuttujan Y arvo on 0.00000001. Jos laskemme nämä luvut yhteen (Z=X+Y), niin realiluvuilla laskettaessa summan pitäisi olla 1.00000001. Liukuluvuilla (IEEE:n 32-bittinen standardi) laskettaessa tulos on kuitenkin 1.0, koska Y:n bitit jäävät pois normeeratussa 24 bitin esitysmuodossa.
 
 <pre>
 1.000000<sub>10</sub> + 0.00000001<sub>10</sub> = 1.00000001<sub>10</sub>
-1.000 0000 0000 0000 0000 0000 0001 0101<sub>2</sub> 
+1.000 0000 0000 0000 0000 0000 0001 0101<sub>2</sub>
     &rarr; 1.000 0000 0000 0000 0000 0000<sub>2</sub> (24 bittiä)
-    
+
 </pre>
 
 Toinen ongelma liukulukulaskennassa on lukujen vertailu. Realiluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.

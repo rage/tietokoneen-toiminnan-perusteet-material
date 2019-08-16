@@ -20,8 +20,8 @@ Sitten suoritamme IR:ssä olevan käskyn. Käsky jaetaan ensin eri kenttiin. Nä
 
 ```
 Yksinkertainen konekäsky
-  
-ADD  R3, R5  -- kentät: 17 3 0 5 0, 
+
+ADD  R3, R5  -- kentät: 17 3 0 5 0,
              -- laske R3:n ja R5:n arvot yhteen, talleta tulos R3:een
 ```
 
@@ -33,7 +33,7 @@ Sitten palataan syklissä seuraavan konekäskyn noutoon muistista ja sykli toist
 <!-- note: konekäskyjen samanaikainen suoritus -->
 
 <text-box variant="example" name="Konekäskyjen suorituksen optimointi">
-  
+
 Todellisissa tehokkaissa suorittimissa peräkkäisten konekäskyjen suoritusnopeutta on optimoitu useallakin eri menetelmällä, mutta lopputulos on silti samanlainen kuin käskyjen suorittaminen yksi kerrallaan. Tällainen menetelmä on mm. liukuhihnoitus, jossa peräkkäiseten konekäskyjen eri vaiheita suoritetaan samanaikaisesti. Esimerkiksi, seuraavaa konekäskyä voidaan olla hakemassa muistista samaan aikaan kuin edellistä vasta suoritetaan. Usein ennakointi kannattaa, mutta joskus tulee huteja. Toinen tapa on tehdä konekäskyistä supertehokkaita, jolloin ne voisivat vaikkapa samalla kertaa useaa laskutoimitusta. Kolmas tapa on toteuttaa suorittimen sisällä monta pienempää suoritinta eli ydintä, joista kukin voi olla suorittamassa omaa ohjelmaansa samanaikaisesti. Neljäs tapa hypersäikeistys mainittiinkin jo aikaisemmin. Siinä suorittimella on esim. kaksi joukkoa rekistereitä, joiden avulla voidaan suorittaa toista ohjelmaa sillä aikaa kun ensimmäinen odottaa muistiviitteen tekemistä. Näitä kaikki menetelmiä voidaan käyttää yhtä aikaa, mutta ne eivät sisälly tämän kurssin oppimistavoitteisiin.
 
 </text-box>
@@ -53,8 +53,8 @@ Nyt ymmärrät, miksi käyttöjärjestelmässä olevat virheet ovat niin vaarall
 <!-- note: tavallinen käyttäjä vs. ylläpitäjä -->
 
 <text-box variant="example" name="Tavallinen käyttäjä vai ylläpitäjä">
-  
-Olisi hyvä, että suorittaisit kotitietokonettasi yleensä tavallisena käyttäjänä etkä ylläpitäjän oikeuksilla. Jos vahingossa päästät haittaohjelman koneellesi, niin ero on merkittävä. Ylläpitäjän oikeuksilla toimiva haittaohjelma on koko ajan etuoikeutetussa tilassa ja saa tehdä ihan mitä haluaa koneellasi. 
+
+Olisi hyvä, että suorittaisit kotitietokonettasi yleensä tavallisena käyttäjänä etkä ylläpitäjän oikeuksilla. Jos vahingossa päästät haittaohjelman koneellesi, niin ero on merkittävä. Ylläpitäjän oikeuksilla toimiva haittaohjelma on koko ajan etuoikeutetussa tilassa ja saa tehdä ihan mitä haluaa koneellasi.
 <br><br>
 Prosessien oikeudet määräytyvät sen käynnistävän käyttäjän oikeuksien mukaan. Tavallinen käyttäjän käynnistämät ohjelmat ovat turvallisesti tavallisessa suoritustilassa, kun ylläpitäjän käynnistämät ohjelmat ovat jo heti valmiiksi etuoikeutetussa tilassa suoritettavia.
 
@@ -119,7 +119,7 @@ Käskyn suoritusvaiheessa käsky puretaan ensin osiinsa, jolloin siitä saadaan 
 Esimerkki: Käskyn "ADD R1, R2" suoritusvaihe
 
 Kopioi käskyn ensimmäisen operandin (nyt R1) arvo ALU:n operandiksi 1.
-Kopioi käskyn toisen operandin (nyt R2) arvo ALU:n operandiksi 2. 
+Kopioi käskyn toisen operandin (nyt R2) arvo ALU:n operandiksi 2.
 Anna käskyn operaatiokoodi (nyt "add" eli 17) ALU:n komennoksi.
 Odota hieman.
 Kopioi ALU:n ulostulo ensimmäisen operandin (nyt R1) uudeksi arvoksi
@@ -131,7 +131,7 @@ Myös keskeytysten tarkistaminen on helppoa. Katsotaan vain, onko jokin keskeyty
 ```
 Esimerkki: Keskeytyksen "kokonaisluvun ylivuoto" käsittely
 
-Tarkista keskeytysten olemassaolo SR:stä. O-bitti (overflow) on päällä. 
+Tarkista keskeytysten olemassaolo SR:stä. O-bitti (overflow) on päällä.
 Kopioi PC:n arvo johonkin (esim. pinoon).
 Kopio SR:n arvo johonkin (esim. pinoon).
 Aseta etuoikeutettu tila (bitti P) päälle SR:ssä
@@ -141,10 +141,10 @@ Aseta PC:n arvoksi Kokonaisluvun ylivuoto -keskeytyskäsittelijän osoite
 
 <!-- quiz 2.2.1-7 Väitteet käskyjen nouto- ja suoritussyklistä  -->
 
-<div><quiznator id="5c502951c41ed4148d96abd9"></quiznator></div>
-<div><quiznator id="5c502a16fd9fd71425c62335"></quiznator></div>
-<div><quiznator id="5c502aa899236814c5bb838d"></quiznator></div>
-<div><quiznator id="5c502b31244fe21455cb6741"></quiznator></div>
-<div><quiznator id="5c502c4114524713f95a0a30"></quiznator></div>
-<div><quiznator id="5c502cbd14524713f95a0a33"></quiznator></div>
-<div><quiznator id="5c502d293972a9147410267d"></quiznator></div>
+<div><quiz id="25c50300-f065-41fe-a421-c1247c8dc0c4"></quiz></div>
+<div><quiz id="2a1ade70-1acc-4831-9dc2-d74ff86691f0"></quiz></div>
+<div><quiz id="26a78b12-f606-4f29-825b-c5aae6f98160"></quiz></div>
+<div><quiz id="206d7920-ce65-40b1-9561-a5d34bb643cd"></quiz></div>
+<div><quiz id="1b6425b2-ae56-4c4d-b051-8c120fd7969e"></quiz></div>
+<div><quiz id="27df69da-fdc7-4eed-8cfe-cbe5b7102758"></quiz></div>
+<div><quiz id="1b57385f-ae04-47db-9b1c-8bcff4eb8824"></quiz></div>

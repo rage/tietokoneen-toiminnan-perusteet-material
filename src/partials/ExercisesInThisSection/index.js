@@ -24,7 +24,7 @@ class ExercisesInThisSection extends React.Component {
     return (
       <ExpansionPanel>
         <ExpansionPanelSummary expandIcon={<FontAwesomeIcon icon={icon} />}>
-          Lista luvun tehtävistä
+          Lista osan tehtävistä
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <ExerciseList />

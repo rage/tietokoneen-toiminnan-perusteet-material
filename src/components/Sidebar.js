@@ -106,10 +106,6 @@ var content2 = [
     title: "Arvostelu ja kokeet",
     path: "/arvostelu-ja-kokeet",
   },
-  {
-    title: "Mahdollisuus opinto-oikeuteen",
-    path: "/opinto-oikeus",
-  },
   { title: "Tukiväylät", path: "/tukivaylat" },
   {
     title: "Opettajille ja opinto-ohjaajille",
@@ -122,7 +118,7 @@ var content2 = [
   { separator: true },
 ]
 
-var futurePages = []
+var futurePages = [] // { title: "Osa 14", tba: "19.4.2019" }
 
 const MobileWrapper = styled.div`
   @media only screen and (max-width: ${SMALL_MEDIUM_BREAKPOINT}) {
@@ -152,8 +148,15 @@ class Sidebar extends React.Component {
     if (process.env.NODE_ENV === "production") {
       edges = edges.filter(o => !o.hidden)
     }
+    edges.sort((a, b) =>
+      a.title.localeCompare(b.title, undefined, {
+        numeric: true,
+        sensitivity: "base",
+      }),
+    )
     let content = content2.concat(edges)
     content = content.concat(futurePages)
+
     return (
       <MobileWrapperOrFragment mobileMenuOpen={this.props.mobileMenuOpen}>
         <MenuExpanderWrapper>

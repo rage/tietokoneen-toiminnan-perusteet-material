@@ -13,56 +13,64 @@ export async function fetchManyQuizDetails(quizIds) {
   return res.data
 }
 
-export async function fetchQuiznatorProgress() {
+export async function fetchQuizProgress() {
   let res = []
   const partToTag = [
     {
       part: "osa01",
-      tag: "tietokonen-toiminnan-perusteet-1",
+      tag: "tietokoneen-toiminnan-perusteet-1",
     },
     {
       part: "osa02",
-      tag: "tietokonen-toiminnan-perusteet-2",
+      tag: "tietokoneen-toiminnan-perusteet-2",
     },
     {
       part: "osa03",
-      tag: "tietokonen-toiminnan-perusteet-3",
+      tag: "tietokoneen-toiminnan-perusteet-3",
     },
     {
       part: "osa04",
-      tag: "tietokonen-toiminnan-perusteet-4",
+      tag: "tietokoneen-toiminnan-perusteet-4",
     },
     {
       part: "osa05",
-      tag: "tietokonen-toiminnan-perusteet-5",
+      tag: "tietokoneen-toiminnan-perusteet-5",
     },
     {
       part: "osa06",
-      tag: "tietokonen-toiminnan-perusteet-6",
+      tag: "tietokoneen-toiminnan-perusteet-6",
     },
     {
       part: "osa07",
-      tag: "tietokonen-toiminnan-perusteet-7",
+      tag: "tietokoneen-toiminnan-perusteet-7",
     },
     {
       part: "osa08",
-      tag: "tietokonen-toiminnan-perusteet-8",
+      tag: "tietokoneen-toiminnan-perusteet-8",
     },
     {
       part: "osa09",
-      tag: "tietokonen-toiminnan-perusteet-9",
+      tag: "tietokoneen-toiminnan-perusteet-9",
     },
     {
-      part: "osa010",
-      tag: "tietokonen-toiminnan-perusteet-10",
+      part: "osa10",
+      tag: "tietokoneen-toiminnan-perusteet-10",
     },
     {
       part: "osa11",
-      tag: "tietokonen-toiminnan-perusteet-11",
+      tag: "tietokoneen-toiminnan-perusteet-11",
     },
     {
       part: "osa12",
-      tag: "tietokonen-toiminnan-perusteet-12",
+      tag: "tietokoneen-toiminnan-perusteet-12",
+    },
+    {
+      part: "osa13",
+      tag: "tietokoneen-toiminnan-perusteet-13",
+    },
+    {
+      part: "osa14",
+      tag: "tietokoneen-toiminnan-perusteet-14",
     },
   ]
   const quizIdInformation = await fetchQuizIds()
@@ -94,7 +102,7 @@ export async function fetchQuiznatorProgress() {
 export async function fetchQuizIds() {
   const res = await axios.post(
     `${BASE_URL}/api/v1/tags/quizids`,
-    { tags: ["tietokonen-toiminnan-perusteet"] },
+    { tags: ["tietokoneen-toiminnan-perusteet"] },
     { headers: { Authorization: `Bearer ${accessToken()}` } },
   )
   return res.data

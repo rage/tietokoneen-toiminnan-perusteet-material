@@ -5,7 +5,6 @@ import ContentArea from "../components/ContentArea"
 import TopBar from "../components/TopBar"
 import { StaticQuery, graphql } from "gatsby"
 import * as store from "store"
-import withMaterialUiRoot from "./withMaterialUiRoot"
 import Pheromones from "../util/pheromones"
 import styled from "styled-components"
 
@@ -23,13 +22,14 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { config as fontAwesomeConfig } from "@fortawesome/fontawesome-svg-core"
 import { canDoResearch } from "../services/moocfi"
 import Footer from "../components/Footer"
-
+import PointsBalloon from "../components/PointsBalloon"
 import {
   MEDIUM_SIDEBAR_WIDTH,
   LARGE_SIDEBAR_WIDTH,
   MEDIUM_LARGE_BREAKPOINT,
   SMALL_MEDIUM_BREAKPOINT,
 } from "../util/constants"
+import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
 
 fontAwesomeConfig.autoAddCss = false
 
@@ -72,13 +72,6 @@ class Layout extends React.Component {
   componentDidMount() {
     const user = store.get("tmc.user")
     if (typeof window !== "undefined" && user) {
-      if (typeof window.Quiznator === "undefined") {
-        document.addEventListener("quiznatorLoaded", () => {
-          this.setQuiznatorUser(user)
-        })
-      } else {
-        this.setQuiznatorUser(user)
-      }
       if (canDoResearch()) {
         setTimeout(() => {
           this.removePheromones = Pheromones.init({
@@ -107,13 +100,6 @@ class Layout extends React.Component {
       return {
         mobileMenuOpen: !prev.mobileMenuOpen,
       }
-    })
-  }
-
-  setQuiznatorUser = user => {
-    window.Quiznator.setUser({
-      id: user.username,
-      accessToken: user.accessToken,
     })
   }
 
@@ -153,6 +139,7 @@ class Layout extends React.Component {
                   <ContentArea mobileMenuOpen={this.state.mobileMenuOpen}>
                     {children}
                   </ContentArea>
+                  <PointsBalloon />
                   <Footer />
                 </SidebarPush>
               </Wrapper>
@@ -168,4 +155,4 @@ class Layout extends React.Component {
   }
 }
 
-export default withMaterialUiRoot(Layout)
+export default withSimpleErrorBoundary(Layout)

@@ -17,7 +17,7 @@ Toinen usein käytetty merkistö on [UTF-8](https://en.wikipedia.org/wiki/UTF-8)
 Merkkien koodaustapoja (merkistöjä) on siis useita erilaisia ja niitä kaikkia käytetään rinnakkain. Tästä voi aiheutua ongelmia, kun esimerkiksi jokin maili on kirjoitettu yhtä merkistöä käyttäen ja sen vastaanottajan maili-asiakas olettaa ihan liikaa käytössä olevasta merkistöstä. Vastaava ongelma esiintyy usein verkkosivujen kanssa. Verkkosivuilla on mahdollista kertoa käytössä oleva merkistö sen alussa, jotta selaimet osaavat näyttää sivun oikein. Olisi suotavaa, että jokaisella verkkosivulla olisi tuo merkistönkuvaus paikallaan, mutta harmillisesti näin ei suinkaan ole.
 
     Esimerkki:  Merkistön määrittely (html-koodatun) verkkosivun alussa
-    
+
     <html><head>
     <meta charset="utf-8">
     <title>Esimerkki merkistön määrittelystä</title>
@@ -39,7 +39,7 @@ peräkkäisiin tavuihin seuraavasti:
 0x1200: 'M' 'e' 'r' 'k'  'k' 'i' 'j' 'o'   'n' 'o' '\0' '?'  (Big-Endian)
 0x1200: 'k' 'r' 'e' 'M'  'o' 'j' 'i' 'k'   '?' '\0' 'o' 'n'  (Little-Endian)
 
-Vimeisen sanan viimeinen merkki '?' tarkoittaa tässä ihan mitä vain. 
+Vimeisen sanan viimeinen merkki '?' tarkoittaa tässä ihan mitä vain.
 Jotain bittejä siellä kuitenkin on.
 ```
 
@@ -110,13 +110,13 @@ Ruokakaupassa myytävien tuotteet voisi olla hyvä koodata kokonaisluvuilla, jot
 Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska ainakin joskus on tarve esittää arvo plus (tai miinus) ääretön. Samoin rakkauden määrä voi kasvaa tai vähetä ihan pikkasenkin kerrallaan. Mahdollisia operaatioita olisivat esimerkiksi _AsetaRakkaudenMäärä()_, _LisääRakkaudenMäärää()_ ja _VähennäRakkaudenMäärää()_.
 
 <!-- Quizes 3.4.1-4  -->
-<div><quiznator id="5bed3c6b2a799f3e5ac259a5"></quiznator></div>
-<div><quiznator id="5bed406ccd84693e7889a351"></quiznator></div>
-<div><quiznator id="5bed418c5695f73da1f7544d"></quiznator></div>
-<div><quiznator id="5bed47c75695f73da1f75459"></quiznator></div>
+<div><quiz id="5bfee7de-3a8d-4a1a-8f78-2f0b3dda7430"></quiz></div>
+<div><quiz id="42bfa3a6-2a7b-4e7b-90a8-22221df08902"></quiz></div>
+<div><quiz id="420ffbd9-2a0c-41ab-863e-21c84ab8d765"></quiz></div>
+<div><quiz id="40b7b469-2930-4fa6-95f8-21183cd88cb6"></quiz></div>
 
 <text-box variant="example" name="Historiaa:  ENIAC">
-  
+
 ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäinen yleiskäyttöinen sähkökäyttöinen tietokone. Sen pääsuunnittelijat olivat John Mauchly ja J. Presper Eckert. Siinä oli 17468 elektroniputkea. Sen nopeus oli mullistavat 5000 yhteenlaskua tai 357 kertolaskua sekunnissa. Se painoi 27 tonnia, vaati lattiatilaa 167 m2 ja kulutti 150 kW sähköä. Siinä oli uutena piirteenä haarautumiskäsky. Ohjelmointi tapahtui fyysisesti (käsin) langoittamalla laitteisto suorittamaan tiettyä algoritmia ennen ohjelman suorittamista. Ensimmäisellä testiohjelmalla suoritettiin vetypommin kehittämiseen liittyviä laskelmia ja syöteaineisto oli yli miljoonalla reikäkortilla.
 
 <!-- kuva: ch-3-4-eniac    -->
@@ -133,7 +133,7 @@ ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäi
 Kolmas luku käsitteli tiedon erilaisia esitysmuotoja. Käsittelimme tarkemmin neljä erilaista kokonaislukujen esitysmuotoa ja IEEE:n standardin mukaista liukulukujen 32-bittistä esitysmuotoa. Sen jälkeen tutustuimme merkkien ja merkkijonojen esitysmuotoihin. Kävimme sitten lyhyesti läpi (moniulotteisten) taulukoiden ja tietueiden toteutuksen. Lopuksi esittelimme pääperiaatteet kuvien, äänten ja kaiken muun tyyppisen tiedon esitystapoihin.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
-<div><quiznator id="5c6c09bfc41ed4148d96ec98"></quiznator></div>
+<div><quiz id="453da529-2c11-4fb5-af09-23685fdbffd0"></quiz></div>
 
 <!--
 <div>
@@ -154,7 +154,7 @@ Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
   {"content":"Mitä väliä sillä on, jos matriisi talletetaan riveittäin tai sarakettain?"},
   {"content":"Mitkä ovat moniulotteiseen taulukkoon viittaamisen kolme eri vaihetta?"},
   {"content":"Miten kuvat, äänet, dokumentit ja videot esitetään tietokoneessa?"},
-  {"content":"Milloinka jokin uusi tietotyypi olisi hyvä tallettaa kokonaislukuina?"},  
+  {"content":"Milloinka jokin uusi tietotyypi olisi hyvä tallettaa kokonaislukuina?"},
   {"content":"Milloinka jokin uusi tietotyypi olisi hyvä tallettaa liukulukuina?"},
   {"content":"Miten sovellus tietää, mikä kuvien esitystapa on kulloinkin käytössä?"}
     ]'>>

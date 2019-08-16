@@ -30,24 +30,24 @@ Huom: nämä ovat irrallisia käskyjä - ne eivät muodosta ohjelmaa.
 Kaikkien käskyjen tulos talletetaan rekisteriin r2.
 
 ptrX dc 453828           -- symbolin ptrX arvo on (osoitin)muuttujan ptrX
-                            osoite. (Osoitin)muuttujan ptrX arvo on 
+                            osoite. (Osoitin)muuttujan ptrX arvo on
                             muistissa olevan tiedon osoite
-Tbl  ds 200              -- symbolin Tbl arvo on 200-alkioisen taulukon 
+Tbl  ds 200              -- symbolin Tbl arvo on 200-alkioisen taulukon
                             ensimmäisen alkion osoite
 
     load  r2, =80        -- luku 80 on IR:n vakio-osassa
-    load  r2, Tbl(r1)    -- Tbl(r1) on suora muistinosoitusviite 
+    load  r2, Tbl(r1)    -- Tbl(r1) on suora muistinosoitusviite
                             keskusmuistiin, osoitteeseen 280. Arvo 280 on
                             lukujen 200 (IR:n vakio-osa) ja 80 (rek r1)
                             summa. Tulos talletetaan r2:een.
     add   r2, =1         -- ensimmäinen operandi on r2:ssä
                             toinen operandi (luku 1) on IR:n vakio-osassa.
-    load  r2, Tbl(r5)    -- alkio Tbl(r5) osoitteesta 281 löytyisi 
+    load  r2, Tbl(r5)    -- alkio Tbl(r5) osoitteesta 281 löytyisi
                             luultavasti välimuistista, koska sen viereiseen
                             alkioon osoitteessa 280 viitattiin juuri äsken.
-    load  r2, @ptrX      -- epäsuora muistiviite, ptrX arvo löytyy IR:n 
-                            vakio-osasta, tiedon osoite 453828 löytyy 
-                            muistista (osoitteesta ptrX), tieto löytyy 
+    load  r2, @ptrX      -- epäsuora muistiviite, ptrX arvo löytyy IR:n
+                            vakio-osasta, tiedon osoite 453828 löytyy
+                            muistista (osoitteesta ptrX), tieto löytyy
                             muistista ptrX:n osoittamasta osoitteesta 453828
 ```
 
@@ -78,7 +78,7 @@ Esimerkki: Count ja Limit molemmat muistissa
     jless loop
 ```
 
-Kolmaskin vaihtoehto on olemassa. Silmukan muuntelumuuttujaa arvon voi pitää rekisterissä silmukan suoritusajan ja sitten lopuksi tallettaa muistiin. Esimerkiksi C-kielessä muuntelumuuttujat ovat tavallisia muuttujia ja niiden loppuarvon täytyy olla käytettävissä myös silmukan jälkeen. Joissakin toisissa kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä tai muuntelumuuttujaa ei ole edes määritelty silmukan ulkopuolella. Korkean tason ohjelmointikieliä on hyvin erilaisia ja niillä on merkittäviä mielenkiintoisia eroavaisuuksia! 
+Kolmaskin vaihtoehto on olemassa. Silmukan muuntelumuuttujaa arvon voi pitää rekisterissä silmukan suoritusajan ja sitten lopuksi tallettaa muistiin. Esimerkiksi C-kielessä muuntelumuuttujat ovat tavallisia muuttujia ja niiden loppuarvon täytyy olla käytettävissä myös silmukan jälkeen. Joissakin toisissa kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä tai muuntelumuuttujaa ei ole edes määritelty silmukan ulkopuolella. Korkean tason ohjelmointikieliä on hyvin erilaisia ja niillä on merkittäviä mielenkiintoisia eroavaisuuksia!
 ```
 Esimerkki: muuntelumuuttuja rekisterissä ja muistissa
 
@@ -93,7 +93,7 @@ loop  comp  r1, =50   -- testaa loopin loppuminen
       add   r1, =1    -- i:n lisäys ja paluu silmukkaan
       jump  loop
 
-done  store  r1, i    -- talleta i:n loppuarvo (koska ohjelmointikielen 
+done  store  r1, i    -- talleta i:n loppuarvo (koska ohjelmointikielen
                          semantiikka sitä vaatii)
 ```
 
@@ -105,19 +105,19 @@ Välimuistin käyttö on tuuripeliä, mutta siihen voi vaikuttaa. On aina tehokk
 
 <!-- Quiz 2.4.1-10 Väitteet tiedon sijainnin vaikutuksesta suoritusnopeuteen -->
 
-<div><quiznator id="5c503c5fc41ed4148d96ac32"></quiznator></div>
-<div><quiznator id="5c503cb3ddb6b814af3216b0"></quiznator></div>
-<div><quiznator id="5c503d25ddb6b814af3216b1"></quiznator></div>
-<div><quiznator id="5c503dba99236814c5bb83e3"></quiznator></div>
-<div><quiznator id="5c503e8e99236814c5bb83e8"></quiznator></div>
-<div><quiznator id="5c503f07017ffc13eddc9871"></quiznator></div>
-<div><quiznator id="5c504a41c41ed4148d96ac79"></quiznator></div>
-<div><quiznator id="5c504b1499236814c5bb842e"></quiznator></div>
-<div><quiznator id="5c504b79c41ed4148d96ac81"></quiznator></div>
-<div><quiznator id="5c504bdcddb6b814af321701"></quiznator></div>
+<div><quiz id="32ed1dc8-2069-4d63-8edb-1a0acc67bc81"></quiz></div>
+<div><quiz id="3b3b5553-25b3-4207-9145-1e4a1558e154"></quiz></div>
+<div><quiz id="317af092-1f7e-43a3-b182-fd07029fab33"></quiz></div>
+<div><quiz id="2da60d67-1d0d-4ea0-a91f-e96f0a418efe"></quiz></div>
+<div><quiz id="279abc28-fc12-4cf3-8260-ca86836887dc"></quiz></div>
+<div><quiz id="2d8bb668-1cfd-4264-96a2-e8e85889b952"></quiz></div>
+<div><quiz id="2a6c4a09-1b00-4559-9fe8-d8f054666465"></quiz></div>
+<div><quiz id="1f9df9f2-c93c-45f4-8046-a1ae37dd2c41"></quiz></div>
+<div><quiz id="2c125c89-1c0c-4f95-83ea-e15eaef041a6"></quiz></div>
+<div><quiz id="421d4b68-2a14-4938-8c5c-21cf194148ff"></quiz></div>
 
 <text-box variant="example" name="Historiaa:  ESKO">
-  
+
 ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suomessa rakennettu tietokone. Se oli vanhentunut jo valmistuessaan ja suoritti noin 20 yhteenlaskua sekunnissa. Ohjelmakoodi luettiin reikänauhoilta. Aliohjelmaa kutsuttiin siirtämällä kontrolli sitä vastaavaan reikänauhan lukijaan, jossa aliohjelman koodi oli reikänauhalla ikuisessa silmukassa. Muistina oli 1840 sanan rumpumuisti. ESKOn varsinainen arvo oli tuoda tietotekniikan osaamista Suomeen.
 
 <!-- kuva: ch-2-4-esko    -->
@@ -133,5 +133,4 @@ ESKO eli Elektroninen SarjaKOmputaattori (1960) oli ensimmäinen Suomessa rakenn
 Toinen luku käsitteli suorittimen ja muistin toimintaa. Aluksi katsoimme vähän tarkemmin suorittimen rakennetta ja erityisesti sen toimintaa käskyjen nouto- ja suoritussyklin toteuttajana. Sen jälkeen tarkastelimme konekäskyjen eri tyyppejä ja rakennetta. Lopuksi katsoimme, kuinka tiedon sijainti suoritusaikana voi vaihdella ja kuinka se vaikuttaa ohjelmien suoritusnopeuteen.
 
 Vastaa alla olevaan kyselyyn kun olet valmis tämän luvun tehtävien kanssa.
-<div><quiznator id="5c66b17199236814c5bbb972"></quiznator></div>
-
+<div><quiz id="225dc36f-dabb-4d24-99f1-afbd2db42bbe"></quiz></div>

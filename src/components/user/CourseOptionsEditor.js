@@ -14,16 +14,14 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import Loading from "../Loading"
 
-import {
-  updateUserDetails,
-  userDetails,
-  getCourseVariant,
-} from "../../services/moocfi"
+import { updateUserDetails, userDetails } from "../../services/moocfi"
 
 import styled from "styled-components"
 import withSimpleErrorBoundary from "../../util/withSimpleErrorBoundary"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faInfoCircle as icon } from "@fortawesome/free-solid-svg-icons"
+import DropdownMenu from "./DropdownMenu"
+import { Link } from "gatsby"
 
 const Row = styled.div`
   margin-bottom: 1.5rem;
@@ -47,11 +45,11 @@ const StyledIcon = styled(FontAwesomeIcon)`
 class CourseOptionsEditor extends React.Component {
   async componentDidMount() {
     const data = await userDetails()
-    const courseVariant = await getCourseVariant()
     this.setState(
       {
         first_name: data.user_field?.first_name,
         last_name: data.user_field?.last_name,
+        email: data.email,
         student_number: data.user_field?.organizational_id,
         applies_for_study_right:
           data.extra_fields?.applies_for_study_right === "t",
@@ -59,7 +57,7 @@ class CourseOptionsEditor extends React.Component {
           data.extra_fields?.digital_education_for_all === "t",
         marketing: data.extra_fields?.marketing === "t",
         research: data.extra_fields?.research,
-        currentCourseVariant: courseVariant,
+        currentCourseVariant: data.extra_fields?.course_variant,
         loading: false,
       },
       () => {
@@ -76,9 +74,7 @@ class CourseOptionsEditor extends React.Component {
       digital_education_for_all: this.state.digital_education_for_all,
       marketing: this.state.marketing,
       research: this.state.research,
-    }
-    if (this.props.courseVariant) {
-      extraFields["course_variant"] = this.props.courseVariant
+      course_variant: this.state.currentCourseVariant,
     }
     const userField = {
       first_name: this.state.first_name,
@@ -103,6 +99,7 @@ class CourseOptionsEditor extends React.Component {
     research: undefined,
     first_name: undefined,
     last_name: undefined,
+    email: undefined,
     student_number: undefined,
     loading: true,
     focused: null,
@@ -139,48 +136,21 @@ class CourseOptionsEditor extends React.Component {
     }))
   }
 
+  setSelectedVariant = value => {
+    this.setState({ currentCourseVariant: value })
+  }
+
   render() {
     return (
       <FormContainer>
-        <Loading loading={this.state.loading} heightHint="5px">
-          <div>
-            {this.props.courseVariant === "nodl" && (
-              <InfoBox>
-                <Card>
-                  <CardContent>
-                    <StyledIcon icon={icon} />
-                    Olet tekemässä kurssin aikataulutonta versiota, koska
-                    aikataulutetun kurssin ensimmäinen deadline on jo mennyt.
-                  </CardContent>
-                </Card>
-              </InfoBox>
-            )}
-          </div>
-
-          <div>
-            {!this.props.courseVariant &&
-              this.state.currentCourseVariant === "nodl" && (
-                <InfoBox>
-                  <Card>
-                    <CardContent>
-                      <StyledIcon icon={icon} />
-                      Olet tekemässä kurssin aikataulutonta versiota.
-                    </CardContent>
-                  </Card>
-                </InfoBox>
-              )}
-            {!this.props.courseVariant &&
-              this.state.currentCourseVariant !== "nodl" && (
-                <InfoBox>
-                  <Card>
-                    <CardContent>
-                      <StyledIcon icon={icon} />
-                      Olet tekemässä kurssin aikataulutettua versiota.
-                    </CardContent>
-                  </Card>
-                </InfoBox>
-              )}
-          </div>
+        <Loading loading={this.state.loading} heightHint="490px">
+          <InfoBox>
+            <Card>
+              <CardContent>
+                Olet kirjautunut tunnuksella {this.state.email} sisään
+              </CardContent>
+            </Card>
+          </InfoBox>
         </Loading>
         <h1>Opiskelijan tiedot</h1>
         <Form>
@@ -249,20 +219,6 @@ class CourseOptionsEditor extends React.Component {
                   helperText="Jätä tyhjäksi, jos et ole tällä hetkellä Helsingin yliopiston opiskelija."
                   onFocus={this.handleFocus}
                   onBlur={this.handleUnFocus}
-                />
-              </Row>
-
-              <Row>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={this.state.applies_for_study_right}
-                      onChange={this.handleCheckboxInput}
-                      name="applies_for_study_right"
-                      value="1"
-                    />
-                  }
-                  label="Aion hakea aikataulutetun Tietokoneen toiminnan perusteetin kautta opinto-oikeutta Helsingin yliopistoon."
                 />
               </Row>
 
@@ -376,6 +332,7 @@ class CourseOptionsEditor extends React.Component {
             <Button
               onClick={this.onClick}
               disabled={this.state.submitting || this.state.error}
+              loading={this.state.submitting}
               variant="contained"
               color="primary"
               fullWidth

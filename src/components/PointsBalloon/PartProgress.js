@@ -98,28 +98,6 @@ const PartProgress = ({ name, data, appliesForStudyRight }) => {
             />
           </Bar>
         </StyledBarChart>
-        <LargeP>
-          Osasta saadut kurssipisteet:{" "}
-          {Math.floor(Math.min(100, totalProgress * 111.112))}
-          /100.
-        </LargeP>
-        {appliesForStudyRight &&
-          (getCourseVariant() === "nodl" ? (
-            <SmallP>
-              Olet aikatauluttomalla kurssilla, josta ei voi hakea
-              opinto-oikeutta.
-            </SmallP>
-          ) : (
-            <SmallP>
-              Opinto-oikeuteen vaaditaan 90% aikataulutetun kurssin
-              ohjelmointitehtävien pisteistä. Edistymisesi tällä hetkellä:{" "}
-              {
-                allChartData.find(o => o.tool === "Ohjelmointitehtävät")
-                  ?.progress
-              }
-              %.
-            </SmallP>
-          ))}
       </div>
     </PartProgressContainer>
   )

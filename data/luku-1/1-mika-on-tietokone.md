@@ -26,14 +26,14 @@ Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ova
 Mikä tekee jostain laitteesta tietokoneen? Yleisesti ottaen tietokone on mikä tahansa laite, joka käsittelee tietoa oman ohjelmansa mukaisesti. Siinä pitää olla jonkinlainen [suoritin](https://fi.wikipedia.org/wiki/Suoritin), jolle voidaan antaa haluttu ohjelma suoritettavaksi. Suotavaa olisi, että suoritettavaa ohjelmaa pitäisi pystyä vaihtamaan. Suoritettavan ohjelman vaihto voi tapahtua helposti ohjelman kuvaketta klikkaamalla läppärillä, tai se voi olla huollossa tehtävä toimenpide, kuten esimerkiksi urheilukellojen ohjelmiston päivitys. Kuvaketta klikkaamalla pyydetyn suoritettavan ohjelman vaihdon tekee tietokoneen [käyttöjärjestelmä](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4), joka huolehtii myös kaikesta muusta järjestelmän ylläpidosta. Käyttöjärjestelmään sisältyy monia apuohjelmia, jotka tekevät tietokoneen käyttämisestä helpompaa. Käyttöjärjestelmä myös piilottaa varsinaisen laitteiston ohjelmilta ja käyttäjiltä. Tämä tekee ohjelmien tekemisestä helpompaa, kun ei tarvitse murehtia eri laitteistojen yksityiskohdista.
 
 <!-- Quiz 1.1.1-8 Onko tämä tietokone -->
-<div> <quiznator id="5c4afa3e14524713f959fafa"> </quiznator> </div>
-<div> <quiznator id="5c4b0002fd9fd71425c61416"> </quiznator> </div>
-<div> <quiznator id="5c4efcac017ffc13eddc9399"> </quiznator> </div>
-<div> <quiznator id="5c4efd2114524713f95a059b"> </quiznator> </div>
-<div> <quiznator id="5c4efd7cfd9fd71425c61f01"> </quiznator> </div>
-<div> <quiznator id="5c4efdd2ddb6b814af32124f"> </quiznator> </div>
-<div> <quiznator id="5c4efe3cfd9fd71425c61f07"> </quiznator> </div>
-<div> <quiznator id="5c4efe8cc41ed4148d96a77f"> </quiznator> </div>
+<div> <quiz id="42876626-2a58-41c0-848a-22055b7b2f2e"> </quiz> </div>
+<div> <quiz id="2b527d6f-1b92-4da1-8db7-dd898255c316"> </quiz> </div>
+<div> <quiz id="70a9c72c-47b5-427a-8070-399cd69bd914"> </quiz> </div>
+<div> <quiz id="304a554c-1ebc-45a2-81e8-f6f1577c5e79"> </quiz> </div>
+<div> <quiz id="60717959-3d62-44e1-9bfd-315178d30d24"> </quiz> </div>
+<div> <quiz id="67f7f15e-422c-475b-892e-352a9c8ffb65"> </quiz> </div>
+<div> <quiz id="60065050-3d1e-4199-8838-311aac605a0b"> </quiz> </div>
+<div> <quiz id="5aad6cd8-39b6-4d52-ab6e-2e5ea9f9c3bf"> </quiz> </div>
 
 ## Tietokoneen osat
 Minkälaisia laitteita tietokoneessa on? Tietokoneen osat voi karkeasti ottaen jakaa kolmeen luokkaan: laitteiston sisäiset osat tai laitteet, muiden tietokoneiden kommunikoivat laitteet ja ihmisen kanssa kommunikoivat laitteet. Ainoastaan _suoritin_ ja _muisti_ ovat välttämättömiä, ja kaikkia muita laitteita kutsutaan sen vuoksi yleisnimellä _oheislaite_. Eri tietokoneissa on vain niiden omiin käyttötarkoituksiin sopivat osat ja osien välinen tiedonsiirto on toteutettu erilaisten väylien kautta. Väylät taas ovat pohjimmiltaan joukko sähköjohtoja, joiden kautta tieto kulkee ykkösinä ja nollina.
@@ -66,7 +66,7 @@ Tietokoneen muistille on tyypillistä, että se on toteutusmekanisminsa vuoksi h
 Muistin kokoa mitataan yleisesti tavuina ([B](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka))). Tavun koko on kahdeksan [bittiä](https://fi.wikipedia.org/wiki/Bitti) ja yhteen tavuun voi tallettaa vaikkapa yhden merkin (esim. 't') tai pienen kokonaisluvun (esim. 57). Muistin koko vaihtelee huomattavasti tietokoneen mukaan. Jonkun pienen laitteen muistin määrä mitataan kilotavuina ([KB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1024 tai 1000 tavua), kun läppärin tai pöytäkoneen muistin koko voi olla useita gigatavuja ([GB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), miljoona KB) tai jopa teratavuja ([TB](https://fi.wikipedia.org/wiki/Tavu_(tietotekniikka)), 1000 GB). Apollo-ohjelmassa lennettiin kuuhun vuonna 1969 [AGC](https://fi.wikipedia.org/wiki/Apollo_Guidance_Computer)-tietokoneen avulla, jossa oli muistia alle 20 KB.
 
 <text-box variant="example" name="Onko yksi KB (kilotavu) 1000 tavua vai 1024 tavua?">
-  
+
 On vähän häiritsevää, että perustavaa laatua olevassa numerotiedossa on kahta erilaista käytäntöä. Merkintäongelma aiheutuu numerojärjestelmistä. Tietokoneen toteutus pohjautuu bitteihin ja usean bitin muodostamat luvut ovat 2-järjestelmän lukuja. Samoja etuliitteitä käytetään niin binäärijärjestelmässä kuin kymmenjärjestelmässäkin. Täten etuliitteet K, M ja G voivat tarkoittaa tilanteesta riippuen joko lukuja
 2<sup>10</sup>=1024,  2<sup>20</sup>=1 048 576, 2<sup>30</sup>=1 073 741 824 tai lukuja
 10<sup>3</sup>=1000,  10<sup>6</sup>=1 000 000, 10<sup>9</sup>=1 000 000 000.
@@ -134,15 +134,15 @@ Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikoi
 
 <!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
 
-<div><quiznator id="5c4f004cc41ed4148d96a786"></quiznator></div>
-<div><quiznator id="5c4f00be017ffc13eddc93af"></quiznator></div>
-<div><quiznator id="5c4f01433972a914741021f3"></quiznator></div>
-<div><quiznator id="5c4f0249fd9fd71425c61f23"></quiznator></div>
-<div><quiznator id="5c4f028e14524713f95a05ca"></quiznator></div>
-<div><quiznator id="5c4f02e23972a91474102202"></quiznator></div>
-<div><quiznator id="5c4f0326c41ed4148d96a79c"></quiznator></div>
-<div><quiznator id="5c4f037f14524713f95a05d1"></quiznator></div>
-<div><quiznator id="5c4f03bfc41ed4148d96a7a3"></quiznator></div>
-<div><quiznator id="5c4f0412c41ed4148d96a7a4"></quiznator></div>
-<div><quiznator id="5c4f0459c41ed4148d96a7a7"></quiznator></div>
-<div><quiznator id="5c4f049bfd9fd71425c61f33"></quiznator></div>
+<div><quiz id="323c413b-1ff9-444a-958d-19b05b50bfc4"></quiz></div>
+<div><quiz id="4ec3fcc6-3221-4eec-a3dd-28474563e239"></quiz></div>
+<div><quiz id="1c73d15a-b517-4e45-ae0d-917f4e23d6d3"></quiz></div>
+<div><quiz id="327224ac-201b-4912-9e2c-19cbe9e4a49a"></quiz></div>
+<div><quiz id="271b1f5a-f8e6-4957-8c36-c7f9f0c1b411"></quiz></div>
+<div><quiz id="1fdf16d3-cada-4cd0-abbe-a2fb2f998e35"></quiz></div>
+<div><quiz id="2df791d7-1d41-4cc5-b8f4-eb0fe5536d24"></quiz></div>
+<div><quiz id="249c9e4e-e906-4a57-adc8-bb38d16beb5d"></quiz></div>
+<div><quiz id="41ab19b2-29cb-4e4e-a842-2194b3fd03ee"></quiz></div>
+<div><quiz id="2ce514ef-1c93-417c-97a9-e5943ed1320e"></quiz></div>
+<div><quiz id="2f3133b7-1e09-46b1-a345-f153b8241daf"></quiz></div>
+<div><quiz id="3c79fb64-267d-4f09-836c-1eed07ed8d4f"></quiz></div>

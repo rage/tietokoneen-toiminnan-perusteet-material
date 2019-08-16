@@ -1,6 +1,9 @@
+const red = require("@material-ui/core/colors/red").default
+const blue = require("@material-ui/core/colors/red").default
+
 module.exports = {
   siteMetadata: {
-    title: "Tietokoneen toiminnan perusteet 2019",
+    title: "Tietokoneen toiminnan perusteet",
     siteUrl: `https://ohjelmointi-19.mooc.fi`,
   },
   plugins: [
@@ -101,7 +104,7 @@ module.exports = {
               }
             }
           },
-          `gatsby-remark-component`
+          `@rstacruz/gatsby-remark-component`
         ]
       }
     },
@@ -143,6 +146,10 @@ module.exports = {
     },
     {
       resolve: "gatsby-transformer-moocfi-exercises"
+    },
+    `gatsby-plugin-top-layout`,
+    {
+      resolve: 'gatsby-plugin-material-ui',
     },
     `gatsby-plugin-meta-redirect` // make sure to put last in the array
   ]
