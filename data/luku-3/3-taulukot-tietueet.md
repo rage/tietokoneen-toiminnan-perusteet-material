@@ -83,11 +83,11 @@ Sarakkeen pituus on 3 riviä, joten alkion M\[i,j\] lukeminen rekisteriin r2 tap
   load  r2, M(r1)  ; hae alkion M[i,j] arvo rekisteriin r2
 ```
 
-Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskeminen täytyy tehdä usemman konekäskyn avulla. Lisäksi em. esimerkeistä puuttuu täysin indeksitarkistukset, jotka lisääväät koodin määrää vielä pikkasen.
+Kumpikin on ihan yhtä kätevää, mutta vähän hidasta koska osoitteen laskeminen täytyy tehdä useamman konekäskyn avulla. Lisäksi em. esimerkeistä puuttuu täysin indeksitarkistukset, jotka lisäävät koodin määrää vielä pikkasen.
 
 ## 3-ulotteiset taulukot ja muu rakenteinen tieto
 
-3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niihin viittaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3,4,5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i,j,k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
+3-ulotteiset taulukot talletetaan vastaavasti joko "riveittäin" tai "sarakettain" ja niihin viittaaminen tapahtuu samalla tavalla kuin edellä. Ajatellaan esimerkkinä riveittäin talletettua 3-ulotteista taulukkoa T\[3,4,5\]. Siinä on 3 tasoa (tasot 0, 1, 2), kussakin tasossa 4 riviä (rivit 0, 1, 2, 3) ja kullakin rivillä 5 alkiota (alkiot 0, 1, 2, 3, 4). Kullakin tasolla on siis 4\*5=20 alkiota. Alkion T\[i,j,k\] arvo voidaan lukea (ilman indeksitarkistuksia) rekisteriin r0 käskyillä
 
 ```
   load r1, i     ; laske alkion T[i,j,k] suhteellinen osoite taulukossa T
