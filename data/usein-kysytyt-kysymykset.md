@@ -5,8 +5,6 @@ hidden: false
 information_page: true
 ---
 
-Tässä usein kysyttyjä kysymyksiä ja ongelmia. Jos et löydä kysymykseesi vastausta täältä, voit esitttää sen [tukiväylillämme](/tukivaylat).
-
 ## Löysin materiaalista virheen
 Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta. 
 
@@ -23,6 +21,11 @@ Antakaa palaute mahdollisimman lyhyesti, mutta silti selkeästi. Esimerkiksi, "T
 Kiitos,
 
 Teemu Kerola
+
+## Usein kysyttyjä kysymyksiä
+
+Näitä ei ole vielä tullut esille.
+
 
 <!--    kaikki kommentoitu pois 
 
