@@ -5,7 +5,7 @@ overview: true
 hidden: false
 ---
 
-Käyttöjärjestelmä toimii käyttöliittymänä laitteistoon. Sovellukset suunnitellaan käyttöjärjestelmän päälle, eikä niiden tarvitse tietää juuri mitään käytössä olevasta laitteistosta. Tässä luvussa käymme ensin läpi käyttöjärjestelmän tehtävät. Seuraavaksi esittelemme prosessin, mikä on suorituksessa olevan ohjelman esitysmuoto järjestelmässä. Lopuksi näytämme kuinka käyttöjärjestelmä voidaan toteuttaa aliohjelmien ja sen itse toteuttamien proisessien avulla. Aivan lopuksi kurkistamme laskettavuusteoriaan ja keskustelemme tietokonejärjestelmien laskentakyvyn rajoista.
+Käyttöjärjestelmä toimii käyttöliittymänä laitteistoon. Sovellukset suunnitellaan käyttöjärjestelmän päälle, eikä niiden tarvitse tietää juuri mitään käytössä olevasta laitteistosta. Tässä luvussa käymme ensin läpi käyttöjärjestelmän tehtävät. Seuraavaksi esittelemme prosessin, mikä on suorituksessa olevan ohjelman esitysmuoto järjestelmässä. Lopuksi näytämme kuinka käyttöjärjestelmä voidaan toteuttaa aliohjelmien ja sen itse toteuttamien prosessien avulla. Aivan lopuksi kurkistamme laskettavuusteoriaan ja keskustelemme tietokonejärjestelmien laskentakyvyn rajoista.
 
 <please-login></please-login>
 
