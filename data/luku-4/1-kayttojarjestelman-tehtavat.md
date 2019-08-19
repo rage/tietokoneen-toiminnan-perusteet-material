@@ -9,7 +9,7 @@ hidden: false
 </div>
 
 ## Rajapinta laitteistoon
-Käyttöjärjestelmän päätehtävä on tehdä erilaisten tietokonejärjestelmien käyttämisestä helppoa, turvallista ja luotettavaa käyttäjille (järjestelmää käyttäville ihmisille) ja järjestelmässä suorittaville ohjelmille. Käyttäjän näkökulmasta käyttöjärjestelmä piilottaa laitteiston yksityiskohdat. Se antaa käyttäjälle yhteisen käyttöliittymän kaikkiin samaa käyttäjärjestelmää käyttäviin järjestelmiin. Ajattele, miten helppoa olisi, jos kaikkien autojen kaikki käyttöliittymät olisivat samoja. Vuokra-autoa käyttöön ottaessa ei tarvitsisi murehtia, mistä lasinpesijä tihkykytkin löytyy tai kuinka vakionopeudensäädin saadaan päälle.
+Käyttöjärjestelmän päätehtävä on tehdä erilaisten tietokonejärjestelmien käyttämisestä helppoa, turvallista ja luotettavaa käyttäjille (järjestelmää käyttäville ihmisille) ja järjestelmässä suorittaville ohjelmille. Käyttäjän näkökulmasta käyttöjärjestelmä piilottaa laitteiston yksityiskohdat. Se antaa käyttäjälle yhteisen käyttöliittymän kaikkiin samaa käyttöjärjestelmää käyttäviin järjestelmiin. Ajattele, miten helppoa olisi, jos kaikkien autojen kaikki käyttöliittymät olisivat samoja. Vuokra-autoa käyttöön ottaessa ei tarvitsisi murehtia, mistä lasinpesijä tihkukytkin löytyy tai kuinka vakionopeudensäädin saadaan päälle.
 
 Käyttöjärjestelmä antaa järjestelmässä suorittaville ohjelmille laitteistoriippumattoman käyttöliittymän laitteistoon. Tämä helpottaa huomattavasti sovellusten ohjelmointia, koska ne voidaan suunnitella hyödyntäen käyttöjärjestelmän tehokkaita palveluita. On paljon helpompi suunnitella sovellusohjelma esimerkiksi [Windows](https://fi.wikipedia.org/wiki/Windows)'in tai [Linux](https://fi.wikipedia.org/wiki/Linux)'in "päälle", kun ei erikseen tarvitse murehtia lainkaan, minkä merkkinen kovalevy, tulostin tai verkkokortti järjestelmässä sattuu olemaan. On myös paljon helpompaa lukea tiedostoa _Villen-Peli_ kuin tietyn merkkisen [kovalevyn](https://fi.wikipedia.org/wiki/Kiintolevy) raidan 234 sektoreita 34-36. Normisovelluksen ei edes tarvitse tietää, minne päin kovalevyä hänen tiedostonsa _Villen-Peli_ on tallennettu. Sovelluksen ei tarvitse eikä pidä päästä käsiksi kovalevyn tietoihin tuolla tasolla. Tällöinhän se pystyisi lukemaan kaikki kovalevyllä olevat tiedot, joista osa voi kuulua muille käyttäjille.
 
@@ -19,7 +19,7 @@ Käyttöjärjestelmä koostuu erilaista moduuleista. Osa niistä on aliohjelmina
 käytetään lähettämällä niille palvelupyyntöviestejä ja vastaavasti palvelun valmistuttua niiltä saadaan vastausviesti.
 
 ### Käyttöjärjestelmän kaksi tasoa
-Usein käyttöjärjestelmässä on kaksi tasoa. Ylempi (laiteriippumaton) taso antaa palveluja tavallisille sovellusohjelmilla ja se voi suorittaa koodia tavallisessa käyttäjätilassa. Alempi (laitesidonnainen) taso sisältää kaikki palvelut, jotka käyttävät fyysisiä laitteita. Alemman tason moduulit suoritetaan etuoikeutetussa suoritustilassa ja niitä voi yleensä käyttää (kutsua) vain käyttöjärjestelmän laiteriippumattomalta tasolta. On turvallisempaa, kun käyttöjärjestelmästäkin etuoikeutetussa tilassa suorittavat ainoastaan tuon pienemmän laitesidonnaisen tason ([käyttöjärjestelmän ytimen](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4n_ydin)) moduulit. On aina helpompaa tehdä turvalliseksi pieni määrä koodia kuin suuri määrä.
+Usein käyttöjärjestelmässä on kaksi tasoa. Ylempi (laiteriippumaton) taso antaa palveluja tavallisille sovellusohjelmille ja se voi suorittaa koodia tavallisessa käyttäjätilassa. Alempi (laitesidonnainen) taso sisältää kaikki palvelut, jotka käyttävät fyysisiä laitteita. Alemman tason moduulit suoritetaan etuoikeutetussa suoritustilassa ja niitä voi yleensä käyttää (kutsua) vain käyttöjärjestelmän laiteriippumattomalta tasolta. On turvallisempaa, kun käyttöjärjestelmästäkin etuoikeutetussa tilassa suorittavat ainoastaan tuon pienemmän laitesidonnaisen tason ([käyttöjärjestelmän ytimen](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4n_ydin)) moduulit. On aina helpompaa tehdä turvalliseksi pieni määrä koodia kuin suuri määrä.
 
 <!-- kuva lu08, kalvo 10: ch-4-1-kj-kaksi-tasoa -->
 
@@ -59,7 +59,7 @@ ja
 
 <text-box variant="example" name="Avaruuden eetteri">
 
-Eetteriverkko on saanut nimensä valoa välittävästä 'avaruuden eetteristä', jonka uskottiin olevan välttämätön väliaine valon leviämiselle avaruudessa. Vasta 1887 Michelson ja Morley osoittivat kuuluisalla kokellaan, että eetteriä ei olekaan olemassa. Sittemmin Einsteinin selitti suhteellisuusteoriallaan, kuinka valo oikeasti kulkee avaruuden tyhjiössä. Vielä nytkin jotkut puhuvat radioaaltojen etenemisestä avaruuden eetterissä &mdash; onhan se ehkä 'helpompi' käsittää ja selittää kuin suhteellisuusteoria, vaikka onkin puppua."
+Eetteriverkko on saanut nimensä valoa välittävästä 'avaruuden eetteristä', jonka uskottiin olevan välttämätön väliaine valon leviämiselle avaruudessa. Vasta 1887 Michelson ja Morley osoittivat kuuluisalla kokeellaan, että eetteriä ei olekaan olemassa. Sittemmin Einsteinin selitti suhteellisuusteoriallaan, kuinka valo oikeasti kulkee avaruuden tyhjiössä. Vielä nytkin jotkut puhuvat radioaaltojen etenemisestä avaruuden eetterissä &mdash; onhan se ehkä 'helpompi' käsittää ja selittää kuin suhteellisuusteoria, vaikka onkin puppua."
 
 </text-box>
 
