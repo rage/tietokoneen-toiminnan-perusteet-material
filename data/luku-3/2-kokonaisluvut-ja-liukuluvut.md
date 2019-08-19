@@ -22,16 +22,16 @@ Meille ihmisille luontevin tapa esittää kokonaisluvut on käyttää etumerkki�
 Etumerkkibitin käyttö on vähän huono kokonaislukujen aritmetiikan toteutukseen, joten sitä ei useinkaan käytetä sen vuoksi. Esitystavan parhaimpana puolena on sen soveltuvuus ihmisille, jotka ovat tottuneet etumerkkien käyttöön.
 
 ### Kokonaislukujen yhden komplementin esitysmuoto
-Etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun kaikki bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
+Etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun esitysmuodon kaikki bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
 ```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
 -55 = 1100 0110 = 0xC6 (tavuna)   -57 = 0x FF FF FF C6 (32-bittisenä sanana)
 ```
 
-Vasemmanpuolimmainen bitti toimii edelleen etumerkkibittinä, mutta negatiivisten lukujen lukuarvo ei ole niin helposti luettavissa. Yhden komplementin esitystavalla on se hyvä ominaisuus, että positiivisia ja negatiivisia lukuja on yhtä monta. Esimerkiksi yhden tavun arvoalue on siis \[-127,&nbsp;+127\]. Huonona puolena on, että nollalla on kaksi esitystapaa, esimerkiksi tavuina +0&nbsp;=&nbsp;0x00 ja -0&nbsp;=&nbsp;0xFF. Tästä on haittaa aritmetiikkaoperaatioissa ja vertailuoperaatioissa, kun pitää varautua kahteen nollaan. Sitäpaitsi nollaan vertailu on harmillisesti ohjelmissa huomattavan yleinen operaatio.
+Vasemmanpuolimmainen bitti toimii edelleen etumerkkibittinä, mutta negatiivisten lukujen lukuarvo ei ole niin helposti luettavissa. Yhden komplementin esitystavalla on se hyvä ominaisuus, että positiivisia ja negatiivisia lukuja on yhtä monta. Esimerkiksi yhden tavun arvoalue on siis \[-127,&nbsp;+127\]. Huonona puolena on, että nollalla on kaksi esitystapaa, esimerkiksi tavuina +0&nbsp;=&nbsp;0x00 ja -0&nbsp;=&nbsp;0xFF. Tästä on haittaa aritmetiikkaoperaatioissa ja vertailuoperaatioissa, kun pitää varautua kahteen nollaan. Nollaan vertailu on harmillisesti ohjelmissa huomattavan yleinen operaatio.
 
 ### Kokonaislukujen kahden komplementin esitysmuoto
-Yleensä kokonaisluvuille käytetään yhden komplementin esitysmuodon sijasta [kahden komplementin](https://fi.wikipedia.org/wiki/Kahden_komplementti) esitysmuotoa. Positiiviset luvut ovat edelleen tavallisessa binääriesityksessä. Negatiivisen luvun esitysmuoto saadaan nyt vastaavan positiivisen luvun esitysmuodosta komplementoimalla kaikki bitit ja lisäämällä esitysmuotoon 1. Huomaa, että binäärijärjestelmässä yhteenlasku tehdään ihan samalla tavalla kuin 10-järjestelmässäkin. Jos yhteenlaskua tehtäessä tulee muistinumero vasemmanpuolimmaisen bittin kohdalla, niin tässä tapauksessa se unohdetaan eli jätetään pois.
+Yleensä kokonaisluvuille käytetään yhden komplementin esitysmuodon sijasta [kahden komplementin](https://fi.wikipedia.org/wiki/Kahden_komplementti) esitysmuotoa. Positiiviset luvut ovat edelleen tavallisessa binääriesityksessä. Negatiivisen luvun esitysmuoto saadaan nyt vastaavan positiivisen luvun esitysmuodosta komplementoimalla kaikki bitit ja lisäämällä esitysmuotoon 1. Huomaa, että binäärijärjestelmässä yhteenlasku tehdään ihan samalla tavalla kuin 10-järjestelmässäkin. Jos yhteenlaskua tehtäessä tulee muistinumero vasemmanpuolimmaisen bitin kohdalla, niin tässä tapauksessa se unohdetaan eli jätetään pois.
 
 ```
                +57 = 0011 1001 = 0x39
@@ -40,7 +40,7 @@ lisää 1                     +1
                -57 = 1100 0111 = 0xC7
 ```
 
-Vasemmanpuolimmainen bitti on toimii edelleenkin etumerkkinä. Negatiivisen luvun suuruus (vastaava positiivinen arvo, itseisarvo) saadaan negatiivisen luvun esitysmuodosta ehkä vähän yllättäen samalla tavalla, komplementoimalla kaikki bitit ja lisäämällä 1.
+Vasemmanpuolimmainen bitti toimii edelleenkin etumerkkinä. Negatiivisen luvun suuruus (vastaava positiivinen arvo, itseisarvo) saadaan negatiivisen luvun esitysmuodosta ehkä vähän yllättäen samalla tavalla, komplementoimalla kaikki bitit ja lisäämällä 1.
 
 ```
                -57 = 1100 0111
@@ -67,7 +67,7 @@ lisää 1                      +1
 suuruus               1000 0000 = 128 (Sama esitysmuoto kuin luvulla -128!!)
 ```
 
-Tästä seuraa, että esimerkiksi aritmetiikkaoperaatio negaatio (esim. lauseessa Y&nbsp;=&nbsp;-X;) päättyy virhetilanteeseen, jos operandi on pienin mahdollinen negatiivinen luku (tavuna -2<sup>7</sup>&nbsp;=&nbsp;-128 ja 32-bittisenä sanana -2<sup>31</sup>&nbsp;=&nbsp; -2&nbsp;147&nbsp;483&nbsp;648). Kahden komplementin parhaimpana puolena on, että sille tehdyt aritmetiikkaoperaatiot on muita esitystapoja helpompi toteuttaa ALU:n piireillä. Tämän vuoksi se on yleisin käytössä oleva kokonaislukujen esitystapa.
+Tästä seuraa, että esimerkiksi aritmetiikkaoperaatio negaatio (esim. lauseessa Y&nbsp;=&nbsp;-X;) päättyy virhetilanteeseen, jos operandi on pienin mahdollinen negatiivinen luku (tavuna -2<sup>7</sup>&nbsp;=&nbsp;-128 ja 32-bittisenä sanana -2<sup>31</sup>&nbsp;=&nbsp; -2&nbsp;147&nbsp;483&nbsp;648). Kahden komplementin parhaimpana puolena on, että sille tehdyt aritmetiikkaoperaatiot ovat muita esitystapoja helpompia toteuttaa ALU:n piireillä. Tämän vuoksi se on yleisin käytössä oleva kokonaislukujen esitystapa.
 <br><br>
 On myös huomionarvoista, että normaali 32-bittisten lukujen lukualue \[-2&nbsp;147&nbsp;483&nbsp;648,&nbsp;+2&nbsp;147&nbsp;483&nbsp;647\] ei ole ihan valtavan iso. Jos sovelluksessa tarvitaan todella suuria kokonaislukuja, niin täytyy käyttää kaksinkertaisen tarkkuuden 64-bittisiä kokonaislukuja.
 
@@ -86,7 +86,7 @@ vakiolisäys   +127
 esitysmuoto     70 = 0100 0110 = 0x46
 ```
 
-Kun vakiolisäyksenä käytetään 2<sup>n-1</sup>-1 (missä n on bittien lukumäärä), niin esitystavalla on kaksikin etua. Ensinnäkin, positiivisilla ja negatiivisilla luvuilla on suunnilleen yhtä iso arvoalue. Toiseksi, vasemmanpuolimmainen bitti toimii myös etumerkkinä. Toisin kuin aikaisemmissa esitysmuodoissa, etumerkkibitin arvo 0 indikoi nyt negatiivista lukua ja arvo 1 posiivista lukua.
+Kun vakiolisäyksenä käytetään 2<sup>n-1</sup>-1 (missä n on bittien lukumäärä), niin esitystavalla on kaksikin etua. Ensinnäkin, positiivisilla ja negatiivisilla luvuilla on suunnilleen yhtä iso arvoalue. Toiseksi, vasemmanpuolimmainen bitti toimii myös etumerkkinä. Toisin kuin aikaisemmissa esitysmuodoissa, etumerkkibitin arvo 0 indikoi nyt negatiivista lukua ja arvo 1 positiivista lukua.
 
 <!-- Quizes 3.2.1-7  -->
 <div><quiz id="375990c8-233a-49d9-8a1a-1c4de6552102"></quiz></div>
@@ -112,9 +112,9 @@ Kokonaisluvun vakiolisäysesitysmuoto on positiivinen kokonaisluku, joka saadaan
 
 
 ## Liukuluvut
-Kuten jo ensimmäisessä luvussa mainittiin, tietokoneissa ei ole käytettävissä realilukuja. Sen sijaan käytämme tietokonearitmetiikkaa varten kehitettyä realilukujen approksimaatiota, liukulukuja. Liukuluvuille on tyypillistä vakiomuoto ja etukäteen määritelty lukutarkkuus. Esimerkiksi, realiluku &Pi; (pii) esitetään likiarvona 3.1415927 sen yleisimmässä 32-bittisessä esitysmuodossa.
+Kuten jo ensimmäisessä luvussa mainittiin, tietokoneissa ei ole käytettävissä reaalilukuja. Sen sijaan käytämme tietokonearitmetiikkaa varten kehitettyä reaalilukujen approksimaatiota, liukulukuja. Liukuluvuille on tyypillistä vakiomuoto ja etukäteen määritelty lukutarkkuus. Esimerkiksi, reaaliluku &Pi; (pii) esitetään likiarvona 3.1415927 sen yleisimmässä 32-bittisessä esitysmuodossa.
 
-Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluokka. Desimaaliluvuilla esitysmuoto toimisi seuraavanlaisesti. Mantissa skaalataan sillä tavoin, että kokonaisosassa on vain yksi numero ja desimaaliosaan otetaan vaikkapa 6 numeroa.
+Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluokka. Desimaaliluvuilla esitysmuoto toimisi seuraavan laisesti. Mantissa skaalataan sillä tavoin, että kokonaisosassa on vain yksi numero ja desimaaliosaan otetaan vaikkapa 6 numeroa.
 
 <pre>
 +1.23         =    + 1.230000  *  10<sup>0</sup>
@@ -136,7 +136,7 @@ Tietokoneessa käytämme tietenkin binäärijärjestelmää. Nytkin mantissa ska
 
 Tietokoneiden alkuaikoina jokaisella valmistajalla oli oma tapansa esittää liukulukuja, mutta tästä aiheutui liikaa harmia. On jo tarpeeksi ärsyttävää laskea koko ajan likiarvoilla, saati sitten niin että sama ohjelma antaa erilaisia (likiarvo) tuloksia eri koneilla. Jo vuodesta 1985 käytössä on ollut [IEEE 754](https://fi.wikipedia.org/wiki/Liukuluku) standardi liukulukujen esitysmuodolle ja aritmetiikalle. Standardin uusin päivitys on vuodelta 2008. Nyt lähes kaikki suorittimet noudattavat tuota standardia ja laskevat likiarvonsa samalla tavalla. Esittelemme tässä nyt standardin pääperiaatteet 32-bittisille liukuluvuille.
 
-IEEE:n 32-bittisessä standardissa liukulukujen esitysmuoto on seuraavanlainen. Vasemmanpuolimmainen bitti on etumerkki, ja se on 0 positiivisille luvuille ja 1 negatiivisille luvuille. Seuraavat 8 bittiä ovat eksponentti, ja sen esitysmuoto on vakiolisäys 127. Loput 23 bittiä ovat mantissalle, joka yleisessä tapauksessa esitetään _normalisoidussa muodossa_. Normalisoinnissa mantissa skaalataan ensin siten, että kokonaisosassa on vain yksi numero. Koska kyseessä on binäärijärjestelmä, tuo numero on aina 1, joten sitä ei tarvitse tallettaa! Sitä kutsutaan _piilobitiksi_. Normalisoidusta luvusta talletetaan siis vain mantissan binääriosa. Tällä nerokkaalla tempulla saamme 23 bittiin talletettua 24 bittiä informaatiota, eli lukutarkkuus kaksinkertaistuu.
+IEEE:n 32-bittisessä standardissa liukulukujen esitysmuoto on seuraavan lainen. Vasemmanpuolimmainen bitti on etumerkki, ja se on 0 positiivisille luvuille ja 1 negatiivisille luvuille. Seuraavat 8 bittiä ovat eksponentti, ja sen esitysmuoto on vakiolisäys 127. Loput 23 bittiä ovat mantissalle, joka yleisessä tapauksessa esitetään _normalisoidussa muodossa_. Normalisoinnissa mantissa skaalataan ensin siten, että kokonaisosassa on vain yksi numero. Koska kyseessä on binäärijärjestelmä, tuo numero on aina 1, joten sitä ei tarvitse tallettaa! Sitä kutsutaan _piilobitiksi_. Normalisoidusta luvusta talletetaan siis vain mantissan binääriosa. Tällä nerokkaalla tempulla saamme 23 bittiin talletettua 24 bittiä informaatiota, eli lukutarkkuus kaksinkertaistuu.
 
 Eksponentin esitysmuoto on siis aina positiivinen kokonaisluku. Miksi tämä esitysmuoto, eikä joku noista muista? Perusteluna on, että liukulukuaritmetiikkaa toteutettaessa eksponentteja käsitellään vain niiden esitysmuotoina välittämättä eksponenttien todellisista arvoista. Normalisointi ja muut liukulukuaritmetiikkaan liittyvät operaatiot on helpompi toteuttaa, kun käsiteltävänä on vain positiivisia lukuja eksponettikentissä.
 
@@ -189,7 +189,7 @@ Huonona puolena tällaisissa (itseisarvoltaan) hyvin pienissä luvuissa on esity
 <div><quiz id="318a93cf-1f88-42e3-97c3-fd56fa0d2ac2"></quiz></div>
 
 ### Liukulukulaskenta
-Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu realilukulaskennasta. Esimerkkinä tarkastellaan tilannetta, jossa muuttujan X arvo on 1.0 ja muuttujan Y arvo on 0.00000001. Jos laskemme nämä luvut yhteen (Z=X+Y), niin realiluvuilla laskettaessa summan pitäisi olla 1.00000001. Liukuluvuilla (IEEE:n 32-bittinen standardi) laskettaessa tulos on kuitenkin 1.0, koska Y:n bitit jäävät pois normeeratussa 24 bitin esitysmuodossa.
+Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu reaalilukulaskennasta. Esimerkkinä tarkastellaan tilannetta, jossa muuttujan X arvo on 1.0 ja muuttujan Y arvo on 0.00000001. Jos laskemme nämä luvut yhteen (Z=X+Y), niin reaaliluvuilla laskettaessa summan pitäisi olla 1.00000001. Liukuluvuilla (IEEE:n 32-bittinen standardi) laskettaessa tulos on kuitenkin 1.0, koska Y:n bitit jäävät pois normeeratussa 24 bitin esitysmuodossa.
 
 <pre>
 1.000000<sub>10</sub> + 0.00000001<sub>10</sub> = 1.00000001<sub>10</sub>
@@ -198,7 +198,7 @@ Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu realilukulas
 
 </pre>
 
-Toinen ongelma liukulukulaskennassa on lukujen vertailu. Realiluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
+Toinen ongelma liukulukulaskennassa on lukujen vertailu. Reaaliluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
 
 ```
 Esimerkki: Liukulukulaskennan epätarkkuus
@@ -223,7 +223,7 @@ if ( Y < 0.99999 * Z)  -- koodi toimii varmemmin oikein
 then ....
 ```
 
-Pitkäkestoisessa (tunteja, päiviä, viikkoja?) liukulukulaskennassa ongelmana voi olla, että käytössä olevien liukulukujen esitystarkkuus pikkuhiljaa heikkenee. Tämä pätee erityisesti vähennyslaskuun, jos molemmat operandit ovat suunnilleen samankokoisia. Lukujen vsemmanpuoleiset merkitsevät bitit kumovat toisensa ja tuloksen normalisoinnin yhteydessä oikealta täytetään nolla-biteillä ilman mitään parempaa tietoa. Kerran menetettyä todellista esitystarkkuutta ei koskaan voi saada takaisin. Joissakin järjestelmissä tällaista tiedon rappeutumista vastaan taistellaan alustamalla (boottamalla) järjestelmä aika ajoin, jolloin liikkeelle lähdetään taas "puhtaalta pöydältä" ja mahdollisimman tarkan datan pohjalta.
+Pitkäkestoisessa (tunteja, päiviä, viikkoja?) liukulukulaskennassa ongelmana voi olla, että käytössä olevien liukulukujen esitystarkkuus pikkuhiljaa heikkenee. Tämä pätee erityisesti vähennyslaskuun, jos molemmat operandit ovat suunnilleen samankokoisia. Lukujen vasemmanpuoleiset merkitsevät bitit kumoavat toisensa ja tuloksen normalisoinnin yhteydessä oikealta täytetään nolla-biteillä ilman mitään parempaa tietoa. Kerran menetettyä todellista esitystarkkuutta ei koskaan voi saada takaisin. Joissakin järjestelmissä tällaista tiedon rappeutumista vastaan taistellaan alustamalla (boottamalla) järjestelmä aika ajoin, jolloin liikkeelle lähdetään taas "puhtaalta pöydältä" ja mahdollisimman tarkan datan pohjalta.
 
 <text-box variant="example" name="Tärkeitä termejä">
 
