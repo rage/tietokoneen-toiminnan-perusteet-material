@@ -12,7 +12,7 @@ Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta.
 
 Tämä tarkoittaa niin suurempia rakenteellisia ehdotuksia kuin esitystapaan liittyvien puutteiden esilletuontia. Esimerkiksi kaikki kirjoitusvirheet olisi mukava saada korjattua mahdollisimman nopeasti. Samoin jos tekstissä on huonosti muotoiltuja tai muuten vaikeasti ymmärrettäviä kohti, niin ne olisi hyvä saada korjattua nopeasti. Vastaavasti kaikki pikatehtävissä ("Quiz") olevat puutteet ärsyttävät monia, kunnen ne on paikattu.
 
-Lähettäkää korjausehdotukset sähköpostitse osoitteella [teemu.kerola@cs.helsinki.fi](mailto:teemu.kerola@cs.helsinki.fi).
+Lähettäkää korjausehdotukset sähköpostitse osoitteella [teemu.kerola@cs.helsinki.fi](mailto:teemu.kerola@cs.helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20perusteet).
 
 Laittakaa sähköpostin otsakkeeksi "MOOC palaute, Tietokoneen toiminnan perusteet".
 
