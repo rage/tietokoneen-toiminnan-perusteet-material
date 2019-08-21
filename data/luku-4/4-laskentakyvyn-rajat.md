@@ -79,14 +79,15 @@ Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
 </div>
 -->
 
-## Mitä seuraavaksi???
+## Tämä kurssi on tehty, mitä seuraavaksi?
 
-Katso mooc.fi
+Helsingingin yliopiston tietojenkäsittelytieteen osasto tarjoaa paljon laadukkaita ja ilmaisia verkkokurseja. Ne löytyvät portaalista [mooc.fi](https://mooc.fi/). Esimerkiksi kaikki ensimmäisen vuoden tietojenkäsittelytieteen kurssit löytyvät tuolta, osana [DEFA](https://www.helsinki.fi/fi/projektit/digital-education-for-all)-hanketta (Digital Education For All).
 
-Ohjelmointia
+Tietokoneen toiminnan jatkokurssi on suoraa jatkoa tälle (Tietokoneen toiminnan perusteet) kurssille. Siinä mm. perehdytään konekieliseen ohjelmoinnin perusteisiin ja I/O:n erilaisiin toteutustapoihin. Siinä myös tutustutaan eri tapoihin, joilla korkean tason kielillä kirjoitettuja ohjelmia voidaan suorittaa vain konekieltä ymmärtävissä laitteistoissa.
 
-Tietokoneen toiminta
+Ohjelmoinnin aloittamiseen on Java-ohjelmoinnin kurssi. Syvllisempään ohjelmointiin on esimerkiksi kursseja verkkosovellusten kehitykseen.
 
-Tietokoneen rakenne
+Muita mielenkiintoisia kursseja on esimerkiksi tietokannoista, tietoturvasta ja tekoälystä. 
 
-Käyttöjärjestelmät
+Jos tietojenkäsittelytieteen perusasioiden lisäksi haluat oppia syvällisemmin aihepiiristä, hae opiskelemaan [Helsingin yliopiston tietojenkäsittelytieteen osastolle](https://www.helsinki.fi/fi/tietojenkasittelytiede) sen kandidaatti- tai maisteriohjelmiin.
+
