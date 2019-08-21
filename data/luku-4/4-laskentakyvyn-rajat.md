@@ -81,7 +81,7 @@ Vastaa alla olevaan kyselyyn, kun olet valmis tämän luvun tehtävien kanssa.
 
 ## Tämä kurssi on tehty, mitä seuraavaksi?
 
-Helsingingin yliopiston tietojenkäsittelytieteen osasto tarjoaa paljon laadukkaita ja ilmaisia verkkokurseja. Ne löytyvät portaalista [mooc.fi](https://mooc.fi/). Esimerkiksi kaikki ensimmäisen vuoden tietojenkäsittelytieteen kurssit löytyvät tuolta, osana usean yliopiston yhteistä [DEFA](https://www.helsinki.fi/fi/projektit/digital-education-for-all)-hanketta (Digital Education For All).
+[Helsingin yliopiston tietojenkäsittelytieteen osasto](https://www.helsinki.fi/fi/tietojenkasittelytiede) tarjoaa paljon laadukkaita ja ilmaisia verkkokurseja. Ne löytyvät portaalista [mooc.fi](https://mooc.fi/). Esimerkiksi kaikki ensimmäisen vuoden tietojenkäsittelytieteen kurssit löytyvät tuolta, osana usean yliopiston yhteistä [DEFA](https://www.helsinki.fi/fi/projektit/digital-education-for-all)-hanketta (Digital Education For All).
 
 Tietokoneen toiminnan jatkokurssi on suoraa jatkoa tälle (Tietokoneen toiminnan perusteet) kurssille. Siinä mm. perehdytään konekieliseen ohjelmoinnin perusteisiin ja I/O:n erilaisiin toteutustapoihin. Siinä myös tutustutaan eri tapoihin, joilla korkean tason kielillä kirjoitettuja ohjelmia voidaan suorittaa vain konekieltä ymmärtävissä laitteistoissa.
 
@@ -89,5 +89,5 @@ Ohjelmoinnin aloittamiseen on Java-ohjelmoinnin kurssi. Syvällisempään ohjelm
 
 [Helsingin yliopiston avoimella yliopistolla](https://www.helsinki.fi/fi/avoin-yliopisto) on myös paljon muita kursseja niin tietojenkäsittelytieteen kuin muiltakin aloilta.
 
-Jos tietojenkäsittelytieteen perusasioiden lisäksi haluat oppia syvällisemmin aihepiiristä, hae opiskelemaan [Helsingin yliopiston tietojenkäsittelytieteen osastolle](https://www.helsinki.fi/fi/tietojenkasittelytiede) sen kandidaatti- tai maisteriohjelmiin.
+Jos tietojenkäsittelytieteen perusasioiden lisäksi haluat oppia syvällisemmin aihepiiristä, hae opiskelemaan Helsingin yliopiston [tietojenkäsittelytieteen osastolle](https://www.helsinki.fi/fi/tietojenkasittelytiede) sen kandidaatti- tai maisteriohjelmiin.
 
