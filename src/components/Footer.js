@@ -101,7 +101,7 @@ class Footer extends React.Component {
             <StyledCardContent>
               <GithubContainer>
                 <OutboundLink
-                  href="https://github.com/rage/ohjelmointi-19"
+                  href="https://github.com/rage/tietokoneen-toiminnan-perusteet-material"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -114,46 +114,13 @@ class Footer extends React.Component {
                 </OutboundLink>
               </GithubContainer>
               <ContentContainer>
-                Kurssin on tehnyt Helsingin yliopiston{" "}
-                <OutboundLink
-                  href="https://www.helsinki.fi/en/researchgroups/data-driven-education"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Agile Education Research -tutkimusryhmä
-                </OutboundLink>
-                .
+                Kurssin on tehnyt Teemu Kerola.
               </ContentContainer>
 
               <ContentContainer>
-                <Link to="/credits">Kiitokset ja materiaalista</Link>.
+                <Link to="/credits">Tekijänoikeudet ja lisenssit</Link>.
               </ContentContainer>
-              <SocialContainer>
-                <OutboundLink
-                  href="https://twitter.com/moocfi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Mooc.fi:n Twitter -profiili"
-                >
-                  <StyledIcon icon={faTwitter} size="3x" />
-                </OutboundLink>
-                <OutboundLink
-                  href="https://www.facebook.com/Moocfi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Mooc.fi:n Facebook -sivu"
-                >
-                  <StyledIcon icon={faFacebook} size="3x" />
-                </OutboundLink>
-                <OutboundLink
-                  href="https://www.youtube.com/channel/UCkHoQ5p9skFdyjrV3_tnUrA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Mooc.fi:n YouTube -kanava"
-                >
-                  <StyledIcon icon={faYoutube} size="3x" />
-                </OutboundLink>
-              </SocialContainer>
+
               <BrandsContainer>
                 <OutboundLink
                   href="https://helsinki.fi"
