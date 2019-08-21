@@ -10,6 +10,7 @@ Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta.
 
 Tämä tarkoittaa niin suurempia rakenteellisia ehdotuksia kuin esitystapaan liittyvien puutteiden esilletuontia. Esimerkiksi kaikki kirjoitusvirheet olisi mukava saada korjattua mahdollisimman nopeasti. Samoin jos tekstissä on huonosti muotoiltuja tai muuten vaikeasti ymmärrettäviä kohti, niin ne olisi hyvä saada korjattua nopeasti. Vastaavasti kaikki pikatehtävissä ("Quiz") olevat puutteet ärsyttävät monia, kunnes ne on paikattu.
 
+### Korjausehdotukset sähköpostitse
 Lähettäkää korjausehdotukset sähköpostitse osoitteella [teemu.kerola@cs.helsinki.fi](mailto:teemu.kerola@cs.helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20perusteet&body=Luku%20???%20tai%20Quiz%20???%20...).
 
 Laittakaa sähköpostin otsakkeeksi "MOOC palaute, Tietokoneen toiminnan perusteet".
@@ -18,9 +19,18 @@ Kirjatkaa palautteen alkuun tarkka paikka, jota palaute koskee. Esimerkiksi, "Lu
 
 Antakaa palaute mahdollisimman lyhyesti, mutta silti selkeästi. Esimerkiksi, "Typo sanassa 'pödällä', pitää olla 'pöydällä'".
 
-Kiitos,
+Kiitos.
 
-Teemu Kerola
+### Korjausehdotukset suoraan githubin kautta
+Avaa joko "issue" tai "muutosehdotus" kurssin Github-repossa (varastossa): 
+https://github.com/rage/tietokoneen-toiminnan-perusteet-material
+
+Käsittelen korjausehdotukset korjausehdotukset yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen. 
+
+Jois et osaa tai et halua käyttää githubia, lähetä muutosehdotukset sähköpostitse em. tavalla. 
+Pikatehtäviin voi tehdä muutosehdotuksia vain sähköpostitse.
+
+Kiitos.
 
 ## Usein kysyttyjä kysymyksiä
 
