@@ -22,12 +22,14 @@ Antakaa palaute mahdollisimman lyhyesti, mutta silti selkeästi. Esimerkiksi, "T
 Kiitos.
 
 ### Korjausehdotukset suoraan githubin kautta
-Avaa joko "issue" tai "muutosehdotus" kurssin Github-repossa (varastossa): 
-https://github.com/rage/tietokoneen-toiminnan-perusteet-material
+Avaa joko "issue" tai "muutosehdotus" kurssin Github-repossa (varastossa)
+https://github.com/rage/tietokoneen-toiminnan-perusteet-material.
 
-Käsittelen korjausehdotukset korjausehdotukset yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen. 
+Laita muutosehdotuksesi suoraan paikalleen kurssimateriaaliin. Esimerkiksi, korjaa kirjoitusvirhe sanassa "pödällä" muotoon "pöydällä". Talleta ehdotuksesi ("Propose file change") ja esitä muutos eteenpäin ("Create pull request").
 
-Jois et osaa tai et halua käyttää githubia, lähetä muutosehdotukset sähköpostitse em. tavalla. 
+Käsittelen korjausehdotukset yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen. 
+
+Jois et osaa käyttää [markdown](https://en.wikipedia.org/wiki/Markdown)'ia tai et halua käyttää [GitHubia](https://en.wikipedia.org/wiki/GitHub), lähetä muutosehdotukset sähköpostitse em. tavalla. 
 Pikatehtäviin voi tehdä muutosehdotuksia vain sähköpostitse.
 
 Kiitos.
