@@ -35,6 +35,7 @@ class QuizPartial extends React.Component {
             languageId="fi_FI"
             backendAddress="https://quizzes.mooc.fi"
             customContent={loginPrompt}
+            showAlwaysPointsInfo={false}
           />
         </StyledPaper>
       )
@@ -51,6 +52,7 @@ class QuizPartial extends React.Component {
           languageId="fi_FI"
           accessToken={accessToken()}
           backendAddress="https://quizzes.mooc.fi"
+          showAlwaysPointsInfo={false}
         />
       </StyledPaper>
     )
