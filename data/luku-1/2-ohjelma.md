@@ -122,7 +122,7 @@ Olisi mukavaa, jos tietokoneelle voisi antaa algoritmin missä tahansa muodossa,
 
 Ohjelmat toteutetaan ([ohjelmoidaan](https://fi.wikipedia.org/wiki/Ohjelmointi)) yleensä tätä varten suunnitelluilla korkean tason [ohjelmointikielillä](https://fi.wikipedia.org/wiki/Ohjelmointikieli). Ne ovat riittävän säännönmukaisia, jotta niillä kirjoitetut ohjelmat ovat helppoja tai ainakin mahdollisia muuttaa automaattisesti tietokoneella suoritettaviin muotoihin. Tällaisia kieliä ovat esimerkiksi [Java](https://fi.wikipedia.org/wiki/Java), [C](https://fi.wikipedia.org/wiki/C_(ohjelmointikieli)), [C++](https://fi.wikipedia.org/wiki/C%2B%2B), [Scheme](https://fi.wikipedia.org/wiki/Scheme), [Prolog](https://fi.wikipedia.org/wiki/Prolog), [Python](https://fi.wikipedia.org/wiki/Python_(ohjelmointikieli)) ja [SQL](https://fi.wikipedia.org/wiki/SQL). Vanhimpia käyttökelpoisia korkean tason ohjelmointikieliä olivat 1950-luvulla julkaistut [Fortran](https://fi.wikipedia.org/wiki/Fortran) ja [ALGOL](https://fi.wikipedia.org/wiki/ALGOL). Fortran on edelleenkin käytössä, vaikka sitä on vuosien saatossa kehitetty huomattavasti.
 
-Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortran'illa, ALGOL'illa ja Schemellä vähän erilainen:
+Osaat ehkä jo itsekin jotain korkean tason kieltä. Esimerkiksi, yllämainitun lausekkeen ratkaisu on Javalla, C'llä, Fortranilla, ALGOLilla ja Schemellä vähän erilainen:
 
 ```
 Esimerkki: Lauseke 87*555+32 Javalla tai C'llä
@@ -131,7 +131,7 @@ X = 87*555+32;   -- vastaus on nyt muuttujan X arvona
 ```
 
 ```
-Esimerkki: Lauseke 87*555+32 Fortran'illa tai ALGOL'illa
+Esimerkki: Lauseke 87*555+32 Fortranilla tai ALGOLilla
 
 X := 87*555+32;  -- vastaus on nyt muuttujan X arvona
 ```
