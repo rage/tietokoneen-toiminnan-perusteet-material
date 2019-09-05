@@ -115,7 +115,7 @@ Rakenteisen tiedon voi tallettaa myös linkitettyinä tietorakenteina. Tällöin
 Emme käsittele tällä tavoin talletettuja linkitettyjä tietorakenteita tämän enempää tällä kurssilla.
 
 <!-- Quizes 3.3.10-13  -->
-<div><quiz id="297f8e19-1a69-4a88-9960-d435bdb11fb7"></quiz></div>
+
 <div><quiz id="28079e7b-fec7-4d52-a57d-ccb35089f339"></quiz></div>
 <div><quiz id="1d21f005-b96c-4203-b6be-94f9b3de5f3d"></quiz></div>
 <div><quiz id="1d44af70-ba49-4499-a0b5-95ab646c3533"></quiz></div>
