@@ -30,10 +30,10 @@ Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-j
 
 <!-- binääriluku esim -->
 
-<pre>
-  11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
-  219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
-</pre>
+```
+11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
+219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
+```
 
 Tämä näyttää helpommalta binäärilukujen osalta, koska eri suuruusluokilla ei ole mitään kertoimia edessä (kuten esim. desimaaliluvun 219 kerroin 2 sadoille eli suuruusluokalle 10<sup>2</sup>). Binääriluvuilla ainoa nollasta poikkeava kerroin on yksi (1), jota ei tarvitse edes kirjoittaa näkyville. Kantaluku ilmaistaan tarvittaessa alaindeksinä (esim. 219<sub>10</sub>), mutta usein se jätetään pois ja kantaluku ilmenee asiayhteydestä.
 
@@ -42,13 +42,13 @@ Vastaavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaa
 
 <!-- binääripiste esim -->
 
-<pre>
-  11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
-               = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
+```
+11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
+             = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
 
-  219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>-3</sup> + 2*10<sup>-4</sup> + 5*10<sup>-5</sup>
-          = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
-</pre>
+219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>-3</sup> + 2*10<sup>-4</sup> + 5*10<sup>-5</sup>
+        = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
+```
 
 ### Esitysmuodon muunnos desimaalijärjestelmästä binäärijärjestelmään
 Esitysmuotojen muunnokset binäärijärjestelmän ja desimaalijärjestelmän välillä ovat triviaaleja. Edellä esitettiinkin jo, kuinka binäärijärjestelmän luku muutetaan desimaalijärjestelmän luvuksi. Muunnos toiseen suuntaan on vain vähän monimutkaisempi.
@@ -57,62 +57,60 @@ Kun luku (esim. 57.1875<sub>10</sub>) muunnetaan desimaalijärjestelmästä bin�
 
 <!-- kuva: 57 binäärilukuna -->
 
-<pre>
-  Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna?
+```
+Esimerkki: Mikä on 57<sub>10</sub> binäärilukuna?
 
-  57/2 = 28 jakojäännos 1
-  28/2 = 14 jakojäännös 0
-  14/2 =  7 jakojäännös 1
-   7/2 =  3 jakojäännös 1
-   3/2 =  1 jakojäännös 1
-   1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
-</pre>
+57/2 = 28 jakojäännos 1
+28/2 = 14 jakojäännös 0
+14/2 =  7 jakojäännös 1
+7/2 =  3 jakojäännös 1
+3/2 =  1 jakojäännös 1
+1/2 =  0 jakojäännös 1  joten  57<sub>10</sub> = 111101<sub>2</sub>
+```
 
 Desimaaliosan muunnos tehdään kertomalla desimaaliosa kahdella (2), ottamalla tuloksen kokonaisosa (0 tai 1) talteen _seuraavana_ binääriosan numerona, ja toistamalla tätä (pelkän desimaaliosan kertomista kahdella) tarpeeksi monta kertaa. Algoritmi päättyy, jos desimaaliosaksi tulee nolla (0.0), koska sen jälkeen tilanne ei muutu mihinkään. Usein algoritmi ei pääty koskaan, koska kaikilla desimaaliluvuilla ei ole täsmällistä vastinetta binäärijärjestelmässä. Tällöin tyydytään etukäteen määriteltyyn tarkkuuteen binääriosan numeroiden lukumäärän suhteen. Esimerkiksi voidaan jo alkuaan sopia, että otetaan korkeintaan 30 numeroa mukaan binääriosaan, jolloin binääriluvun tarkkuus vastaa noin 9 desimaalinumeron tarkkuutta.
 
 <!-- esim. desimaaliosasta binääriosa -->
 
-<pre>
-  Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna? <br>
-  0.1875 * 2 = 0.375 = 0 + 0.375
-  0.375  * 2 = 0.75  = 0 + 0.75
-  0.75   * 2 = 1.5   = 1 + 0.5
-  0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
-</pre>
+```
+Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna? <br>
+0.1875 * 2 = 0.375 = 0 + 0.375
+0.375  * 2 = 0.75  = 0 + 0.75
+0.75   * 2 = 1.5   = 1 + 0.5
+0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
+```
 
 Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
 
 <!-- esim etu ja loppunollat -->
 
-<pre>
-
-  Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat <br>
-  57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
-     = 00111101.00110000<sub>2</sub>
-     = 111101.001100000000000000000<sub>2</sub>
-
-</pre>
+```
+Esimerkki: kokonaisosan etunollat ja binääriosan loppunollat <br>
+57.1875<sub>10</sub> = 111101.0011<sub>2</sub>
+   = 00111101.00110000<sub>2</sub>
+   = 111101.001100000000000000000<sub>2</sub>
+```
 
 Jos desimaaliluvulla ei ole täsmällistä binäärilukuvastiketta, likiarvon laskeminen pitää lopettaa sitten kun numeroita on tarpeeksi haluttuun laskentatarkkuuteen.
 
 <!--  esim. päättymätön binääriosa -->
 
-<pre>
-  Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?
+```
+Esimerkki: Mikä on 0.1<sub>10</sub> binäärilukuna?
 
-  0.1 * 2 = 0.2 = 0 + 0.2
-  0.2 * 2 = 0.4 = 0 + 0.4
-  0.4 * 2 = 0.8 = 0 + 0.8
-  0.8 * 2 = 1.6 = 1 + 0.6
-  0.6 * 2 = 1.2 = 1 + 0.2
-  0.2 * 2 = 0.4 = 0 + 0.4
-  0.4 * 2 = 0.8 = 0 + 0.8
-  0.8 * 2 = 1.6 = 1 + 0.6
-  0.6 * 2 = 1.2 = 1 + 0.2
-  0.2 * 2 = 0.4 = 0 + 0.4, jne.
+0.1 * 2 = 0.2 = 0 + 0.2
+0.2 * 2 = 0.4 = 0 + 0.4
+0.4 * 2 = 0.8 = 0 + 0.8
+0.8 * 2 = 1.6 = 1 + 0.6
+0.6 * 2 = 1.2 = 1 + 0.2
+0.2 * 2 = 0.4 = 0 + 0.4
+0.4 * 2 = 0.8 = 0 + 0.8
+0.8 * 2 = 1.6 = 1 + 0.6
+0.6 * 2 = 1.2 = 1 + 0.2
+0.2 * 2 = 0.4 = 0 + 0.4, jne.
 
-  Nyt,  0.1<sub>10</sub> = 0.0001100110011..<sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
-</pre>
+Nyt,  0.1<sub>10</sub> = 0.0001100110011..<sub>2</sub> = 0.0<u>0011</u><sub>2</sub>
+```
 
 Alleviivausmerkintä luvussa 0.0<u>0011</u><sub>2</sub> tarkoittaa jaksollisuutta,
 jossa alleviivattu osa toistuu luvussa äärettömän monta kertaa. Esimerkiksi,
@@ -139,9 +137,9 @@ Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A,
 
 <!-- esim: hexadesimaaliluku -->
 
-<pre>
-  30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768 + 64 + 5 = 837
-</pre>
+```
+30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768 + 64 + 5 = 837
+```
 
 
 Kukin 16-järjestelmän numero vastaa neljää bittiä ja ne ryhmitellään aina oikealta vasemmalle ennen binääripistettä ja vasemmalta oikealle sen jälkeen. Ryhmittelyssä binäärilukuihin laitetaan sopivasti etunollia kokonaisosan eteen ja binääriosan loppuun, jotta bittien lukumäärä molemmissa olisi neljällä jaollinen.
@@ -150,17 +148,16 @@ Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kir
 
 <!-- esim: binääri hexa  -->
 
-<pre>
+```
+Esimerkki: Muunnokset binääri- ja heksadesimaaliesitysten välillä
 
-  Esimerkki: Muunnokset binääri- ja heksadesimaaliesitysten välillä
+binääri:  0100 0111 1001 1010 1111.0100
+heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
 
-  binääri:  0100 0111 1001 1010 1111.0100
-  heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
-
-  heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
-  binääri:                 0001 0010 0000 1010 1110 1111.1011 1000
-                            = 1 0010 0000 1010 1111 1111.1011 1
-</pre>
+heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
+binääri:                 0001 0010 0000 1010 1110 1111.1011 1000
+                          = 1 0010 0000 1010 1111 1111.1011 1
+```
 
 Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi tavun sisältö 0x62 tarkoittaa, että tavun bitit ovat vasemmalta oikealle 0110&nbsp;0010. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
 
