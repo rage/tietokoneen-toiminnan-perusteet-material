@@ -51,7 +51,7 @@ Suorittimen sisällä on pienehkö hyvin nopea muisti, jonka alkioita kutsutaan 
 
 Laitteistossa on aina jonkinlainen muisti (ns. [keskusmuisti](https://fi.wikipedia.org/wiki/Keskusmuisti)), jossa on suoritettava ohjelma ja kaikki ohjelman käyttämä tieto (data). Nykyisissä koneissa sekä ohjelma että sen käyttämä data ovat nopeusvaatimusten takia samassa muistissa. Ensimmäinen suomalainen tietokone [ESKO (Elektroninen SarjaKOmputaattori)](https://fi.wikipedia.org/wiki/Suomen_ensimm%C3%A4iset_tietokoneet#ESKO) oli erityisen hidas, koska sen ohjelmat luettiin hitailta reikänauhoilta vaikka ohjelman käyttämä data oli nopeammassa rumpumuistissa.
 
-Järjestelmään kuuluu myös aina jokin ([massamuisti](https://fi.wikipedia.org/wiki/Massamuisti)), jossa tiedot säilyvät ilman sähkövirtaa. Kun virrat kytketään päälle, järjestelmä alustetaan massamuistissa olevien tietojen avulla. Samassa massamuistissa voi myös tallessa kaikki järjestelmän käyttäjien tiedot ja ohjelmien ohjelmakoodit. Massamuisti voi olla esimerkiksi [kovalevy](https://www.wikiwand.com/fi/Kiintolevy), [SSD-levy](https://fi.wikipedia.org/wiki/SSD) tai [USB-muistitikku](https://fi.wikipedia.org/wiki/USB-muisti).
+Järjestelmään kuuluu myös aina jokin [massamuisti](https://fi.wikipedia.org/wiki/Massamuisti), jossa tiedot säilyvät ilman sähkövirtaa. Kun virrat kytketään päälle, järjestelmä alustetaan massamuistissa olevien tietojen avulla. Samassa massamuistissa voi myös tallessa kaikki järjestelmän käyttäjien tiedot ja ohjelmien ohjelmakoodit. Massamuisti voi olla esimerkiksi [kovalevy](https://www.wikiwand.com/fi/Kiintolevy), [SSD-levy](https://fi.wikipedia.org/wiki/SSD) tai [USB-muistitikku](https://fi.wikipedia.org/wiki/USB-muisti).
 
 <!-- Kuva: ch-1-1-muisti-koodi-data -->
 
