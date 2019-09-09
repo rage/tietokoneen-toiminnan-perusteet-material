@@ -129,7 +129,7 @@ Lähellä suoritinta sijaitseva keskusmuistia pienempi muistialue, jossa on kopi
 Laite, jossa tieto säilyy ilman sähkövirtaa. Käyttöjärjestelmä on talletettu tänne ja se ladataan muistiin tietokoneen käynnistämisen yhteydessä. Kaikki tietokoneessa mahdollisesti suoritettavat ohjelmat ovat myös täällä ja ne ladataan muistiin ohjelman käynnistyksen yhteydessä. Siellä on myös kaikki käyttäjien omat tiedostot, esimerkiksi kuvat ja dokumentit.
 
 ### Oheislaite
-Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti (ja järjestelmän alustukseen tarvittava massamuisti) ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita. 
+Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti ovat ohjelman suorituksen aikana välttämättömiä laitteita ja muut ovat oheislaitteita. 
 
 </text-box>
 
