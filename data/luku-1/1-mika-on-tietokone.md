@@ -51,7 +51,7 @@ Suorittimen sisällä on pienehkö hyvin nopea muisti, jonka alkioita kutsutaan 
 
 Laitteistossa on aina jonkinlainen muisti (ns. [keskusmuisti](https://fi.wikipedia.org/wiki/Keskusmuisti)), jossa on suoritettava ohjelma ja kaikki ohjelman käyttämä tieto (data). Nykyisissä koneissa sekä ohjelma että sen käyttämä data ovat nopeusvaatimusten takia samassa muistissa. Ensimmäinen suomalainen tietokone [ESKO (Elektroninen SarjaKOmputaattori)](https://fi.wikipedia.org/wiki/Suomen_ensimm%C3%A4iset_tietokoneet#ESKO) oli erityisen hidas, koska sen ohjelmat luettiin hitailta reikänauhoilta vaikka ohjelman käyttämä data oli nopeammassa rumpumuistissa.
 
-Järjestelmään kuuluu yleensä aina jokin [massamuisti](https://fi.wikipedia.org/wiki/Massamuisti), jossa tiedot säilyvät ilman sähkövirtaa. Kun virrat kytketään päälle, järjestelmä alustetaan massamuistissa olevien tietojen avulla. Samassa massamuistissa voi olla tallessa myös kaikki järjestelmän käyttäjien tiedot ja ohjelmien ohjelmakoodit. Massamuisti voi olla esimerkiksi [kovalevy](https://www.wikiwand.com/fi/Kiintolevy), [SSD-levy](https://fi.wikipedia.org/wiki/SSD), [USB-muistitikku](https://fi.wikipedia.org/wiki/USB-muisti) tai vähintään jokin vain luettava [ROM-muisti](https://fi.wikipedia.org/wiki/Lukumuisti). Joidenkin hyvin pienten tai erikoislaitteiden yhteydessä massamuistiksi voi riittää järjestelmän sisäinen ROM-muisti, mutta tuolloin massamuistiin ei voi tallettaa mitään tietoja. 
+Järjestelmään kuuluu yleensä aina jokin [massamuisti](https://fi.wikipedia.org/wiki/Massamuisti), jossa tiedot säilyvät ilman sähkövirtaa. Kun virrat kytketään päälle, järjestelmä alustetaan massamuistissa olevien tietojen avulla. Samassa massamuistissa voi olla tallessa myös kaikki järjestelmän käyttäjien tiedot ja ohjelmien ohjelmakoodit. Massamuisti voi olla esimerkiksi [kovalevy](https://www.wikiwand.com/fi/Kiintolevy), [SSD-levy](https://fi.wikipedia.org/wiki/SSD), [USB-muistitikku](https://fi.wikipedia.org/wiki/USB-muisti) tai vähintään jokin vain luettava [ROM-muisti](https://fi.wikipedia.org/wiki/Lukumuisti). Joidenkin hyvin pienten tai erikoislaitteiden yhteydessä massamuistiksi voi riittää järjestelmän sisäinen pienehkö ROM-muisti, mutta tuolloin massamuistiin ei voi tallettaa mitään tietoja. 
 
 <!-- Kuva: ch-1-1-muisti-koodi-data -->
 
@@ -129,7 +129,7 @@ Lähellä suoritinta sijaitseva keskusmuistia pienempi muistialue, jossa on kopi
 Laite, jossa tieto säilyy ilman sähkövirtaa. Käyttöjärjestelmä on talletettu tänne ja se ladataan muistiin tietokoneen käynnistämisen yhteydessä. Kaikki tietokoneessa mahdollisesti suoritettavat ohjelmat ovat myös täällä ja ne ladataan muistiin ohjelman käynnistyksen yhteydessä. Siellä on myös kaikki käyttäjien omat tiedostot, esimerkiksi kuvat ja dokumentit.
 
 ### Oheislaite
-Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita.
+Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikointiin muiden tietokoneiden ja ihmisten kanssa. Suoritin ja muisti (ja järjestelmän alustukseen tarvittava massamuisti) ovat tietokoneen kannalta välttämättömiä laitteita ja muut ovat oheislaitteita. 
 
 </text-box>
 
