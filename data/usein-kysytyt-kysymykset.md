@@ -5,6 +5,11 @@ hidden: false
 information_page: true
 ---
 
+## Kurssin ja kurssialustan kehitys
+Sekä kurssia että sen käyttämää alustaa kehitetään koko ajan. Tämän vuoksi on mahdollista, että kurssin ulkoasu tai käyttöliittymä voi muuttua myös kurssin aikana. Kaikki alustassa ja kurssimateriaalissa olevat puutteet pyritään korjaamaan mahdollisimman pian.
+
+Kurssin ja alustan kehityksestä voi aiheutua haittaa opiskelijoille esimerkiksi muutettujen ja lisättyjen pikatehtävien (quiz) osalta. Joissakin tapauksissa pikatehtäviä voi tulla lisää tai jo tehty pikatehtävä voi tulla merkityksi vielä ratkaisemattomaksi. Tällaisissa tapauksissa pikatehtävä pitää vain tehdä uudelleen.
+
 ## Löysin materiaalista virheen
 Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta. 
 
@@ -36,7 +41,13 @@ Kiitos.
 
 ## Usein kysyttyjä kysymyksiä
 
-Näitä ei ole vielä tullut esille.
+### Pikatehtävä 2.2.1 on huonosti määritelty. (12.9.2019)
+
+Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puutteesta, minkä vuoksi osa tehtävänmäärittelystä ei tule näkyville. Itse kysymys jää puuttumaan. 
+
+Tilanne korjataan pikapuoliin. Alustava korjaus on tehtävän määrittelyssä replikoida kysymys osa otsakkeeseen. 
+
+Osa opiskelijoista on jo vastannut tehtävään (yleensä väärin) sen puutteellisessa esitysmuodossa. Tämän vuoksi on mahdollista, että alustan korjaamisen jälkeen tehtävän suoritustilastot nollataan, jotta kaiki voivat vastata siihen uudelleen.  
 
 
 <!--    kaikki kommentoitu pois 
