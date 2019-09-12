@@ -133,6 +133,14 @@ Väylään liitetty laite tiedon tallennukseen tai keräämiseen, tai kommunikoi
 
 </text-box>
 
+## Kyselyt (pikatehtävät, quizit)
+Kurssilla on huomattava määrä automaattisesti arvioitavia pikatehtäviä. Pääosa niistä on kunkin aliluvun lopussa, mutta osa myös keskellä oppimateriaalia.
+
+Pohdi kysymyksiä harkiten ja käy läpi oppimateriaalia uudestaan tarvittaessa. Jokainen kysymys on mahdollisuus oppia lisää ja syventää tietämystästäsi. Älä siis heitä näitä mahdollisuuksia hukkaan! 
+
+Kurssi on suunniteltu sillä ajatuksella, että opiskelijat tekevät kaikki tehtävät ajatuksella. Joihinkin tehtäviin voi mennä aika paljonkin aikaa. Syvällisempi oppiminen tapahtuu juuri tehtäviä pohtiessa. Älä silti suotta hermoile, jos joku vastauksesi on väärin, koska ainakin joidenkin tehtävien osalta vastauksen oikeellisuus voi riippua näkökulmasta. Virheelliseksi merkityistäkin vastauksista oppii paljon - usein jopa enemmän kuin oikeista vastauksista! 
+
+Yhdessä oppiminen on hauskempaa ja usein tehokkaampaa kuin yksin puurtaminen. Molemmat hyötyvät siitä. Toinen saa neuvoa asiassa, jota ei ollut hyvin sisäistänyt. Toinen taas oppii materiaalin entistä paremmin, kun hänen pitää jäsentää asia sen toiselle selittämisen vaativaan muotoon. Älä kuitenkaan neuvo liikaa, jotta et vahingossa pilaa toisen oppimismahdollisuuksia. Syvällisempi oppiminen tapahtuu asioita itse pohtiessa. Jos annat johonkin tehtävään suoraan oikean vastauksen toiselle, niin tällöin hän ei juurikaan opi tehtävästä vaikka saakin tyydytyksen oikeasta vastauksesta. Vaatii taitoa neuvoa sopivasti mutta ei liikaa.
 
 <!-- quiz 1.1.11-22 Pitääkö tietokoneessa olla tämä laite? -->
 
