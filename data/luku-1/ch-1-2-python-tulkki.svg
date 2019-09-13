@@ -225,18 +225,6 @@
     </marker>
     <marker
        style="overflow:visible"
-       id="EmptyTriangleOutM"
-       refX="0"
-       refY="0"
-       orient="auto">
-      <path
-         transform="matrix(0.4,0,0,0.4,-1.8,0)"
-         style="fill:#0066ff;fill-opacity:1;fill-rule:evenodd;stroke:#0066ff;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path1049" />
-    </marker>
-    <marker
-       style="overflow:visible"
        id="EmptyTriangleOutS"
        refX="0"
        refY="0"
@@ -246,6 +234,18 @@
          style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#0066ff;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1954" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend-6"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0066ff;fill-opacity:1;fill-rule:evenodd;stroke:#0066ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3954-7" />
     </marker>
   </defs>
   <metadata
@@ -499,26 +499,6 @@
          x="154.69154"
          id="tspan4270">lataus</tspan></text>
     <g
-       transform="translate(-44.979167,2.2678574)"
-       id="g1667">
-      <ellipse
-         cy="77.158676"
-         cx="165.35367"
-         id="path884"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.57060313;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#EmptyTriangleOutM)"
-         rx="4.3852377"
-         ry="4.2429123" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="162.21962"
-         y="79.029831"
-         id="text4692-9-0"><tspan
-           id="tspan894"
-           x="162.21962"
-           y="79.029831">PT</tspan></text>
-    </g>
-    <g
        transform="matrix(0.47490803,0,0,0.49130798,99.101272,85.225637)"
        id="g993">
       <rect
@@ -732,5 +712,22 @@
          x="127.41214"
          id="tspan925"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26458332">ajomoduuli</tspan></text>
+    <g
+       transform="translate(28.915179,19.276786)"
+       id="g1277">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+         x="89.837181"
+         y="58.997093"
+         id="text4692-9-0"><tspan
+           id="tspan894"
+           x="89.837181"
+           y="58.997093">PT</tspan></text>
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-6)"
+         id="path6937-1"
+         d="m 96.858495,57.761105 a 4.973989,4.9778223 0 0 1 -4.138924,4.907168 4.973989,4.9778223 0 0 1 -5.528662,-3.259475 4.973989,4.9778223 0 0 1 2.28255,-6.001611 4.973989,4.9778223 0 0 1 6.29508,1.244296" />
+    </g>
   </g>
 </svg>
