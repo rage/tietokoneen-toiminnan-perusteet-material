@@ -38,18 +38,6 @@
     </marker>
     <marker
        style="overflow:visible"
-       id="EmptyTriangleOutM"
-       refX="0.0"
-       refY="0.0"
-       orient="auto">
-      <path
-         transform="scale(0.4) translate(-4.5,0)"
-         style="fill-rule:evenodd;fill:#0066ff;stroke:#0066ff;stroke-width:1pt;stroke-opacity:1;fill-opacity:1"
-         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
-         id="path1049" />
-    </marker>
-    <marker
-       style="overflow:visible"
        id="EmptyTriangleOutS"
        refX="0"
        refY="0"
@@ -59,6 +47,18 @@
          style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#2aff65;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1954" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend-6"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0066ff;fill-opacity:1;fill-rule:evenodd;stroke:#0066ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3954-7" />
     </marker>
   </defs>
   <metadata
@@ -80,37 +80,37 @@
        y="55.6395"
        x="33.675961"
        height="121.60764"
-       width="142.12715"
+       width="158.94708"
        id="rect4352"
        style="opacity:1;fill:#dee3db;fill-opacity:1;stroke:none;stroke-width:2.49292827;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path3832-2-5"
-       d="m 94.688573,153.75706 45.285497,10.66372 z"
+       d="m 102.09692,153.75706 45.28553,10.66372 z"
        style="fill:none;stroke:#000000;stroke-width:1.17954838;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text891"
        y="143.22974"
-       x="106.63371"
+       x="114.04202"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
          id="tspan889"
          y="143.22974"
-         x="106.63371"><tspan
+         x="114.04202"><tspan
            style="stroke-width:0.26458332"
            id="tspan887"
            y="143.22974"
-           x="106.63371">massamuisti</tspan></tspan></text>
+           x="114.04202">massamuisti</tspan></tspan></text>
     <path
        id="rect3713"
        d="M 7.44821,35.507488 V 104.77168 H 91.724061 V 35.507488 Z"
        style="opacity:0;fill:#ffed2a;fill-opacity:1;stroke:#8e220e;stroke-width:0.33841607;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="rect3713-8-5"
-       d="M 37.16348,65.970842 V 104.56195 H 94.892774 V 65.970842 Z"
+       d="M 44.571818,65.970842 V 104.56195 H 102.30112 V 65.970842 Z"
        style="opacity:1;fill:#ffdd55;stroke:none;stroke-width:0.20889631;stroke-opacity:1" />
     <g
-       transform="translate(22.183371,4.2763124)"
+       transform="translate(29.591709,4.2763124)"
        id="g1782">
       <rect
          style="opacity:1;fill:#ffb380;stroke:none;stroke-width:0.16809031;stroke-opacity:1"
@@ -131,11 +131,11 @@
     </g>
     <path
        id="rect3713-8"
-       d="M 100.58467,65.799406 V 104.39051 H 172.3062 V 65.799406 Z"
+       d="m 107.99305,65.799406 v 38.591104 h 71.72153 V 65.799406 Z"
        style="opacity:1;fill:#c8beb7;stroke:none;stroke-width:0.23283964;stroke-opacity:1" />
     <g
        style="stroke:none;stroke-opacity:1"
-       transform="translate(-23.430363,-51.387733)"
+       transform="translate(-16.022025,-51.387733)"
        id="g4684">
       <g
          id="g1774">
@@ -163,23 +163,23 @@
     <text
        id="text4688"
        y="63.916046"
-       x="101.8793"
+       x="109.28762"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="63.916046"
-         x="101.8793"
+         x="109.28762"
          id="tspan1784">muisti</tspan></text>
     <text
        id="text4692"
        y="64.24778"
-       x="37.454468"
+       x="44.862808"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="64.24778"
-         x="37.454468"
+         x="44.862808"
          id="tspan1691">suoritin</tspan></text>
     <g
-       transform="matrix(0.59277816,0,0,0.39494939,39.439653,56.996994)"
+       transform="matrix(0.59277816,0,0,0.39494939,46.847991,56.996994)"
        style="stroke:#000000;stroke-opacity:1"
        id="g3828">
       <path
@@ -226,23 +226,23 @@
     <text
        id="text4692-9"
        y="120.45678"
-       x="48.594593"
+       x="56.002934"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="120.45678"
-         x="48.594593"
+         x="56.002934"
          id="tspan1693">väylä</tspan></text>
     <path
        id="path3832"
-       d="m 74.107006,104.42992 0.238137,28.48415 z"
+       d="m 81.515344,104.42992 0.238137,28.48415 z"
        style="fill:none;stroke:#000000;stroke-width:0.81142861;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path3832-9"
-       d="m 120.56485,104.57396 c 0.23808,28.87482 0.23808,28.87482 0.23808,28.87482"
+       d="m 127.97323,104.57396 c 0.23808,28.87482 0.23808,28.87482 0.23808,28.87482"
        style="fill:none;stroke:#000000;stroke-width:0.81662124;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        y="148.34589"
-       x="70.182243"
+       x="77.590584"
        height="11.864385"
        width="26.14444"
        id="rect65-5-0-3"
@@ -250,35 +250,35 @@
     <text
        id="text885"
        y="165.42274"
-       x="70.542786"
+       x="77.951126"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          style="stroke-width:0.26458332"
          id="tspan883"
          y="165.42274"
-         x="70.542786"><tspan
+         x="77.951126"><tspan
            style="stroke-width:0.26458332"
            id="tspan881"
            y="165.42274"
-           x="70.542786">laiteohjain</tspan></tspan></text>
+           x="77.951126">laiteohjain</tspan></tspan></text>
     <path
        id="path3832-2"
-       d="M 83.103217,122.6614 83.4057,148.20972 Z"
+       d="m 90.511555,122.6614 0.302483,25.54832 z"
        style="fill:none;stroke:#000000;stroke-width:0.86609834;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
        y="145.55986"
-       x="107.37618"
+       x="114.78451"
        height="30.083971"
        width="42.924843"
        id="rect65-5-0"
        style="opacity:1;fill:#e9c6af;stroke:#f5180e;stroke-width:0.11292586;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <path
        id="path1786"
-       d="m 141.91522,159.62763 c 23.33422,-14.76702 25.88742,-40.35507 17.60992,-72.084567"
+       d="m 149.3236,159.62763 c 23.33422,-14.76702 25.88742,-40.35507 17.60992,-72.084567"
        style="fill:none;fill-opacity:1;stroke:#2aff65;stroke-width:3.53555036;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow2Send)" />
     <g
        id="g1689"
-       transform="matrix(1,0,0,0.99618781,28.154229,-33.910898)">
+       transform="matrix(1,0,0,0.99618781,35.562567,-33.910898)">
       <g
          transform="matrix(1.5485604,0,0,1.2950908,-45.121337,-53.666753)"
          id="g1591">
@@ -321,24 +321,27 @@
     <text
        id="text4692-9-1"
        y="116.07189"
-       x="148.60605"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="156.01428"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
        xml:space="preserve"><tspan
          y="116.07189"
-         x="148.60605"
+         x="156.01428"
          id="tspan4270">lataus</tspan></text>
+    <text
+       id="text885-9"
+       y="170.29782"
+       x="118.09972"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="170.29782"
+         x="118.09972"
+         id="tspan925">ajomoduuli</tspan></text>
     <g
-       transform="translate(-7.4083337)"
-       id="g960">
-      <ellipse
-         cy="77.661156"
-         cx="165.35367"
-         id="path884"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.57898766;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#EmptyTriangleOutM)"
-         rx="4.3852377"
-         ry="4.3685203" />
+       transform="translate(-15.081245,-55.184524)"
+       id="g982">
       <g
-         id="g2132">
+         id="g2132"
+         transform="translate(15.08125,54.995536)">
         <text
            id="text4692-9-0"
            y="79.029831"
@@ -349,15 +352,10 @@
              x="162.74878"
              id="tspan2128">P1</tspan></text>
       </g>
+      <path
+         style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-6)"
+         id="path6937-1"
+         d="m 185.30492,132.03342 a 4.973989,4.9778223 0 0 1 -4.13892,4.90717 4.973989,4.9778223 0 0 1 -5.52866,-3.25948 4.973989,4.9778223 0 0 1 2.28255,-6.00161 4.973989,4.9778223 0 0 1 6.29508,1.2443" />
     </g>
-    <text
-       id="text885-9"
-       y="170.29782"
-       x="110.69141"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       xml:space="preserve"><tspan
-         y="170.29782"
-         x="110.69141"
-         id="tspan925">ajomoduuli</tspan></text>
   </g>
 </svg>
