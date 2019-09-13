@@ -94,6 +94,18 @@
          d="M 5.77,0 -2.88,5 V -5 Z"
          id="path1406" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow2Lend-6"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <path
+         transform="matrix(-1.1,0,0,-1.1,-1.1,0)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="fill:#0066ff;fill-opacity:1;fill-rule:evenodd;stroke:#0066ff;stroke-width:0.625;stroke-linejoin:round;stroke-opacity:1"
+         id="path3954-7" />
+    </marker>
   </defs>
   <metadata
      id="metadata996">
@@ -154,7 +166,7 @@
        id="text4629"
        y="99.000488"
        x="63.643066"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
        xml:space="preserve"><tspan
          id="tspan4350"
          x="63.643066"
@@ -310,13 +322,13 @@
        id="text1000"
        y="163.00778"
        x="125.0715"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888891px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26025432;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26025432"
        xml:space="preserve"><tspan
-         style="stroke-width:0.26025432;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:4.93888891px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26025432"
          id="tspan998"
          y="163.00778"
          x="125.0715"><tspan
-           style="stroke-width:0.26025432;-inkscape-font-specification:'sans-serif, Normal';font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:4.93888891px;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.26025432"
            id="tspan996"
            y="163.00778"
            x="125.0715">Ohjelma JVM</tspan></tspan></text>
@@ -329,26 +341,6 @@
          y="110.96922"
          x="156.27905"
          id="tspan4270">lataus</tspan></text>
-    <g
-       transform="translate(-57.150008,2.2678574)"
-       id="g1667">
-      <ellipse
-         cy="75.835762"
-         cx="163.66208"
-         id="path884"
-         style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.73730469;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#EmptyTriangleOutM)"
-         rx="5.6663837"
-         ry="5.4824781" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="159.57382"
-         y="77.442329"
-         id="text4692-9-0"><tspan
-           y="77.442329"
-           x="159.57382"
-           id="tspan1108">JVM</tspan></text>
-    </g>
     <g
        transform="matrix(0.47490803,0,0,0.49130798,99.101272,87.342305)"
        id="g993">
@@ -458,22 +450,22 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
        x="132.02979"
        y="180.15039"
        id="text4629-5"><tspan
          y="180.15039"
          x="132.02979"
          id="tspan1053">kone-</tspan><tspan
-         y="185.44206"
+         y="186.32401"
          x="132.02979"
          id="tspan1055">kielinen</tspan><tspan
-         y="190.73372"
+         y="192.49762"
          x="132.02979"
          id="tspan1057">koodi</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888889px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
        x="151.32341"
        y="179.99507"
        id="text4629-5-5"><tspan
@@ -574,38 +566,38 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333333px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-opacity:1"
        x="56.400337"
        y="163.01463"
        id="text4629-5-4-1-4"><tspan
          y="163.01463"
          x="56.400337"
          id="tspan1037">           ...</tspan><tspan
-         y="167.42436"
+         y="168.3063"
          x="56.400337"
          id="tspan1039">           ILOAD X</tspan><tspan
-         y="171.83408"
+         y="173.59796"
          x="56.400337"
          id="tspan1041">           BIPUSH 5</tspan><tspan
-         y="176.2438"
+         y="178.88963"
          x="56.400337"
          id="tspan1043">           IF_ICMPEQ THEN</tspan><tspan
-         y="180.65352"
+         y="184.1813"
          x="56.400337"
          id="tspan1045">           ILOAD X</tspan><tspan
-         y="185.06325"
-         x="56.400337"
-         id="tspan1047">           ISTORE Y</tspan><tspan
          y="189.47296"
          x="56.400337"
+         id="tspan1047">           ISTORE Y</tspan><tspan
+         y="194.76463"
+         x="56.400337"
          id="tspan1049">           GOTO DONE</tspan><tspan
-         y="193.88269"
+         y="200.0563"
          x="56.400337"
          id="tspan1051">THEN:  BIPUSH 1</tspan><tspan
-         y="198.2924"
+         y="205.34796"
          x="56.400337"
          id="tspan1054">           ISTORE Y</tspan><tspan
-         y="202.70213"
+         y="210.63963"
          x="56.400337"
          id="tspan1056">DONE: ...</tspan></text>
     <text
@@ -651,5 +643,9 @@
          y="204.77107"
          x="124.46401"
          id="tspan1001">latausmoduuli</tspan></text>
+    <path
+       d="m 112.16653,77.415848 a 4.9739885,4.9778223 0 0 1 -4.13892,4.907169 4.9739885,4.9778223 0 0 1 -5.52866,-3.259475 4.9739885,4.9778223 0 0 1 2.28255,-6.001612 4.9739885,4.9778223 0 0 1 6.29508,1.244297"
+       id="path6937-1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#0066ff;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#Arrow2Lend-6)" />
   </g>
 </svg>
