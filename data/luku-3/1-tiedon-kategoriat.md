@@ -26,25 +26,27 @@ Englantilainen matemaatikko George Boole kehitti 1854 oman algebran totuusarvoje
 
 </text-box>
 
-Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-järjestelmän luvuissa numeroiden painoarvot oikealta vasemmalle ovat kymmenen potensseja (10<sup>0</sup>=1, 10<sup>1</sup>=10, 10<sup>2</sup>=100, 10<sup>3</sup>=1000, jne.), niin 2-järjestelmässä ne ovat kakkosen potensseja (2<sup>0</sup>=1, 2<sup>1</sup>=2, 2<sup>2</sup>=4, 2<sup>3</sup>=8, jne.). Täten esimerkiksi binääriluvun 11011101<sub>2</sub> ja desimaaliluvun 219 arvot (desimaalilukuina) saadaan laskemalla
+Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-järjestelmän luvuissa numeroiden painoarvot oikealta vasemmalle ovat kymmenen potensseja (10<sup>0</sup>=1, 10<sup>1</sup>=10, 10<sup>2</sup>=100, 10<sup>3</sup>=1000, jne.), niin 2-järjestelmässä ne ovat kakkosen potensseja (2<sup>0</sup>=1, 2<sup>1</sup>=2, 2<sup>2</sup>=4, 2<sup>3</sup>=8, jne.). Täten esimerkiksi binääriluvun 110111011<sub>2</sub> ja desimaaliluvun 219 arvot (desimaalilukuina) saadaan laskemalla
 
 <!-- binääriluku esim -->
 
 <pre>
-11011101<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>2</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
+
+11011011<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>1</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
 219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
 </pre>
 
-Tämä näyttää helpommalta binäärilukujen osalta, koska eri suuruusluokilla ei ole mitään kertoimia edessä (kuten esim. desimaaliluvun 219 kerroin 2 sadoille eli suuruusluokalle 10<sup>2</sup>). Binääriluvuilla ainoa nollasta poikkeava kerroin on yksi (1), jota ei tarvitse edes kirjoittaa näkyville. Kantaluku ilmaistaan tarvittaessa alaindeksinä (esim. 219<sub>10</sub>), mutta usein se jätetään pois ja kantaluku ilmenee asiayhteydestä.
+Tämä näyttää helpommalta binäärilukujen osalta, koska eri suuruusluokilla ei ole mitään kertoimia edessä (kuten esim. desimaaliluvun 219  suuruusluokan 10<sup>2</sup> eli satojen kerroin on 2). Binääriluvuilla ainoa nollasta poikkeava kerroin on yksi (1), jota ei tarvitse edes kirjoittaa näkyville. Kantaluku ilmaistaan tarvittaessa alaindeksinä (esim. 219<sub>10</sub>), mutta usein se jätetään pois ja kantaluku ilmenee asiayhteydestä.
 
 Vastaavasti, kun desimaaliluvuilla voi olla desimaalipisteellä erotettu desimaaliosa, myös binääriluvuilla voi olla&nbsp;  _binääripisteellä_ erotettu _binääriosa_. Binääripisteen jälkeen tulevilla numeroilla on (desimaalijärjestelmän lukuina) painoarvot
-2<sup>-1</sup>=0.5, <nobr>2<sup>-2</sup>=0.25</nobr>, <nobr>2<sup>-3</sup>=0.125</nobr>, <nobr>2<sup>-4</sup>=0.0625</nobr>, jne.  Täten esimerkiksi lukujen 11011101.10101<sub>2</sub> ja 2019.65625<sub>10</sub> arvot ovat (desimaalilukuina)
+2<sup>-1</sup>=0.5, <nobr>2<sup>-2</sup>=0.25</nobr>, <nobr>2<sup>-3</sup>=0.125</nobr>, <nobr>2<sup>-4</sup>=0.0625</nobr>, jne.  Täten esimerkiksi lukujen 11011011.10101<sub>2</sub> ja 2019.65625<sub>10</sub> arvot ovat (desimaalilukuina)
 
 <!-- binääripiste esim -->
 
 <pre>
-11011101.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>2</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
-             = 128 + 64 + 16 + 8 + 4 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
+
+11011011.10101<sub>2</sub> = 2<sup>7</sup> + 2<sup>6</sup> + 2<sup>4</sup> + 2<sup>3</sup> + 2<sup>1</sup> + 2<sup>0</sup> + 2<sup>-1</sup>  +  2<sup>-3</sup>  +  2<sup>-5</sup>
+             = 128 + 64 + 16 + 8 + 2 + 1 + 0.5 + 0.125 + 0.03125 = 219.65625
 
 219.65625<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup>+6*10<sup>-1</sup>+5*10<sup>-2</sup>+6*10<sup>-3</sup> + 2*10<sup>-4</sup> + 5*10<sup>-5</sup>
         = 200 +  10 +  9 + 0.6 + 0.05 + 0.006 + 0.0002 + 0.00005 = 219.65625
