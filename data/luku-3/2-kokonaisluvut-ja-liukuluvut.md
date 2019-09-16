@@ -22,7 +22,7 @@ Meille ihmisille luontevin tapa esittää kokonaisluvut on käyttää etumerkki�
 Etumerkkibitin käyttö on vähän huono kokonaislukujen aritmetiikan toteutukseen, joten sitä ei useinkaan käytetä sen vuoksi. Esitystavan parhaimpana puolena on sen soveltuvuus ihmisille, jotka ovat tottuneet etumerkkien käyttöön.
 
 ### Kokonaislukujen yhden komplementin esitysmuoto
-Etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun esitysmuodon kaikki bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
+Pelkkää etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun esitysmuodon _kaikki_ bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
 ```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
 -55 = 1100 0110 = 0xC6 (tavuna)   -57 = 0x FF FF FF C6 (32-bittisenä sanana)
