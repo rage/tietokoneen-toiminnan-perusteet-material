@@ -13,7 +13,7 @@ hidden: false
 Positiiviset kokonaisluvut ovat helppoja, koska niiden esitysmuoto on useimmiten (mutta ei aina!) niiden binääriarvo. Tiedon pituus pitää kuitenkin niissäkin ottaa aina huomioon, koska yleisesti ottaen vasemmanpuolimmainen bitti pitää varata etumerkille. Täten esimerkiksi 8-bittisen tavun suurin kokonaisluku on yleensä 0111&nbsp;1111 eli 127 eli 2<sup>7</sup>-1 eli 128-1.
 
 ### Kokonaislukujen etumerkkiin perustuva esitysmuoto
-Meille ihmisille luontevin tapa esittää kokonaisluvut on käyttää etumerkkiä, jolloin vasemmanpuolimmainen bitti on positiivisille luvuille 0 ja negatiivisille 1. Esimerkiksi, +57 ja -57 ovat tavuina 0x39 ja 0x95, sekä 32-bittisinä sanoina 0x00000039 ja 0x80000039.
+Meille ihmisille luontevin tapa esittää kokonaisluvut on käyttää etumerkkiä, jolloin vasemmanpuolimmainen (eniten merkitsevä) bitti on positiivisille luvuille 0 ja negatiivisille 1. Esimerkiksi, +57 ja -57 ovat tavuina 0x39 ja 0x95, sekä 32-bittisinä sanoina 0x00000039 ja 0x80000039.
 
 ```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
@@ -25,10 +25,10 @@ Etumerkkibitin käyttö on vähän huono kokonaislukujen aritmetiikan toteutukse
 Pelkkää etumerkkiä paremmin laitteiston ALU-piireille sopiva esitystapa on [yhden komplementti](https://fi.wikipedia.org/wiki/Komplementti_(tietotekniikka)). Siinä positiivisilla luvuilla on edelleen tavallinen binääriesitys, mutta negatiiviset luvut saadaan komplementoimalla positiivisen luvun esitysmuodon _kaikki_ bitit. Esimerkin luvut +57 ja -57 ovat nyt tavuina 0x39 ja 0xC6, sekä sanoina 0x00000039 ja 0xFFFFFFC6.
 ```
 +57 = 0011 1001 = 0x39 (tavuna)   +57 = 0x 00 00 00 39 (32-bittisenä sanana)
--55 = 1100 0110 = 0xC6 (tavuna)   -57 = 0x FF FF FF C6 (32-bittisenä sanana)
+-57 = 1100 0110 = 0xC6 (tavuna)   -57 = 0x FF FF FF C6 (32-bittisenä sanana)
 ```
 
-Vasemmanpuolimmainen bitti toimii edelleen etumerkkibittinä, mutta negatiivisten lukujen lukuarvo ei ole niin helposti luettavissa. Yhden komplementin esitystavalla on se hyvä ominaisuus, että positiivisia ja negatiivisia lukuja on yhtä monta. Esimerkiksi yhden tavun arvoalue on siis \[-127,&nbsp;+127\]. Huonona puolena on, että nollalla on kaksi esitystapaa, esimerkiksi tavuina +0&nbsp;=&nbsp;0x00 ja -0&nbsp;=&nbsp;0xFF. Tästä on haittaa aritmetiikkaoperaatioissa ja vertailuoperaatioissa, kun pitää varautua kahteen nollaan. Nollaan vertailu on harmillisesti ohjelmissa huomattavan yleinen operaatio.
+Vasemmanpuolimmainen (eniten merkitsevä) bitti toimii edelleen etumerkkibittinä, mutta negatiivisten lukujen lukuarvo ei ole niin helposti luettavissa. Yhden komplementin esitystavalla on se hyvä ominaisuus, että positiivisia ja negatiivisia lukuja on yhtä monta. Esimerkiksi yhden tavun arvoalue on siis \[-127,&nbsp;+127\]. Huonona puolena on, että nollalla on kaksi esitystapaa, esimerkiksi tavuina +0&nbsp;=&nbsp;0x00 ja -0&nbsp;=&nbsp;0xFF. Tästä on haittaa aritmetiikkaoperaatioissa ja vertailuoperaatioissa, kun pitää varautua kahteen nollaan. Nollaan vertailu on harmillisesti ohjelmissa huomattavan yleinen operaatio.
 
 ### Kokonaislukujen kahden komplementin esitysmuoto
 Yleensä kokonaisluvuille käytetään yhden komplementin esitysmuodon sijasta [kahden komplementin](https://fi.wikipedia.org/wiki/Kahden_komplementti) esitysmuotoa. Positiiviset luvut ovat edelleen tavallisessa binääriesityksessä. Negatiivisen luvun esitysmuoto saadaan nyt vastaavan positiivisen luvun esitysmuodosta komplementoimalla kaikki bitit ja lisäämällä esitysmuotoon 1. Huomaa, että binäärijärjestelmässä yhteenlasku tehdään ihan samalla tavalla kuin 10-järjestelmässäkin. Jos yhteenlaskua tehtäessä tulee muistinumero vasemmanpuolimmaisen bitin kohdalla, niin tässä tapauksessa se unohdetaan eli jätetään pois.
@@ -70,6 +70,19 @@ suuruus               1000 0000 = 128 (Sama esitysmuoto kuin luvulla -128!!)
 Tästä seuraa, että esimerkiksi aritmetiikkaoperaatio negaatio (esim. lauseessa Y&nbsp;=&nbsp;-X;) päättyy virhetilanteeseen, jos operandi on pienin mahdollinen negatiivinen luku (tavuna -2<sup>7</sup>&nbsp;=&nbsp;-128 ja 32-bittisenä sanana -2<sup>31</sup>&nbsp;=&nbsp; -2&nbsp;147&nbsp;483&nbsp;648). Kahden komplementin parhaimpana puolena on, että sille tehdyt aritmetiikkaoperaatiot ovat muita esitystapoja helpompia toteuttaa ALU:n piireillä. Tämän vuoksi se on yleisin käytössä oleva kokonaislukujen esitystapa.
 <br><br>
 On myös huomionarvoista, että normaali 32-bittisten lukujen lukualue \[-2&nbsp;147&nbsp;483&nbsp;648,&nbsp;+2&nbsp;147&nbsp;483&nbsp;647\] ei ole ihan valtavan iso. Jos sovelluksessa tarvitaan todella suuria kokonaislukuja, niin täytyy käyttää kaksinkertaisen tarkkuuden 64-bittisiä kokonaislukuja.
+
+Kaikissa kokonaislukujen esitysmuodoissa täytyy ottaa huomioon myös tavujen järjestys. Esimerkiksi, luvut +57 ja -57 ovat 32-bittisessä Big-Endian esitysmuodossa
+
+```
++57 = 0x 00 00 00 39    (binääriluku 11 1001)
+-57 = 0x FF FF FF C7 
+```
+ja Little-Endian esitysmuodossa
+
+```
++57 = 0x 39 00 00 00  
+-57 = 0x C7 FF FF FF
+```
 
 ### Kokonaislukujen vakiolisäykseen perustuva esitysmuoto
 Joissakin tapauksissa (esim. seuraavaksi esitettävien liukulukujen yhteydessä) kokonaisluvut esitetään positiivisina binäärilukuina. Tämä tarkoittaa, että kaikki binääriluvut tulkitaan ensin etumerkittöminä kokonaislukuina ja sitten esitysmuodosta vähennetään sovittu vakio sen lukuarvon saamiseksi. Yleensä tuo vakio on n-bittiselle tiedolle 2<sup>n-1</sup>-1.
