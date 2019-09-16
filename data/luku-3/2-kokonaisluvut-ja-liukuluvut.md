@@ -93,6 +93,8 @@ Kun vakiolis채yksen채 k채ytet채채n 2<sup>n-1</sup>-1 (miss채 n on bittien lukum�
 <div><quiz id="7edb61d9-50bd-4dd1-8dca-40def4ef82b6"></quiz></div>
 <div><quiz id="4794a28b-2d8f-439b-a43c-249aae239a8f"></quiz></div>
 <div><quiz id="5ce00140-3b1c-4e6f-8779-2f7e59c74114"></quiz></div>
+<div><quiz id="b579ddc4-9083-4c4b-9b63-efe4d3c39b36"></quiz></div>
+<div><quiz id="b0ba58b5-8cbb-4d06-84e6-e99e06e54d92"></quiz></div>
 <div><quiz id="486877da-2e16-40d7-9c87-250701685130"></quiz></div>
 <div><quiz id="4b7eda3e-300d-41d6-8d6e-269b2f51a80f"></quiz></div>
 <div><quiz id="322209ef-1fe8-4951-b190-19a2f358d768"></quiz></div>
