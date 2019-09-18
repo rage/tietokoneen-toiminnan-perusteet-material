@@ -198,19 +198,15 @@
         </g>
       </g>
     </g>
-    <g
-       transform="translate(-62.366071,-81.264881)"
-       id="g5022">
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="83.196098"
-         y="218.52109"
-         id="text4582-1-5-68"><tspan
-           y="218.52109"
-           x="83.196098"
-           id="tspan8532">järjestelmä (μs, ns, ms)</tspan></text>
-    </g>
+    <text
+       id="text4582-1-5-68"
+       y="136.19789"
+       x="25.592531"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="136.19789"
+         x="25.592531"
+         id="tspan915">järjestelmä (ns, μs, ms)</tspan></text>
     <text
        id="text4582-1-5-0"
        y="139.90204"
@@ -245,19 +241,19 @@
              id="tspan8452">virtuaali-</tspan><tspan
              y="148.50624"
              x="105.59312"
-             id="tspan8454"></tspan><tspan
+             id="tspan8454" /><tspan
              y="150.97568"
              x="105.59312"
              id="tspan8456">muisti,</tspan><tspan
              y="153.44513"
              x="105.59312"
-             id="tspan8458"></tspan><tspan
+             id="tspan8458" /><tspan
              y="155.91457"
              x="105.59312"
              id="tspan8460">levyväli-</tspan><tspan
              y="158.38402"
              x="105.59312"
-             id="tspan8462"></tspan><tspan
+             id="tspan8462" /><tspan
              y="160.85345"
              x="105.59312"
              id="tspan8464">muisti</tspan></text>
