@@ -11,6 +11,8 @@ Lähtötietoina kurssilla otaksutaan suomalaisen peruskoulun antamat valmiudet. 
 
 Kurssi koostuu neljästä luvusta. Luvussa 1 esitellään tietokonejärjestelmä kokonaisuutena. Siinä tutustutaan myös ohjelman käsitteeseen ja ohjelmien erilaisiin esitysmuotoihin. Seuraavaksi luvussa 2 tarkastellaan suorittimen toimintaa ja näytetään, kuinka suoritin suorittaa konekielisessä esitysmuodossa olevia ohjelmia. Luvussa 3 kerrotaan, kuinka tieto esitetään tietokonejärjestelmässä. Erityisesti käydään läpi kokonaislukujen ja liukulukujen esitysmuodot. Liukuluvut ovat tietokoneissa käytetty realilukujen vastike. Luvussa 4 esitellään käyttöjärjestelmän perustoiminnot, joiden avulla hallinnoidaan järjestelmää ja annetaan palveluja sovellusohjelmille. Tällä tavoin sovellusohjelmat voivat rakentua tietyn käyttöjärjestelmän päälle, eikä niissä tarvitse huomioida laitteiston yksityiskohtia. Lopuksi esitellään perusteet laskettavuusteorialle, jonka avulla voidaan todistaa mielenkiintoisia ominaisuuksia tietokoneella ratkaistavissa olevista ongelmista.
 
+Kurssiin sisältyy merkittävä määrä pikatehtäviä ("quiz"), joiden tekemisen tarkoitus on syventää oppimista. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki pikatehtävät. Osa niistä on hyvinkin helppoja, mutta osa vaatii parempaa perehtymistä aihepiiriin.
+
 ## Kurssin käyttötavat
 Kurssia voidaan käyttää useaan alla mainittuun eri tarkoitukseen. Erilaisten kurssisuoritusten arvostelumenetelmät Helsingin yliopiston kurssina selitetään tarkemmin osiossa "Arvostelu ja kokeet".
 
