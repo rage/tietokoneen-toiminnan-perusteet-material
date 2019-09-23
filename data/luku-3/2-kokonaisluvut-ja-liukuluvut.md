@@ -129,7 +129,7 @@ Kokonaisluvun vakiolisäysesitysmuoto on positiivinen kokonaisluku, joka saadaan
 ## Liukuluvut
 Kuten jo ensimmäisessä luvussa mainittiin, tietokoneissa ei ole käytettävissä reaalilukuja. Sen sijaan käytämme tietokonearitmetiikkaa varten kehitettyä reaalilukujen approksimaatiota, liukulukuja. Liukuluvuille on tyypillistä vakiomuoto ja etukäteen määritelty lukutarkkuus. Esimerkiksi, reaaliluku &Pi; (pii) esitetään likiarvona 3.1415927 sen yleisimmässä 32-bittisessä esitysmuodossa.
 
-Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluokka. Desimaaliluvuilla esitysmuoto toimisi seuraavan laisesti. Mantissa skaalataan sillä tavoin, että kokonaisosassa on vain yksi numero ja desimaaliosaan otetaan vaikkapa 6 numeroa.
+Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluokka. Desimaaliluvuilla esitysmuoto toimisi seuraavanlaisesti. Mantissa skaalataan sillä tavoin, että kokonaisosassa on vain yksi numero ja desimaaliosaan otetaan vaikkapa 6 numeroa.
 
 <pre>
 +1.23         =    + 1.230000  *  10<sup>0</sup>
@@ -151,7 +151,7 @@ Tietokoneessa käytämme tietenkin binäärijärjestelmää. Nytkin mantissa ska
 
 Tietokoneiden alkuaikoina jokaisella valmistajalla oli oma tapansa esittää liukulukuja, mutta tästä aiheutui liikaa harmia. On jo tarpeeksi ärsyttävää laskea koko ajan likiarvoilla, saati sitten niin että sama ohjelma antaa erilaisia (likiarvo) tuloksia eri koneilla. Jo vuodesta 1985 käytössä on ollut [IEEE 754](https://fi.wikipedia.org/wiki/Liukuluku) standardi liukulukujen esitysmuodolle ja aritmetiikalle. Standardin uusin päivitys on vuodelta 2008. Nyt lähes kaikki suorittimet noudattavat tuota standardia ja laskevat likiarvonsa samalla tavalla. Esittelemme tässä nyt standardin pääperiaatteet 32-bittisille liukuluvuille.
 
-IEEE:n 32-bittisessä standardissa liukulukujen esitysmuoto on seuraavan lainen. Vasemmanpuolimmainen bitti on etumerkki, ja se on 0 positiivisille luvuille ja 1 negatiivisille luvuille. Seuraavat 8 bittiä ovat eksponentti, ja sen esitysmuoto on vakiolisäys 127. Loput 23 bittiä ovat mantissalle, joka yleisessä tapauksessa esitetään _normalisoidussa muodossa_. Normalisoinnissa mantissa skaalataan ensin siten, että kokonaisosassa on vain yksi numero. Koska kyseessä on binäärijärjestelmä, tuo numero on aina 1, joten sitä ei tarvitse tallettaa! Sitä kutsutaan _piilobitiksi_. Normalisoidusta luvusta talletetaan siis vain mantissan binääriosa. Tällä nerokkaalla tempulla saamme 23 bittiin talletettua 24 bittiä informaatiota, eli lukutarkkuus kaksinkertaistuu.
+IEEE:n 32-bittisessä standardissa liukulukujen esitysmuoto on seuraavanlainen. Vasemmanpuolimmainen bitti on etumerkki, ja se on 0 positiivisille luvuille ja 1 negatiivisille luvuille. Seuraavat 8 bittiä ovat eksponentti, ja sen esitysmuoto on vakiolisäys 127. Loput 23 bittiä ovat mantissalle, joka yleisessä tapauksessa esitetään _normalisoidussa muodossa_. Normalisoinnissa mantissa skaalataan ensin siten, että kokonaisosassa on vain yksi numero. Koska kyseessä on binäärijärjestelmä, tuo numero on aina 1, joten sitä ei tarvitse tallettaa! Sitä kutsutaan _piilobitiksi_. Normalisoidusta luvusta talletetaan siis vain mantissan binääriosa. Tällä nerokkaalla tempulla saamme 23 bittiin talletettua 24 bittiä informaatiota, eli lukutarkkuus kaksinkertaistuu.
 
 Eksponentin esitysmuoto on siis aina positiivinen kokonaisluku. Miksi tämä esitysmuoto, eikä joku noista muista? Perusteluna on, että liukulukuaritmetiikkaa toteutettaessa eksponentteja käsitellään vain niiden esitysmuotoina välittämättä eksponenttien todellisista arvoista. Normalisointi ja muut liukulukuaritmetiikkaan liittyvät operaatiot on helpompi toteuttaa, kun käsiteltävänä on vain positiivisia lukuja eksponettikentissä.
 
@@ -213,7 +213,7 @@ Liukulukulaskenta on hieman erilaista kuin mitä koulussa on opittu reaalilukula
 
 </pre>
 
-Toinen ongelma liukulukulaskennassa on lukujen vertailu. Reaaliluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtä suuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi/pienempi kuin toinen.
+Toinen ongelma liukulukulaskennassa on lukujen vertailu. Reaaliluvuilla on ihan normaalia verrata kahta lukua toisiinsa, mutta liukuluvuilla suora vertailu ei useinkaan toimi lähes samanarvoisten lukujen kanssa, koska liukulukujen esitystarkkuus tulee ottaa huomioon. Täten esimerkiksi lause "_if&nbsp;(X+Y&nbsp;==&nbsp;3.0)&nbsp;then&nbsp;..._" ei useinkaan toimi oikein. Liukulukujen vertailussa yhtäsuuruuteen täytyy riittää, että ne ovat "riittävän lähellä" toisiaan. Sama epätarkkuus pitää ottaa huomioon vertailtaessa, onko jokin liukuluku suurempi tai pienempi kuin toinen.
 
 ```
 Esimerkki: Liukulukulaskennan epätarkkuus
