@@ -32,7 +32,7 @@ Binäärijärjestelmässä kantaluku on kaksi. Sen numerot ovat 0 ja 1. Kun 10-j
 
 <pre>
 
-11011011<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>1</sup>+2<sup>0</sup> = 128+64+16+8+4+1 = 219
+11011011<sub>2</sub> = 2<sup>7</sup>+2<sup>6</sup>+2<sup>4</sup>+2<sup>3</sup>+2<sup>1</sup>+2<sup>0</sup> = 128+64+16+8+2+1 = 219
 219<sub>10</sub> = 2*10<sup>2</sup>+1*10<sup>1</sup>+9*10<sup>0</sup> = 200+10+9 = 219
 </pre>
 
