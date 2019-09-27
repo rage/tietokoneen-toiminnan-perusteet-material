@@ -82,7 +82,7 @@ Esimerkki: Mikä on 0.1875<sub>10</sub> binäärilukuna? <br>
 0.5    * 2 = 1.0   = 1 + 0.0   joten  0.1875<sub>10</sub> = 0.0011<sub>2</sub>
 </pre>
 
-Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111101.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
+Kun kokonais- ja binääriosat yhdistetään, saadaan 57.1875<sub>10</sub> = 111001.0011<sub>2</sub>. Kokonaisosan alkuun voidaan halutessa laittaa lisää nollia lukuarvon siitä muuttumatta. Sama pätee binääriosan lopussa oleviin nolliin.
 
 <!-- esim etu ja loppunollat -->
 
@@ -140,7 +140,7 @@ Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A,
 <!-- esim: hexadesimaaliluku -->
 
 <pre>
-30*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768 + 64 + 5 = 837
+3*16<sup>2</sup>&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5&nbsp;=&nbsp;3*256&nbsp;+&nbsp;4*16&nbsp;+&nbsp;5 = 768 + 64 + 5 = 837
 </pre>
 
 
