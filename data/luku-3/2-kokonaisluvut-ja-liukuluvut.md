@@ -155,7 +155,7 @@ IEEE:n 32-bittisessä standardissa liukulukujen esitysmuoto on seuraavanlainen. 
 
 Eksponentin esitysmuoto on siis aina positiivinen kokonaisluku. Miksi tämä esitysmuoto, eikä joku noista muista? Perusteluna on, että liukulukuaritmetiikkaa toteutettaessa eksponentteja käsitellään vain niiden esitysmuotoina välittämättä eksponenttien todellisista arvoista. Normalisointi ja muut liukulukuaritmetiikkaan liittyvät operaatiot on helpompi toteuttaa, kun käsiteltävänä on vain positiivisia lukuja eksponettikentissä.
 
-Esimerkiksi, luku -96.75 on binäärinä -1100000.11 ja normalisoidussa muodossa -1.10000011&nbsp;\*&nbsp;2<sup>6</sup>. Etumerkki ('-') talletetaan bittinä 1, eksponentti 6 muodossa 6+127=133=10000101, ja mantissasta vain sen binääriosa 23 bitillä 0x41800 (1000&nbsp;0101 = <nobr>100&nbsp;0001&nbsp;1000&nbsp;0000&nbsp;0000&nbsp;0000</nobr> = 0x41800).
+Esimerkiksi, luku -96.75 on binäärinä -1100000.11 ja normalisoidussa muodossa -1.10000011&nbsp;\*&nbsp;2<sup>6</sup>. Etumerkki ('-') talletetaan bittinä 1, eksponentti 6 muodossa 6+127=133=10000101, ja mantissasta vain sen binääriosa .10000011 23 bitillä 0x41800 (1000&nbsp;0011 -> <nobr>100&nbsp;0001&nbsp;1000&nbsp;0000&nbsp;0000&nbsp;0000</nobr> = 0x41800).
 
 <pre>
 -96.75<sub>10</sub>   = -1.1000 0011    * 2<sup>6</sup>
