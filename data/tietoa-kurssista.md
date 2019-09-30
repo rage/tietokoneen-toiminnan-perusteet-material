@@ -23,13 +23,11 @@ Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materi
 Kukin oppilaitos voi itse määritellä, millä tavoin tämän [MOOC](https://mooc.fi/) kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
 
 ### Avoimen yliopiston kurssina
-Sinun tulee olla ilmoittautunut kurssille Avoimeen yliopistoon, jotta voit saada kurssista opintosuoritusmerkinnän Helsingin yliopiston opintorekisteriin, osallistua kurssin mahdollisiin verkkotentteihin tai keskusteluihin ja palauttaa tehtäviä verkko-oppimisympäristö Moodlessa. Huomiothan, että pääset kurssin Moodleen vasta ilmoittautumistasi seuraavana päivänä. 
+Sinun tulee olla ilmoittautunut kurssille Avoimeen yliopistoon, jotta voit saada kurssista opintosuoritusmerkinnän Helsingin yliopiston opintorekisteriin. Huomiothan, että pääset kurssin Moodleen vasta ilmoittautumistasi seuraavana päivänä. 
 
 Ilmoittautuminen koskee kaikkia kurssilaisia eli myös Helsingin yliopiston opiskelijoita. Opintoihin ilmoittaudutaan kurssin [Avoimen yliopiston opinto-ohjelman](https://courses.helsinki.fi/fi/aytkt100051/129753572) (=kurssisivun) kautta, josta löydät tarkemmat ohjeet ilmoittautumiseen, Moodlen kurssiavaimen ja lisätietoja opintosuorituksen rekisteröinnistä. Ilmoittautuminen on auki vain määritellyn ajan, joka on ilmoitettu kurssin opinto-ohjelmassa. 
 
 Kurssin (9.8.2019-1.6.2020) opinto-ohjelma: https://courses.helsinki.fi/fi/aytkt100051/129753572
 
 ### Helsingin yliopiston kurssina
-Tietokoneen toiminnan perusteet (2 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy kokeita.
-
-Tietokoneen toiminnan perusteet (2 op, MOOC) yhdessä myöhemmin toteutettavan Tietokoneen toiminnan jatkokurssin (3 op, MOOC) kanssa tulevat korvaamaan Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssin. Molempien verkkokurssien suoritukseen yliopistolla tulee sisältymään kokeita.
+Tietokoneen toiminnan perusteet (2 op, MOOC) ja sen jatkokurssia Tietokoneen toiminnan jatkokurssin (3 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy harjoituksia ja kokeita, jotka kattavat molempien kurssin sisällön.
