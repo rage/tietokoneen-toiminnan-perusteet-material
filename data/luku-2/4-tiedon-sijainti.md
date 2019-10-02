@@ -78,7 +78,7 @@ Esimerkki: Count ja Limit molemmat muistissa
     jless loop
 ```
 
-Kolmaskin vaihtoehto on olemassa. Silmukan muuntelumuuttujaa arvon voi pitää rekisterissä silmukan suoritusajan ja sitten lopuksi tallettaa muistiin. Esimerkiksi C-kielessä muuntelumuuttujat ovat tavallisia muuttujia ja niiden loppuarvon täytyy olla käytettävissä myös silmukan jälkeen. Joissakin toisissa kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä tai muuntelumuuttujaa ei ole edes määritelty silmukan ulkopuolella. Korkean tason ohjelmointikieliä on hyvin erilaisia ja niillä on merkittäviä mielenkiintoisia eroavaisuuksia!
+Kolmaskin vaihtoehto on olemassa. Silmukan muuntelumuuttujan arvon voi pitää rekisterissä silmukan suoritusajan ja sitten lopuksi tallettaa muistiin. Esimerkiksi C-kielessä muuntelumuuttujat ovat tavallisia muuttujia ja niiden loppuarvon täytyy olla käytettävissä myös silmukan jälkeen. Joissakin toisissa kielissä muuntelumuuttujan arvoa ei ole määritelty silmukan päättyessä tai muuntelumuuttujaa ei ole edes määritelty silmukan ulkopuolella. Korkean tason ohjelmointikieliä on hyvin erilaisia ja niillä on merkittäviä mielenkiintoisia eroavaisuuksia!
 ```
 Esimerkki: muuntelumuuttuja rekisterissä ja muistissa
 
