@@ -103,7 +103,7 @@ Samalla tavalla toimitaan kaikissa monimutkaisissa tietorakenteissa. Tällaisia 
 
 ## Muut tavat tallettaa rakenteista tietoa
 
-Rakenteisen tiedon voi tallettaa myös linkitettyinä tietorakenteina. Tällöin tietorakenne on talletettu muistiin erillisinä yhtenäisinä muistilohkoina, jotka on linkitetty toisiinsa muistiosoitteiden avulla. Tällöin esimerkiksi riveittäin talletettu 2-ulotteinen taulukko T\[5,\6] voisi olla talletettu siten, että kukin rivi on oma muistilohkonsa. Osoitteessa T olisikin nyt vain 1-ulotteinen taulukko T, joka sisältää kunkin rivin osoitteen muistissa. Taulukon T rivit voivat nyt sijaita erillisinä alueina muistissa.
+Rakenteisen tiedon voi tallettaa myös linkitettyinä tietorakenteina. Tällöin tietorakenne on talletettu muistiin erillisinä yhtenäisinä muistilohkoina, jotka on linkitetty toisiinsa muistiosoitteiden avulla. Tällöin esimerkiksi riveittäin talletettu 2-ulotteinen taulukko T\[5,6] voisi olla talletettu siten, että kukin rivi on oma muistilohkonsa. Osoitteessa T olisikin nyt vain 1-ulotteinen taulukko T, joka sisältää kunkin rivin osoitteen muistissa. Taulukon T rivit voivat nyt sijaita erillisinä alueina muistissa.
 
 ```
   load r1, i       ; rivin i indeksi
