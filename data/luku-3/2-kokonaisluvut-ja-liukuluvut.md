@@ -139,7 +139,7 @@ Esitysmuodossa on kolme kenttää: etumerkki, lukuarvo (mantissa) ja suuruusluok
 +123.456789   =    + 1.234568  *  10<sup>2</sup>
 </pre>
 
-Tietokoneessa käytämme tietenkin binäärijärjestelmää. Nytkin mantissa skaalataan siten, että kokonaisosaan jää vain yksi numero. Normaalissa 32-bitin esitysmuodossa mantissassa on 24 bittiä, mutta tässä esimerkissä mantissassa on vain 9 bittiä yhteensä, joista 8 on binääriosassa.
+Tietokoneessa käytämme tietenkin binäärijärjestelmää, jolloin desimaaliosan asemesta binääripisteen jälkeen luvuissa on binääriosa. Nytkin mantissa skaalataan siten, että kokonaisosaan jää vain yksi numero. Normaalissa 32-bitin esitysmuodossa mantissassa on 24 bittiä, mutta tässä esimerkissä mantissassa on vain 9 bittiä yhteensä, joista 8 on binääriosassa. Esimerkin esitystarkkuus on siten 9 bittiä, mikä ei vastaa edes 3 desimaalinumeron tarkkuutta.
 
 <pre>
 +1.5<sub>10</sub>   =   +1.1        =  +  1.10000000    * 2<sup>0</sup>
@@ -162,7 +162,7 @@ Esimerkiksi, luku -96.75 on binäärinä -1100000.11 ja normalisoidussa muodossa
     &rarr; 1 100 0 010 1 100 0001 1000 0000 0000 0000 = 0xC2C18000
 </pre>
 
-Toinen esimerkki. Luku +346.875 on binäärinä +101011010.111 ja normalisoituna +1.010&nbsp;1101&nbsp;0111nbsp;\*&nbsp;2<sup>8</sup>. Etumerkki talletetaan bittinä 0, eksponentti muodossa 8+127=135=10000111, ja mantissa 23-bittisessä muodossa 0x2D7000 <nobr>(=&nbsp;010&nbsp;1101&nbsp;0111&nbsp;0000&nbsp;0000&nbsp;0000</nobr>).
+Toinen esimerkki. Luku +346.875 on binäärinä +101011010.111 ja normalisoituna +1.010&nbsp;1101&nbsp;0111&nbsp;\*&nbsp;2<sup>8</sup>. Etumerkki talletetaan bittinä 0, eksponentti muodossa 8+127=135=10000111, ja mantissa 23-bittisessä muodossa 0x2D7000 <nobr>(=&nbsp;010&nbsp;1101&nbsp;0111&nbsp;0000&nbsp;0000&nbsp;0000</nobr>).
 
 <pre>
 +345.875<sub>10</sub> = +1.0101 1010 111 * 2<sup>8</sup>
