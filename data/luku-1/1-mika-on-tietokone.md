@@ -25,8 +25,8 @@ Tietokoneita on hyvin erilaisia. Kaikille tuttuja esimerkkejä tietokoneista ova
 
 Mikä tekee jostain laitteesta tietokoneen? Yleisesti ottaen tietokone on mikä tahansa laite, joka käsittelee tietoa oman ohjelmansa mukaisesti. Siinä pitää olla jonkinlainen [suoritin](https://fi.wikipedia.org/wiki/Suoritin), jolle voidaan antaa haluttu ohjelma suoritettavaksi. Suotavaa olisi, että suoritettavaa ohjelmaa pitäisi pystyä vaihtamaan. Suoritettavan ohjelman vaihto voi tapahtua helposti ohjelman kuvaketta klikkaamalla läppärillä, tai se voi olla huollossa tehtävä toimenpide, kuten esimerkiksi urheilukellojen ohjelmiston päivitys. Kuvaketta klikkaamalla pyydetyn suoritettavan ohjelman vaihdon tekee tietokoneen [käyttöjärjestelmä](https://fi.wikipedia.org/wiki/K%C3%A4ytt%C3%B6j%C3%A4rjestelm%C3%A4), joka huolehtii myös kaikesta muusta järjestelmän ylläpidosta. Käyttöjärjestelmään sisältyy monia apuohjelmia, jotka tekevät tietokoneen käyttämisestä helpompaa. Käyttöjärjestelmä myös piilottaa varsinaisen laitteiston ohjelmilta ja käyttäjiltä. Tämä tekee ohjelmien tekemisestä helpompaa, kun ei tarvitse murehtia eri laitteistojen yksityiskohdista.
 
-## Kyselyt (pikatehtävät, quizit)
-Kurssilla on huomattava määrä automaattisesti arvioitavia pikatehtäviä. Pääosa niistä on kunkin aliluvun lopussa, mutta osa myös keskellä oppimateriaalia.
+## Pikatehtävät (kyselyt, quizit)
+Kurssilla on huomattava määrä automaattisesti arvioitavia pikatehtäviä. Pääosa niistä on kunkin aliluvun lopussa, mutta osa myös keskellä oppimateriaalia. Joissakin pikatehtävissä voi olla monta oikeata vastausta. Valitse tuolloin joku niistä.
 
 Pohdi kysymyksiä harkiten ja käy läpi oppimateriaalia uudestaan tarvittaessa. Jokainen kysymys on mahdollisuus oppia lisää ja syventää tietämystästäsi. Älä siis heitä näitä mahdollisuuksia hukkaan! 
 
