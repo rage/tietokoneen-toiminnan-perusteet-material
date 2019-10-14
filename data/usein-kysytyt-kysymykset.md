@@ -81,7 +81,7 @@ Tietokoneen toiminnan perusteet on Helsingin yliopiston kurssin Tietokoneen toim
 
 ### Saan tukea Työ- ja elinkeinotoimistolta. Voinko silti tehdä kurssin?
 
-Sovi asiasta etukäteen TE-toimistosi kanssa. TE-toimistot eivät valitettavasti käsittele kurssiimme liittyviä asioita yhdenmukaisesti. Jotkut ovat evänneet tukia jo kurssillemme lukullistumisesta, vaikkei tavoitteena olisi opintopisteet tai opinnot. Toisaalta toiset TE-toimistot ovat suositelleet kurssia ja jopa ohjanneet ihmisiä kurssille ilman tukien epäämistä.
+Sovi asiasta etukäteen TE-toimistosi kanssa. TE-toimistot eivät valitettavasti käsittele kurssiimme liittyviä asioita yhdenmukaisesti. Jotkut ovat evänneet tukia jo kurssillemme osallistumisesta, vaikkei tavoitteena olisi opintopisteet tai opinnot. Toisaalta toiset TE-toimistot ovat suositelleet kurssia ja jopa ohjanneet ihmisiä kurssille ilman tukien epäämistä.
 
 ### Saako kursseista jonkinlaisen virallisen opintosuoritusotteen? Ja miten hyväksiluen sen oppilaitoksessani?
 
