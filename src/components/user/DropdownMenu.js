@@ -40,21 +40,14 @@ const DropdownMenu = ({ selectedVariant, setSelectedVariant }) => {
           />
         }
       >
-        <MenuItem value={"dl"}>Aikataulutettu Ohjelmoinnin MOOC</MenuItem>
-        <MenuItem value={"nodl"}>Aikatauluton Ohjelmoinnin MOOC</MenuItem>
-        <MenuItem value={"ohja-dl"}>
-          Aloitan kurssin aikataulutettuna osasta 8 (Ohjelmoinnin jatkokurssi)
+        <MenuItem value={"avoin-syksy-2019-kevat-2020"}>
+          Avoin yliopisto, Tietokoneen toiminnan perusteet, syksy 2019 - kevät
+          2020
         </MenuItem>
-        <MenuItem value={"ohja-nodl"}>
-          Aloitan kurssin aikatauluttomana osasta 8 (Ohjelmoinnin jatkokurssi)
+        <MenuItem value={"hy-syksy-2019"}>
+          Helsingin yliopisto, Tietokoneen toiminta, syksy 2019
         </MenuItem>
-        <MenuItem value={"kesa-dl"}>
-          Kesä: Aikataulutettu Ohjelmoinnin MOOC
-        </MenuItem>
-        <MenuItem value={"kesa-ohja-dl"}>
-          Kesä: Aloitan kurssin aikataulutettuna osasta 8 (Ohjelmoinnin
-          jatkokurssi)
-        </MenuItem>
+        <MenuItem value={"itsenainen"}>Itsenäinen opiskelu, 2019-2020</MenuItem>
       </Select>
     </StyledFormControl>
   )
