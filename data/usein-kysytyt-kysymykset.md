@@ -39,7 +39,7 @@ Korjausehdotukset käsitellään yksi kerrallaan. Mahdolliset muutokset tulevat 
 Kurssimateriaali on kirjoitettu [markdown](https://en.wikipedia.org/wiki/Markdown)-kielellä ja siitä generoituu html-koodia. Jos et osaa markdownia tai et halua käyttää [GitHubia](https://en.wikipedia.org/wiki/GitHub), lähetä muutosehdotuksesi sähköpostitse em. tavalla. 
 Pikatehtäviin voi tehdä muutosehdotuksia vain sähköpostitse.
 
-Kiitos.
+Kiitos ehdotuksista.
 
 ## Usein kysyttyjä kysymyksiä
 
