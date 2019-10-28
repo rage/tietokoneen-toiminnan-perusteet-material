@@ -32,7 +32,7 @@ Kiitos.
 Avaa joko "issue" tai "muutosehdotus" kurssin GitHub-repossa (varastossa)
 https://github.com/rage/tietokoneen-toiminnan-perusteet-material.
 
-Laita muutosehdotuksesi suoraan paikalleen GitHubissa sijaitsevaan kurssimateriaaliin. Esimerkiksi, korjaa kirjoitusvirhe sanassa "pödällä" muotoon "pöydällä". Talleta ehdotuksesi ("Propose file change") ja anna muutosehdotuksesi eteenpäin ("Create pull request").
+Laita muutosehdotuksesi suoraan paikalleen GitHubissa sijaitsevaan kurssimateriaaliin. Kaikki kurssimateriaali on data-hakemistossa. Esimerkiksi, klikkaa "Edit", korjaa kirjoitusvirhe sanassa "pödällä" muotoon "pöydällä". Talleta ehdotuksesi ("Propose file change") ja anna muutosehdotuksesi eteenpäin ("Create pull request"). Varmista klikkaamalla uudestaan "Create pull request". Älä peru muutosehdotusta klikkaamalla "Close pull request".
 
 Korjausehdotukset käsitellään yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen. 
 
