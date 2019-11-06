@@ -110,11 +110,11 @@ ja että muistipaikan mem(45) arvo on 88.
                op.koodi rek-1   moodi ind.rek. vakio  tulos
 load r1, r2      -- 2      1        0     2        0    r1 <- 10
 load r1, =7      -- 2      1        0     0        7    r1 <- 7
-load r1, =7(r2)  -- 2      1        0     0        7    r1 <- 17
-load r1, 7(r2)   -- 2      1        1     0        7    r1 <- 45
-load r1, @7(r2)  -- 2      1        2     0        7    r1 <- 88
-store r1, 7(r2)  -- 1      1        0     0        7  mem(17) <- 3
-store r1, @7(r2) -- 1      1        1     0        7  mem(45) <- 3
+load r1, =7(r2)  -- 2      1        0     2        7    r1 <- 17
+load r1, 7(r2)   -- 2      1        1     2        7    r1 <- 45
+load r1, @7(r2)  -- 2      1        2     2        7    r1 <- 88
+store r1, 7(r2)  -- 1      1        0     2        7  mem(17) <- 3
+store r1, @7(r2) -- 1      1        1     2        7  mem(45) <- 3
 ```
 
 Käskyn moodi-kentän arvon kertoo siis muistista _lukujen_ lukumäärän käskyn suoritusaikana. Muistiin kirjoituskäskyn (STORE) yhteydessä moodikentän arvo on yhtä pienempi kuin vastaavassa muistin lukukäskyssä (LOAD) ja sillä tarkoitetaan aina suoraa tai epäsuoraa muistiviitettä. Käskyn suoritusaikana STORE-käskyssä tulee lopuksi aina yksi muistiin _kirjoitus_.
