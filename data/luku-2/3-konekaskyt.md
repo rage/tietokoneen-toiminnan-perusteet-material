@@ -238,9 +238,9 @@ Bittikäskyt tekevät siis loogiset operaatiot _kaikille_ operandien biteille pa
 
 <text-box variant="example" name="Xor-operaatio salakirjoituksen apuna">
 
-Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010110_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp.
+Xor-operaatiota käytetään paljon salakirjoituksessa. Ajatellaan vaikkapa tilannetta, jossa lähetettävänä on salattava viesti APUA, joka käytössä olevan merkkikoodiston (UTF-8) mukaan on bitteinä 01000001_01010000_01010101_01000001. Artolla ja Beritillä on yhdessä sovittu salainen merkkijonoavain 5821, joka on bitteinä  00110011_00111000_00110010_00110001. Arto salakirjoittaa viestin tekemällä operaation APUA xor 5821. Tuloksena on bitit 01110010_01101000_01100100_01110000, mikä vastaa merkkejä rhdp.
 <br><br>
-Arto lähettää Beritille salakirjoitetun merkkijonon rhdp, josta kukaan ulkopuolinen ei saa selvää. Berit purkaa salakirjoituksen tekemällä uuden xor-operaation, rhdp xor 5821, jonka tuloksena on bittijono 01000001_01010000_01010110_01000001 eli alkuperäinen viesti APUA. Berit rientää apuun ja Arto on pelastettu!
+Arto lähettää Beritille salakirjoitetun merkkijonon rhdp, josta kukaan ulkopuolinen ei saa selvää. Berit purkaa salakirjoituksen tekemällä uuden xor-operaation, rhdp xor 5821, jonka tuloksena on bittijono 01000001_01010000_01010101_01000001 eli alkuperäinen viesti APUA. Berit rientää apuun ja Arto on pelastettu!
 <br><br>
 Tämä ns. symmetrinen salakirjoitus perustuu xor-operaation ominaisuuteen, jossa kaksi xor-operaatiota samalla operandilla (avaimella 5821) kumoavat toisensa. Tällaista symmetristä salakirjoitusavainta (sama avain Artolla ja Beritillä) käytetään sinunkin pankkiyhteyksien turvaamisessa, mutta vain osana laajempaa järjestelmää.
 
