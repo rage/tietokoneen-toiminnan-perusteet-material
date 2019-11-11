@@ -157,8 +157,8 @@ binääri:  0100 0111 1001 1010 1111.0100
 heksad.:    4    7    9    A    F . 4   eli 0x479AF.4  =  479AF.4<sub>16</sub>
 
 heksad.: 0x120ADF.C8  =    1    2    0    A    D    F .  C    8
-binääri:                 0001 0010 0000 1010 1110 1111.1100 1000
-                          = 1 0010 0000 1010 1110 1111.1100 1
+binääri:                 0001 0010 0000 1010 1101 1111.1100 1000
+                          = 1 0010 0000 1010 1101 1111.1100 1
 </pre>
 
 Kukin 16-järjestelmän numero vastaa siis neljää bittiä. Nyt yhden tavun bitit (8 bittiä) voidaan ilmaistaan (kirjoittaa näkyville) kahdella heksadesimaalinumerolla. Esimerkiksi tavun sisältö 0x62 tarkoittaa, että tavun bitit ovat vasemmalta oikealle 0110&nbsp;0010. Nämä bitit voivat esittää esimerkiksi kokonaislukua +98, merkkiä 'a' tai operaatiokoodia ADD tulkintatavasta riippuen.
