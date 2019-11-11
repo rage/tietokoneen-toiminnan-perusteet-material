@@ -138,29 +138,22 @@
          y="124.56807"
          x="-2.7349064"
          id="tspan4613">Laitteisto (ns)</tspan></text>
-    <g
-       transform="translate(-43.089307,92.830956)"
-       id="g4874">
-      <rect
-         style="fill:#fbd7aa;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect4590-8-0"
-         width="21.166666"
-         height="12.473214"
-         x="50.648811"
-         y="12.194941" />
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-         x="52.676392"
-         y="17.90316"
-         id="text4582-1"><tspan
-           id="tspan4657"
-           x="52.676392"
-           y="17.90316">väli-</tspan><tspan
-           id="tspan4659"
-           x="52.676392"
-           y="22.842049">muistit</tspan></text>
-    </g>
+    <rect
+       y="104.49672"
+       x="8.0886765"
+       height="12.473214"
+       width="21.166666"
+       id="rect4590-8-0"
+       style="fill:#fbd7aa;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text4582-1"
+       y="116.09563"
+       x="9.5870857"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="116.09563"
+         x="9.5870857"
+         id="tspan1001">muistit</tspan></text>
     <g
        transform="translate(74.839286,-65.616671)"
        id="g5029">
@@ -221,42 +214,45 @@
        transform="translate(-2.1166672,26.080358)"
        id="g4895">
       <g
-         transform="translate(-38.85597,-66.901786)"
-         id="g4963">
+         transform="translate(0,-1.0583333)"
+         id="g957">
         <rect
-           y="140.32887"
-           x="103.18751"
+           y="73.427086"
+           x="64.331535"
            height="24.568451"
            width="29.860117"
            id="rect4590-8-0-3-3"
            style="fill:#fbd7aa;fill-opacity:1;stroke:none;stroke-width:0.44173834;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
         <text
            id="text4582-1-5-6"
-           y="146.03679"
-           x="105.59312"
+           y="79.135002"
+           x="66.737144"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:0.5;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
            xml:space="preserve"><tspan
-             y="146.03679"
-             x="105.59312"
-             id="tspan8452">virtuaali-</tspan><tspan
-             y="148.50624"
-             x="105.59312"
-             id="tspan8454" /><tspan
-             y="150.97568"
-             x="105.59312"
-             id="tspan8456">muisti,</tspan><tspan
-             y="153.44513"
-             x="105.59312"
-             id="tspan8458" /><tspan
-             y="155.91457"
-             x="105.59312"
-             id="tspan8460">levyväli-</tspan><tspan
-             y="158.38402"
-             x="105.59312"
-             id="tspan8462" /><tspan
-             y="160.85345"
-             x="105.59312"
-             id="tspan8464">muisti</tspan></text>
+             id="tspan931"
+             x="66.737144"
+             y="79.135002">virtuaali-</tspan><tspan
+             id="tspan933"
+             x="66.737144"
+             y="81.604446"></tspan><tspan
+             id="tspan935"
+             x="66.737144"
+             y="84.073891">muisti,</tspan><tspan
+             id="tspan937"
+             x="66.737144"
+             y="86.543335"></tspan><tspan
+             id="tspan939"
+             x="66.737144"
+             y="89.012779"></tspan><tspan
+             id="tspan941"
+             x="66.737144"
+             y="91.482224">levyväli-</tspan><tspan
+             id="tspan943"
+             x="66.737144"
+             y="93.951668"></tspan><tspan
+             id="tspan945"
+             x="66.737144"
+             y="96.421112">muisti</tspan></text>
       </g>
     </g>
     <g
@@ -354,5 +350,14 @@
        id="path5053-9"
        d="m 96.500265,111.37594 c -42.903258,0 -42.903258,0 -42.903258,0"
        style="fill:none;stroke:#bb4747;stroke-width:0.86400002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-8)" />
+    <text
+       id="text4582-1-7"
+       y="109.38036"
+       x="9.7419538"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93888903px;line-height:1;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       xml:space="preserve"><tspan
+         y="109.38036"
+         x="9.7419538"
+         id="tspan999">väli-</tspan></text>
   </g>
 </svg>
