@@ -109,15 +109,16 @@ Ruokakaupassa myytävien tuotteet voisi olla hyvä koodata kokonaisluvuilla, jot
 
 Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska ainakin joskus on tarve esittää arvo plus (tai miinus) ääretön. Samoin rakkauden määrä voi kasvaa tai vähetä ihan pikkasenkin kerrallaan. Mahdollisia operaatioita olisivat esimerkiksi _AsetaRakkaudenMäärä()_, _LisääRakkaudenMäärää()_ ja _VähennäRakkaudenMäärää()_.
 
+
+<text-box variant="example" name="Historiaa:  ENIAC">
+
+ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäinen yleiskäyttöinen sähkökäyttöinen tietokone. Sen pääsuunnittelijat olivat John Mauchly ja J. Presper Eckert. Siinä oli 17468 elektroniputkea. Sen nopeus oli mullistavat 5000 yhteenlaskua tai 357 kertolaskua sekunnissa. Se painoi 27 tonnia, vaati lattiatilaa 167 m2 ja kulutti 150 kW sähköä. Siinä oli uutena piirteenä haarautumiskäsky. Ohjelmointi tapahtui fyysisesti (käsin) langoittamalla laitteisto suorittamaan tiettyä algoritmia ennen ohjelman suorittamista. Ensimmäisellä testiohjelmalla suoritettiin vetypommin kehittämiseen liittyviä laskelmia ja syöteaineisto oli yli miljoonalla reikäkortilla.
+
 <!-- Quizes 3.4.1-4  -->
 <div><quiz id="5bfee7de-3a8d-4a1a-8f78-2f0b3dda7430"></quiz></div>
 <div><quiz id="42bfa3a6-2a7b-4e7b-90a8-22221df08902"></quiz></div>
 <div><quiz id="420ffbd9-2a0c-41ab-863e-21c84ab8d765"></quiz></div>
 <div><quiz id="40b7b469-2930-4fa6-95f8-21183cd88cb6"></quiz></div>
-
-<text-box variant="example" name="Historiaa:  ENIAC">
-
-ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäinen yleiskäyttöinen sähkökäyttöinen tietokone. Sen pääsuunnittelijat olivat John Mauchly ja J. Presper Eckert. Siinä oli 17468 elektroniputkea. Sen nopeus oli mullistavat 5000 yhteenlaskua tai 357 kertolaskua sekunnissa. Se painoi 27 tonnia, vaati lattiatilaa 167 m2 ja kulutti 150 kW sähköä. Siinä oli uutena piirteenä haarautumiskäsky. Ohjelmointi tapahtui fyysisesti (käsin) langoittamalla laitteisto suorittamaan tiettyä algoritmia ennen ohjelman suorittamista. Ensimmäisellä testiohjelmalla suoritettiin vetypommin kehittämiseen liittyviä laskelmia ja syöteaineisto oli yli miljoonalla reikäkortilla.
 
 <!-- kuva: ch-3-4-eniac    -->
 
