@@ -3,13 +3,11 @@ import styled from "styled-components"
 import LoginStateContext from "../contexes/LoginStateContext"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
-import { Paper } from "@material-ui/core"
+import { Paper, Card } from "@material-ui/core"
 
-const StyledPaper = styled(Paper)`
-  overflow: hidden;
-  margin: 2rem 0 2rem 0;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 40px -12px !important;
-  border-radius: 1rem !important;
+const StyledCard = styled(Card)`
+  padding: 5rem;
+  margin-bottom: 2rem;
 `
 
 class QuizPartial extends React.Component {
@@ -17,12 +15,12 @@ class QuizPartial extends React.Component {
 
   render() {
     return (
-      <div>
+      <StyledCard>
         <b>
-          Tässä kohtaa oleva kysely on huoltokatkolla. Kysely palaa katkolta
-          perjantaina 31.1.2020.
+          Tässä kohtaa oleva kurssin tehtävä on huoltokatkolla. Tehävä palaa
+          katkolta perjantaina 31.1.2020.
         </b>
-      </div>
+      </StyledCard>
     )
   }
 }

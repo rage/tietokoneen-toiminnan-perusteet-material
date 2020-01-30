@@ -91,24 +91,10 @@ class PointsBalloonContent extends React.Component {
             <Title>Edistyminen (beta)</Title>
             <Button onClick={this.handleClose}>Sulje</Button>
           </ModalControls>
-          <Loading loading={!this.state.data && !this.state.error}>
-            <Fragment>
-              {this.state.error ? (
-                <div>
-                  Edistymisen hakeminen kaatui seuraavaan virheeseen:{" "}
-                  {this.state.error}
-                </div>
-              ) : (
-                <div>
-                  <CourseProgress
-                    data={this.state.data}
-                    appliesForStudyRight={this.state.appliesForStudyRight}
-                    currentCourseVariant={this.state.currentCourseVariant}
-                  />
-                </div>
-              )}
-            </Fragment>
-          </Loading>
+          <p>
+            Pistevisualisaatio on huoltokatkolla ja palaa toimintaan perjantaina
+            31.1.2020.
+          </p>
         </ModalContent>
       </StyledModal>
     )
