@@ -17,7 +17,7 @@ class QuizPartial extends React.Component {
     return (
       <StyledCard>
         <b>
-          Tässä kohtaa oleva kurssin tehtävä on huoltokatkolla. Tehtävä palaa
+          Tässä kohtaa oleva kurssin tehtävä on huoltokatkolla. Tehävä palaa
           katkolta perjantaina 31.1.2020.
         </b>
       </StyledCard>
