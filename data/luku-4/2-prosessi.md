@@ -5,7 +5,7 @@ hidden: false
 ---
 
 <div>
-<lead>Tässä osiossa esittelemme prosessin käsitteen. Prosessi on järjestelmässä oleva suorituksessa ohjelma ja prosessin kuvaaja sen esitysmuoto käyttöjärjestelmässä. Käymme myös läpi erilaiset tilat, joissa prosessi voi järjestelmässä olla ja minkälaisia tietoja prosessin kuvaajassa on.</lead>
+<lead>Tässä osiossa esittelemme prosessin käsitteen. Prosessi on järjestelmässä suorituksessa oleva ohjelma ja prosessin kuvaaja sen esitysmuoto käyttöjärjestelmässä. Käymme myös läpi erilaiset tilat, joissa prosessi voi järjestelmässä olla ja minkälaisia tietoja prosessin kuvaajassa on.</lead>
 </div>
 
 ## Prosessi
