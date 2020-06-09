@@ -49,7 +49,7 @@ Sitten kun prosessi pääsee suoritukseen uudestaan, rekistereiden tallennetut a
 
 Suoritinympäristön tietojen kopiointi tapahtuu ihan tavallisilla konekäskyillä ja muistiinviittauksilla kyseisen prosesssin kuvaajaan. Kopiointi tapahtuu etuoikeutetussa suoritustilassa, kuten kaikki muukin prosessien hallintaan liittyvä käyttöjärjestelmän tekemä työ. Prosessien kuvaajiin ei tavallisilla käyttäjätason prosesseilla ole pääsyä.
 
-Suoritinympäristöön ei tarvitse kopioida ihan kaikkia suorittimen rekistereitä, koska suorituksessa oleva prosessi voi vaihtua toiseen ainoastaan konekäskyjen suoritusten välissä. Sellaisia rekistereitä, joiden arvot asetetaan joka tapauksessa uudelleen yhden konekäskyn suorituksen aikana, ei tarvitse tallettaa suoritinympäristöön. Tällaisia ovat esimerkiksi väylää ohjaavat rekisterit MAR ja MBR (ks. Luku 2.1).
+Suoritinympäristöön ei tarvitse kopioida ihan kaikkia suorittimen rekistereiden arvoja, koska suorituksessa oleva prosessi voi vaihtua toiseen ainoastaan konekäskyjen suoritusten välissä. Sellaisia rekistereitä, joiden arvot asetetaan joka tapauksessa uudelleen yhden konekäskyn suorituksen aikana, ei tarvitse tallettaa suoritinympäristöön. Tällaisia ovat esimerkiksi väylää ohjaavat rekisterit MAR ja MBR (ks. Luku 2.1).
 
 Prosessin ollessa suorituksessa sen suoritinympäristö on siis suorittimen rekistereissä ja muulloin se on talletettuna prosessin kuvaajaan.
 
