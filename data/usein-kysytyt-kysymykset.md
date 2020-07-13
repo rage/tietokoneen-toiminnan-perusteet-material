@@ -43,11 +43,11 @@ Kiitos ehdotuksista.
 
 ## Usein kysyttyjä kysymyksiä
 
-### En voi aloittaa kurssia, koska en tiedä minne ilmoittautua
+### Miten ilmoittaudun saadakseni tästä kurssista Avoimen yliopiston kurssisuorituksen? Entä paljonko pitää tehdä tehtäviä hyväksyttyyn suoritukseen?
 
-Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löydät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivustolta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukaisen kurssin.
+Ajankohtaiset tiedot Avoimessa yliopistossa kurssin suorittamiseen liittyviin ehtoihin ja ilmoittautumiseen löydät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivustolta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukaisen kurssin.
 
-<!-->
+<!--
 ### Pikatehtävä 2.2.1 on huonosti määritelty. (12.9.2019)
 
 Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puutteesta, minkä vuoksi osa tehtävänmäärittelystä ei tule näkyville. Itse kysymys jää puuttumaan. 
