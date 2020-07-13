@@ -19,4 +19,8 @@ Kurssin voi suorittaa (Helsingin yliopiston) Avoimen yliopiston kurssina ja saad
 
 Erilaisten kurssisuoritusten arvostelumenetelmistä kerrotaan tarkemmin kohdassa [Arvostelu ja kokeet](https://tietokoneen-toiminnan-perusteet.mooc.fi/arvostelu-ja-kokeet).
 
+## Jatkokurssista
+
+Avoimessa yliopistossa voi suorittaa myös [Tietokoneen toiminnan jatkokurssin](https://tietokoneen-toiminnan-jatkokurssi.mooc.fi/).
+
 
