@@ -45,7 +45,7 @@ Kiitos ehdotuksista.
 
 ### En voi aloittaa kurssia, koska en tiedä minne ilmoittautua
 
-Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löytyvät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivulta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukainen kurssi.
+Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löydät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivustolta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukaisen kurssin.
 
 <!-->
 ### Pikatehtävä 2.2.1 on huonosti määritelty. (12.9.2019)
