@@ -10,7 +10,7 @@ Tietokoneen toiminnan perusteet (2 op).
 Kurssilla on erilaisia suoritustapoja.
 
 ### Avoimen yliopiston kurssina
-Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on hyväksytty/hylätty. Arvostelu perustuu oikeiden vastausten osuuteen kurssin pikatehtävistä (quiz). Opintopisteiden saaminen edellyttää ilmoittautumista Avoimen yliopiston kurssille. Ilmoittautuminen tehdään tyypillisesti sen jälkeen, kun opiskelija on suorittanut kaikki tehtävät. Suorituskriteerit ja ilmoittautumisajankohdat voivat vaihdella eri kurssitoteutuskerroilla. Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löytyvät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivulta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukainen kurssi.
+Kurssin voi suorittaa (Helsingin yliopiston) Avoimessa yliopistossa, jolloin siitä saa opintopisteitä. Arvosteluskaala on hyväksytty/hylätty. Opintopisteiden saaminen edellyttää ilmoittautumista Avoimen yliopiston kurssille. Ilmoittautuminen tehdään tyypillisesti sen jälkeen, kun opiskelija on suorittanut kaikki tehtävät. Suorituskriteerit ja ilmoittautumisajankohdat voivat kuitenkin vaihdella eri kurssitoteutuskerroilla. Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löytyvät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivulta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukainen kurssi.
 
 Avoimessa yliopistossa voi suorittaa myös [Tietokoneen toiminnan jatkokurssin](https://tietokoneen-toiminnan-jatkokurssi.mooc.fi/). 
 

@@ -13,11 +13,11 @@ Kurssi koostuu neljästä luvusta. Luvussa 1 esitellään tietokonejärjestelmä
 
 Kurssiin sisältyy merkittävä määrä pikatehtäviä ("quiz"), joiden tekemisen tarkoitus on syventää oppimista. Kurssi on suunniteltu sillä ajatuksella, että opiskelija tekee kaikki pikatehtävät. Osa niistä on hyvinkin helppoja, mutta osa vaatii parempaa perehtymistä aihepiiriin.
 
-## Kurssin käyttötavat
+## Kurssin käyttötavat ja suorittaminen
 
-Kurssin voi suorittaa (Helsingin yliopiston) Avoimen yliopiston kurssina ja saada siitä opintopisteitä. Kurssia käytetään Helsingin yliopistossa osana Tietokoneen toiminta -kurssin suoritusta. Lukiot ja muut keskiasteen oppilaitokset voivat myös halutessaan tarjota kurssin valinnaisena kurssina. Voit myös vapaasti käyttää kurssimateriaalia itseopiskeluun. 
+Kurssin voi suorittaa (Helsingin yliopiston) Avoimen yliopiston kurssina ja saada siitä opintopisteitä. Kurssia käytetään myös Helsingin yliopistossa osana Tietokoneen toiminta -kurssin suoritusta. Lukiot ja muut keskiasteen oppilaitokset voivat myös halutessaan tarjota kurssin valinnaisena kurssina. Voit myös vapaasti käyttää kurssimateriaalia itseopiskeluun. 
 
-Erilaisten kurssisuoritusten arvostelumenetelmistä kerrotaan tarkemmin kohdassa [Arvostelu ja kokeet](https://tietokoneen-toiminnan-perusteet.mooc.fi/arvostelu-ja-kokeet).
+Erilaisten käyttötapojen arvostelusta, suorittamisesta ja ilmoittautumisista kerrotaan tarkemmin kohdassa [Arvostelu ja kokeet](https://tietokoneen-toiminnan-perusteet.mooc.fi/arvostelu-ja-kokeet).
 
 ## Jatkokurssista
 
