@@ -10,7 +10,6 @@ Kurssin Telegram-ryhmä kattaa molemmat kurssit Tietokoneen toiminnan perusteet 
 
 Helsingin yliopiston kurssiin sisältyy harjoitusryhmiä, joissa kurssin asioista voi keskustella muiden opiskelijoiden ja ohjaajien kanssa. On mahdollista, että Helsingin yliopiston kurssiin sisältyy myös kertausluentoja.
 
-Avoimen yliopiston kurssilla on Moodle-sivusto tiedotuskanavana.
 
 ## Telegram-ryhmä tkt-tito (Helsingin yliopisto ja Avoin yliopisto)
 
@@ -18,6 +17,4 @@ Avoimen yliopiston kurssilla on Moodle-sivusto tiedotuskanavana.
 
 Ryhmän osallistujat ovat kanssaopiskelijoita sekä vapaaehtoisia ohjaajia. Ryhmän toiminta perustuu vapaaehtoisuuteen. Autathan muita myös vastavuoroisesti. Älä kuitenkaan jaa tehtävien vastauksia tässä ryhmässä, jotta et vahingossa riistä oppimismahdollisuuksia muilta opiskelijoilta. Pienet vihjeet ovat opettavaisia ja sallivat silti itse oppimisen ilon. Kiitos.
 
-## Moodle-foorumi (Avoin yliopisto)
 
-Avoimessa yliopistossa on Moodle tiedotuskanavana.

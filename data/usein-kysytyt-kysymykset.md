@@ -43,6 +43,11 @@ Kiitos ehdotuksista.
 
 ## Usein kysyttyjä kysymyksiä
 
+### En voi aloittaa kurssia, koska en tiedä minne ilmoittautua
+
+Ajankohtaiset tiedot kurssin suorittamisen ehtoihin ja ilmoittautumiseen löytyvät valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivulta](https://courses.helsinki.fi/fi/aytkt100051) ajankohdan mukainen kurssi.
+
+<!-->
 ### Pikatehtävä 2.2.1 on huonosti määritelty. (12.9.2019)
 
 Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puutteesta, minkä vuoksi osa tehtävänmäärittelystä ei tule näkyville. Itse kysymys jää puuttumaan. 
@@ -50,7 +55,7 @@ Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puuttee
 Tilanne korjataan pikapuoliin. Alustava korjaus on tehtävän määrittelyssä replikoida kysymys osa otsakkeeseen. 
 
 Osa opiskelijoista on jo vastannut tehtävään (yleensä väärin) sen puutteellisessa esitysmuodossa. Tämän vuoksi on mahdollista, että alustan korjaamisen jälkeen tehtävän suoritustilastot nollataan, jotta kaiki voivat vastata siihen uudelleen.  
-
+-->
 
 <!--    kaikki kommentoitu pois 
 
