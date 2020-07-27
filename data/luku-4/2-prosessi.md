@@ -18,7 +18,7 @@ Kun jotain ohjelmaa halutaan suorittaa järjestelmässä, se pitää _ladata_ ma
 <illustrations motive="ch-4-2-prosessit-jarjestelmassa" frombottom="0" totalheight="100%"></illustrations>
 </div>
 
-Ladattava ohjelma sijaitsee massamuistissa kääntämisen ja linkittämisen (ks. Luku 1) lopputuloksena syntyneessä _latausmoduulissa_, jossa on mm. ohjelmakoodi konekielisessä muodossa. Latauksessa käyttöjärjestelmä varaa tarvittavan määrän muistitilaa tälle prosessille ja kopio sen ohjelmakoodin muistiin annetulle alueelle. Se myös tallettaa kaikki tähän prosessiin liittyvät hallintotiedot erityiseen tietueeseen, prosessin _kuvaajaan_ (PCB, Process Control Block) tai siihen linkitettyihin muihin tietorakenteisiin. Kuvaajan tarkempi esittely on alla.
+Ladattava ohjelma sijaitsee massamuistissa kääntämisen ja linkittämisen (ks. Luku 1) lopputuloksena syntyneessä _latausmoduulissa_, jossa on mm. ohjelmakoodi konekielisessä muodossa. Latauksessa käyttöjärjestelmä varaa tarvittavan määrän muistitilaa tälle prosessille ja kopioi sen ohjelmakoodin muistiin annetulle alueelle. Se myös tallettaa kaikki tähän prosessiin liittyvät hallintotiedot erityiseen tietueeseen, prosessin _kuvaajaan_ (PCB, Process Control Block) tai siihen linkitettyihin muihin tietorakenteisiin. Kuvaajan tarkempi esittely on alla.
 
 Juuri luotu uusi prosessi ei suinkaan ole vielä suorituksessa, koska sen luontihetkellä suorituksessa oli käyttöjärjestelmään sisältyvä lataaja. Uuden prosessin luomisen jälkeen käyttöjärjestelmä päättää, mikä prosessi saa seuraavaksi suoritusvuoron. Se voi olla juuri luotu prosessi, mutta yhtä hyvin se voi olla esimerkiksi se prosessi, jonka suoritus keskeytettiin uuden prosessin luontia varten.
 
