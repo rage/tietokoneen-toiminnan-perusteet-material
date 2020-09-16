@@ -23,9 +23,7 @@ Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materi
 Kukin oppilaitos voi itse määritellä, millä tavoin tämän [MOOC](https://mooc.fi/) kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
 
 ### Avoimen yliopiston kurssina
-Sinun tulee olla ilmoittautunut kurssille Avoimeen yliopistoon, jotta voit saada kurssista opintosuoritusmerkinnän Helsingin yliopiston opintorekisteriin. Huomiothan, että pääset kurssin Moodleen vasta ilmoittautumistasi seuraavana päivänä. 
-
-Ilmoittautuminen koskee kaikkia kurssilaisia eli myös Helsingin yliopiston opiskelijoita. Opintoihin ilmoittaudutaan valitsemalla [Avoimen yliopiston opinto-ohjelman kurssisivulta](https://courses.helsinki.fi/fi/aytkt100051) oikea kurssi, josta löydät tarkemmat ohjeet ilmoittautumiseen, Moodlen kurssiavaimen ja lisätietoja opintosuorituksen rekisteröinnistä. Ilmoittautuminen on auki vain määritellyn ajan, joka on ilmoitettu kurssin opinto-ohjelmassa. 
+Päästyäsi kurssista läpi, vieraile täällä rekisteröidäksesi kurssisuorituksen: [Rekisteröi suoritus](https://www.mooc.fi/register-completion/tietokoneen-toiminnan-perusteet). Ilmoittautuminen on auki vain määritellyn ajan, joka on ilmoitettu kurssin opinto-ohjelmassa. Saat kurssin läpipääsystä sähköpostiviestin. Älä rekisteröi suoritusta tätä kautta jos käyt Helsingin yliopiston opiskelijoille tarkoitettua luentokurssia (5 op).
 
 ### Helsingin yliopiston kurssina
 Tietokoneen toiminnan perusteet (2 op, MOOC) ja sen jatkokurssia Tietokoneen toiminnan jatkokurssin (3 op, MOOC) käytetään osana Helsingin yliopiston Tietokoneen toiminta (5 op, luentokurssi) kurssia. Kurssin suoritukseen sisältyy harjoituksia ja kokeita, jotka kattavat molempien kurssin sisällön. Tietokoneen toiminnan perusteet (2 op, MOOC) ei voi suorittaa irrallisena kurssina.
