@@ -227,7 +227,7 @@ class CourseOptionsEditor extends React.Component {
                   selectedVariant={
                     this.state.currentCourseVariant ||
                     this.props.courseVariant ||
-                    "avoin-kesa-2020"
+                    "avoin-syksy-2020-kevat-2021"
                   }
                   setSelectedVariant={this.setSelectedVariant}
                 />
