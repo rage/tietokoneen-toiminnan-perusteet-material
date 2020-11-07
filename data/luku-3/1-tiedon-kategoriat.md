@@ -146,7 +146,7 @@ Heksadesimaalijärjestelmän numerot ovat lukuarvoltaan 0-15, ja ne ovat 0-9, A,
 
 Kukin 16-järjestelmän numero vastaa neljää bittiä ja ne ryhmitellään aina oikealta vasemmalle ennen binääripistettä ja vasemmalta oikealle sen jälkeen. Ryhmittelyssä binäärilukuihin laitetaan sopivasti etunollia kokonaisosan eteen ja binääriosan loppuun, jotta bittien lukumäärä molemmissa olisi neljällä jaollinen.
 
-Esimerkiksi, 32-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kirjoittaa muodossa 0x057A. Esitysmuodon muutokset binääri- ja heksadesimaalijärjestelmien välillä ovat triviaaleja. Kukin neljän bitin ryhmä vastaa heksadesimaaliarvoa välillä 0-F (eli 0-15), ja kukin heksadesimaalijärjestelmän numero on helppo vastaavasti purkaa biteiksi. Bittiesityksestä voi poistaa kokonaisosan etunollia ja binääriosan loppunollia halutessaan, tai laittaa niitä lisää.
+Esimerkiksi, 16-bittinen luku 0000&nbsp;0101&nbsp;0111&nbsp;1010 on helpompi kirjoittaa muodossa 0x057A. Esitysmuodon muutokset binääri- ja heksadesimaalijärjestelmien välillä ovat triviaaleja. Kukin neljän bitin ryhmä vastaa heksadesimaaliarvoa välillä 0-F (eli 0-15), ja kukin heksadesimaalijärjestelmän numero on helppo vastaavasti purkaa biteiksi. Bittiesityksestä voi poistaa kokonaisosan etunollia ja binääriosan loppunollia halutessaan, tai laittaa niitä lisää.
 
 <!-- esim: binääri hexa  -->
 
