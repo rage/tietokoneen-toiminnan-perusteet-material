@@ -9,7 +9,7 @@
     "@material-ui/core": "^4.1.0",
     "@material-ui/icons": "^4.1.0",
     "@rstacruz/gatsby-remark-component": "^1.2.0-pre.1",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "babel-plugin-styled-components": "^1.10.0",
     "clsx": "^1.0.4",
     "code-states-visualizer": "^0.1.1",
