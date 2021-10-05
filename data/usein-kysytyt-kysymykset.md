@@ -11,14 +11,14 @@ Sekä kurssia että sen käyttämää alustaa kehitetään koko ajan. Tämän vu
 Kurssin ja alustan kehityksestä voi aiheutua haittaa opiskelijoille esimerkiksi muutettujen ja lisättyjen pikatehtävien (quiz) osalta. Joissakin tapauksissa pikatehtäviä voi tulla lisää tai jo tehty pikatehtävä voi tulla merkityksi vielä ratkaisemattomaksi. Tällaisissa tapauksissa pikatehtävä pitää vain tehdä uudelleen.
 
 ## Löysin materiaalista virheen
-Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta. 
+Kaikki rakentava palaute kurssin tekemiseksi paremmaksi on arvokasta.
 
 Tämä tarkoittaa niin suurempia rakenteellisia ehdotuksia kuin esitystapaan liittyvien puutteiden esilletuontia. Esimerkiksi kaikki kirjoitusvirheet olisi mukava saada korjattua mahdollisimman nopeasti. Samoin jos tekstissä on huonosti muotoiltuja tai muuten vaikeasti ymmärrettäviä kohti, niin ne olisi hyvä saada korjattua nopeasti. Vastaavasti kaikki pikatehtävissä ("Quiz") olevat puutteet ärsyttävät monia, kunnes ne on paikattu.
 
 Useat henkilöt ovat antaneet hyvää palautetta kurssin kehittämiseksi. Kiitos Elisa Bestetti, Bo Feng, Tuula Jacobson, Antti Halmetoja, Samuli Hanski, Mikael Heinola, Sampsa Hietala, Markus Huhtamäki, Jussi Kaataja, Esa Kauppinen, Tuula Kauppinen, Heikki Koivula, Henna Kokkonen, Anton Kortelainen, Jesper Kuutti, Harri Kähkönen, Saska Lohi, Annamaria Mustonen, Tero Pesonen, Vesa Puoskari, Topias Pyykkönen, Teemu-Petteri Remes, Petri Riihikallio, Ville Rintala, Jenna-Julia Rissanen, Aleksi Roitto, Pasi Röntynen, Ismo Saaros, Riikka Salojoki, Alexey Smolianinov, Iiris Toivonen, Sari Toto, Laura Tulehmo, Janne Tuukkanen ja Leevi Valkoniemi!
 
 ### Korjausehdotukset sähköpostitse
-Lähettäkää korjausehdotukset sähköpostitse osoitteella [teemu.kerola@cs.helsinki.fi](mailto:teemu.kerola@cs.helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20perusteet&body=Luku%20???%20tai%20Quiz%20???%20...).
+Lähettäkää korjausehdotukset sähköpostitse osoitteella [emilia.oikarinen@helsinki.fi](mailto:emilia.oikarinen@helsinki.fi?subject=MOOC%20palaute,%20Tietokoneen%20toiminnan%20perusteet&body=Luku%20???%20tai%20Quiz%20???%20...).
 
 Laittakaa sähköpostin otsakkeeksi "MOOC palaute, Tietokoneen toiminnan perusteet".
 
@@ -34,9 +34,9 @@ https://github.com/rage/tietokoneen-toiminnan-perusteet-material.
 
 Laita muutosehdotuksesi suoraan paikalleen GitHubissa sijaitsevaan kurssimateriaaliin. Kaikki kurssimateriaali on data-hakemistossa. Esimerkiksi, klikkaa "Edit", korjaa kirjoitusvirhe sanassa "pödällä" muotoon "pöydällä". Talleta ehdotuksesi ("Propose file change") ja anna muutosehdotuksesi eteenpäin ("Create pull request"). Tähän voi kirjoittaa halutessaan kommentin, jonka jälkeen klikkaa uudestaan "Create pull request". Älä peru muutosehdotusta klikkaamalla "Close pull request".
 
-Korjausehdotukset käsitellään yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen. 
+Korjausehdotukset käsitellään yksi kerrallaan. Mahdolliset muutokset tulevat voimaan vasta hyväksymisen jälkeen.
 
-Kurssimateriaali on kirjoitettu [markdown](https://en.wikipedia.org/wiki/Markdown)-kielellä ja siitä generoituu html-koodia. Jos et osaa markdownia tai et halua käyttää [GitHubia](https://en.wikipedia.org/wiki/GitHub), lähetä muutosehdotuksesi sähköpostitse em. tavalla. 
+Kurssimateriaali on kirjoitettu [markdown](https://en.wikipedia.org/wiki/Markdown)-kielellä ja siitä generoituu html-koodia. Jos et osaa markdownia tai et halua käyttää [GitHubia](https://en.wikipedia.org/wiki/GitHub), lähetä muutosehdotuksesi sähköpostitse em. tavalla.
 Pikatehtäviin voi tehdä muutosehdotuksia vain sähköpostitse.
 
 Kiitos ehdotuksista.
@@ -45,21 +45,21 @@ Kiitos ehdotuksista.
 
 ### Pikatehtävä 2.2.1 on huonosti määritelty. (12.9.2019)
 
-Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puutteesta, minkä vuoksi osa tehtävänmäärittelystä ei tule näkyville. Itse kysymys jää puuttumaan. 
+Kyseinen pikatehtävä (ja muutama muukin) kärsivät alustassa olevasta puutteesta, minkä vuoksi osa tehtävänmäärittelystä ei tule näkyville. Itse kysymys jää puuttumaan.
 
-Tilanne korjataan pikapuoliin. Alustava korjaus on tehtävän määrittelyssä replikoida kysymys osa otsakkeeseen. 
+Tilanne korjataan pikapuoliin. Alustava korjaus on tehtävän määrittelyssä replikoida kysymys osa otsakkeeseen.
 
-Osa opiskelijoista on jo vastannut tehtävään (yleensä väärin) sen puutteellisessa esitysmuodossa. Tämän vuoksi on mahdollista, että alustan korjaamisen jälkeen tehtävän suoritustilastot nollataan, jotta kaiki voivat vastata siihen uudelleen.  
+Osa opiskelijoista on jo vastannut tehtävään (yleensä väärin) sen puutteellisessa esitysmuodossa. Tämän vuoksi on mahdollista, että alustan korjaamisen jälkeen tehtävän suoritustilastot nollataan, jotta kaiki voivat vastata siihen uudelleen.
 
 
-<!--    kaikki kommentoitu pois 
+<!--    kaikki kommentoitu pois
 
 <table-of-contents></table-of-contents>
 
 
 ### En voi aloittaa kurssia, koska en tiedä minne ilmoittautua
 
-Kurssin aloittamiseen ei tarvitse ilmoittautumista. Älä ilmoittaudu minnekkään ellei kurssin sivu erikseen kehoita sinua tekemään niin. 
+Kurssin aloittamiseen ei tarvitse ilmoittautumista. Älä ilmoittaudu minnekkään ellei kurssin sivu erikseen kehoita sinua tekemään niin.
 
 ### Tarvitsenko MOOC-tunnuksen?
 
