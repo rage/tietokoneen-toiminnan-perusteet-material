@@ -114,12 +114,6 @@ Rakkauden (tai vihan) määrä on varmaankin parasta koodata liukulukuna, koska 
 
 ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäinen yleiskäyttöinen sähkökäyttöinen tietokone. Sen pääsuunnittelijat olivat John Mauchly ja J. Presper Eckert. Siinä oli 17468 elektroniputkea. Sen nopeus oli mullistavat 5000 yhteenlaskua tai 357 kertolaskua sekunnissa. Se painoi 27 tonnia, vaati lattiatilaa 167 m2 ja kulutti 150 kW sähköä. Siinä oli uutena piirteenä haarautumiskäsky. Ohjelmointi tapahtui fyysisesti (käsin) langoittamalla laitteisto suorittamaan tiettyä algoritmia ennen ohjelman suorittamista. Ensimmäisellä testiohjelmalla suoritettiin vetypommin kehittämiseen liittyviä laskelmia ja syöteaineisto oli yli miljoonalla reikäkortilla.
 
-<!-- Quizes 3.4.1-4  -->
-<div><quiz id="5bfee7de-3a8d-4a1a-8f78-2f0b3dda7430"></quiz></div>
-<div><quiz id="42bfa3a6-2a7b-4e7b-90a8-22221df08902"></quiz></div>
-<div><quiz id="420ffbd9-2a0c-41ab-863e-21c84ab8d765"></quiz></div>
-<div><quiz id="40b7b469-2930-4fa6-95f8-21183cd88cb6"></quiz></div>
-
 <!-- kuva: ch-3-4-eniac    -->
 
 ![Valtava tietokonesali, jossa neljä operaattoria seisoo yli 2m korkuisten laitteiden edessä.](./ch-3-4-eniac.svg)
@@ -128,6 +122,12 @@ ENIAC (Electronic Numerical Integrator and Computer) vuodelta 1945 oli ensimmäi
 </div>
 
 </text-box>
+
+<!-- Quizes 3.4.1-4  -->
+<div><quiz id="5bfee7de-3a8d-4a1a-8f78-2f0b3dda7430"></quiz></div>
+<div><quiz id="42bfa3a6-2a7b-4e7b-90a8-22221df08902"></quiz></div>
+<div><quiz id="420ffbd9-2a0c-41ab-863e-21c84ab8d765"></quiz></div>
+<div><quiz id="40b7b469-2930-4fa6-95f8-21183cd88cb6"></quiz></div>
 
 
 ## Yhteenveto
