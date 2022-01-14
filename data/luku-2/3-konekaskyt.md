@@ -343,7 +343,7 @@ if (x<y)                 load r1, x    -- onko x<y?
 ```
 
 ### Symbolisen konekielen kääntäjän ohjauskäskyt, valekäskyt
-Ohjelmien symbolisen konekielisessä esitystavassa on suorittimen konekäskyjen lisäksi mukana myös kääntäjän ohjauskäskyjä. Niiden avulla ilmaistaan mm. tilanvarauksia muuttujille ja muille tietorakenteille sekä nimiä halutuille vakioarvoille. Näitä kutsutaan joskus myös _valekäskyiksi_, koska ne näyttävät tavallisilta käskyiltä, mutta niistä ei tule mitään suoritettavaa konekäskyä. Ne vaikutus on ohjelman kääntämisen ja latauksen aikana.
+Ohjelmien symbolisen konekielisessä esitystavassa on suorittimen konekäskyjen lisäksi mukana myös kääntäjän ohjauskäskyjä. Niiden avulla ilmaistaan mm. tilanvarauksia muuttujille ja muille tietorakenteille sekä nimiä halutuille vakioarvoille. Näitä kutsutaan joskus myös _valekäskyiksi_, koska ne näyttävät tavallisilta käskyiltä, mutta niistä ei tule mitään suoritettavaa konekäskyä. Niiden vaikutus on ohjelman kääntämisen ja latauksen aikana.
 
 Ttk-91:ssä on muuttujan tai vakion tilanvarauskäsky DC (data constant), joka varaa tilaa muuttujalle ja antaa sille alkuarvon. Toinen tilanvarauskäsky DS (data segment) on taulukoiden ja tietueiden tilanvarausta varten. Sen avulla varataan tilaa yhdellä kertaa useampi sana, mutta varattu tila pitää itse alustaa koodissa. Jollekin vakioarvolle (esim. luku 20) voi antaa nimen (esim. LKM) valekäskyllä EQU. Symbolisessa konekielessä on ihan sama, käyttääkö koodissa jotain symbolia tai sen arvoa.
 
