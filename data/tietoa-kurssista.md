@@ -4,6 +4,9 @@ hidden: false
 information_page: true
 ---
 
+Tämän sivuston käyttö Tietokoneen toiminnan perusteet -kurssin suorittamiseksi on päättynyt 31.5.2022 eikä tällä sivustolla tehdyt tehtävät oikeuta kurssin suoritukseen.
+
+**Tietokoneen toiminnan perusteet -kurssin sivusto alkaen 1.6.2022 on osoitteessa [https://tito-perusteet-2022.mooc.fi/](https://tito-perusteet-2022.mooc.fi/).**
 
 Tietokoneen toiminnan perusteet on kaikille avoin ja ilmainen verkkokurssi. Kurssilla perehdytään tietokoneen perustoimintoihin. Siinä esitellään myös käyttöjärjestelmän toiminta tietokonelaitteiston ja ohjelmiston välissä.
 
