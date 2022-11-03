@@ -20,7 +20,7 @@ Kurssiin sisältyy merkittävä määrä pikatehtäviä ("quiz"), joiden tekemis
 Kurssia voidaan käyttää useaan alla mainittuun eri tarkoitukseen. Erilaisten kurssisuoritusten arvostelumenetelmät Helsingin yliopiston kurssina selitetään tarkemmin osiossa "Arvostelu ja kokeet".
 
 ### Omaehtoinen itsenäinen opiskelu
-Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluuun. Käy läpi kurssimateriaali, surfaile haluamiasi lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
+Kuka tahansa tietokoneiden toiminnasta kiinnostunut voi käyttää tätä materiaalia itseopiskeluun. Käy läpi kurssimateriaali, surfaile haluamiasi lisätietoja verkosta, vastaile pikatehtäviin ("quiz") ja nauti opiskelusta!
 
 ### Lukion tai muun keskiasteen valinnaisena kurssina ("kurkistuskurssi")
 Kukin oppilaitos voi itse määritellä, millä tavoin tämän [MOOC](https://mooc.fi/) kurssi (2 op) hyväksytään oppilaitoksen kurssina. Hyväksymiseen voi liittyä erillinen koe kyseisessä oppilaitoksessa.
