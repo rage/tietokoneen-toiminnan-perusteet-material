@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import BackgroundImage from "../images/banner.svg"
 import { Card, CardContent } from "@material-ui/core"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { Link } from "gatsby"
 
 import withSimpleErrorBoundary from "../util/withSimpleErrorBoundary"
@@ -100,7 +99,7 @@ class Footer extends React.Component {
           <StyledCard>
             <StyledCardContent>
               <GithubContainer>
-                <OutboundLink
+                <a
                   href="https://github.com/rage/tietokoneen-toiminnan-perusteet-material"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -111,7 +110,7 @@ class Footer extends React.Component {
                     title="Materiaalin lähdekoodi"
                   />
                   <div>Materiaalin lähdekoodi</div>
-                </OutboundLink>
+                </a>
               </GithubContainer>
               <ContentContainer>
                 Kurssin on tehnyt Teemu Kerola.
@@ -122,20 +121,20 @@ class Footer extends React.Component {
               </ContentContainer>
 
               <BrandsContainer>
-                <OutboundLink
+                <a
                   href="https://helsinki.fi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img alt="Helsingin yliopisto" src={UHLogo} />
-                </OutboundLink>
-                <OutboundLink
+                </a>
+                <a
                   href="https://mooc.fi"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img alt="MOOC.fi" src={MoocfiLogo} />
-                </OutboundLink>
+                </a>
               </BrandsContainer>
             </StyledCardContent>
           </StyledCard>

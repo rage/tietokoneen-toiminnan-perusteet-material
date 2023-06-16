@@ -3,7 +3,6 @@ import styled from "styled-components"
 import ContentLoader from "react-content-loader"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPencilAlt as icon, faRedo } from "@fortawesome/free-solid-svg-icons"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import { get } from "lodash"
 import { Card, CardContent, Button } from "@material-ui/core"
 
@@ -279,13 +278,13 @@ class ProgrammingExercise extends React.Component {
                         tehtävän pisteistä käyttämällä NetBeansin
                         "submit"-nappia. Lisätietoa ohjelmointitehtävien
                         palautusohjeissa:{" "}
-                        <OutboundLink
+                        <a
                           href="https://materiaalit.github.io/tmc-asennus/netbeans/"
                           rel="noopener noreferrer"
                           target="_blank"
                         >
                           ohjeet tehtävien palauttamiseen
-                        </OutboundLink>
+                        </a>
                         .
                       </p>
                       <StyledDivider />

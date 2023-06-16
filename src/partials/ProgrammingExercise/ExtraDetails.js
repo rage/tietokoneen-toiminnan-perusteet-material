@@ -1,6 +1,5 @@
 import React from "react"
 import Loading from "../../components/Loading"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import {
   ExpansionPanel,
   ExpansionPanelSummary,
@@ -31,25 +30,25 @@ const ExtraDetails = ({ exerciseDetails, onUpdate, noCoins }) => {
             <StyledTypography>
               Palauta tehtävä palvelimelle tarkistettavaksi NetBeans
               ohjelmointiympäristössä:{" "}
-              <OutboundLink
+              <a
                 href="https://materiaalit.github.io/tmc-asennus/netbeans/"
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 ohjeet tehtävien palauttamiseen
-              </OutboundLink>
+              </a>
               .
             </StyledTypography>
             <StyledTypography>
               Voit myöhemmin katsoa palautuksiasi Test My Code
               palautusympäristössä{" "}
-              <OutboundLink
+              <a
                 href={`https://tmc.mooc.fi/exercises/${exerciseDetails.id}?use_clients=1`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 täältä
-              </OutboundLink>
+              </a>
               .
             </StyledTypography>
           </div>

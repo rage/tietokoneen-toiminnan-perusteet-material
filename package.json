@@ -21,7 +21,6 @@
     "focus-visible": "^4.1.5",
     "gatsby": "^2.7.1",
     "gatsby-plugin-catch-links": "^2.0.15",
-    "gatsby-plugin-google-analytics": "^2.0.20",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-material-ui": "^2.0.1",
     "gatsby-plugin-meta-redirect": "^1.1.1",
